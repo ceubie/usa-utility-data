@@ -1,0 +1,2897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2026 Workiva-->
+<!--r:019cfd78-b335-733b-b67d-fcb3ca1fd52e,g:1c4beee4-09e4-4324-8b9b-c06d533bd958-->
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ferc="http://ferc.gov/form/2025-04-01/ferc" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <link:schemaRef xlink:href="https://eCollection.ferc.gov/taxonomy/form2/2025-04-01/form/form2A/form-2A_2025-04-01.xsd" xlink:type="simple"/>
+  <xbrli:unit id="u-1">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-2">
+    <xbrli:measure>iso4217:USD</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-3">
+    <xbrli:measure>utr:dth</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:context id="c-1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-2">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleSecurityHoldersAndVotingPowersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-3">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleImportantChangesDuringTheQuarterYearAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-4">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfRetainedEarningsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-5">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasPropertyAndCapacityLeasedToOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-6">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleNonTraditionalRateTreatmentAffordedNewProjectsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-7">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherRegulatoryAssetsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-8">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedDeferredIncomeTaxesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-9">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleCapitalStockAndLongTermDebtDataAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-10">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTaxesAccruedPrepaidAndChargedDuringYearDistributionOfTaxesChargedAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-11">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedDeferredIncomeTaxesOtherPropertyAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-12">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedDeferredIncomeTaxesOtherAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-13">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherRegulatoryLiabilitiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-14">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasOperatingRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-15">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherGasRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-16">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleDiscountedRateServicesAndNegotiatedRateServicesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-17">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleEmployeePensionsAndBenefitsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-18">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransactionsWithAssociatedAffiliatedCompaniesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-19">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleShipperSuppliedGasForTheCurrentQuarterAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-20">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleSystemMapsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-21">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-22">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-23">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-24">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-25">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-26">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Amortization of (Specify) (footnote details)</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-27">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Other Adjustments to Cash Flows from Operating Activities</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-28">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesAxis">
+          <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>Other Construction and Acquisition of Plant, Investment Activities</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-29">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>Other (footnote details):</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-30">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>Other (footnote details):</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-31">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ALLEN R GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-32">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ANDRA HANKINS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-33">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ANDREW G ALEXANDER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-34">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ARNOLD &amp; GAIL HABERSTROH,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-35">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>BARBARA RIVOLDINI,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-36">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>BILLY JOE ROWLAND,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-37">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>BRANDON J SMITH,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-38">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>BRIAN GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-39">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>CHARLES B ALEXANDER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-40">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>CHARLES H KOSKI,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-41">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>CHARLES L. &amp; MAUREEN E. CURTIS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-42">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>CHRISTINA RILEY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-43">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>CONNIE BRYANT,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-44">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>CURTIS GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-45">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DALE A LAZO,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-46">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DANA WILLIAMS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-47">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DANIEL R GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-48">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DANNY C HALVERSON,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-49">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DARRIS MCDANIEL,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-50">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DAVID R GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-51">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DEBORAH BEACHBOARD,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-52">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DENNIS L &amp; CONSTANCE L TAYLOR,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-53">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DENNIS MITCHELL,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-54">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DEREK R MCKINLEY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-55">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DONALD BURBEE,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-56">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>DONALD L BLASER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-57">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ERNEST C &amp; ELAINE J HICKOX,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-58">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ERNEST J. WHITE,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-59">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>FLORA J GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-60">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>FRANK GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-61">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>GARY KLEIN,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-62">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>GAYLE SCHILLING,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-63">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>GLADYS LARSON,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-64">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>HELEN JOHNSON,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-65">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>IRA V TURNER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-66">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>IVAN ROGERS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-67">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JACKSON PRAIRIE GOSPEL,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-68">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JAMES F ALEXANDER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-69">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JAMES GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-70">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JAMES RANDALL BROSSARD,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-71">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JANICE E BAKER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-72">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JANICE L HEDMAN,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-73">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JEAN NICHOLS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-74">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JERED COTHREN,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-75">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JERRALD L GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-76">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JERRY COTHREN,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-77">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JERYL M FUCHS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-78">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JESSICA STICKLEY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-79">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JILL E BEAUDRY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-80">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOAN ELIZABETH CHAPPELL,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-81">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOHN A ALEXANDER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-82">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOHN CHARLES PENNY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-83">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOHN HARROLD,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-84">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOHN L SMITH,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-85">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOHN P GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-86">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOHN ROBARGE,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-87">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOHN VANDERPOL,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-88">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOSEPH &amp; CORRINE SUBITCH,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-89">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOSEPH E BLASER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-90">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JOSEPH OSKARS ENBODY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-91">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JUDITH C CASTLE,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-92">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>JULIE ANN SMACIARZ,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-93">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>KAREN BRYAN,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-94">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>KAREN SIKEL,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-95">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>KASEY STUDEMAN,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-96">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>KIMBERLY H INGLIS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-97">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>LANDRA L HARRIS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-98">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>LAURA L MCDANIEL,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-99">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>LESLIE M FOX,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-100">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>LEVI MCKINNELL,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-101">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>LEWIS COUNTY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-102">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>LINDA S PATTON,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-103">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>LOGGERS WORLD PUBLICATIONS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-104">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>LOREN STEVESON,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-105">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>MANKE LUMBER COMPANY INC,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-106">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>MARY ANN HASSLER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-107">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>MARY MOSER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-108">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>MARY P BROCKMAN,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-109">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>MATTHEW SMITH,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-110">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>MICHAEL J ALEXANDER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-111">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>MIKE MOUM,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-112">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>NATHAN GERALD JACKINS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-113">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>NICHOLE HINDS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-114">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>NORMAN SELCHERT,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-115">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>PATRICIA HANNAM,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-116">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>PATTI D BRAUNBERGER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-117">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>RAINIER EVERGREEN INC,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-118">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>RAYMOND G ALLBRITTON,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-119">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>RICHARD L NOBLE,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-120">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ROB AND REBECCA MCELHANEY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-121">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ROBERT L CROCKER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-122">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ROBERT W BAKER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-123">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ROBERTA STUTZ,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-124">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>RONALD A GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-125">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>RONALD ROBERT RUMSEY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-126">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ROXANNE CROCKER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-127">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>ROY A GUTSCHMIDT,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-128">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>SCOTT A GUENTHER,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-129">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>SHARON A DAILEY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-130">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>SHAWN M SMITH,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-131">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>SHIRLEY BENSON PAULS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-132">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>STEPHEN DUNHAM,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-133">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>SURIYA KIM PHROMNOPAVONG,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-134">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>TAMMY LYNN CARLSON,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-135">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>TORY LYNN COLEMAN,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-136">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>VICTORIA KENNEDY,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-137">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>WA STATE DEPT OF NATURAL RESOURCES,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-138">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>WA STATE DEPT OF TRANSPORTATION,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-139">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>WILLIAM E EVANS,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-140">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:GasPropertyAndCapacityLeasedFromOthersAxis">
+          <ferc:GasPropertyAndCapacityLeasedFromOthersDomain>WILLIAM E LAMBERT,</ferc:GasPropertyAndCapacityLeasedFromOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-141">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherClearingAccountsAxis">
+          <ferc:OtherClearingAccountsDomain>Other Clearing (Specify) (footnote details):</ferc:OtherClearingAccountsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-142">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:AccumulatedProvisionForDepreciationOfGasUtilityAxis">ferc:GasPlantInServiceMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-143">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherDebitOrCreditItemsAxis">
+          <ferc:OtherDebitOrCreditItemsDomain>Other Debit or Credit Items (Describe) (footnote details):</ferc:OtherDebitOrCreditItemsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-144">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-145">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:AccumulatedProvisionForDepreciationOfGasUtilityAxis">ferc:GasPlantInServiceMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-146">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>EVERGREEN PIPELINE INCORPORTED</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-147">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>SNOWS OIL FIELD SERVICE INC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-148">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>TIBERIUS ENERGY SERVICES LLC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-149">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>BLUEHOOK TOOL COMPANY LLC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-150">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>THE LISBON GROUP LLC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-151">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>PORTLAND ENGINEERING INC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-152">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>BOP SOLUTIONS LLC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-153">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>SOLAR TURBINES INC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-154">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>BAKER HUGHES OILFIELD OPERATIONS IN</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-155">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>TRAVERS ELECTRIC INC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-156">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>OTHER</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-157">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:SystemNameAxis">
+          <ferc:SystemNameDomain>0</ferc:SystemNameDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-158">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:SystemNameAxis">
+          <ferc:SystemNameDomain>0</ferc:SystemNameDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-10-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-159">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-160">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsAxis">
+          <ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>Other Changes (Explain)</ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-161">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OtherUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-162">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:NonUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-163">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OperatingUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-164">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherGasRevenuesAxis">
+          <ferc:OtherGasRevenuesDomain>Other revenues (Specify):</ferc:OtherGasRevenuesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-165">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011209</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherEmployeePensionsAndBenefitsAxis">
+          <ferc:OtherEmployeePensionsAndBenefitsDomain>Other (Specify)</ferc:OtherEmployeePensionsAndBenefitsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <ferc:NotesToFinancialStatementsTextBlock id="f-1" contextRef="c-1">&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Note 1 &lt;/span&gt;&lt;/div&gt;&lt;div style="padding-left:36pt"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Summary of Significant Accounting Policies&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;This financial information was prepared in accordance with the accounting requirements of the Federal Energy Regulatory Commission as set forth in in its applicable Uniform System of Accounts and published accounting releases, which is a comprehensive basis of accounting other than generally accepted accounting principles.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;As a result, the presentation of the financial information differs from generally accepted accounting principles.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Certain disclosures which are required by generally accepted accounting principles and not required by FERC have been excluded from this financial information.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;The preparation of financial information requires management to make estimates and assumptions that affect the reported amounts of assets and liabilities and disclosure of contingent assets and liabilities at the date of the financial information and the reported amounts of revenues and expenses during the reporting period.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Actual results could differ from those estimates.&lt;/span&gt;&lt;/div&gt;&lt;div style="padding-left:36pt;text-indent:-18pt"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:115%"&gt;Note 2&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Basis of presentation&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;The Jackson Prairie Underground Storage Project (&#8220;the Project&#8221;) is owned in common by Northwest Pipeline Corporation (&#8220;Northwest&#8221;), Avista Corporation (&#8220;Avista&#8221;), and Puget Sound Energy, Inc. (&#8220;PSE&#8221;).&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;In accordance with a 1972 order of the Commission (47 FPC 1527), the Jackson Prairie Gas Storage Project Agreement represents a regulated entity only for purposes of the Natural Gas Act.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;The utility plant assets included on the balance sheet are operated by the Project.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;These assets are owned proportionately by Northwest, Avista and PSE and accordingly, depreciation expense is not recorded by the Project.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;As provided in the 1972 order, PSE is responsible for operating the Jackson Prairie Gas Storage Project, as agent, and maintains records and accounts that detail project costs and related expenses. The Project has no operating revenues.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Operating expenses incurred by the Project are paid by the owners and reflected as additional paid in capital contributions.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;The Project is not subject to income tax as it&#8217;s not a legal entity.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Any taxes relating to the operation of the Project are paid by the owners.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:115%"&gt;Note 3&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Utility Plant&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;The cost of additions to utility plant, including renewals and betterments, are capitalized at original cost.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Costs include indirect costs such as engineering, supervision, certain taxes, pension and other employee benefits.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Replacements of minor items of property and major maintenance are included in maintenance expense.&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:115%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:115%"&gt;Upon retirement of property, the original cost of the property is charged to retirement work in progress (RWIP), which is included in accumulated provision for depreciation on the balance sheet and included costs associated with removal of property, less salvage when property is retired and removed from service.&lt;/span&gt;&lt;/div&gt;</ferc:NotesToFinancialStatementsTextBlock>
+  <ferc:GeneralInformationOnPlantAndOperationsTextblock id="f-2" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Jackson Prairie is an underground gas storage facility located in Lewis County, WA. Puget Sound Energy (PSE) co-owns the facility and natural gas storage rights with Avista Utilities and Northwest Pipeline, GP. The allocation of ownership is: 33.34% PSE; 33.33% Avista; and 33.33% Northwest Pipeline. PSE manages the facility&#8217;s operations.&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;The facility is comprised of a series of reservoirs that lie 1,000 to 3,000 feet below ground. Large volumes of natural gas are injected into the reservoirs and stored, to be used later by utility customers. The facility can store 25 billion cubic feet of working natural gas. Total storage including &#8220;cushion&#8221; natural gas is approximately 47 billion cubic feet. It is capable of delivering 1.15 billion cubic feet of natural gas every day.&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;There are 43 gas wells on 3,200 acres of land and nine compressor units at the station, which is rated for 34,200 horsepower. Jackson Prairie&#8217;s station lines do not meet the FERC definition of transmission and thus are not reported (See page 514 of Form 2).&lt;/span&gt;&lt;/div&gt;</ferc:GeneralInformationOnPlantAndOperationsTextblock>
+  <ferc:CompanyIdentifier id="f-3" contextRef="c-1">C011209</ferc:CompanyIdentifier>
+  <ferc:FormType id="f-4" contextRef="c-1">2-A</ferc:FormType>
+  <ferc:RespondentLegalName id="f-5" contextRef="c-1">Jackson Prairie Underground Storage Project</ferc:RespondentLegalName>
+  <ferc:ReportYear id="f-6" contextRef="c-1" decimals="0" unitRef="u-1">2025</ferc:ReportYear>
+  <ferc:ReportPeriod id="f-7" contextRef="c-1">Q4</ferc:ReportPeriod>
+  <ferc:AddressOfPrincipalOfficeAtEndOfPeriod id="f-8" contextRef="c-1">239 Zandecki Road Chehallis, WA 98532</ferc:AddressOfPrincipalOfficeAtEndOfPeriod>
+  <ferc:NameOfContactPerson id="f-9" contextRef="c-1">Pat Haworth</ferc:NameOfContactPerson>
+  <ferc:TitleOfContactPerson id="f-10" contextRef="c-1">Manager</ferc:TitleOfContactPerson>
+  <ferc:AddressOfContactPerson id="f-11" contextRef="c-1">239 Zandecki Road Chehallis, WA 98532</ferc:AddressOfContactPerson>
+  <ferc:TelephoneOfContactPerson id="f-12" contextRef="c-1">360-767-3306</ferc:TelephoneOfContactPerson>
+  <ferc:SubmissionType id="f-13" contextRef="c-1">O</ferc:SubmissionType>
+  <ferc:ReportDate id="f-14" contextRef="c-1">2026-04-01</ferc:ReportDate>
+  <ferc:NameOfOfficerWithCustodyOfCorporateBooks id="f-15" contextRef="c-1">Stacy Smith</ferc:NameOfOfficerWithCustodyOfCorporateBooks>
+  <ferc:OfficerTitle id="f-16" contextRef="c-1">Director, Controller &amp; Principal Accounting Officer</ferc:OfficerTitle>
+  <ferc:AddressWhereCorporateBooksAreKept id="f-17" contextRef="c-1">355 110th Avenue NE, Bellevue, WA 98004</ferc:AddressWhereCorporateBooksAreKept>
+  <ferc:AttestationName id="f-18" contextRef="c-1">Stacy Smith</ferc:AttestationName>
+  <ferc:AttestationTitle id="f-19" contextRef="c-1">Director, Controller &amp; Principal Accounting Officer</ferc:AttestationTitle>
+  <ferc:CorporateOfficerCertificationSignature id="f-20" contextRef="c-1">Stacy Smith</ferc:CorporateOfficerCertificationSignature>
+  <ferc:AttestationDate id="f-21" contextRef="c-1">2026-04-01</ferc:AttestationDate>
+  <ferc:Remarks id="f-22" contextRef="c-2">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-23" contextRef="c-3">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-24" contextRef="c-4">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-25" contextRef="c-5">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-26" contextRef="c-6">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-27" contextRef="c-7">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-28" contextRef="c-8">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-29" contextRef="c-9">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-30" contextRef="c-10">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-31" contextRef="c-11">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-32" contextRef="c-12">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-33" contextRef="c-13">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-34" contextRef="c-14">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-35" contextRef="c-15">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-36" contextRef="c-16">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-37" contextRef="c-17">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-38" contextRef="c-18">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-39" contextRef="c-19">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-40" contextRef="c-20">N/A</ferc:Remarks>
+  <ferc:UtilityPlant id="f-41" contextRef="c-21" decimals="0" unitRef="u-2">167359976</ferc:UtilityPlant>
+  <ferc:UtilityPlant id="f-42" contextRef="c-22" decimals="0" unitRef="u-2">160677722</ferc:UtilityPlant>
+  <ferc:ConstructionWorkInProgress id="f-43" contextRef="c-21" decimals="0" unitRef="u-2">1299100</ferc:ConstructionWorkInProgress>
+  <ferc:ConstructionWorkInProgress id="f-44" contextRef="c-22" decimals="0" unitRef="u-2">1936303</ferc:ConstructionWorkInProgress>
+  <ferc:UtilityPlantAndConstructionWorkInProgress id="f-45" contextRef="c-21" decimals="0" unitRef="u-2">168659076</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:UtilityPlantAndConstructionWorkInProgress id="f-46" contextRef="c-22" decimals="0" unitRef="u-2">162614025</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-47" contextRef="c-21" decimals="0" unitRef="u-2">-9784806</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-48" contextRef="c-22" decimals="0" unitRef="u-2">-9234213</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:UtilityPlantNet id="f-49" contextRef="c-21" decimals="0" unitRef="u-2">178443882</ferc:UtilityPlantNet>
+  <ferc:UtilityPlantNet id="f-50" contextRef="c-22" decimals="0" unitRef="u-2">171848238</ferc:UtilityPlantNet>
+  <ferc:UtilityPlantAndNuclearFuelNet id="f-51" contextRef="c-21" decimals="0" unitRef="u-2">178443882</ferc:UtilityPlantAndNuclearFuelNet>
+  <ferc:UtilityPlantAndNuclearFuelNet id="f-52" contextRef="c-22" decimals="0" unitRef="u-2">171848238</ferc:UtilityPlantAndNuclearFuelNet>
+  <ferc:AssetsAndOtherDebits id="f-53" contextRef="c-21" decimals="0" unitRef="u-2">178443882</ferc:AssetsAndOtherDebits>
+  <ferc:AssetsAndOtherDebits id="f-54" contextRef="c-22" decimals="0" unitRef="u-2">171848238</ferc:AssetsAndOtherDebits>
+  <ferc:OtherPaidInCapital id="f-55" contextRef="c-21" decimals="0" unitRef="u-2">-178443882</ferc:OtherPaidInCapital>
+  <ferc:OtherPaidInCapital id="f-56" contextRef="c-22" decimals="0" unitRef="u-2">-171848238</ferc:OtherPaidInCapital>
+  <ferc:ProprietaryCapital id="f-57" contextRef="c-21" decimals="0" unitRef="u-2">-178443882</ferc:ProprietaryCapital>
+  <ferc:ProprietaryCapital id="f-58" contextRef="c-22" decimals="0" unitRef="u-2">-171848238</ferc:ProprietaryCapital>
+  <ferc:LiabilitiesAndOtherCredits id="f-59" contextRef="c-21" decimals="0" unitRef="u-2">-178443882</ferc:LiabilitiesAndOtherCredits>
+  <ferc:LiabilitiesAndOtherCredits id="f-60" contextRef="c-22" decimals="0" unitRef="u-2">-171848238</ferc:LiabilitiesAndOtherCredits>
+  <ferc:OperationExpense id="f-61" contextRef="c-1" decimals="0" unitRef="u-2">4168309</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-62" contextRef="c-23" decimals="0" unitRef="u-2">2920290</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-63" contextRef="c-24" decimals="0" unitRef="u-2">4168309</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-64" contextRef="c-25" decimals="0" unitRef="u-2">2920290</ferc:OperationExpense>
+  <ferc:MaintenanceExpense id="f-65" contextRef="c-1" decimals="0" unitRef="u-2">5127395</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-66" contextRef="c-23" decimals="0" unitRef="u-2">7770288</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-67" contextRef="c-24" decimals="0" unitRef="u-2">5127395</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-68" contextRef="c-25" decimals="0" unitRef="u-2">7770288</ferc:MaintenanceExpense>
+  <ferc:UtilityOperatingExpenses id="f-69" contextRef="c-1" decimals="0" unitRef="u-2">9295704</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-70" contextRef="c-23" decimals="0" unitRef="u-2">10690578</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-71" contextRef="c-24" decimals="0" unitRef="u-2">9295704</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-72" contextRef="c-25" decimals="0" unitRef="u-2">10690578</ferc:UtilityOperatingExpenses>
+  <ferc:NetUtilityOperatingIncome id="f-73" contextRef="c-1" decimals="0" unitRef="u-2">-9295704</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-74" contextRef="c-23" decimals="0" unitRef="u-2">-10690578</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-75" contextRef="c-24" decimals="0" unitRef="u-2">-9295704</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-76" contextRef="c-25" decimals="0" unitRef="u-2">-10690578</ferc:NetUtilityOperatingIncome>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-77" contextRef="c-1" decimals="0" unitRef="u-2">-9295704</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-78" contextRef="c-23" decimals="0" unitRef="u-2">-10690578</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:NetIncomeLoss id="f-79" contextRef="c-1" decimals="0" unitRef="u-2">-9295704</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss id="f-80" contextRef="c-23" decimals="0" unitRef="u-2">-10690578</ferc:NetIncomeLoss>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-81" contextRef="c-26">Amortization of (Specify) (footnote details)</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-82" contextRef="c-27">Other Adjustments to Cash Flows from Operating Activities</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:NetCashProvidedByUsedInOperatingActivities id="f-83" contextRef="c-1" decimals="0" unitRef="u-2">-9295704</ferc:NetCashProvidedByUsedInOperatingActivities>
+  <ferc:NetCashProvidedByUsedInOperatingActivities id="f-84" contextRef="c-23" decimals="0" unitRef="u-2">-10690578</ferc:NetCashProvidedByUsedInOperatingActivities>
+  <ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities id="f-85" contextRef="c-1" decimals="0" unitRef="u-2">6744784</ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities>
+  <ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities id="f-86" contextRef="c-23" decimals="0" unitRef="u-2">5714361</ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription id="f-87" contextRef="c-28">Other Construction and Acquisition of Plant, Investment Activities</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription>
+  <ferc:CashOutflowsForPlant id="f-88" contextRef="c-1" decimals="0" unitRef="u-2">6744784</ferc:CashOutflowsForPlant>
+  <ferc:CashOutflowsForPlant id="f-89" contextRef="c-23" decimals="0" unitRef="u-2">5714361</ferc:CashOutflowsForPlant>
+  <ferc:CashFlowsProvidedFromUsedInInvestmentActivities id="f-90" contextRef="c-1" decimals="0" unitRef="u-2">-6744784</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+  <ferc:CashFlowsProvidedFromUsedInInvestmentActivities id="f-91" contextRef="c-23" decimals="0" unitRef="u-2">-5714361</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+  <ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-92" contextRef="c-29">Other (footnote details):</ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-93" contextRef="c-29" decimals="0" unitRef="u-2">16040488</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-94" contextRef="c-30" decimals="0" unitRef="u-2">16404939</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:CashProvidedByOutsideSources id="f-95" contextRef="c-1" decimals="0" unitRef="u-2">16040488</ferc:CashProvidedByOutsideSources>
+  <ferc:CashProvidedByOutsideSources id="f-96" contextRef="c-23" decimals="0" unitRef="u-2">16404939</ferc:CashProvidedByOutsideSources>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities id="f-97" contextRef="c-1" decimals="0" unitRef="u-2">16040488</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities id="f-98" contextRef="c-23" decimals="0" unitRef="u-2">16404939</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:Land id="f-99" contextRef="c-22" decimals="0" unitRef="u-2">4484098</ferc:Land>
+  <ferc:Land id="f-100" contextRef="c-21" decimals="0" unitRef="u-2">4484098</ferc:Land>
+  <ferc:RightsOfWayNaturalGasStorageAndProcessingPlant id="f-101" contextRef="c-22" decimals="0" unitRef="u-2">359683</ferc:RightsOfWayNaturalGasStorageAndProcessingPlant>
+  <ferc:RightsOfWayNaturalGasStorageAndProcessingPlant id="f-102" contextRef="c-21" decimals="0" unitRef="u-2">359683</ferc:RightsOfWayNaturalGasStorageAndProcessingPlant>
+  <ferc:StructuresAndImprovementsUndergroundStoragePlant id="f-103" contextRef="c-22" decimals="0" unitRef="u-2">3567966</ferc:StructuresAndImprovementsUndergroundStoragePlant>
+  <ferc:StructuresAndImprovementsUndergroundStoragePlant id="f-104" contextRef="c-21" decimals="0" unitRef="u-2">3567966</ferc:StructuresAndImprovementsUndergroundStoragePlant>
+  <ferc:Wells id="f-105" contextRef="c-22" decimals="0" unitRef="u-2">55275795</ferc:Wells>
+  <ferc:WellsAdditions id="f-106" contextRef="c-1" decimals="0" unitRef="u-2">3330925</ferc:WellsAdditions>
+  <ferc:WellsRetirements id="f-107" contextRef="c-1" decimals="0" unitRef="u-2">491730</ferc:WellsRetirements>
+  <ferc:Wells id="f-108" contextRef="c-21" decimals="0" unitRef="u-2">58114990</ferc:Wells>
+  <ferc:StorageLeaseholdsAndRights id="f-109" contextRef="c-22" decimals="0" unitRef="u-2">1212946</ferc:StorageLeaseholdsAndRights>
+  <ferc:StorageLeaseholdsAndRights id="f-110" contextRef="c-21" decimals="0" unitRef="u-2">1212946</ferc:StorageLeaseholdsAndRights>
+  <ferc:Reservoirs id="f-111" contextRef="c-22" decimals="0" unitRef="u-2">1890364</ferc:Reservoirs>
+  <ferc:Reservoirs id="f-112" contextRef="c-21" decimals="0" unitRef="u-2">1890364</ferc:Reservoirs>
+  <ferc:Lines id="f-113" contextRef="c-22" decimals="0" unitRef="u-2">12156992</ferc:Lines>
+  <ferc:LinesAdditions id="f-114" contextRef="c-1" decimals="0" unitRef="u-2">711777</ferc:LinesAdditions>
+  <ferc:Lines id="f-115" contextRef="c-21" decimals="0" unitRef="u-2">12868769</ferc:Lines>
+  <ferc:CompressorStationEquipmentUndergroundStoragePlant id="f-116" contextRef="c-22" decimals="0" unitRef="u-2">68702595</ferc:CompressorStationEquipmentUndergroundStoragePlant>
+  <ferc:CompressorStationEquipmentUndergroundStoragePlantAdditions id="f-117" contextRef="c-1" decimals="0" unitRef="u-2">3076593</ferc:CompressorStationEquipmentUndergroundStoragePlantAdditions>
+  <ferc:CompressorStationEquipmentUndergroundStoragePlant id="f-118" contextRef="c-21" decimals="0" unitRef="u-2">71779188</ferc:CompressorStationEquipmentUndergroundStoragePlant>
+  <ferc:MeasuringAndRegulatingEquipmentUndergroundStoragePlant id="f-119" contextRef="c-22" decimals="0" unitRef="u-2">3608599</ferc:MeasuringAndRegulatingEquipmentUndergroundStoragePlant>
+  <ferc:MeasuringAndRegulatingEquipmentUndergroundStoragePlant id="f-120" contextRef="c-21" decimals="0" unitRef="u-2">3608599</ferc:MeasuringAndRegulatingEquipmentUndergroundStoragePlant>
+  <ferc:PurificationEquipmentUndergroundStoragePlant id="f-121" contextRef="c-22" decimals="0" unitRef="u-2">7810004</ferc:PurificationEquipmentUndergroundStoragePlant>
+  <ferc:PurificationEquipmentUndergroundStoragePlant id="f-122" contextRef="c-21" decimals="0" unitRef="u-2">7810004</ferc:PurificationEquipmentUndergroundStoragePlant>
+  <ferc:OtherEquipmentUndergroundStoragePlant id="f-123" contextRef="c-22" decimals="0" unitRef="u-2">1608680</ferc:OtherEquipmentUndergroundStoragePlant>
+  <ferc:OtherEquipmentUndergroundStoragePlantAdditions id="f-124" contextRef="c-1" decimals="0" unitRef="u-2">113551</ferc:OtherEquipmentUndergroundStoragePlantAdditions>
+  <ferc:OtherEquipmentUndergroundStoragePlantRetirements id="f-125" contextRef="c-1" decimals="0" unitRef="u-2">58862</ferc:OtherEquipmentUndergroundStoragePlantRetirements>
+  <ferc:OtherEquipmentUndergroundStoragePlant id="f-126" contextRef="c-21" decimals="0" unitRef="u-2">1663369</ferc:OtherEquipmentUndergroundStoragePlant>
+  <ferc:UndergroundStoragePlant id="f-127" contextRef="c-22" decimals="0" unitRef="u-2">160677722</ferc:UndergroundStoragePlant>
+  <ferc:UndergroundStoragePlantAdditions id="f-128" contextRef="c-1" decimals="0" unitRef="u-2">7232846</ferc:UndergroundStoragePlantAdditions>
+  <ferc:UndergroundStoragePlantRetirements id="f-129" contextRef="c-1" decimals="0" unitRef="u-2">550592</ferc:UndergroundStoragePlantRetirements>
+  <ferc:UndergroundStoragePlant id="f-130" contextRef="c-21" decimals="0" unitRef="u-2">167359976</ferc:UndergroundStoragePlant>
+  <ferc:NaturalGasStorageAndProcessingPlant id="f-131" contextRef="c-22" decimals="0" unitRef="u-2">160677722</ferc:NaturalGasStorageAndProcessingPlant>
+  <ferc:NaturalGasStorageAndProcessingPlantAdditions id="f-132" contextRef="c-1" decimals="0" unitRef="u-2">7232846</ferc:NaturalGasStorageAndProcessingPlantAdditions>
+  <ferc:NaturalGasStorageAndProcessingPlantRetirements id="f-133" contextRef="c-1" decimals="0" unitRef="u-2">550592</ferc:NaturalGasStorageAndProcessingPlantRetirements>
+  <ferc:NaturalGasStorageAndProcessingPlant id="f-134" contextRef="c-21" decimals="0" unitRef="u-2">167359976</ferc:NaturalGasStorageAndProcessingPlant>
+  <ferc:GasPlantInServiceAndCompletedConstructionNotClassifiedGas id="f-135" contextRef="c-22" decimals="0" unitRef="u-2">160677722</ferc:GasPlantInServiceAndCompletedConstructionNotClassifiedGas>
+  <ferc:GasPlantInServiceAndCompletedConstructionNotClassifiedGasAdditions id="f-136" contextRef="c-1" decimals="0" unitRef="u-2">7232846</ferc:GasPlantInServiceAndCompletedConstructionNotClassifiedGasAdditions>
+  <ferc:GasPlantInServiceAndCompletedConstructionNotClassifiedGasRetirements id="f-137" contextRef="c-1" decimals="0" unitRef="u-2">550592</ferc:GasPlantInServiceAndCompletedConstructionNotClassifiedGasRetirements>
+  <ferc:GasPlantInServiceAndCompletedConstructionNotClassifiedGas id="f-138" contextRef="c-21" decimals="0" unitRef="u-2">167359976</ferc:GasPlantInServiceAndCompletedConstructionNotClassifiedGas>
+  <ferc:GasPlantInService id="f-139" contextRef="c-22" decimals="0" unitRef="u-2">160677722</ferc:GasPlantInService>
+  <ferc:GasPlantInServiceAdditions id="f-140" contextRef="c-1" decimals="0" unitRef="u-2">7232846</ferc:GasPlantInServiceAdditions>
+  <ferc:GasPlantInServiceRetirements id="f-141" contextRef="c-1" decimals="0" unitRef="u-2">550592</ferc:GasPlantInServiceRetirements>
+  <ferc:GasPlantInService id="f-142" contextRef="c-21" decimals="0" unitRef="u-2">167359976</ferc:GasPlantInService>
+  <ferc:LessorName id="f-143" contextRef="c-31">ALLEN R GUENTHER</ferc:LessorName>
+  <ferc:LessorName id="f-144" contextRef="c-32">ANDRA HANKINS</ferc:LessorName>
+  <ferc:OrderNumber id="f-145" contextRef="c-31" decimals="INF" unitRef="u-1">1</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-146" contextRef="c-32" decimals="INF" unitRef="u-1">2</ferc:OrderNumber>
+  <ferc:LessorName id="f-147" contextRef="c-33">ANDREW G ALEXANDER</ferc:LessorName>
+  <ferc:OrderNumber id="f-148" contextRef="c-33" decimals="INF" unitRef="u-1">3</ferc:OrderNumber>
+  <ferc:LessorName id="f-149" contextRef="c-34">ARNOLD &amp; GAIL HABERSTROH</ferc:LessorName>
+  <ferc:OrderNumber id="f-150" contextRef="c-34" decimals="INF" unitRef="u-1">4</ferc:OrderNumber>
+  <ferc:LessorName id="f-151" contextRef="c-35">BARBARA RIVOLDINI</ferc:LessorName>
+  <ferc:OrderNumber id="f-152" contextRef="c-35" decimals="INF" unitRef="u-1">5</ferc:OrderNumber>
+  <ferc:LessorName id="f-153" contextRef="c-36">BILLY JOE ROWLAND</ferc:LessorName>
+  <ferc:OrderNumber id="f-154" contextRef="c-36" decimals="INF" unitRef="u-1">6</ferc:OrderNumber>
+  <ferc:LessorName id="f-155" contextRef="c-37">BRANDON J SMITH</ferc:LessorName>
+  <ferc:OrderNumber id="f-156" contextRef="c-37" decimals="INF" unitRef="u-1">7</ferc:OrderNumber>
+  <ferc:LessorName id="f-157" contextRef="c-38">BRIAN GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-158" contextRef="c-38" decimals="INF" unitRef="u-1">8</ferc:OrderNumber>
+  <ferc:LessorName id="f-159" contextRef="c-39">CHARLES B ALEXANDER</ferc:LessorName>
+  <ferc:OrderNumber id="f-160" contextRef="c-39" decimals="INF" unitRef="u-1">9</ferc:OrderNumber>
+  <ferc:LessorName id="f-161" contextRef="c-40">CHARLES H KOSKI</ferc:LessorName>
+  <ferc:OrderNumber id="f-162" contextRef="c-40" decimals="INF" unitRef="u-1">10</ferc:OrderNumber>
+  <ferc:LessorName id="f-163" contextRef="c-41">CHARLES L. &amp; MAUREEN E. CURTIS</ferc:LessorName>
+  <ferc:OrderNumber id="f-164" contextRef="c-41" decimals="INF" unitRef="u-1">11</ferc:OrderNumber>
+  <ferc:LessorName id="f-165" contextRef="c-42">CHRISTINA RILEY</ferc:LessorName>
+  <ferc:OrderNumber id="f-166" contextRef="c-42" decimals="INF" unitRef="u-1">12</ferc:OrderNumber>
+  <ferc:LessorName id="f-167" contextRef="c-43">CONNIE BRYANT</ferc:LessorName>
+  <ferc:OrderNumber id="f-168" contextRef="c-43" decimals="INF" unitRef="u-1">13</ferc:OrderNumber>
+  <ferc:LessorName id="f-169" contextRef="c-44">CURTIS GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-170" contextRef="c-44" decimals="INF" unitRef="u-1">14</ferc:OrderNumber>
+  <ferc:LessorName id="f-171" contextRef="c-45">DALE A LAZO</ferc:LessorName>
+  <ferc:OrderNumber id="f-172" contextRef="c-45" decimals="INF" unitRef="u-1">15</ferc:OrderNumber>
+  <ferc:LessorName id="f-173" contextRef="c-46">DANA WILLIAMS</ferc:LessorName>
+  <ferc:OrderNumber id="f-174" contextRef="c-46" decimals="INF" unitRef="u-1">16</ferc:OrderNumber>
+  <ferc:LessorName id="f-175" contextRef="c-47">DANIEL R GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-176" contextRef="c-47" decimals="INF" unitRef="u-1">17</ferc:OrderNumber>
+  <ferc:LessorName id="f-177" contextRef="c-48">DANNY C HALVERSON</ferc:LessorName>
+  <ferc:OrderNumber id="f-178" contextRef="c-48" decimals="INF" unitRef="u-1">18</ferc:OrderNumber>
+  <ferc:LessorName id="f-179" contextRef="c-49">DARRIS MCDANIEL</ferc:LessorName>
+  <ferc:OrderNumber id="f-180" contextRef="c-49" decimals="INF" unitRef="u-1">19</ferc:OrderNumber>
+  <ferc:LessorName id="f-181" contextRef="c-50">DAVID R GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-182" contextRef="c-50" decimals="INF" unitRef="u-1">20</ferc:OrderNumber>
+  <ferc:LessorName id="f-183" contextRef="c-51">DEBORAH BEACHBOARD</ferc:LessorName>
+  <ferc:OrderNumber id="f-184" contextRef="c-51" decimals="INF" unitRef="u-1">21</ferc:OrderNumber>
+  <ferc:LessorName id="f-185" contextRef="c-52">DENNIS L &amp; CONSTANCE L TAYLOR</ferc:LessorName>
+  <ferc:OrderNumber id="f-186" contextRef="c-52" decimals="INF" unitRef="u-1">22</ferc:OrderNumber>
+  <ferc:LessorName id="f-187" contextRef="c-53">DENNIS MITCHELL</ferc:LessorName>
+  <ferc:OrderNumber id="f-188" contextRef="c-53" decimals="INF" unitRef="u-1">23</ferc:OrderNumber>
+  <ferc:LessorName id="f-189" contextRef="c-54">DEREK R MCKINLEY</ferc:LessorName>
+  <ferc:OrderNumber id="f-190" contextRef="c-54" decimals="INF" unitRef="u-1">24</ferc:OrderNumber>
+  <ferc:LessorName id="f-191" contextRef="c-55">DONALD BURBEE</ferc:LessorName>
+  <ferc:OrderNumber id="f-192" contextRef="c-55" decimals="INF" unitRef="u-1">25</ferc:OrderNumber>
+  <ferc:LessorName id="f-193" contextRef="c-56">DONALD L BLASER</ferc:LessorName>
+  <ferc:OrderNumber id="f-194" contextRef="c-56" decimals="INF" unitRef="u-1">26</ferc:OrderNumber>
+  <ferc:LessorName id="f-195" contextRef="c-57">ERNEST C &amp; ELAINE J HICKOX</ferc:LessorName>
+  <ferc:OrderNumber id="f-196" contextRef="c-57" decimals="INF" unitRef="u-1">27</ferc:OrderNumber>
+  <ferc:LessorName id="f-197" contextRef="c-58">ERNEST J. WHITE</ferc:LessorName>
+  <ferc:OrderNumber id="f-198" contextRef="c-58" decimals="INF" unitRef="u-1">28</ferc:OrderNumber>
+  <ferc:LessorName id="f-199" contextRef="c-59">FLORA J GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-200" contextRef="c-59" decimals="INF" unitRef="u-1">29</ferc:OrderNumber>
+  <ferc:LessorName id="f-201" contextRef="c-60">FRANK GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-202" contextRef="c-60" decimals="INF" unitRef="u-1">30</ferc:OrderNumber>
+  <ferc:LessorName id="f-203" contextRef="c-61">GARY KLEIN</ferc:LessorName>
+  <ferc:OrderNumber id="f-204" contextRef="c-61" decimals="INF" unitRef="u-1">31</ferc:OrderNumber>
+  <ferc:LessorName id="f-205" contextRef="c-62">GAYLE SCHILLING</ferc:LessorName>
+  <ferc:OrderNumber id="f-206" contextRef="c-62" decimals="INF" unitRef="u-1">32</ferc:OrderNumber>
+  <ferc:LessorName id="f-207" contextRef="c-63">GLADYS LARSON</ferc:LessorName>
+  <ferc:OrderNumber id="f-208" contextRef="c-63" decimals="INF" unitRef="u-1">33</ferc:OrderNumber>
+  <ferc:LessorName id="f-209" contextRef="c-64">HELEN JOHNSON</ferc:LessorName>
+  <ferc:OrderNumber id="f-210" contextRef="c-64" decimals="INF" unitRef="u-1">34</ferc:OrderNumber>
+  <ferc:LessorName id="f-211" contextRef="c-65">IRA V TURNER</ferc:LessorName>
+  <ferc:OrderNumber id="f-212" contextRef="c-65" decimals="INF" unitRef="u-1">35</ferc:OrderNumber>
+  <ferc:LessorName id="f-213" contextRef="c-66">IVAN ROGERS</ferc:LessorName>
+  <ferc:OrderNumber id="f-214" contextRef="c-66" decimals="INF" unitRef="u-1">36</ferc:OrderNumber>
+  <ferc:LessorName id="f-215" contextRef="c-67">JACKSON PRAIRIE GOSPEL</ferc:LessorName>
+  <ferc:OrderNumber id="f-216" contextRef="c-67" decimals="INF" unitRef="u-1">37</ferc:OrderNumber>
+  <ferc:LessorName id="f-217" contextRef="c-68">JAMES F ALEXANDER</ferc:LessorName>
+  <ferc:OrderNumber id="f-218" contextRef="c-68" decimals="INF" unitRef="u-1">38</ferc:OrderNumber>
+  <ferc:LessorName id="f-219" contextRef="c-69">JAMES GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-220" contextRef="c-69" decimals="INF" unitRef="u-1">39</ferc:OrderNumber>
+  <ferc:LessorName id="f-221" contextRef="c-70">JAMES RANDALL BROSSARD</ferc:LessorName>
+  <ferc:OrderNumber id="f-222" contextRef="c-70" decimals="INF" unitRef="u-1">40</ferc:OrderNumber>
+  <ferc:LessorName id="f-223" contextRef="c-71">JANICE E BAKER</ferc:LessorName>
+  <ferc:OrderNumber id="f-224" contextRef="c-71" decimals="INF" unitRef="u-1">41</ferc:OrderNumber>
+  <ferc:LessorName id="f-225" contextRef="c-72">JANICE L HEDMAN</ferc:LessorName>
+  <ferc:OrderNumber id="f-226" contextRef="c-72" decimals="INF" unitRef="u-1">42</ferc:OrderNumber>
+  <ferc:LessorName id="f-227" contextRef="c-73">JEAN NICHOLS</ferc:LessorName>
+  <ferc:OrderNumber id="f-228" contextRef="c-73" decimals="INF" unitRef="u-1">43</ferc:OrderNumber>
+  <ferc:LessorName id="f-229" contextRef="c-74">JERED COTHREN</ferc:LessorName>
+  <ferc:OrderNumber id="f-230" contextRef="c-74" decimals="INF" unitRef="u-1">44</ferc:OrderNumber>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-231" contextRef="c-31" decimals="0" unitRef="u-2">33</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-232" contextRef="c-32" decimals="0" unitRef="u-2">1360</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-233" contextRef="c-33" decimals="0" unitRef="u-2">112</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-234" contextRef="c-34" decimals="0" unitRef="u-2">96</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-235" contextRef="c-35" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-236" contextRef="c-36" decimals="0" unitRef="u-2">200</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-237" contextRef="c-37" decimals="0" unitRef="u-2">160</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-238" contextRef="c-38" decimals="0" unitRef="u-2">299</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-239" contextRef="c-39" decimals="0" unitRef="u-2">112</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-240" contextRef="c-40" decimals="0" unitRef="u-2">70</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-241" contextRef="c-41" decimals="0" unitRef="u-2">461</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-242" contextRef="c-42" decimals="0" unitRef="u-2">1021</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-243" contextRef="c-43" decimals="0" unitRef="u-2">420</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-244" contextRef="c-44" decimals="0" unitRef="u-2">66</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-245" contextRef="c-45" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-246" contextRef="c-46" decimals="0" unitRef="u-2">1368</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-247" contextRef="c-47" decimals="0" unitRef="u-2">729</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-248" contextRef="c-48" decimals="0" unitRef="u-2">502</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-249" contextRef="c-49" decimals="0" unitRef="u-2">101</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-250" contextRef="c-50" decimals="0" unitRef="u-2">13</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-251" contextRef="c-51" decimals="0" unitRef="u-2">26</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-252" contextRef="c-52" decimals="0" unitRef="u-2">50</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-253" contextRef="c-53" decimals="0" unitRef="u-2">106</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-254" contextRef="c-54" decimals="0" unitRef="u-2">40</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-255" contextRef="c-55" decimals="0" unitRef="u-2">2718</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-256" contextRef="c-56" decimals="0" unitRef="u-2">399</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-257" contextRef="c-57" decimals="0" unitRef="u-2">250</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-258" contextRef="c-58" decimals="0" unitRef="u-2">1027</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-259" contextRef="c-59" decimals="0" unitRef="u-2">26</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-260" contextRef="c-60" decimals="0" unitRef="u-2">66</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-261" contextRef="c-61" decimals="0" unitRef="u-2">5200</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-262" contextRef="c-62" decimals="0" unitRef="u-2">50</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-263" contextRef="c-63" decimals="0" unitRef="u-2">26</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-264" contextRef="c-64" decimals="0" unitRef="u-2">189</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-265" contextRef="c-65" decimals="0" unitRef="u-2">26</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-266" contextRef="c-66" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-267" contextRef="c-67" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-268" contextRef="c-68" decimals="0" unitRef="u-2">112</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-269" contextRef="c-69" decimals="0" unitRef="u-2">299</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-270" contextRef="c-70" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-271" contextRef="c-71" decimals="0" unitRef="u-2">129</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-272" contextRef="c-72" decimals="0" unitRef="u-2">1600</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-273" contextRef="c-73" decimals="0" unitRef="u-2">33</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-274" contextRef="c-74" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:LessorName id="f-275" contextRef="c-75">JERRALD L GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-276" contextRef="c-75" decimals="INF" unitRef="u-1">44.001</ferc:OrderNumber>
+  <ferc:LessorName id="f-277" contextRef="c-76">JERRY COTHREN</ferc:LessorName>
+  <ferc:OrderNumber id="f-278" contextRef="c-76" decimals="INF" unitRef="u-1">44.002</ferc:OrderNumber>
+  <ferc:LessorName id="f-279" contextRef="c-77">JERYL M FUCHS</ferc:LessorName>
+  <ferc:OrderNumber id="f-280" contextRef="c-77" decimals="INF" unitRef="u-1">44.003</ferc:OrderNumber>
+  <ferc:LessorName id="f-281" contextRef="c-78">JESSICA STICKLEY</ferc:LessorName>
+  <ferc:OrderNumber id="f-282" contextRef="c-78" decimals="INF" unitRef="u-1">44.004</ferc:OrderNumber>
+  <ferc:LessorName id="f-283" contextRef="c-79">JILL E BEAUDRY</ferc:LessorName>
+  <ferc:OrderNumber id="f-284" contextRef="c-79" decimals="INF" unitRef="u-1">44.005</ferc:OrderNumber>
+  <ferc:LessorName id="f-285" contextRef="c-80">JOAN ELIZABETH CHAPPELL</ferc:LessorName>
+  <ferc:OrderNumber id="f-286" contextRef="c-80" decimals="INF" unitRef="u-1">44.006</ferc:OrderNumber>
+  <ferc:LessorName id="f-287" contextRef="c-81">JOHN A ALEXANDER</ferc:LessorName>
+  <ferc:OrderNumber id="f-288" contextRef="c-81" decimals="INF" unitRef="u-1">44.007</ferc:OrderNumber>
+  <ferc:LessorName id="f-289" contextRef="c-82">JOHN CHARLES PENNY</ferc:LessorName>
+  <ferc:OrderNumber id="f-290" contextRef="c-82" decimals="INF" unitRef="u-1">44.008</ferc:OrderNumber>
+  <ferc:LessorName id="f-291" contextRef="c-83">JOHN HARROLD</ferc:LessorName>
+  <ferc:OrderNumber id="f-292" contextRef="c-83" decimals="INF" unitRef="u-1">44.009</ferc:OrderNumber>
+  <ferc:LessorName id="f-293" contextRef="c-84">JOHN L SMITH</ferc:LessorName>
+  <ferc:OrderNumber id="f-294" contextRef="c-84" decimals="INF" unitRef="u-1">44.010</ferc:OrderNumber>
+  <ferc:LessorName id="f-295" contextRef="c-85">JOHN P GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-296" contextRef="c-85" decimals="INF" unitRef="u-1">44.011</ferc:OrderNumber>
+  <ferc:LessorName id="f-297" contextRef="c-86">JOHN ROBARGE</ferc:LessorName>
+  <ferc:OrderNumber id="f-298" contextRef="c-86" decimals="INF" unitRef="u-1">44.012</ferc:OrderNumber>
+  <ferc:LessorName id="f-299" contextRef="c-87">JOHN VANDERPOL</ferc:LessorName>
+  <ferc:OrderNumber id="f-300" contextRef="c-87" decimals="INF" unitRef="u-1">44.013</ferc:OrderNumber>
+  <ferc:LessorName id="f-301" contextRef="c-88">JOSEPH &amp; CORRINE SUBITCH</ferc:LessorName>
+  <ferc:OrderNumber id="f-302" contextRef="c-88" decimals="INF" unitRef="u-1">44.014</ferc:OrderNumber>
+  <ferc:LessorName id="f-303" contextRef="c-89">JOSEPH E BLASER</ferc:LessorName>
+  <ferc:OrderNumber id="f-304" contextRef="c-89" decimals="INF" unitRef="u-1">44.015</ferc:OrderNumber>
+  <ferc:LessorName id="f-305" contextRef="c-90">JOSEPH OSKARS ENBODY</ferc:LessorName>
+  <ferc:OrderNumber id="f-306" contextRef="c-90" decimals="INF" unitRef="u-1">44.016</ferc:OrderNumber>
+  <ferc:LessorName id="f-307" contextRef="c-91">JUDITH C CASTLE</ferc:LessorName>
+  <ferc:OrderNumber id="f-308" contextRef="c-91" decimals="INF" unitRef="u-1">44.017</ferc:OrderNumber>
+  <ferc:LessorName id="f-309" contextRef="c-92">JULIE ANN SMACIARZ</ferc:LessorName>
+  <ferc:OrderNumber id="f-310" contextRef="c-92" decimals="INF" unitRef="u-1">44.018</ferc:OrderNumber>
+  <ferc:LessorName id="f-311" contextRef="c-93">KAREN BRYAN</ferc:LessorName>
+  <ferc:OrderNumber id="f-312" contextRef="c-93" decimals="INF" unitRef="u-1">44.019</ferc:OrderNumber>
+  <ferc:LessorName id="f-313" contextRef="c-94">KAREN SIKEL</ferc:LessorName>
+  <ferc:OrderNumber id="f-314" contextRef="c-94" decimals="INF" unitRef="u-1">44.020</ferc:OrderNumber>
+  <ferc:LessorName id="f-315" contextRef="c-95">KASEY STUDEMAN</ferc:LessorName>
+  <ferc:OrderNumber id="f-316" contextRef="c-95" decimals="INF" unitRef="u-1">44.021</ferc:OrderNumber>
+  <ferc:LessorName id="f-317" contextRef="c-96">KIMBERLY H INGLIS</ferc:LessorName>
+  <ferc:OrderNumber id="f-318" contextRef="c-96" decimals="INF" unitRef="u-1">44.022</ferc:OrderNumber>
+  <ferc:LessorName id="f-319" contextRef="c-97">LANDRA L HARRIS</ferc:LessorName>
+  <ferc:OrderNumber id="f-320" contextRef="c-97" decimals="INF" unitRef="u-1">44.023</ferc:OrderNumber>
+  <ferc:LessorName id="f-321" contextRef="c-98">LAURA L MCDANIEL</ferc:LessorName>
+  <ferc:OrderNumber id="f-322" contextRef="c-98" decimals="INF" unitRef="u-1">44.024</ferc:OrderNumber>
+  <ferc:LessorName id="f-323" contextRef="c-99">LESLIE M FOX</ferc:LessorName>
+  <ferc:OrderNumber id="f-324" contextRef="c-99" decimals="INF" unitRef="u-1">44.025</ferc:OrderNumber>
+  <ferc:LessorName id="f-325" contextRef="c-100">LEVI MCKINNELL</ferc:LessorName>
+  <ferc:OrderNumber id="f-326" contextRef="c-100" decimals="INF" unitRef="u-1">44.026</ferc:OrderNumber>
+  <ferc:LessorName id="f-327" contextRef="c-101">LEWIS COUNTY</ferc:LessorName>
+  <ferc:OrderNumber id="f-328" contextRef="c-101" decimals="INF" unitRef="u-1">44.027</ferc:OrderNumber>
+  <ferc:LessorName id="f-329" contextRef="c-102">LINDA S PATTON</ferc:LessorName>
+  <ferc:OrderNumber id="f-330" contextRef="c-102" decimals="INF" unitRef="u-1">44.028</ferc:OrderNumber>
+  <ferc:LessorName id="f-331" contextRef="c-103">LOGGERS WORLD PUBLICATIONS</ferc:LessorName>
+  <ferc:OrderNumber id="f-332" contextRef="c-103" decimals="INF" unitRef="u-1">44.029</ferc:OrderNumber>
+  <ferc:LessorName id="f-333" contextRef="c-104">LOREN STEVESON</ferc:LessorName>
+  <ferc:OrderNumber id="f-334" contextRef="c-104" decimals="INF" unitRef="u-1">44.030</ferc:OrderNumber>
+  <ferc:LessorName id="f-335" contextRef="c-105">MANKE LUMBER COMPANY INC</ferc:LessorName>
+  <ferc:OrderNumber id="f-336" contextRef="c-105" decimals="INF" unitRef="u-1">44.031</ferc:OrderNumber>
+  <ferc:LessorName id="f-337" contextRef="c-106">MARY ANN HASSLER</ferc:LessorName>
+  <ferc:OrderNumber id="f-338" contextRef="c-106" decimals="INF" unitRef="u-1">44.032</ferc:OrderNumber>
+  <ferc:LessorName id="f-339" contextRef="c-107">MARY MOSER</ferc:LessorName>
+  <ferc:OrderNumber id="f-340" contextRef="c-107" decimals="INF" unitRef="u-1">44.033</ferc:OrderNumber>
+  <ferc:LessorName id="f-341" contextRef="c-108">MARY P BROCKMAN</ferc:LessorName>
+  <ferc:OrderNumber id="f-342" contextRef="c-108" decimals="INF" unitRef="u-1">44.034</ferc:OrderNumber>
+  <ferc:LessorName id="f-343" contextRef="c-109">MATTHEW SMITH</ferc:LessorName>
+  <ferc:OrderNumber id="f-344" contextRef="c-109" decimals="INF" unitRef="u-1">44.035</ferc:OrderNumber>
+  <ferc:LessorName id="f-345" contextRef="c-110">MICHAEL J ALEXANDER</ferc:LessorName>
+  <ferc:OrderNumber id="f-346" contextRef="c-110" decimals="INF" unitRef="u-1">44.036</ferc:OrderNumber>
+  <ferc:LessorName id="f-347" contextRef="c-111">MIKE MOUM</ferc:LessorName>
+  <ferc:OrderNumber id="f-348" contextRef="c-111" decimals="INF" unitRef="u-1">44.037</ferc:OrderNumber>
+  <ferc:LessorName id="f-349" contextRef="c-112">NATHAN GERALD JACKINS</ferc:LessorName>
+  <ferc:OrderNumber id="f-350" contextRef="c-112" decimals="INF" unitRef="u-1">44.038</ferc:OrderNumber>
+  <ferc:LessorName id="f-351" contextRef="c-113">NICHOLE HINDS</ferc:LessorName>
+  <ferc:OrderNumber id="f-352" contextRef="c-113" decimals="INF" unitRef="u-1">44.039</ferc:OrderNumber>
+  <ferc:LessorName id="f-353" contextRef="c-114">NORMAN SELCHERT</ferc:LessorName>
+  <ferc:OrderNumber id="f-354" contextRef="c-114" decimals="INF" unitRef="u-1">44.040</ferc:OrderNumber>
+  <ferc:LessorName id="f-355" contextRef="c-115">PATRICIA HANNAM</ferc:LessorName>
+  <ferc:OrderNumber id="f-356" contextRef="c-115" decimals="INF" unitRef="u-1">44.041</ferc:OrderNumber>
+  <ferc:LessorName id="f-357" contextRef="c-116">PATTI D BRAUNBERGER</ferc:LessorName>
+  <ferc:OrderNumber id="f-358" contextRef="c-116" decimals="INF" unitRef="u-1">44.042</ferc:OrderNumber>
+  <ferc:LessorName id="f-359" contextRef="c-117">RAINIER EVERGREEN INC</ferc:LessorName>
+  <ferc:OrderNumber id="f-360" contextRef="c-117" decimals="INF" unitRef="u-1">44.043</ferc:OrderNumber>
+  <ferc:LessorName id="f-361" contextRef="c-118">RAYMOND G ALLBRITTON</ferc:LessorName>
+  <ferc:OrderNumber id="f-362" contextRef="c-118" decimals="INF" unitRef="u-1">44.044</ferc:OrderNumber>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-363" contextRef="c-75" decimals="0" unitRef="u-2">729</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-364" contextRef="c-76" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-365" contextRef="c-77" decimals="0" unitRef="u-2">50</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-366" contextRef="c-78" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-367" contextRef="c-79" decimals="0" unitRef="u-2">50</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-368" contextRef="c-80" decimals="0" unitRef="u-2">350</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-369" contextRef="c-81" decimals="0" unitRef="u-2">112</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-370" contextRef="c-82" decimals="0" unitRef="u-2">2061</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-371" contextRef="c-83" decimals="0" unitRef="u-2">800</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-372" contextRef="c-84" decimals="0" unitRef="u-2">160</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-373" contextRef="c-85" decimals="0" unitRef="u-2">13</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-374" contextRef="c-86" decimals="0" unitRef="u-2">243</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-375" contextRef="c-87" decimals="0" unitRef="u-2">-53</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-376" contextRef="c-88" decimals="0" unitRef="u-2">114</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-377" contextRef="c-89" decimals="0" unitRef="u-2">399</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-378" contextRef="c-90" decimals="0" unitRef="u-2">887</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-379" contextRef="c-91" decimals="0" unitRef="u-2">50</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-380" contextRef="c-92" decimals="0" unitRef="u-2">399</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-381" contextRef="c-93" decimals="0" unitRef="u-2">299</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-382" contextRef="c-94" decimals="0" unitRef="u-2">44</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-383" contextRef="c-95" decimals="0" unitRef="u-2">805</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-384" contextRef="c-96" decimals="0" unitRef="u-2">127</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-385" contextRef="c-97" decimals="0" unitRef="u-2">160</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-386" contextRef="c-98" decimals="0" unitRef="u-2">133</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-387" contextRef="c-99" decimals="0" unitRef="u-2">350</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-388" contextRef="c-100" decimals="0" unitRef="u-2">200</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-389" contextRef="c-101" decimals="0" unitRef="u-2">345</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-390" contextRef="c-102" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-391" contextRef="c-103" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-392" contextRef="c-104" decimals="0" unitRef="u-2">268</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-393" contextRef="c-105" decimals="0" unitRef="u-2">1020</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-394" contextRef="c-106" decimals="0" unitRef="u-2">1197</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-395" contextRef="c-107" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-396" contextRef="c-108" decimals="0" unitRef="u-2">1039</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-397" contextRef="c-109" decimals="0" unitRef="u-2">160</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-398" contextRef="c-110" decimals="0" unitRef="u-2">112</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-399" contextRef="c-111" decimals="0" unitRef="u-2">10</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-400" contextRef="c-112" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-401" contextRef="c-113" decimals="0" unitRef="u-2">263</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-402" contextRef="c-114" decimals="0" unitRef="u-2">670</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-403" contextRef="c-115" decimals="0" unitRef="u-2">1200</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-404" contextRef="c-116" decimals="0" unitRef="u-2">1160</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-405" contextRef="c-117" decimals="0" unitRef="u-2">694</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-406" contextRef="c-118" decimals="0" unitRef="u-2">50</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:LessorName id="f-407" contextRef="c-119">RICHARD L NOBLE</ferc:LessorName>
+  <ferc:OrderNumber id="f-408" contextRef="c-119" decimals="INF" unitRef="u-1">44.045</ferc:OrderNumber>
+  <ferc:LessorName id="f-409" contextRef="c-120">ROB AND REBECCA MCELHANEY</ferc:LessorName>
+  <ferc:OrderNumber id="f-410" contextRef="c-120" decimals="INF" unitRef="u-1">44.046</ferc:OrderNumber>
+  <ferc:LessorName id="f-411" contextRef="c-121">ROBERT L CROCKER</ferc:LessorName>
+  <ferc:OrderNumber id="f-412" contextRef="c-121" decimals="INF" unitRef="u-1">44.047</ferc:OrderNumber>
+  <ferc:LessorName id="f-413" contextRef="c-122">ROBERT W BAKER</ferc:LessorName>
+  <ferc:OrderNumber id="f-414" contextRef="c-122" decimals="INF" unitRef="u-1">44.048</ferc:OrderNumber>
+  <ferc:LessorName id="f-415" contextRef="c-123">ROBERTA STUTZ</ferc:LessorName>
+  <ferc:OrderNumber id="f-416" contextRef="c-123" decimals="INF" unitRef="u-1">44.049</ferc:OrderNumber>
+  <ferc:LessorName id="f-417" contextRef="c-124">RONALD A GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-418" contextRef="c-124" decimals="INF" unitRef="u-1">44.050</ferc:OrderNumber>
+  <ferc:LessorName id="f-419" contextRef="c-125">RONALD ROBERT RUMSEY</ferc:LessorName>
+  <ferc:OrderNumber id="f-420" contextRef="c-125" decimals="INF" unitRef="u-1">44.051</ferc:OrderNumber>
+  <ferc:LessorName id="f-421" contextRef="c-126">ROXANNE CROCKER</ferc:LessorName>
+  <ferc:OrderNumber id="f-422" contextRef="c-126" decimals="INF" unitRef="u-1">44.052</ferc:OrderNumber>
+  <ferc:LessorName id="f-423" contextRef="c-127">ROY A GUTSCHMIDT</ferc:LessorName>
+  <ferc:OrderNumber id="f-424" contextRef="c-127" decimals="INF" unitRef="u-1">44.053</ferc:OrderNumber>
+  <ferc:LessorName id="f-425" contextRef="c-128">SCOTT A GUENTHER</ferc:LessorName>
+  <ferc:OrderNumber id="f-426" contextRef="c-128" decimals="INF" unitRef="u-1">44.054</ferc:OrderNumber>
+  <ferc:LessorName id="f-427" contextRef="c-129">SHARON A DAILEY</ferc:LessorName>
+  <ferc:OrderNumber id="f-428" contextRef="c-129" decimals="INF" unitRef="u-1">44.055</ferc:OrderNumber>
+  <ferc:LessorName id="f-429" contextRef="c-130">SHAWN M SMITH</ferc:LessorName>
+  <ferc:OrderNumber id="f-430" contextRef="c-130" decimals="INF" unitRef="u-1">44.056</ferc:OrderNumber>
+  <ferc:LessorName id="f-431" contextRef="c-131">SHIRLEY BENSON PAULS</ferc:LessorName>
+  <ferc:OrderNumber id="f-432" contextRef="c-131" decimals="INF" unitRef="u-1">44.057</ferc:OrderNumber>
+  <ferc:LessorName id="f-433" contextRef="c-132">STEPHEN DUNHAM</ferc:LessorName>
+  <ferc:OrderNumber id="f-434" contextRef="c-132" decimals="INF" unitRef="u-1">44.058</ferc:OrderNumber>
+  <ferc:LessorName id="f-435" contextRef="c-133">SURIYA KIM PHROMNOPAVONG</ferc:LessorName>
+  <ferc:OrderNumber id="f-436" contextRef="c-133" decimals="INF" unitRef="u-1">44.059</ferc:OrderNumber>
+  <ferc:LessorName id="f-437" contextRef="c-134">TAMMY LYNN CARLSON</ferc:LessorName>
+  <ferc:OrderNumber id="f-438" contextRef="c-134" decimals="INF" unitRef="u-1">44.060</ferc:OrderNumber>
+  <ferc:LessorName id="f-439" contextRef="c-135">TORY LYNN COLEMAN</ferc:LessorName>
+  <ferc:OrderNumber id="f-440" contextRef="c-135" decimals="INF" unitRef="u-1">44.061</ferc:OrderNumber>
+  <ferc:LessorName id="f-441" contextRef="c-136">VICTORIA KENNEDY</ferc:LessorName>
+  <ferc:OrderNumber id="f-442" contextRef="c-136" decimals="INF" unitRef="u-1">44.062</ferc:OrderNumber>
+  <ferc:LessorName id="f-443" contextRef="c-137">WA STATE DEPT OF NATURAL RESOURCES</ferc:LessorName>
+  <ferc:OrderNumber id="f-444" contextRef="c-137" decimals="INF" unitRef="u-1">44.063</ferc:OrderNumber>
+  <ferc:LessorName id="f-445" contextRef="c-138">WA STATE DEPT OF TRANSPORTATION</ferc:LessorName>
+  <ferc:OrderNumber id="f-446" contextRef="c-138" decimals="INF" unitRef="u-1">44.064</ferc:OrderNumber>
+  <ferc:LessorName id="f-447" contextRef="c-139">WILLIAM E EVANS</ferc:LessorName>
+  <ferc:OrderNumber id="f-448" contextRef="c-139" decimals="INF" unitRef="u-1">44.065</ferc:OrderNumber>
+  <ferc:LessorName id="f-449" contextRef="c-140">WILLIAM E LAMBERT</ferc:LessorName>
+  <ferc:OrderNumber id="f-450" contextRef="c-140" decimals="INF" unitRef="u-1">44.066</ferc:OrderNumber>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-451" contextRef="c-119" decimals="0" unitRef="u-2">33</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-452" contextRef="c-120" decimals="0" unitRef="u-2">500</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-453" contextRef="c-121" decimals="0" unitRef="u-2">200</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-454" contextRef="c-122" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-455" contextRef="c-123" decimals="0" unitRef="u-2">33</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-456" contextRef="c-124" decimals="0" unitRef="u-2">729</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-457" contextRef="c-125" decimals="0" unitRef="u-2">149</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-458" contextRef="c-126" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-459" contextRef="c-127" decimals="0" unitRef="u-2">198</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-460" contextRef="c-128" decimals="0" unitRef="u-2">729</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-461" contextRef="c-129" decimals="0" unitRef="u-2">8</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-462" contextRef="c-130" decimals="0" unitRef="u-2">160</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-463" contextRef="c-131" decimals="0" unitRef="u-2">132</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-464" contextRef="c-132" decimals="0" unitRef="u-2">510</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-465" contextRef="c-133" decimals="0" unitRef="u-2">678</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-466" contextRef="c-134" decimals="0" unitRef="u-2">1197</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-467" contextRef="c-135" decimals="0" unitRef="u-2">500</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-468" contextRef="c-136" decimals="0" unitRef="u-2">299</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-469" contextRef="c-137" decimals="0" unitRef="u-2">420</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-470" contextRef="c-138" decimals="0" unitRef="u-2">4684</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-471" contextRef="c-139" decimals="0" unitRef="u-2">100</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-472" contextRef="c-140" decimals="0" unitRef="u-2">200</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:GasPropertyAndCapacityLeasePayment id="f-473" contextRef="c-1" decimals="0" unitRef="u-2">49024</ferc:GasPropertyAndCapacityLeasePayment>
+  <ferc:OtherAccountsDescription id="f-474" contextRef="c-141">Other Clearing (Specify) (footnote details):</ferc:OtherAccountsDescription>
+  <ferc:BookCostOfRetiredPlant id="f-475" contextRef="c-24" decimals="0" unitRef="u-2">-9784806</ferc:BookCostOfRetiredPlant>
+  <ferc:BookCostOfRetiredPlant id="f-476" contextRef="c-142" decimals="0" unitRef="u-2">-9784806</ferc:BookCostOfRetiredPlant>
+  <ferc:NetChargesForRetiredPlant id="f-477" contextRef="c-24" decimals="0" unitRef="u-2">-9784806</ferc:NetChargesForRetiredPlant>
+  <ferc:NetChargesForRetiredPlant id="f-478" contextRef="c-142" decimals="0" unitRef="u-2">-9784806</ferc:NetChargesForRetiredPlant>
+  <ferc:OtherAdjustmentsToAccumulatedDepreciationDescription id="f-479" contextRef="c-143">Other Debit or Credit Items (Describe) (footnote details):</ferc:OtherAdjustmentsToAccumulatedDepreciationDescription>
+  <ferc:AccumulatedProvisionForDepreciationOfGasUtilityPlant id="f-480" contextRef="c-144" decimals="0" unitRef="u-2">9784806</ferc:AccumulatedProvisionForDepreciationOfGasUtilityPlant>
+  <ferc:AccumulatedProvisionForDepreciationOfGasUtilityPlant id="f-481" contextRef="c-145" decimals="0" unitRef="u-2">9784806</ferc:AccumulatedProvisionForDepreciationOfGasUtilityPlant>
+  <ferc:OperationSupervisionAndEngineeringUndergroundStorageExpenses id="f-482" contextRef="c-1" decimals="0" unitRef="u-2">1341960</ferc:OperationSupervisionAndEngineeringUndergroundStorageExpenses>
+  <ferc:OperationSupervisionAndEngineeringUndergroundStorageExpenses id="f-483" contextRef="c-23" decimals="0" unitRef="u-2">1036858</ferc:OperationSupervisionAndEngineeringUndergroundStorageExpenses>
+  <ferc:WellsExpenses id="f-484" contextRef="c-1" decimals="0" unitRef="u-2">45135</ferc:WellsExpenses>
+  <ferc:WellsExpenses id="f-485" contextRef="c-23" decimals="0" unitRef="u-2">35020</ferc:WellsExpenses>
+  <ferc:LinesExpenses id="f-486" contextRef="c-1" decimals="0" unitRef="u-2">56519</ferc:LinesExpenses>
+  <ferc:LinesExpenses id="f-487" contextRef="c-23" decimals="0" unitRef="u-2">73333</ferc:LinesExpenses>
+  <ferc:CompressorStationExpenses id="f-488" contextRef="c-1" decimals="0" unitRef="u-2">1309988</ferc:CompressorStationExpenses>
+  <ferc:CompressorStationExpenses id="f-489" contextRef="c-23" decimals="0" unitRef="u-2">1177268</ferc:CompressorStationExpenses>
+  <ferc:CompressorStationFuelAndPowerUndergroundStorageExpenses id="f-490" contextRef="c-1" decimals="0" unitRef="u-2">222669</ferc:CompressorStationFuelAndPowerUndergroundStorageExpenses>
+  <ferc:CompressorStationFuelAndPowerUndergroundStorageExpenses id="f-491" contextRef="c-23" decimals="0" unitRef="u-2">208464</ferc:CompressorStationFuelAndPowerUndergroundStorageExpenses>
+  <ferc:MeasuringAndRegulatingStationExpenses id="f-492" contextRef="c-1" decimals="0" unitRef="u-2">9498</ferc:MeasuringAndRegulatingStationExpenses>
+  <ferc:PurificationExpensesUndergroundStorage id="f-493" contextRef="c-1" decimals="0" unitRef="u-2">29385</ferc:PurificationExpensesUndergroundStorage>
+  <ferc:PurificationExpensesUndergroundStorage id="f-494" contextRef="c-23" decimals="0" unitRef="u-2">6778</ferc:PurificationExpensesUndergroundStorage>
+  <ferc:OtherExpensesUndergroundStorage id="f-495" contextRef="c-1" decimals="0" unitRef="u-2">968712</ferc:OtherExpensesUndergroundStorage>
+  <ferc:OtherExpensesUndergroundStorage id="f-496" contextRef="c-23" decimals="0" unitRef="u-2">207438</ferc:OtherExpensesUndergroundStorage>
+  <ferc:StorageWellRoyalties id="f-497" contextRef="c-1" decimals="0" unitRef="u-2">55972</ferc:StorageWellRoyalties>
+  <ferc:StorageWellRoyalties id="f-498" contextRef="c-23" decimals="0" unitRef="u-2">63051</ferc:StorageWellRoyalties>
+  <ferc:RentsUndergroundStorageExpenses id="f-499" contextRef="c-1" decimals="0" unitRef="u-2">-18223</ferc:RentsUndergroundStorageExpenses>
+  <ferc:RentsUndergroundStorageExpenses id="f-500" contextRef="c-23" decimals="0" unitRef="u-2">-31374</ferc:RentsUndergroundStorageExpenses>
+  <ferc:UndergroundStorageOperationExpenses id="f-501" contextRef="c-1" decimals="0" unitRef="u-2">4021615</ferc:UndergroundStorageOperationExpenses>
+  <ferc:UndergroundStorageOperationExpenses id="f-502" contextRef="c-23" decimals="0" unitRef="u-2">2776836</ferc:UndergroundStorageOperationExpenses>
+  <ferc:MaintenanceSupervisionAndEngineeringUndergroundStorageExpenses id="f-503" contextRef="c-1" decimals="0" unitRef="u-2">906967</ferc:MaintenanceSupervisionAndEngineeringUndergroundStorageExpenses>
+  <ferc:MaintenanceSupervisionAndEngineeringUndergroundStorageExpenses id="f-504" contextRef="c-23" decimals="0" unitRef="u-2">862463</ferc:MaintenanceSupervisionAndEngineeringUndergroundStorageExpenses>
+  <ferc:MaintenanceOfStructuresAndImprovementsUndergroundStorageExpenses id="f-505" contextRef="c-1" decimals="0" unitRef="u-2">171723</ferc:MaintenanceOfStructuresAndImprovementsUndergroundStorageExpenses>
+  <ferc:MaintenanceOfStructuresAndImprovementsUndergroundStorageExpenses id="f-506" contextRef="c-23" decimals="0" unitRef="u-2">348351</ferc:MaintenanceOfStructuresAndImprovementsUndergroundStorageExpenses>
+  <ferc:MaintenanceOfReservoirsAndWells id="f-507" contextRef="c-1" decimals="0" unitRef="u-2">1357352</ferc:MaintenanceOfReservoirsAndWells>
+  <ferc:MaintenanceOfReservoirsAndWells id="f-508" contextRef="c-23" decimals="0" unitRef="u-2">3784451</ferc:MaintenanceOfReservoirsAndWells>
+  <ferc:MaintenanceOfLines id="f-509" contextRef="c-1" decimals="0" unitRef="u-2">199320</ferc:MaintenanceOfLines>
+  <ferc:MaintenanceOfLines id="f-510" contextRef="c-23" decimals="0" unitRef="u-2">166452</ferc:MaintenanceOfLines>
+  <ferc:MaintenanceOfCompressorStationEquipmentUndergroundStorageExpenses id="f-511" contextRef="c-1" decimals="0" unitRef="u-2">2348792</ferc:MaintenanceOfCompressorStationEquipmentUndergroundStorageExpenses>
+  <ferc:MaintenanceOfCompressorStationEquipmentUndergroundStorageExpenses id="f-512" contextRef="c-23" decimals="0" unitRef="u-2">2503544</ferc:MaintenanceOfCompressorStationEquipmentUndergroundStorageExpenses>
+  <ferc:MaintenanceOfMeasuringAndRegulatingStationEquipmentUndergroundStorageExpenses id="f-513" contextRef="c-1" decimals="0" unitRef="u-2">61026</ferc:MaintenanceOfMeasuringAndRegulatingStationEquipmentUndergroundStorageExpenses>
+  <ferc:MaintenanceOfMeasuringAndRegulatingStationEquipmentUndergroundStorageExpenses id="f-514" contextRef="c-23" decimals="0" unitRef="u-2">16297</ferc:MaintenanceOfMeasuringAndRegulatingStationEquipmentUndergroundStorageExpenses>
+  <ferc:MaintenanceOfPurificationEquipmentUndergroundStorageExpenses id="f-515" contextRef="c-1" decimals="0" unitRef="u-2">49715</ferc:MaintenanceOfPurificationEquipmentUndergroundStorageExpenses>
+  <ferc:MaintenanceOfPurificationEquipmentUndergroundStorageExpenses id="f-516" contextRef="c-23" decimals="0" unitRef="u-2">48076</ferc:MaintenanceOfPurificationEquipmentUndergroundStorageExpenses>
+  <ferc:MaintenanceOfOtherEquipmentUndergroundStorageExpenses id="f-517" contextRef="c-1" decimals="0" unitRef="u-2">32500</ferc:MaintenanceOfOtherEquipmentUndergroundStorageExpenses>
+  <ferc:MaintenanceOfOtherEquipmentUndergroundStorageExpenses id="f-518" contextRef="c-23" decimals="0" unitRef="u-2">40654</ferc:MaintenanceOfOtherEquipmentUndergroundStorageExpenses>
+  <ferc:UndergroundStorageMaintenanceExpenses id="f-519" contextRef="c-1" decimals="0" unitRef="u-2">5127395</ferc:UndergroundStorageMaintenanceExpenses>
+  <ferc:UndergroundStorageMaintenanceExpenses id="f-520" contextRef="c-23" decimals="0" unitRef="u-2">7770288</ferc:UndergroundStorageMaintenanceExpenses>
+  <ferc:UndergroundStorageExpenses id="f-521" contextRef="c-1" decimals="0" unitRef="u-2">9149010</ferc:UndergroundStorageExpenses>
+  <ferc:UndergroundStorageExpenses id="f-522" contextRef="c-23" decimals="0" unitRef="u-2">10547124</ferc:UndergroundStorageExpenses>
+  <ferc:NaturalGasStorageExpense id="f-523" contextRef="c-1" decimals="0" unitRef="u-2">9149010</ferc:NaturalGasStorageExpense>
+  <ferc:NaturalGasStorageExpense id="f-524" contextRef="c-23" decimals="0" unitRef="u-2">10547124</ferc:NaturalGasStorageExpense>
+  <ferc:AdministrativeAndGeneralSalaries id="f-525" contextRef="c-1" decimals="0" unitRef="u-2">72191</ferc:AdministrativeAndGeneralSalaries>
+  <ferc:AdministrativeAndGeneralSalaries id="f-526" contextRef="c-23" decimals="0" unitRef="u-2">62003</ferc:AdministrativeAndGeneralSalaries>
+  <ferc:PropertyInsurance id="f-527" contextRef="c-1" decimals="0" unitRef="u-2">74503</ferc:PropertyInsurance>
+  <ferc:PropertyInsurance id="f-528" contextRef="c-23" decimals="0" unitRef="u-2">81451</ferc:PropertyInsurance>
+  <ferc:AdministrativeAndGeneralOperationExpense id="f-529" contextRef="c-1" decimals="0" unitRef="u-2">146694</ferc:AdministrativeAndGeneralOperationExpense>
+  <ferc:AdministrativeAndGeneralOperationExpense id="f-530" contextRef="c-23" decimals="0" unitRef="u-2">143454</ferc:AdministrativeAndGeneralOperationExpense>
+  <ferc:AdministrativeAndGeneralExpenses id="f-531" contextRef="c-1" decimals="0" unitRef="u-2">146694</ferc:AdministrativeAndGeneralExpenses>
+  <ferc:AdministrativeAndGeneralExpenses id="f-532" contextRef="c-23" decimals="0" unitRef="u-2">143454</ferc:AdministrativeAndGeneralExpenses>
+  <ferc:OperationsAndMaintenanceExpensesGas id="f-533" contextRef="c-1" decimals="0" unitRef="u-2">9295704</ferc:OperationsAndMaintenanceExpensesGas>
+  <ferc:OperationsAndMaintenanceExpensesGas id="f-534" contextRef="c-23" decimals="0" unitRef="u-2">10690578</ferc:OperationsAndMaintenanceExpensesGas>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-535" contextRef="c-146">EVERGREEN PIPELINE INCORPORTED</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-536" contextRef="c-147">SNOWS OIL FIELD SERVICE INC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-537" contextRef="c-146" decimals="INF" unitRef="u-1">1</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-538" contextRef="c-147" decimals="INF" unitRef="u-1">2</ferc:OrderNumber>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-539" contextRef="c-148">TIBERIUS ENERGY SERVICES LLC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-540" contextRef="c-148" decimals="INF" unitRef="u-1">3</ferc:OrderNumber>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-541" contextRef="c-149">BLUEHOOK TOOL COMPANY LLC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-542" contextRef="c-149" decimals="INF" unitRef="u-1">4</ferc:OrderNumber>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-543" contextRef="c-150">THE LISBON GROUP LLC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-544" contextRef="c-150" decimals="INF" unitRef="u-1">5</ferc:OrderNumber>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-545" contextRef="c-151">PORTLAND ENGINEERING INC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-546" contextRef="c-151" decimals="INF" unitRef="u-1">6</ferc:OrderNumber>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-547" contextRef="c-152">BOP SOLUTIONS LLC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-548" contextRef="c-152" decimals="INF" unitRef="u-1">7</ferc:OrderNumber>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-549" contextRef="c-153">SOLAR TURBINES INC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-550" contextRef="c-153" decimals="INF" unitRef="u-1">8</ferc:OrderNumber>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-551" contextRef="c-154">BAKER HUGHES OILFIELD OPERATIONS IN</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-552" contextRef="c-154" decimals="INF" unitRef="u-1">9</ferc:OrderNumber>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-553" contextRef="c-155">TRAVERS ELECTRIC INC</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-554" contextRef="c-155" decimals="INF" unitRef="u-1">10</ferc:OrderNumber>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-555" contextRef="c-156">OTHER</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-556" contextRef="c-156" decimals="INF" unitRef="u-1">11</ferc:OrderNumber>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-557" contextRef="c-146" decimals="0" unitRef="u-2">1289525</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-558" contextRef="c-147" decimals="0" unitRef="u-2">1283731</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-559" contextRef="c-148" decimals="0" unitRef="u-2">827140</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-560" contextRef="c-149" decimals="0" unitRef="u-2">724291</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-561" contextRef="c-150" decimals="0" unitRef="u-2">720013</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-562" contextRef="c-151" decimals="0" unitRef="u-2">715198</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-563" contextRef="c-152" decimals="0" unitRef="u-2">500895</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-564" contextRef="c-153" decimals="0" unitRef="u-2">472188</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-565" contextRef="c-154" decimals="0" unitRef="u-2">263307</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-566" contextRef="c-155" decimals="0" unitRef="u-2">251528</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-567" contextRef="c-156" decimals="0" unitRef="u-2">939844</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices id="f-568" contextRef="c-1" decimals="0" unitRef="u-2">7987660</ferc:ChargesForOutsideProfessionalAndOtherConsultativeServices>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityOtherGasWithdrawnFromStorage id="f-569" contextRef="c-157" decimals="0" unitRef="u-3">28425314</ferc:QuantityOfNaturalGasReceivedByUtilityOtherGasWithdrawnFromStorage>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityOtherGasWithdrawnFromStorage id="f-570" contextRef="c-158" decimals="0" unitRef="u-3">6943264</ferc:QuantityOfNaturalGasReceivedByUtilityOtherGasWithdrawnFromStorage>
+  <ferc:QuantityOfNaturalGasReceivedByUtility id="f-571" contextRef="c-157" decimals="0" unitRef="u-3">28425314</ferc:QuantityOfNaturalGasReceivedByUtility>
+  <ferc:QuantityOfNaturalGasReceivedByUtility id="f-572" contextRef="c-158" decimals="0" unitRef="u-3">6943264</ferc:QuantityOfNaturalGasReceivedByUtility>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityOtherGasDeliveredToStorage id="f-573" contextRef="c-157" decimals="0" unitRef="u-3">27408064</ferc:QuantityOfNaturalGasDeliveredByUtilityOtherGasDeliveredToStorage>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityOtherGasDeliveredToStorage id="f-574" contextRef="c-158" decimals="0" unitRef="u-3">4992706</ferc:QuantityOfNaturalGasDeliveredByUtilityOtherGasDeliveredToStorage>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityGasUsedForCompressorStationFuel id="f-575" contextRef="c-157" decimals="0" unitRef="u-3">120976</ferc:QuantityOfNaturalGasDeliveredByUtilityGasUsedForCompressorStationFuel>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityGasUsedForCompressorStationFuel id="f-576" contextRef="c-158" decimals="0" unitRef="u-3">15793</ferc:QuantityOfNaturalGasDeliveredByUtilityGasUsedForCompressorStationFuel>
+  <ferc:QuantityOfNaturalGasDeliveredByUtility id="f-577" contextRef="c-157" decimals="0" unitRef="u-3">27529040</ferc:QuantityOfNaturalGasDeliveredByUtility>
+  <ferc:QuantityOfNaturalGasDeliveredByUtility id="f-578" contextRef="c-158" decimals="0" unitRef="u-3">5008499</ferc:QuantityOfNaturalGasDeliveredByUtility>
+  <ferc:DeliveriesGasLossesAndUnaccountedForGasAccount id="f-579" contextRef="c-157" decimals="0" unitRef="u-3">27529040</ferc:DeliveriesGasLossesAndUnaccountedForGasAccount>
+  <ferc:DeliveriesGasLossesAndUnaccountedForGasAccount id="f-580" contextRef="c-158" decimals="0" unitRef="u-3">5008499</ferc:DeliveriesGasLossesAndUnaccountedForGasAccount>
+  <ferc:UnappropriatedRetainedEarnings id="f-581" contextRef="c-22" decimals="0" unitRef="u-2">0</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings id="f-582" contextRef="c-159" decimals="0" unitRef="u-2">0</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings id="f-583" contextRef="c-21" decimals="0" unitRef="u-2">0</ferc:UnappropriatedRetainedEarnings>
+  <ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCreditsDescription id="f-584" contextRef="c-160">Other Changes (Explain)</ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCreditsDescription>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTax id="f-585" contextRef="c-161">Other (Define)</ferc:DescriptionOfAccumulatedDeferredIncomeTax>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTax id="f-586" contextRef="c-162">Other (Specify)</ferc:DescriptionOfAccumulatedDeferredIncomeTax>
+  <ferc:LongTermDebtOutstanding id="f-587" contextRef="c-21" decimals="0" unitRef="u-2">0</ferc:LongTermDebtOutstanding>
+  <ferc:InterestOnLongTermDebt id="f-588" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:InterestOnLongTermDebt>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty id="f-589" contextRef="c-161">Other (Define)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty>
+  <ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfDebitedAccountNumber id="f-590" contextRef="c-163">&#8212;</ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfDebitedAccountNumber>
+  <ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfCreditedAccountNumber id="f-591" contextRef="c-163">&#8212;</ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfCreditedAccountNumber>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty id="f-592" contextRef="c-162">Other (Specify)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty>
+  <ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfDebitedAccountNumber id="f-593" contextRef="c-1">&#8212;</ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfDebitedAccountNumber>
+  <ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfCreditedAccountNumber id="f-594" contextRef="c-1">&#8212;</ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfCreditedAccountNumber>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther id="f-595" contextRef="c-161">Other (Define)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther id="f-596" contextRef="c-162">Other (Specify)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther>
+  <ferc:DescriptionOfTransaction id="f-597" contextRef="c-164">Other revenues (Specify):</ferc:DescriptionOfTransaction>
+  <ferc:DescriptionOfEmployeePensionsAndBenefits id="f-598" contextRef="c-165">Other (Specify)</ferc:DescriptionOfEmployeePensionsAndBenefits>
+  <ferc:VendorName id="f-599" contextRef="c-1">The Workiva Platform</ferc:VendorName>
+  <link:footnoteLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+    <link:footnote xlink:type="resource" xlink:label="fn-1" id="fn-1" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">Net change of $9,295,704 in O&amp;M portion plus net change of $6,744,784 in Capital portion, for a total of $16,040,488</link:footnote>
+    <link:footnote xlink:type="resource" xlink:label="fn-2" id="fn-2" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">No services are provided for revenue generation. The volumes shown are 100% receipts and deliveries.</link:footnote>
+    <link:footnote xlink:type="resource" xlink:label="fn-3" id="fn-3" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">Property retirements.</link:footnote>
+    <link:loc xlink:type="locator" xlink:label="f-93" xlink:href="#f-93"/>
+    <link:loc xlink:type="locator" xlink:label="f-569" xlink:href="#f-569"/>
+    <link:loc xlink:type="locator" xlink:label="f-570" xlink:href="#f-570"/>
+    <link:loc xlink:type="locator" xlink:label="f-573" xlink:href="#f-573"/>
+    <link:loc xlink:type="locator" xlink:label="f-574" xlink:href="#f-574"/>
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="f-93" xlink:to="fn-1" order="1"/>
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="f-569" xlink:to="fn-2" order="2"/>
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="f-570" xlink:to="fn-2" order="2"/>
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="f-573" xlink:to="fn-2" order="2"/>
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="f-574" xlink:to="fn-2" order="2"/>
+  </link:footnoteLink>
+</xbrli:xbrl>

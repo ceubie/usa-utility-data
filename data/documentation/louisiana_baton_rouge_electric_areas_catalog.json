@@ -1,0 +1,199 @@
+{
+  "id" : "3dv4-vdqq",
+  "name" : "Utility Coverage Area",
+  "assetType" : "dataset",
+  "attribution" : "Louisiana Public Service Commission",
+  "attributionLink" : "https://lpsc.louisiana.gov/Utilities",
+  "averageRating" : 0,
+  "category" : "Government",
+  "createdAt" : 1650322098,
+  "description" : "The Utility Coverage Area map service displays polygon geometry and attributes for all electricity utility service areas in East Baton Rouge Parish, Louisiana. Information was gathered from the Louisiana Public Service Commission website at https://www.lpsc.louisiana.gov/Maps_Electric_Distribution_Areas.aspx and from the City-Parish Department of Transportation and Drainage.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 1696,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "licenseId" : "PUBLIC_DOMAIN",
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 38406897,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1650322100,
+  "publicationGroup" : 18675553,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1780653524,
+  "rowsUpdatedBy" : "ft46-kupe",
+  "tableId" : 18675553,
+  "totalTimesRated" : 0,
+  "viewCount" : 6738,
+  "viewLastModified" : 1666193858,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1650322100,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 4630637,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1650322100,
+    "targetAudience" : "public",
+    "workflowId" : 2038,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1650322100,
+      "failureCount" : 0,
+      "startedAt" : 1650322100,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "re7j-xhdx",
+      "displayName" : "Michael Stein"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 559144011,
+    "name" : "ID",
+    "dataTypeName" : "number",
+    "description" : "Feature ID",
+    "fieldName" : "id",
+    "position" : 1,
+    "renderTypeName" : "number",
+    "tableColumnId" : 141853400,
+    "cachedContents" : {
+      "non_null" : "6",
+      "largest" : "6",
+      "null" : "0",
+      "top" : [ {
+        "item" : "5",
+        "count" : "1"
+      }, {
+        "item" : "6",
+        "count" : "1"
+      }, {
+        "item" : "1",
+        "count" : "1"
+      }, {
+        "item" : "2",
+        "count" : "1"
+      }, {
+        "item" : "3",
+        "count" : "1"
+      }, {
+        "item" : "4",
+        "count" : "1"
+      } ],
+      "smallest" : "1",
+      "count" : "6",
+      "cardinality" : "6"
+    },
+    "format" : {
+      "align" : "center"
+    }
+  }, {
+    "id" : 559144017,
+    "name" : "UTILITY COMPANY",
+    "dataTypeName" : "text",
+    "description" : "Utility company that manages this coverage area",
+    "fieldName" : "utility_company",
+    "position" : 2,
+    "renderTypeName" : "text",
+    "tableColumnId" : 141853406,
+    "cachedContents" : {
+      "non_null" : "6",
+      "largest" : "LSU",
+      "null" : "0",
+      "top" : [ {
+        "item" : "DEMCO",
+        "count" : "3"
+      }, {
+        "item" : "ENTERGY LOUISIANA",
+        "count" : "2"
+      }, {
+        "item" : "LSU",
+        "count" : "1"
+      } ],
+      "smallest" : "DEMCO",
+      "count" : "6",
+      "cardinality" : "6"
+    },
+    "format" : { }
+  }, {
+    "id" : 559144010,
+    "name" : "GEOMETRY",
+    "dataTypeName" : "multipolygon",
+    "description" : "Shape geometry of the utility coverage area",
+    "fieldName" : "the_geom",
+    "position" : 3,
+    "renderTypeName" : "multipolygon",
+    "tableColumnId" : 141853399,
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "license" : {
+    "name" : "Public Domain"
+  },
+  "metadata" : {
+    "jsonQuery" : {
+      "order" : [ {
+        "columnFieldName" : "id",
+        "ascending" : true
+      } ]
+    },
+    "custom_fields" : {
+      "Dataset Information" : {
+        "Data Dictionary" : "https://city.brla.gov/gis/metadata/UTILITY_COVERAGE_AREA.html",
+        "Source Department" : "Information Services",
+        "Update Frequency" : "Periodically"
+      }
+    },
+    "arcgis_connection" : {
+      "url" : "https://maps.brla.gov/gis/rest/services/Governmental_Units/Utility_Coverage_Area/MapServer/0"
+    },
+    "rowLabel" : "Utility Coverage Area",
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "mjn2-v86v",
+    "displayName" : "Open Data BR",
+    "profileImageUrlLarge" : "/api/users/mjn2-v86v/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/mjn2-v86v/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/mjn2-v86v/profile_images/TINY",
+    "screenName" : "Open Data BR",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula" ]
+  },
+  "query" : {
+    "orderBys" : [ {
+      "ascending" : true,
+      "expression" : {
+        "columnId" : 559144011,
+        "type" : "column"
+      }
+    } ]
+  },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "mjn2-v86v",
+    "displayName" : "Open Data BR",
+    "profileImageUrlLarge" : "/api/users/mjn2-v86v/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/mjn2-v86v/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/mjn2-v86v/profile_images/TINY",
+    "screenName" : "Open Data BR",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula" ]
+  },
+  "tags" : [ "utility", "electricity", "demco", "entergy", "ebrp" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

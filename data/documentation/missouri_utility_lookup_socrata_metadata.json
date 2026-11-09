@@ -1,0 +1,914 @@
+{
+  "id" : "yeiz-h2m2",
+  "name" : "Find A Missouri Utility",
+  "assetType" : "dataset",
+  "averageRating" : 0,
+  "createdAt" : 1403539707,
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 3120,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "indexUpdatedAt" : 1497563419,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 26190560,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1497562977,
+  "publicationGroup" : 1626350,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1497562914,
+  "tableId" : 14267573,
+  "totalTimesRated" : 0,
+  "viewCount" : 1853,
+  "viewLastModified" : 1550260221,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1497562977,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 798100,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1497562977,
+    "targetAudience" : "public",
+    "workflowId" : 2177,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "failureCount" : 0,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "xfqs-bcyn",
+      "displayName" : "whitwo"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 306750695,
+    "name" : "CITY         ",
+    "dataTypeName" : "text",
+    "fieldName" : "city",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425329,
+    "width" : 256,
+    "cachedContents" : {
+      "largest" : "ZELL",
+      "non_null" : "1718",
+      "null" : "0",
+      "top" : [ {
+        "item" : "BUCKHORN     ",
+        "count" : "2"
+      }, {
+        "item" : "LIBERTY",
+        "count" : "2"
+      }, {
+        "item" : "MINER (mixed)",
+        "count" : "2"
+      }, {
+        "item" : "PRATHERSVILLE",
+        "count" : "2"
+      }, {
+        "item" : "TRENTON (mixed)",
+        "count" : "2"
+      }, {
+        "item" : "FLAG SPRINGS",
+        "count" : "2"
+      }, {
+        "item" : "INDEPENDENCE",
+        "count" : "2"
+      }, {
+        "item" : "OSCEOLA  (mixed)",
+        "count" : "2"
+      }, {
+        "item" : "GLENDALE",
+        "count" : "2"
+      }, {
+        "item" : "MIDWAY",
+        "count" : "2"
+      }, {
+        "item" : "DEER RUN",
+        "count" : "2"
+      }, {
+        "item" : "LAKESIDE",
+        "count" : "2"
+      }, {
+        "item" : "CAIRO",
+        "count" : "1"
+      }, {
+        "item" : "OZARK",
+        "count" : "1"
+      }, {
+        "item" : "WARRENSBURG",
+        "count" : "1"
+      }, {
+        "item" : "NORMANDY",
+        "count" : "1"
+      }, {
+        "item" : "BRIGHTON",
+        "count" : "1"
+      }, {
+        "item" : "SAINT ROBERT ",
+        "count" : "1"
+      }, {
+        "item" : "STATE LINE  ",
+        "count" : "1"
+      }, {
+        "item" : "WOODLAWN  ",
+        "count" : "1"
+      } ],
+      "smallest" : "ADAIR",
+      "count" : "1718",
+      "cardinality" : "1706"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750696,
+    "name" : "COUNTY",
+    "dataTypeName" : "text",
+    "fieldName" : "county",
+    "position" : 2,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425330,
+    "width" : 172,
+    "cachedContents" : {
+      "largest" : "WRIGHT",
+      "non_null" : "1718",
+      "null" : "0",
+      "top" : [ {
+        "item" : "ST. LOUIS",
+        "count" : "100"
+      }, {
+        "item" : "JEFFERSON",
+        "count" : "38"
+      }, {
+        "item" : "JACKSON",
+        "count" : "31"
+      }, {
+        "item" : "JASPER",
+        "count" : "30"
+      }, {
+        "item" : "FRANKLIN",
+        "count" : "28"
+      }, {
+        "item" : "CLAY",
+        "count" : "27"
+      }, {
+        "item" : "ST. CHARLES",
+        "count" : "27"
+      }, {
+        "item" : "NEWTON",
+        "count" : "25"
+      }, {
+        "item" : "PEMISCOT",
+        "count" : "23"
+      }, {
+        "item" : "PERRY",
+        "count" : "23"
+      }, {
+        "item" : "CASS",
+        "count" : "23"
+      }, {
+        "item" : "TEXAS",
+        "count" : "23"
+      }, {
+        "item" : "OZARK",
+        "count" : "22"
+      }, {
+        "item" : "LAFAYETTE",
+        "count" : "21"
+      }, {
+        "item" : "PLATTE",
+        "count" : "21"
+      }, {
+        "item" : "TANEY",
+        "count" : "21"
+      }, {
+        "item" : "STODDARD",
+        "count" : "20"
+      }, {
+        "item" : "CALLAWAY",
+        "count" : "20"
+      }, {
+        "item" : "SCOTT",
+        "count" : "20"
+      }, {
+        "item" : "LINCOLN",
+        "count" : "20"
+      } ],
+      "smallest" : "ADAIR",
+      "count" : "1718",
+      "cardinality" : "117"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750697,
+    "name" : "MAP",
+    "dataTypeName" : "text",
+    "fieldName" : "map",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425331,
+    "width" : 136,
+    "cachedContents" : {
+      "largest" : "SP",
+      "non_null" : "1718",
+      "null" : "0",
+      "top" : [ {
+        "item" : "SL",
+        "count" : "102"
+      }, {
+        "item" : "H-4",
+        "count" : "64"
+      }, {
+        "item" : "I-6",
+        "count" : "57"
+      }, {
+        "item" : "F-4",
+        "count" : "55"
+      }, {
+        "item" : "D-3",
+        "count" : "53"
+      }, {
+        "item" : "E-7",
+        "count" : "51"
+      }, {
+        "item" : "H-5",
+        "count" : "51"
+      }, {
+        "item" : "G-4",
+        "count" : "49"
+      }, {
+        "item" : "E-3",
+        "count" : "47"
+      }, {
+        "item" : "KC",
+        "count" : "46"
+      }, {
+        "item" : "I-7",
+        "count" : "44"
+      }, {
+        "item" : "C-2",
+        "count" : "42"
+      }, {
+        "item" : "F-5",
+        "count" : "41"
+      }, {
+        "item" : "D-7",
+        "count" : "41"
+      }, {
+        "item" : "D-6",
+        "count" : "40"
+      }, {
+        "item" : "I-8",
+        "count" : "39"
+      }, {
+        "item" : "H-6",
+        "count" : "39"
+      }, {
+        "item" : "E-5",
+        "count" : "37"
+      }, {
+        "item" : "D-2",
+        "count" : "36"
+      }, {
+        "item" : "G-5",
+        "count" : "35"
+      } ],
+      "smallest" : "B-1",
+      "count" : "1718",
+      "cardinality" : "68"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750698,
+    "name" : "E-Type",
+    "dataTypeName" : "text",
+    "fieldName" : "e_type",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425332,
+    "width" : 172,
+    "cachedContents" : {
+      "largest" : "MUNI",
+      "non_null" : "1718",
+      "null" : "0",
+      "top" : [ {
+        "item" : "IOU",
+        "count" : "963"
+      }, {
+        "item" : "COOP",
+        "count" : "665"
+      }, {
+        "item" : "MUNI",
+        "count" : "90"
+      } ],
+      "smallest" : "COOP",
+      "count" : "1718",
+      "cardinality" : "3"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750699,
+    "name" : "ELECTRIC",
+    "dataTypeName" : "text",
+    "fieldName" : "electric",
+    "position" : 5,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425333,
+    "width" : 196,
+    "cachedContents" : {
+      "largest" : "WINONA",
+      "non_null" : "1718",
+      "null" : "0",
+      "top" : [ {
+        "item" : "UNION ELECTRIC COMPANY",
+        "count" : "514"
+      }, {
+        "item" : "KCP&L GREATER MISSOURI OPERATIONS CO MPANY",
+        "count" : "229"
+      }, {
+        "item" : "EMPIRE DISTRICT ELECTRIC COMPANY, THE",
+        "count" : "133"
+      }, {
+        "item" : "KANSAS CITY POWER & LIGHT COMPANY",
+        "count" : "87"
+      }, {
+        "item" : "BLACK RIVER ELECTRIC COOPERATIVE",
+        "count" : "55"
+      }, {
+        "item" : "WHITE RIVER VALLEY ELECTRIC COOPERATIVE, INC.",
+        "count" : "47"
+      }, {
+        "item" : "INTERCOUNTY ELECTRIC  COOPERATIVE ASSN.",
+        "count" : "45"
+      }, {
+        "item" : "CITIZENS ELECTRIC CORPORATION",
+        "count" : "41"
+      }, {
+        "item" : "HOWELL-OREGON ELECTRIC COOPERATIVE, INC.",
+        "count" : "40"
+      }, {
+        "item" : "OZARK BORDER ELECTRIC COOPERATIVE",
+        "count" : "40"
+      }, {
+        "item" : "MACON ELECTRIC COOPERATIVE",
+        "count" : "30"
+      }, {
+        "item" : "SEMO ELECTRIC COOPERATIVE",
+        "count" : "28"
+      }, {
+        "item" : "LACLEDE ELECTRIC COOPERATIVE",
+        "count" : "27"
+      }, {
+        "item" : "CRAWFORD ELECTRIC COOPERATIVE, INC.",
+        "count" : "20"
+      }, {
+        "item" : "SOUTHWEST ELECTRIC COOPERATIVE",
+        "count" : "20"
+      }, {
+        "item" : "CO-MO ELECTRIC COOPERATIVE, INC.",
+        "count" : "19"
+      }, {
+        "item" : "FARMERS' ELECTRIC COOPERATIVE, INC.",
+        "count" : "18"
+      }, {
+        "item" : "NORTH CENTRAL MISSOURI ELECTRIC COOPERATIVE, INC.",
+        "count" : "17"
+      }, {
+        "item" : "THREE RIVERS ELECTRIC COOPERATIVE",
+        "count" : "16"
+      }, {
+        "item" : "LEWIS COUNTY RURAL ELECTRIC  COOPERATIVE",
+        "count" : "16"
+      } ],
+      "smallest" : "ALBANY",
+      "count" : "1718",
+      "cardinality" : "135"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750700,
+    "name" : "E-Division",
+    "dataTypeName" : "text",
+    "fieldName" : "e_division",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425334,
+    "width" : 220,
+    "cachedContents" : {
+      "largest" : "MPS",
+      "non_null" : "232",
+      "null" : "1486",
+      "top" : [ {
+        "item" : "MPS",
+        "count" : "151"
+      }, {
+        "item" : "L&P",
+        "count" : "78"
+      }, {
+        "item" : " ",
+        "count" : "3"
+      } ],
+      "smallest" : " ",
+      "count" : "1718",
+      "cardinality" : "3"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750701,
+    "name" : "G-Type",
+    "dataTypeName" : "text",
+    "fieldName" : "g_type",
+    "position" : 7,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425335,
+    "width" : 172,
+    "cachedContents" : {
+      "largest" : "MUNI",
+      "non_null" : "669",
+      "null" : "1049",
+      "top" : [ {
+        "item" : "IOU",
+        "count" : "623"
+      }, {
+        "item" : "MUNI",
+        "count" : "46"
+      } ],
+      "smallest" : "IOU",
+      "count" : "1718",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750702,
+    "name" : "GAS",
+    "dataTypeName" : "text",
+    "fieldName" : "gas",
+    "position" : 8,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425336,
+    "width" : 136,
+    "cachedContents" : {
+      "largest" : "WHEATON",
+      "non_null" : "671",
+      "null" : "1047",
+      "top" : [ {
+        "item" : "MISSOURI GAS ENERGY",
+        "count" : "194"
+      }, {
+        "item" : "LACLEDE GAS COMPANY",
+        "count" : "171"
+      }, {
+        "item" : "UNION ELECTRIC COMPANY",
+        "count" : "99"
+      }, {
+        "item" : "ATMOS ENERGY CORPORATION",
+        "count" : "96"
+      }, {
+        "item" : "EMPIRE DISTRICT GAS CO., THE",
+        "count" : "47"
+      }, {
+        "item" : "SOUTHERN MISSOURI NATURAL GAS",
+        "count" : "14"
+      }, {
+        "item" : "MISSOURI GAS UTILITY",
+        "count" : "7"
+      }, {
+        "item" : "ALTENBURG-FROHNA JOINT UTILITIES",
+        "count" : "2"
+      }, {
+        "item" : "GRANBY",
+        "count" : "1"
+      }, {
+        "item" : "GRANT CITY",
+        "count" : "1"
+      }, {
+        "item" : "GREEN CITY",
+        "count" : "1"
+      }, {
+        "item" : "HERMANN",
+        "count" : "1"
+      }, {
+        "item" : "KENNETT CITY",
+        "count" : "1"
+      }, {
+        "item" : "LACLEDE GAS COMPANY ",
+        "count" : "1"
+      }, {
+        "item" : "LIBERAL",
+        "count" : "1"
+      }, {
+        "item" : "MACON",
+        "count" : "1"
+      }, {
+        "item" : "MADISON",
+        "count" : "1"
+      }, {
+        "item" : "MERCER",
+        "count" : "1"
+      }, {
+        "item" : "MIDDLETOWN",
+        "count" : "1"
+      }, {
+        "item" : "MILAN",
+        "count" : "1"
+      } ],
+      "smallest" : "ALBANY",
+      "count" : "1718",
+      "cardinality" : "49"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750703,
+    "name" : "Area",
+    "dataTypeName" : "text",
+    "fieldName" : "area",
+    "position" : 9,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425337,
+    "width" : 148,
+    "cachedContents" : {
+      "largest" : "U",
+      "non_null" : "196",
+      "null" : "1522",
+      "top" : [ {
+        "item" : "PEPL",
+        "count" : "75"
+      }, {
+        "item" : "S",
+        "count" : "54"
+      }, {
+        "item" : "U",
+        "count" : "25"
+      }, {
+        "item" : "TETC",
+        "count" : "16"
+      }, {
+        "item" : "B",
+        "count" : "9"
+      }, {
+        "item" : "K",
+        "count" : "5"
+      }, {
+        "item" : "NGPC",
+        "count" : "5"
+      }, {
+        "item" : "MGC",
+        "count" : "4"
+      }, {
+        "item" : "G",
+        "count" : "2"
+      }, {
+        "item" : "P",
+        "count" : "1"
+      } ],
+      "smallest" : "B",
+      "count" : "1718",
+      "cardinality" : "10"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750704,
+    "name" : "G-Division",
+    "dataTypeName" : "text",
+    "fieldName" : "g_division",
+    "position" : 10,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425338,
+    "width" : 220,
+    "cachedContents" : {
+      "largest" : "WEST",
+      "non_null" : "608",
+      "null" : "1110",
+      "top" : [ {
+        "item" : "LACLEDE",
+        "count" : "101"
+      }, {
+        "item" : "SOUTHERN",
+        "count" : "75"
+      }, {
+        "item" : "EASTERN",
+        "count" : "64"
+      }, {
+        "item" : "SOUTHEAST",
+        "count" : "57"
+      }, {
+        "item" : "CENTRAL",
+        "count" : "55"
+      }, {
+        "item" : "NORTH",
+        "count" : "40"
+      }, {
+        "item" : "MO. NATURAL GAS",
+        "count" : "34"
+      }, {
+        "item" : "MISSOURI VALLEY",
+        "count" : "34"
+      }, {
+        "item" : "NORTHEAST",
+        "count" : "28"
+      }, {
+        "item" : "BOONE TRAILS",
+        "count" : "22"
+      }, {
+        "item" : "SEMO",
+        "count" : "21"
+      }, {
+        "item" : "CAPITAL OZARKS",
+        "count" : "21"
+      }, {
+        "item" : "SOUTH",
+        "count" : "17"
+      }, {
+        "item" : "NORTHWEST",
+        "count" : "15"
+      }, {
+        "item" : "MIDWEST",
+        "count" : "13"
+      }, {
+        "item" : "WEST",
+        "count" : "11"
+      } ],
+      "smallest" : "BOONE TRAILS",
+      "count" : "1718",
+      "cardinality" : "16"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750705,
+    "name" : "G-District",
+    "dataTypeName" : "text",
+    "fieldName" : "g_district",
+    "position" : 11,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425339,
+    "width" : 220,
+    "cachedContents" : {
+      "largest" : "WEST",
+      "non_null" : "332",
+      "null" : "1386",
+      "top" : [ {
+        "item" : "MONETT",
+        "count" : "50"
+      }, {
+        "item" : "LEE'S SUMMIT",
+        "count" : "31"
+      }, {
+        "item" : "WARRENSBURG",
+        "count" : "27"
+      }, {
+        "item" : "JOPLIN",
+        "count" : "25"
+      }, {
+        "item" : "CANTON",
+        "count" : "21"
+      }, {
+        "item" : "CARUTHERSVILLE",
+        "count" : "19"
+      }, {
+        "item" : "JACKSON",
+        "count" : "15"
+      }, {
+        "item" : "SIKESTON",
+        "count" : "13"
+      }, {
+        "item" : "MEXICO",
+        "count" : "11"
+      }, {
+        "item" : "NORTH",
+        "count" : "10"
+      }, {
+        "item" : "MALDEN",
+        "count" : "10"
+      }, {
+        "item" : "CENTRAL",
+        "count" : "10"
+      }, {
+        "item" : "BUTLER",
+        "count" : "9"
+      }, {
+        "item" : "MAITLAND",
+        "count" : "8"
+      }, {
+        "item" : "BOONVILLE",
+        "count" : "7"
+      }, {
+        "item" : "INDEPENDENCE",
+        "count" : "6"
+      }, {
+        "item" : "MOBERLY",
+        "count" : "6"
+      }, {
+        "item" : "WEST",
+        "count" : "6"
+      }, {
+        "item" : "KIRKSVILLE",
+        "count" : "5"
+      }, {
+        "item" : "SEDALIA",
+        "count" : "4"
+      } ],
+      "smallest" : "BOONVILLE",
+      "count" : "1718",
+      "cardinality" : "38"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750706,
+    "name" : "WATER",
+    "dataTypeName" : "text",
+    "fieldName" : "water",
+    "position" : 12,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425340,
+    "width" : 160,
+    "cachedContents" : {
+      "largest" : "WYATT",
+      "non_null" : "921",
+      "null" : "797",
+      "top" : [ {
+        "item" : "MUNICIPAL",
+        "count" : "567"
+      }, {
+        "item" : "MISSOURI-AMERICAN WATER CO.",
+        "count" : "129"
+      }, {
+        "item" : "KANSAS CITY",
+        "count" : "11"
+      }, {
+        "item" : "BARTON COUNTY PWSD 1",
+        "count" : "7"
+      }, {
+        "item" : "THOMAS HILL PWSD 1",
+        "count" : "7"
+      }, {
+        "item" : "SULLIVAN COUNTY PWSD 1",
+        "count" : "6"
+      }, {
+        "item" : "RAY COUNTY PWSD 2",
+        "count" : "6"
+      }, {
+        "item" : "PEMISCOT COUNTY PWSD 1",
+        "count" : "5"
+      }, {
+        "item" : "CAPE PERRY COUNTY PWSD 1",
+        "count" : "5"
+      }, {
+        "item" : "NODAWAY COUNTY PWSD 1",
+        "count" : "4"
+      }, {
+        "item" : "PUTNAM COUNTY PWSD 1",
+        "count" : "4"
+      }, {
+        "item" : "BATES COUNTY PWSD 2",
+        "count" : "4"
+      }, {
+        "item" : "LIVINGSTON COUNTY PWSD 1",
+        "count" : "4"
+      }, {
+        "item" : "EMPIRE DISTRICT ELECTRIC CO., THE",
+        "count" : "4"
+      }, {
+        "item" : "WORTH COUNTY PWSD 1",
+        "count" : "4"
+      }, {
+        "item" : "VERNON COUNTY PWSD 1",
+        "count" : "3"
+      }, {
+        "item" : "RAYTOWN WATER COMPANY",
+        "count" : "3"
+      }, {
+        "item" : "FLAT RIVER",
+        "count" : "3"
+      }, {
+        "item" : "MACON COUNTY PWSD 1",
+        "count" : "3"
+      }, {
+        "item" : "STODDARD COUNTY PWSD 2",
+        "count" : "3"
+      } ],
+      "smallest" : "ADAIR COUNTY PWSD 1",
+      "count" : "1718",
+      "cardinality" : "130"
+    },
+    "format" : { }
+  }, {
+    "id" : 306750707,
+    "name" : "TELEPHONE",
+    "dataTypeName" : "text",
+    "fieldName" : "telephone",
+    "position" : 13,
+    "renderTypeName" : "text",
+    "tableColumnId" : 20425341,
+    "width" : 208,
+    "cachedContents" : {
+      "largest" : "WINDSTREAM",
+      "non_null" : "1717",
+      "null" : "1",
+      "top" : [ {
+        "item" : "AT&T MISSOURI",
+        "count" : "738"
+      }, {
+        "item" : "CENTURYLINK",
+        "count" : "597"
+      }, {
+        "item" : "WINDSTREAM",
+        "count" : "100"
+      }, {
+        "item" : "GRAND RIVER",
+        "count" : "49"
+      }, {
+        "item" : "NORTHEAST MO",
+        "count" : "25"
+      }, {
+        "item" : "MARK TWAIN",
+        "count" : "22"
+      }, {
+        "item" : "CHARITION VALLEY",
+        "count" : "22"
+      }, {
+        "item" : "FIDELITY",
+        "count" : "18"
+      }, {
+        "item" : "MID-MISSOURI",
+        "count" : "17"
+      }, {
+        "item" : "GREEN HILLS",
+        "count" : "16"
+      }, {
+        "item" : "KINGDOM",
+        "count" : "14"
+      }, {
+        "item" : "CRAW-KAN",
+        "count" : "10"
+      }, {
+        "item" : "STEELVILLE",
+        "count" : "10"
+      }, {
+        "item" : "CITIZENS",
+        "count" : "7"
+      }, {
+        "item" : "FAIRPOINT",
+        "count" : "7"
+      }, {
+        "item" : "KLM",
+        "count" : "6"
+      }, {
+        "item" : "ELLINGTON",
+        "count" : "5"
+      }, {
+        "item" : "IAMO",
+        "count" : "5"
+      }, {
+        "item" : "STOUTLAND",
+        "count" : "4"
+      }, {
+        "item" : "OZARK",
+        "count" : "4"
+      } ],
+      "smallest" : "ALMA",
+      "count" : "1718",
+      "cardinality" : "40"
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+    "renderTypeConfig" : {
+      "visible" : {
+        "table" : true
+      }
+    }
+  },
+  "owner" : {
+    "id" : "xfqs-bcyn",
+    "displayName" : "whitwo",
+    "screenName" : "whitwo",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "xfqs-bcyn",
+    "displayName" : "whitwo",
+    "screenName" : "whitwo",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

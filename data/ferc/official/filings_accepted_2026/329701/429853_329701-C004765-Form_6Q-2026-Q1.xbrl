@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<xbrl:xbrl xmlns="http://www.xbrl.org/2003/instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrl="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ferc="http://ferc.gov/form/2026-04-01/ferc" xmlns:ferc-form-6Q="http://ferc.gov/form/2026-04-01/ferc-form-6Q">
+  <link:schemaRef xlink:type="simple" xlink:href="https://eCollection.ferc.gov/taxonomy/form6/2026-04-01/form/form6Q/form-6Q_2026-04-01.xsd" />
+  <xbrl:unit id="pure">
+    <xbrl:measure>xbrl:pure</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:unit id="USD">
+    <xbrl:measure>iso4217:USD</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:unit id="bbl">
+    <xbrl:measure>utr:bbl</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:context id="From2026-01-01To2026-03-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleImportantChangesDuringTheQuarterYearAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleImportantChangesDuringTheQuarterYearAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleComparativeBalanceSheetAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleComparativeBalanceSheetAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatementOfIncomeAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfIncomeAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleUnappropriatedRetainedIncomeStatementAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleUnappropriatedRetainedIncomeStatementAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatementOfCashFlowsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfCashFlowsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleNotesToFinancialStatementsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleNotesToFinancialStatementsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleOilOperatingRevenuesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOilOperatingRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleOperatingExpenseAccountsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOperatingExpenseAccountsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatisticsOfOperationsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatisticsOfOperationsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatisticsOfOperationsOwnedByRespondentButOperatedByOthersAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatisticsOfOperationsOwnedByRespondentButOperatedByOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2026-03-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2026-03-31</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2025-12-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2025-12-31</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-03-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2025-03-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2025-03-31</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2024-12-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2024-12-31</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:CrudeOilMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:CrudeOilGatheringMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:OilProductsMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:CrudeOilMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:StateOfOriginAndProductTypeAxis">
+          <ferc:StateOfOriginAndProductTypeDomain>1</ferc:StateOfOriginAndProductTypeDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1_NameOfOperatorAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:CrudeOilMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:StateOfOriginAndProductTypeAxis">
+          <ferc:StateOfOriginAndProductTypeDomain>1</ferc:StateOfOriginAndProductTypeDomain>
+        </xbrldi:typedMember>
+        <xbrldi:typedMember dimension="ferc:NameOfOperatorAxis">
+          <ferc:NameOfOperatorDomain>1</ferc:NameOfOperatorDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_NameOfOperatorAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:CrudeOilMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfOperatorAxis">
+          <ferc:NameOfOperatorDomain>1</ferc:NameOfOperatorDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember_NameOfOperatorAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:OilProductsMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfOperatorAxis">
+          <ferc:NameOfOperatorDomain>1</ferc:NameOfOperatorDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-03-31_NameOfOperatorAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C004765</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfOperatorAxis">
+          <ferc:NameOfOperatorDomain>1</ferc:NameOfOperatorDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-03-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <ferc:AccountsPayable contextRef="Asof2025-12-31" unitRef="USD" decimals="0">6101</ferc:AccountsPayable>
+  <ferc:AccountsReceivable contextRef="Asof2025-12-31" unitRef="USD" decimals="0">155729</ferc:AccountsReceivable>
+  <ferc:AccountsReceivable contextRef="Asof2026-03-31" unitRef="USD" decimals="0">212843</ferc:AccountsReceivable>
+  <ferc:AccretionExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:AccretionExpense>
+  <ferc:AccruedDepreciationCarrierProperty contextRef="Asof2025-12-31" unitRef="USD" decimals="0">9129067</ferc:AccruedDepreciationCarrierProperty>
+  <ferc:AccruedDepreciationCarrierProperty contextRef="Asof2026-03-31" unitRef="USD" decimals="0">9287508</ferc:AccruedDepreciationCarrierProperty>
+  <ferc:AdditionalPaidInCapital contextRef="Asof2025-12-31" unitRef="USD" decimals="0">8136401</ferc:AdditionalPaidInCapital>
+  <ferc:AdditionalPaidInCapital contextRef="Asof2026-03-31" unitRef="USD" decimals="0">7910436</ferc:AdditionalPaidInCapital>
+  <ferc:AdditionsToUnappropriatedRetainedIncome contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">302897</ferc:AdditionsToUnappropriatedRetainedIncome>
+  <ferc:AdditionsToUnappropriatedRetainedIncome contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">155345</ferc:AdditionsToUnappropriatedRetainedIncome>
+  <ferc:AddressOfContactPerson contextRef="From2026-01-01To2026-03-31">111 Center Street, Little Rock, AR 72201</ferc:AddressOfContactPerson>
+  <ferc:AddressOfPrincipalOfficeAtEndOfPeriod contextRef="From2026-01-01To2026-03-31">845 Texas Avenue, Suite 200, Houston, TX 77002</ferc:AddressOfPrincipalOfficeAtEndOfPeriod>
+  <ferc:Assets contextRef="Asof2025-12-31" unitRef="USD" decimals="0">11342361</ferc:Assets>
+  <ferc:Assets contextRef="Asof2026-03-31" unitRef="USD" decimals="0">11223795</ferc:Assets>
+  <ferc:AttestationDate contextRef="From2026-01-01To2026-03-31">2026-06-05</ferc:AttestationDate>
+  <ferc:AttestationName contextRef="From2026-01-01To2026-03-31">Tim Reynolds</ferc:AttestationName>
+  <ferc:AttestationTitle contextRef="From2026-01-01To2026-03-31">Co-CEO</ferc:AttestationTitle>
+  <ferc:CarrierProperty contextRef="Asof2025-12-31" unitRef="USD" decimals="0">20123665</ferc:CarrierProperty>
+  <ferc:CarrierProperty contextRef="Asof2026-03-31" unitRef="USD" decimals="0">20123665</ferc:CarrierProperty>
+  <ferc:CarrierPropertyNet contextRef="Asof2025-12-31" unitRef="USD" decimals="0">10994598</ferc:CarrierPropertyNet>
+  <ferc:CarrierPropertyNet contextRef="Asof2026-03-31" unitRef="USD" decimals="0">10836157</ferc:CarrierPropertyNet>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-256067</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-225965</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:CashFlowsProvidedFromUsedInInvestmentActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-22103</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+  <ferc:CashFlowsProvidedFromUsedInInvestmentActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+  <ferc:CashOutflowsForPlant contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-100000</ferc:CashOutflowsForPlant>
+  <ferc:CashOutflowsForPlant contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-0</ferc:CashOutflowsForPlant>
+  <ferc:CashProvidedByOutsideSources contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-256067</ferc:CashProvidedByOutsideSources>
+  <ferc:CashProvidedByOutsideSources contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-225965</ferc:CashProvidedByOutsideSources>
+  <ferc:CasualtyAndOtherLossesGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:CasualtyAndOtherLossesGeneralExpense>
+  <ferc:CompanyIdentifier contextRef="From2026-01-01To2026-03-31">C004765</ferc:CompanyIdentifier>
+  <ferc:CorporateOfficerCertificationSignature contextRef="From2026-01-01To2026-03-31">Tim Reynolds</ferc:CorporateOfficerCertificationSignature>
+  <ferc:CurrentAssets contextRef="Asof2025-12-31" unitRef="USD" decimals="0">155729</ferc:CurrentAssets>
+  <ferc:CurrentAssets contextRef="Asof2026-03-31" unitRef="USD" decimals="0">212843</ferc:CurrentAssets>
+  <ferc:CurrentLiabilities contextRef="Asof2025-12-31" unitRef="USD" decimals="0">61894</ferc:CurrentLiabilities>
+  <ferc:CurrentLiabilities contextRef="Asof2026-03-31" unitRef="USD" decimals="0">13948</ferc:CurrentLiabilities>
+  <ferc:DeductionsFromUnappropriatedRetainedIncome contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:DeductionsFromUnappropriatedRetainedIncome>
+  <ferc:DeductionsFromUnappropriatedRetainedIncome contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:DeductionsFromUnappropriatedRetainedIncome>
+  <ferc:DepreciationAndAmortizationGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">158485</ferc:DepreciationAndAmortizationGeneralExpense>
+  <ferc:DepreciationAndAmortizationGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">158485</ferc:DepreciationAndAmortizationGeneralExpense>
+  <ferc:DepreciationAndAmortizationGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">158485</ferc:DepreciationAndAmortizationGeneralExpense>
+  <ferc:DepreciationAndDepletion contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">186702</ferc:DepreciationAndDepletion>
+  <ferc:DepreciationAndDepletion contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">158440</ferc:DepreciationAndDepletion>
+  <ferc:DepreciationExpenseForAssetRetirementCosts contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:DepreciationExpenseForAssetRetirementCosts>
+  <ferc:DisclosureOfAccountingForTheRespondentSPensionsAndPostretirementBenefitsTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:DisclosureOfAccountingForTheRespondentSPensionsAndPostretirementBenefitsTextBlock>
+  <ferc:DisclosureOfDetailsOnAccountingForIncomeTaxesTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:DisclosureOfDetailsOnAccountingForIncomeTaxesTextBlock>
+  <ferc:DisclosureOfEventsThatHaveAMaterialEffectToRespondentsTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:DisclosureOfEventsThatHaveAMaterialEffectToRespondentsTextBlock>
+  <ferc:DisclosureOfImportantNotesRegardingFinancialStatementsTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:DisclosureOfImportantNotesRegardingFinancialStatementsTextBlock>
+  <ferc:DisclosureOfRespondentAppearingInAnnualReportToTheStockholdersTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:DisclosureOfRespondentAppearingInAnnualReportToTheStockholdersTextBlock>
+  <ferc:DisclosureOfSignificantChangesInOperationsDuringTheYearTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:DisclosureOfSignificantChangesInOperationsDuringTheYearTextBlock>
+  <ferc:DisclosureOfSignificantCommitmentsOrContingentAssetsOrLiabilitiesTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:DisclosureOfSignificantCommitmentsOrContingentAssetsOrLiabilitiesTextBlock>
+  <ferc:DisclosureOfSignificantRateOrOtherRegulatoryMattersTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:DisclosureOfSignificantRateOrOtherRegulatoryMattersTextBlock>
+  <ferc:EmployeeBenefitsGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">3874</ferc:EmployeeBenefitsGeneralExpense>
+  <ferc:EmployeeBenefitsGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">3874</ferc:EmployeeBenefitsGeneralExpense>
+  <ferc:EmployeeBenefitsGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">3874</ferc:EmployeeBenefitsGeneralExpense>
+  <ferc:EquityInEarningsLossesOfAffiliatedCompaniesIncludingDividendIncome contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-1249</ferc:EquityInEarningsLossesOfAffiliatedCompaniesIncludingDividendIncome>
+  <ferc:EquityInEarningsLossesOfAffiliatedCompaniesIncludingDividendIncome contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-3724</ferc:EquityInEarningsLossesOfAffiliatedCompaniesIncludingDividendIncome>
+  <ferc:ExtraordinaryItems contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:ExtraordinaryItems>
+  <ferc:ExtraordinaryItems contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:ExtraordinaryItems>
+  <ferc:ExtraordinaryItemsAndAccountingChanges contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:ExtraordinaryItemsAndAccountingChanges>
+  <ferc:ExtraordinaryItemsAndAccountingChanges contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:ExtraordinaryItemsAndAccountingChanges>
+  <ferc:FormType contextRef="From2026-01-01To2026-03-31">6-Q</ferc:FormType>
+  <ferc:GainsOrLossesOnAssetRetirementObligationsGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:GainsOrLossesOnAssetRetirementObligationsGeneralExpense>
+  <ferc:GatheringRevenues contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">510241</ferc:GatheringRevenues>
+  <ferc:GatheringRevenues contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">510241</ferc:GatheringRevenues>
+  <ferc:GeneralExpensesOil contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">207312</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">207312</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">207312</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="USD" decimals="0">0</ferc:GeneralExpensesOil>
+  <ferc:GrossAdditionsToCarrierPropertyInvestmentActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-100000</ferc:GrossAdditionsToCarrierPropertyInvestmentActivities>
+  <ferc:GrossAdditionsToCarrierPropertyInvestmentActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-0</ferc:GrossAdditionsToCarrierPropertyInvestmentActivities>
+  <ferc:IncomeLossBeforeExtraordinaryItems contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">302897</ferc:IncomeLossBeforeExtraordinaryItems>
+  <ferc:IncomeLossBeforeExtraordinaryItems contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">155345</ferc:IncomeLossBeforeExtraordinaryItems>
+  <ferc:IncomeLossFromContinuingOperations contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">302897</ferc:IncomeLossFromContinuingOperations>
+  <ferc:IncomeLossFromContinuingOperations contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">155345</ferc:IncomeLossFromContinuingOperations>
+  <ferc:IncomeLossFromDiscontinuedOperations contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:IncomeLossFromDiscontinuedOperations>
+  <ferc:IncomeLossFromDiscontinuedOperations contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:IncomeLossFromDiscontinuedOperations>
+  <ferc:InsuranceGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">18248</ferc:InsuranceGeneralExpense>
+  <ferc:InsuranceGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">18248</ferc:InsuranceGeneralExpense>
+  <ferc:InsuranceGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">18248</ferc:InsuranceGeneralExpense>
+  <ferc:InterestExpense contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">119320</ferc:InterestExpense>
+  <ferc:InterestExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">34958</ferc:InterestExpense>
+  <ferc:InvestmentsAndSpecialFunds contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138219</ferc:InvestmentsAndSpecialFunds>
+  <ferc:InvestmentsAndSpecialFunds contextRef="Asof2026-03-31" unitRef="USD" decimals="0">138219</ferc:InvestmentsAndSpecialFunds>
+  <ferc:InvestmentsInAffiliatedCompaniesInvestmentAdvances contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138219</ferc:InvestmentsInAffiliatedCompaniesInvestmentAdvances>
+  <ferc:InvestmentsInAffiliatedCompaniesInvestmentAdvances contextRef="Asof2026-03-31" unitRef="USD" decimals="0">138219</ferc:InvestmentsInAffiliatedCompaniesInvestmentAdvances>
+  <ferc:InvestmentsInAndAdvancesToAssociatedAndSubsidiaryCompanies contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">122103</ferc:InvestmentsInAndAdvancesToAssociatedAndSubsidiaryCompanies>
+  <ferc:InvestmentsInAndAdvancesToAssociatedAndSubsidiaryCompanies contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-0</ferc:InvestmentsInAndAdvancesToAssociatedAndSubsidiaryCompanies>
+  <ferc:Liabilities contextRef="Asof2025-12-31" unitRef="USD" decimals="0">61894</ferc:Liabilities>
+  <ferc:Liabilities contextRef="Asof2026-03-31" unitRef="USD" decimals="0">13948</ferc:Liabilities>
+  <ferc:LiabilitiesAndStockholdersEquity contextRef="Asof2025-12-31" unitRef="USD" decimals="0">11342361</ferc:LiabilitiesAndStockholdersEquity>
+  <ferc:LiabilitiesAndStockholdersEquity contextRef="Asof2026-03-31" unitRef="USD" decimals="0">11223795</ferc:LiabilitiesAndStockholdersEquity>
+  <ferc:MaterialsAndSuppliesGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">6128</ferc:MaterialsAndSuppliesGeneralExpense>
+  <ferc:MaterialsAndSuppliesGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">6128</ferc:MaterialsAndSuppliesGeneralExpense>
+  <ferc:MaterialsAndSuppliesGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">6128</ferc:MaterialsAndSuppliesGeneralExpense>
+  <ferc:MaterialsAndSuppliesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:MaterialsAndSuppliesOperationsAndMaintenance>
+  <ferc:NameOfContactPerson contextRef="From2026-01-01To2026-03-31">Allyson Thompson</ferc:NameOfContactPerson>
+  <ferc:NameOfOperator contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1_NameOfOperatorAxis_1">Dakota Energy Connection, LLC</ferc:NameOfOperator>
+  <ferc:NetCarrierOperatingIncome contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">423466</ferc:NetCarrierOperatingIncome>
+  <ferc:NetCarrierOperatingIncome contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">194027</ferc:NetCarrierOperatingIncome>
+  <ferc:NetCashProvidedByUsedInOperatingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">278170</ferc:NetCashProvidedByUsedInOperatingActivities>
+  <ferc:NetCashProvidedByUsedInOperatingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">225965</ferc:NetCashProvidedByUsedInOperatingActivities>
+  <ferc:NetIncomeLoss contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">302897</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">155345</ferc:NetIncomeLoss>
+  <ferc:NetIncreaseDecreaseInCashAndCashEquivalents contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+  <ferc:NetIncreaseDecreaseInCashAndCashEquivalents contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+  <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-27479</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-47945</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInReceivablesOperatingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">206285</ferc:NetIncreaseDecreaseInReceivablesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInReceivablesOperatingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">57114</ferc:NetIncreaseDecreaseInReceivablesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInUnappropriatedRetainedIncome contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">302897</ferc:NetIncreaseDecreaseInUnappropriatedRetainedIncome>
+  <ferc:NetIncreaseDecreaseInUnappropriatedRetainedIncome contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">155345</ferc:NetIncreaseDecreaseInUnappropriatedRetainedIncome>
+  <ferc:NoncarrierPropertyNet contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:NoncarrierPropertyNet>
+  <ferc:NoncarrierPropertyNet contextRef="Asof2026-03-31" unitRef="USD" decimals="0">0</ferc:NoncarrierPropertyNet>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:NoncurrentLiabilities contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:NoncurrentLiabilities>
+  <ferc:NoncurrentLiabilities contextRef="Asof2026-03-31" unitRef="USD" decimals="0">0</ferc:NoncurrentLiabilities>
+  <ferc:NotesToFinancialStatementsTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:NotesToFinancialStatementsTextBlock>
+  <ferc:NumberOfBarrelsDeliveredOut contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOut>
+  <ferc:NumberOfBarrelsDeliveredOut contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOut>
+  <ferc:NumberOfBarrelsDeliveredOut contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOut>
+  <ferc:NumberOfBarrelsDeliveredOut contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOut>
+  <ferc:NumberOfBarrelsDeliveredOutOnGatheringLines contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnGatheringLines>
+  <ferc:NumberOfBarrelsDeliveredOutOnGatheringLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnGatheringLines>
+  <ferc:NumberOfBarrelsDeliveredOutOnGatheringLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnGatheringLines>
+  <ferc:NumberOfBarrelsDeliveredOutOnGatheringLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnGatheringLines>
+  <ferc:NumberOfBarrelsDeliveredOutOnGatheringLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnGatheringLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOnGatheringLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnGatheringLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOnGatheringLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnGatheringLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOnGatheringLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnGatheringLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOnTrunkLines contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnTrunkLines>
+  <ferc:NumberOfBarrelsDeliveredOutOnTrunkLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnTrunkLines>
+  <ferc:NumberOfBarrelsDeliveredOutOnTrunkLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnTrunkLines>
+  <ferc:NumberOfBarrelsDeliveredOutOnTrunkLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnTrunkLines>
+  <ferc:NumberOfBarrelsDeliveredOutOnTrunkLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnTrunkLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOnTrunkLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnTrunkLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOnTrunkLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnTrunkLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOnTrunkLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOnTrunkLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutToConnectingCarriers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutToConnectingCarriers>
+  <ferc:NumberOfBarrelsDeliveredOutToConnectingCarriers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutToConnectingCarriers>
+  <ferc:NumberOfBarrelsDeliveredOutToConnectingCarriers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutToConnectingCarriers>
+  <ferc:NumberOfBarrelsDeliveredOutToConnectingCarriers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutToConnectingCarriers>
+  <ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">182160</ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsDeliveredOutToConnectingCarriersOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceived contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceived>
+  <ferc:NumberOfBarrelsReceived contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceived>
+  <ferc:NumberOfBarrelsReceived contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceived>
+  <ferc:NumberOfBarrelsReceived contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceived>
+  <ferc:NumberOfBarrelsReceivedFromConnectingCarriers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedFromConnectingCarriers>
+  <ferc:NumberOfBarrelsReceivedFromConnectingCarriers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedFromConnectingCarriers>
+  <ferc:NumberOfBarrelsReceivedFromConnectingCarriers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedFromConnectingCarriers>
+  <ferc:NumberOfBarrelsReceivedFromConnectingCarriers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedFromConnectingCarriers>
+  <ferc:NumberOfBarrelsReceivedFromConnectingCarriersOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedFromConnectingCarriersOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedFromConnectingCarriersOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedFromConnectingCarriersOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedFromConnectingCarriersOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedFromConnectingCarriersOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedFromConnectingCarriersOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedFromConnectingCarriersOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOnGatheringLines contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOnGatheringLines>
+  <ferc:NumberOfBarrelsReceivedOnGatheringLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOnGatheringLines>
+  <ferc:NumberOfBarrelsReceivedOnGatheringLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOnGatheringLines>
+  <ferc:NumberOfBarrelsReceivedOnGatheringLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnGatheringLines>
+  <ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnGatheringLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOnTrunkLines contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnTrunkLines>
+  <ferc:NumberOfBarrelsReceivedOnTrunkLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnTrunkLines>
+  <ferc:NumberOfBarrelsReceivedOnTrunkLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnTrunkLines>
+  <ferc:NumberOfBarrelsReceivedOnTrunkLines contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnTrunkLines>
+  <ferc:NumberOfBarrelsReceivedOnTrunkLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnTrunkLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOnTrunkLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnTrunkLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOnTrunkLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnTrunkLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOnTrunkLinesOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOnTrunkLinesOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">183299</ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers>
+  <ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember_NameOfOperatorAxis_1" unitRef="bbl" decimals="0">0</ferc:NumberOfBarrelsReceivedOwnedByRespondentButOperatedByOthers>
+  <ferc:OilLossesAndShortagesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:OilLossesAndShortagesOperationsAndMaintenance>
+  <ferc:OperatingExpenses contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">385605</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">316214</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">316214</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">316214</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="USD" decimals="0">0</ferc:OperatingExpenses>
+  <ferc:OperatingFuelAndPowerOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:OperatingFuelAndPowerOperationsAndMaintenance>
+  <ferc:OperatingRevenues contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">809071</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">510241</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">510241</ferc:OperatingRevenues>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">108902</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">108902</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">108902</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_OilProductsMember" unitRef="USD" decimals="0">0</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OrderNumber contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1" unitRef="pure" decimals="INF">1</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1_NameOfOperatorAxis_1" unitRef="pure" decimals="INF">1</ferc:OrderNumber>
+  <ferc:OrdinaryIncomeBeforeFederalIncomeTaxes contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">302897</ferc:OrdinaryIncomeBeforeFederalIncomeTaxes>
+  <ferc:OrdinaryIncomeBeforeFederalIncomeTaxes contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">155345</ferc:OrdinaryIncomeBeforeFederalIncomeTaxes>
+  <ferc:OtherAdjustmentByShortTermDebtToCashFlowsFromFinancingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentByShortTermDebtToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentByShortTermDebtToCashFlowsFromFinancingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentByShortTermDebtToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">22335</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">17239</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:OtherAssetsAndDeferredCharges contextRef="Asof2025-12-31" unitRef="USD" decimals="0">53815</ferc:OtherAssetsAndDeferredCharges>
+  <ferc:OtherAssetsAndDeferredCharges contextRef="Asof2026-03-31" unitRef="USD" decimals="0">36576</ferc:OtherAssetsAndDeferredCharges>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-0</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-0</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities>
+  <ferc:OtherDeferredCharges contextRef="Asof2025-12-31" unitRef="USD" decimals="0">53815</ferc:OtherDeferredCharges>
+  <ferc:OtherDeferredCharges contextRef="Asof2026-03-31" unitRef="USD" decimals="0">36576</ferc:OtherDeferredCharges>
+  <ferc:OtherExpensesGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">625</ferc:OtherExpensesGeneralExpense>
+  <ferc:OtherExpensesGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">625</ferc:OtherExpensesGeneralExpense>
+  <ferc:OtherExpensesGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">625</ferc:OtherExpensesGeneralExpense>
+  <ferc:OtherExpensesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">7504</ferc:OtherExpensesOperationsAndMaintenance>
+  <ferc:OtherExpensesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">7504</ferc:OtherExpensesOperationsAndMaintenance>
+  <ferc:OtherExpensesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">7504</ferc:OtherExpensesOperationsAndMaintenance>
+  <ferc:OtherIncomeAndDeductions contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-120569</ferc:OtherIncomeAndDeductions>
+  <ferc:OtherIncomeAndDeductions contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-38682</ferc:OtherIncomeAndDeductions>
+  <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-0</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities>
+  <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-0</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities>
+  <ferc:OutsideServicesGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:OutsideServicesGeneralExpense>
+  <ferc:OutsideServicesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">28296</ferc:OutsideServicesOperationsAndMaintenance>
+  <ferc:OutsideServicesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">28296</ferc:OutsideServicesOperationsAndMaintenance>
+  <ferc:OutsideServicesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">28296</ferc:OutsideServicesOperationsAndMaintenance>
+  <ferc:PipelineTaxesGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">19952</ferc:PipelineTaxesGeneralExpense>
+  <ferc:PipelineTaxesGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">19952</ferc:PipelineTaxesGeneralExpense>
+  <ferc:PipelineTaxesGeneralExpense contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">19952</ferc:PipelineTaxesGeneralExpense>
+  <ferc:ProceedsFromIssuanceOfCapitalStock contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-256067</ferc:ProceedsFromIssuanceOfCapitalStock>
+  <ferc:ProceedsFromIssuanceOfCapitalStock contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-225965</ferc:ProceedsFromIssuanceOfCapitalStock>
+  <ferc:RefinedProductType contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1">Crude Oil</ferc:RefinedProductType>
+  <ferc:RefinedProductTypeOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1_NameOfOperatorAxis_1">Crude Oil</ferc:RefinedProductTypeOwnedByRespondentButOperatedByOthers>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleComparativeBalanceSheetAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleImportantChangesDuringTheQuarterYearAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleNotesToFinancialStatementsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleOilOperatingRevenuesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleOperatingExpenseAccountsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatementOfCashFlowsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatementOfIncomeAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatisticsOfOperationsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleStatisticsOfOperationsOwnedByRespondentButOperatedByOthersAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-03-31_ScheduleRemarksAxis_ScheduleUnappropriatedRetainedIncomeStatementAbstract">NA</ferc:Remarks>
+  <ferc:RentalsGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:RentalsGeneralExpense>
+  <ferc:RentalsOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">7871</ferc:RentalsOperationsAndMaintenance>
+  <ferc:RentalsOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">7871</ferc:RentalsOperationsAndMaintenance>
+  <ferc:RentalsOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">7871</ferc:RentalsOperationsAndMaintenance>
+  <ferc:ReportDate contextRef="From2026-01-01To2026-03-31">2026-06-05</ferc:ReportDate>
+  <ferc:ReportPeriod contextRef="From2026-01-01To2026-03-31">Q1</ferc:ReportPeriod>
+  <ferc:ReportYear contextRef="From2026-01-01To2026-03-31" unitRef="pure" decimals="INF">2026</ferc:ReportYear>
+  <ferc:ReportYearPeriod contextRef="From2026-01-01To2026-03-31">2026/Q1</ferc:ReportYearPeriod>
+  <ferc:RespondentLegalName contextRef="From2026-01-01To2026-03-31">Dakota Energy Connection, LLC</ferc:RespondentLegalName>
+  <ferc:SalariesAndWagesGeneralExpense contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">0</ferc:SalariesAndWagesGeneralExpense>
+  <ferc:SalariesAndWagesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">65231</ferc:SalariesAndWagesOperationsAndMaintenance>
+  <ferc:SalariesAndWagesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">65231</ferc:SalariesAndWagesOperationsAndMaintenance>
+  <ferc:SalariesAndWagesOperationsAndMaintenance contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">65231</ferc:SalariesAndWagesOperationsAndMaintenance>
+  <ferc:StatementAboutImportantChangesDuringTheQuarterYearTextBlock contextRef="From2026-01-01To2026-03-31">NA</ferc:StatementAboutImportantChangesDuringTheQuarterYearTextBlock>
+  <ferc:StateOfOrigin contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1">North Dakota</ferc:StateOfOrigin>
+  <ferc:StateOfOriginOwnedByRespondentButOperatedByOthers contextRef="From2026-01-01To2026-03-31_ProductsAndServicesAxis_CrudeOilMember_StateOfOriginAndProductTypeAxis_1_NameOfOperatorAxis_1">North Dakota</ferc:StateOfOriginOwnedByRespondentButOperatedByOthers>
+  <ferc:StockholdersEquity contextRef="Asof2025-12-31" unitRef="USD" decimals="0">11280467</ferc:StockholdersEquity>
+  <ferc:StockholdersEquity contextRef="Asof2026-03-31" unitRef="USD" decimals="0">11209847</ferc:StockholdersEquity>
+  <ferc:SubmissionType contextRef="From2026-01-01To2026-03-31">O</ferc:SubmissionType>
+  <ferc:TangibleProperty contextRef="Asof2025-12-31" unitRef="USD" decimals="0">10994598</ferc:TangibleProperty>
+  <ferc:TangibleProperty contextRef="Asof2026-03-31" unitRef="USD" decimals="0">10836157</ferc:TangibleProperty>
+  <ferc:TaxesPayable contextRef="Asof2025-12-31" unitRef="USD" decimals="0">55793</ferc:TaxesPayable>
+  <ferc:TaxesPayable contextRef="Asof2026-03-31" unitRef="USD" decimals="0">13948</ferc:TaxesPayable>
+  <ferc:TelephoneOfContactPerson contextRef="From2026-01-01To2026-03-31">(501) 377-2060</ferc:TelephoneOfContactPerson>
+  <ferc:TitleOfContactPerson contextRef="From2026-01-01To2026-03-31">Controller</ferc:TitleOfContactPerson>
+  <ferc:UnappropriatedRetainedIncome contextRef="Asof2024-12-31" unitRef="USD" decimals="0">2998640</ferc:UnappropriatedRetainedIncome>
+  <ferc:UnappropriatedRetainedIncome contextRef="Asof2025-03-31" unitRef="USD" decimals="0">3301537</ferc:UnappropriatedRetainedIncome>
+  <ferc:UnappropriatedRetainedIncome contextRef="Asof2025-12-31" unitRef="USD" decimals="0">3144066</ferc:UnappropriatedRetainedIncome>
+  <ferc:UnappropriatedRetainedIncome contextRef="Asof2026-03-31" unitRef="USD" decimals="0">3299411</ferc:UnappropriatedRetainedIncome>
+  <ferc:UnappropriatedRetainedIncomeAndEquityInUndistributedEarningsLossesOfAffiliatedCompany contextRef="Asof2025-03-31" unitRef="USD" decimals="0">3301537</ferc:UnappropriatedRetainedIncomeAndEquityInUndistributedEarningsLossesOfAffiliatedCompany>
+  <ferc:UnappropriatedRetainedIncomeAndEquityInUndistributedEarningsLossesOfAffiliatedCompany contextRef="Asof2025-12-31" unitRef="USD" decimals="0">3144066</ferc:UnappropriatedRetainedIncomeAndEquityInUndistributedEarningsLossesOfAffiliatedCompany>
+  <ferc:UnappropriatedRetainedIncomeAndEquityInUndistributedEarningsLossesOfAffiliatedCompany contextRef="Asof2026-03-31" unitRef="USD" decimals="0">3299411</ferc:UnappropriatedRetainedIncomeAndEquityInUndistributedEarningsLossesOfAffiliatedCompany>
+  <ferc:UnappropriatedRetainedIncomeCreditTransferredFromIncome contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">302897</ferc:UnappropriatedRetainedIncomeCreditTransferredFromIncome>
+  <ferc:UnappropriatedRetainedIncomeCreditTransferredFromIncome contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">155345</ferc:UnappropriatedRetainedIncomeCreditTransferredFromIncome>
+  <ferc:UndistributedEarningsLosses contextRef="From2025-01-01To2025-03-31" unitRef="USD" decimals="0">-1249</ferc:UndistributedEarningsLosses>
+  <ferc:UndistributedEarningsLosses contextRef="From2026-01-01To2026-03-31" unitRef="USD" decimals="0">-3724</ferc:UndistributedEarningsLosses>
+</xbrl:xbrl>

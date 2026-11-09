@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<xbrl:xbrl xmlns="http://www.xbrl.org/2003/instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrl="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ferc="http://ferc.gov/form/2025-04-01/ferc" xmlns:ferc-form-6="http://ferc.gov/form/2025-04-01/ferc-form-6">
+  <link:schemaRef xlink:type="simple" xlink:href="https://eCollection.ferc.gov/taxonomy/form6/2025-04-01/form/form6/form-6_2025-04-01.xsd" />
+  <xbrl:unit id="pure">
+    <xbrl:measure>xbrl:pure</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:unit id="USD">
+    <xbrl:measure>iso4217:USD</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:unit id="mi">
+    <xbrl:measure>utr:mi</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:unit id="in">
+    <xbrl:measure>utr:in</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:context id="From2025-01-01To2025-12-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleGeneralInformationAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGeneralInformationAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleControlOverRespondentAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleControlOverRespondentAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleCompaniesControlledByRespondentAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleCompaniesControlledByRespondentAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOfficersAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOfficersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleDirectorsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleDirectorsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleImportantChangesDuringTheQuarterYearAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleImportantChangesDuringTheQuarterYearAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleComparativeBalanceSheetAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleComparativeBalanceSheetAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatementOfIncomeAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfIncomeAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAppropriatedRetainedIncomeAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAppropriatedRetainedIncomeAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleUnappropriatedRetainedIncomeStatementAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleUnappropriatedRetainedIncomeStatementAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatementOfCashFlowsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfCashFlowsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleNotesToFinancialStatementsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleNotesToFinancialStatementsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleReceivableFromAffiliatedCompaniesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleReceivableFromAffiliatedCompaniesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleInvestmentsInAffiliatedCompaniesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleInvestmentsInAffiliatedCompaniesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleInvestmentsInCommonStocksOfAffiliatedCompaniesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleInvestmentsInCommonStocksOfAffiliatedCompaniesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleInvestInComStocksOfAffiliatedCoCoControlledDirectlyByRespOtherThanThroughTitleToSecuritiesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleInvestInComStocksOfAffiliatedCoCoControlledDirectlyByRespOtherThanThroughTitleToSecuritiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleCarrierPropertyAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleCarrierPropertyAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleUndividedJointInterestPropertyAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleUndividedJointInterestPropertyAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAccruedDepreciationCarrierPropertyAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccruedDepreciationCarrierPropertyAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAccruedDepreciationUndividedJointInterestPropertyAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccruedDepreciationUndividedJointInterestPropertyAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAmortizationBaseAndReserveAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAmortizationBaseAndReserveAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleNoncarrierPropertyAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleNoncarrierPropertyAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOtherDeferredChargesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherDeferredChargesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_SchedulePayablesToAffiliatedCompaniesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>SchedulePayablesToAffiliatedCompaniesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleLongTermDebtAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleLongTermDebtAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAnalysisOfFederalIncomeAndOtherTaxesDeferredAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAnalysisOfFederalIncomeAndOtherTaxesDeferredAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleCapitalStockAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleCapitalStockAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleCapitalStockChangesDuringTheYearAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleCapitalStockChangesDuringTheYearAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAdditionalPaidInCapitalAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAdditionalPaidInCapitalAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOilOperatingRevenuesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOilOperatingRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOperatingRevenueAccountsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOperatingRevenueAccountsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOperatingExpenseAccountsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOperatingExpenseAccountsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_SchedulePipelineTaxesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>SchedulePipelineTaxesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleIncomeFromNoncarrierPropertyAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleIncomeFromNoncarrierPropertyAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleInterestAndDividendIncomeAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleInterestAndDividendIncomeAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleMiscellaneousItemsInIncomeAndRetainedIncomeAccountsForTheYearAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleMiscellaneousItemsInIncomeAndRetainedIncomeAccountsForTheYearAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_SchedulePaymentsForServicesRenderedByOtherThanEmployeesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>SchedulePaymentsForServicesRenderedByOtherThanEmployeesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatisticsOfOperationsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatisticsOfOperationsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatisticsOfOperationsOwnedByRespondentButOperatedByOthersAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatisticsOfOperationsOwnedByRespondentButOperatedByOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleMilesOfPipelineOperatedAtEndOfYearAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleMilesOfPipelineOperatedAtEndOfYearAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleFootnotesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleFootnotesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAnnualCostOfServiceBasedAnalysisScheduleAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAnnualCostOfServiceBasedAnalysisScheduleAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ControlOverRespondentAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ControlOverRespondentAxis">
+          <ferc:ControlOverRespondentDomain>1</ferc:ControlOverRespondentDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2025-12-31_ControlOverRespondentAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ControlOverRespondentAxis">
+          <ferc:ControlOverRespondentDomain>1</ferc:ControlOverRespondentDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2025-12-31</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_OfficerAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:OfficerAxis">
+          <ferc:OfficerDomain>1</ferc:OfficerDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_OfficerAxis_2">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:OfficerAxis">
+          <ferc:OfficerDomain>2</ferc:OfficerDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_DirectorAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:DirectorAxis">
+          <ferc:DirectorDomain>1</ferc:DirectorDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_DirectorAxis_2">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:DirectorAxis">
+          <ferc:DirectorDomain>2</ferc:DirectorDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_DirectorAxis_3">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:DirectorAxis">
+          <ferc:DirectorDomain>3</ferc:DirectorDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_DirectorAxis_4">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:DirectorAxis">
+          <ferc:DirectorDomain>4</ferc:DirectorDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_DirectorAxis_5">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:DirectorAxis">
+          <ferc:DirectorDomain>5</ferc:DirectorDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2025-12-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2025-12-31</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2024-12-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2024-12-31</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:CrudeOilMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:OilProductsMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2024-01-01To2024-12-31_GeographicAxis_InterstateTransportationMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:GeographicAxis">ferc:InterstateTransportationMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2024-01-01</xbrl:startDate>
+      <xbrl:endDate>2024-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_GeographicAxis_InterstateTransportationMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:GeographicAxis">ferc:InterstateTransportationMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2024-01-01To2024-12-31_GeographicAxis_IntrastateTransportationMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:GeographicAxis">ferc:IntrastateTransportationMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2024-01-01</xbrl:startDate>
+      <xbrl:endDate>2024-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_GeographicAxis_IntrastateTransportationMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:GeographicAxis">ferc:IntrastateTransportationMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2024-01-01To2024-12-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2024-01-01</xbrl:startDate>
+      <xbrl:endDate>2024-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilGatheringMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:CrudeOilGatheringMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilTrunkMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:CrudeOilTrunkMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilDeliveryMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:CrudeOilDeliveryMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsTrunkMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:OilProductsTrunkMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsDeliveryMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:ProductsAndServicesAxis">ferc:OilProductsDeliveryMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_OwnershipAxis_WhollyOwnedAndOperatedByRespondentMember_MilesOfPipelineOperatedAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:OwnershipAxis">ferc:WhollyOwnedAndOperatedByRespondentMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:MilesOfPipelineOperatedAxis">
+          <ferc:MilesOfPipelineOperatedDomain>1</ferc:MilesOfPipelineOperatedDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-12-31_OwnershipAxis_WhollyOwnedAndOperatedByRespondentMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C003915</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:OwnershipAxis">ferc:WhollyOwnedAndOperatedByRespondentMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-12-31</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <ferc:AccretionExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:AccretionExpense>
+  <ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestProperty contextRef="Asof2024-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestProperty>
+  <ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestProperty contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestProperty>
+  <ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestPropertyAnnualCompositeOrComponentRate contextRef="Asof2025-12-31" unitRef="pure" decimals="INF">0.00</ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestPropertyAnnualCompositeOrComponentRate>
+  <ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestPropertyIncreaseToDepreciationAndAmortizationOfTransportationProperty contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestPropertyIncreaseToDepreciationAndAmortizationOfTransportationProperty>
+  <ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestPropertyOtherAdjustments contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestPropertyOtherAdjustments>
+  <ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestPropertyRetirement contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-0</ferc:AccruedDepreciationCarrierPropertyExcludingUndividedJointInterestPropertyRetirement>
+  <ferc:AccruedDepreciationCarrierPropertyGatheringLines contextRef="Asof2024-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyGatheringLines>
+  <ferc:AccruedDepreciationCarrierPropertyGatheringLines contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyGatheringLines>
+  <ferc:AccruedDepreciationCarrierPropertyGatheringLinesAnnualCompositeOrComponentRate contextRef="Asof2025-12-31" unitRef="pure" decimals="INF">0.00</ferc:AccruedDepreciationCarrierPropertyGatheringLinesAnnualCompositeOrComponentRate>
+  <ferc:AccruedDepreciationCarrierPropertyGatheringLinesIncreaseToDepreciationAndAmortizationOfTransportationProperty contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyGatheringLinesIncreaseToDepreciationAndAmortizationOfTransportationProperty>
+  <ferc:AccruedDepreciationCarrierPropertyGatheringLinesOtherAdjustments contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyGatheringLinesOtherAdjustments>
+  <ferc:AccruedDepreciationCarrierPropertyGatheringLinesRetirement contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-0</ferc:AccruedDepreciationCarrierPropertyGatheringLinesRetirement>
+  <ferc:AccruedDepreciationCarrierPropertyGeneral contextRef="Asof2024-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyGeneral>
+  <ferc:AccruedDepreciationCarrierPropertyGeneral contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyGeneral>
+  <ferc:AccruedDepreciationCarrierPropertyGeneralAnnualCompositeOrComponentRate contextRef="Asof2025-12-31" unitRef="pure" decimals="INF">0.00</ferc:AccruedDepreciationCarrierPropertyGeneralAnnualCompositeOrComponentRate>
+  <ferc:AccruedDepreciationCarrierPropertyGeneralIncreaseToDepreciationAndAmortizationOfTransportationProperty contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyGeneralIncreaseToDepreciationAndAmortizationOfTransportationProperty>
+  <ferc:AccruedDepreciationCarrierPropertyGeneralOtherAdjustments contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyGeneralOtherAdjustments>
+  <ferc:AccruedDepreciationCarrierPropertyGeneralRetirement contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-0</ferc:AccruedDepreciationCarrierPropertyGeneralRetirement>
+  <ferc:AccruedDepreciationCarrierPropertyTrunkLines contextRef="Asof2024-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyTrunkLines>
+  <ferc:AccruedDepreciationCarrierPropertyTrunkLines contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyTrunkLines>
+  <ferc:AccruedDepreciationCarrierPropertyTrunkLinesAnnualCompositeOrComponentRate contextRef="Asof2025-12-31" unitRef="pure" decimals="INF">0.00</ferc:AccruedDepreciationCarrierPropertyTrunkLinesAnnualCompositeOrComponentRate>
+  <ferc:AccruedDepreciationCarrierPropertyTrunkLinesIncreaseToDepreciationAndAmortizationOfTransportationProperty contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyTrunkLinesIncreaseToDepreciationAndAmortizationOfTransportationProperty>
+  <ferc:AccruedDepreciationCarrierPropertyTrunkLinesOtherAdjustments contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:AccruedDepreciationCarrierPropertyTrunkLinesOtherAdjustments>
+  <ferc:AccruedDepreciationCarrierPropertyTrunkLinesRetirement contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-0</ferc:AccruedDepreciationCarrierPropertyTrunkLinesRetirement>
+  <ferc:AccumulatedNetDeferredEarningsIncludedInRateBase contextRef="Asof2025-12-31" unitRef="USD" decimals="INF">933.33</ferc:AccumulatedNetDeferredEarningsIncludedInRateBase>
+  <ferc:AdditionsToUnappropriatedRetainedIncome contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-21700</ferc:AdditionsToUnappropriatedRetainedIncome>
+  <ferc:AddressOfContactPerson contextRef="From2025-01-01To2025-12-31">111 Center Street, Suite 2020, Little Rock, AR 72201</ferc:AddressOfContactPerson>
+  <ferc:AddressOfPrincipalGeneralOfficers contextRef="From2025-01-01To2025-12-31_OfficerAxis_1">845 Texas Avenue, Suite 200, Houston, TX 77002</ferc:AddressOfPrincipalGeneralOfficers>
+  <ferc:AddressOfPrincipalGeneralOfficers contextRef="From2025-01-01To2025-12-31_OfficerAxis_2">845 Texas Avenue, Suite 200, Houston, TX 77002</ferc:AddressOfPrincipalGeneralOfficers>
+  <ferc:AddressOfPrincipalOfficeAtEndOfPeriod contextRef="From2025-01-01To2025-12-31">845 Texas Avenue, Suite 200, Houston, TX 77002</ferc:AddressOfPrincipalOfficeAtEndOfPeriod>
+  <ferc:AdjustedCapitalStructureRatioForLongTermDebtRateOfReturn contextRef="From2025-01-01To2025-12-31" unitRef="pure" decimals="INF">0.00</ferc:AdjustedCapitalStructureRatioForLongTermDebtRateOfReturn>
+  <ferc:AdjustedCapitalStructureRatioForStockholdersEquityRateOfReturn contextRef="From2025-01-01To2025-12-31" unitRef="pure" decimals="INF">1.00</ferc:AdjustedCapitalStructureRatioForStockholdersEquityRateOfReturn>
+  <ferc:Assets contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:Assets>
+  <ferc:AttestationDate contextRef="From2025-01-01To2025-12-31">2026-04-22</ferc:AttestationDate>
+  <ferc:AttestationName contextRef="From2025-01-01To2025-12-31">Tim Reynolds</ferc:AttestationName>
+  <ferc:AttestationTitle contextRef="From2025-01-01To2025-12-31">Co-CEO</ferc:AttestationTitle>
+  <ferc:CapitalStock contextRef="Asof2025-12-31" unitRef="USD" decimals="0">159844</ferc:CapitalStock>
+  <ferc:CarrierProperty contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierProperty>
+  <ferc:CarrierPropertyExcludingUndividedJointInterestProperty contextRef="Asof2024-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyExcludingUndividedJointInterestProperty>
+  <ferc:CarrierPropertyExcludingUndividedJointInterestProperty contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierPropertyExcludingUndividedJointInterestProperty>
+  <ferc:CarrierPropertyExcludingUndividedJointInterestPropertyOtherAdjustmentsTransfersAndClearances contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyExcludingUndividedJointInterestPropertyOtherAdjustmentsTransfersAndClearances>
+  <ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPeriodIncreaseDecrease contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPeriodIncreaseDecrease>
+  <ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired>
+  <ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements>
+  <ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPropertyChangesNet contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPropertyChangesNet>
+  <ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPropertyChangesPropertySoldAbandonedOrRetired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyExcludingUndividedJointInterestPropertyPropertyChangesPropertySoldAbandonedOrRetired>
+  <ferc:CarrierPropertyGatheringLines contextRef="Asof2024-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGatheringLines>
+  <ferc:CarrierPropertyGatheringLines contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGatheringLines>
+  <ferc:CarrierPropertyGatheringLinesOtherAdjustmentsTransfersAndClearances contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGatheringLinesOtherAdjustmentsTransfersAndClearances>
+  <ferc:CarrierPropertyGatheringLinesPeriodIncreaseDecrease contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGatheringLinesPeriodIncreaseDecrease>
+  <ferc:CarrierPropertyGatheringLinesPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGatheringLinesPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired>
+  <ferc:CarrierPropertyGatheringLinesPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGatheringLinesPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements>
+  <ferc:CarrierPropertyGatheringLinesPropertyChangesNet contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGatheringLinesPropertyChangesNet>
+  <ferc:CarrierPropertyGatheringLinesPropertyChangesPropertySoldAbandonedOrRetired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGatheringLinesPropertyChangesPropertySoldAbandonedOrRetired>
+  <ferc:CarrierPropertyGeneral contextRef="Asof2024-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGeneral>
+  <ferc:CarrierPropertyGeneral contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierPropertyGeneral>
+  <ferc:CarrierPropertyGeneralOtherAdjustmentsTransfersAndClearances contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGeneralOtherAdjustmentsTransfersAndClearances>
+  <ferc:CarrierPropertyGeneralPeriodIncreaseDecrease contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierPropertyGeneralPeriodIncreaseDecrease>
+  <ferc:CarrierPropertyGeneralPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGeneralPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired>
+  <ferc:CarrierPropertyGeneralPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierPropertyGeneralPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements>
+  <ferc:CarrierPropertyGeneralPropertyChangesNet contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierPropertyGeneralPropertyChangesNet>
+  <ferc:CarrierPropertyGeneralPropertyChangesPropertySoldAbandonedOrRetired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyGeneralPropertyChangesPropertySoldAbandonedOrRetired>
+  <ferc:CarrierPropertyNet contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:CarrierPropertyNet>
+  <ferc:CarrierPropertyTrunkLines contextRef="Asof2024-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyTrunkLines>
+  <ferc:CarrierPropertyTrunkLines contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyTrunkLines>
+  <ferc:CarrierPropertyTrunkLinesOtherAdjustmentsTransfersAndClearances contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyTrunkLinesOtherAdjustmentsTransfersAndClearances>
+  <ferc:CarrierPropertyTrunkLinesPeriodIncreaseDecrease contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyTrunkLinesPeriodIncreaseDecrease>
+  <ferc:CarrierPropertyTrunkLinesPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyTrunkLinesPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired>
+  <ferc:CarrierPropertyTrunkLinesPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyTrunkLinesPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements>
+  <ferc:CarrierPropertyTrunkLinesPropertyChangesNet contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyTrunkLinesPropertyChangesNet>
+  <ferc:CarrierPropertyTrunkLinesPropertyChangesPropertySoldAbandonedOrRetired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CarrierPropertyTrunkLinesPropertyChangesPropertySoldAbandonedOrRetired>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">159844</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:CashFlowsProvidedFromUsedInInvestmentActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-138144</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+  <ferc:CashOutflowsForPlant contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:CashOutflowsForPlant>
+  <ferc:CashProvidedByOutsideSources contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">159844</ferc:CashProvidedByOutsideSources>
+  <ferc:CasualtyAndOtherLossesGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:CasualtyAndOtherLossesGeneralExpense>
+  <ferc:ChairmanOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_1">false</ferc:ChairmanOfTheExecutiveCommittee>
+  <ferc:ChairmanOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_2">false</ferc:ChairmanOfTheExecutiveCommittee>
+  <ferc:ChairmanOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_3">false</ferc:ChairmanOfTheExecutiveCommittee>
+  <ferc:ChairmanOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_4">false</ferc:ChairmanOfTheExecutiveCommittee>
+  <ferc:ChairmanOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_5">false</ferc:ChairmanOfTheExecutiveCommittee>
+  <ferc:CompanyIdentifier contextRef="From2025-01-01To2025-12-31">C003915</ferc:CompanyIdentifier>
+  <ferc:ConstructionWorkInProgressGeneralCarrierProperty contextRef="Asof2024-12-31" unitRef="USD" decimals="0">0</ferc:ConstructionWorkInProgressGeneralCarrierProperty>
+  <ferc:ConstructionWorkInProgressGeneralCarrierProperty contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:ConstructionWorkInProgressGeneralCarrierProperty>
+  <ferc:ConstructionWorkInProgressGeneralCarrierPropertyOtherAdjustmentsTransfersAndClearances contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:ConstructionWorkInProgressGeneralCarrierPropertyOtherAdjustmentsTransfersAndClearances>
+  <ferc:ConstructionWorkInProgressGeneralCarrierPropertyPeriodIncreaseDecrease contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:ConstructionWorkInProgressGeneralCarrierPropertyPeriodIncreaseDecrease>
+  <ferc:ConstructionWorkInProgressGeneralCarrierPropertyPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:ConstructionWorkInProgressGeneralCarrierPropertyPropertyChangesExpendituresForExistingPropertyPurchasedOrAcquired>
+  <ferc:ConstructionWorkInProgressGeneralCarrierPropertyPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:ConstructionWorkInProgressGeneralCarrierPropertyPropertyChangesExpendituresForNewConstructionAdditionsAndImprovements>
+  <ferc:ConstructionWorkInProgressGeneralCarrierPropertyPropertyChangesNet contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:ConstructionWorkInProgressGeneralCarrierPropertyPropertyChangesNet>
+  <ferc:ConstructionWorkInProgressGeneralCarrierPropertyPropertyChangesPropertySoldAbandonedOrRetired contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:ConstructionWorkInProgressGeneralCarrierPropertyPropertyChangesPropertySoldAbandonedOrRetired>
+  <ferc:CorporateOfficerCertificationSignature contextRef="From2025-01-01To2025-12-31">Tim Reynolds</ferc:CorporateOfficerCertificationSignature>
+  <ferc:CostOfLongTermDebtCapitalRateOfReturn contextRef="From2025-01-01To2025-12-31" unitRef="pure" decimals="INF">0.00</ferc:CostOfLongTermDebtCapitalRateOfReturn>
+  <ferc:CurrentAssets contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:CurrentAssets>
+  <ferc:CurrentLiabilities contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:CurrentLiabilities>
+  <ferc:DeductionsFromUnappropriatedRetainedIncome contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:DeductionsFromUnappropriatedRetainedIncome>
+  <ferc:DepreciationAndAmortizationGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:DepreciationAndAmortizationGeneralExpense>
+  <ferc:DepreciationExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:DepreciationExpense>
+  <ferc:DepreciationExpenseForAssetRetirementCosts contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:DepreciationExpenseForAssetRetirementCosts>
+  <ferc:DisclosureOfAccountingForTheRespondentSPensionsAndPostretirementBenefitsTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:DisclosureOfAccountingForTheRespondentSPensionsAndPostretirementBenefitsTextBlock>
+  <ferc:DisclosureOfDetailsOnAccountingForIncomeTaxesTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:DisclosureOfDetailsOnAccountingForIncomeTaxesTextBlock>
+  <ferc:DisclosureOfEventsThatHaveAMaterialEffectToRespondentsTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:DisclosureOfEventsThatHaveAMaterialEffectToRespondentsTextBlock>
+  <ferc:DisclosureOfImportantNotesRegardingFinancialStatementsTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:DisclosureOfImportantNotesRegardingFinancialStatementsTextBlock>
+  <ferc:DisclosureOfRespondentAppearingInAnnualReportToTheStockholdersTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:DisclosureOfRespondentAppearingInAnnualReportToTheStockholdersTextBlock>
+  <ferc:DisclosureOfSignificantChangesInOperationsDuringTheYearTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:DisclosureOfSignificantChangesInOperationsDuringTheYearTextBlock>
+  <ferc:DisclosureOfSignificantCommitmentsOrContingentAssetsOrLiabilitiesTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:DisclosureOfSignificantCommitmentsOrContingentAssetsOrLiabilitiesTextBlock>
+  <ferc:DisclosureOfSignificantRateOrOtherRegulatoryMattersTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:DisclosureOfSignificantRateOrOtherRegulatoryMattersTextBlock>
+  <ferc:DividendIncomeEquityInvestments contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">4143</ferc:DividendIncomeEquityInvestments>
+  <ferc:EmployeeBenefitsGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:EmployeeBenefitsGeneralExpense>
+  <ferc:EquityComponentReturnOnRateBase contextRef="Asof2025-12-31" unitRef="USD" decimals="INF">36980.66</ferc:EquityComponentReturnOnRateBase>
+  <ferc:EquityInEarningsLossesOfAffiliatedCompaniesIncludingDividendIncome contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">4143</ferc:EquityInEarningsLossesOfAffiliatedCompaniesIncludingDividendIncome>
+  <ferc:ExtraordinaryItems contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:ExtraordinaryItems>
+  <ferc:ExtraordinaryItemsAndAccountingChanges contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:ExtraordinaryItemsAndAccountingChanges>
+  <ferc:FormType contextRef="From2025-01-01To2025-12-31">6</ferc:FormType>
+  <ferc:GainsOrLossesOnAssetRetirementObligationsGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:GainsOrLossesOnAssetRetirementObligationsGeneralExpense>
+  <ferc:GatheringTrunkAndDeliveryRevenues contextRef="From2024-01-01To2024-12-31" unitRef="USD" decimals="0">0</ferc:GatheringTrunkAndDeliveryRevenues>
+  <ferc:GatheringTrunkAndDeliveryRevenues contextRef="From2024-01-01To2024-12-31_GeographicAxis_InterstateTransportationMember" unitRef="USD" decimals="0">0</ferc:GatheringTrunkAndDeliveryRevenues>
+  <ferc:GatheringTrunkAndDeliveryRevenues contextRef="From2024-01-01To2024-12-31_GeographicAxis_IntrastateTransportationMember" unitRef="USD" decimals="0">0</ferc:GatheringTrunkAndDeliveryRevenues>
+  <ferc:GatheringTrunkAndDeliveryRevenues contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:GatheringTrunkAndDeliveryRevenues>
+  <ferc:GatheringTrunkAndDeliveryRevenues contextRef="From2025-01-01To2025-12-31_GeographicAxis_InterstateTransportationMember" unitRef="USD" decimals="0">0</ferc:GatheringTrunkAndDeliveryRevenues>
+  <ferc:GatheringTrunkAndDeliveryRevenues contextRef="From2025-01-01To2025-12-31_GeographicAxis_IntrastateTransportationMember" unitRef="USD" decimals="0">0</ferc:GatheringTrunkAndDeliveryRevenues>
+  <ferc:GeneralExpensesOil contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">25843</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilDeliveryMember" unitRef="USD" decimals="0">0</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">25843</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">25843</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilTrunkMember" unitRef="USD" decimals="0">0</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsDeliveryMember" unitRef="USD" decimals="0">0</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsMember" unitRef="USD" decimals="0">0</ferc:GeneralExpensesOil>
+  <ferc:GeneralExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsTrunkMember" unitRef="USD" decimals="0">0</ferc:GeneralExpensesOil>
+  <ferc:GrossAdditionsToCarrierPropertyInvestmentActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">138144</ferc:GrossAdditionsToCarrierPropertyInvestmentActivities>
+  <ferc:IncomeLossBeforeExtraordinaryItems contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-21700</ferc:IncomeLossBeforeExtraordinaryItems>
+  <ferc:IncomeLossFromContinuingOperations contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-21700</ferc:IncomeLossFromContinuingOperations>
+  <ferc:IncomeLossFromDiscontinuedOperations contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:IncomeLossFromDiscontinuedOperations>
+  <ferc:IncorporationDate contextRef="From2025-01-01To2025-12-31">2025-01-22</ferc:IncorporationDate>
+  <ferc:IncreaseMilesOfGatheringLinesOperated contextRef="From2025-01-01To2025-12-31" unitRef="mi" decimals="0">0</ferc:IncreaseMilesOfGatheringLinesOperated>
+  <ferc:IndicationRespondentConductedBusinessInDifferentNames contextRef="From2025-01-01To2025-12-31">No</ferc:IndicationRespondentConductedBusinessInDifferentNames>
+  <ferc:InsuranceGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:InsuranceGeneralExpense>
+  <ferc:InvestmentsAndSpecialFunds contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:InvestmentsAndSpecialFunds>
+  <ferc:Liabilities contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:Liabilities>
+  <ferc:LiabilitiesAndStockholdersEquity contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:LiabilitiesAndStockholdersEquity>
+  <ferc:MaterialsAndSuppliesGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:MaterialsAndSuppliesGeneralExpense>
+  <ferc:MaterialsAndSuppliesOperationsAndMaintenance contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:MaterialsAndSuppliesOperationsAndMaintenance>
+  <ferc:MemberOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_1">false</ferc:MemberOfTheExecutiveCommittee>
+  <ferc:MemberOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_2">false</ferc:MemberOfTheExecutiveCommittee>
+  <ferc:MemberOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_3">false</ferc:MemberOfTheExecutiveCommittee>
+  <ferc:MemberOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_4">false</ferc:MemberOfTheExecutiveCommittee>
+  <ferc:MemberOfTheExecutiveCommittee contextRef="From2025-01-01To2025-12-31_DirectorAxis_5">false</ferc:MemberOfTheExecutiveCommittee>
+  <ferc:MilesOfGatheringLinesOperated contextRef="From2025-01-01To2025-12-31" unitRef="mi" decimals="0">22</ferc:MilesOfGatheringLinesOperated>
+  <ferc:MilesOfGatheringLinesOperated contextRef="From2025-01-01To2025-12-31_OwnershipAxis_WhollyOwnedAndOperatedByRespondentMember" unitRef="mi" decimals="0">22</ferc:MilesOfGatheringLinesOperated>
+  <ferc:MilesOfGatheringLinesOperated contextRef="From2025-01-01To2025-12-31_OwnershipAxis_WhollyOwnedAndOperatedByRespondentMember_MilesOfPipelineOperatedAxis_1" unitRef="mi" decimals="0">22</ferc:MilesOfGatheringLinesOperated>
+  <ferc:MilesOfTrunkLinesForCrudeOilOperated contextRef="From2025-01-01To2025-12-31" unitRef="mi" decimals="0">0</ferc:MilesOfTrunkLinesForCrudeOilOperated>
+  <ferc:MilesOfTrunkLinesForProductsOperated contextRef="From2025-01-01To2025-12-31" unitRef="mi" decimals="0">0</ferc:MilesOfTrunkLinesForProductsOperated>
+  <ferc:NameAndStateOfCompany contextRef="From2025-01-01To2025-12-31_OwnershipAxis_WhollyOwnedAndOperatedByRespondentMember_MilesOfPipelineOperatedAxis_1">Wheatland Energy Connection, LLC</ferc:NameAndStateOfCompany>
+  <ferc:NameAndTitleOfDirector contextRef="From2025-01-01To2025-12-31_DirectorAxis_1">Doug Martin, Manager</ferc:NameAndTitleOfDirector>
+  <ferc:NameAndTitleOfDirector contextRef="From2025-01-01To2025-12-31_DirectorAxis_2">Jackson Farrow, Manager</ferc:NameAndTitleOfDirector>
+  <ferc:NameAndTitleOfDirector contextRef="From2025-01-01To2025-12-31_DirectorAxis_3">Aaron Mobarak, Manager</ferc:NameAndTitleOfDirector>
+  <ferc:NameAndTitleOfDirector contextRef="From2025-01-01To2025-12-31_DirectorAxis_4">Thomas H. Norman</ferc:NameAndTitleOfDirector>
+  <ferc:NameAndTitleOfDirector contextRef="From2025-01-01To2025-12-31_DirectorAxis_5">Timothy L. Reynolds</ferc:NameAndTitleOfDirector>
+  <ferc:NameOfCompanyControllingRespondent contextRef="From2025-01-01To2025-12-31_ControlOverRespondentAxis_1">Dakota Energy Connection, LLC</ferc:NameOfCompanyControllingRespondent>
+  <ferc:NameOfContactPerson contextRef="From2025-01-01To2025-12-31">Allyson Thompson</ferc:NameOfContactPerson>
+  <ferc:NameOfPipelineCompanyMakingReport contextRef="From2025-01-01To2025-12-31">Wheatland Energy Connection, LLC</ferc:NameOfPipelineCompanyMakingReport>
+  <ferc:NamesOfConstituentAndMergedCompanies contextRef="From2025-01-01To2025-12-31">Dakota Energy Connection, LLC</ferc:NamesOfConstituentAndMergedCompanies>
+  <ferc:NetCarrierOperatingIncome contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-25843</ferc:NetCarrierOperatingIncome>
+  <ferc:NetCashProvidedByUsedInOperatingActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-21700</ferc:NetCashProvidedByUsedInOperatingActivities>
+  <ferc:NetIncomeLoss contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-21700</ferc:NetIncomeLoss>
+  <ferc:NetIncreaseDecreaseInCashAndCashEquivalents contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+  <ferc:NetIncreaseDecreaseInUnappropriatedRetainedIncome contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-21700</ferc:NetIncreaseDecreaseInUnappropriatedRetainedIncome>
+  <ferc:NoncarrierPropertyNet contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:NoncarrierPropertyNet>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:NoncurrentLiabilities contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:NoncurrentLiabilities>
+  <ferc:NotesToFinancialStatementsTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:NotesToFinancialStatementsTextBlock>
+  <ferc:OfficerName contextRef="From2025-01-01To2025-12-31_OfficerAxis_1">Thomas H. Norman</ferc:OfficerName>
+  <ferc:OfficerName contextRef="From2025-01-01To2025-12-31_OfficerAxis_2">Timothy L. Reynolds</ferc:OfficerName>
+  <ferc:OfficerTitle contextRef="From2025-01-01To2025-12-31_OfficerAxis_1">Co-CEO</ferc:OfficerTitle>
+  <ferc:OfficerTitle contextRef="From2025-01-01To2025-12-31_OfficerAxis_2">Co-CEO</ferc:OfficerTitle>
+  <ferc:OilLossesAndShortagesOperationsAndMaintenance contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OilLossesAndShortagesOperationsAndMaintenance>
+  <ferc:OperatingAndMaintenanceExpenses contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OperatingAndMaintenanceExpenses>
+  <ferc:OperatingExpenses contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">25843</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilDeliveryMember" unitRef="USD" decimals="0">0</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">25843</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">25843</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilTrunkMember" unitRef="USD" decimals="0">0</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsDeliveryMember" unitRef="USD" decimals="0">0</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsMember" unitRef="USD" decimals="0">0</ferc:OperatingExpenses>
+  <ferc:OperatingExpenses contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsTrunkMember" unitRef="USD" decimals="0">0</ferc:OperatingExpenses>
+  <ferc:OperatingFuelAndPowerOperationsAndMaintenance contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OperatingFuelAndPowerOperationsAndMaintenance>
+  <ferc:OperatingRevenues contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">0</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsMember" unitRef="USD" decimals="0">0</ferc:OperatingRevenues>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilDeliveryMember" unitRef="USD" decimals="0">0</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">0</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">0</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilTrunkMember" unitRef="USD" decimals="0">0</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsDeliveryMember" unitRef="USD" decimals="0">0</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsMember" unitRef="USD" decimals="0">0</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OperationsAndMaintenanceExpensesOil contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_OilProductsTrunkMember" unitRef="USD" decimals="0">0</ferc:OperationsAndMaintenanceExpensesOil>
+  <ferc:OrderNumber contextRef="From2025-01-01To2025-12-31_ControlOverRespondentAxis_1" unitRef="pure" decimals="INF">1</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2025-01-01To2025-12-31_DirectorAxis_1" unitRef="pure" decimals="INF">1</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2025-01-01To2025-12-31_DirectorAxis_2" unitRef="pure" decimals="INF">2</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2025-01-01To2025-12-31_DirectorAxis_3" unitRef="pure" decimals="INF">3</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2025-01-01To2025-12-31_DirectorAxis_4" unitRef="pure" decimals="INF">4</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2025-01-01To2025-12-31_DirectorAxis_5" unitRef="pure" decimals="INF">5</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2025-01-01To2025-12-31_OfficerAxis_1" unitRef="pure" decimals="INF">1</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2025-01-01To2025-12-31_OfficerAxis_2" unitRef="pure" decimals="INF">2</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2025-01-01To2025-12-31_OwnershipAxis_WhollyOwnedAndOperatedByRespondentMember_MilesOfPipelineOperatedAxis_1" unitRef="pure" decimals="INF">1</ferc:OrderNumber>
+  <ferc:OrdinaryIncomeBeforeFederalIncomeTaxes contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-21700</ferc:OrdinaryIncomeBeforeFederalIncomeTaxes>
+  <ferc:OriginalCostIncludedInRateBase contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:OriginalCostIncludedInRateBase>
+  <ferc:OtherAdjustmentByShortTermDebtToCashFlowsFromFinancingActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentByShortTermDebtToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:OtherAssetsAndDeferredCharges contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:OtherAssetsAndDeferredCharges>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-0</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities>
+  <ferc:OtherExpensesGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">7843</ferc:OtherExpensesGeneralExpense>
+  <ferc:OtherExpensesGeneralExpense contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">7843</ferc:OtherExpensesGeneralExpense>
+  <ferc:OtherExpensesGeneralExpense contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">7843</ferc:OtherExpensesGeneralExpense>
+  <ferc:OtherExpensesOperationsAndMaintenance contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OtherExpensesOperationsAndMaintenance>
+  <ferc:OtherIncomeAndDeductions contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">4143</ferc:OtherIncomeAndDeductions>
+  <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-0</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities>
+  <ferc:OutsideServicesGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OutsideServicesGeneralExpense>
+  <ferc:OutsideServicesOperationsAndMaintenance contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:OutsideServicesOperationsAndMaintenance>
+  <ferc:PipelineTaxesGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:PipelineTaxesGeneralExpense>
+  <ferc:PrincipalBusinessAddress contextRef="From2025-01-01To2025-12-31_DirectorAxis_1">111 Center Street, Little Rock, AR 72201</ferc:PrincipalBusinessAddress>
+  <ferc:PrincipalBusinessAddress contextRef="From2025-01-01To2025-12-31_DirectorAxis_2">111 Center Street, Little Rock, AR 72201</ferc:PrincipalBusinessAddress>
+  <ferc:PrincipalBusinessAddress contextRef="From2025-01-01To2025-12-31_DirectorAxis_3">980 N. Michigan Avenue, Suite 1540, Chicago, IL 60611</ferc:PrincipalBusinessAddress>
+  <ferc:PrincipalBusinessAddress contextRef="From2025-01-01To2025-12-31_DirectorAxis_4">845 Texas Avenue, Suite 200, Houston, TX 77002</ferc:PrincipalBusinessAddress>
+  <ferc:PrincipalBusinessAddress contextRef="From2025-01-01To2025-12-31_DirectorAxis_5">845 Texas Avenue, Suite 200, Houston, TX 77002</ferc:PrincipalBusinessAddress>
+  <ferc:ProceedsFromIssuanceOfCapitalStock contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">159844</ferc:ProceedsFromIssuanceOfCapitalStock>
+  <ferc:RealCostOfStockholdersEquityRateOfReturn contextRef="From2025-01-01To2025-12-31" unitRef="pure" decimals="INF">0.2659</ferc:RealCostOfStockholdersEquityRateOfReturn>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAccruedDepreciationCarrierPropertyAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAccruedDepreciationUndividedJointInterestPropertyAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAdditionalPaidInCapitalAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAmortizationBaseAndReserveAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAnalysisOfFederalIncomeAndOtherTaxesDeferredAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAnnualCostOfServiceBasedAnalysisScheduleAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleAppropriatedRetainedIncomeAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleCapitalStockAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleCapitalStockChangesDuringTheYearAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleCarrierPropertyAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleCompaniesControlledByRespondentAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleComparativeBalanceSheetAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleControlOverRespondentAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleDirectorsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleFootnotesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleGeneralInformationAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleImportantChangesDuringTheQuarterYearAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleIncomeFromNoncarrierPropertyAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleInterestAndDividendIncomeAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleInvestInComStocksOfAffiliatedCoCoControlledDirectlyByRespOtherThanThroughTitleToSecuritiesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleInvestmentsInAffiliatedCompaniesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleInvestmentsInCommonStocksOfAffiliatedCompaniesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleLongTermDebtAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleMilesOfPipelineOperatedAtEndOfYearAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleMiscellaneousItemsInIncomeAndRetainedIncomeAccountsForTheYearAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleNoncarrierPropertyAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleNotesToFinancialStatementsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOfficersAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOilOperatingRevenuesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOperatingExpenseAccountsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOperatingRevenueAccountsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleOtherDeferredChargesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_SchedulePayablesToAffiliatedCompaniesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_SchedulePaymentsForServicesRenderedByOtherThanEmployeesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_SchedulePipelineTaxesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleReceivableFromAffiliatedCompaniesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatementOfCashFlowsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatementOfIncomeAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatisticsOfOperationsAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleStatisticsOfOperationsOwnedByRespondentButOperatedByOthersAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleUnappropriatedRetainedIncomeStatementAbstract">NA</ferc:Remarks>
+  <ferc:Remarks contextRef="From2025-01-01To2025-12-31_ScheduleRemarksAxis_ScheduleUndividedJointInterestPropertyAbstract">NA</ferc:Remarks>
+  <ferc:RentalsGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">18000</ferc:RentalsGeneralExpense>
+  <ferc:RentalsGeneralExpense contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilGatheringMember" unitRef="USD" decimals="0">18000</ferc:RentalsGeneralExpense>
+  <ferc:RentalsGeneralExpense contextRef="From2025-01-01To2025-12-31_ProductsAndServicesAxis_CrudeOilMember" unitRef="USD" decimals="0">18000</ferc:RentalsGeneralExpense>
+  <ferc:RentalsOperationsAndMaintenance contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:RentalsOperationsAndMaintenance>
+  <ferc:ReportDate contextRef="From2025-01-01To2025-12-31">2026-04-22</ferc:ReportDate>
+  <ferc:ReportPeriod contextRef="From2025-01-01To2025-12-31">Q4</ferc:ReportPeriod>
+  <ferc:ReportYear contextRef="From2025-01-01To2025-12-31" unitRef="pure" decimals="INF">2025</ferc:ReportYear>
+  <ferc:ReportYearPeriod contextRef="From2025-01-01To2025-12-31">2025/Q4</ferc:ReportYearPeriod>
+  <ferc:RespondentLegalName contextRef="From2025-01-01To2025-12-31">Wheatland Energy Connection, LLC</ferc:RespondentLegalName>
+  <ferc:ReturnOnRateBase contextRef="Asof2025-12-31" unitRef="USD" decimals="INF">36980.66</ferc:ReturnOnRateBase>
+  <ferc:SalariesAndWagesGeneralExpense contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:SalariesAndWagesGeneralExpense>
+  <ferc:SalariesAndWagesOperationsAndMaintenance contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">0</ferc:SalariesAndWagesOperationsAndMaintenance>
+  <ferc:SizeOfGatheringLinesOperated contextRef="From2025-01-01To2025-12-31_OwnershipAxis_WhollyOwnedAndOperatedByRespondentMember_MilesOfPipelineOperatedAxis_1" unitRef="in" decimals="0">8</ferc:SizeOfGatheringLinesOperated>
+  <ferc:SpecialLawRespondentIncorporatedUnder contextRef="From2025-01-01To2025-12-31">Delaware</ferc:SpecialLawRespondentIncorporatedUnder>
+  <ferc:StatementAboutImportantChangesDuringTheQuarterYearTextBlock contextRef="From2025-01-01To2025-12-31">NA</ferc:StatementAboutImportantChangesDuringTheQuarterYearTextBlock>
+  <ferc:StateOfIncorporation contextRef="From2025-01-01To2025-12-31_ControlOverRespondentAxis_1">DE</ferc:StateOfIncorporation>
+  <ferc:StockholdersEquity contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:StockholdersEquity>
+  <ferc:SubmissionType contextRef="From2025-01-01To2025-12-31">O</ferc:SubmissionType>
+  <ferc:TangibleProperty contextRef="Asof2025-12-31" unitRef="USD" decimals="0">138144</ferc:TangibleProperty>
+  <ferc:TelephoneOfContactPerson contextRef="From2025-01-01To2025-12-31">(501) 377-2060</ferc:TelephoneOfContactPerson>
+  <ferc:TitleOfContactPerson contextRef="From2025-01-01To2025-12-31">Controller</ferc:TitleOfContactPerson>
+  <ferc:TrendedOriginalCostRateBase contextRef="Asof2025-12-31" unitRef="USD" decimals="INF">139077.33</ferc:TrendedOriginalCostRateBase>
+  <ferc:UnamortizedStartingRateBaseWriteUp contextRef="Asof2025-12-31" unitRef="USD" decimals="0">0</ferc:UnamortizedStartingRateBaseWriteUp>
+  <ferc:UnappropriatedRetainedIncomeAndEquityInUndistributedEarningsLossesOfAffiliatedCompany contextRef="Asof2025-12-31" unitRef="USD" decimals="0">-21700</ferc:UnappropriatedRetainedIncomeAndEquityInUndistributedEarningsLossesOfAffiliatedCompany>
+  <ferc:UnappropriatedRetainedIncomeCreditTransferredFromIncome contextRef="From2025-01-01To2025-12-31" unitRef="USD" decimals="0">-21700</ferc:UnappropriatedRetainedIncomeCreditTransferredFromIncome>
+  <ferc:VotingStockOfRespondentOwnedByOthersPercentage contextRef="Asof2025-12-31_ControlOverRespondentAxis_1" unitRef="pure" decimals="INF">1.00</ferc:VotingStockOfRespondentOwnedByOthersPercentage>
+  <ferc:WeightedAverageCostOfCapitalRateOfReturn contextRef="From2025-01-01To2025-12-31" unitRef="pure" decimals="INF">0.2659</ferc:WeightedAverageCostOfCapitalRateOfReturn>
+</xbrl:xbrl>

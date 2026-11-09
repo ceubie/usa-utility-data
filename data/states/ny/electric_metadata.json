@@ -1,0 +1,347 @@
+{
+  "id" : "awza-4vgu",
+  "name" : "NYS Electric Utility Service Territories",
+  "assetType" : "dataset",
+  "attribution" : "NYS Department of Public Service",
+  "attributionLink" : "http://www3.dps.ny.gov/W/PSCWeb.nsf/All/03627EFC626529EE85257687006F39CD?OpenDocument",
+  "averageRating" : 0,
+  "category" : "Energy & Environment",
+  "createdAt" : 1463513785,
+  "description" : "Electric utility service boundaries in NYS.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 12739,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "indexUpdatedAt" : 1533687244,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 20988879,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationGroup" : 10786862,
+  "publicationStage" : "published",
+  "rowClass" : "",
+  "rowsUpdatedAt" : 1463513792,
+  "tableId" : 10786862,
+  "totalTimesRated" : 0,
+  "viewCount" : 5460,
+  "viewLastModified" : 1781204981,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1686256291,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 5558563,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1686256291,
+    "targetAudience" : "public",
+    "workflowId" : 2254,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1686256291,
+      "failureCount" : 0,
+      "startedAt" : 1686256291,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "28jg-4c4u",
+      "displayName" : "Open Data Administrator 1"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 255227285,
+    "name" : "COMP_FULL",
+    "dataTypeName" : "text",
+    "description" : "Full utility company name.",
+    "fieldName" : "comp_full",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 36245016,
+    "cachedContents" : {
+      "largest" : "Rochester Gas and Electric",
+      "non_null" : "56",
+      "null" : "0",
+      "top" : [ {
+        "item" : "NYS Electric and Gas",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: SHERRILL",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: BATH",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: ENDICOTT",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: GREENE",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: CASTILE",
+        "count" : "1"
+      }, {
+        "item" : "Central Hudson Gas and Electric",
+        "count" : "1"
+      }, {
+        "item" : "Orange and Rockland Utilities",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: CHURCHVILLE",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: SALAMANCA",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: BERGEN",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: AKRON",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: PENN YAN",
+        "count" : "1"
+      }, {
+        "item" : "Rochester Gas and Electric",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: SKANEATELES",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: MARATHON",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: HAMILTON",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: SILVER SPRINGS",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: MAYVILLE",
+        "count" : "1"
+      }, {
+        "item" : "Municipal Utility: BROCTON",
+        "count" : "1"
+      } ],
+      "smallest" : "Central Hudson Gas and Electric",
+      "count" : "56",
+      "cardinality" : "56"
+    },
+    "format" : { }
+  }, {
+    "id" : 255227286,
+    "name" : "COMP_SHORT",
+    "dataTypeName" : "text",
+    "description" : "Shorthand/abbreviated company name.",
+    "fieldName" : "comp_short",
+    "position" : 2,
+    "renderTypeName" : "text",
+    "tableColumnId" : 36245017,
+    "cachedContents" : {
+      "largest" : "RGE",
+      "non_null" : "56",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Municipal",
+        "count" : "49"
+      }, {
+        "item" : "NYSEG",
+        "count" : "1"
+      }, {
+        "item" : "LIPA",
+        "count" : "1"
+      }, {
+        "item" : "CHGE",
+        "count" : "1"
+      }, {
+        "item" : "ORU",
+        "count" : "1"
+      }, {
+        "item" : "RGE",
+        "count" : "1"
+      }, {
+        "item" : "NGRID",
+        "count" : "1"
+      }, {
+        "item" : "ConEd",
+        "count" : "1"
+      } ],
+      "smallest" : "CHGE",
+      "count" : "56",
+      "cardinality" : "8"
+    },
+    "format" : { }
+  }, {
+    "id" : 255227287,
+    "name" : "the_geom",
+    "dataTypeName" : "multipolygon",
+    "description" : "Supplied polygon geometry data for use in rendering map shapes.",
+    "fieldName" : "the_geom",
+    "position" : 3,
+    "renderTypeName" : "multipolygon",
+    "tableColumnId" : 36245018,
+    "format" : { }
+  }, {
+    "id" : 255227288,
+    "name" : "COMP_ID",
+    "dataTypeName" : "text",
+    "description" : "DPS company ID.",
+    "fieldName" : "comp_id",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 36245019,
+    "cachedContents" : {
+      "largest" : "9999",
+      "non_null" : "56",
+      "null" : "0",
+      "top" : [ {
+        "item" : "9999",
+        "count" : "49"
+      }, {
+        "item" : "1006",
+        "count" : "1"
+      }, {
+        "item" : "1004",
+        "count" : "1"
+      }, {
+        "item" : "1002",
+        "count" : "1"
+      }, {
+        "item" : "1001",
+        "count" : "1"
+      }, {
+        "item" : "1005",
+        "count" : "1"
+      }, {
+        "item" : "2066",
+        "count" : "1"
+      }, {
+        "item" : "1007",
+        "count" : "1"
+      } ],
+      "smallest" : "1001",
+      "count" : "56",
+      "cardinality" : "8"
+    },
+    "format" : { }
+  }, {
+    "id" : 255227289,
+    "name" : "DATEMOD",
+    "dataTypeName" : "date",
+    "description" : "Date feature was last modified.",
+    "fieldName" : "datemod",
+    "position" : 5,
+    "renderTypeName" : "date",
+    "tableColumnId" : 36245020,
+    "cachedContents" : {
+      "largest" : "2016-05-17T00:00:00.000Z",
+      "non_null" : "56",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2016-05-17T00:00:00.000Z",
+        "count" : "56"
+      } ],
+      "smallest" : "2016-05-17T00:00:00.000Z",
+      "count" : "56",
+      "cardinality" : "1"
+    },
+    "format" : { }
+  }, {
+    "id" : 255227290,
+    "name" : "NOTES",
+    "dataTypeName" : "text",
+    "description" : "Free form notes field. This field will be not appear if no notes were entered.",
+    "fieldName" : "notes",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 36245021,
+    "cachedContents" : {
+      "largest" : "Infrastructure managed by PSEG. Sometimes referred to as PSEG-LI.",
+      "non_null" : "2",
+      "null" : "54",
+      "top" : [ {
+        "item" : "Formerly Niagara Mohawk (NiMo)",
+        "count" : "1"
+      }, {
+        "item" : "Infrastructure managed by PSEG. Sometimes referred to as PSEG-LI.",
+        "count" : "1"
+      } ],
+      "smallest" : "Formerly Niagara Mohawk (NiMo)",
+      "count" : "56",
+      "cardinality" : "2"
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "rdfSubject" : "0",
+    "rdfClass" : "",
+    "attachments" : [ {
+      "filename" : "DPS_GasAndElectricTerritories_Overview.pdf",
+      "assetId" : "86c59722-95ad-4362-bc87-e4ad5512a3a5",
+      "name" : "DPS_GasAndElectricTerritories_Overview.pdf"
+    }, {
+      "filename" : "DPS_GasAndElectricTerritories_DataDictionary.pdf",
+      "assetId" : "a421e394-ffb3-450f-a537-07ee2d40f050",
+      "name" : "DPS_GasAndElectricTerritories_DataDictionary.pdf"
+    }, {
+      "filename" : "PSC_Electric_Territory_Map_051716.zip",
+      "assetId" : "b304aa41-57e6-4352-ac2c-ca8062164d65",
+      "name" : "PSC_Electric_Territory_Map_051716.zip"
+    } ],
+    "custom_fields" : {
+      "Dataset Summary" : {
+        "Posting Frequency" : "As needed",
+        "Organization" : "Office of Electric, Gas & Water",
+        "Contact Information" : "web.questions@dps.ny.gov",
+        "Time Period" : "Current",
+        "Coverage" : "Statewide",
+        "Granularity" : "Municipality (Town, City, Village)",
+        "Dataset Owner" : "NYS Department of Public Service"
+      },
+      "Disclaimers" : {
+        "Limitations" : "Although every effort has been made to ensure the accuracy of information, errors may be reflected in the data supplied. The user must be aware of data conditions and bear responsibility for the appropriate use of the information with respect to possible errors, original map scale, collection methodology, currency of data, and other conditions"
+      },
+      "Dataset Information" : {
+        "Agency" : "Public Service, Department of"
+      }
+    },
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "electric", "regulated utilities" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

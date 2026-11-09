@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2026 Workiva-->
+<!--r:019e844b-d1bd-7ba2-9e59-93aa2f0794bb,g:8b9742a2-96fe-4608-b543-25a2f094a57a-->
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ferc="http://ferc.gov/form/2026-04-01/ferc" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:wfx="http://wfx.webfilings.com/20260630" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <link:schemaRef xlink:href="https://eCollection.ferc.gov/taxonomy/form1/2026-04-01/form/form1Q/form-1Q_2026-04-01.xsd" xlink:type="simple"/>
+  <xbrli:unit id="u-1">
+    <xbrli:measure>year</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-2">
+    <xbrli:measure>iso4217:USD</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-3">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-4">
+    <xbrli:measure>utr:MW</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-5">
+    <xbrli:measure>utr:MWh</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:context id="c-1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-2">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransmissionServiceAndGenerationInterconnectionStudyCostsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-3">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleRegionalTransmissionServiceRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-4">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransmissionOfElectricityByIsoOrRtoAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-5">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransmissionOfElectricityByOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-6">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAmountsIncludedInIsoOrRtoSettlementAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-7">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleMonthlyPeaksAndOutputAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-8">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleMonthlyTransmissionSystemPeakLoadAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-9">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleMonthlyIsoOrRtoTransmissionSystemPeakLoadAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-10">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-11">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-12">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-13">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-14">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-04-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-15">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-16">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-17">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-18">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-19">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Amortization of</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-20">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Other Non-Cash Charges (Credits) to Income</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-21">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Other Non-Cash Charges (Credits) to Income</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-22">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Other (provide details in footnote):</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-23">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Net (Inc) Dec in Other Current and Accrued Assets and Deferred Debits</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-24">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Net (Inc) Dec in Other Current and Accrued Assets and Deferred Debits</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-25">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesAxis">
+          <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>Other (provide details in footnote):</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-26">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>Other (provide details in footnote):</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-27">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDomain>Other (provide details in footnote):</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-28">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>Other (provide details in footnote):</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-29">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>Other (provide details in footnote):</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-30">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>Dividends paid to Members</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-31">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>Dividends paid to Members</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-32">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-33">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryAssetsAxis">
+          <ferc:OtherRegulatoryAssetsDomain>Deferred Future Income Taxes</ferc:OtherRegulatoryAssetsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-34">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryAssetsAxis">
+          <ferc:OtherRegulatoryAssetsDomain>2024 ATRR Under Recovery Amortization Period (1/26 - 12/26)</ferc:OtherRegulatoryAssetsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-35">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryAssetsAxis">
+          <ferc:OtherRegulatoryAssetsDomain>Deferred Future Income Taxes</ferc:OtherRegulatoryAssetsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-36">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryAssetsAxis">
+          <ferc:OtherRegulatoryAssetsDomain>2024 ATRR Under Recovery Amortization Period (1/26 - 12/26)</ferc:OtherRegulatoryAssetsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-37">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryAssetsAxis">
+          <ferc:OtherRegulatoryAssetsDomain>Deferred Future Income Taxes</ferc:OtherRegulatoryAssetsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-38">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryAssetsAxis">
+          <ferc:OtherRegulatoryAssetsDomain>2024 ATRR Under Recovery Amortization Period (1/26 - 12/26)</ferc:OtherRegulatoryAssetsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-39">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryAssetsAxis">
+          <ferc:OtherRegulatoryAssetsDomain>Deferred Future Income Taxes</ferc:OtherRegulatoryAssetsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-40">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryAssetsAxis">
+          <ferc:OtherRegulatoryAssetsDomain>2024 ATRR Under Recovery Amortization Period (1/26 - 12/26)</ferc:OtherRegulatoryAssetsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-41">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-42">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>Deferred Future Income Taxes</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-43">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>2025 ATRR Over Recovery Amortization Period (1/27 - 12/27)</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-44">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>Deferred Future Income Taxes</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-45">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>2025 ATRR Over Recovery Amortization Period (1/27 - 12/27)</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-46">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>2025 ATRR Over Recovery Amortization Period (1/27 - 12/27)</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-47">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>Deferred Future Income Taxes</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-48">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>2025 ATRR Over Recovery Amortization Period (1/27 - 12/27)</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-49">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TransmissionOfElectricityForOthersAxis">
+          <ferc:TransmissionOfElectricityForOthersDomain>Southwest Power Pool OS</ferc:TransmissionOfElectricityForOthersDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-50">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C002336</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:TransmissionPlantMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <ferc:FormType id="f-1" contextRef="c-1">1/3-Q</ferc:FormType>
+  <ferc:RespondentLegalName id="f-2" contextRef="c-1">Prairie Wind Transmission, LLC</ferc:RespondentLegalName>
+  <ferc:ReportYear id="f-3" contextRef="c-1" decimals="0" unitRef="u-1">2026</ferc:ReportYear>
+  <ferc:ReportPeriod id="f-4" contextRef="c-1">Q2</ferc:ReportPeriod>
+  <ferc:RespondentLegalName id="f-5" contextRef="c-1">Prairie Wind Transmission, LLC</ferc:RespondentLegalName>
+  <ferc:ReportYear id="f-6" contextRef="c-1" decimals="0" unitRef="u-1">2026</ferc:ReportYear>
+  <ferc:ReportPeriod id="f-7" contextRef="c-1">Q2</ferc:ReportPeriod>
+  <ferc:PreviousName id="f-8" contextRef="c-1" xsi:nil="true"></ferc:PreviousName>
+  <ferc:NameChangeDate id="f-9" contextRef="c-1" xsi:nil="true"></ferc:NameChangeDate>
+  <ferc:AddressOfPrincipalOfficeAtEndOfPeriod id="f-10" contextRef="c-1">818 South Kansas Avenue, Topeka, KS 66612</ferc:AddressOfPrincipalOfficeAtEndOfPeriod>
+  <ferc:NameOfContactPerson id="f-11" contextRef="c-1">Jeremy Fischer</ferc:NameOfContactPerson>
+  <ferc:TitleOfContactPerson id="f-12" contextRef="c-1">Treasurer</ferc:TitleOfContactPerson>
+  <ferc:AddressOfContactPerson id="f-13" contextRef="c-1">818 South Kansas Avenue, Topeka, KS 66612</ferc:AddressOfContactPerson>
+  <ferc:SubmissionType id="f-14" contextRef="c-1">O</ferc:SubmissionType>
+  <ferc:TelephoneOfContactPerson id="f-15" contextRef="c-1">(785) 508-2391</ferc:TelephoneOfContactPerson>
+  <ferc:ReportDate id="f-16" contextRef="c-1">2026-08-31</ferc:ReportDate>
+  <ferc:AttestationName id="f-17" contextRef="c-1">Denise M. Buffington</ferc:AttestationName>
+  <ferc:CorporateOfficerCertificationSignature id="f-18" contextRef="c-1">Denise M. Buffington</ferc:CorporateOfficerCertificationSignature>
+  <ferc:AttestationTitle id="f-19" contextRef="c-1">President</ferc:AttestationTitle>
+  <ferc:AttestationDate id="f-20" contextRef="c-1">2026-08-31</ferc:AttestationDate>
+  <ferc:CompanyIdentifier id="f-21" contextRef="c-1">C002336</ferc:CompanyIdentifier>
+  <ferc:DisclosureOfChangesInAndImportantAdditionsToFranchiseRightsTextBlock id="f-22" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;1. None&lt;/span&gt;</ferc:DisclosureOfChangesInAndImportantAdditionsToFranchiseRightsTextBlock>
+  <ferc:DisclosureOfAcquisitionOfOwnershipInOtherCompaniesByReorganizationMergerOrConsolidationWithOtherCompaniesTextBlock id="f-23" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;2. None&lt;/span&gt;</ferc:DisclosureOfAcquisitionOfOwnershipInOtherCompaniesByReorganizationMergerOrConsolidationWithOtherCompaniesTextBlock>
+  <ferc:DisclosureOfPurchaseOrSaleOfAnOperatingUnitOrSystemTextBlock id="f-24" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;3. None&lt;/span&gt;</ferc:DisclosureOfPurchaseOrSaleOfAnOperatingUnitOrSystemTextBlock>
+  <ferc:DisclosureOfImportantLeaseholdsThatHaveBeenAcquiredOrGivenAssignedOrSurrenderedTextBlock id="f-25" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;4. None&lt;/span&gt;</ferc:DisclosureOfImportantLeaseholdsThatHaveBeenAcquiredOrGivenAssignedOrSurrenderedTextBlock>
+  <ferc:DisclosureOfImportantExtensionOrReductionOfTransmissionOrDistributionSystemTextBlock id="f-26" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;5. None&lt;/span&gt;</ferc:DisclosureOfImportantExtensionOrReductionOfTransmissionOrDistributionSystemTextBlock>
+  <ferc:DisclosureOfObligationsIncurredOrAssumedByRespondentAsGuarantorForThePerformanceByAnotherOfAnyAgreementOrObligationTextBlock id="f-27" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;6. See the Notes to Financial Statements on page 123.&lt;/span&gt;</ferc:DisclosureOfObligationsIncurredOrAssumedByRespondentAsGuarantorForThePerformanceByAnotherOfAnyAgreementOrObligationTextBlock>
+  <ferc:DisclosureOfChangesInArticlesOfIncorporationOrAmendmentsToCharterTextBlock id="f-28" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;7. None&lt;/span&gt;</ferc:DisclosureOfChangesInArticlesOfIncorporationOrAmendmentsToCharterTextBlock>
+  <ferc:DisclosureOfEstimatedAnnualEffectAndNatureOfAnyImportantWageScaleChangesTextBlock id="f-29" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;8. Prairie Wind Transmission, LLC has no employees. The employees of its member owners charge a portion of their time to Prairie Wind Transmission, LLC.&lt;/span&gt;</ferc:DisclosureOfEstimatedAnnualEffectAndNatureOfAnyImportantWageScaleChangesTextBlock>
+  <ferc:DisclosureOfStatusOfAnyMateriallyImportantLegalProceedingsTextBlock id="f-30" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;9. None&lt;/span&gt;</ferc:DisclosureOfStatusOfAnyMateriallyImportantLegalProceedingsTextBlock>
+  <ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock id="f-31" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;10. See the Notes to Financial Statements on page 123.&lt;/span&gt;</ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock>
+  <ferc:DisclosureOfImportantChangesRelatedToRespondentCompanyAppearingInAnnualReportToStockholdersTextBlock id="f-32" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;12. See the Notes to Financial Statements on page 123.&lt;/span&gt;</ferc:DisclosureOfImportantChangesRelatedToRespondentCompanyAppearingInAnnualReportToStockholdersTextBlock>
+  <ferc:DisclosureOfChangesInOfficersDirectorsMajorSecurityHoldersAndVotingPowersOfTheRespondentTextBlock id="f-33" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;13. None&lt;/span&gt;</ferc:DisclosureOfChangesInOfficersDirectorsMajorSecurityHoldersAndVotingPowersOfTheRespondentTextBlock>
+  <ferc:DisclosureOfSignificantEventThatRespondentParticipatesInACashManagementProgramsTextBlock id="f-34" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:120%"&gt;14. Not applicable&lt;/span&gt;</ferc:DisclosureOfSignificantEventThatRespondentParticipatesInACashManagementProgramsTextBlock>
+  <ferc:DisclosureOfImportantDisclosuresRegardingTheFinancialStatementsTextBlock id="f-35" contextRef="c-1">&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:700;line-height:120%"&gt;ORGANIZATION AND BASIS OF PRESENTATION (NOTE 1)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:700;line-height:120%"&gt;Organization&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Prairie Wind Transmission, LLC (Prairie Wind) is a regulated utility organized in 2008 under the laws of the State of Delaware. Unless the context otherwise indicates, all references in this report to &#8220;the Company,&#8221; &#8220;Prairie Wind,&#8221; and similar words are to Prairie Wind Transmission, LLC, alone and not together with its members. &lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Prairie Wind provides electric transmission services in the Southwest Power Pool (SPP) region in Kansas. Prairie Wind&#8217;s headquarters is located at 818 South Kansas Avenue, Topeka, Kansas 66612.&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Prairie Wind is owned 50% by Evergy Kansas Central, Inc. (Evergy Kansas Central), a wholly-owned subsidiary of Evergy, Inc., 25% by AEP Transmission Holding Company, LLC, a wholly-owned subsidiary of American Electric Power Company, Inc., and 25% by BHE America Transco, LLC (BHE), an indirect wholly-owned subsidiary of Berkshire Hathaway Energy Company.&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Pursuant to applicable provisions of the Delaware Limited Liability Company Act, members have no liability for the debts, obligations or other liabilities of the company, except in certain circumstances where the corporate veil may be pierced under common law and where members have contracted performance guarantees to the SPP.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:700;line-height:120%"&gt;Basis of Accounting&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;For this report, the financial statements were prepared in accordance with the accounting requirements of the Federal Energy Regulatory Commission (FERC) as set forth in its Uniform System of Accounts and published Accounting Releases, which is a comprehensive basis of accounting other than generally accepted accounting principles. The principal differences from accounting principles generally accepted in the United States of America relate to (1) the presentation of income taxes, (2) the presentation of regulatory assets and liabilities, (3) the presentation of long-term debt, and (4) the presentation of retained earnings. The results of operations for year to date June 30, 2026, are not necessarily indicative of the results to be expected for the full year. &lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Events which occurred subsequent to the date of the balance sheet have been evaluated for potential recognition or disclosure in the financial statements through August&#160;31, 2026, the date these financial statements were available to be issued.&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:700;line-height:120%"&gt;RATE MATTERS AND REGULATION (NOTE 2)&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;FERC authorized the recovery of Prairie Wind&#8217;s costs through a formula rate and further authorized a return on equity (ROE) of 12.8%, comprised of a 10.8% base ROE, 1.5% incentive adders, and 0.5% adder for Regional Transmission Organization participation. The formula rate uses Prairie Wind&#8217;s actual capital structure and limits the equity component to not exceed 60%. &lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Under the formula rate mechanism approved by FERC, Prairie Wind calculates its Annual Transmission Revenue Requirement (ATRR) based on projected costs and plant balances. The ATRR is collected through the SPP&#8217;s Open Access Transmission Tariff rates. Each year, Prairie Wind files an update to the ATRR which includes projections for costs to be incurred, an allowed return on investment and a prior period true-up adjustment with interest. Prairie Wind&#8217;s true-up adjustment is the difference between the previous rate year&#8217;s actual ATRR and the previous rate year&#8217;s projected ATRR. This amount is recorded as a regulatory asset or liability until amortized to regulatory debits or credits in a later year. &lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:700;line-height:120%"&gt;TAXES (NOTE 3)&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Prairie Wind is a limited liability company that is taxed as a partnership under the Internal Revenue Code and applicable state statutes. As a result, Prairie Wind is not liable for federal or state income taxes. Prairie Wind is allowed, however, to recover in rates as a component of cost of service the amount of income taxes that is the responsibility of its members. Therefore, Prairie Wind has included a provision for its members&#8217; federal and state income taxes in this report. &lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:112%"&gt;The current tax provisions recognized are accumulated in account 236 &#8211; Accrued Income Taxes. Distributions paid to members for the income taxes attributable to their ownership reduce this balance and are reported as cash outflows from operations on the statement of cash flows. There were no tax distributions paid to members for the quarter ended and year-to-date June 30, 2026; and tax distributions totaling $0.3 million and $1.1 million were made for the quarter ended and year-to-date ended June 30, 2025, respectively.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:700;line-height:120%"&gt;Effective Income Tax Rates&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Effective income tax rates reflected in the financial statements and reasons for the differences from the statutory federal rates are detailed in the following table.&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:100.000%"&gt;&lt;tr&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:27.471%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:7.828%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:7.828%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:7.828%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:7.828%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:7.828%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:7.828%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:7.828%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:7.833%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="border-top:2pt solid #000;padding:0 1pt"/&gt;&lt;td colspan="12" style="border-top:2pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Three Months Ended June 30,&lt;/span&gt;&lt;/td&gt;&lt;td colspan="12" style="border-top:2pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Year to Date June 30,&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="6" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;2026&lt;/span&gt;&lt;/td&gt;&lt;td colspan="6" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;2025&lt;/span&gt;&lt;/td&gt;&lt;td colspan="6" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;2026&lt;/span&gt;&lt;/td&gt;&lt;td colspan="6" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;2025&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="border-bottom:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Amount&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Percent&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Amount&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Percent&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Amount&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Percent&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Amount&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Percent&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="24" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;(in Thousands)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Federal statutory income tax&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$422&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;21.0%&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$455&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;21.0%&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$904&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;21.0%&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$834&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;21.0%&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Effect of:&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt 1.5pt 7pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;State income taxes&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;57&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;2.9&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;61&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;2.9&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;123&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;2.9&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;114&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;2.9&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt 1.5pt 7pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Other&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;11&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;0.5&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;11&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;0.5&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;21&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;0.5&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;22&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;0.5&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt 1.5pt 7pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Effective income tax rate&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$490&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;24.4%&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$527&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;24.4%&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$1,048&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;24.4%&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$970&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;24.4%&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:700;line-height:120%"&gt;DEBT (NOTE 4)&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;In 2014, Prairie Wind issued $85.0 million principal amount of 3.68% fixed-rate senior secured notes that are due serially with final maturity in December 2044. The notes amortize at a constant 2.5% and are secured by utility assets. The carrying value of the notes was approximately $37.7 million as of June 30, 2026 and $43.2 million December 31, 2025, respectively. &lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:700;line-height:120%"&gt;COMMITMENTS AND CONTINGENCIES (NOTE 5)&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Prairie Wind may be subject to certain claims and legal actions arising in its ordinary course of business. The ultimate outcome of such pending or potential litigation cannot be predicted. Management does not anticipate that the liabilities, if any, arising from such proceedings would have a material adverse effect on its financial statements.&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:700;line-height:120%"&gt;RELATED PARTY TRANSACTIONS AND RELATIONSHIPS (NOTE 6)&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Prairie Wind&#8217;s cash management function, including cash receipts and disbursements, is performed by Evergy Kansas Central. Prairie Wind is billed by its members and its members' affiliates for their employees&#8217; time and expenses for services performed on its behalf. Prairie Wind&#8217;s intercompany balances are listed below:&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-bottom:12pt"&gt;&lt;table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:100.000%"&gt;&lt;tr&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:71.221%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:12.441%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:12.443%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="border-top:2pt solid #000;padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;border-top:2pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;June 30&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="background-color:#ffffff;border-top:2pt solid #000;padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;border-top:2pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;December 31&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;2026&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="background-color:#ffffff;border-bottom:1pt solid #000;padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;border-bottom:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;2025&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="border-top:1pt solid #000;padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Accounts Payable to Members&lt;/span&gt;&lt;/td&gt;&lt;td colspan="9" style="border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:9pt;font-weight:400;line-height:120%"&gt;(thousands)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt 1.5pt 7pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Evergy Kansas Central and affiliates&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$6&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$1&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt 1.5pt 7pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;BHE and affiliates&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;&#8212;&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt 1.5pt 7pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;AEP and affiliates&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;&#8212;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;padding:1.5pt 1pt 1.5pt 13pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Total Accounts Payable to Members&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$7&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:0 1pt"/&gt;&lt;td colspan="3" style="border-bottom:2pt solid #000;border-top:1pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;$4&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div style="margin-bottom:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;Prairie Wind made no distrib&lt;/span&gt;&lt;span style="background-color:#ffffff;color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;utions or returns to members&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt; during year to date June 30, 2026 and distributed &lt;/span&gt;&lt;span style="background-color:#ffffff;color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt;$3.4 million as&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:11pt;font-weight:400;line-height:120%"&gt; returns to members during year to date June 30, 2025. This distribution is reported as cash flows used in financing activities on Prairie Wind's statement of cash flows.&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfImportantDisclosuresRegardingTheFinancialStatementsTextBlock>
+  <ferc:Remarks id="f-36" contextRef="c-2">None</ferc:Remarks>
+  <ferc:Remarks id="f-37" contextRef="c-3">None</ferc:Remarks>
+  <ferc:Remarks id="f-38" contextRef="c-4">None</ferc:Remarks>
+  <ferc:Remarks id="f-39" contextRef="c-5">None</ferc:Remarks>
+  <ferc:Remarks id="f-40" contextRef="c-6">None</ferc:Remarks>
+  <ferc:Remarks id="f-41" contextRef="c-7">None</ferc:Remarks>
+  <ferc:Remarks id="f-42" contextRef="c-8">None</ferc:Remarks>
+  <ferc:Remarks id="f-43" contextRef="c-9">None</ferc:Remarks>
+  <ferc:UtilityPlant id="f-44" contextRef="c-10" decimals="0" unitRef="u-2">157946560</ferc:UtilityPlant>
+  <ferc:UtilityPlant id="f-45" contextRef="c-11" decimals="0" unitRef="u-2">157946560</ferc:UtilityPlant>
+  <ferc:UtilityPlantAndConstructionWorkInProgress id="f-46" contextRef="c-10" decimals="0" unitRef="u-2">157946560</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:UtilityPlantAndConstructionWorkInProgress id="f-47" contextRef="c-11" decimals="0" unitRef="u-2">157946560</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-48" contextRef="c-10" decimals="0" unitRef="u-2">39921844</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-49" contextRef="c-11" decimals="0" unitRef="u-2">38235433</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:UtilityPlantNet id="f-50" contextRef="c-10" decimals="0" unitRef="u-2">118024716</ferc:UtilityPlantNet>
+  <ferc:UtilityPlantNet id="f-51" contextRef="c-11" decimals="0" unitRef="u-2">119711127</ferc:UtilityPlantNet>
+  <ferc:UtilityPlantAndNuclearFuelNet id="f-52" contextRef="c-10" decimals="0" unitRef="u-2">118024716</ferc:UtilityPlantAndNuclearFuelNet>
+  <ferc:UtilityPlantAndNuclearFuelNet id="f-53" contextRef="c-11" decimals="0" unitRef="u-2">119711127</ferc:UtilityPlantAndNuclearFuelNet>
+  <ferc:Cash id="f-54" contextRef="c-10" decimals="0" unitRef="u-2">3977773</ferc:Cash>
+  <ferc:Cash id="f-55" contextRef="c-11" decimals="0" unitRef="u-2">3084766</ferc:Cash>
+  <ferc:SpecialDeposits id="f-56" contextRef="c-10" decimals="0" unitRef="u-2">15452</ferc:SpecialDeposits>
+  <ferc:SpecialDeposits id="f-57" contextRef="c-11" decimals="0" unitRef="u-2">15452</ferc:SpecialDeposits>
+  <ferc:OtherAccountsReceivable id="f-58" contextRef="c-10" decimals="0" unitRef="u-2">1565906</ferc:OtherAccountsReceivable>
+  <ferc:OtherAccountsReceivable id="f-59" contextRef="c-11" decimals="0" unitRef="u-2">1572190</ferc:OtherAccountsReceivable>
+  <ferc:Prepayments id="f-60" contextRef="c-10" decimals="0" unitRef="u-2">34817</ferc:Prepayments>
+  <ferc:Prepayments id="f-61" contextRef="c-11" decimals="0" unitRef="u-2">104452</ferc:Prepayments>
+  <ferc:CurrentAndAccruedAssets id="f-62" contextRef="c-10" decimals="0" unitRef="u-2">5593948</ferc:CurrentAndAccruedAssets>
+  <ferc:CurrentAndAccruedAssets id="f-63" contextRef="c-11" decimals="0" unitRef="u-2">4776860</ferc:CurrentAndAccruedAssets>
+  <ferc:UnamortizedDebtExpense id="f-64" contextRef="c-10" decimals="0" unitRef="u-2">968931</ferc:UnamortizedDebtExpense>
+  <ferc:UnamortizedDebtExpense id="f-65" contextRef="c-11" decimals="0" unitRef="u-2">995237</ferc:UnamortizedDebtExpense>
+  <ferc:OtherRegulatoryAssets id="f-66" contextRef="c-10" decimals="0" unitRef="u-2">5756165</ferc:OtherRegulatoryAssets>
+  <ferc:OtherRegulatoryAssets id="f-67" contextRef="c-11" decimals="0" unitRef="u-2">5831767</ferc:OtherRegulatoryAssets>
+  <ferc:AccumulatedDeferredIncomeTaxes id="f-68" contextRef="c-10" decimals="0" unitRef="u-2">4315035</ferc:AccumulatedDeferredIncomeTaxes>
+  <ferc:AccumulatedDeferredIncomeTaxes id="f-69" contextRef="c-11" decimals="0" unitRef="u-2">4300128</ferc:AccumulatedDeferredIncomeTaxes>
+  <ferc:DeferredDebits id="f-70" contextRef="c-10" decimals="0" unitRef="u-2">11040131</ferc:DeferredDebits>
+  <ferc:DeferredDebits id="f-71" contextRef="c-11" decimals="0" unitRef="u-2">11127132</ferc:DeferredDebits>
+  <ferc:AssetsAndOtherDebits id="f-72" contextRef="c-10" decimals="0" unitRef="u-2">134658795</ferc:AssetsAndOtherDebits>
+  <ferc:AssetsAndOtherDebits id="f-73" contextRef="c-11" decimals="0" unitRef="u-2">135615119</ferc:AssetsAndOtherDebits>
+  <ferc:OtherPaidInCapital id="f-74" contextRef="c-10" decimals="0" unitRef="u-2">47400000</ferc:OtherPaidInCapital>
+  <ferc:OtherPaidInCapital id="f-75" contextRef="c-11" decimals="0" unitRef="u-2">47400000</ferc:OtherPaidInCapital>
+  <ferc:RetainedEarnings id="f-76" contextRef="c-10" decimals="0" unitRef="u-2">5802621</ferc:RetainedEarnings>
+  <ferc:RetainedEarnings id="f-77" contextRef="c-11" decimals="0" unitRef="u-2">2559359</ferc:RetainedEarnings>
+  <ferc:ProprietaryCapital id="f-78" contextRef="c-10" decimals="0" unitRef="u-2">53202621</ferc:ProprietaryCapital>
+  <ferc:ProprietaryCapital id="f-79" contextRef="c-11" decimals="0" unitRef="u-2">49959359</ferc:ProprietaryCapital>
+  <ferc:Bonds id="f-80" contextRef="c-10" decimals="0" unitRef="u-2">37718287</ferc:Bonds>
+  <ferc:Bonds id="f-81" contextRef="c-11" decimals="0" unitRef="u-2">43185423</ferc:Bonds>
+  <ferc:LongTermDebt id="f-82" contextRef="c-10" decimals="0" unitRef="u-2">37718287</ferc:LongTermDebt>
+  <ferc:LongTermDebt id="f-83" contextRef="c-11" decimals="0" unitRef="u-2">43185423</ferc:LongTermDebt>
+  <ferc:AccountsPayableToAssociatedCompanies id="f-84" contextRef="c-10" decimals="0" unitRef="u-2">6977</ferc:AccountsPayableToAssociatedCompanies>
+  <ferc:AccountsPayableToAssociatedCompanies id="f-85" contextRef="c-11" decimals="0" unitRef="u-2">4240</ferc:AccountsPayableToAssociatedCompanies>
+  <ferc:TaxesAccrued id="f-86" contextRef="c-10" decimals="0" unitRef="u-2">3460627</ferc:TaxesAccrued>
+  <ferc:TaxesAccrued id="f-87" contextRef="c-11" decimals="0" unitRef="u-2">2501156</ferc:TaxesAccrued>
+  <ferc:InterestAccrued id="f-88" contextRef="c-10" decimals="0" unitRef="u-2">115669</ferc:InterestAccrued>
+  <ferc:InterestAccrued id="f-89" contextRef="c-11" decimals="0" unitRef="u-2">132435</ferc:InterestAccrued>
+  <ferc:CurrentAndAccruedLiabilities id="f-90" contextRef="c-10" decimals="0" unitRef="u-2">3583273</ferc:CurrentAndAccruedLiabilities>
+  <ferc:CurrentAndAccruedLiabilities id="f-91" contextRef="c-11" decimals="0" unitRef="u-2">2637831</ferc:CurrentAndAccruedLiabilities>
+  <ferc:OtherRegulatoryLiabilities id="f-92" contextRef="c-10" decimals="0" unitRef="u-2">17314636</ferc:OtherRegulatoryLiabilities>
+  <ferc:OtherRegulatoryLiabilities id="f-93" contextRef="c-11" decimals="0" unitRef="u-2">17121635</ferc:OtherRegulatoryLiabilities>
+  <ferc:AccumulatedDeferredIncomeTaxesOtherProperty id="f-94" contextRef="c-10" decimals="0" unitRef="u-2">21482158</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+  <ferc:AccumulatedDeferredIncomeTaxesOtherProperty id="f-95" contextRef="c-11" decimals="0" unitRef="u-2">21345219</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+  <ferc:AccumulatedDeferredIncomeTaxesOther id="f-96" contextRef="c-10" decimals="0" unitRef="u-2">1357820</ferc:AccumulatedDeferredIncomeTaxesOther>
+  <ferc:AccumulatedDeferredIncomeTaxesOther id="f-97" contextRef="c-11" decimals="0" unitRef="u-2">1365652</ferc:AccumulatedDeferredIncomeTaxesOther>
+  <ferc:DeferredCredits id="f-98" contextRef="c-10" decimals="0" unitRef="u-2">40154614</ferc:DeferredCredits>
+  <ferc:DeferredCredits id="f-99" contextRef="c-11" decimals="0" unitRef="u-2">39832506</ferc:DeferredCredits>
+  <ferc:LiabilitiesAndOtherCredits id="f-100" contextRef="c-10" decimals="0" unitRef="u-2">134658795</ferc:LiabilitiesAndOtherCredits>
+  <ferc:LiabilitiesAndOtherCredits id="f-101" contextRef="c-11" decimals="0" unitRef="u-2">135615119</ferc:LiabilitiesAndOtherCredits>
+  <ferc:OperatingRevenues id="f-102" contextRef="c-1" decimals="0" unitRef="u-2">9296490</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-103" contextRef="c-12" decimals="0" unitRef="u-2">8814390</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-104" contextRef="c-13" decimals="0" unitRef="u-2">4624150</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-105" contextRef="c-14" decimals="0" unitRef="u-2">4601482</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-106" contextRef="c-15" decimals="0" unitRef="u-2">9296490</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-107" contextRef="c-16" decimals="0" unitRef="u-2">8814390</ferc:OperatingRevenues>
+  <ferc:OperationExpense id="f-108" contextRef="c-1" decimals="0" unitRef="u-2">240089</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-109" contextRef="c-12" decimals="0" unitRef="u-2">203886</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-110" contextRef="c-13" decimals="0" unitRef="u-2">168599</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-111" contextRef="c-14" decimals="0" unitRef="u-2">139196</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-112" contextRef="c-15" decimals="0" unitRef="u-2">240089</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-113" contextRef="c-16" decimals="0" unitRef="u-2">203886</ferc:OperationExpense>
+  <ferc:MaintenanceExpense id="f-114" contextRef="c-1" decimals="0" unitRef="u-2">225</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-115" contextRef="c-12" decimals="0" unitRef="u-2">78</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-116" contextRef="c-13" decimals="0" unitRef="u-2">112</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-117" contextRef="c-14" decimals="0" unitRef="u-2">78</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-118" contextRef="c-15" decimals="0" unitRef="u-2">225</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-119" contextRef="c-16" decimals="0" unitRef="u-2">78</ferc:MaintenanceExpense>
+  <ferc:DepreciationExpense id="f-120" contextRef="c-1" decimals="0" unitRef="u-2">1686412</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-121" contextRef="c-12" decimals="0" unitRef="u-2">1686412</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-122" contextRef="c-13" decimals="0" unitRef="u-2">843206</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-123" contextRef="c-14" decimals="0" unitRef="u-2">843206</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-124" contextRef="c-15" decimals="0" unitRef="u-2">1686412</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-125" contextRef="c-16" decimals="0" unitRef="u-2">1686412</ferc:DepreciationExpense>
+  <ferc:RegulatoryDebits id="f-126" contextRef="c-1" decimals="0" unitRef="u-2">215639</ferc:RegulatoryDebits>
+  <ferc:RegulatoryDebits id="f-127" contextRef="c-12" decimals="0" unitRef="u-2">60922</ferc:RegulatoryDebits>
+  <ferc:RegulatoryDebits id="f-128" contextRef="c-13" decimals="0" unitRef="u-2">194319</ferc:RegulatoryDebits>
+  <ferc:RegulatoryDebits id="f-129" contextRef="c-14" decimals="0" unitRef="u-2">30461</ferc:RegulatoryDebits>
+  <ferc:RegulatoryDebits id="f-130" contextRef="c-15" decimals="0" unitRef="u-2">215639</ferc:RegulatoryDebits>
+  <ferc:RegulatoryDebits id="f-131" contextRef="c-16" decimals="0" unitRef="u-2">60922</ferc:RegulatoryDebits>
+  <ferc:RegulatoryCredits id="f-132" contextRef="c-12" decimals="0" unitRef="u-2">32628</ferc:RegulatoryCredits>
+  <ferc:RegulatoryCredits id="f-133" contextRef="c-14" decimals="0" unitRef="u-2">32628</ferc:RegulatoryCredits>
+  <ferc:RegulatoryCredits id="f-134" contextRef="c-16" decimals="0" unitRef="u-2">32628</ferc:RegulatoryCredits>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-135" contextRef="c-1" decimals="0" unitRef="u-2">2077615</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-136" contextRef="c-12" decimals="0" unitRef="u-2">2069661</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-137" contextRef="c-13" decimals="0" unitRef="u-2">1039153</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-138" contextRef="c-14" decimals="0" unitRef="u-2">1034851</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-139" contextRef="c-15" decimals="0" unitRef="u-2">2077615</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-140" contextRef="c-16" decimals="0" unitRef="u-2">2069661</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome id="f-141" contextRef="c-1" decimals="0" unitRef="u-2">768531</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome id="f-142" contextRef="c-12" decimals="0" unitRef="u-2">660553</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome id="f-143" contextRef="c-13" decimals="0" unitRef="u-2">373219</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome id="f-144" contextRef="c-14" decimals="0" unitRef="u-2">362440</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome id="f-145" contextRef="c-15" decimals="0" unitRef="u-2">768531</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome id="f-146" contextRef="c-16" decimals="0" unitRef="u-2">660553</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-147" contextRef="c-1" decimals="0" unitRef="u-2">132734</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+  <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-148" contextRef="c-12" decimals="0" unitRef="u-2">114085</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+  <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-149" contextRef="c-13" decimals="0" unitRef="u-2">64459</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+  <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-150" contextRef="c-14" decimals="0" unitRef="u-2">62597</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+  <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-151" contextRef="c-15" decimals="0" unitRef="u-2">132734</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+  <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-152" contextRef="c-16" decimals="0" unitRef="u-2">114085</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+  <ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome id="f-153" contextRef="c-1" decimals="0" unitRef="u-2">563886</ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome>
+  <ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome id="f-154" contextRef="c-12" decimals="0" unitRef="u-2">558871</ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome>
+  <ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome id="f-155" contextRef="c-13" decimals="0" unitRef="u-2">281943</ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome>
+  <ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome id="f-156" contextRef="c-14" decimals="0" unitRef="u-2">284031</ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome>
+  <ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome id="f-157" contextRef="c-15" decimals="0" unitRef="u-2">563886</ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome>
+  <ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome id="f-158" contextRef="c-16" decimals="0" unitRef="u-2">558871</ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome>
+  <ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome id="f-159" contextRef="c-1" decimals="0" unitRef="u-2">416724</ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome>
+  <ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome id="f-160" contextRef="c-12" decimals="0" unitRef="u-2">364102</ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome>
+  <ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome id="f-161" contextRef="c-13" decimals="0" unitRef="u-2">229606</ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome>
+  <ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome id="f-162" contextRef="c-14" decimals="0" unitRef="u-2">182051</ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome>
+  <ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome id="f-163" contextRef="c-15" decimals="0" unitRef="u-2">416724</ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome>
+  <ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome id="f-164" contextRef="c-16" decimals="0" unitRef="u-2">364102</ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome>
+  <ferc:UtilityOperatingExpenses id="f-165" contextRef="c-1" decimals="0" unitRef="u-2">5268407</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-166" contextRef="c-12" decimals="0" unitRef="u-2">4957738</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-167" contextRef="c-13" decimals="0" unitRef="u-2">2735404</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-168" contextRef="c-14" decimals="0" unitRef="u-2">2542181</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-169" contextRef="c-15" decimals="0" unitRef="u-2">5268407</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-170" contextRef="c-16" decimals="0" unitRef="u-2">4957738</ferc:UtilityOperatingExpenses>
+  <ferc:NetUtilityOperatingIncome id="f-171" contextRef="c-15" decimals="0" unitRef="u-2">4028083</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-172" contextRef="c-16" decimals="0" unitRef="u-2">3856652</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-173" contextRef="c-1" decimals="0" unitRef="u-2">4028083</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-174" contextRef="c-12" decimals="0" unitRef="u-2">3856652</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-175" contextRef="c-13" decimals="0" unitRef="u-2">1888746</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-176" contextRef="c-14" decimals="0" unitRef="u-2">2059301</ferc:NetUtilityOperatingIncome>
+  <ferc:InterestAndDividendIncome id="f-177" contextRef="c-1" decimals="0" unitRef="u-2">25532</ferc:InterestAndDividendIncome>
+  <ferc:InterestAndDividendIncome id="f-178" contextRef="c-12" decimals="0" unitRef="u-2">6045</ferc:InterestAndDividendIncome>
+  <ferc:InterestAndDividendIncome id="f-179" contextRef="c-13" decimals="0" unitRef="u-2">15966</ferc:InterestAndDividendIncome>
+  <ferc:InterestAndDividendIncome id="f-180" contextRef="c-14" decimals="0" unitRef="u-2">6045</ferc:InterestAndDividendIncome>
+  <ferc:OtherIncome id="f-181" contextRef="c-1" decimals="0" unitRef="u-2">25532</ferc:OtherIncome>
+  <ferc:OtherIncome id="f-182" contextRef="c-12" decimals="0" unitRef="u-2">6045</ferc:OtherIncome>
+  <ferc:OtherIncome id="f-183" contextRef="c-13" decimals="0" unitRef="u-2">15966</ferc:OtherIncome>
+  <ferc:OtherIncome id="f-184" contextRef="c-14" decimals="0" unitRef="u-2">6045</ferc:OtherIncome>
+  <ferc:NetOtherIncomeAndDeductions id="f-185" contextRef="c-1" decimals="0" unitRef="u-2">25532</ferc:NetOtherIncomeAndDeductions>
+  <ferc:NetOtherIncomeAndDeductions id="f-186" contextRef="c-12" decimals="0" unitRef="u-2">6045</ferc:NetOtherIncomeAndDeductions>
+  <ferc:NetOtherIncomeAndDeductions id="f-187" contextRef="c-13" decimals="0" unitRef="u-2">15966</ferc:NetOtherIncomeAndDeductions>
+  <ferc:NetOtherIncomeAndDeductions id="f-188" contextRef="c-14" decimals="0" unitRef="u-2">6045</ferc:NetOtherIncomeAndDeductions>
+  <ferc:InterestOnLongTermDebt id="f-189" contextRef="c-1" decimals="0" unitRef="u-2">764046</ferc:InterestOnLongTermDebt>
+  <ferc:InterestOnLongTermDebt id="f-190" contextRef="c-12" decimals="0" unitRef="u-2">832401</ferc:InterestOnLongTermDebt>
+  <ferc:InterestOnLongTermDebt id="f-191" contextRef="c-13" decimals="0" unitRef="u-2">366740</ferc:InterestOnLongTermDebt>
+  <ferc:InterestOnLongTermDebt id="f-192" contextRef="c-14" decimals="0" unitRef="u-2">414459</ferc:InterestOnLongTermDebt>
+  <ferc:AmortizationOfDebtDiscountAndExpense id="f-193" contextRef="c-1" decimals="0" unitRef="u-2">26306</ferc:AmortizationOfDebtDiscountAndExpense>
+  <ferc:AmortizationOfDebtDiscountAndExpense id="f-194" contextRef="c-12" decimals="0" unitRef="u-2">26306</ferc:AmortizationOfDebtDiscountAndExpense>
+  <ferc:AmortizationOfDebtDiscountAndExpense id="f-195" contextRef="c-13" decimals="0" unitRef="u-2">13153</ferc:AmortizationOfDebtDiscountAndExpense>
+  <ferc:AmortizationOfDebtDiscountAndExpense id="f-196" contextRef="c-14" decimals="0" unitRef="u-2">13153</ferc:AmortizationOfDebtDiscountAndExpense>
+  <ferc:OtherInterestExpense id="f-197" contextRef="c-1" decimals="0" unitRef="u-2">20001</ferc:OtherInterestExpense>
+  <ferc:OtherInterestExpense id="f-198" contextRef="c-13" decimals="0" unitRef="u-2">20001</ferc:OtherInterestExpense>
+  <ferc:NetInterestCharges id="f-199" contextRef="c-1" decimals="0" unitRef="u-2">810353</ferc:NetInterestCharges>
+  <ferc:NetInterestCharges id="f-200" contextRef="c-12" decimals="0" unitRef="u-2">858707</ferc:NetInterestCharges>
+  <ferc:NetInterestCharges id="f-201" contextRef="c-13" decimals="0" unitRef="u-2">399894</ferc:NetInterestCharges>
+  <ferc:NetInterestCharges id="f-202" contextRef="c-14" decimals="0" unitRef="u-2">427612</ferc:NetInterestCharges>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-203" contextRef="c-1" decimals="0" unitRef="u-2">3243262</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-204" contextRef="c-12" decimals="0" unitRef="u-2">3003990</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-205" contextRef="c-13" decimals="0" unitRef="u-2">1504818</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-206" contextRef="c-14" decimals="0" unitRef="u-2">1637734</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:NetIncomeLoss id="f-207" contextRef="c-1" decimals="0" unitRef="u-2">3243262</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss id="f-208" contextRef="c-12" decimals="0" unitRef="u-2">3003990</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss id="f-209" contextRef="c-13" decimals="0" unitRef="u-2">1504818</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss id="f-210" contextRef="c-14" decimals="0" unitRef="u-2">1637734</ferc:NetIncomeLoss>
+  <ferc:UnappropriatedRetainedEarnings id="f-211" contextRef="c-11" decimals="0" unitRef="u-2">2559359</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings id="f-212" contextRef="c-17" decimals="0" unitRef="u-2">4457683</ferc:UnappropriatedRetainedEarnings>
+  <ferc:BalanceTransferredFromIncome id="f-213" contextRef="c-1" decimals="0" unitRef="u-2">3243262</ferc:BalanceTransferredFromIncome>
+  <ferc:BalanceTransferredFromIncome id="f-214" contextRef="c-12" decimals="0" unitRef="u-2">3003990</ferc:BalanceTransferredFromIncome>
+  <ferc:DividendsDeclaredCommonStock id="f-215" contextRef="c-12" decimals="0" unitRef="u-2">3410707</ferc:DividendsDeclaredCommonStock>
+  <ferc:UnappropriatedRetainedEarnings id="f-216" contextRef="c-10" decimals="0" unitRef="u-2">5802621</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings id="f-217" contextRef="c-18" decimals="0" unitRef="u-2">4050966</ferc:UnappropriatedRetainedEarnings>
+  <ferc:RetainedEarnings id="f-218" contextRef="c-18" decimals="0" unitRef="u-2">4050966</ferc:RetainedEarnings>
+  <ferc:DepreciationAndDepletion id="f-219" contextRef="c-1" decimals="0" unitRef="u-2">1686412</ferc:DepreciationAndDepletion>
+  <ferc:DepreciationAndDepletion id="f-220" contextRef="c-12" decimals="0" unitRef="u-2">1686412</ferc:DepreciationAndDepletion>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-221" contextRef="c-19">Amortization of</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-222" contextRef="c-20">Other Non-Cash Charges (Credits) to Income</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OrderNumber id="f-223" contextRef="c-19" decimals="INF" unitRef="u-3">5</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-224" contextRef="c-20" decimals="INF" unitRef="u-3">7</ferc:OrderNumber>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities id="f-225" contextRef="c-20" decimals="0" unitRef="u-2">261946</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities id="f-226" contextRef="c-21" decimals="0" unitRef="u-2">48555</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:DeferredIncomeTaxesNet id="f-227" contextRef="c-1" decimals="0" unitRef="u-2">147162</ferc:DeferredIncomeTaxesNet>
+  <ferc:DeferredIncomeTaxesNet id="f-228" contextRef="c-12" decimals="0" unitRef="u-2">194769</ferc:DeferredIncomeTaxesNet>
+  <ferc:NetIncreaseDecreaseInReceivablesOperatingActivities id="f-229" contextRef="c-1" decimals="0" unitRef="u-2">-6284</ferc:NetIncreaseDecreaseInReceivablesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInReceivablesOperatingActivities id="f-230" contextRef="c-12" decimals="0" unitRef="u-2">434736</ferc:NetIncreaseDecreaseInReceivablesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities id="f-231" contextRef="c-1" decimals="0" unitRef="u-2">945442</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities id="f-232" contextRef="c-12" decimals="0" unitRef="u-2">1753066</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-233" contextRef="c-22">Other (provide details in footnote):</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-234" contextRef="c-23">Net (Inc) Dec in Other Current and Accrued Assets and Deferred Debits</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OrderNumber id="f-235" contextRef="c-22" decimals="INF" unitRef="u-3">18</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-236" contextRef="c-23" decimals="INF" unitRef="u-3">19</ferc:OrderNumber>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities id="f-237" contextRef="c-23" decimals="0" unitRef="u-2">69635</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities id="f-238" contextRef="c-24" decimals="0" unitRef="u-2">63389</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:NetCashFlowFromOperatingActivities id="f-239" contextRef="c-1" decimals="0" unitRef="u-2">6360143</ferc:NetCashFlowFromOperatingActivities>
+  <ferc:NetCashFlowFromOperatingActivities id="f-240" contextRef="c-12" decimals="0" unitRef="u-2">6315445</ferc:NetCashFlowFromOperatingActivities>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription id="f-241" contextRef="c-25">Other (provide details in footnote):</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription id="f-242" contextRef="c-26">Other (provide details in footnote):</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDescription id="f-243" contextRef="c-27">Other (provide details in footnote):</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDescription>
+  <ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-244" contextRef="c-28">Other (provide details in footnote):</ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:PaymentsForRetirementOfLongTermDebtFinancingActivities id="f-245" contextRef="c-1" decimals="0" unitRef="u-2">5467136</ferc:PaymentsForRetirementOfLongTermDebtFinancingActivities>
+  <ferc:PaymentsForRetirementOfLongTermDebtFinancingActivities id="f-246" contextRef="c-12" decimals="0" unitRef="u-2">1135711</ferc:PaymentsForRetirementOfLongTermDebtFinancingActivities>
+  <ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities id="f-247" contextRef="c-29">Other (provide details in footnote):</ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities>
+  <ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities id="f-248" contextRef="c-30">Dividends paid to Members</ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities>
+  <ferc:OrderNumber id="f-249" contextRef="c-29" decimals="INF" unitRef="u-3">76</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-250" contextRef="c-30" decimals="INF" unitRef="u-3">79</ferc:OrderNumber>
+  <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities id="f-251" contextRef="c-31" decimals="0" unitRef="u-2">3410707</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities id="f-252" contextRef="c-1" decimals="0" unitRef="u-2">-5467136</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities id="f-253" contextRef="c-12" decimals="0" unitRef="u-2">-4546418</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:NetIncreaseDecreaseInCashAndCashEquivalents id="f-254" contextRef="c-1" decimals="0" unitRef="u-2">893007</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+  <ferc:NetIncreaseDecreaseInCashAndCashEquivalents id="f-255" contextRef="c-12" decimals="0" unitRef="u-2">1769027</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents id="f-256" contextRef="c-11" decimals="0" unitRef="u-2">3084766</ferc:CashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents id="f-257" contextRef="c-17" decimals="0" unitRef="u-2">1683174</ferc:CashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents id="f-258" contextRef="c-10" decimals="0" unitRef="u-2">3977773</ferc:CashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents id="f-259" contextRef="c-18" decimals="0" unitRef="u-2">3452201</ferc:CashAndCashEquivalents>
+  <ferc:ComprehensiveIncomeLoss id="f-260" contextRef="c-12" decimals="0" unitRef="u-2">3003990</ferc:ComprehensiveIncomeLoss>
+  <ferc:ComprehensiveIncomeLoss id="f-261" contextRef="c-1" decimals="0" unitRef="u-2">3243262</ferc:ComprehensiveIncomeLoss>
+  <ferc:UtilityPlantInServiceClassified id="f-262" contextRef="c-10" decimals="0" unitRef="u-2">157946560</ferc:UtilityPlantInServiceClassified>
+  <ferc:UtilityPlantInServiceClassified id="f-263" contextRef="c-32" decimals="0" unitRef="u-2">157946560</ferc:UtilityPlantInServiceClassified>
+  <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-264" contextRef="c-10" decimals="0" unitRef="u-2">157946560</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+  <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-265" contextRef="c-32" decimals="0" unitRef="u-2">157946560</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+  <ferc:UtilityPlantAndConstructionWorkInProgress id="f-266" contextRef="c-32" decimals="0" unitRef="u-2">157946560</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-267" contextRef="c-32" decimals="0" unitRef="u-2">39921844</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:UtilityPlantNet id="f-268" contextRef="c-32" decimals="0" unitRef="u-2">118024716</ferc:UtilityPlantNet>
+  <ferc:DepreciationUtilityPlantInService id="f-269" contextRef="c-10" decimals="0" unitRef="u-2">39921844</ferc:DepreciationUtilityPlantInService>
+  <ferc:DepreciationUtilityPlantInService id="f-270" contextRef="c-32" decimals="0" unitRef="u-2">39921844</ferc:DepreciationUtilityPlantInService>
+  <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-271" contextRef="c-10" decimals="0" unitRef="u-2">39921844</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+  <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-272" contextRef="c-32" decimals="0" unitRef="u-2">39921844</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+  <ferc:DescriptionAndPurposeOfOtherRegulatoryAssets id="f-273" contextRef="c-33">Deferred Future Income Taxes</ferc:DescriptionAndPurposeOfOtherRegulatoryAssets>
+  <ferc:DescriptionAndPurposeOfOtherRegulatoryAssets id="f-274" contextRef="c-34">2024 ATRR Under Recovery Amortization Period (1/26 - 12/26)</ferc:DescriptionAndPurposeOfOtherRegulatoryAssets>
+  <ferc:OrderNumber id="f-275" contextRef="c-33" decimals="INF" unitRef="u-3">1</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-276" contextRef="c-34" decimals="INF" unitRef="u-3">2</ferc:OrderNumber>
+  <ferc:OtherRegulatoryAssets id="f-277" contextRef="c-35" decimals="0" unitRef="u-2">5730007</ferc:OtherRegulatoryAssets>
+  <ferc:OtherRegulatoryAssets id="f-278" contextRef="c-36" decimals="0" unitRef="u-2">63959</ferc:OtherRegulatoryAssets>
+  <ferc:OtherRegulatoryAssetsWrittenOffAccountCharged id="f-279" contextRef="c-33">410, 411</ferc:OtherRegulatoryAssetsWrittenOffAccountCharged>
+  <ferc:OtherRegulatoryAssetsWrittenOffAccountCharged id="f-280" contextRef="c-34">407.3</ferc:OtherRegulatoryAssetsWrittenOffAccountCharged>
+  <ferc:OtherRegulatoryAssetsWrittenOffRecovered id="f-281" contextRef="c-37" decimals="0" unitRef="u-2">16481</ferc:OtherRegulatoryAssetsWrittenOffRecovered>
+  <ferc:OtherRegulatoryAssetsWrittenOffRecovered id="f-282" contextRef="c-38" decimals="0" unitRef="u-2">21320</ferc:OtherRegulatoryAssetsWrittenOffRecovered>
+  <ferc:OtherRegulatoryAssets id="f-283" contextRef="c-39" decimals="0" unitRef="u-2">5713526</ferc:OtherRegulatoryAssets>
+  <ferc:OtherRegulatoryAssets id="f-284" contextRef="c-40" decimals="0" unitRef="u-2">42639</ferc:OtherRegulatoryAssets>
+  <ferc:OtherRegulatoryAssets id="f-285" contextRef="c-41" decimals="0" unitRef="u-2">5793966</ferc:OtherRegulatoryAssets>
+  <ferc:OtherRegulatoryAssetsWrittenOffRecovered id="f-286" contextRef="c-13" decimals="0" unitRef="u-2">37801</ferc:OtherRegulatoryAssetsWrittenOffRecovered>
+  <ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities id="f-287" contextRef="c-42">Deferred Future Income Taxes</ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities>
+  <ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities id="f-288" contextRef="c-43">2025 ATRR Over Recovery Amortization Period (1/27 - 12/27)</ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities>
+  <ferc:OrderNumber id="f-289" contextRef="c-42" decimals="INF" unitRef="u-3">1</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-290" contextRef="c-43" decimals="INF" unitRef="u-3">2</ferc:OrderNumber>
+  <ferc:OtherRegulatoryLiabilities id="f-291" contextRef="c-44" decimals="0" unitRef="u-2">16646403</ferc:OtherRegulatoryLiabilities>
+  <ferc:OtherRegulatoryLiabilities id="f-292" contextRef="c-45" decimals="0" unitRef="u-2">475232</ferc:OtherRegulatoryLiabilities>
+  <ferc:IncreaseInOtherRegulatoryLiabilities id="f-293" contextRef="c-46" decimals="0" unitRef="u-2">193001</ferc:IncreaseInOtherRegulatoryLiabilities>
+  <ferc:OtherRegulatoryLiabilities id="f-294" contextRef="c-47" decimals="0" unitRef="u-2">16646403</ferc:OtherRegulatoryLiabilities>
+  <ferc:OtherRegulatoryLiabilities id="f-295" contextRef="c-48" decimals="0" unitRef="u-2">668233</ferc:OtherRegulatoryLiabilities>
+  <ferc:OtherRegulatoryLiabilities id="f-296" contextRef="c-41" decimals="0" unitRef="u-2">17121635</ferc:OtherRegulatoryLiabilities>
+  <ferc:IncreaseInOtherRegulatoryLiabilities id="f-297" contextRef="c-13" decimals="0" unitRef="u-2">193001</ferc:IncreaseInOtherRegulatoryLiabilities>
+  <ferc:RevenuesFromTransmissionOfElectricityOfOthers id="f-298" contextRef="c-1" decimals="0" unitRef="u-2">9296490</ferc:RevenuesFromTransmissionOfElectricityOfOthers>
+  <ferc:OtherOperatingRevenues id="f-299" contextRef="c-1" decimals="0" unitRef="u-2">9296490</ferc:OtherOperatingRevenues>
+  <ferc:ElectricOperatingRevenues id="f-300" contextRef="c-1" decimals="0" unitRef="u-2">9296490</ferc:ElectricOperatingRevenues>
+  <ferc:PaymentByCompanyOrPublicAuthority id="f-301" contextRef="c-49">Southwest Power Pool</ferc:PaymentByCompanyOrPublicAuthority>
+  <ferc:StatisticalClassificationCode id="f-302" contextRef="c-49">OS</ferc:StatisticalClassificationCode>
+  <ferc:RateScheduleTariffNumber id="f-303" contextRef="c-49">SPP Tariff</ferc:RateScheduleTariffNumber>
+  <ferc:OtherChargesRevenueTransmissionOfElectricityForOthers id="f-304" contextRef="c-49" decimals="0" unitRef="u-2">4624150</ferc:OtherChargesRevenueTransmissionOfElectricityForOthers>
+  <ferc:RevenuesFromTransmissionOfElectricityForOthers id="f-305" contextRef="c-49" decimals="0" unitRef="u-2">4624150</ferc:RevenuesFromTransmissionOfElectricityForOthers>
+  <ferc:BillingDemand id="f-306" contextRef="c-1" decimals="0" unitRef="u-4">0</ferc:BillingDemand>
+  <ferc:TransmissionOfElectricityForOthersEnergyReceived id="f-307" contextRef="c-1" decimals="0" unitRef="u-5">0</ferc:TransmissionOfElectricityForOthersEnergyReceived>
+  <ferc:TransmissionOfElectricityForOthersEnergyDelivered id="f-308" contextRef="c-1" decimals="0" unitRef="u-5">0</ferc:TransmissionOfElectricityForOthersEnergyDelivered>
+  <ferc:OtherChargesRevenueTransmissionOfElectricityForOthers id="f-309" contextRef="c-1" decimals="0" unitRef="u-2">4624150</ferc:OtherChargesRevenueTransmissionOfElectricityForOthers>
+  <ferc:RevenuesFromTransmissionOfElectricityForOthers id="f-310" contextRef="c-1" decimals="0" unitRef="u-2">4624150</ferc:RevenuesFromTransmissionOfElectricityForOthers>
+  <ferc:TransmissionOfElectricityByOthersEnergyReceived id="f-311" contextRef="c-1" decimals="0" unitRef="u-5">0</ferc:TransmissionOfElectricityByOthersEnergyReceived>
+  <ferc:TransmissionOfElectricityByOthersEnergyDelivered id="f-312" contextRef="c-1" decimals="0" unitRef="u-5">0</ferc:TransmissionOfElectricityByOthersEnergyDelivered>
+  <ferc:DemandChargesTransmissionOfElectricityByOthers id="f-313" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:DemandChargesTransmissionOfElectricityByOthers>
+  <ferc:EnergyChargesTransmissionOfElectricityByOthers id="f-314" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:EnergyChargesTransmissionOfElectricityByOthers>
+  <ferc:OtherChargesTransmissionOfElectricityByOthers id="f-315" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:OtherChargesTransmissionOfElectricityByOthers>
+  <ferc:ChargesForTransmissionOfElectricityByOthers id="f-316" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:ChargesForTransmissionOfElectricityByOthers>
+  <ferc:TransmissionPlant id="f-317" contextRef="c-10" decimals="0" unitRef="u-2">157946560</ferc:TransmissionPlant>
+  <ferc:AccumulatedDepreciationTransmission id="f-318" contextRef="c-10" decimals="0" unitRef="u-2">39921844</ferc:AccumulatedDepreciationTransmission>
+  <ferc:ElectricPlantInService id="f-319" contextRef="c-10" decimals="0" unitRef="u-2">157946560</ferc:ElectricPlantInService>
+  <ferc:AccumulatedProvisionForDepreciationOfElectricUtilityPlant id="f-320" contextRef="c-10" decimals="0" unitRef="u-2">39921844</ferc:AccumulatedProvisionForDepreciationOfElectricUtilityPlant>
+  <ferc:MiscellaneousTransmissionExpenses id="f-321" contextRef="c-1" decimals="0" unitRef="u-2">6000</ferc:MiscellaneousTransmissionExpenses>
+  <ferc:TransmissionOperationExpense id="f-322" contextRef="c-1" decimals="0" unitRef="u-2">6000</ferc:TransmissionOperationExpense>
+  <ferc:TransmissionExpenses id="f-323" contextRef="c-1" decimals="0" unitRef="u-2">6000</ferc:TransmissionExpenses>
+  <ferc:AdministrativeAndGeneralSalaries id="f-324" contextRef="c-1" decimals="0" unitRef="u-2">46978</ferc:AdministrativeAndGeneralSalaries>
+  <ferc:OfficeSuppliesAndExpenses id="f-325" contextRef="c-1" decimals="0" unitRef="u-2">235</ferc:OfficeSuppliesAndExpenses>
+  <ferc:OutsideServicesEmployed id="f-326" contextRef="c-1" decimals="0" unitRef="u-2">92914</ferc:OutsideServicesEmployed>
+  <ferc:InjuriesAndDamages id="f-327" contextRef="c-1" decimals="0" unitRef="u-2">69801</ferc:InjuriesAndDamages>
+  <ferc:EmployeePensionsAndBenefits id="f-328" contextRef="c-1" decimals="0" unitRef="u-2">9042</ferc:EmployeePensionsAndBenefits>
+  <ferc:MiscellaneousGeneralExpenses id="f-329" contextRef="c-1" decimals="0" unitRef="u-2">15119</ferc:MiscellaneousGeneralExpenses>
+  <ferc:AdministrativeAndGeneralOperationExpense id="f-330" contextRef="c-1" decimals="0" unitRef="u-2">234089</ferc:AdministrativeAndGeneralOperationExpense>
+  <ferc:MaintenanceOfComputerSoftwareAdministrativeAndGeneralExpenses id="f-331" contextRef="c-1" decimals="0" unitRef="u-2">225</ferc:MaintenanceOfComputerSoftwareAdministrativeAndGeneralExpenses>
+  <ferc:AdministrativeAndGeneralMaintenanceExpenses id="f-332" contextRef="c-1" decimals="0" unitRef="u-2">225</ferc:AdministrativeAndGeneralMaintenanceExpenses>
+  <ferc:AdministrativeAndGeneralExpenses id="f-333" contextRef="c-1" decimals="0" unitRef="u-2">234314</ferc:AdministrativeAndGeneralExpenses>
+  <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-334" contextRef="c-50" decimals="0" unitRef="u-2">1686412</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+  <ferc:DepreciationAndAmortization id="f-335" contextRef="c-50" decimals="0" unitRef="u-2">1686412</ferc:DepreciationAndAmortization>
+  <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-336" contextRef="c-15" decimals="0" unitRef="u-2">1686412</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+  <ferc:DepreciationAndAmortization id="f-337" contextRef="c-15" decimals="0" unitRef="u-2">1686412</ferc:DepreciationAndAmortization>
+  <ferc:VendorName id="f-338" contextRef="c-1">The Workiva Platform</ferc:VendorName>
+  <link:footnoteLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+    <link:footnote xlink:type="resource" xlink:label="fn-1" id="fn-1" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:85.565%">
+          <tr>
+            <td style="width:1.0%"/>
+            <td style="width:63.769%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:16.117%"/>
+            <td style="width:0.1%"/>
+            <td style="width:0.1%"/>
+            <td style="width:0.495%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:16.119%"/>
+            <td style="width:0.1%"/>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">2026</span>
+            </td>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">2025</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">Balance Sheet, pages 110-111</span>
+            </td>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">2nd Quarter</span>
+            </td>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:center;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">2nd Quarter</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">Page 110 Line 35 - Cash (131)</span>
+            </td>
+            <td colspan="2" style="border-top:1pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">3,977,773&#160;</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="2" style="border-top:1pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">3,452,201&#160;</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">Page 110 Line 36 - Special Deposits (132-134)</span>
+            </td>
+            <td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">15,452&#160;</span>
+            </td>
+            <td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">15,452&#160;</span>
+            </td>
+            <td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">Page 110 Line 37 - Working Fund (135)</span>
+            </td>
+            <td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">&#8212;&#160;</span>
+            </td>
+            <td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">&#8212;&#160;</span>
+            </td>
+            <td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">Page 110 Line 38 - Temporary Cash Investments (136)</span>
+            </td>
+            <td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">&#8212;&#160;</span>
+            </td>
+            <td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">&#8212;</span>
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">&#160;</span>
+            </td>
+            <td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">Total Balance Sheet</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">$</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">3,993,225</span>
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">&#160;</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td style="border-top:1pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">$</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">3,467,653</span>
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">&#160;</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+          </tr>
+          <tr style="height:15pt">
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">Less Funds on Deposit in 134, not considered</span>
+            </td>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">&#160;&#160;&#160;&#160;&#160;Cash and Cash Equivalents</span>
+            </td>
+            <td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">(15,452)</span>
+            </td>
+            <td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">(15,452)</span>
+            </td>
+            <td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">Cash and Cash Equivalents at End of Period</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">$</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">3,977,773</span>
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">&#160;</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td style="border-top:1pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">$</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom">
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:700;line-height:120%">3,452,201</span>
+              <span style="color:#000000;font-family:'Arial',sans-serif;font-size:8pt;font-weight:400;line-height:120%">&#160;</span>
+            </td>
+            <td style="border-top:1pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/>
+          </tr>
+        </table>
+      </div>
+    </link:footnote>
+    <link:footnote xlink:type="resource" xlink:label="fn-2" id="fn-2" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:115%">Open Access Transmission Tariff.</span>
+      </div>
+    </link:footnote>
+    <link:footnote xlink:type="resource" xlink:label="fn-3" id="fn-3" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:115%">Revenue received per Southwest Power Pool Open Access Transmission Tariff.</span>
+      </div>
+    </link:footnote>
+    <link:footnote xlink:type="resource" xlink:label="fn-4" id="fn-4" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">
+      <span xmlns="http://www.w3.org/1999/xhtml" style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:115%">Prior period adjustment.</span>
+    </link:footnote>
+    <link:loc xlink:type="locator" xlink:label="f-258" xlink:href="#f-258"/>
+    <link:loc xlink:type="locator" xlink:label="f-303" xlink:href="#f-303"/>
+    <link:loc xlink:type="locator" xlink:label="f-304" xlink:href="#f-304"/>
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="f-258" xlink:to="fn-1" order="1"/>
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="f-303" xlink:to="fn-2" order="2"/>
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="f-304" xlink:to="fn-3" order="3"/>
+  </link:footnoteLink>
+</xbrli:xbrl>

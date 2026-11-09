@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<xbrl:xbrl xmlns="http://www.xbrl.org/2003/instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrl="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ferc="http://ferc.gov/form/2026-04-01/ferc" xmlns:ferc-form-1Q="http://ferc.gov/form/2026-04-01/ferc-form-1Q">
+  <link:schemaRef xlink:type="simple" xlink:href="https://eCollection.ferc.gov/taxonomy/form1/2026-04-01/form/form1Q/form-1Q_2026-04-01.xsd" />
+  <xbrl:unit id="pure">
+    <xbrl:measure>xbrl:pure</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:unit id="USD">
+    <xbrl:measure>iso4217:USD</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:unit id="MWh">
+    <xbrl:measure>utr:MWh</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:unit id="MW">
+    <xbrl:measure>utr:MW</xbrl:measure>
+  </xbrl:unit>
+  <xbrl:context id="From2026-01-01To2026-06-30">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2025-12-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2025-12-31</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-06-30">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-04-01To2025-06-30">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-04-01</xbrl:startDate>
+      <xbrl:endDate>2025-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2024-12-31">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2024-12-31</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_RetainedEarningsCommonStockAxis_30.1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsCommonStockAxis">
+          <ferc:RetainedEarningsCommonStockDomain>30.1</ferc:RetainedEarningsCommonStockDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2025-01-01To2025-06-30_RetainedEarningsCommonStockAxis_30.1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsCommonStockAxis">
+          <ferc:RetainedEarningsCommonStockDomain>30.1</ferc:RetainedEarningsCommonStockDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2025-01-01</xbrl:startDate>
+      <xbrl:endDate>2025-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2025-06-30">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2025-06-30</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleTransmissionServiceAndGenerationInterconnectionStudyCostsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransmissionServiceAndGenerationInterconnectionStudyCostsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleOtherRegulatoryAssetsAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherRegulatoryAssetsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleOtherRegulatoryLiabilitiesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherRegulatoryLiabilitiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleRegionalTransmissionServiceRevenuesAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleRegionalTransmissionServiceRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleTransmissionOfElectricityForOthersAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransmissionOfElectricityForOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleTransmissionOfElectricityByIsoOrRtoAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransmissionOfElectricityByIsoOrRtoAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleTransmissionOfElectricityByOthersAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransmissionOfElectricityByOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleAmountsIncludedInIsoOrRtoSettlementAbstract">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAmountsIncludedInIsoOrRtoSettlementAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2026-06-30">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2026-06-30</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_NameOfTransmissionSystemAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+          <ferc:NameOfTransmissionSystemDomain>1</ferc:NameOfTransmissionSystemDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:JanuaryMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+          <ferc:NameOfTransmissionSystemDomain>1</ferc:NameOfTransmissionSystemDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:FebruaryMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+          <ferc:NameOfTransmissionSystemDomain>1</ferc:NameOfTransmissionSystemDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:MarchMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+          <ferc:NameOfTransmissionSystemDomain>1</ferc:NameOfTransmissionSystemDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:AprilMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+          <ferc:NameOfTransmissionSystemDomain>1</ferc:NameOfTransmissionSystemDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:MayMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+          <ferc:NameOfTransmissionSystemDomain>1</ferc:NameOfTransmissionSystemDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:JuneMember</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+          <ferc:NameOfTransmissionSystemDomain>1</ferc:NameOfTransmissionSystemDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_MonthAxis_Quarter1Member_NameOfTransmissionSystemAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:Quarter1Member</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+          <ferc:NameOfTransmissionSystemDomain>1</ferc:NameOfTransmissionSystemDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="Asof2026-06-30_UtilityTypeAxis_ElectricUtilityMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:instant>2026-06-30</xbrl:instant>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember_FunctionalClassificationAxis_OtherProductionPlantMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:OtherProductionPlantMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember_FunctionalClassificationAxis_TransmissionPlantMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:TransmissionPlantMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember_FunctionalClassificationAxis_DistributionPlantMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:DistributionPlantMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember_FunctionalClassificationAxis_GeneralPlantMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:GeneralPlantMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-04-01To2026-06-30">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-04-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <xbrl:context id="From2026-01-01To2026-06-30_MonthAxis_Quarter2Member_NameOfTransmissionSystemAxis_1">
+    <xbrl:entity>
+      <xbrl:identifier scheme="http://www.ferc.gov/CID">C011317</xbrl:identifier>
+      <xbrl:segment>
+        <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:Quarter2Member</xbrldi:explicitMember>
+        <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+          <ferc:NameOfTransmissionSystemDomain>1</ferc:NameOfTransmissionSystemDomain>
+        </xbrldi:typedMember>
+      </xbrl:segment>
+    </xbrl:entity>
+    <xbrl:period>
+      <xbrl:startDate>2026-01-01</xbrl:startDate>
+      <xbrl:endDate>2026-06-30</xbrl:endDate>
+    </xbrl:period>
+  </xbrl:context>
+  <ferc:AccountsPayable contextRef="Asof2025-12-31" unitRef="USD" decimals="0">296746</ferc:AccountsPayable>
+  <ferc:AccountsPayable contextRef="Asof2026-06-30" unitRef="USD" decimals="0">529128</ferc:AccountsPayable>
+  <ferc:AccruedUtilityRevenues contextRef="Asof2025-12-31" unitRef="USD" decimals="0">348042</ferc:AccruedUtilityRevenues>
+  <ferc:AccruedUtilityRevenues contextRef="Asof2026-06-30" unitRef="USD" decimals="0">451880</ferc:AccruedUtilityRevenues>
+  <ferc:AccumulatedDeferredIncomeTaxesOtherProperty contextRef="Asof2025-12-31" unitRef="USD" decimals="0">867735</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+  <ferc:AccumulatedDeferredIncomeTaxesOtherProperty contextRef="Asof2026-06-30" unitRef="USD" decimals="0">862355</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+  <ferc:AccumulatedDepreciationDistribution contextRef="Asof2026-06-30" unitRef="USD" decimals="0">7352294</ferc:AccumulatedDepreciationDistribution>
+  <ferc:AccumulatedDepreciationGeneral contextRef="Asof2026-06-30" unitRef="USD" decimals="0">1988401</ferc:AccumulatedDepreciationGeneral>
+  <ferc:AccumulatedDepreciationOtherProduction contextRef="Asof2026-06-30" unitRef="USD" decimals="0">1008980</ferc:AccumulatedDepreciationOtherProduction>
+  <ferc:AccumulatedDepreciationTransmission contextRef="Asof2026-06-30" unitRef="USD" decimals="0">834800</ferc:AccumulatedDepreciationTransmission>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility contextRef="Asof2025-12-31" unitRef="USD" decimals="0">10695337</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility contextRef="Asof2026-06-30" unitRef="USD" decimals="0">11475677</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility contextRef="Asof2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">11475677</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:AccumulatedProvisionForDepreciationOfElectricUtilityPlant contextRef="Asof2026-06-30" unitRef="USD" decimals="0">11184475</ferc:AccumulatedProvisionForDepreciationOfElectricUtilityPlant>
+  <ferc:AccumulatedProvisionForPensionsAndBenefits contextRef="Asof2025-12-31" unitRef="USD" decimals="0">179827</ferc:AccumulatedProvisionForPensionsAndBenefits>
+  <ferc:AccumulatedProvisionForPensionsAndBenefits contextRef="Asof2026-06-30" unitRef="USD" decimals="0">174385</ferc:AccumulatedProvisionForPensionsAndBenefits>
+  <ferc:AccumulatedProvisionForUncollectibleAccountsCredit contextRef="Asof2025-12-31" unitRef="USD" decimals="0">37700</ferc:AccumulatedProvisionForUncollectibleAccountsCredit>
+  <ferc:AccumulatedProvisionForUncollectibleAccountsCredit contextRef="Asof2026-06-30" unitRef="USD" decimals="0">28512</ferc:AccumulatedProvisionForUncollectibleAccountsCredit>
+  <ferc:AddressOfContactPerson contextRef="From2026-01-01To2026-06-30">3661 N Clark Street, PO Box 68, Radisson, WI 54867</ferc:AddressOfContactPerson>
+  <ferc:AddressOfPrincipalOfficeAtEndOfPeriod contextRef="From2026-01-01To2026-06-30">3661 N Clark Street, PO Box 68, Radisson, WI 54867</ferc:AddressOfPrincipalOfficeAtEndOfPeriod>
+  <ferc:AdministrativeAndGeneralOperationExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">393212</ferc:AdministrativeAndGeneralOperationExpense>
+  <ferc:AdministrativeAndGeneralSalaries contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">105822</ferc:AdministrativeAndGeneralSalaries>
+  <ferc:AdministrativeExpensesTransferredCredit contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">30245</ferc:AdministrativeExpensesTransferredCredit>
+  <ferc:AssetsAndOtherDebits contextRef="Asof2025-12-31" unitRef="USD" decimals="0">12623832</ferc:AssetsAndOtherDebits>
+  <ferc:AssetsAndOtherDebits contextRef="Asof2026-06-30" unitRef="USD" decimals="0">13271431</ferc:AssetsAndOtherDebits>
+  <ferc:AttestationDate contextRef="From2026-01-01To2026-06-30">2026-09-08</ferc:AttestationDate>
+  <ferc:AttestationName contextRef="From2026-01-01To2026-06-30">North Central Power Co., INC</ferc:AttestationName>
+  <ferc:AttestationTitle contextRef="From2026-01-01To2026-06-30">C011317</ferc:AttestationTitle>
+  <ferc:BalanceTransferredFromIncome contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">-62342</ferc:BalanceTransferredFromIncome>
+  <ferc:BalanceTransferredFromIncome contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">304785</ferc:BalanceTransferredFromIncome>
+  <ferc:Cash contextRef="Asof2025-12-31" unitRef="USD" decimals="0">119161</ferc:Cash>
+  <ferc:Cash contextRef="Asof2026-06-30" unitRef="USD" decimals="0">364110</ferc:Cash>
+  <ferc:CashAndCashEquivalents contextRef="Asof2024-12-31" unitRef="USD" decimals="0">120297</ferc:CashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents contextRef="Asof2025-06-30" unitRef="USD" decimals="0">247042</ferc:CashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents contextRef="Asof2025-12-31" unitRef="USD" decimals="0">52756</ferc:CashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents contextRef="Asof2026-06-30" unitRef="USD" decimals="0">369641</ferc:CashAndCashEquivalents>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">8193</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">-196043</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:CashFlowsProvidedFromUsedInInvestmentActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">-341425</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+  <ferc:CashFlowsProvidedFromUsedInInvestmentActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">-540873</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+  <ferc:CashOutflowsForPlant contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">341425</ferc:CashOutflowsForPlant>
+  <ferc:CashOutflowsForPlant contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">540873</ferc:CashOutflowsForPlant>
+  <ferc:ClearingAccounts contextRef="Asof2025-12-31" unitRef="USD" decimals="0">-393</ferc:ClearingAccounts>
+  <ferc:ClearingAccounts contextRef="Asof2026-06-30" unitRef="USD" decimals="0">1399</ferc:ClearingAccounts>
+  <ferc:CommonStockIssued contextRef="Asof2025-12-31" unitRef="USD" decimals="0">2755800</ferc:CommonStockIssued>
+  <ferc:CommonStockIssued contextRef="Asof2026-06-30" unitRef="USD" decimals="0">2755800</ferc:CommonStockIssued>
+  <ferc:CompanyIdentifier contextRef="From2026-01-01To2026-06-30">C011317</ferc:CompanyIdentifier>
+  <ferc:ConstructionWorkInProgress contextRef="Asof2025-12-31" unitRef="USD" decimals="0">244988</ferc:ConstructionWorkInProgress>
+  <ferc:ConstructionWorkInProgress contextRef="Asof2026-06-30" unitRef="USD" decimals="0">656488</ferc:ConstructionWorkInProgress>
+  <ferc:ConstructionWorkInProgress contextRef="Asof2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">656488</ferc:ConstructionWorkInProgress>
+  <ferc:CorporateOfficerCertificationSignature contextRef="From2026-01-01To2026-06-30">Tammi Buckwheat</ferc:CorporateOfficerCertificationSignature>
+  <ferc:CurrentAndAccruedAssets contextRef="Asof2025-12-31" unitRef="USD" decimals="0">1586366</ferc:CurrentAndAccruedAssets>
+  <ferc:CurrentAndAccruedAssets contextRef="Asof2026-06-30" unitRef="USD" decimals="0">1831132</ferc:CurrentAndAccruedAssets>
+  <ferc:CurrentAndAccruedLiabilities contextRef="Asof2025-12-31" unitRef="USD" decimals="0">2695380</ferc:CurrentAndAccruedLiabilities>
+  <ferc:CurrentAndAccruedLiabilities contextRef="Asof2026-06-30" unitRef="USD" decimals="0">3003385</ferc:CurrentAndAccruedLiabilities>
+  <ferc:CustomerAccountExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">143527</ferc:CustomerAccountExpenses>
+  <ferc:CustomerAccountsReceivable contextRef="Asof2025-12-31" unitRef="USD" decimals="0">446047</ferc:CustomerAccountsReceivable>
+  <ferc:CustomerAccountsReceivable contextRef="Asof2026-06-30" unitRef="USD" decimals="0">374266</ferc:CustomerAccountsReceivable>
+  <ferc:CustomerAdvancesForConstruction contextRef="Asof2025-12-31" unitRef="USD" decimals="0">20150</ferc:CustomerAdvancesForConstruction>
+  <ferc:CustomerAdvancesForConstruction contextRef="Asof2026-06-30" unitRef="USD" decimals="0">65920</ferc:CustomerAdvancesForConstruction>
+  <ferc:CustomerDeposits contextRef="Asof2025-12-31" unitRef="USD" decimals="0">47671</ferc:CustomerDeposits>
+  <ferc:CustomerDeposits contextRef="Asof2026-06-30" unitRef="USD" decimals="0">36208</ferc:CustomerDeposits>
+  <ferc:CustomerServiceAndInformationExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">303</ferc:CustomerServiceAndInformationExpenses>
+  <ferc:DayOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">18</ferc:DayOfIsoAndRtoMonthlyPeak>
+  <ferc:DayOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">7</ferc:DayOfIsoAndRtoMonthlyPeak>
+  <ferc:DayOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">24</ferc:DayOfIsoAndRtoMonthlyPeak>
+  <ferc:DayOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">30</ferc:DayOfIsoAndRtoMonthlyPeak>
+  <ferc:DayOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">17</ferc:DayOfIsoAndRtoMonthlyPeak>
+  <ferc:DayOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">29</ferc:DayOfIsoAndRtoMonthlyPeak>
+  <ferc:DayOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">18</ferc:DayOfMonthlyPeak>
+  <ferc:DayOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">7</ferc:DayOfMonthlyPeak>
+  <ferc:DayOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">24</ferc:DayOfMonthlyPeak>
+  <ferc:DayOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">30</ferc:DayOfMonthlyPeak>
+  <ferc:DayOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">17</ferc:DayOfMonthlyPeak>
+  <ferc:DayOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">29</ferc:DayOfMonthlyPeak>
+  <ferc:DayOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">18</ferc:DayOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:DayOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">7</ferc:DayOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:DayOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">24</ferc:DayOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:DayOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">30</ferc:DayOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:DayOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">17</ferc:DayOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:DayOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">29</ferc:DayOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:DeferredCredits contextRef="Asof2025-12-31" unitRef="USD" decimals="0">1228505</ferc:DeferredCredits>
+  <ferc:DeferredCredits contextRef="Asof2026-06-30" unitRef="USD" decimals="0">1343995</ferc:DeferredCredits>
+  <ferc:DeferredDebits contextRef="Asof2025-12-31" unitRef="USD" decimals="0">874380</ferc:DeferredDebits>
+  <ferc:DeferredDebits contextRef="Asof2026-06-30" unitRef="USD" decimals="0">893434</ferc:DeferredDebits>
+  <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService contextRef="Asof2026-06-30" unitRef="USD" decimals="0">11475677</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+  <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService contextRef="Asof2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">11475677</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+  <ferc:DepreciationAndDepletion contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">385984</ferc:DepreciationAndDepletion>
+  <ferc:DepreciationAndDepletion contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">363582</ferc:DepreciationAndDepletion>
+  <ferc:DepreciationExpense contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">333000</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">333000</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">166500</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">343020</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">343020</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">171510</ferc:DepreciationExpense>
+  <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">343021</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+  <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember_FunctionalClassificationAxis_DistributionPlantMember" unitRef="USD" decimals="0">225490</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+  <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember_FunctionalClassificationAxis_GeneralPlantMember" unitRef="USD" decimals="0">60983</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+  <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember_FunctionalClassificationAxis_OtherProductionPlantMember" unitRef="USD" decimals="0">30945</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+  <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember_FunctionalClassificationAxis_TransmissionPlantMember" unitRef="USD" decimals="0">25603</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+  <ferc:DepreciationUtilityPlantInService contextRef="Asof2026-06-30" unitRef="USD" decimals="0">11475677</ferc:DepreciationUtilityPlantInService>
+  <ferc:DepreciationUtilityPlantInService contextRef="Asof2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">11475677</ferc:DepreciationUtilityPlantInService>
+  <ferc:DisclosureOfAcquisitionOfOwnershipInOtherCompaniesByReorganizationMergerOrConsolidationWithOtherCompaniesTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfAcquisitionOfOwnershipInOtherCompaniesByReorganizationMergerOrConsolidationWithOtherCompaniesTextBlock>
+  <ferc:DisclosureOfChangesInAndImportantAdditionsToFranchiseRightsTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfChangesInAndImportantAdditionsToFranchiseRightsTextBlock>
+  <ferc:DisclosureOfChangesInArticlesOfIncorporationOrAmendmentsToCharterTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfChangesInArticlesOfIncorporationOrAmendmentsToCharterTextBlock>
+  <ferc:DisclosureOfChangesInOfficersDirectorsMajorSecurityHoldersAndVotingPowersOfTheRespondentTextBlock contextRef="From2026-01-01To2026-06-30">Barbara A Michaelson Treasurer retired 8/31/2025
+Andrew D Dahlberg was elected Secretary/Treasurer on 4/16/26
+Tammi Buckwheat was elected Assistant Treasurer 4/16/206
+</ferc:DisclosureOfChangesInOfficersDirectorsMajorSecurityHoldersAndVotingPowersOfTheRespondentTextBlock>
+  <ferc:DisclosureOfEstimatedAnnualEffectAndNatureOfAnyImportantWageScaleChangesTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfEstimatedAnnualEffectAndNatureOfAnyImportantWageScaleChangesTextBlock>
+  <ferc:DisclosureOfImportantChangesRelatedToRespondentCompanyAppearingInAnnualReportToStockholdersTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfImportantChangesRelatedToRespondentCompanyAppearingInAnnualReportToStockholdersTextBlock>
+  <ferc:DisclosureOfImportantExtensionOrReductionOfTransmissionOrDistributionSystemTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfImportantExtensionOrReductionOfTransmissionOrDistributionSystemTextBlock>
+  <ferc:DisclosureOfImportantLeaseholdsThatHaveBeenAcquiredOrGivenAssignedOrSurrenderedTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfImportantLeaseholdsThatHaveBeenAcquiredOrGivenAssignedOrSurrenderedTextBlock>
+  <ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock>
+  <ferc:DisclosureOfObligationsIncurredOrAssumedByRespondentAsGuarantorForThePerformanceByAnotherOfAnyAgreementOrObligationTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfObligationsIncurredOrAssumedByRespondentAsGuarantorForThePerformanceByAnotherOfAnyAgreementOrObligationTextBlock>
+  <ferc:DisclosureOfPurchaseOrSaleOfAnOperatingUnitOrSystemTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfPurchaseOrSaleOfAnOperatingUnitOrSystemTextBlock>
+  <ferc:DisclosureOfSignificantEventThatRespondentParticipatesInACashManagementProgramsTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfSignificantEventThatRespondentParticipatesInACashManagementProgramsTextBlock>
+  <ferc:DisclosureOfStatusOfAnyMateriallyImportantLegalProceedingsTextBlock contextRef="From2026-01-01To2026-06-30">None</ferc:DisclosureOfStatusOfAnyMateriallyImportantLegalProceedingsTextBlock>
+  <ferc:DistributionExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">393923</ferc:DistributionExpenses>
+  <ferc:DistributionMaintenanceExpenseElectric contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">211911</ferc:DistributionMaintenanceExpenseElectric>
+  <ferc:DistributionOperationExpensesElectric contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">182012</ferc:DistributionOperationExpensesElectric>
+  <ferc:DistributionPlant contextRef="Asof2026-06-30" unitRef="USD" decimals="0">15656737</ferc:DistributionPlant>
+  <ferc:DividendsDeclaredCommonStock contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">126384</ferc:DividendsDeclaredCommonStock>
+  <ferc:DividendsDeclaredCommonStock contextRef="From2025-01-01To2025-06-30_RetainedEarningsCommonStockAxis_30.1" unitRef="USD" decimals="0">126384</ferc:DividendsDeclaredCommonStock>
+  <ferc:DividendsDeclaredCommonStock contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">129523</ferc:DividendsDeclaredCommonStock>
+  <ferc:DividendsDeclaredCommonStock contextRef="From2026-01-01To2026-06-30_RetainedEarningsCommonStockAxis_30.1" unitRef="USD" decimals="0">129523</ferc:DividendsDeclaredCommonStock>
+  <ferc:DividendsDeclaredCommonStockDescription contextRef="From2026-01-01To2026-06-30_RetainedEarningsCommonStockAxis_30.1">Dividends on Common Stock</ferc:DividendsDeclaredCommonStockDescription>
+  <ferc:DividendsOnCommonStock contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">126384</ferc:DividendsOnCommonStock>
+  <ferc:DividendsOnCommonStock contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">129523</ferc:DividendsOnCommonStock>
+  <ferc:Donations contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">470</ferc:Donations>
+  <ferc:Donations contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">470</ferc:Donations>
+  <ferc:Donations contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">300</ferc:Donations>
+  <ferc:Donations contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">300</ferc:Donations>
+  <ferc:Donations contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">300</ferc:Donations>
+  <ferc:Donations contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">250</ferc:Donations>
+  <ferc:ElectricOperatingRevenues contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">3387912</ferc:ElectricOperatingRevenues>
+  <ferc:ElectricPlantInService contextRef="Asof2026-06-30" unitRef="USD" decimals="0">21366053</ferc:ElectricPlantInService>
+  <ferc:EmployeePensionsAndBenefits contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">220453</ferc:EmployeePensionsAndBenefits>
+  <ferc:EnergyActivity contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="MWh" decimals="0">3125</ferc:EnergyActivity>
+  <ferc:EnergyActivity contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="MWh" decimals="0">3769</ferc:EnergyActivity>
+  <ferc:EnergyActivity contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="MWh" decimals="0">5924</ferc:EnergyActivity>
+  <ferc:EnergyActivity contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="MWh" decimals="0">3350</ferc:EnergyActivity>
+  <ferc:EnergyActivity contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="MWh" decimals="0">3916</ferc:EnergyActivity>
+  <ferc:EnergyActivity contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="MWh" decimals="0">2170</ferc:EnergyActivity>
+  <ferc:EnergyActivity contextRef="From2026-01-01To2026-06-30_MonthAxis_Quarter1Member_NameOfTransmissionSystemAxis_1" unitRef="MWh" decimals="0">13609</ferc:EnergyActivity>
+  <ferc:EnergyActivity contextRef="From2026-01-01To2026-06-30_MonthAxis_Quarter2Member_NameOfTransmissionSystemAxis_1" unitRef="MWh" decimals="0">8645</ferc:EnergyActivity>
+  <ferc:FirmNetworkServiceForSelf contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">5</ferc:FirmNetworkServiceForSelf>
+  <ferc:FirmNetworkServiceForSelf contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">7</ferc:FirmNetworkServiceForSelf>
+  <ferc:FirmNetworkServiceForSelf contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:FirmNetworkServiceForSelf>
+  <ferc:FirmNetworkServiceForSelf contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:FirmNetworkServiceForSelf>
+  <ferc:FirmNetworkServiceForSelf contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:FirmNetworkServiceForSelf>
+  <ferc:FirmNetworkServiceForSelf contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:FirmNetworkServiceForSelf>
+  <ferc:ForfeitedDiscounts contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">6298</ferc:ForfeitedDiscounts>
+  <ferc:FormType contextRef="From2026-01-01To2026-06-30">1/3-Q</ferc:FormType>
+  <ferc:FuelStock contextRef="Asof2025-12-31" unitRef="USD" decimals="0">15461</ferc:FuelStock>
+  <ferc:FuelStock contextRef="Asof2026-06-30" unitRef="USD" decimals="0">15461</ferc:FuelStock>
+  <ferc:GeneralAdvertisingExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">810</ferc:GeneralAdvertisingExpenses>
+  <ferc:GeneralPlantExcludingOtherTangiblePropertyAndAssetRetirementCostsForGeneralPlant contextRef="Asof2026-06-30" unitRef="USD" decimals="0">2896975</ferc:GeneralPlantExcludingOtherTangiblePropertyAndAssetRetirementCostsForGeneralPlant>
+  <ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">386064</ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities>
+  <ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">604699</ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities>
+  <ferc:HourOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">10</ferc:HourOfIsoAndRtoMonthlyPeak>
+  <ferc:HourOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">9</ferc:HourOfIsoAndRtoMonthlyPeak>
+  <ferc:HourOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">9</ferc:HourOfIsoAndRtoMonthlyPeak>
+  <ferc:HourOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">19</ferc:HourOfIsoAndRtoMonthlyPeak>
+  <ferc:HourOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">7</ferc:HourOfIsoAndRtoMonthlyPeak>
+  <ferc:HourOfIsoAndRtoMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">18</ferc:HourOfIsoAndRtoMonthlyPeak>
+  <ferc:HourOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">10</ferc:HourOfMonthlyPeak>
+  <ferc:HourOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">9</ferc:HourOfMonthlyPeak>
+  <ferc:HourOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">9</ferc:HourOfMonthlyPeak>
+  <ferc:HourOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">19</ferc:HourOfMonthlyPeak>
+  <ferc:HourOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">7</ferc:HourOfMonthlyPeak>
+  <ferc:HourOfMonthlyPeak contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">18</ferc:HourOfMonthlyPeak>
+  <ferc:HourOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">10</ferc:HourOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:HourOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">9</ferc:HourOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:HourOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">9</ferc:HourOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:HourOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">19</ferc:HourOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:HourOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">7</ferc:HourOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:HourOfMonthlyPeakExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">18</ferc:HourOfMonthlyPeakExcludingIsoAndRto>
+  <ferc:IncomeBeforeExtraordinaryItems contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">123291</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">123291</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">-62342</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">304785</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">304785</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">43717</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeTaxesOperatingIncome contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">36148</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">36148</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">-28347</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">103309</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">103309</ferc:IncomeTaxesOperatingIncome>
+  <ferc:IncomeTaxesOperatingIncome contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">10386</ferc:IncomeTaxesOperatingIncome>
+  <ferc:InjuriesAndDamages contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">69665</ferc:InjuriesAndDamages>
+  <ferc:InterestAccrued contextRef="Asof2025-12-31" unitRef="USD" decimals="0">29559</ferc:InterestAccrued>
+  <ferc:InterestAccrued contextRef="Asof2026-06-30" unitRef="USD" decimals="0">13853</ferc:InterestAccrued>
+  <ferc:InterestOnLongTermDebt contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">36727</ferc:InterestOnLongTermDebt>
+  <ferc:InterestOnLongTermDebt contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">36727</ferc:InterestOnLongTermDebt>
+  <ferc:InterestOnLongTermDebt contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">20896</ferc:InterestOnLongTermDebt>
+  <ferc:InterestOnLongTermDebt contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">28497</ferc:InterestOnLongTermDebt>
+  <ferc:InterestOnLongTermDebt contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">28497</ferc:InterestOnLongTermDebt>
+  <ferc:InterestOnLongTermDebt contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">13961</ferc:InterestOnLongTermDebt>
+  <ferc:LargeOrIndustrialSalesElectricOperatingRevenue contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">197631</ferc:LargeOrIndustrialSalesElectricOperatingRevenue>
+  <ferc:LegalEntityIdentifier contextRef="From2026-01-01To2026-06-30">C011317</ferc:LegalEntityIdentifier>
+  <ferc:LiabilitiesAndOtherCredits contextRef="Asof2025-12-31" unitRef="USD" decimals="0">12623832</ferc:LiabilitiesAndOtherCredits>
+  <ferc:LiabilitiesAndOtherCredits contextRef="Asof2026-06-30" unitRef="USD" decimals="0">13271431</ferc:LiabilitiesAndOtherCredits>
+  <ferc:LongTermDebt contextRef="Asof2025-12-31" unitRef="USD" decimals="0">902988</ferc:LongTermDebt>
+  <ferc:LongTermDebt contextRef="Asof2026-06-30" unitRef="USD" decimals="0">891335</ferc:LongTermDebt>
+  <ferc:MaintenanceExpense contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">281247</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">281247</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">135734</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">219134</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">219134</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">107904</ferc:MaintenanceExpense>
+  <ferc:MaintenanceOfEnergyStorageEquipmentOtherPowerGeneration contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">221</ferc:MaintenanceOfEnergyStorageEquipmentOtherPowerGeneration>
+  <ferc:MaintenanceOfMiscellaneousOtherPowerGenerationPlant contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">1752</ferc:MaintenanceOfMiscellaneousOtherPowerGenerationPlant>
+  <ferc:MaintenanceOfOverheadLinesTransmission contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">91</ferc:MaintenanceOfOverheadLinesTransmission>
+  <ferc:MaintenanceOfStationEquipmentTransmission contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">4209</ferc:MaintenanceOfStationEquipmentTransmission>
+  <ferc:MegawattHoursSoldLargeOrIndustrial contextRef="From2026-01-01To2026-06-30" unitRef="MWh" decimals="0">1919</ferc:MegawattHoursSoldLargeOrIndustrial>
+  <ferc:MegawattHoursSoldPublicStreetAndHighwayLighting contextRef="From2026-01-01To2026-06-30" unitRef="MWh" decimals="0">42</ferc:MegawattHoursSoldPublicStreetAndHighwayLighting>
+  <ferc:MegawattHoursSoldResidentialSales contextRef="From2026-01-01To2026-06-30" unitRef="MWh" decimals="0">14344</ferc:MegawattHoursSoldResidentialSales>
+  <ferc:MegawattHoursSoldRevenuesNetOfProvisionForRefunds contextRef="From2026-01-01To2026-06-30" unitRef="MWh" decimals="0">20221</ferc:MegawattHoursSoldRevenuesNetOfProvisionForRefunds>
+  <ferc:MegawattHoursSoldSalesOfElectricity contextRef="From2026-01-01To2026-06-30" unitRef="MWh" decimals="0">20221</ferc:MegawattHoursSoldSalesOfElectricity>
+  <ferc:MegawattHoursSoldSalesToUltimateConsumers contextRef="From2026-01-01To2026-06-30" unitRef="MWh" decimals="0">20221</ferc:MegawattHoursSoldSalesToUltimateConsumers>
+  <ferc:MegawattHoursSoldSmallOrCommercial contextRef="From2026-01-01To2026-06-30" unitRef="MWh" decimals="0">3916</ferc:MegawattHoursSoldSmallOrCommercial>
+  <ferc:MiscellaneousAmortization contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">52580</ferc:MiscellaneousAmortization>
+  <ferc:MiscellaneousAmortization contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">52580</ferc:MiscellaneousAmortization>
+  <ferc:MiscellaneousAmortization contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">30046</ferc:MiscellaneousAmortization>
+  <ferc:MiscellaneousCurrentAndAccruedLiabilities contextRef="Asof2025-12-31" unitRef="USD" decimals="0">71108</ferc:MiscellaneousCurrentAndAccruedLiabilities>
+  <ferc:MiscellaneousCurrentAndAccruedLiabilities contextRef="Asof2026-06-30" unitRef="USD" decimals="0">189176</ferc:MiscellaneousCurrentAndAccruedLiabilities>
+  <ferc:MiscellaneousDeferredDebits contextRef="Asof2025-12-31" unitRef="USD" decimals="0">874773</ferc:MiscellaneousDeferredDebits>
+  <ferc:MiscellaneousDeferredDebits contextRef="Asof2026-06-30" unitRef="USD" decimals="0">892035</ferc:MiscellaneousDeferredDebits>
+  <ferc:MiscellaneousGeneralExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">120</ferc:MiscellaneousGeneralExpenses>
+  <ferc:MiscellaneousServiceRevenues contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">3211</ferc:MiscellaneousServiceRevenues>
+  <ferc:MonthlyIsoAndRtoPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">5</ferc:MonthlyIsoAndRtoPeakLoad>
+  <ferc:MonthlyIsoAndRtoPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">7</ferc:MonthlyIsoAndRtoPeakLoad>
+  <ferc:MonthlyIsoAndRtoPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:MonthlyIsoAndRtoPeakLoad>
+  <ferc:MonthlyIsoAndRtoPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:MonthlyIsoAndRtoPeakLoad>
+  <ferc:MonthlyIsoAndRtoPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:MonthlyIsoAndRtoPeakLoad>
+  <ferc:MonthlyIsoAndRtoPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:MonthlyIsoAndRtoPeakLoad>
+  <ferc:MonthlyPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">5</ferc:MonthlyPeakLoad>
+  <ferc:MonthlyPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">7</ferc:MonthlyPeakLoad>
+  <ferc:MonthlyPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:MonthlyPeakLoad>
+  <ferc:MonthlyPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:MonthlyPeakLoad>
+  <ferc:MonthlyPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:MonthlyPeakLoad>
+  <ferc:MonthlyPeakLoad contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:MonthlyPeakLoad>
+  <ferc:MonthlyPeakLoadExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">5</ferc:MonthlyPeakLoadExcludingIsoAndRto>
+  <ferc:MonthlyPeakLoadExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">7</ferc:MonthlyPeakLoadExcludingIsoAndRto>
+  <ferc:MonthlyPeakLoadExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:MonthlyPeakLoadExcludingIsoAndRto>
+  <ferc:MonthlyPeakLoadExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:MonthlyPeakLoadExcludingIsoAndRto>
+  <ferc:MonthlyPeakLoadExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:MonthlyPeakLoadExcludingIsoAndRto>
+  <ferc:MonthlyPeakLoadExcludingIsoAndRto contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:MonthlyPeakLoadExcludingIsoAndRto>
+  <ferc:NameOfContactPerson contextRef="From2026-01-01To2026-06-30">Tammi Buckwheat</ferc:NameOfContactPerson>
+  <ferc:NetCashFlowFromOperatingActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">459977</ferc:NetCashFlowFromOperatingActivities>
+  <ferc:NetCashFlowFromOperatingActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">1053801</ferc:NetCashFlowFromOperatingActivities>
+  <ferc:NetDecreaseInShortTermDebt contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">-205000</ferc:NetDecreaseInShortTermDebt>
+  <ferc:NetDecreaseInShortTermDebt contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">-20000</ferc:NetDecreaseInShortTermDebt>
+  <ferc:NetIncomeLoss contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">123291</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">123291</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">-62342</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">304785</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">304785</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">43717</ferc:NetIncomeLoss>
+  <ferc:NetIncreaseDecreaseInCashAndCashEquivalents contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">126745</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+  <ferc:NetIncreaseDecreaseInCashAndCashEquivalents contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">316885</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+  <ferc:NetIncreaseDecreaseInInventoryOperatingActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">243748</ferc:NetIncreaseDecreaseInInventoryOperatingActivities>
+  <ferc:NetIncreaseDecreaseInInventoryOperatingActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">132206</ferc:NetIncreaseDecreaseInInventoryOperatingActivities>
+  <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">73681</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">280919</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInReceivablesOperatingActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">-34759</ferc:NetIncreaseDecreaseInReceivablesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInReceivablesOperatingActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">-87429</ferc:NetIncreaseDecreaseInReceivablesOperatingActivities>
+  <ferc:NetInterestCharges contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">97469</ferc:NetInterestCharges>
+  <ferc:NetInterestCharges contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">97469</ferc:NetInterestCharges>
+  <ferc:NetInterestCharges contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">51572</ferc:NetInterestCharges>
+  <ferc:NetInterestCharges contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">87806</ferc:NetInterestCharges>
+  <ferc:NetInterestCharges contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">87806</ferc:NetInterestCharges>
+  <ferc:NetInterestCharges contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">40969</ferc:NetInterestCharges>
+  <ferc:NetOtherIncomeAndDeductions contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">-470</ferc:NetOtherIncomeAndDeductions>
+  <ferc:NetOtherIncomeAndDeductions contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">-470</ferc:NetOtherIncomeAndDeductions>
+  <ferc:NetOtherIncomeAndDeductions contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">-300</ferc:NetOtherIncomeAndDeductions>
+  <ferc:NetOtherIncomeAndDeductions contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">-52753</ferc:NetOtherIncomeAndDeductions>
+  <ferc:NetOtherIncomeAndDeductions contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">-52753</ferc:NetOtherIncomeAndDeductions>
+  <ferc:NetOtherIncomeAndDeductions contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">-30169</ferc:NetOtherIncomeAndDeductions>
+  <ferc:NetUtilityOperatingIncome contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">221230</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">221230</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">-10470</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">445344</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">445344</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">114856</ferc:NetUtilityOperatingIncome>
+  <ferc:NetworkServiceUsage contextRef="From2026-01-01To2026-06-30_MonthAxis_AprilMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">5</ferc:NetworkServiceUsage>
+  <ferc:NetworkServiceUsage contextRef="From2026-01-01To2026-06-30_MonthAxis_FebruaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">7</ferc:NetworkServiceUsage>
+  <ferc:NetworkServiceUsage contextRef="From2026-01-01To2026-06-30_MonthAxis_JanuaryMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:NetworkServiceUsage>
+  <ferc:NetworkServiceUsage contextRef="From2026-01-01To2026-06-30_MonthAxis_JuneMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">9</ferc:NetworkServiceUsage>
+  <ferc:NetworkServiceUsage contextRef="From2026-01-01To2026-06-30_MonthAxis_MarchMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:NetworkServiceUsage>
+  <ferc:NetworkServiceUsage contextRef="From2026-01-01To2026-06-30_MonthAxis_MayMember_NameOfTransmissionSystemAxis_1" unitRef="MW" decimals="0">6</ferc:NetworkServiceUsage>
+  <ferc:NotesPayable contextRef="Asof2025-12-31" unitRef="USD" decimals="0">2152067</ferc:NotesPayable>
+  <ferc:NotesPayable contextRef="Asof2026-06-30" unitRef="USD" decimals="0">2291947</ferc:NotesPayable>
+  <ferc:NotesToFinancialStatementsTextBlock contextRef="From2026-01-01To2026-06-30">No significant changes have occurred since last FERC Form 1-F was filed March 31, 2026</ferc:NotesToFinancialStatementsTextBlock>
+  <ferc:OfficeSuppliesAndExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">7749</ferc:OfficeSuppliesAndExpenses>
+  <ferc:OperatingRevenues contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">2817498</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">2817498</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">1213599</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">3387912</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">3387912</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">1443086</ferc:OperatingRevenues>
+  <ferc:OperationExpense contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">1833421</ferc:OperationExpense>
+  <ferc:OperationExpense contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">1833421</ferc:OperationExpense>
+  <ferc:OperationExpense contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">894090</ferc:OperationExpense>
+  <ferc:OperationExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">2183439</ferc:OperationExpense>
+  <ferc:OperationExpense contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">2183439</ferc:OperationExpense>
+  <ferc:OperationExpense contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">993095</ferc:OperationExpense>
+  <ferc:OrderNumber contextRef="From2026-01-01To2026-06-30_NameOfTransmissionSystemAxis_1" unitRef="pure" decimals="INF">1</ferc:OrderNumber>
+  <ferc:OrderNumber contextRef="From2026-01-01To2026-06-30_RetainedEarningsCommonStockAxis_30.1" unitRef="pure" decimals="INF">30.1</ferc:OrderNumber>
+  <ferc:OtherAccountsReceivable contextRef="Asof2025-12-31" unitRef="USD" decimals="0">30778</ferc:OtherAccountsReceivable>
+  <ferc:OtherAccountsReceivable contextRef="Asof2026-06-30" unitRef="USD" decimals="0">54971</ferc:OtherAccountsReceivable>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">86010</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">149292</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">-44639</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">-63826</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities>
+  <ferc:OtherDeferredCredits contextRef="Asof2025-12-31" unitRef="USD" decimals="0">340620</ferc:OtherDeferredCredits>
+  <ferc:OtherDeferredCredits contextRef="Asof2026-06-30" unitRef="USD" decimals="0">415721</ferc:OtherDeferredCredits>
+  <ferc:OtherElectricRevenue contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">301</ferc:OtherElectricRevenue>
+  <ferc:OtherExpensesOtherPowerSupplyExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">2973</ferc:OtherExpensesOtherPowerSupplyExpenses>
+  <ferc:OtherIncome contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">127</ferc:OtherIncome>
+  <ferc:OtherIncome contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">127</ferc:OtherIncome>
+  <ferc:OtherIncome contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">127</ferc:OtherIncome>
+  <ferc:OtherIncomeDeductions contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">470</ferc:OtherIncomeDeductions>
+  <ferc:OtherIncomeDeductions contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">470</ferc:OtherIncomeDeductions>
+  <ferc:OtherIncomeDeductions contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">300</ferc:OtherIncomeDeductions>
+  <ferc:OtherIncomeDeductions contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">52880</ferc:OtherIncomeDeductions>
+  <ferc:OtherIncomeDeductions contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">52880</ferc:OtherIncomeDeductions>
+  <ferc:OtherIncomeDeductions contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">30296</ferc:OtherIncomeDeductions>
+  <ferc:OtherInterestExpense contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">60742</ferc:OtherInterestExpense>
+  <ferc:OtherInterestExpense contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">60742</ferc:OtherInterestExpense>
+  <ferc:OtherInterestExpense contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">30676</ferc:OtherInterestExpense>
+  <ferc:OtherInterestExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">59309</ferc:OtherInterestExpense>
+  <ferc:OtherInterestExpense contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">59309</ferc:OtherInterestExpense>
+  <ferc:OtherInterestExpense contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">27007</ferc:OtherInterestExpense>
+  <ferc:OtherLongTermDebt contextRef="Asof2025-12-31" unitRef="USD" decimals="0">902988</ferc:OtherLongTermDebt>
+  <ferc:OtherLongTermDebt contextRef="Asof2026-06-30" unitRef="USD" decimals="0">891335</ferc:OtherLongTermDebt>
+  <ferc:OtherNoncurrentLiabilities contextRef="Asof2025-12-31" unitRef="USD" decimals="0">179827</ferc:OtherNoncurrentLiabilities>
+  <ferc:OtherNoncurrentLiabilities contextRef="Asof2026-06-30" unitRef="USD" decimals="0">174385</ferc:OtherNoncurrentLiabilities>
+  <ferc:OtherOperatingRevenues contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">9810</ferc:OtherOperatingRevenues>
+  <ferc:OtherPowerSupplyExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">1428573</ferc:OtherPowerSupplyExpense>
+  <ferc:OtherProductionPlant contextRef="Asof2026-06-30" unitRef="USD" decimals="0">1123498</ferc:OtherProductionPlant>
+  <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">7335</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities>
+  <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">7647</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivities>
+  <ferc:OutsideServicesEmployed contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">13548</ferc:OutsideServicesEmployed>
+  <ferc:OverheadLineExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">5119</ferc:OverheadLineExpense>
+  <ferc:PaymentsForRetirementOfLongTermDebtFinancingActivities contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">63088</ferc:PaymentsForRetirementOfLongTermDebtFinancingActivities>
+  <ferc:PaymentsForRetirementOfLongTermDebtFinancingActivities contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">78873</ferc:PaymentsForRetirementOfLongTermDebtFinancingActivities>
+  <ferc:PlantMaterialsAndOperatingSupplies contextRef="Asof2025-12-31" unitRef="USD" decimals="0">477996</ferc:PlantMaterialsAndOperatingSupplies>
+  <ferc:PlantMaterialsAndOperatingSupplies contextRef="Asof2026-06-30" unitRef="USD" decimals="0">496478</ferc:PlantMaterialsAndOperatingSupplies>
+  <ferc:PowerProductionExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">1430325</ferc:PowerProductionExpenses>
+  <ferc:Prepayments contextRef="Asof2025-12-31" unitRef="USD" decimals="0">185879</ferc:Prepayments>
+  <ferc:Prepayments contextRef="Asof2026-06-30" unitRef="USD" decimals="0">96946</ferc:Prepayments>
+  <ferc:PropertyInsurance contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">4253</ferc:PropertyInsurance>
+  <ferc:ProprietaryCapital contextRef="Asof2025-12-31" unitRef="USD" decimals="0">7617132</ferc:ProprietaryCapital>
+  <ferc:ProprietaryCapital contextRef="Asof2026-06-30" unitRef="USD" decimals="0">7858331</ferc:ProprietaryCapital>
+  <ferc:PublicStreetAndHighwayLighting contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">15481</ferc:PublicStreetAndHighwayLighting>
+  <ferc:PurchasedPower contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">1425600</ferc:PurchasedPower>
+  <ferc:RegulatoryCommissionExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">1037</ferc:RegulatoryCommissionExpenses>
+  <ferc:Remarks contextRef="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleAmountsIncludedInIsoOrRtoSettlementAbstract">N/A</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleOtherRegulatoryAssetsAbstract">N/A</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleOtherRegulatoryLiabilitiesAbstract">N/A</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleRegionalTransmissionServiceRevenuesAbstract">N/A</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract">N/A</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleTransmissionOfElectricityByIsoOrRtoAbstract">N/A</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleTransmissionOfElectricityByOthersAbstract">N/A</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleTransmissionOfElectricityForOthersAbstract">N/A</ferc:Remarks>
+  <ferc:Remarks contextRef="From2026-01-01To2026-06-30_ScheduleRemarksAxis_ScheduleTransmissionServiceAndGenerationInterconnectionStudyCostsAbstract">N/A</ferc:Remarks>
+  <ferc:RentsAdministrativeAndGeneralExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">0</ferc:RentsAdministrativeAndGeneralExpense>
+  <ferc:RentsOtherPowerGeneration contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">1531</ferc:RentsOtherPowerGeneration>
+  <ferc:ReportDate contextRef="From2026-01-01To2026-06-30">2026-09-08</ferc:ReportDate>
+  <ferc:ReportPeriod contextRef="From2026-01-01To2026-06-30">Q2</ferc:ReportPeriod>
+  <ferc:ReportYear contextRef="From2026-01-01To2026-06-30" unitRef="pure" decimals="INF">2026</ferc:ReportYear>
+  <ferc:ReportYearPeriod contextRef="From2026-01-01To2026-06-30">2026/Q2</ferc:ReportYearPeriod>
+  <ferc:ResidentialSales contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">2527343</ferc:ResidentialSales>
+  <ferc:RespondentLegalName contextRef="From2026-01-01To2026-06-30">North Central Power Co., INC</ferc:RespondentLegalName>
+  <ferc:RetainedEarnings contextRef="Asof2025-06-30" unitRef="USD" decimals="0">4672606</ferc:RetainedEarnings>
+  <ferc:RetainedEarnings contextRef="Asof2025-12-31" unitRef="USD" decimals="0">4861332</ferc:RetainedEarnings>
+  <ferc:RetainedEarnings contextRef="Asof2026-06-30" unitRef="USD" decimals="0">5102531</ferc:RetainedEarnings>
+  <ferc:RevenuesFromMerchandisingJobbingAndContractWork contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">127</ferc:RevenuesFromMerchandisingJobbingAndContractWork>
+  <ferc:RevenuesFromMerchandisingJobbingAndContractWork contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">127</ferc:RevenuesFromMerchandisingJobbingAndContractWork>
+  <ferc:RevenuesFromMerchandisingJobbingAndContractWork contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">127</ferc:RevenuesFromMerchandisingJobbingAndContractWork>
+  <ferc:RevenuesNetOfProvisionForRefunds contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">3378102</ferc:RevenuesNetOfProvisionForRefunds>
+  <ferc:SalesOfElectricity contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">3378102</ferc:SalesOfElectricity>
+  <ferc:SalesToUltimateConsumers contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">3378102</ferc:SalesToUltimateConsumers>
+  <ferc:SmallOrCommercialSalesElectricOperatingRevenue contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">637647</ferc:SmallOrCommercialSalesElectricOperatingRevenue>
+  <ferc:SpecialDeposits contextRef="Asof2025-12-31" unitRef="USD" decimals="0">402</ferc:SpecialDeposits>
+  <ferc:SpecialDeposits contextRef="Asof2026-06-30" unitRef="USD" decimals="0">5232</ferc:SpecialDeposits>
+  <ferc:StationExpensesTransmissionExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">151</ferc:StationExpensesTransmissionExpense>
+  <ferc:SubmissionType contextRef="From2026-01-01To2026-06-30">O</ferc:SubmissionType>
+  <ferc:TaxCollectionsPayable contextRef="Asof2025-12-31" unitRef="USD" decimals="0">7121</ferc:TaxCollectionsPayable>
+  <ferc:TaxCollectionsPayable contextRef="Asof2026-06-30" unitRef="USD" decimals="0">-18334</ferc:TaxCollectionsPayable>
+  <ferc:TaxesAccrued contextRef="Asof2025-12-31" unitRef="USD" decimals="0">91108</ferc:TaxesAccrued>
+  <ferc:TaxesAccrued contextRef="Asof2026-06-30" unitRef="USD" decimals="0">-38593</ferc:TaxesAccrued>
+  <ferc:TaxesOnOtherIncomeAndDeductions contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">0</ferc:TaxesOnOtherIncomeAndDeductions>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">112452</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">112452</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">56092</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">93666</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">93666</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">45335</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TelephoneOfContactPerson contextRef="From2026-01-01To2026-06-30">7156314013</ferc:TelephoneOfContactPerson>
+  <ferc:TitleOfContactPerson contextRef="From2026-01-01To2026-06-30">+Bookkeeper, Assistant Treasurer</ferc:TitleOfContactPerson>
+  <ferc:TransmissionMaintenanceExpenseElectric contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">4300</ferc:TransmissionMaintenanceExpenseElectric>
+  <ferc:TransmissionOperationExpense contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">5270</ferc:TransmissionOperationExpense>
+  <ferc:TransmissionPlant contextRef="Asof2026-06-30" unitRef="USD" decimals="0">1688843</ferc:TransmissionPlant>
+  <ferc:UnappropriatedRetainedEarnings contextRef="Asof2024-12-31" unitRef="USD" decimals="0">4536879</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings contextRef="Asof2025-06-30" unitRef="USD" decimals="0">4672606</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings contextRef="Asof2025-12-31" unitRef="USD" decimals="0">4927269</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings contextRef="Asof2026-06-30" unitRef="USD" decimals="0">5102531</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UtilityOperatingExpenses contextRef="From2025-01-01To2025-06-30" unitRef="USD" decimals="0">2596268</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses contextRef="From2025-01-01To2025-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">2596268</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses contextRef="From2025-04-01To2025-06-30" unitRef="USD" decimals="0">1224069</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses contextRef="From2026-01-01To2026-06-30" unitRef="USD" decimals="0">2942568</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses contextRef="From2026-01-01To2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">2942568</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses contextRef="From2026-04-01To2026-06-30" unitRef="USD" decimals="0">1328230</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityPlant contextRef="Asof2025-12-31" unitRef="USD" decimals="0">20613435</ferc:UtilityPlant>
+  <ferc:UtilityPlant contextRef="Asof2026-06-30" unitRef="USD" decimals="0">21366053</ferc:UtilityPlant>
+  <ferc:UtilityPlantAndConstructionWorkInProgress contextRef="Asof2025-12-31" unitRef="USD" decimals="0">20858423</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:UtilityPlantAndConstructionWorkInProgress contextRef="Asof2026-06-30" unitRef="USD" decimals="0">22022541</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:UtilityPlantAndConstructionWorkInProgress contextRef="Asof2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">22022541</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:UtilityPlantAndNuclearFuelNet contextRef="Asof2025-12-31" unitRef="USD" decimals="0">10163086</ferc:UtilityPlantAndNuclearFuelNet>
+  <ferc:UtilityPlantAndNuclearFuelNet contextRef="Asof2026-06-30" unitRef="USD" decimals="0">10546865</ferc:UtilityPlantAndNuclearFuelNet>
+  <ferc:UtilityPlantInServiceClassified contextRef="Asof2026-06-30" unitRef="USD" decimals="0">21366053</ferc:UtilityPlantInServiceClassified>
+  <ferc:UtilityPlantInServiceClassified contextRef="Asof2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">21366053</ferc:UtilityPlantInServiceClassified>
+  <ferc:UtilityPlantInServiceClassifiedAndUnclassified contextRef="Asof2026-06-30" unitRef="USD" decimals="0">21366053</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+  <ferc:UtilityPlantInServiceClassifiedAndUnclassified contextRef="Asof2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">21366053</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+  <ferc:UtilityPlantNet contextRef="Asof2025-12-31" unitRef="USD" decimals="0">10163086</ferc:UtilityPlantNet>
+  <ferc:UtilityPlantNet contextRef="Asof2026-06-30" unitRef="USD" decimals="0">10546864</ferc:UtilityPlantNet>
+  <ferc:UtilityPlantNet contextRef="Asof2026-06-30_UtilityTypeAxis_ElectricUtilityMember" unitRef="USD" decimals="0">10546864</ferc:UtilityPlantNet>
+  <ferc:WorkingFunds contextRef="Asof2025-12-31" unitRef="USD" decimals="0">300</ferc:WorkingFunds>
+  <ferc:WorkingFunds contextRef="Asof2026-06-30" unitRef="USD" decimals="0">300</ferc:WorkingFunds>
+</xbrl:xbrl>

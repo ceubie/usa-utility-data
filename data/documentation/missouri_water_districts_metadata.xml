@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<?xml-stylesheet type="text/xsl" href="dnr.xsl"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Missouri Department of Natural Resources (MoDNR), Water Resources Center (WRC)</origin>
+				<origin>Missouri Department of Natural Resources (MoDNR), Division of Environmental Quality (DEQ), Water Protection Program (WPP), Public Drinking Water Branch (PDWB)</origin>
+				<origin>Center for Agricultural, Resource and Environmental Systems (CARES)</origin>
+				<pubdate>20250630</pubdate>
+				<title>Public Drinking Water Districts</title>
+				<geoform>vector digital data</geoform>
+				<pubinfo>
+					<pubplace>Rolla, MO</pubplace>
+					<publish>Missouri Department of Natural Resources, Geological Survey Program, Water Resources Center</publish>
+				</pubinfo>
+				<onlink>http://drinkingwater.missouri.edu/gisdata/index.html</onlink>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>This layer contains the boundaries of the public water supply districts (PWSD) in the State of Missouri</abstract>
+			<purpose>This layer was originally developed for use in the MoDNR-funded Vulnerability Assessment (VA) of Missouri Public Drinking Water to Chemical Contamination Project at CARES. The VA project was implemented in 1991 by MoDNR. MoDNR - PDWB contracted with CARES to conduct this assessment. The project is designed to determine which, if any, public water supplies are threatened by any chemicals being tested under the Safe Drinking Water Act.</purpose>
+			<supplinf>The metadata content associated with this data set was reviewed by Elizabeth Retherford on 20250721. The metadata content review is intended to ensure that all of the required content is present.  The components comprising the metadata document were reviewed by Elizabeth Retherford on 20250721.  The metadata component review is intended to ensure that required metadata components are consistent and understandable to data consumers.</supplinf>
+		</descript>
+		<status>
+			<progress>In work</progress>
+			<update>Irregular</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-95.774888</westbc>
+				<eastbc>-88.898017</eastbc>
+				<northbc>40.620702</northbc>
+				<southbc>35.962586</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>water district</themekey>
+				<themekey>drinking water</themekey>
+				<themekey>public water system (PWS)</themekey>
+				<themekey>Public Water Supply District (PWSD)</themekey>
+			</theme>
+			<place>
+				<placekt>None</placekt>
+				<placekey>Missouri</placekey>
+			</place>
+		</keywords>
+		<accconst>Access to these data by persons other than employees of the MoDNR shall be granted only in response to requests to the Public Drinking Water Branch, which can be made using the contact information in the Distribution Information section of this metadata.</accconst>
+		<useconst>Although all data in this data set have been compiled by the Missouri Department of Natural Resources, no warranty, expressed or implied, is made by the department as to the accuracy of the data and related materials.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Missouri Department of Natural Resources, Water Resources Center</cntorg>
+					<cntper>David Erickson</cntper>
+				</cntorgp>
+				<cntpos>Geologist</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical</addrtype>
+					<address>111 Fairgrounds Road</address>
+					<city>Rolla</city>
+					<state>Missouri</state>
+					<postal>65401</postal>
+				</cntaddr>
+				<cntvoice>(573) 368-2332</cntvoice>
+				<cntfax>(573) 368-2193</cntfax>
+				<cntemail>david.erickson@dnr.mo.gov</cntemail>
+			</cntinfo>
+		</ptcontac>
+		<datacred>CARES, Missouri Department of Natural Resources (MoDNR), Water Resources Center (WRC)</datacred>
+		<secinfo>
+			<secclass>Unclassified</secclass>
+		</secinfo>
+		<native>ArcGIS Pro 3.3.4</native>
+	</idinfo>
+	<dataqual>
+		<attracc>
+			<attraccr>none</attraccr>
+		</attracc>
+		<logic>Water district service areas (boundaries) are typically static. However, from time to time the service areas may change. These changes are not always reflected in the current Geographic Information System (GIS) data set. Changes are only made if the water district notifies the PDWB of the change and supplies a description of the new service area. Districts that have been broken into multiple contiguous areas for sampling have been merged into a single polygon</logic>
+		<complete>Water districts that have not submitted their service area are not included. This data set contains only active water districts.</complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Location accuracy varies based on the method used to locate the feature. The original layer was digitized by CARES from 1:100,000-scale United States Geologic Survey (USGS) topographic maps. PWSD's were asked to furnish legal descriptions. These were used to replace the 1:100,000-scale boundaries with 1:24,000-scale boundaries digitized from USGS 7.5' quadrangle maps. When available Computer-aided Design (CAD) files furnished by the water supply were used to further define the district boundary.</horizpar>
+			</horizpa>
+		</posacc>
+		<posacc>
+			<vertacc>
+				<vertaccr>This dataset contains no elevation data.</vertaccr>
+			</vertacc>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srcscale>unknown</srcscale>
+				<typesrc>hardcopyPaper</typesrc>
+				<srccontr>various maps and plat information from the local county assessor  were used to create the initial shapefile,  additional data has been added from information supplied by the water district or third party sources</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>removed attribute field [distnum]</procdesc>
+				<procdate>20061001</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Copied inactive and proposed districts to another feature class. Deleted inactive and proposed districts from this data set.</procdesc>
+				<procdate>20080619</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Added fields for estimated population served and number of service connections</procdesc>
+				<procdate>20090831</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Updated / created boundaries for systems that have been changed or added since original file creation</procdesc>
+				<procdate>20241231</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>1. The original layer was digitized from 1:100,000-scale USGS topographic maps. 2. PWSD's were asked to furnish legal descriptions. These were used to replace the 1:100,000-scale boundaries with 1:24,000-scale boundaries digitized from USGS 7.5' quadrangle maps. 3. Additional information from the PWSD or PDWB is incorporated as it becomes available. 4. CARES staff reprojected the original North American Datum (NAD) NAD27 coverage to NAD83 using ArcInfo 8. 5. For MoDNR use, CARES reprojects the coverage to NAD27 and exports the coverage and compresses the resulting .e00 file. 6. .e00 files were converted to Arcview 3.2 shapefiles by Geological Survey and Resources Assessment Division (GSRAD) 7. Water districts, which had multiple records and polygons, were unioned to give a single record with multiple polygons. The exception for this was if the two polygons were of approximately equal size and were significantly separated.</procdesc>
+				<procdate>20250101</procdate>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>MoDNR WRC</cntorg>
+							<cntper>David Erickson</cntper>
+						</cntorgp>
+						<cntpos>Geologist</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical</addrtype>
+							<address>111 Fairgrounds Road</address>
+							<city>Rolla</city>
+							<state>Missouri</state>
+							<postal>65401</postal>
+						</cntaddr>
+						<cntvoice>(573) 368-2332</cntvoice>
+						<cntfax>(573) 368-2193</cntfax>
+						<cntemail>david.erickson@dnr.mo.gov</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Updated / created boundaries for systems that have been changed or added since original file creation</procdesc>
+				<procdate>20250630</procdate>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct>Vector</direct>
+		<ptvctinf>
+			<sdtsterm>
+				<sdtstype>GT-polygon composed of chains</sdtstype>
+				<ptvctcnt>257</ptvctcnt>
+			</sdtsterm>
+		</ptvctinf>
+	</spdoinfo>
+	<eainfo>
+		<detailed>
+			<enttyp>
+				<enttypl>PUB_DISTRICTS</enttypl>
+				<enttypd>Public Drinking Water Districts</enttypd>
+			</enttyp>
+			<attr>
+				<attrlabl>OBJECTID</attrlabl>
+				<attrdef>Internal feature number.</attrdef>
+				<attrdefs>Esri</attrdefs>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>PWSSNAME</attrlabl>
+				<attrdef>Public water system (PWS) name.</attrdef>
+			</attr>
+			<attr>
+				<attrlabl>PWSSID</attrlabl>
+				<attrdef>A seven-digit public water system identification number (PWSSID) assigned by the Public Drinking Water Branch that uniquely identifies each public water system.  This is an identifier used in linking public water system data to the Safe Drinking Water Information System (SDWIS).</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>No number has been assigned. The polygon represents more than one district.</edomvd>
+						<edomvds>WRC</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>IPWS</attrlabl>
+				<attrdef>A nine-character string comprised of the public water system identification number (PWSSID) with the MO prefix for Missouri.  This is a national numbering system imposed by the United States Environmental Protection Agency (USEPA).</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>multiple</edomv>
+						<edomvd>No number has been assigned. The polygon represents more than one district.</edomvd>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>STATUS</attrlabl>
+				<attrdef>Status of district</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>Active</edomv>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Inactive</edomv>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Proposed</edomv>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>COUNTY</attrlabl>
+				<attrdef>Name of the primary county in which the water district conducts business.</attrdef>
+			</attr>
+			<attr>
+				<attrlabl>MDNRREG</attrlabl>
+				<attrdef>Primary MoDNR Regional office in which the water district conducts business.</attrdef>
+			</attr>
+			<attr>
+				<attrlabl>MDNRNUM</attrlabl>
+				<attrdef>Numeric code for the primary MoDNR regional office in which the water district conducts business.</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Kansas City Regional Office</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Northeast Regional Office</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Central Field Operations</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>Southeast Regional Office</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Southwest Regional Office</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>St. Louis Regional Office</edomvd>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>SQMI</attrlabl>
+				<attrdef>Area of district in square miles</attrdef>
+			</attr>
+			<attr>
+				<attrlabl>ACRES</attrlabl>
+				<attrdef>Area of district in acres</attrdef>
+			</attr>
+			<attr>
+				<attrlabl>SCALE</attrlabl>
+				<attrdef>Scale of digitization source map</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>24000</edomv>
+						<edomvd>24,000 map scale</edomvd>
+						<edomvds>WRC</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>-9999</edomv>
+						<edomvd>map scale unknown</edomvd>
+						<edomvds>WRC</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>POP_SERVED</attrlabl>
+				<attrdef>Estimated number of people served for a given annual operation period for a water system.</attrdef>
+				<attrdomv>
+					<udom>-9999 if unknown</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>LASTUPDATE</attrlabl>
+				<attrdef>Date on which the record was last updated.</attrdef>
+			</attr>
+			<attr>
+				<attrlabl>COLOR</attrlabl>
+				<attrdef>This attribute is used for cartography purposes. It ensures that adjacent polygons have different colors or symbology</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>YEAR_</attrlabl>
+				<attrdef>Year the water district data was created</attrdef>
+			</attr>
+			<attr>
+				<attrlabl>SHAPE.STArea()</attrlabl>
+			</attr>
+			<attr>
+				<attrlabl>SHAPE.STLength()</attrlabl>
+			</attr>
+		</detailed>
+	</eainfo>
+	<metainfo>
+		<metd>20260211</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Missouri Department of Natural Resources, Water Resources Center</cntorg>
+					<cntper>David Erickson</cntper>
+				</cntorgp>
+				<cntpos>Geologist</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical</addrtype>
+					<address>111 Fairgrounds Road</address>
+					<city>Rolla</city>
+					<state>Missouri</state>
+					<postal>65401</postal>
+				</cntaddr>
+				<cntvoice>(573) 368-2332</cntvoice>
+				<cntfax>(573) 368-2193</cntfax>
+				<cntemail>david.erickson@dnr.mo.gov</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+		<mettc>local time</mettc>
+		<metsi>
+			<metsc>Unclassified</metsc>
+		</metsi>
+	</metainfo>
+	<mdChar>
+		<CharSetCd value="004"/>
+	</mdChar>
+	<mdHrLv>
+		<ScopeCd value="005"/>
+	</mdHrLv>
+	<mdContact>
+		<rpIndName>David Erickson</rpIndName>
+		<rpOrgName>Missouri Department of Natural Resources, Water Resources Center</rpOrgName>
+		<rpPosName>Geologist</rpPosName>
+		<rpCntInfo>
+			<cntPhone>
+				<voiceNum>(573) 368-2332</voiceNum>
+				<faxNum>(573) 368-2193</faxNum>
+			</cntPhone>
+			<cntAddress addressType="both">
+				<delPoint>111 Fairgrounds Road</delPoint>
+				<city>Rolla</city>
+				<adminArea>Missouri</adminArea>
+				<postCode>65401</postCode>
+				<eMailAdd>david.erickson@dnr.mo.gov</eMailAdd>
+			</cntAddress>
+		</rpCntInfo>
+		<role>
+			<RoleCd value="007"/>
+		</role>
+	</mdContact>
+	<mdDateSt>20260211</mdDateSt>
+	<mdStanName>ArcGIS Metadata</mdStanName>
+	<mdStanVer>1.0</mdStanVer>
+	<dataIdInfo><idCitation><resTitle>Public Drinking Water Districts</resTitle><date><pubDate>2025-06-30</pubDate></date><citRespParty><rpOrgName>Missouri Department of Natural Resources (MoDNR), Water Resources Center (WRC)<!-- WARNING: translation from FGDC is ambiguous, this may require correction --></rpOrgName><role><RoleCd value="006"/></role></citRespParty><citRespParty><rpOrgName>Missouri Department of Natural Resources (MoDNR), Division of Environmental Quality (DEQ), Water Protection Program (WPP), Public Drinking Water Branch (PDWB)<!-- WARNING: translation from FGDC is ambiguous, this may require correction --></rpOrgName><role><RoleCd value="006"/></role></citRespParty><citRespParty><rpOrgName>Center for Agricultural, Resource and Environmental Systems (CARES)<!-- WARNING: translation from FGDC is ambiguous, this may require correction --></rpOrgName><role><RoleCd value="006"/></role></citRespParty><citRespParty><rpOrgName>Missouri Department of Natural Resources, Geological Survey Program, Water Resources Center<!-- WARNING: translation from FGDC is ambiguous, this may require correction --></rpOrgName><rpCntInfo><cntAddress><delPoint>Rolla, MO<!-- WARNING: translation from FGDC is ambiguous, this may require correction --></delPoint></cntAddress></rpCntInfo><role><RoleCd value="010"/></role></citRespParty><presForm><PresFormCd value="005"/></presForm><presForm><fgdcGeoform>vector digital data</fgdcGeoform></presForm></idCitation><idAbs>This layer contains the boundaries of the public water supply districts (PWSD) in the State of Missouri</idAbs><idPurp>This layer was originally developed for use in the MoDNR-funded Vulnerability Assessment (VA) of Missouri Public Drinking Water to Chemical Contamination Project at CARES. The VA project was implemented in 1991 by MoDNR. MoDNR - PDWB contracted with CARES to conduct this assessment. The project is designed to determine which, if any, public water supplies are threatened by any chemicals being tested under the Safe Drinking Water Act.</idPurp><idCredit>CARES, Missouri Department of Natural Resources (MoDNR), Water Resources Center (WRC)</idCredit><idStatus><ProgCd value="007"/></idStatus><idPoC><rpIndName>David Erickson</rpIndName><rpOrgName>Missouri Department of Natural Resources, Water Resources Center</rpOrgName><rpPosName>Geologist</rpPosName><rpCntInfo><cntPhone><voiceNum>(573) 368-2332</voiceNum><faxNum>(573) 368-2193</faxNum></cntPhone><cntAddress addressType="both"><delPoint>111 Fairgrounds Road</delPoint><city>Rolla</city><adminArea>Missouri</adminArea><postCode>65401</postCode><eMailAdd>david.erickson@dnr.mo.gov</eMailAdd></cntAddress></rpCntInfo><role><RoleCd value="007"/></role></idPoC><resMaint><maintFreq><MaintFreqCd value="010"/></maintFreq></resMaint><placeKeys><keyword>Missouri</keyword></placeKeys><themeKeys><keyword>water district</keyword><keyword>drinking water</keyword><keyword>public water system (PWS)</keyword><keyword>Public Water Supply District (PWSD)</keyword></themeKeys><searchKeys><keyword>water district</keyword><keyword>drinking water</keyword><keyword>public water system (PWS)</keyword><keyword>Public Water Supply District (PWSD)</keyword><keyword>Missouri</keyword></searchKeys><resConst><Consts><useLimit>Although all data in this data set have been compiled by the Missouri Department of Natural Resources, no warranty, expressed or implied, is made by the department as to the accuracy of the data and related materials.</useLimit></Consts></resConst><resConst><LegConsts><accessConsts><RestrictCd value="008"/></accessConsts><othConsts>Access to these data by persons other than employees of the MoDNR shall be granted only in response to requests to the Public Drinking Water Branch, which can be made using the contact information in the Distribution Information section of this metadata.</othConsts></LegConsts></resConst><resConst><SecConsts><class><ClasscationCd value="001"/></class></SecConsts></resConst><spatRpType><SpatRepTypCd value="001"/></spatRpType><envirDesc>ArcGIS Pro 3.3.4</envirDesc><dataExt><geoEle><GeoBndBox><exTypeCode>true</exTypeCode><westBL>-95.774888</westBL><eastBL>-88.898017</eastBL><northBL>40.620702</northBL><southBL>35.962586</southBL></GeoBndBox></geoEle></dataExt><suppInfo>The metadata content associated with this data set was reviewed by Elizabeth Retherford on 20250721. The metadata content review is intended to ensure that all of the required content is present.  The components comprising the metadata document were reviewed by Elizabeth Retherford on 20250721.  The metadata component review is intended to ensure that required metadata components are consistent and understandable to data consumers.</suppInfo></dataIdInfo>
+	<mdConst>
+		<SecConsts>
+			<class>
+				<ClasscationCd value="001"/>
+			</class>
+		</SecConsts>
+	</mdConst>
+	<dqInfo>
+		<dqScope>
+			<scpLvl>
+				<ScopeCd value="005"/>
+			</scpLvl>
+		</dqScope>
+		<report type="DQQuanAttAcc">
+			<measDesc>none</measDesc>
+		</report>
+		<report type="DQConcConsis">
+			<measDesc>Water district service areas (boundaries) are typically static. However, from time to time the service areas may change. These changes are not always reflected in the current Geographic Information System (GIS) data set. Changes are only made if the water district notifies the PDWB of the change and supplies a description of the new service area. Districts that have been broken into multiple contiguous areas for sampling have been merged into a single polygon</measDesc>
+		</report>
+		<report type="DQCompOm">
+			<measDesc>Water districts that have not submitted their service area are not included. This data set contains only active water districts.</measDesc>
+		</report>
+		<report type="DQAbsExtPosAcc" dimension="horizontal">
+			<measDesc>Location accuracy varies based on the method used to locate the feature. The original layer was digitized by CARES from 1:100,000-scale United States Geologic Survey (USGS) topographic maps. PWSD's were asked to furnish legal descriptions. These were used to replace the 1:100,000-scale boundaries with 1:24,000-scale boundaries digitized from USGS 7.5' quadrangle maps. When available Computer-aided Design (CAD) files furnished by the water supply were used to further define the district boundary.</measDesc>
+		</report>
+		<report type="DQAbsExtPosAcc" dimension="vertical">
+			<measDesc>This dataset contains no elevation data.</measDesc>
+		</report>
+		<dataLineage>
+			<prcStep>
+				<stepDesc>removed attribute field [distnum]</stepDesc>
+				<stepDateTm>2006-10-01</stepDateTm>
+			</prcStep>
+			<prcStep>
+				<stepDesc>Copied inactive and proposed districts to another feature class. Deleted inactive and proposed districts from this data set.</stepDesc>
+				<stepDateTm>2008-06-19</stepDateTm>
+			</prcStep>
+			<prcStep>
+				<stepDesc>Added fields for estimated population served and number of service connections</stepDesc>
+				<stepDateTm>2009-08-31</stepDateTm>
+			</prcStep>
+			<prcStep>
+				<stepDesc>Updated / created boundaries for systems that have been changed or added since original file creation</stepDesc>
+				<stepDateTm>2024-12-31</stepDateTm>
+			</prcStep>
+			<prcStep>
+				<stepDesc>1. The original layer was digitized from 1:100,000-scale USGS topographic maps. 2. PWSD's were asked to furnish legal descriptions. These were used to replace the 1:100,000-scale boundaries with 1:24,000-scale boundaries digitized from USGS 7.5' quadrangle maps. 3. Additional information from the PWSD or PDWB is incorporated as it becomes available. 4. CARES staff reprojected the original North American Datum (NAD) NAD27 coverage to NAD83 using ArcInfo 8. 5. For MoDNR use, CARES reprojects the coverage to NAD27 and exports the coverage and compresses the resulting .e00 file. 6. .e00 files were converted to Arcview 3.2 shapefiles by Geological Survey and Resources Assessment Division (GSRAD) 7. Water districts, which had multiple records and polygons, were unioned to give a single record with multiple polygons. The exception for this was if the two polygons were of approximately equal size and were significantly separated.</stepDesc>
+				<stepDateTm>2025-01-01</stepDateTm>
+				<stepProc>
+					<rpIndName>David Erickson</rpIndName>
+					<rpOrgName>MoDNR WRC</rpOrgName>
+					<rpPosName>Geologist</rpPosName>
+					<rpCntInfo>
+						<cntPhone>
+							<voiceNum>(573) 368-2332</voiceNum>
+							<faxNum>(573) 368-2193</faxNum>
+						</cntPhone>
+						<cntAddress addressType="both">
+							<delPoint>111 Fairgrounds Road</delPoint>
+							<city>Rolla</city>
+							<adminArea>Missouri</adminArea>
+							<postCode>65401</postCode>
+							<eMailAdd>david.erickson@dnr.mo.gov</eMailAdd>
+						</cntAddress>
+					</rpCntInfo>
+					<role>
+						<RoleCd value="009"/>
+					</role>
+				</stepProc>
+			</prcStep>
+			<prcStep>
+				<stepDesc>Updated / created boundaries for systems that have been changed or added since original file creation</stepDesc>
+				<stepDateTm>2025-06-30</stepDateTm>
+			</prcStep>
+			<dataSource>
+				<srcDesc>various maps and plat information from the local county assessor  were used to create the initial shapefile,  additional data has been added from information supplied by the water district or third party sources</srcDesc>
+				<srcMedName>
+					<MedNameCd value="027"/>
+				</srcMedName>
+				<srcScale>
+					<rfDenom>unknown</rfDenom>
+				</srcScale>
+			</dataSource>
+		</dataLineage>
+	</dqInfo>
+	<spatRepInfo>
+		<VectSpatRep>
+			<geometObjs>
+				<geoObjTyp>
+					<GeoObjTypCd value="001"/>
+				</geoObjTyp>
+				<geoObjCnt>257</geoObjCnt>
+			</geometObjs>
+		</VectSpatRep>
+	</spatRepInfo>
+	<Esri>
+		<ArcGISFormat>1.0</ArcGISFormat>
+	</Esri>
+	<Binary></Binary>
+</metadata>

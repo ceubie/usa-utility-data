@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Cheryl A. Buchwald</origin>
+        <origin>Natalie A. Houston</origin>
+        <origin>Jana S. Stewart</origin>
+        <origin>Benjamin C. York</origin>
+        <origin>Kristen J. Valseth</origin>
+        <pubdate>20220930</pubdate>
+        <title>Public-supply water service areas within the conterminous United States, 2017</title>
+        <geoform>vector digital data, and tabular data</geoform>
+        <onlink>https://doi.org/10.5066/P9I22Z24</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Cheryl A. Buchwald</origin>
+            <origin>Natalie A. Houston</origin>
+            <origin>Jana S. Stewart</origin>
+            <origin>Ayman H. Alzraiee</origin>
+            <origin>Richard G. Niswonger</origin>
+            <origin>Joshua D. Larsen</origin>
+            <pubdate>20240526</pubdate>
+            <title>Development and evaluation of &lt;scp&gt;public‐supply&lt;/scp&gt; community water service area boundaries for the conterminous United States</title>
+            <geoform>publication</geoform>
+            <pubinfo>
+              <pubplace>n/a</pubplace>
+              <publish>Wiley</publish>
+            </pubinfo>
+            <onlink>https://doi.org/10.1111/1752-1688.13210</onlink>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This data release describes water service areas (WSA) for community water systems (CWS) within the conterminous United States, representing areas of active service between 2010 and 2020. A WSA is defined by a delineated polygon that contains all customers served by a water system. WSAs are represented by an ArcGIS shapefile. The U.S. Safe Drinking Water Act defines a CWS as a type of public-water system that serves at least 15 service connections used by year-round residents or regularly serves at least 25 year-round residents. Water may be used for several purposes (such as for commercial, industrial, and residential uses) or may be used only for one specific purpose (such as for residential use). This data release includes CWS that operate their own infrastructure and furnish water through their own water sources, purchase water from a neighboring water system, or are diversified in that they serve water from a combination of their own sources and purchases. This dataset also includes communities that do not operate a water system but receive water services by way of contract; in other words, an adjacent water system’s infrastructure extends their waterlines across boundaries from which residents connect to, are supplied, and directly billed from this neighboring water system.</abstract>
+      <purpose>The purpose of this data release is to provide a national dataset of public-supply water service areas for the conterminous United States delineated at the community or water system scale, provide comparisons to land use rasters of urban and exurban areas, and comparisons to state and utility provided water service areas. This data release also documents known issues in the current version of the datasets.</purpose>
+      <supplinf>This data release includes two shapefiles, five tables, a data dictionary, and four metadata documents which are described below.
+
+PublicSupplyWaterServiceAreas_metadata.xml - Public-supply water service areas main page metadata. 
+v1_GU_wWS.zip -  Zipped folder which contains the shapefile of the individual geographic units that were used to build the water service area (WSA) dataset for public-supply systems, and the metadata document for this shapefile.
+WSA_v1.zip -  Zipped folder which contains the shapefile of the the aggregated geographic units (GU) that were used to represent the water service areas (WSA) for public-supply water systems, and the metadata document for this shapefile.
+TablesForComparisons - Zipped folder of all five tables used in comparisons to water service areas, the data dictionary which is a quick reference guide for all attributes in the five tables, and the metadata document for the tables.</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>2010</begdate>
+          <enddate>2020</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>No updates are planned for version 1, instead a version 2 dataset will be created that will address issues documented in the completion of version 1.</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-127.7858</westbc>
+        <eastbc>-65.3917</eastbc>
+        <northbc>51.5750</northbc>
+        <southbc>22.9584</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>environment</themekey>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>inlandWaters</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Thesaurus</themekt>
+        <themekey>public supply water use</themekey>
+        <themekey>drinking water use</themekey>
+        <themekey>groundwater</themekey>
+        <themekey>surface water (non-marine)</themekey>
+        <themekey>water supply and demand</themekey>
+        <themekey>population (human)</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Metadata Identifier</themekt>
+        <themekey>USGS:608035dcd34e8564d6835790</themekey>
+      </theme>
+      <place>
+        <placekt>Geographic Names Information System</placekt>
+        <placekey>United States</placekey>
+      </place>
+    </keywords>
+    <accconst>None. Please see 'Distribution Info' for details.</accconst>
+    <useconst>None. Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Cheryl A. Buchwald</cntper>
+          <cntorg>U.S. Geological Survey</cntorg>
+        </cntperp>
+        <cntpos>Hydrologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>1 Gifford Pinchot Drive</address>
+          <city>Madison</city>
+          <state>WI</state>
+          <postal>53562</postal>
+        </cntaddr>
+        <cntvoice>608-821-3873</cntvoice>
+        <cntemail>cabuchwa@usgs.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>The attributes in this dataset were reviewed carefully to ensure all records were assigned attributes for all fields where an assignment of a field was applicable. For this dataset, there are no fields containing empty attributes or ‘no data’ values. Attributes were checked through a review process to ensure no values were misspelled.</attraccr>
+    </attracc>
+    <logic>The range of values for water withdrawals and populations were checked. If a value was found to be out of range of expected values, then records were further reviewed. Additional checks were performed to eliminate duplicate records and search for omissions of public-supply water systems.</logic>
+    <complete>This dataset is considered complete for the information presented, as described in the abstract. Users are encouraged to read the complete metadata record carefully for additional details.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>A general location check was done to make sure coordinate locations of a CWS facility fell within the reported county of the source record. Conflicts were reviewed and inaccurate locations were corrected by either relocating the source or correcting the erroneous county association.</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>No process steps are described in this main landing page metadata document. Process steps are detailed in each of the three metadata documents located in the zipped directories for both shapefiles and data tables.</procdesc>
+        <procdate>20220909</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spref>
+    <horizsys>
+      <planar>
+        <mapproj>
+          <mapprojn>Albers Conical Equal Area</mapprojn>
+          <albers>
+            <stdparll>29.5</stdparll>
+            <stdparll>45.5</stdparll>
+            <longcm>-96.0</longcm>
+            <latprjo>23.0</latprjo>
+            <feast>0.0</feast>
+            <fnorth>0.0</fnorth>
+          </albers>
+        </mapproj>
+        <planci>
+          <plance>coordinate pair</plance>
+          <coordrep>
+            <absres>0.6096</absres>
+            <ordres>0.6096</ordres>
+          </coordrep>
+          <plandu>meters</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>North_American_Datum_1983</horizdn>
+        <ellips>GRS_1980</ellips>
+        <semiaxis>6378137</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>GS ScienceBase</cntper>
+          <cntorg>U.S. Geological Survey</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Denver Federal Center, Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>CO</state>
+          <postal>80225</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>1-888-275-8747</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>https://doi.org/10.5066/P9I22Z24</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20240614</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Natalie A. Houston</cntper>
+          <cntorg>U.S. Geological Survey</cntorg>
+        </cntperp>
+        <cntpos>Hydrologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>1505 Ferguson Lane</address>
+          <city>Austin</city>
+          <state>TX</state>
+          <postal>78754</postal>
+        </cntaddr>
+        <cntvoice>512-927-3565</cntvoice>
+        <cntemail>nhouston@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

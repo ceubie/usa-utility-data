@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2026 Workiva-->
+<!--r:019e5026-7b89-760c-966f-814b2a26a661,g:cccef9ca-7ffe-420c-ac5f-5a25c7c1ba09-->
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ferc="http://ferc.gov/form/2026-04-01/ferc" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <link:schemaRef xlink:href="https://eCollection.ferc.gov/taxonomy/form2/2026-04-01/form/form2Q/form-2Q_2026-04-01.xsd" xlink:type="simple"/>
+  <xbrli:unit id="u-1">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-2">
+    <xbrli:measure>iso4217:USD</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-3">
+    <xbrli:measure>utr:dth</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:context id="c-1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-2">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-3">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-4">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-5">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-6">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-04-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-7">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-8">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-9">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-10">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsAdjustmentsAxis">
+          <ferc:RetainedEarningsAdjustmentDomain>TOTAL Credits to Retained Earnings (Account 439) (footnote details)</ferc:RetainedEarningsAdjustmentDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-11">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsAdjustmentsAxis">
+          <ferc:RetainedEarningsAdjustmentDomain>TOTAL Debits to Retained Earnings (Account 439) (footnote details)</ferc:RetainedEarningsAdjustmentDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-12">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:AppropriatedRetainedEarningsAxis">
+          <ferc:AppropriatedRetainedEarningsDomain>TOTAL Appropriations of Retained Earnings (Account 436) (footnote details)</ferc:AppropriatedRetainedEarningsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-13">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsPreferredStockAxis">
+          <ferc:RetainedEarningsPreferredStockDomain>TOTAL Dividends Declared-Preferred Stock (Account 437) (footnote details)</ferc:RetainedEarningsPreferredStockDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-14">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsCommonStockAxis">
+          <ferc:RetainedEarningsCommonStockDomain>TOTAL Dividends Declared-Common Stook (Account 438) (footnote details)</ferc:RetainedEarningsCommonStockDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-15">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-16">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsAxis">
+          <ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>Other Changes (Explain)</ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-17">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Amortization of (Specify) (footnote details)</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-18">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Other Adjustments to Cash Flows from Operating Activities</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-19">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Other Adjustments to Cash Flows from Operating Activities</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-20">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesAxis">
+          <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>Other Construction and Acquisition of Plant, Investment Activities</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-21">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>Other Adjustments to Cash Flows from Investment Activities:</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-22">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>Net Increase in Debt (Long Term Advances)</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-23">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>Contributions from Member</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-24">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>Contributions from Member</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-25">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>Other Retirements</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-26">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDomain>Other Adjustments to Financing Cash Flows</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-27">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDomain>Other Adjustments to Financing Cash Flows</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-28">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-06-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-29">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:MonthlyQuantityAndRevenueByRateScheduleAxis">
+          <ferc:MonthlyQuantityAndRevenueByRateScheduleDomain>INTERRUPTIBLE</ferc:MonthlyQuantityAndRevenueByRateScheduleDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-30">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:MonthlyQuantityAndRevenueByRateScheduleAxis">
+          <ferc:MonthlyQuantityAndRevenueByRateScheduleDomain>INTERRUPTIBLE</ferc:MonthlyQuantityAndRevenueByRateScheduleDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-04-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-31">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:MonthlyQuantityAndRevenueByRateScheduleAxis">
+          <ferc:MonthlyQuantityAndRevenueByRateScheduleDomain>INTERRUPTIBLE</ferc:MonthlyQuantityAndRevenueByRateScheduleDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-05-01</xbrli:startDate>
+      <xbrli:endDate>2026-05-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-32">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:MonthlyQuantityAndRevenueByRateScheduleAxis">
+          <ferc:MonthlyQuantityAndRevenueByRateScheduleDomain>INTERRUPTIBLE</ferc:MonthlyQuantityAndRevenueByRateScheduleDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-06-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-33">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-04-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-34">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-05-01</xbrli:startDate>
+      <xbrli:endDate>2026-05-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-35">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-06-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-36">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:SystemNameAxis">
+          <ferc:SystemNameDomain>0</ferc:SystemNameDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-37">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:SystemNameAxis">
+          <ferc:SystemNameDomain>0</ferc:SystemNameDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-38">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:SystemNameAxis">
+          <ferc:SystemNameDomain>0</ferc:SystemNameDomain>
+        </xbrldi:typedMember>
+        <xbrldi:typedMember dimension="ferc:TypeOfGasUsagesForOtherOperationsAxis">
+          <ferc:TypeOfGasUsagesForOtherOperationsDomain>Change in Line Pack</ferc:TypeOfGasUsagesForOtherOperationsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-39">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TypeOfGasUsagesForOtherOperationsAxis">
+          <ferc:TypeOfGasUsagesForOtherOperationsDomain>Change in Line Pack</ferc:TypeOfGasUsagesForOtherOperationsDomain>
+        </xbrldi:typedMember>
+        <xbrldi:typedMember dimension="ferc:SystemNameAxis">
+          <ferc:SystemNameDomain>0</ferc:SystemNameDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-40">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:AppliedRateTypeAxis">ferc:RecourseRateMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-04-01</xbrli:startDate>
+      <xbrli:endDate>2026-04-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-41">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:AppliedRateTypeAxis">ferc:RecourseRateMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-05-01</xbrli:startDate>
+      <xbrli:endDate>2026-05-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-42">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:AppliedRateTypeAxis">ferc:RecourseRateMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-06-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-43">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C011982</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:TransmissionPlantMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2026-01-01</xbrli:startDate>
+      <xbrli:endDate>2026-06-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <ferc:FormType id="f-1" contextRef="c-1">2/3-Q</ferc:FormType>
+  <ferc:RespondentLegalName id="f-2" contextRef="c-1">Venture Global Gator Express, LLC</ferc:RespondentLegalName>
+  <ferc:ReportYear id="f-3" contextRef="c-1" decimals="0" unitRef="u-1">2026</ferc:ReportYear>
+  <ferc:ReportPeriod id="f-4" contextRef="c-1">Q2</ferc:ReportPeriod>
+  <ferc:CompanyIdentifier id="f-5" contextRef="c-1">C011982</ferc:CompanyIdentifier>
+  <ferc:StateOfIncorporation id="f-6" contextRef="c-1">DE</ferc:StateOfIncorporation>
+  <ferc:DisclosureOfChangesInAndImportantAdditionsToFranchiseRightsTextBlock id="f-7" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;1. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfChangesInAndImportantAdditionsToFranchiseRightsTextBlock>
+  <ferc:DisclosureOfAcquisitionOfOwnershipInOtherCompaniesByReorganizationMergerOrConsolidationWithOtherCompaniesTextBlock id="f-8" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;2. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfAcquisitionOfOwnershipInOtherCompaniesByReorganizationMergerOrConsolidationWithOtherCompaniesTextBlock>
+  <ferc:DisclosureOfPurchaseOrSaleOfAnOperatingUnitOrSystemTextBlock id="f-9" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;3. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfPurchaseOrSaleOfAnOperatingUnitOrSystemTextBlock>
+  <ferc:DisclosureOfImportantLeaseholdsThatHaveBeenAcquiredOrGivenAssignedOrSurrenderedTextBlock id="f-10" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;4. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfImportantLeaseholdsThatHaveBeenAcquiredOrGivenAssignedOrSurrenderedTextBlock>
+  <ferc:DisclosureOfImportantExtensionOrReductionOfTransmissionOrDistributionSystemTextBlock id="f-11" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;5. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfImportantExtensionOrReductionOfTransmissionOrDistributionSystemTextBlock>
+  <ferc:DisclosureOfObligationsIncurredOrAssumedByRespondentAsGuarantorForThePerformanceByAnotherOfAnyAgreementOrObligationTextBlock id="f-12" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;6. See Note 4 to Schedule 122.1&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfObligationsIncurredOrAssumedByRespondentAsGuarantorForThePerformanceByAnotherOfAnyAgreementOrObligationTextBlock>
+  <ferc:DisclosureOfChangesInArticlesOfIncorporationOrAmendmentsToCharterTextBlock id="f-13" contextRef="c-1">&lt;div&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:112%"&gt;7. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfChangesInArticlesOfIncorporationOrAmendmentsToCharterTextBlock>
+  <ferc:DisclosureOfEstimatedAnnualEffectAndNatureOfAnyImportantWageScaleChangesTextBlock id="f-14" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;8. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfEstimatedAnnualEffectAndNatureOfAnyImportantWageScaleChangesTextBlock>
+  <ferc:DisclosureOfStatusOfAnyMateriallyImportantLegalProceedingsTextBlock id="f-15" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;9. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfStatusOfAnyMateriallyImportantLegalProceedingsTextBlock>
+  <ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock id="f-16" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;10. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock>
+  <ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock id="f-17" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;10. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock>
+  <ferc:DisclosureOfEstimatedIncreaseOrDecreaseInAnnualRevenuesCausedByImportantRateChangesTextBlock id="f-18" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;11. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfEstimatedIncreaseOrDecreaseInAnnualRevenuesCausedByImportantRateChangesTextBlock>
+  <ferc:DisclosureOfChangesInOfficersDirectorsMajorSecurityHoldersAndVotingPowersOfTheRespondentTextBlock id="f-19" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;12. None&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfChangesInOfficersDirectorsMajorSecurityHoldersAndVotingPowersOfTheRespondentTextBlock>
+  <ferc:DisclosureOfSignificantEventThatRespondentParticipatesInACashManagementProgramsTextBlock id="f-20" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;13. Not Applicable&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfSignificantEventThatRespondentParticipatesInACashManagementProgramsTextBlock>
+  <ferc:DisclosureOfImportantDisclosuresRegardingTheFinancialStatementsTextBlock id="f-21" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt;text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Note 1 &#8211; The Company&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;Venture Global Gator Express, LLC ("Gator Express") is a Delaware limited liability company and a wholly owned indirect subsidiary of Venture Global, Inc. (&#8220;Venture Global&#8221;). As used in these financial statements, unless the context otherwise requires, references to the "Company" refers to Gator Express.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;The Company owns a pipeline (the "Gator Express pipeline") that interconnects the interstate pipeline grid to a liquefied natural gas ("LNG") export terminal (the "Plaquemines terminal") which is owned and operated by Venture Global Plaquemines LNG, LLC ("Plaquemines"), a wholly owned indirect subsidiary of Venture Global.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;Plaquemines has contracted for all of the firm transportation capacity on the Gator Express pipeline, up to 3.94 billion cubic feet of natural gas per day, under a firm transportation service agreement that will commence upon the start of full commercial operations of the Plaquemines terminal.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;Through June 30, 2026, Gator Express has only provided interruptible service to the Plaquemines terminal.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:112%"&gt;Note 2 &#8211; Summary of Significant Accounting Policies&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Basis of presentation&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;The accompanying financial statements of Gator Express have been prepared in accordance with the accounting requirements of the Federal Energy Regulatory Commission ("FERC"), as set forth in the applicable Uniform System of Accounts and published accounting releases, which is a comprehensive basis of accounting other than accounting principles generally accepted in the United States ("GAAP"). The Company&#8217;s accounting policies conform to the accounting and reporting guidance for regulated companies. The most significant differences between GAAP and the financial statements presented herein are: (1) classification of certain accounts on the Comparative Balance Sheet, Statement of Income and Statement of Cash Flows and (2) certain assets and liabilities that result from the regulated ratemaking process are recorded that would not be recorded under GAAP for non-regulated entities.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;Results of operations for the six months ended June 30, 2026 are not necessarily indicative of the results of operations that will be realized for the year ending December 31, 2026.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:112%"&gt;Use of estimates &lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;The preparation of financial statements in conformity with the accounting requirements of FERC requires management to make estimates and assumptions that affect the reported amounts in the financial statements and in the accompanying notes. While management believes that the estimates and assumptions used in the preparation of the financial statements are appropriate, actual results could differ from those estimates.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Note 3 &#8211; Net utility plant&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-top:2pt;padding-right:18pt;text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;The following table sets forth net utility plant (in millions):&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:100.000%"&gt;&lt;tr&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:64.673%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.417%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.420%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;June 30, 2026&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;December 31, 2025&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Natural gas pipeline costs&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:0 1pt"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt 1.5pt 7pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Utility plant&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;370&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;368&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt 1.5pt 7pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Construction in progress&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;1&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;1&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;/tr&gt;&lt;tr style="height:5pt"&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt 1.5pt 13pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Total utility plant at cost&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="2" style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;371&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="2" style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;369&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;/tr&gt;&lt;tr style="height:5pt"&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Accumulated depreciation and amortization&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;(32)&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;(23)&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;/tr&gt;&lt;tr style="height:5pt"&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;div style="padding-left:6pt"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Total utility plant, net&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="border-bottom:1pt solid #000;border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-bottom:1pt solid #000;border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;339&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-bottom:1pt solid #000;border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="border-bottom:1pt solid #000;border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-bottom:1pt solid #000;border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;346&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-bottom:1pt solid #000;border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div style="margin-top:2pt;padding-right:18pt;text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="margin-top:2pt;padding-right:18pt;text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Note 4 &#8211; Commitments and Contingencies&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Services agreements&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;The Company has certain services agreements with affiliates. See &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-style:italic;font-weight:400;line-height:120%"&gt;Note 5 - Related Party Transactions&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt; for information regarding such agreements. &lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Guarantees&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;The Company guarantees certain Plaquemines project-level debt instruments that contain certain customary affirmative and negative covenants that, among other things, limits the Company's ability to incur additional indebtedness, create liens, dispose of assets, or pay dividends, distributions or other restricted payments. As of June 30, 2026, the Company has no liability recorded related to these guarantees.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Environmental and regulatory matters&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;The Company is subject to extensive regulation under federal, state and local statutes, rules, regulations and laws. These laws require that the Company engage in consultations with appropriate federal and state agencies and that we obtain and maintain applicable permits and other authorizations. Failure to comply with such laws could result in legal proceedings, which may include substantial penalties. The Company believes that, based on currently known information, compliance with these laws and regulations will not have a material adverse effect on our results of operations, financial condition or cash flows. &lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Legal proceedings &lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;The Company may in the future be involved as a party to various legal proceedings, which are incidental to the ordinary course of business. The Company regularly analyzes current information and, as necessary, provides accruals for probable liabilities on the eventual disposition of these matters. In the opinion of management, as of June 30, 2026, there were no threatened or pending legal matters that would have a material impact on our results of operations, financial position or cash flows.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:112%"&gt;Note 5 - Related Party Transactions&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-style:italic;font-weight:400;line-height:112%"&gt;Venture Global costs&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-style:italic;font-weight:400;line-height:112%"&gt;&#8211; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;Venture Global and certain of its subsidiaries provide the Company with various forms of functional support including corporate services, operations and maintenance services, and direct construction project management and supervision services. The costs for this support are charged to the Company through various service agreements based on either a direct reimbursement model or fixed fee structure.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-style:italic;font-weight:400;line-height:112%"&gt;Transportation agreements&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-style:italic;font-weight:400;line-height:112%"&gt;&#8211; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;Plaquemines has interruptible and&lt;/span&gt;&lt;span style="color:#ff0000;font-family:'Times New Roman',serif;font-size:12pt;font-weight:400;line-height:112%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;firm transportation service agreements with the Company to secure capacity for the transportation of natural gas feedstock to the Plaquemines terminal. &lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-style:italic;font-weight:400;line-height:112%"&gt;Financing arrangements&lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-style:italic;font-weight:400;line-height:112%"&gt;&#8211; &lt;/span&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:112%"&gt;Plaquemines has obtained project-level debt and equity financing for the construction and development of the Plaquemines terminal and Gator Express pipeline. Commencing with the closing of Plaquemines debt and equity financing, costs incurred to develop, construct and place into service the Gator Express pipeline are paid by Plaquemines on behalf of Gator Express. These costs are reflected as an equity distribution from Plaquemines and an equity contribution to Gator Express via their parent.&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;The Company's Statement of Income included the following related party transactions (in millions):&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:100.000%"&gt;&lt;tr&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:31.042%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.417%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.417%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.417%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.422%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="9" style="background-color:#ffffff;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;Three months ended June 30,&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="9" style="background-color:#ffffff;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;Six months ended June 30,&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;2026&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:0 1pt"/&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;2025&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;2026&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:0 1pt"/&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;2025&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Gas operating revenues&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;14&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;8&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;28&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;13&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Operating expenses&lt;/span&gt;&lt;/td&gt;&lt;td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;3&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;3&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;6&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="2" style="padding:1.5pt 0 1.5pt 1pt;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;7&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;The following table summarizes the balances payable to related parties included in the Company's Comparative Balance Sheet (in millions):&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:100.000%"&gt;&lt;tr&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:64.673%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.417%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.420%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;June 30, 2026&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;December 31, 2025&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="display:none"/&gt;&lt;td colspan="3" style="display:none"/&gt;&lt;td colspan="3" style="display:none"/&gt;&lt;td colspan="3" style="display:none"/&gt;&lt;td colspan="3" style="display:none"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Accounts payable to associated companies&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;1&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;1&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Note 6 &#8211; Supplemental Cash Flow Information&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;The following table sets forth supplemental disclosure of cash flow information (in millions):&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:100.000%"&gt;&lt;tr&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:64.673%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.417%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:0.395%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;td style="width:1.0%"/&gt;&lt;td style="width:15.420%"/&gt;&lt;td style="width:0.1%"/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:0 1pt"/&gt;&lt;td colspan="9" style="background-color:#ffffff;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;Six months ended June 30,&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td colspan="3" style="background-color:#ffffff;padding:0 1pt"/&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;2026&lt;/span&gt;&lt;/td&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:0 1pt"/&gt;&lt;td colspan="3" style="border-top:0.5pt solid #000;padding:1.5pt 1pt;text-align:center;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:700;line-height:120%"&gt;2025&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="padding:1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;div&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;Accrued purchases of net utility plant&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;1&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;td colspan="3" style="padding:0 1pt"/&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0 1.5pt 1pt;text-align:left;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;$&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 0;text-align:right;vertical-align:bottom"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:8pt;font-weight:400;line-height:120%"&gt;7&#160;&lt;/span&gt;&lt;/td&gt;&lt;td style="border-top:0.5pt solid #000;padding:1.5pt 1pt 1.5pt 0;text-align:right;vertical-align:bottom"/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:700;line-height:120%"&gt;Note 7 &#8211; Subsequent Events&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span&gt;&lt;br/&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align:justify"&gt;&lt;span style="color:#000000;font-family:'Times New Roman',serif;font-size:10pt;font-weight:400;line-height:120%"&gt;Management has evaluated subsequent events after the balance sheet date and through the date of issuance of the financial statements, August&#160;24, 2026, for appropriate accounting and disclosure. The Company has determined that there were no such events that warrant disclosure or recognition in the financial statements.&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfImportantDisclosuresRegardingTheFinancialStatementsTextBlock>
+  <ferc:ReportYear id="f-22" contextRef="c-1" decimals="0" unitRef="u-1">2026</ferc:ReportYear>
+  <ferc:ReportYear id="f-23" contextRef="c-1" decimals="0" unitRef="u-1">2026</ferc:ReportYear>
+  <ferc:ReportYear id="f-24" contextRef="c-1" decimals="0" unitRef="u-1">2026</ferc:ReportYear>
+  <ferc:AttestationDate id="f-25" contextRef="c-1">2026-08-24</ferc:AttestationDate>
+  <ferc:DisclosureOfSubsequentEventsTextBlock id="f-26" contextRef="c-1" xsi:nil="true"></ferc:DisclosureOfSubsequentEventsTextBlock>
+  <ferc:CompanyIdentifier id="f-27" contextRef="c-1">C011982</ferc:CompanyIdentifier>
+  <ferc:FormType id="f-28" contextRef="c-1">2/3-Q</ferc:FormType>
+  <ferc:RespondentLegalName id="f-29" contextRef="c-1">Venture Global Gator Express, LLC</ferc:RespondentLegalName>
+  <ferc:ReportYear id="f-30" contextRef="c-1" decimals="0" unitRef="u-1">2026</ferc:ReportYear>
+  <ferc:ReportPeriod id="f-31" contextRef="c-1">Q2</ferc:ReportPeriod>
+  <ferc:AddressOfPrincipalOfficeAtEndOfPeriod id="f-32" contextRef="c-1">1001 19th Street North, Suite 1500, Arlington, VA 22209</ferc:AddressOfPrincipalOfficeAtEndOfPeriod>
+  <ferc:NameOfContactPerson id="f-33" contextRef="c-1">Ian Crump</ferc:NameOfContactPerson>
+  <ferc:TitleOfContactPerson id="f-34" contextRef="c-1">Director, Operational Accounting</ferc:TitleOfContactPerson>
+  <ferc:AddressOfContactPerson id="f-35" contextRef="c-1">1001 19th Street North, Suite 1500, Arlington, VA 22209</ferc:AddressOfContactPerson>
+  <ferc:TelephoneOfContactPerson id="f-36" contextRef="c-1">202-920-0903</ferc:TelephoneOfContactPerson>
+  <ferc:SubmissionType id="f-37" contextRef="c-1">O</ferc:SubmissionType>
+  <ferc:ReportDate id="f-38" contextRef="c-1">2026-08-24</ferc:ReportDate>
+  <ferc:AttestationName id="f-39" contextRef="c-1">Jonathan W. Thayer</ferc:AttestationName>
+  <ferc:AttestationTitle id="f-40" contextRef="c-1">Chief Financial Officer</ferc:AttestationTitle>
+  <ferc:CorporateOfficerCertificationSignature id="f-41" contextRef="c-1">Jonathan W. Thayer</ferc:CorporateOfficerCertificationSignature>
+  <ferc:AttestationDate id="f-42" contextRef="c-1">2026-08-24</ferc:AttestationDate>
+  <ferc:UtilityPlant id="f-43" contextRef="c-2" decimals="0" unitRef="u-2">369391885</ferc:UtilityPlant>
+  <ferc:UtilityPlant id="f-44" contextRef="c-3" decimals="0" unitRef="u-2">367589145</ferc:UtilityPlant>
+  <ferc:ConstructionWorkInProgress id="f-45" contextRef="c-2" decimals="0" unitRef="u-2">1401721</ferc:ConstructionWorkInProgress>
+  <ferc:ConstructionWorkInProgress id="f-46" contextRef="c-3" decimals="0" unitRef="u-2">1401721</ferc:ConstructionWorkInProgress>
+  <ferc:UtilityPlantAndConstructionWorkInProgress id="f-47" contextRef="c-2" decimals="0" unitRef="u-2">370793606</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:UtilityPlantAndConstructionWorkInProgress id="f-48" contextRef="c-3" decimals="0" unitRef="u-2">368990866</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-49" contextRef="c-2" decimals="0" unitRef="u-2">31841266</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-50" contextRef="c-3" decimals="0" unitRef="u-2">22775107</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:UtilityPlantNet id="f-51" contextRef="c-2" decimals="0" unitRef="u-2">338952340</ferc:UtilityPlantNet>
+  <ferc:UtilityPlantNet id="f-52" contextRef="c-3" decimals="0" unitRef="u-2">346215759</ferc:UtilityPlantNet>
+  <ferc:UtilityPlantAndNuclearFuelNet id="f-53" contextRef="c-2" decimals="0" unitRef="u-2">338952340</ferc:UtilityPlantAndNuclearFuelNet>
+  <ferc:UtilityPlantAndNuclearFuelNet id="f-54" contextRef="c-3" decimals="0" unitRef="u-2">346215759</ferc:UtilityPlantAndNuclearFuelNet>
+  <ferc:AssetsAndOtherDebits id="f-55" contextRef="c-2" decimals="0" unitRef="u-2">338952340</ferc:AssetsAndOtherDebits>
+  <ferc:AssetsAndOtherDebits id="f-56" contextRef="c-3" decimals="0" unitRef="u-2">346215759</ferc:AssetsAndOtherDebits>
+  <ferc:OtherPaidInCapital id="f-57" contextRef="c-2" decimals="0" unitRef="u-2">385042098</ferc:OtherPaidInCapital>
+  <ferc:OtherPaidInCapital id="f-58" contextRef="c-3" decimals="0" unitRef="u-2">402633742</ferc:OtherPaidInCapital>
+  <ferc:RetainedEarnings id="f-59" contextRef="c-2" decimals="0" unitRef="u-2">-51703785</ferc:RetainedEarnings>
+  <ferc:RetainedEarnings id="f-60" contextRef="c-3" decimals="0" unitRef="u-2">-60990815</ferc:RetainedEarnings>
+  <ferc:ProprietaryCapital id="f-61" contextRef="c-2" decimals="0" unitRef="u-2">333338313</ferc:ProprietaryCapital>
+  <ferc:ProprietaryCapital id="f-62" contextRef="c-3" decimals="0" unitRef="u-2">341642927</ferc:ProprietaryCapital>
+  <ferc:AccumulatedMiscellaneousOperatingProvisions id="f-63" contextRef="c-2" decimals="0" unitRef="u-2">1175345</ferc:AccumulatedMiscellaneousOperatingProvisions>
+  <ferc:AccumulatedMiscellaneousOperatingProvisions id="f-64" contextRef="c-3" decimals="0" unitRef="u-2">1131453</ferc:AccumulatedMiscellaneousOperatingProvisions>
+  <ferc:AssetRetirementObligations id="f-65" contextRef="c-2" decimals="0" unitRef="u-2">449689</ferc:AssetRetirementObligations>
+  <ferc:AssetRetirementObligations id="f-66" contextRef="c-3" decimals="0" unitRef="u-2">435142</ferc:AssetRetirementObligations>
+  <ferc:OtherNoncurrentLiabilities id="f-67" contextRef="c-2" decimals="0" unitRef="u-2">1625034</ferc:OtherNoncurrentLiabilities>
+  <ferc:OtherNoncurrentLiabilities id="f-68" contextRef="c-3" decimals="0" unitRef="u-2">1566595</ferc:OtherNoncurrentLiabilities>
+  <ferc:AccountsPayable id="f-69" contextRef="c-2" decimals="0" unitRef="u-2">1775857</ferc:AccountsPayable>
+  <ferc:AccountsPayable id="f-70" contextRef="c-3" decimals="0" unitRef="u-2">1121622</ferc:AccountsPayable>
+  <ferc:AccountsPayableToAssociatedCompanies id="f-71" contextRef="c-2" decimals="0" unitRef="u-2">970750</ferc:AccountsPayableToAssociatedCompanies>
+  <ferc:AccountsPayableToAssociatedCompanies id="f-72" contextRef="c-3" decimals="0" unitRef="u-2">1004899</ferc:AccountsPayableToAssociatedCompanies>
+  <ferc:TaxesAccrued id="f-73" contextRef="c-2" decimals="0" unitRef="u-2">979228</ferc:TaxesAccrued>
+  <ferc:MiscellaneousCurrentAndAccruedLiabilities id="f-74" contextRef="c-2" decimals="0" unitRef="u-2">263158</ferc:MiscellaneousCurrentAndAccruedLiabilities>
+  <ferc:MiscellaneousCurrentAndAccruedLiabilities id="f-75" contextRef="c-3" decimals="0" unitRef="u-2">879716</ferc:MiscellaneousCurrentAndAccruedLiabilities>
+  <ferc:CurrentAndAccruedLiabilities id="f-76" contextRef="c-2" decimals="0" unitRef="u-2">3988993</ferc:CurrentAndAccruedLiabilities>
+  <ferc:CurrentAndAccruedLiabilities id="f-77" contextRef="c-3" decimals="0" unitRef="u-2">3006237</ferc:CurrentAndAccruedLiabilities>
+  <ferc:LiabilitiesAndOtherCredits id="f-78" contextRef="c-2" decimals="0" unitRef="u-2">338952340</ferc:LiabilitiesAndOtherCredits>
+  <ferc:LiabilitiesAndOtherCredits id="f-79" contextRef="c-3" decimals="0" unitRef="u-2">346215759</ferc:LiabilitiesAndOtherCredits>
+  <ferc:OperatingRevenues id="f-80" contextRef="c-1" decimals="0" unitRef="u-2">28309556</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-81" contextRef="c-4" decimals="0" unitRef="u-2">12675066</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-82" contextRef="c-5" decimals="0" unitRef="u-2">14141223</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-83" contextRef="c-6" decimals="0" unitRef="u-2">8008891</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-84" contextRef="c-7" decimals="0" unitRef="u-2">28309556</ferc:OperatingRevenues>
+  <ferc:OperatingRevenues id="f-85" contextRef="c-8" decimals="0" unitRef="u-2">12675066</ferc:OperatingRevenues>
+  <ferc:OperationExpense id="f-86" contextRef="c-1" decimals="0" unitRef="u-2">8520362</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-87" contextRef="c-4" decimals="0" unitRef="u-2">8058524</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-88" contextRef="c-5" decimals="0" unitRef="u-2">5420207</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-89" contextRef="c-6" decimals="0" unitRef="u-2">3467941</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-90" contextRef="c-7" decimals="0" unitRef="u-2">8520362</ferc:OperationExpense>
+  <ferc:OperationExpense id="f-91" contextRef="c-8" decimals="0" unitRef="u-2">8058524</ferc:OperationExpense>
+  <ferc:MaintenanceExpense id="f-92" contextRef="c-1" decimals="0" unitRef="u-2">95798</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-93" contextRef="c-4" decimals="0" unitRef="u-2">8668</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-94" contextRef="c-5" decimals="0" unitRef="u-2">54464</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-95" contextRef="c-6" decimals="0" unitRef="u-2">8668</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-96" contextRef="c-7" decimals="0" unitRef="u-2">95798</ferc:MaintenanceExpense>
+  <ferc:MaintenanceExpense id="f-97" contextRef="c-8" decimals="0" unitRef="u-2">8668</ferc:MaintenanceExpense>
+  <ferc:DepreciationExpense id="f-98" contextRef="c-1" decimals="0" unitRef="u-2">9037696</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-99" contextRef="c-4" decimals="0" unitRef="u-2">8724416</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-100" contextRef="c-5" decimals="0" unitRef="u-2">4526417</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-101" contextRef="c-6" decimals="0" unitRef="u-2">4423842</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-102" contextRef="c-7" decimals="0" unitRef="u-2">9037696</ferc:DepreciationExpense>
+  <ferc:DepreciationExpense id="f-103" contextRef="c-8" decimals="0" unitRef="u-2">8724416</ferc:DepreciationExpense>
+  <ferc:DepreciationExpenseForAssetRetirementCosts id="f-104" contextRef="c-1" decimals="0" unitRef="u-2">9750</ferc:DepreciationExpenseForAssetRetirementCosts>
+  <ferc:DepreciationExpenseForAssetRetirementCosts id="f-105" contextRef="c-4" decimals="0" unitRef="u-2">9749</ferc:DepreciationExpenseForAssetRetirementCosts>
+  <ferc:DepreciationExpenseForAssetRetirementCosts id="f-106" contextRef="c-5" decimals="0" unitRef="u-2">4875</ferc:DepreciationExpenseForAssetRetirementCosts>
+  <ferc:DepreciationExpenseForAssetRetirementCosts id="f-107" contextRef="c-6" decimals="0" unitRef="u-2">4874</ferc:DepreciationExpenseForAssetRetirementCosts>
+  <ferc:DepreciationExpenseForAssetRetirementCosts id="f-108" contextRef="c-7" decimals="0" unitRef="u-2">9750</ferc:DepreciationExpenseForAssetRetirementCosts>
+  <ferc:DepreciationExpenseForAssetRetirementCosts id="f-109" contextRef="c-8" decimals="0" unitRef="u-2">9749</ferc:DepreciationExpenseForAssetRetirementCosts>
+  <ferc:AmortizationAndDepletionOfUtilityPlant id="f-110" contextRef="c-1" decimals="0" unitRef="u-2">18715</ferc:AmortizationAndDepletionOfUtilityPlant>
+  <ferc:AmortizationAndDepletionOfUtilityPlant id="f-111" contextRef="c-4" decimals="0" unitRef="u-2">36038</ferc:AmortizationAndDepletionOfUtilityPlant>
+  <ferc:AmortizationAndDepletionOfUtilityPlant id="f-112" contextRef="c-5" decimals="0" unitRef="u-2">9164</ferc:AmortizationAndDepletionOfUtilityPlant>
+  <ferc:AmortizationAndDepletionOfUtilityPlant id="f-113" contextRef="c-6" decimals="0" unitRef="u-2">17925</ferc:AmortizationAndDepletionOfUtilityPlant>
+  <ferc:AmortizationAndDepletionOfUtilityPlant id="f-114" contextRef="c-7" decimals="0" unitRef="u-2">18715</ferc:AmortizationAndDepletionOfUtilityPlant>
+  <ferc:AmortizationAndDepletionOfUtilityPlant id="f-115" contextRef="c-8" decimals="0" unitRef="u-2">36038</ferc:AmortizationAndDepletionOfUtilityPlant>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-116" contextRef="c-1" decimals="0" unitRef="u-2">1281765</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-117" contextRef="c-4" decimals="0" unitRef="u-2">541585</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-118" contextRef="c-5" decimals="0" unitRef="u-2">612235</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-119" contextRef="c-6" decimals="0" unitRef="u-2">226666</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-120" contextRef="c-7" decimals="0" unitRef="u-2">1281765</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-121" contextRef="c-8" decimals="0" unitRef="u-2">541585</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+  <ferc:AccretionExpense id="f-122" contextRef="c-1" decimals="0" unitRef="u-2">58440</ferc:AccretionExpense>
+  <ferc:AccretionExpense id="f-123" contextRef="c-4" decimals="0" unitRef="u-2">40211</ferc:AccretionExpense>
+  <ferc:AccretionExpense id="f-124" contextRef="c-5" decimals="0" unitRef="u-2">29473</ferc:AccretionExpense>
+  <ferc:AccretionExpense id="f-125" contextRef="c-6" decimals="0" unitRef="u-2">20255</ferc:AccretionExpense>
+  <ferc:AccretionExpense id="f-126" contextRef="c-7" decimals="0" unitRef="u-2">58440</ferc:AccretionExpense>
+  <ferc:AccretionExpense id="f-127" contextRef="c-8" decimals="0" unitRef="u-2">40211</ferc:AccretionExpense>
+  <ferc:UtilityOperatingExpenses id="f-128" contextRef="c-1" decimals="0" unitRef="u-2">19022526</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-129" contextRef="c-4" decimals="0" unitRef="u-2">17419191</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-130" contextRef="c-5" decimals="0" unitRef="u-2">10656835</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-131" contextRef="c-6" decimals="0" unitRef="u-2">8170171</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-132" contextRef="c-7" decimals="0" unitRef="u-2">19022526</ferc:UtilityOperatingExpenses>
+  <ferc:UtilityOperatingExpenses id="f-133" contextRef="c-8" decimals="0" unitRef="u-2">17419191</ferc:UtilityOperatingExpenses>
+  <ferc:NetUtilityOperatingIncome id="f-134" contextRef="c-1" decimals="0" unitRef="u-2">9287030</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-135" contextRef="c-4" decimals="0" unitRef="u-2">-4744125</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-136" contextRef="c-5" decimals="0" unitRef="u-2">3484388</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-137" contextRef="c-6" decimals="0" unitRef="u-2">-161280</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-138" contextRef="c-7" decimals="0" unitRef="u-2">9287030</ferc:NetUtilityOperatingIncome>
+  <ferc:NetUtilityOperatingIncome id="f-139" contextRef="c-8" decimals="0" unitRef="u-2">-4744125</ferc:NetUtilityOperatingIncome>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-140" contextRef="c-1" decimals="0" unitRef="u-2">9287030</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-141" contextRef="c-4" decimals="0" unitRef="u-2">-4744125</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-142" contextRef="c-5" decimals="0" unitRef="u-2">3484388</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:IncomeBeforeExtraordinaryItems id="f-143" contextRef="c-6" decimals="0" unitRef="u-2">-161280</ferc:IncomeBeforeExtraordinaryItems>
+  <ferc:NetIncomeLoss id="f-144" contextRef="c-1" decimals="0" unitRef="u-2">9287030</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss id="f-145" contextRef="c-4" decimals="0" unitRef="u-2">-4744125</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss id="f-146" contextRef="c-5" decimals="0" unitRef="u-2">3484388</ferc:NetIncomeLoss>
+  <ferc:NetIncomeLoss id="f-147" contextRef="c-6" decimals="0" unitRef="u-2">-161280</ferc:NetIncomeLoss>
+  <ferc:ComprehensiveIncomeLoss id="f-148" contextRef="c-4" decimals="0" unitRef="u-2">-4744125</ferc:ComprehensiveIncomeLoss>
+  <ferc:ComprehensiveIncomeLoss id="f-149" contextRef="c-1" decimals="0" unitRef="u-2">9287030</ferc:ComprehensiveIncomeLoss>
+  <ferc:UnappropriatedRetainedEarnings id="f-150" contextRef="c-3" decimals="0" unitRef="u-2">-60990815</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings id="f-151" contextRef="c-9" decimals="0" unitRef="u-2">-58301007</ferc:UnappropriatedRetainedEarnings>
+  <ferc:AdjustmentsToRetainedEarningsCreditDescription id="f-152" contextRef="c-10">TOTAL Credits to Retained Earnings (Account 439) (footnote details)</ferc:AdjustmentsToRetainedEarningsCreditDescription>
+  <ferc:AdjustmentsToRetainedEarningsCreditDescription id="f-153" contextRef="c-11">TOTAL Debits to Retained Earnings (Account 439) (footnote details)</ferc:AdjustmentsToRetainedEarningsCreditDescription>
+  <ferc:OrderNumber id="f-154" contextRef="c-10" decimals="INF" unitRef="u-1">4</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-155" contextRef="c-11" decimals="INF" unitRef="u-1">5</ferc:OrderNumber>
+  <ferc:BalanceTransferredFromIncome id="f-156" contextRef="c-1" decimals="0" unitRef="u-2">9287030</ferc:BalanceTransferredFromIncome>
+  <ferc:BalanceTransferredFromIncome id="f-157" contextRef="c-4" decimals="0" unitRef="u-2">-4744125</ferc:BalanceTransferredFromIncome>
+  <ferc:AppropriatedRetainedEarningsDescription id="f-158" contextRef="c-12">TOTAL Appropriations of Retained Earnings (Account 436) (footnote details)</ferc:AppropriatedRetainedEarningsDescription>
+  <ferc:DividendsDeclaredPreferredStockDescription id="f-159" contextRef="c-13">TOTAL Dividends Declared-Preferred Stock (Account 437) (footnote details)</ferc:DividendsDeclaredPreferredStockDescription>
+  <ferc:DividendsDeclaredCommonStockDescription id="f-160" contextRef="c-14">TOTAL Dividends Declared-Common Stook (Account 438) (footnote details)</ferc:DividendsDeclaredCommonStockDescription>
+  <ferc:UnappropriatedRetainedEarnings id="f-161" contextRef="c-2" decimals="0" unitRef="u-2">-51703785</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings id="f-162" contextRef="c-15" decimals="0" unitRef="u-2">-63045132</ferc:UnappropriatedRetainedEarnings>
+  <ferc:RetainedEarnings id="f-163" contextRef="c-15" decimals="0" unitRef="u-2">-63045132</ferc:RetainedEarnings>
+  <ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCreditsDescription id="f-164" contextRef="c-16">Other Changes (Explain)</ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCreditsDescription>
+  <ferc:DepreciationAndDepletion id="f-165" contextRef="c-1" decimals="0" unitRef="u-2">9066161</ferc:DepreciationAndDepletion>
+  <ferc:DepreciationAndDepletion id="f-166" contextRef="c-4" decimals="0" unitRef="u-2">8770203</ferc:DepreciationAndDepletion>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-167" contextRef="c-17">Amortization of (Specify) (footnote details)</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities id="f-168" contextRef="c-1" decimals="0" unitRef="u-2">488218</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+  <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities id="f-169" contextRef="c-4" decimals="0" unitRef="u-2">3114121</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-170" contextRef="c-18">Other Adjustments to Cash Flows from Operating Activities</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities id="f-171" contextRef="c-18" decimals="0" unitRef="u-2">58439</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities id="f-172" contextRef="c-19" decimals="0" unitRef="u-2">102401</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+  <ferc:NetCashProvidedByUsedInOperatingActivities id="f-173" contextRef="c-1" decimals="0" unitRef="u-2">18899848</ferc:NetCashProvidedByUsedInOperatingActivities>
+  <ferc:NetCashProvidedByUsedInOperatingActivities id="f-174" contextRef="c-4" decimals="0" unitRef="u-2">7242600</ferc:NetCashProvidedByUsedInOperatingActivities>
+  <ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities id="f-175" contextRef="c-1" decimals="0" unitRef="u-2">1308203</ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities>
+  <ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities id="f-176" contextRef="c-4" decimals="0" unitRef="u-2">15555021</ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription id="f-177" contextRef="c-20">Other Construction and Acquisition of Plant, Investment Activities</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription>
+  <ferc:CashOutflowsForPlant id="f-178" contextRef="c-1" decimals="0" unitRef="u-2">1308203</ferc:CashOutflowsForPlant>
+  <ferc:CashOutflowsForPlant id="f-179" contextRef="c-4" decimals="0" unitRef="u-2">15555021</ferc:CashOutflowsForPlant>
+  <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription id="f-180" contextRef="c-21">Other Adjustments to Cash Flows from Investment Activities:</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription>
+  <ferc:CashFlowsProvidedFromUsedInInvestmentActivities id="f-181" contextRef="c-1" decimals="0" unitRef="u-2">-1308203</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+  <ferc:CashFlowsProvidedFromUsedInInvestmentActivities id="f-182" contextRef="c-4" decimals="0" unitRef="u-2">-15555021</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+  <ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-183" contextRef="c-22">Net Increase in Debt (Long Term Advances)</ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-184" contextRef="c-23">Contributions from Member</ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:OrderNumber id="f-185" contextRef="c-22" decimals="INF" unitRef="u-1">56</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-186" contextRef="c-23" decimals="INF" unitRef="u-1">56.2</ferc:OrderNumber>
+  <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-187" contextRef="c-24" decimals="0" unitRef="u-2">11199671</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:CashProvidedByOutsideSources id="f-188" contextRef="c-4" decimals="0" unitRef="u-2">11199671</ferc:CashProvidedByOutsideSources>
+  <ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities id="f-189" contextRef="c-25">Other Retirements</ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDescription id="f-190" contextRef="c-26">Other Adjustments to Financing Cash Flows</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivities id="f-191" contextRef="c-27" decimals="0" unitRef="u-2">-1017520</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivities>
+  <ferc:DividendsOnCommonStock id="f-192" contextRef="c-1" decimals="0" unitRef="u-2">17591645</ferc:DividendsOnCommonStock>
+  <ferc:DividendsOnCommonStock id="f-193" contextRef="c-4" decimals="0" unitRef="u-2">1869730</ferc:DividendsOnCommonStock>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities id="f-194" contextRef="c-1" decimals="0" unitRef="u-2">-17591645</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:CashFlowsProvidedFromUsedInFinancingActivities id="f-195" contextRef="c-4" decimals="0" unitRef="u-2">8312421</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+  <ferc:NetIncreaseDecreaseInCashAndCashEquivalents id="f-196" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+  <ferc:NetIncreaseDecreaseInCashAndCashEquivalents id="f-197" contextRef="c-4" decimals="0" unitRef="u-2">0</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents id="f-198" contextRef="c-3" decimals="0" unitRef="u-2">0</ferc:CashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents id="f-199" contextRef="c-9" decimals="0" unitRef="u-2">0</ferc:CashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents id="f-200" contextRef="c-2" decimals="0" unitRef="u-2">0</ferc:CashAndCashEquivalents>
+  <ferc:CashAndCashEquivalents id="f-201" contextRef="c-15" decimals="0" unitRef="u-2">0</ferc:CashAndCashEquivalents>
+  <ferc:UtilityPlantInServiceClassified id="f-202" contextRef="c-2" decimals="0" unitRef="u-2">369391885</ferc:UtilityPlantInServiceClassified>
+  <ferc:UtilityPlantInServiceClassified id="f-203" contextRef="c-28" decimals="0" unitRef="u-2">369391885</ferc:UtilityPlantInServiceClassified>
+  <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-204" contextRef="c-2" decimals="0" unitRef="u-2">369391885</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+  <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-205" contextRef="c-28" decimals="0" unitRef="u-2">369391885</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+  <ferc:ConstructionWorkInProgress id="f-206" contextRef="c-28" decimals="0" unitRef="u-2">1401721</ferc:ConstructionWorkInProgress>
+  <ferc:UtilityPlantAndConstructionWorkInProgress id="f-207" contextRef="c-28" decimals="0" unitRef="u-2">370793606</ferc:UtilityPlantAndConstructionWorkInProgress>
+  <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-208" contextRef="c-28" decimals="0" unitRef="u-2">31841266</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+  <ferc:UtilityPlantNet id="f-209" contextRef="c-28" decimals="0" unitRef="u-2">338952340</ferc:UtilityPlantNet>
+  <ferc:DepreciationUtilityPlantInService id="f-210" contextRef="c-2" decimals="0" unitRef="u-2">31841266</ferc:DepreciationUtilityPlantInService>
+  <ferc:DepreciationUtilityPlantInService id="f-211" contextRef="c-28" decimals="0" unitRef="u-2">31841266</ferc:DepreciationUtilityPlantInService>
+  <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-212" contextRef="c-2" decimals="0" unitRef="u-2">31841266</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+  <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-213" contextRef="c-28" decimals="0" unitRef="u-2">31841266</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+  <ferc:DescriptionOfAccountAndRateSchedule id="f-214" contextRef="c-29">INTERRUPTIBLE</ferc:DescriptionOfAccountAndRateSchedule>
+  <ferc:QuantityOfGasTransportationOfGasForOthers id="f-215" contextRef="c-30" decimals="0" unitRef="u-3">125047224</ferc:QuantityOfGasTransportationOfGasForOthers>
+  <ferc:OtherRevenuesTransportationOfGasForOthers id="f-216" contextRef="c-30" decimals="0" unitRef="u-2">4789309</ferc:OtherRevenuesTransportationOfGasForOthers>
+  <ferc:OperatingRevenuesTransportationOfGasForOthers id="f-217" contextRef="c-30" decimals="0" unitRef="u-2">4789309</ferc:OperatingRevenuesTransportationOfGasForOthers>
+  <ferc:QuantityOfGasTransportationOfGasForOthers id="f-218" contextRef="c-31" decimals="0" unitRef="u-3">125869869</ferc:QuantityOfGasTransportationOfGasForOthers>
+  <ferc:OtherRevenuesTransportationOfGasForOthers id="f-219" contextRef="c-31" decimals="0" unitRef="u-2">4820816</ferc:OtherRevenuesTransportationOfGasForOthers>
+  <ferc:OperatingRevenuesTransportationOfGasForOthers id="f-220" contextRef="c-31" decimals="0" unitRef="u-2">4820816</ferc:OperatingRevenuesTransportationOfGasForOthers>
+  <ferc:QuantityOfGasTransportationOfGasForOthers id="f-221" contextRef="c-32" decimals="0" unitRef="u-3">118321673</ferc:QuantityOfGasTransportationOfGasForOthers>
+  <ferc:OtherRevenuesTransportationOfGasForOthers id="f-222" contextRef="c-32" decimals="0" unitRef="u-2">4531098</ferc:OtherRevenuesTransportationOfGasForOthers>
+  <ferc:OperatingRevenuesTransportationOfGasForOthers id="f-223" contextRef="c-32" decimals="0" unitRef="u-2">4531098</ferc:OperatingRevenuesTransportationOfGasForOthers>
+  <ferc:QuantityOfGasTransportationOfGasForOthers id="f-224" contextRef="c-33" decimals="0" unitRef="u-3">125047224</ferc:QuantityOfGasTransportationOfGasForOthers>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayTransportationOfGasForOthers id="f-225" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayTransportationOfGasForOthers>
+  <ferc:RevenuesForGriAndAcaTransportationOfGasForOthers id="f-226" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaTransportationOfGasForOthers>
+  <ferc:OtherRevenuesTransportationOfGasForOthers id="f-227" contextRef="c-33" decimals="0" unitRef="u-2">4789309</ferc:OtherRevenuesTransportationOfGasForOthers>
+  <ferc:OperatingRevenuesTransportationOfGasForOthers id="f-228" contextRef="c-33" decimals="0" unitRef="u-2">4789309</ferc:OperatingRevenuesTransportationOfGasForOthers>
+  <ferc:QuantityOfGasTransportationOfGasForOthers id="f-229" contextRef="c-34" decimals="0" unitRef="u-3">125869869</ferc:QuantityOfGasTransportationOfGasForOthers>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayTransportationOfGasForOthers id="f-230" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayTransportationOfGasForOthers>
+  <ferc:RevenuesForGriAndAcaTransportationOfGasForOthers id="f-231" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaTransportationOfGasForOthers>
+  <ferc:OtherRevenuesTransportationOfGasForOthers id="f-232" contextRef="c-34" decimals="0" unitRef="u-2">4820816</ferc:OtherRevenuesTransportationOfGasForOthers>
+  <ferc:OperatingRevenuesTransportationOfGasForOthers id="f-233" contextRef="c-34" decimals="0" unitRef="u-2">4820816</ferc:OperatingRevenuesTransportationOfGasForOthers>
+  <ferc:QuantityOfGasTransportationOfGasForOthers id="f-234" contextRef="c-35" decimals="0" unitRef="u-3">118321673</ferc:QuantityOfGasTransportationOfGasForOthers>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayTransportationOfGasForOthers id="f-235" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayTransportationOfGasForOthers>
+  <ferc:RevenuesForGriAndAcaTransportationOfGasForOthers id="f-236" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaTransportationOfGasForOthers>
+  <ferc:OtherRevenuesTransportationOfGasForOthers id="f-237" contextRef="c-35" decimals="0" unitRef="u-2">4531098</ferc:OtherRevenuesTransportationOfGasForOthers>
+  <ferc:OperatingRevenuesTransportationOfGasForOthers id="f-238" contextRef="c-35" decimals="0" unitRef="u-2">4531098</ferc:OperatingRevenuesTransportationOfGasForOthers>
+  <ferc:QuantityOfGasStoringGasOfOthers id="f-239" contextRef="c-33" decimals="0" unitRef="u-3">0</ferc:QuantityOfGasStoringGasOfOthers>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromStoringGasOfOthers id="f-240" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromStoringGasOfOthers>
+  <ferc:RevenuesForGriAndAcaRevenuesFromStoringGasOfOthers id="f-241" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaRevenuesFromStoringGasOfOthers>
+  <ferc:OtherRevenuesRevenuesFromStoringGasOfOthers id="f-242" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:OtherRevenuesRevenuesFromStoringGasOfOthers>
+  <ferc:RevenuesFromStoringGasOfOthers id="f-243" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesFromStoringGasOfOthers>
+  <ferc:QuantityOfGasStoringGasOfOthers id="f-244" contextRef="c-34" decimals="0" unitRef="u-3">0</ferc:QuantityOfGasStoringGasOfOthers>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromStoringGasOfOthers id="f-245" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromStoringGasOfOthers>
+  <ferc:RevenuesForGriAndAcaRevenuesFromStoringGasOfOthers id="f-246" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaRevenuesFromStoringGasOfOthers>
+  <ferc:OtherRevenuesRevenuesFromStoringGasOfOthers id="f-247" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:OtherRevenuesRevenuesFromStoringGasOfOthers>
+  <ferc:RevenuesFromStoringGasOfOthers id="f-248" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesFromStoringGasOfOthers>
+  <ferc:QuantityOfGasStoringGasOfOthers id="f-249" contextRef="c-35" decimals="0" unitRef="u-3">0</ferc:QuantityOfGasStoringGasOfOthers>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromStoringGasOfOthers id="f-250" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromStoringGasOfOthers>
+  <ferc:RevenuesForGriAndAcaRevenuesFromStoringGasOfOthers id="f-251" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaRevenuesFromStoringGasOfOthers>
+  <ferc:OtherRevenuesRevenuesFromStoringGasOfOthers id="f-252" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:OtherRevenuesRevenuesFromStoringGasOfOthers>
+  <ferc:RevenuesFromStoringGasOfOthers id="f-253" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesFromStoringGasOfOthers>
+  <ferc:QuantityOfGasRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-254" contextRef="c-33" decimals="0" unitRef="u-3">0</ferc:QuantityOfGasRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-255" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:RevenuesForGriAndAcaRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-256" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-257" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:RevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-258" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:QuantityOfGasRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-259" contextRef="c-34" decimals="0" unitRef="u-3">0</ferc:QuantityOfGasRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-260" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:RevenuesForGriAndAcaRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-261" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-262" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:RevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-263" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:QuantityOfGasRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-264" contextRef="c-35" decimals="0" unitRef="u-3">0</ferc:QuantityOfGasRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-265" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:RevenuesForGriAndAcaRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-266" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-267" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:RevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities id="f-268" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransportationOfGasOfOthersThroughGatheringFacilities>
+  <ferc:QuantityOfGasAdditionalOperatingRevenue id="f-269" contextRef="c-33" decimals="0" unitRef="u-3">0</ferc:QuantityOfGasAdditionalOperatingRevenue>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayAdditionalOperatingRevenue id="f-270" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayAdditionalOperatingRevenue>
+  <ferc:RevenuesForGriAndAcaAdditionalOperatingRevenue id="f-271" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaAdditionalOperatingRevenue>
+  <ferc:OtherRevenuesAdditionalOperatingRevenue id="f-272" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:OtherRevenuesAdditionalOperatingRevenue>
+  <ferc:OperatingRevenuesAdditionalOperatingRevenue id="f-273" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:OperatingRevenuesAdditionalOperatingRevenue>
+  <ferc:QuantityOfGasAdditionalOperatingRevenue id="f-274" contextRef="c-34" decimals="0" unitRef="u-3">0</ferc:QuantityOfGasAdditionalOperatingRevenue>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayAdditionalOperatingRevenue id="f-275" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayAdditionalOperatingRevenue>
+  <ferc:RevenuesForGriAndAcaAdditionalOperatingRevenue id="f-276" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaAdditionalOperatingRevenue>
+  <ferc:OtherRevenuesAdditionalOperatingRevenue id="f-277" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:OtherRevenuesAdditionalOperatingRevenue>
+  <ferc:OperatingRevenuesAdditionalOperatingRevenue id="f-278" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:OperatingRevenuesAdditionalOperatingRevenue>
+  <ferc:QuantityOfGasAdditionalOperatingRevenue id="f-279" contextRef="c-35" decimals="0" unitRef="u-3">0</ferc:QuantityOfGasAdditionalOperatingRevenue>
+  <ferc:RevenuesFromTransitionCostsAndTakeOrPayAdditionalOperatingRevenue id="f-280" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesFromTransitionCostsAndTakeOrPayAdditionalOperatingRevenue>
+  <ferc:RevenuesForGriAndAcaAdditionalOperatingRevenue id="f-281" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesForGriAndAcaAdditionalOperatingRevenue>
+  <ferc:OtherRevenuesAdditionalOperatingRevenue id="f-282" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:OtherRevenuesAdditionalOperatingRevenue>
+  <ferc:OperatingRevenuesAdditionalOperatingRevenue id="f-283" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:OperatingRevenuesAdditionalOperatingRevenue>
+  <ferc:QuantityOfGasOperationalRevenue id="f-284" contextRef="c-33" decimals="0" unitRef="u-3">125047224</ferc:QuantityOfGasOperationalRevenue>
+  <ferc:RevenuesForTransitionCostsAndTakeOrPay id="f-285" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesForTransitionCostsAndTakeOrPay>
+  <ferc:RevenuesFromGRIAndACA id="f-286" contextRef="c-33" decimals="0" unitRef="u-2">0</ferc:RevenuesFromGRIAndACA>
+  <ferc:OtherRevenues id="f-287" contextRef="c-33" decimals="0" unitRef="u-2">4789309</ferc:OtherRevenues>
+  <ferc:OperatingRevenues id="f-288" contextRef="c-33" decimals="0" unitRef="u-2">4789309</ferc:OperatingRevenues>
+  <ferc:QuantityOfGasOperationalRevenue id="f-289" contextRef="c-34" decimals="0" unitRef="u-3">125869869</ferc:QuantityOfGasOperationalRevenue>
+  <ferc:RevenuesForTransitionCostsAndTakeOrPay id="f-290" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesForTransitionCostsAndTakeOrPay>
+  <ferc:RevenuesFromGRIAndACA id="f-291" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:RevenuesFromGRIAndACA>
+  <ferc:OtherRevenues id="f-292" contextRef="c-34" decimals="0" unitRef="u-2">4820816</ferc:OtherRevenues>
+  <ferc:OperatingRevenues id="f-293" contextRef="c-34" decimals="0" unitRef="u-2">4820816</ferc:OperatingRevenues>
+  <ferc:QuantityOfGasOperationalRevenue id="f-294" contextRef="c-35" decimals="0" unitRef="u-3">118321673</ferc:QuantityOfGasOperationalRevenue>
+  <ferc:RevenuesForTransitionCostsAndTakeOrPay id="f-295" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesForTransitionCostsAndTakeOrPay>
+  <ferc:RevenuesFromGRIAndACA id="f-296" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:RevenuesFromGRIAndACA>
+  <ferc:OtherRevenues id="f-297" contextRef="c-35" decimals="0" unitRef="u-2">4531098</ferc:OtherRevenues>
+  <ferc:OperatingRevenues id="f-298" contextRef="c-35" decimals="0" unitRef="u-2">4531098</ferc:OperatingRevenues>
+  <ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities id="f-299" contextRef="c-7" decimals="0" unitRef="u-2">28309556</ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities>
+  <ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities id="f-300" contextRef="c-8" decimals="0" unitRef="u-2">12675066</ferc:OtherRevenuesRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities>
+  <ferc:RevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities id="f-301" contextRef="c-7" decimals="0" unitRef="u-2">28309556</ferc:RevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities>
+  <ferc:RevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities id="f-302" contextRef="c-8" decimals="0" unitRef="u-2">12675066</ferc:RevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities>
+  <ferc:QuantityOfNaturalGasRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities id="f-303" contextRef="c-7" decimals="0" unitRef="u-3">738646177</ferc:QuantityOfNaturalGasRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities>
+  <ferc:QuantityOfNaturalGasRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities id="f-304" contextRef="c-8" decimals="0" unitRef="u-3">330223724</ferc:QuantityOfNaturalGasRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities>
+  <ferc:OtherRevenuesBeforeProvisionForRateRefunds id="f-305" contextRef="c-7" decimals="0" unitRef="u-2">28309556</ferc:OtherRevenuesBeforeProvisionForRateRefunds>
+  <ferc:OtherRevenuesBeforeProvisionForRateRefunds id="f-306" contextRef="c-8" decimals="0" unitRef="u-2">12675066</ferc:OtherRevenuesBeforeProvisionForRateRefunds>
+  <ferc:OperatingRevenueBeforeProvisionForRateRefunds id="f-307" contextRef="c-7" decimals="0" unitRef="u-2">28309556</ferc:OperatingRevenueBeforeProvisionForRateRefunds>
+  <ferc:OperatingRevenueBeforeProvisionForRateRefunds id="f-308" contextRef="c-8" decimals="0" unitRef="u-2">12675066</ferc:OperatingRevenueBeforeProvisionForRateRefunds>
+  <ferc:OtherRevenues id="f-309" contextRef="c-7" decimals="0" unitRef="u-2">28309556</ferc:OtherRevenues>
+  <ferc:OtherRevenues id="f-310" contextRef="c-8" decimals="0" unitRef="u-2">12675066</ferc:OtherRevenues>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityGasOfOthersReceivedForTransmission id="f-311" contextRef="c-36" decimals="0" unitRef="u-3">737397389</ferc:QuantityOfNaturalGasReceivedByUtilityGasOfOthersReceivedForTransmission>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityGasOfOthersReceivedForTransmission id="f-312" contextRef="c-37" decimals="0" unitRef="u-3">369238766</ferc:QuantityOfNaturalGasReceivedByUtilityGasOfOthersReceivedForTransmission>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedAsImbalances id="f-313" contextRef="c-36" decimals="0" unitRef="u-3">833889</ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedAsImbalances>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedAsImbalances id="f-314" contextRef="c-37" decimals="0" unitRef="u-3">-515049</ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedAsImbalances>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedFromShippersAsLostAndUnaccountedFor id="f-315" contextRef="c-36" decimals="0" unitRef="u-3">1057098</ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedFromShippersAsLostAndUnaccountedFor>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedFromShippersAsLostAndUnaccountedFor id="f-316" contextRef="c-37" decimals="0" unitRef="u-3">96088</ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedFromShippersAsLostAndUnaccountedFor>
+  <ferc:QuantityOfNaturalGasReceivedByUtility id="f-317" contextRef="c-36" decimals="0" unitRef="u-3">739288376</ferc:QuantityOfNaturalGasReceivedByUtility>
+  <ferc:QuantityOfNaturalGasReceivedByUtility id="f-318" contextRef="c-37" decimals="0" unitRef="u-3">368819805</ferc:QuantityOfNaturalGasReceivedByUtility>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityDeliveriesOfGasTransportedForOthers id="f-319" contextRef="c-36" decimals="0" unitRef="u-3">739169135</ferc:QuantityOfNaturalGasDeliveredByUtilityDeliveriesOfGasTransportedForOthers>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityDeliveriesOfGasTransportedForOthers id="f-320" contextRef="c-37" decimals="0" unitRef="u-3">369238766</ferc:QuantityOfNaturalGasDeliveredByUtilityDeliveriesOfGasTransportedForOthers>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityGasDeliveredAsImbalances id="f-321" contextRef="c-36" decimals="0" unitRef="u-3">-522958</ferc:QuantityOfNaturalGasDeliveredByUtilityGasDeliveredAsImbalances>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityGasDeliveredAsImbalances id="f-322" contextRef="c-37" decimals="0" unitRef="u-3">-901480</ferc:QuantityOfNaturalGasDeliveredByUtilityGasDeliveredAsImbalances>
+  <ferc:DescriptionOfGasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-323" contextRef="c-38">Change in Line Pack</ferc:DescriptionOfGasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-324" contextRef="c-38" decimals="0" unitRef="u-3">-560</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-325" contextRef="c-39" decimals="0" unitRef="u-3">764</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:QuantityOfNaturalGasDeliveredByUtility id="f-326" contextRef="c-36" decimals="0" unitRef="u-3">738645617</ferc:QuantityOfNaturalGasDeliveredByUtility>
+  <ferc:QuantityOfNaturalGasDeliveredByUtility id="f-327" contextRef="c-37" decimals="0" unitRef="u-3">368338050</ferc:QuantityOfNaturalGasDeliveredByUtility>
+  <ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount id="f-328" contextRef="c-36" decimals="0" unitRef="u-3">642759</ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount>
+  <ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount id="f-329" contextRef="c-37" decimals="0" unitRef="u-3">481755</ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount>
+  <ferc:DeliveriesGasLossesAndUnaccountedForGasAccount id="f-330" contextRef="c-36" decimals="0" unitRef="u-3">739288376</ferc:DeliveriesGasLossesAndUnaccountedForGasAccount>
+  <ferc:DeliveriesGasLossesAndUnaccountedForGasAccount id="f-331" contextRef="c-37" decimals="0" unitRef="u-3">368819805</ferc:DeliveriesGasLossesAndUnaccountedForGasAccount>
+  <ferc:ShipperSuppliedGasTransmission id="f-332" contextRef="c-40" decimals="0" unitRef="u-3">32555</ferc:ShipperSuppliedGasTransmission>
+  <ferc:ShipperSuppliedGasTransmission id="f-333" contextRef="c-33" decimals="0" unitRef="u-3">32555</ferc:ShipperSuppliedGasTransmission>
+  <ferc:ShipperSuppliedGas id="f-334" contextRef="c-40" decimals="0" unitRef="u-3">32555</ferc:ShipperSuppliedGas>
+  <ferc:ShipperSuppliedGas id="f-335" contextRef="c-33" decimals="0" unitRef="u-3">32555</ferc:ShipperSuppliedGas>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries id="f-336" contextRef="c-40" decimals="0" unitRef="u-3">-351</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries id="f-337" contextRef="c-33" decimals="0" unitRef="u-3">-351</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-338" contextRef="c-40" decimals="0" unitRef="u-3">-351</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-339" contextRef="c-33" decimals="0" unitRef="u-3">-351</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:GasLostAndUnaccountedForTransmission id="f-340" contextRef="c-40" decimals="0" unitRef="u-3">139292</ferc:GasLostAndUnaccountedForTransmission>
+  <ferc:GasLostAndUnaccountedForTransmission id="f-341" contextRef="c-33" decimals="0" unitRef="u-3">139292</ferc:GasLostAndUnaccountedForTransmission>
+  <ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount id="f-342" contextRef="c-40" decimals="0" unitRef="u-3">139292</ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount>
+  <ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount id="f-343" contextRef="c-33" decimals="0" unitRef="u-3">139292</ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission id="f-344" contextRef="c-40" decimals="0" unitRef="u-3">-351</ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission id="f-345" contextRef="c-33" decimals="0" unitRef="u-3">-351</ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiency id="f-346" contextRef="c-40" decimals="0" unitRef="u-3">-351</ferc:ShipperSuppliedGasNetExcessOrDeficiency>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiency id="f-347" contextRef="c-33" decimals="0" unitRef="u-3">-351</ferc:ShipperSuppliedGasNetExcessOrDeficiency>
+  <ferc:AcquiredToMeetDeficiencySystemGas id="f-348" contextRef="c-40" decimals="0" unitRef="u-3">351</ferc:AcquiredToMeetDeficiencySystemGas>
+  <ferc:AcquiredToMeetDeficiencySystemGas id="f-349" contextRef="c-33" decimals="0" unitRef="u-3">351</ferc:AcquiredToMeetDeficiencySystemGas>
+  <ferc:AcquiredToMeetDeficiency id="f-350" contextRef="c-40" decimals="0" unitRef="u-3">351</ferc:AcquiredToMeetDeficiency>
+  <ferc:AcquiredToMeetDeficiency id="f-351" contextRef="c-33" decimals="0" unitRef="u-3">351</ferc:AcquiredToMeetDeficiency>
+  <ferc:ForwardhaulVolumeOfThroughput id="f-352" contextRef="c-5" decimals="0" unitRef="u-3">368819805</ferc:ForwardhaulVolumeOfThroughput>
+  <ferc:TotalVolumeOfThroughput id="f-353" contextRef="c-5" decimals="0" unitRef="u-3">368819805</ferc:TotalVolumeOfThroughput>
+  <ferc:ShipperSuppliedGasTransmission id="f-354" contextRef="c-41" decimals="0" unitRef="u-3">32782</ferc:ShipperSuppliedGasTransmission>
+  <ferc:ShipperSuppliedGasTransmission id="f-355" contextRef="c-34" decimals="0" unitRef="u-3">32782</ferc:ShipperSuppliedGasTransmission>
+  <ferc:ShipperSuppliedGas id="f-356" contextRef="c-41" decimals="0" unitRef="u-3">32782</ferc:ShipperSuppliedGas>
+  <ferc:ShipperSuppliedGas id="f-357" contextRef="c-34" decimals="0" unitRef="u-3">32782</ferc:ShipperSuppliedGas>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries id="f-358" contextRef="c-41" decimals="0" unitRef="u-3">3667</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries id="f-359" contextRef="c-34" decimals="0" unitRef="u-3">3667</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-360" contextRef="c-41" decimals="0" unitRef="u-3">3667</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-361" contextRef="c-34" decimals="0" unitRef="u-3">3667</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:GasLostAndUnaccountedForTransmission id="f-362" contextRef="c-41" decimals="0" unitRef="u-3">176456</ferc:GasLostAndUnaccountedForTransmission>
+  <ferc:GasLostAndUnaccountedForTransmission id="f-363" contextRef="c-34" decimals="0" unitRef="u-3">176456</ferc:GasLostAndUnaccountedForTransmission>
+  <ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount id="f-364" contextRef="c-41" decimals="0" unitRef="u-3">176456</ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount>
+  <ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount id="f-365" contextRef="c-34" decimals="0" unitRef="u-3">176456</ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission id="f-366" contextRef="c-41" decimals="0" unitRef="u-3">3667</ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission id="f-367" contextRef="c-34" decimals="0" unitRef="u-3">3667</ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiency id="f-368" contextRef="c-41" decimals="0" unitRef="u-3">3667</ferc:ShipperSuppliedGasNetExcessOrDeficiency>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiency id="f-369" contextRef="c-34" decimals="0" unitRef="u-3">3667</ferc:ShipperSuppliedGasNetExcessOrDeficiency>
+  <ferc:DispositionOfExcessGasGasAddedToSystemGas id="f-370" contextRef="c-41" decimals="0" unitRef="u-3">-3667</ferc:DispositionOfExcessGasGasAddedToSystemGas>
+  <ferc:DispositionOfExcessGasGasAddedToSystemGas id="f-371" contextRef="c-34" decimals="0" unitRef="u-3">-3667</ferc:DispositionOfExcessGasGasAddedToSystemGas>
+  <ferc:DispositionOfExcessGas id="f-372" contextRef="c-41" decimals="0" unitRef="u-3">-3667</ferc:DispositionOfExcessGas>
+  <ferc:DispositionOfExcessGas id="f-373" contextRef="c-34" decimals="0" unitRef="u-3">-3667</ferc:DispositionOfExcessGas>
+  <ferc:AcquiredToMeetDeficiencySystemGas id="f-374" contextRef="c-41" decimals="0" unitRef="u-3">0</ferc:AcquiredToMeetDeficiencySystemGas>
+  <ferc:ShipperSuppliedGasTransmission id="f-375" contextRef="c-42" decimals="0" unitRef="u-3">30751</ferc:ShipperSuppliedGasTransmission>
+  <ferc:ShipperSuppliedGasTransmission id="f-376" contextRef="c-35" decimals="0" unitRef="u-3">30751</ferc:ShipperSuppliedGasTransmission>
+  <ferc:ShipperSuppliedGas id="f-377" contextRef="c-42" decimals="0" unitRef="u-3">30751</ferc:ShipperSuppliedGas>
+  <ferc:ShipperSuppliedGas id="f-378" contextRef="c-35" decimals="0" unitRef="u-3">30751</ferc:ShipperSuppliedGas>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries id="f-379" contextRef="c-42" decimals="0" unitRef="u-3">-2552</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries id="f-380" contextRef="c-35" decimals="0" unitRef="u-3">-2552</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperationsOtherDeliveries>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-381" contextRef="c-42" decimals="0" unitRef="u-3">-2552</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-382" contextRef="c-35" decimals="0" unitRef="u-3">-2552</ferc:GasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:GasLostAndUnaccountedForTransmission id="f-383" contextRef="c-42" decimals="0" unitRef="u-3">166007</ferc:GasLostAndUnaccountedForTransmission>
+  <ferc:GasLostAndUnaccountedForTransmission id="f-384" contextRef="c-35" decimals="0" unitRef="u-3">166007</ferc:GasLostAndUnaccountedForTransmission>
+  <ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount id="f-385" contextRef="c-42" decimals="0" unitRef="u-3">166007</ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount>
+  <ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount id="f-386" contextRef="c-35" decimals="0" unitRef="u-3">166007</ferc:GasAccountGasLossesAndGasUnaccountedForGasAccount>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission id="f-387" contextRef="c-42" decimals="0" unitRef="u-3">-2552</ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission id="f-388" contextRef="c-35" decimals="0" unitRef="u-3">-2552</ferc:ShipperSuppliedGasNetExcessOrDeficiencyTransmission>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiency id="f-389" contextRef="c-42" decimals="0" unitRef="u-3">-2552</ferc:ShipperSuppliedGasNetExcessOrDeficiency>
+  <ferc:ShipperSuppliedGasNetExcessOrDeficiency id="f-390" contextRef="c-35" decimals="0" unitRef="u-3">-2552</ferc:ShipperSuppliedGasNetExcessOrDeficiency>
+  <ferc:AcquiredToMeetDeficiencySystemGas id="f-391" contextRef="c-42" decimals="0" unitRef="u-3">2552</ferc:AcquiredToMeetDeficiencySystemGas>
+  <ferc:AcquiredToMeetDeficiencySystemGas id="f-392" contextRef="c-35" decimals="0" unitRef="u-3">2552</ferc:AcquiredToMeetDeficiencySystemGas>
+  <ferc:AcquiredToMeetDeficiency id="f-393" contextRef="c-42" decimals="0" unitRef="u-3">2552</ferc:AcquiredToMeetDeficiency>
+  <ferc:AcquiredToMeetDeficiency id="f-394" contextRef="c-35" decimals="0" unitRef="u-3">2552</ferc:AcquiredToMeetDeficiency>
+  <ferc:TransmissionPlant id="f-395" contextRef="c-2" decimals="0" unitRef="u-2">369391885</ferc:TransmissionPlant>
+  <ferc:TransmissionPlantAccumulatedDepreciationAndAmortization id="f-396" contextRef="c-2" decimals="0" unitRef="u-2">31841266</ferc:TransmissionPlantAccumulatedDepreciationAndAmortization>
+  <ferc:GasPlantInService id="f-397" contextRef="c-2" decimals="0" unitRef="u-2">369391885</ferc:GasPlantInService>
+  <ferc:GasPlantInServiceAccumulatedDepreciationAndAmortization id="f-398" contextRef="c-2" decimals="0" unitRef="u-2">31841266</ferc:GasPlantInServiceAccumulatedDepreciationAndAmortization>
+  <ferc:RevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities id="f-399" contextRef="c-1" decimals="0" unitRef="u-2">28309556</ferc:RevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities>
+  <ferc:QuantityOfNaturalGasRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities id="f-400" contextRef="c-1" decimals="0" unitRef="u-3">739169135</ferc:QuantityOfNaturalGasRevenuesFromTransportationOfGasOfOthersThroughTransmissionFacilities>
+  <ferc:OperatingRevenueBeforeProvisionForRateRefunds id="f-401" contextRef="c-1" decimals="0" unitRef="u-2">28309556</ferc:OperatingRevenueBeforeProvisionForRateRefunds>
+  <ferc:OperationSupervisionAndEngineeringGasTransmissionExpenses id="f-402" contextRef="c-1" decimals="0" unitRef="u-2">920978</ferc:OperationSupervisionAndEngineeringGasTransmissionExpenses>
+  <ferc:CommunicationSystemExpenses id="f-403" contextRef="c-1" decimals="0" unitRef="u-2">4082</ferc:CommunicationSystemExpenses>
+  <ferc:MainsExpenses id="f-404" contextRef="c-1" decimals="0" unitRef="u-2">3516129</ferc:MainsExpenses>
+  <ferc:MeasuringAndRegulatingStationExpensesTransmissionExpenses id="f-405" contextRef="c-1" decimals="0" unitRef="u-2">615922</ferc:MeasuringAndRegulatingStationExpensesTransmissionExpenses>
+  <ferc:OtherExpensesGasTransmission id="f-406" contextRef="c-1" decimals="0" unitRef="u-2">36294</ferc:OtherExpensesGasTransmission>
+  <ferc:RentsGasTransmissionExpense id="f-407" contextRef="c-1" decimals="0" unitRef="u-2">2700</ferc:RentsGasTransmissionExpense>
+  <ferc:TransmissionOperationExpense id="f-408" contextRef="c-1" decimals="0" unitRef="u-2">5096105</ferc:TransmissionOperationExpense>
+  <ferc:MaintenanceOfStructuresAndImprovementsTransmissionExpenses id="f-409" contextRef="c-1" decimals="0" unitRef="u-2">4254</ferc:MaintenanceOfStructuresAndImprovementsTransmissionExpenses>
+  <ferc:MaintenanceOfMainsTransmissionExpenses id="f-410" contextRef="c-1" decimals="0" unitRef="u-2">81091</ferc:MaintenanceOfMainsTransmissionExpenses>
+  <ferc:MaintenanceOfMeasuringAndRegulatingStationEquipment id="f-411" contextRef="c-1" decimals="0" unitRef="u-2">10453</ferc:MaintenanceOfMeasuringAndRegulatingStationEquipment>
+  <ferc:TransmissionMaintenanceExpensesGas id="f-412" contextRef="c-1" decimals="0" unitRef="u-2">95798</ferc:TransmissionMaintenanceExpensesGas>
+  <ferc:TransmissionExpenses id="f-413" contextRef="c-1" decimals="0" unitRef="u-2">5191903</ferc:TransmissionExpenses>
+  <ferc:OperationAndMaintenanceExpensesIncludingNaturalGasStorageTerminalingAndProcessingExpensesTransmissionExpensesDistributionExpenses id="f-414" contextRef="c-1" decimals="0" unitRef="u-2">5191903</ferc:OperationAndMaintenanceExpensesIncludingNaturalGasStorageTerminalingAndProcessingExpensesTransmissionExpensesDistributionExpenses>
+  <ferc:AdministrativeAndGeneralSalaries id="f-415" contextRef="c-1" decimals="0" unitRef="u-2">694689</ferc:AdministrativeAndGeneralSalaries>
+  <ferc:OfficeSuppliesAndExpenses id="f-416" contextRef="c-1" decimals="0" unitRef="u-2">485786</ferc:OfficeSuppliesAndExpenses>
+  <ferc:OutsideServicesEmployed id="f-417" contextRef="c-1" decimals="0" unitRef="u-2">162793</ferc:OutsideServicesEmployed>
+  <ferc:EmployeePensionsAndBenefits id="f-418" contextRef="c-1" decimals="0" unitRef="u-2">760617</ferc:EmployeePensionsAndBenefits>
+  <ferc:MiscellaneousGeneralExpenses id="f-419" contextRef="c-1" decimals="0" unitRef="u-2">1305209</ferc:MiscellaneousGeneralExpenses>
+  <ferc:RentsAdministrativeAndGeneralExpense id="f-420" contextRef="c-1" decimals="0" unitRef="u-2">15163</ferc:RentsAdministrativeAndGeneralExpense>
+  <ferc:AdministrativeAndGeneralOperationExpense id="f-421" contextRef="c-1" decimals="0" unitRef="u-2">3424257</ferc:AdministrativeAndGeneralOperationExpense>
+  <ferc:AdministrativeAndGeneralExpenses id="f-422" contextRef="c-1" decimals="0" unitRef="u-2">3424257</ferc:AdministrativeAndGeneralExpenses>
+  <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-423" contextRef="c-43" decimals="0" unitRef="u-2">9037696</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+  <ferc:DepreciationExpenseForAssetRetirementCostsExcludingAmortizationgOfAcquisitionAdjustments id="f-424" contextRef="c-43" decimals="0" unitRef="u-2">9750</ferc:DepreciationExpenseForAssetRetirementCostsExcludingAmortizationgOfAcquisitionAdjustments>
+  <ferc:AmortizationAndDepletionOfOtherGasPlant id="f-425" contextRef="c-43" decimals="0" unitRef="u-2">18715</ferc:AmortizationAndDepletionOfOtherGasPlant>
+  <ferc:DepreciationDepletionAndAmortizationCharges id="f-426" contextRef="c-43" decimals="0" unitRef="u-2">9066161</ferc:DepreciationDepletionAndAmortizationCharges>
+  <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-427" contextRef="c-7" decimals="0" unitRef="u-2">9037696</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+  <ferc:DepreciationExpenseForAssetRetirementCostsExcludingAmortizationgOfAcquisitionAdjustments id="f-428" contextRef="c-7" decimals="0" unitRef="u-2">9750</ferc:DepreciationExpenseForAssetRetirementCostsExcludingAmortizationgOfAcquisitionAdjustments>
+  <ferc:AmortizationAndDepletionOfOtherGasPlant id="f-429" contextRef="c-7" decimals="0" unitRef="u-2">18715</ferc:AmortizationAndDepletionOfOtherGasPlant>
+  <ferc:DepreciationDepletionAndAmortizationCharges id="f-430" contextRef="c-7" decimals="0" unitRef="u-2">9066161</ferc:DepreciationDepletionAndAmortizationCharges>
+  <ferc:VendorName id="f-431" contextRef="c-1">The Workiva Platform</ferc:VendorName>
+</xbrli:xbrl>

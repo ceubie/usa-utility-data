@@ -1,0 +1,1814 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xbrl xmlns:ferc="http://ferc.gov/form/2026-04-01/ferc" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.xbrl.org/2003/instance" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:srt-types="http://www.fasb.org/srt-types/2019-01-31" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <link:schemaRef xlink:type="simple" xlink:href="https://eCollection.ferc.gov/taxonomy/form1/2026-04-01/form/form1Q/form-1Q_2026-04-01.xsd" />
+    <unit id="u-01">
+        <measure>pure</measure>
+    </unit>
+    <unit id="u-02">
+        <measure>iso4217:USD</measure>
+    </unit>
+    <unit id="u-05">
+        <measure>utr:MWh</measure>
+    </unit>
+    <unit id="u-06">
+        <measure>utr:MW</measure>
+    </unit>
+    <context id="c-01">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesAxis">
+                    <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>001</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-01-01</startDate>
+            <endDate>2025-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-02">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+        </entity>
+        <period>
+            <startDate>2025-01-01</startDate>
+            <endDate>2025-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-03">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:AppropriatedRetainedEarningsAxis">
+                    <ferc:AppropriatedRetainedEarningsDomain>001</ferc:AppropriatedRetainedEarningsDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-01-01</startDate>
+            <endDate>2025-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-04">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:AppropriatedRetainedEarningsAxis">
+                    <ferc:AppropriatedRetainedEarningsDomain>002</ferc:AppropriatedRetainedEarningsDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-01-01</startDate>
+            <endDate>2025-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-05">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:RetainedEarningsCommonStockAxis">
+                    <ferc:RetainedEarningsCommonStockDomain>001</ferc:RetainedEarningsCommonStockDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-01-01</startDate>
+            <endDate>2025-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-06">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+                    <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>001</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-01-01</startDate>
+            <endDate>2025-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-07">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+                    <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>001</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-01-01</startDate>
+            <endDate>2025-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-08">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+        </entity>
+        <period>
+            <instant>2025-03-31</instant>
+        </period>
+    </context>
+    <context id="c-09">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2025-01-01</startDate>
+            <endDate>2025-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-10">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:AppropriatedRetainedEarningsAxis">
+                    <ferc:AppropriatedRetainedEarningsDomain>001</ferc:AppropriatedRetainedEarningsDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-11">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:AppropriatedRetainedEarningsAxis">
+                    <ferc:AppropriatedRetainedEarningsDomain>002</ferc:AppropriatedRetainedEarningsDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-12">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:RetainedEarningsCommonStockAxis">
+                    <ferc:RetainedEarningsCommonStockDomain>001</ferc:RetainedEarningsCommonStockDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-13">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+                    <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>001</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-14">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+                    <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>001</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-15">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-16">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesAxis">
+                    <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>001</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-17">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-18">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+                    <ferc:OtherRegulatoryLiabilityDomain>001</ferc:OtherRegulatoryLiabilityDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-19">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+                    <ferc:OtherRegulatoryLiabilityDomain>002</ferc:OtherRegulatoryLiabilityDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-20">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesAxis">
+                    <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>001</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-21">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+        </entity>
+        <period>
+            <instant>2024-12-31</instant>
+        </period>
+    </context>
+    <context id="c-22">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-23">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:AccumulatedDeferredIncomeTaxByElectricTypeAxis">
+                    <ferc:AccumulatedDeferredIncomeTaxByElectrictypeDomain>001</ferc:AccumulatedDeferredIncomeTaxByElectrictypeDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-24">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:AccumulatedDeferredIncomeTaxByElectricTypeAxis">
+                    <ferc:AccumulatedDeferredIncomeTaxByElectrictypeDomain>002</ferc:AccumulatedDeferredIncomeTaxByElectrictypeDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-25">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:AccumulatedDeferredInvestmentTaxCreditsAccountSubdivisionsAxis">
+                    <ferc:AccumulatedDeferredInvestmentTaxCreditsAccountSubdivisionsDomain>001</ferc:AccumulatedDeferredInvestmentTaxCreditsAccountSubdivisionsDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-26">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OperatingUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-27">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OtherUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-28">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+                    <ferc:OtherRegulatoryLiabilityDomain>001</ferc:OtherRegulatoryLiabilityDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-29">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+                    <ferc:OtherRegulatoryLiabilityDomain>002</ferc:OtherRegulatoryLiabilityDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-30">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>001</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-31">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>002</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-32">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>003</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-33">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>004</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-34">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>005</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-35">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>006</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-36">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>007</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-37">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>008</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-38">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>009</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-39">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>010</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-40">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>011</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-41">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>012</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-42">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+                    <ferc:TaxesAccruedPrepaidAndChargedDomain>013</ferc:TaxesAccruedPrepaidAndChargedDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-43">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-45">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleAmountsIncludedInIsoOrRtoSettlementAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-46">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleImportantChangesDuringTheQuarterYearAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-47">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleMonthlyIsoOrRtoTransmissionSystemPeakLoadAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-48">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleNotesToFinancialStatementsAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-49">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleOtherRegulatoryAssetsAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-50">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleRegionalTransmissionServiceRevenuesAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-51">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-52">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleTransmissionOfElectricityByIsoOrRtoAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-53">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleTransmissionOfElectricityByOthersAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-54">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+                    <ferc:ScheduleRemarksDomain>ScheduleTransmissionOfElectricityForOthersAbstract</ferc:ScheduleRemarksDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-56">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+        </entity>
+        <period>
+            <instant>2026-03-31</instant>
+        </period>
+    </context>
+    <context id="c-58">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-59">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-60">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OtherUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-62">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:CommonUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2026-03-31</instant>
+        </period>
+    </context>
+    <context id="c-63">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2026-03-31</instant>
+        </period>
+    </context>
+    <context id="c-64">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2026-03-31</instant>
+        </period>
+    </context>
+    <context id="c-65">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OtherUtility2Member</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2026-03-31</instant>
+        </period>
+    </context>
+    <context id="c-66">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OtherUtility3Member</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2026-03-31</instant>
+        </period>
+    </context>
+    <context id="c-67">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OtherUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2026-03-31</instant>
+        </period>
+    </context>
+    <context id="c-69">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+                    <ferc:OtherRegulatoryLiabilityDomain>001</ferc:OtherRegulatoryLiabilityDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2026-03-31</instant>
+        </period>
+    </context>
+    <context id="c-70">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+                    <ferc:OtherRegulatoryLiabilityDomain>002</ferc:OtherRegulatoryLiabilityDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2026-03-31</instant>
+        </period>
+    </context>
+    <context id="c-72">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:CommonPlantElectricMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-73">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:DistributionPlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-74">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:EnergyStoragePlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-75">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:GeneralPlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-76">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:HydraulicProductionPlantConventionalMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-77">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:HydraulicProductionPlantPumpedStorageMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-78">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:IntangiblePlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-79">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:NuclearProductionPlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-80">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:OtherProductionPlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-81">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:OtherRenewableProductionPlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-82">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:SolarProductionPlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-83">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:SteamProductionPlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-84">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:TransmissionPlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-85">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:FunctionalClassificationAxis">ferc:WindProductionPlantMember</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:ElectricUtilityMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-87">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+                    <ferc:NameOfTransmissionSystemDomain>Lockhart Power Co</ferc:NameOfTransmissionSystemDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-88">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+                    <ferc:NameOfTransmissionSystemDomain>Lockhart Power Co</ferc:NameOfTransmissionSystemDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:FebruaryMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-89">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+                    <ferc:NameOfTransmissionSystemDomain>Lockhart Power Co</ferc:NameOfTransmissionSystemDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:JanuaryMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-90">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+                    <ferc:NameOfTransmissionSystemDomain>Lockhart Power Co</ferc:NameOfTransmissionSystemDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:MarchMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-91">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:NameOfTransmissionSystemAxis">
+                    <ferc:NameOfTransmissionSystemDomain>Lockhart Power Co</ferc:NameOfTransmissionSystemDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:MonthAxis">ferc:Quarter1Member</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-93">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>001</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-94">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>002</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-95">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>001</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:StudyTypeAxis">ferc:TransmissionStudiesMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-96">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>002</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:StudyTypeAxis">ferc:TransmissionStudiesMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-98">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:StudyTypeAxis">ferc:TransmissionStudiesMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-100">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>003</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-101">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>003</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:StudyTypeAxis">ferc:GenerationStudiesMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-103">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="ferc:StudyTypeAxis">ferc:GenerationStudiesMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-105">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>004</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-106">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>005</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-107">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>004</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:StudyTypeAxis">ferc:GenerationStudiesMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <context id="c-108">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/CID" >C001153</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsAxis">
+                    <ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>005</ferc:TransmissionServiceAndGenerationInterconnectionStudyCostsDomain>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="ferc:StudyTypeAxis">ferc:GenerationStudiesMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-03-31</endDate>
+        </period>
+    </context>
+    <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities id="f-01" contextRef="c-01" unitRef="u-02" decimals="0">8956</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities>
+    <ferc:AmortizationAndDepletionOfUtilityPlant id="f-02" contextRef="c-02" unitRef="u-02" decimals="0">10693</ferc:AmortizationAndDepletionOfUtilityPlant>
+    <ferc:AmortizationOfElectricPlantAcquisitionAdjustments id="f-03" contextRef="c-02" unitRef="u-02" decimals="0">1455</ferc:AmortizationOfElectricPlantAcquisitionAdjustments>
+    <ferc:DepreciationExpense id="f-04" contextRef="c-02" unitRef="u-02" decimals="0">620594</ferc:DepreciationExpense>
+    <ferc:Donations id="f-05" contextRef="c-02" unitRef="u-02" decimals="0">20145</ferc:Donations>
+    <ferc:EquityInEarningsOfSubsidiaryCompanies id="f-06" contextRef="c-02" unitRef="u-02" decimals="0">-186132</ferc:EquityInEarningsOfSubsidiaryCompanies>
+    <ferc:ExpendituresForCertainCivicPoliticalAndRelatedActivities id="f-07" contextRef="c-02" unitRef="u-02" decimals="0">8052</ferc:ExpendituresForCertainCivicPoliticalAndRelatedActivities>
+    <ferc:IncomeBeforeExtraordinaryItems id="f-08" contextRef="c-02" unitRef="u-02" decimals="0">4214557</ferc:IncomeBeforeExtraordinaryItems>
+    <ferc:IncomeTaxesOperatingIncome id="f-09" contextRef="c-02" unitRef="u-02" decimals="0">1120000</ferc:IncomeTaxesOperatingIncome>
+    <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-10" contextRef="c-02" unitRef="u-02" decimals="0">281000</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+    <ferc:InterestAndDividendIncome id="f-11" contextRef="c-02" unitRef="u-02" decimals="0">13727</ferc:InterestAndDividendIncome>
+    <ferc:MaintenanceExpense id="f-12" contextRef="c-02" unitRef="u-02" decimals="0">588223</ferc:MaintenanceExpense>
+    <ferc:MiscellaneousNonoperatingIncome id="f-13" contextRef="c-02" unitRef="u-02" decimals="0">58650</ferc:MiscellaneousNonoperatingIncome>
+    <ferc:NetIncomeLoss id="f-14" contextRef="c-02" unitRef="u-02" decimals="0">4214557</ferc:NetIncomeLoss>
+    <ferc:NetInterestCharges id="f-15" contextRef="c-02" unitRef="u-02" decimals="0">3123</ferc:NetInterestCharges>
+    <ferc:NetOtherIncomeAndDeductions id="f-16" contextRef="c-02" unitRef="u-02" decimals="0">-141869</ferc:NetOtherIncomeAndDeductions>
+    <ferc:NetUtilityOperatingIncome id="f-17" contextRef="c-02" unitRef="u-02" decimals="0">4359549</ferc:NetUtilityOperatingIncome>
+    <ferc:OperatingRevenues id="f-18" contextRef="c-02" unitRef="u-02" decimals="0">17203443</ferc:OperatingRevenues>
+    <ferc:OperationExpense id="f-19" contextRef="c-02" unitRef="u-02" decimals="0">9520567</ferc:OperationExpense>
+    <ferc:OtherDeductions id="f-20" contextRef="c-02" unitRef="u-02" decimals="0">-83</ferc:OtherDeductions>
+    <ferc:OtherIncome id="f-21" contextRef="c-02" unitRef="u-02" decimals="0">-113755</ferc:OtherIncome>
+    <ferc:OtherIncomeDeductions id="f-22" contextRef="c-02" unitRef="u-02" decimals="0">28114</ferc:OtherIncomeDeductions>
+    <ferc:OtherInterestExpense id="f-23" contextRef="c-02" unitRef="u-02" decimals="0">3123</ferc:OtherInterestExpense>
+    <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-24" contextRef="c-02" unitRef="u-02" decimals="0">701362</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+    <ferc:UtilityOperatingExpenses id="f-25" contextRef="c-02" unitRef="u-02" decimals="0">12843894</ferc:UtilityOperatingExpenses>
+    <ferc:AppropriationsOfRetainedEarnings id="f-26" contextRef="c-02" unitRef="u-02" decimals="0">985794</ferc:AppropriationsOfRetainedEarnings>
+    <ferc:BalanceTransferredFromIncome id="f-27" contextRef="c-02" unitRef="u-02" decimals="0">4400689</ferc:BalanceTransferredFromIncome>
+    <ferc:DividendsDeclaredCommonStock id="f-28" contextRef="c-02" unitRef="u-02" decimals="0">6900000</ferc:DividendsDeclaredCommonStock>
+    <ferc:CashFlowsProvidedFromUsedInFinancingActivities id="f-29" contextRef="c-02" unitRef="u-02" decimals="0">-6900000</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+    <ferc:CashFlowsProvidedFromUsedInInvestmentActivities id="f-30" contextRef="c-02" unitRef="u-02" decimals="0">-1443827</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+    <ferc:CashOutflowsForPlant id="f-31" contextRef="c-02" unitRef="u-02" decimals="0">1632483</ferc:CashOutflowsForPlant>
+    <ferc:DepreciationAndDepletion id="f-32" contextRef="c-02" unitRef="u-02" decimals="0">632742</ferc:DepreciationAndDepletion>
+    <ferc:DividendsOnCommonStock id="f-33" contextRef="c-02" unitRef="u-02" decimals="0">6900000</ferc:DividendsOnCommonStock>
+    <ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities id="f-34" contextRef="c-02" unitRef="u-02" decimals="0">1623527</ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities>
+    <ferc:InvestmentsInAndAdvancesToAssociatedAndSubsidiaryCompanies id="f-35" contextRef="c-02" unitRef="u-02" decimals="0">-188656</ferc:InvestmentsInAndAdvancesToAssociatedAndSubsidiaryCompanies>
+    <ferc:NetCashFlowFromOperatingActivities id="f-36" contextRef="c-02" unitRef="u-02" decimals="0">8384984</ferc:NetCashFlowFromOperatingActivities>
+    <ferc:NetIncreaseDecreaseInCashAndCashEquivalents id="f-37" contextRef="c-02" unitRef="u-02" decimals="0">41157</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+    <ferc:NetIncreaseDecreaseInInventoryOperatingActivities id="f-38" contextRef="c-02" unitRef="u-02" decimals="0">-10141</ferc:NetIncreaseDecreaseInInventoryOperatingActivities>
+    <ferc:NetIncreaseDecreaseInOtherRegulatoryAssetsOperatingActivities id="f-39" contextRef="c-02" unitRef="u-02" decimals="0">12024</ferc:NetIncreaseDecreaseInOtherRegulatoryAssetsOperatingActivities>
+    <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities id="f-40" contextRef="c-02" unitRef="u-02" decimals="0">916333</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+    <ferc:NetIncreaseDecreaseInReceivablesOperatingActivities id="f-41" contextRef="c-02" unitRef="u-02" decimals="0">-2575852</ferc:NetIncreaseDecreaseInReceivablesOperatingActivities>
+    <ferc:AppropriationsOfRetainedEarnings id="f-42" contextRef="c-03" unitRef="u-02" decimals="0">764018</ferc:AppropriationsOfRetainedEarnings>
+    <ferc:AppropriationsOfRetainedEarnings id="f-43" contextRef="c-04" unitRef="u-02" decimals="0">221776</ferc:AppropriationsOfRetainedEarnings>
+    <ferc:DividendsDeclaredCommonStock id="f-44" contextRef="c-05" unitRef="u-02" decimals="0">6900000</ferc:DividendsDeclaredCommonStock>
+    <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities id="f-45" contextRef="c-06" unitRef="u-02" decimals="0">57549</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities>
+    <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities id="f-46" contextRef="c-07" unitRef="u-02" decimals="0">-10166</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+    <ferc:RetainedEarnings id="f-47" contextRef="c-08" unitRef="u-02" decimals="0">52143917</ferc:RetainedEarnings>
+    <ferc:UnappropriatedUndistributedSubsidiaryEarnings id="f-48" contextRef="c-08" unitRef="u-02" decimals="0">1869165</ferc:UnappropriatedUndistributedSubsidiaryEarnings>
+    <ferc:AppropriatedRetainedEarningsAmortizationReserveFederal id="f-49" contextRef="c-08" unitRef="u-02" decimals="0">6217797</ferc:AppropriatedRetainedEarningsAmortizationReserveFederal>
+    <ferc:AppropriatedRetainedEarningsIncludingReserveAmortization id="f-50" contextRef="c-08" unitRef="u-02" decimals="0">6217797</ferc:AppropriatedRetainedEarningsIncludingReserveAmortization>
+    <ferc:UnappropriatedRetainedEarnings id="f-51" contextRef="c-08" unitRef="u-02" decimals="0">45926120</ferc:UnappropriatedRetainedEarnings>
+    <ferc:CashAndCashEquivalents id="f-52" contextRef="c-08" unitRef="u-02" decimals="0">377858</ferc:CashAndCashEquivalents>
+    <ferc:AmortizationAndDepletionOfUtilityPlant id="f-53" contextRef="c-09" unitRef="u-02" decimals="0">10693</ferc:AmortizationAndDepletionOfUtilityPlant>
+    <ferc:AmortizationOfElectricPlantAcquisitionAdjustments id="f-54" contextRef="c-09" unitRef="u-02" decimals="0">1455</ferc:AmortizationOfElectricPlantAcquisitionAdjustments>
+    <ferc:DepreciationExpense id="f-55" contextRef="c-09" unitRef="u-02" decimals="0">620594</ferc:DepreciationExpense>
+    <ferc:IncomeTaxesOperatingIncome id="f-56" contextRef="c-09" unitRef="u-02" decimals="0">1120000</ferc:IncomeTaxesOperatingIncome>
+    <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-57" contextRef="c-09" unitRef="u-02" decimals="0">281000</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+    <ferc:MaintenanceExpense id="f-58" contextRef="c-09" unitRef="u-02" decimals="0">588223</ferc:MaintenanceExpense>
+    <ferc:NetUtilityOperatingIncome id="f-59" contextRef="c-09" unitRef="u-02" decimals="0">4359549</ferc:NetUtilityOperatingIncome>
+    <ferc:OperatingRevenues id="f-60" contextRef="c-09" unitRef="u-02" decimals="0">17203443</ferc:OperatingRevenues>
+    <ferc:OperationExpense id="f-61" contextRef="c-09" unitRef="u-02" decimals="0">9520567</ferc:OperationExpense>
+    <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-62" contextRef="c-09" unitRef="u-02" decimals="0">701362</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+    <ferc:UtilityOperatingExpenses id="f-63" contextRef="c-09" unitRef="u-02" decimals="0">12843894</ferc:UtilityOperatingExpenses>
+    <ferc:AppropriationsOfRetainedEarningsDescription id="f-64" contextRef="c-10">Appro. of RE Amort. Reserve Fed - Lockhart Hydro</ferc:AppropriationsOfRetainedEarningsDescription>
+    <ferc:OrderNumber id="f-65" contextRef="c-10" unitRef="u-01" decimals="0">1</ferc:OrderNumber>
+    <ferc:AppropriationsOfRetainedEarningsDescription id="f-66" contextRef="c-11">Appro. of RE Amort. Reserve Fed - Pacolet Hydro</ferc:AppropriationsOfRetainedEarningsDescription>
+    <ferc:OrderNumber id="f-67" contextRef="c-11" unitRef="u-01" decimals="0">2</ferc:OrderNumber>
+    <ferc:DividendsDeclaredCommonStockDescription id="f-68" contextRef="c-12">Dividends Declared - Common Stock</ferc:DividendsDeclaredCommonStockDescription>
+    <ferc:OrderNumber id="f-69" contextRef="c-12" unitRef="u-01" decimals="0">1</ferc:OrderNumber>
+    <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-70" contextRef="c-13">Other Amortization and Depletion</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+    <ferc:OrderNumber id="f-71" contextRef="c-13" unitRef="u-01" decimals="0">1</ferc:OrderNumber>
+    <ferc:OrderNumber id="f-72" contextRef="c-14" unitRef="u-01" decimals="0">1</ferc:OrderNumber>
+    <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-73" contextRef="c-14">Other Current and Non-Current Assets</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+    <ferc:AccruedUtilityRevenues id="f-74" contextRef="c-15" unitRef="u-02" decimals="0">763939</ferc:AccruedUtilityRevenues>
+    <ferc:AccumulatedDeferredIncomeTaxes id="f-75" contextRef="c-15" unitRef="u-02" decimals="0">2456970</ferc:AccumulatedDeferredIncomeTaxes>
+    <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-76" contextRef="c-15" unitRef="u-02" decimals="0">51347515</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+    <ferc:AssetsAndOtherDebits id="f-77" contextRef="c-15" unitRef="u-02" decimals="0">93611500</ferc:AssetsAndOtherDebits>
+    <ferc:ConstructionWorkInProgress id="f-78" contextRef="c-15" unitRef="u-02" decimals="0">17332097</ferc:ConstructionWorkInProgress>
+    <ferc:CurrentAndAccruedAssets id="f-79" contextRef="c-15" unitRef="u-02" decimals="0">12473401</ferc:CurrentAndAccruedAssets>
+    <ferc:CustomerAccountsReceivable id="f-80" contextRef="c-15" unitRef="u-02" decimals="0">5288085</ferc:CustomerAccountsReceivable>
+    <ferc:DeferredDebits id="f-81" contextRef="c-15" unitRef="u-02" decimals="0">5047444</ferc:DeferredDebits>
+    <ferc:InvestmentInSubsidiaryCompanies id="f-82" contextRef="c-15" unitRef="u-02" decimals="0">5445881</ferc:InvestmentInSubsidiaryCompanies>
+    <ferc:MiscellaneousCurrentAndAccruedAssets id="f-83" contextRef="c-15" unitRef="u-02" decimals="0">362679</ferc:MiscellaneousCurrentAndAccruedAssets>
+    <ferc:MiscellaneousDeferredDebits id="f-84" contextRef="c-15" unitRef="u-02" decimals="0">2235957</ferc:MiscellaneousDeferredDebits>
+    <ferc:NonutilityProperty id="f-85" contextRef="c-15" unitRef="u-02" decimals="0">61866</ferc:NonutilityProperty>
+    <ferc:NuclearFuelNet id="f-86" contextRef="c-15" unitRef="u-02" decimals="0">0</ferc:NuclearFuelNet>
+    <ferc:OtherAccountsReceivable id="f-87" contextRef="c-15" unitRef="u-02" decimals="0">3508780</ferc:OtherAccountsReceivable>
+    <ferc:OtherPropertyAndInvestments id="f-88" contextRef="c-15" unitRef="u-02" decimals="0">5507747</ferc:OtherPropertyAndInvestments>
+    <ferc:PlantMaterialsAndOperatingSupplies id="f-89" contextRef="c-15" unitRef="u-02" decimals="0">1113037</ferc:PlantMaterialsAndOperatingSupplies>
+    <ferc:PreliminarySurveyAndInvestigationCharges id="f-90" contextRef="c-15" unitRef="u-02" decimals="0">354517</ferc:PreliminarySurveyAndInvestigationCharges>
+    <ferc:Prepayments id="f-91" contextRef="c-15" unitRef="u-02" decimals="0">622351</ferc:Prepayments>
+    <ferc:UtilityPlant id="f-92" contextRef="c-15" unitRef="u-02" decimals="0">104598326</ferc:UtilityPlant>
+    <ferc:UtilityPlantAndConstructionWorkInProgress id="f-93" contextRef="c-15" unitRef="u-02" decimals="0">121930423</ferc:UtilityPlantAndConstructionWorkInProgress>
+    <ferc:UtilityPlantAndNuclearFuelNet id="f-94" contextRef="c-15" unitRef="u-02" decimals="0">70582908</ferc:UtilityPlantAndNuclearFuelNet>
+    <ferc:UtilityPlantNet id="f-95" contextRef="c-15" unitRef="u-02" decimals="0">70582908</ferc:UtilityPlantNet>
+    <ferc:WorkingFunds id="f-96" contextRef="c-15" unitRef="u-02" decimals="0">1200</ferc:WorkingFunds>
+    <ferc:Cash id="f-97" contextRef="c-15" unitRef="u-02" decimals="0">813330</ferc:Cash>
+    <ferc:AccountsPayable id="f-98" contextRef="c-15" unitRef="u-02" decimals="0">6135578</ferc:AccountsPayable>
+    <ferc:AccountsPayableToAssociatedCompanies id="f-99" contextRef="c-15" unitRef="u-02" decimals="0">61029</ferc:AccountsPayableToAssociatedCompanies>
+    <ferc:AccumulatedDeferredIncomeTaxesOtherProperty id="f-100" contextRef="c-15" unitRef="u-02" decimals="0">6777984</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+    <ferc:AccumulatedDeferredInvestmentTaxCredits id="f-101" contextRef="c-15" unitRef="u-02" decimals="0">3790</ferc:AccumulatedDeferredInvestmentTaxCredits>
+    <ferc:CommonStockIssued id="f-102" contextRef="c-15" unitRef="u-02" decimals="0">300000</ferc:CommonStockIssued>
+    <ferc:CurrentAndAccruedLiabilities id="f-103" contextRef="c-15" unitRef="u-02" decimals="0">12375063</ferc:CurrentAndAccruedLiabilities>
+    <ferc:CustomerDeposits id="f-104" contextRef="c-15" unitRef="u-02" decimals="0">3723372</ferc:CustomerDeposits>
+    <ferc:DeferredCredits id="f-105" contextRef="c-15" unitRef="u-02" decimals="0">11841227</ferc:DeferredCredits>
+    <ferc:LiabilitiesAndOtherCredits id="f-106" contextRef="c-15" unitRef="u-02" decimals="0">93611500</ferc:LiabilitiesAndOtherCredits>
+    <ferc:LongTermDebt id="f-107" contextRef="c-15" unitRef="u-02" decimals="0">0</ferc:LongTermDebt>
+    <ferc:MiscellaneousCurrentAndAccruedLiabilities id="f-108" contextRef="c-15" unitRef="u-02" decimals="0">689964</ferc:MiscellaneousCurrentAndAccruedLiabilities>
+    <ferc:OtherNoncurrentLiabilities id="f-109" contextRef="c-15" unitRef="u-02" decimals="0">0</ferc:OtherNoncurrentLiabilities>
+    <ferc:OtherRegulatoryLiabilities id="f-110" contextRef="c-15" unitRef="u-02" decimals="0">5059453</ferc:OtherRegulatoryLiabilities>
+    <ferc:ProprietaryCapital id="f-111" contextRef="c-15" unitRef="u-02" decimals="0">69395210</ferc:ProprietaryCapital>
+    <ferc:RetainedEarnings id="f-112" contextRef="c-15" unitRef="u-02" decimals="0">67520451</ferc:RetainedEarnings>
+    <ferc:TaxCollectionsPayable id="f-113" contextRef="c-15" unitRef="u-02" decimals="0">187442</ferc:TaxCollectionsPayable>
+    <ferc:TaxesAccrued id="f-114" contextRef="c-15" unitRef="u-02" decimals="0">1577678</ferc:TaxesAccrued>
+    <ferc:UnappropriatedUndistributedSubsidiaryEarnings id="f-115" contextRef="c-15" unitRef="u-02" decimals="0">1574759</ferc:UnappropriatedUndistributedSubsidiaryEarnings>
+    <ferc:UnappropriatedRetainedEarnings id="f-116" contextRef="c-15" unitRef="u-02" decimals="0">61302654</ferc:UnappropriatedRetainedEarnings>
+    <ferc:CashAndCashEquivalents id="f-117" contextRef="c-15" unitRef="u-02" decimals="0">814530</ferc:CashAndCashEquivalents>
+    <ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-118" contextRef="c-16">Dividends on Common Stock</ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+    <ferc:OrderNumber id="f-119" contextRef="c-16" unitRef="u-01" decimals="0">1</ferc:OrderNumber>
+    <ferc:AccumulatedDeferredIncomeTaxes id="f-120" contextRef="c-17" unitRef="u-02" decimals="0">2456970</ferc:AccumulatedDeferredIncomeTaxes>
+    <ferc:AccumulatedDeferredInvestmentTaxCredits id="f-121" contextRef="c-17" unitRef="u-02" decimals="0">3789</ferc:AccumulatedDeferredInvestmentTaxCredits>
+    <ferc:AccumulatedDeferredIncomeTaxesOtherProperty id="f-122" contextRef="c-17" unitRef="u-02" decimals="0">6777984</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+    <ferc:OtherRegulatoryLiabilities id="f-123" contextRef="c-18" unitRef="u-02" decimals="0">2059</ferc:OtherRegulatoryLiabilities>
+    <ferc:OtherRegulatoryLiabilities id="f-124" contextRef="c-19" unitRef="u-02" decimals="0">5057394</ferc:OtherRegulatoryLiabilities>
+    <ferc:OrderNumber id="f-125" contextRef="c-20" unitRef="u-01" decimals="0">1</ferc:OrderNumber>
+    <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription id="f-126" contextRef="c-20">Plant Removal Costs</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription>
+    <ferc:CashAndCashEquivalents id="f-127" contextRef="c-21" unitRef="u-02" decimals="0">336701</ferc:CashAndCashEquivalents>
+    <ferc:UnappropriatedUndistributedSubsidiaryEarnings id="f-128" contextRef="c-21" unitRef="u-02" decimals="0">2055297</ferc:UnappropriatedUndistributedSubsidiaryEarnings>
+    <ferc:UnappropriatedRetainedEarnings id="f-129" contextRef="c-21" unitRef="u-02" decimals="0">49411225</ferc:UnappropriatedRetainedEarnings>
+    <ferc:AccumulatedDeferredIncomeTaxes id="f-130" contextRef="c-22" unitRef="u-02" decimals="0">0</ferc:AccumulatedDeferredIncomeTaxes>
+    <ferc:AccumulatedDeferredIncomeTaxesOtherProperty id="f-131" contextRef="c-22" unitRef="u-02" decimals="0">0</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+    <ferc:AccumulatedDeferredIncomeTaxes id="f-132" contextRef="c-23" unitRef="u-02" decimals="0">2454911</ferc:AccumulatedDeferredIncomeTaxes>
+    <ferc:AccumulatedDeferredIncomeTaxes id="f-133" contextRef="c-24" unitRef="u-02" decimals="0">2059</ferc:AccumulatedDeferredIncomeTaxes>
+    <ferc:AccumulatedDeferredInvestmentTaxCredits id="f-134" contextRef="c-25" unitRef="u-02" decimals="0">3789</ferc:AccumulatedDeferredInvestmentTaxCredits>
+    <ferc:AccumulatedDeferredIncomeTaxesOtherProperty id="f-135" contextRef="c-26" unitRef="u-02" decimals="0">6777984</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+    <ferc:AccumulatedDeferredIncomeTaxesOtherProperty id="f-136" contextRef="c-27" unitRef="u-02" decimals="0">0</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+    <ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities id="f-137" contextRef="c-28">SFAS Gross-Up of Invt Tax Credit</ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities>
+    <ferc:OrderNumber id="f-138" contextRef="c-28" unitRef="u-01" decimals="0">1</ferc:OrderNumber>
+    <ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities id="f-139" contextRef="c-29">Tax Cut &amp; Job Act Cust Refund Acc</ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities>
+    <ferc:OrderNumber id="f-140" contextRef="c-29" unitRef="u-01" decimals="0">2</ferc:OrderNumber>
+    <ferc:TaxesAccrued id="f-141" contextRef="c-30" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-142" contextRef="c-31" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-143" contextRef="c-32" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-144" contextRef="c-33" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-145" contextRef="c-34" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-146" contextRef="c-35" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-147" contextRef="c-36" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-148" contextRef="c-37" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-149" contextRef="c-38" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-150" contextRef="c-39" unitRef="u-02" decimals="0">1577678</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-151" contextRef="c-40" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-152" contextRef="c-41" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:TaxesAccrued id="f-153" contextRef="c-42" unitRef="u-02" decimals="0">0</ferc:TaxesAccrued>
+    <ferc:RespondentLegalName id="f-154" contextRef="c-43">Lockhart Power Company</ferc:RespondentLegalName>
+    <ferc:ReportYear id="f-155" contextRef="c-43" unitRef="u-01" decimals="0">2026</ferc:ReportYear>
+    <ferc:ReportPeriod id="f-156" contextRef="c-43">Q1</ferc:ReportPeriod>
+    <ferc:SubmissionType id="f-157" contextRef="c-43">O</ferc:SubmissionType>
+    <ferc:CompanyIdentifier id="f-158" contextRef="c-43">C001153</ferc:CompanyIdentifier>
+    <ferc:FormType id="f-159" contextRef="c-43">1/3-Q</ferc:FormType>
+    <ferc:AddressOfContactPerson id="f-161" contextRef="c-43">PO Box 10, 420 River Street, Lockhart, SC 29364</ferc:AddressOfContactPerson>
+    <ferc:AddressOfPrincipalOfficeAtEndOfPeriod id="f-162" contextRef="c-43">PO Box 10, 420 River Street, Lockhart, SC 29364</ferc:AddressOfPrincipalOfficeAtEndOfPeriod>
+    <ferc:NameOfContactPerson id="f-163" contextRef="c-43">David Turner</ferc:NameOfContactPerson>
+    <ferc:ReportDate id="f-164" contextRef="c-43">2026-03-31</ferc:ReportDate>
+    <ferc:TelephoneOfContactPerson id="f-165" contextRef="c-43">864-545-2211</ferc:TelephoneOfContactPerson>
+    <ferc:TitleOfContactPerson id="f-166" contextRef="c-43">Business Controller</ferc:TitleOfContactPerson>
+    <ferc:AttestationName id="f-168" contextRef="c-43">Bryan D. Stone</ferc:AttestationName>
+    <ferc:AttestationTitle id="f-169" contextRef="c-43">President</ferc:AttestationTitle>
+    <ferc:Remarks id="f-171" contextRef="c-45">NA</ferc:Remarks>
+    <ferc:Remarks id="f-172" contextRef="c-46">NA</ferc:Remarks>
+    <ferc:Remarks id="f-173" contextRef="c-47">NA</ferc:Remarks>
+    <ferc:Remarks id="f-174" contextRef="c-48">NA</ferc:Remarks>
+    <ferc:Remarks id="f-175" contextRef="c-49">NA</ferc:Remarks>
+    <ferc:Remarks id="f-176" contextRef="c-50">NA</ferc:Remarks>
+    <ferc:Remarks id="f-177" contextRef="c-51">NA</ferc:Remarks>
+    <ferc:Remarks id="f-178" contextRef="c-52">NA</ferc:Remarks>
+    <ferc:Remarks id="f-179" contextRef="c-53">NA</ferc:Remarks>
+    <ferc:Remarks id="f-180" contextRef="c-54">NA</ferc:Remarks>
+    <ferc:AccruedUtilityRevenues id="f-182" contextRef="c-56" unitRef="u-02" decimals="0">763939</ferc:AccruedUtilityRevenues>
+    <ferc:AccumulatedDeferredIncomeTaxes id="f-183" contextRef="c-56" unitRef="u-02" decimals="0">2456970</ferc:AccumulatedDeferredIncomeTaxes>
+    <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-184" contextRef="c-56" unitRef="u-02" decimals="0">52081748</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+    <ferc:AssetsAndOtherDebits id="f-185" contextRef="c-56" unitRef="u-02" decimals="0">98727374</ferc:AssetsAndOtherDebits>
+    <ferc:Cash id="f-186" contextRef="c-56" unitRef="u-02" decimals="0">745490</ferc:Cash>
+    <ferc:ConstructionWorkInProgress id="f-187" contextRef="c-56" unitRef="u-02" decimals="0">26298937</ferc:ConstructionWorkInProgress>
+    <ferc:CurrentAndAccruedAssets id="f-188" contextRef="c-56" unitRef="u-02" decimals="0">9325510</ferc:CurrentAndAccruedAssets>
+    <ferc:CustomerAccountsReceivable id="f-189" contextRef="c-56" unitRef="u-02" decimals="0">4534931</ferc:CustomerAccountsReceivable>
+    <ferc:DeferredDebits id="f-190" contextRef="c-56" unitRef="u-02" decimals="0">5057547</ferc:DeferredDebits>
+    <ferc:InvestmentInSubsidiaryCompanies id="f-191" contextRef="c-56" unitRef="u-02" decimals="0">5263643</ferc:InvestmentInSubsidiaryCompanies>
+    <ferc:MiscellaneousCurrentAndAccruedAssets id="f-192" contextRef="c-56" unitRef="u-02" decimals="0">600661</ferc:MiscellaneousCurrentAndAccruedAssets>
+    <ferc:MiscellaneousDeferredDebits id="f-193" contextRef="c-56" unitRef="u-02" decimals="0">2214159</ferc:MiscellaneousDeferredDebits>
+    <ferc:NonutilityProperty id="f-194" contextRef="c-56" unitRef="u-02" decimals="0">61866</ferc:NonutilityProperty>
+    <ferc:NuclearFuelNet id="f-195" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:NuclearFuelNet>
+    <ferc:OtherAccountsReceivable id="f-196" contextRef="c-56" unitRef="u-02" decimals="0">1183958</ferc:OtherAccountsReceivable>
+    <ferc:OtherPropertyAndInvestments id="f-197" contextRef="c-56" unitRef="u-02" decimals="0">5325509</ferc:OtherPropertyAndInvestments>
+    <ferc:PlantMaterialsAndOperatingSupplies id="f-198" contextRef="c-56" unitRef="u-02" decimals="0">1063233</ferc:PlantMaterialsAndOperatingSupplies>
+    <ferc:PreliminarySurveyAndInvestigationCharges id="f-199" contextRef="c-56" unitRef="u-02" decimals="0">386418</ferc:PreliminarySurveyAndInvestigationCharges>
+    <ferc:Prepayments id="f-200" contextRef="c-56" unitRef="u-02" decimals="0">432098</ferc:Prepayments>
+    <ferc:UtilityPlant id="f-201" contextRef="c-56" unitRef="u-02" decimals="0">104801619</ferc:UtilityPlant>
+    <ferc:UtilityPlantAndConstructionWorkInProgress id="f-202" contextRef="c-56" unitRef="u-02" decimals="0">131100556</ferc:UtilityPlantAndConstructionWorkInProgress>
+    <ferc:UtilityPlantAndNuclearFuelNet id="f-203" contextRef="c-56" unitRef="u-02" decimals="0">79018808</ferc:UtilityPlantAndNuclearFuelNet>
+    <ferc:UtilityPlantNet id="f-204" contextRef="c-56" unitRef="u-02" decimals="0">79018808</ferc:UtilityPlantNet>
+    <ferc:WorkingFunds id="f-205" contextRef="c-56" unitRef="u-02" decimals="0">1200</ferc:WorkingFunds>
+    <ferc:AccountsPayable id="f-207" contextRef="c-56" unitRef="u-02" decimals="0">5741460</ferc:AccountsPayable>
+    <ferc:AccountsPayableToAssociatedCompanies id="f-208" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:AccountsPayableToAssociatedCompanies>
+    <ferc:AccumulatedDeferredIncomeTaxesOtherProperty id="f-209" contextRef="c-56" unitRef="u-02" decimals="0">6777983</ferc:AccumulatedDeferredIncomeTaxesOtherProperty>
+    <ferc:AccumulatedDeferredInvestmentTaxCredits id="f-210" contextRef="c-56" unitRef="u-02" decimals="0">3790</ferc:AccumulatedDeferredInvestmentTaxCredits>
+    <ferc:CommonStockIssued id="f-211" contextRef="c-56" unitRef="u-02" decimals="0">300000</ferc:CommonStockIssued>
+    <ferc:CurrentAndAccruedLiabilities id="f-212" contextRef="c-56" unitRef="u-02" decimals="0">11903420</ferc:CurrentAndAccruedLiabilities>
+    <ferc:CustomerDeposits id="f-213" contextRef="c-56" unitRef="u-02" decimals="0">3724363</ferc:CustomerDeposits>
+    <ferc:DeferredCredits id="f-214" contextRef="c-56" unitRef="u-02" decimals="0">11841226</ferc:DeferredCredits>
+    <ferc:LiabilitiesAndOtherCredits id="f-215" contextRef="c-56" unitRef="u-02" decimals="0">98727374</ferc:LiabilitiesAndOtherCredits>
+    <ferc:LongTermDebt id="f-216" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:LongTermDebt>
+    <ferc:MiscellaneousCurrentAndAccruedLiabilities id="f-217" contextRef="c-56" unitRef="u-02" decimals="0">648719</ferc:MiscellaneousCurrentAndAccruedLiabilities>
+    <ferc:OtherNoncurrentLiabilities id="f-218" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:OtherNoncurrentLiabilities>
+    <ferc:OtherRegulatoryLiabilities id="f-219" contextRef="c-56" unitRef="u-02" decimals="0">5059453</ferc:OtherRegulatoryLiabilities>
+    <ferc:ProprietaryCapital id="f-220" contextRef="c-56" unitRef="u-02" decimals="0">74982728</ferc:ProprietaryCapital>
+    <ferc:RetainedEarnings id="f-221" contextRef="c-56" unitRef="u-02" decimals="0">73204819</ferc:RetainedEarnings>
+    <ferc:TaxCollectionsPayable id="f-222" contextRef="c-56" unitRef="u-02" decimals="0">161428</ferc:TaxCollectionsPayable>
+    <ferc:TaxesAccrued id="f-223" contextRef="c-56" unitRef="u-02" decimals="0">1627450</ferc:TaxesAccrued>
+    <ferc:UnappropriatedUndistributedSubsidiaryEarnings id="f-224" contextRef="c-56" unitRef="u-02" decimals="0">1477909</ferc:UnappropriatedUndistributedSubsidiaryEarnings>
+    <ferc:AmortizationAndDepletionOfUtilityPlant id="f-226" contextRef="c-58" unitRef="u-02" decimals="0">63139</ferc:AmortizationAndDepletionOfUtilityPlant>
+    <ferc:AmortizationOfElectricPlantAcquisitionAdjustments id="f-227" contextRef="c-58" unitRef="u-02" decimals="0">1455</ferc:AmortizationOfElectricPlantAcquisitionAdjustments>
+    <ferc:DepreciationExpense id="f-228" contextRef="c-58" unitRef="u-02" decimals="0">628041</ferc:DepreciationExpense>
+    <ferc:IncomeTaxesOperatingIncome id="f-229" contextRef="c-58" unitRef="u-02" decimals="0">719000</ferc:IncomeTaxesOperatingIncome>
+    <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-230" contextRef="c-58" unitRef="u-02" decimals="0">181000</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+    <ferc:MaintenanceExpense id="f-231" contextRef="c-58" unitRef="u-02" decimals="0">616660</ferc:MaintenanceExpense>
+    <ferc:NetUtilityOperatingIncome id="f-232" contextRef="c-59" unitRef="u-02" decimals="0">0</ferc:NetUtilityOperatingIncome>
+    <ferc:NetUtilityOperatingIncome id="f-233" contextRef="c-60" unitRef="u-02" decimals="0">0</ferc:NetUtilityOperatingIncome>
+    <ferc:NetUtilityOperatingIncome id="f-234" contextRef="c-58" unitRef="u-02" decimals="0">2740785</ferc:NetUtilityOperatingIncome>
+    <ferc:OperatingRevenues id="f-235" contextRef="c-58" unitRef="u-02" decimals="0">16748173</ferc:OperatingRevenues>
+    <ferc:OperationExpense id="f-236" contextRef="c-58" unitRef="u-02" decimals="0">10936773</ferc:OperationExpense>
+    <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-237" contextRef="c-58" unitRef="u-02" decimals="0">861320</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+    <ferc:UtilityOperatingExpenses id="f-238" contextRef="c-59" unitRef="u-02" decimals="0">0</ferc:UtilityOperatingExpenses>
+    <ferc:UtilityOperatingExpenses id="f-239" contextRef="c-60" unitRef="u-02" decimals="0">0</ferc:UtilityOperatingExpenses>
+    <ferc:UtilityOperatingExpenses id="f-240" contextRef="c-58" unitRef="u-02" decimals="0">14007388</ferc:UtilityOperatingExpenses>
+    <ferc:AccretionExpense id="f-242" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:AccretionExpense>
+    <ferc:AmortizationAndDepletionOfUtilityPlant id="f-243" contextRef="c-43" unitRef="u-02" decimals="0">63139</ferc:AmortizationAndDepletionOfUtilityPlant>
+    <ferc:AmortizationOfConversionExpenses id="f-244" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:AmortizationOfConversionExpenses>
+    <ferc:AmortizationOfElectricPlantAcquisitionAdjustments id="f-245" contextRef="c-43" unitRef="u-02" decimals="0">1455</ferc:AmortizationOfElectricPlantAcquisitionAdjustments>
+    <ferc:AmortizationOfPropertyLossesUnrecoveredPlantAndRegulatoryStudyCosts id="f-246" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:AmortizationOfPropertyLossesUnrecoveredPlantAndRegulatoryStudyCosts>
+    <ferc:DepreciationExpense id="f-247" contextRef="c-43" unitRef="u-02" decimals="0">628041</ferc:DepreciationExpense>
+    <ferc:DepreciationExpenseForAssetRetirementCosts id="f-248" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:DepreciationExpenseForAssetRetirementCosts>
+    <ferc:Donations id="f-249" contextRef="c-43" unitRef="u-02" decimals="0">14750</ferc:Donations>
+    <ferc:EquityInEarningsOfSubsidiaryCompanies id="f-250" contextRef="c-43" unitRef="u-02" decimals="0">-96850</ferc:EquityInEarningsOfSubsidiaryCompanies>
+    <ferc:ExpendituresForCertainCivicPoliticalAndRelatedActivities id="f-251" contextRef="c-43" unitRef="u-02" decimals="0">6000</ferc:ExpendituresForCertainCivicPoliticalAndRelatedActivities>
+    <ferc:ExtraordinaryItemsAfterTaxes id="f-252" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:ExtraordinaryItemsAfterTaxes>
+    <ferc:GainsFromDispositionOfAllowances id="f-253" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:GainsFromDispositionOfAllowances>
+    <ferc:GainsFromDispositionOfEnvironmentalCredits id="f-254" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:GainsFromDispositionOfEnvironmentalCredits>
+    <ferc:GainsFromDispositionOfPlant id="f-255" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:GainsFromDispositionOfPlant>
+    <ferc:IncomeBeforeExtraordinaryItems id="f-256" contextRef="c-43" unitRef="u-02" decimals="0">2709840</ferc:IncomeBeforeExtraordinaryItems>
+    <ferc:IncomeTaxesOperatingIncome id="f-257" contextRef="c-43" unitRef="u-02" decimals="0">719000</ferc:IncomeTaxesOperatingIncome>
+    <ferc:IncomeTaxesUtilityOperatingIncomeOther id="f-258" contextRef="c-43" unitRef="u-02" decimals="0">181000</ferc:IncomeTaxesUtilityOperatingIncomeOther>
+    <ferc:InterestAndDividendIncome id="f-259" contextRef="c-43" unitRef="u-02" decimals="0">60193</ferc:InterestAndDividendIncome>
+    <ferc:InvestmentTaxCreditAdjustments id="f-260" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:InvestmentTaxCreditAdjustments>
+    <ferc:LossesFromDispositionOfAllowances id="f-261" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:LossesFromDispositionOfAllowances>
+    <ferc:LossesFromDispositionOfEnvironmentalCredits id="f-262" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:LossesFromDispositionOfEnvironmentalCredits>
+    <ferc:LossesFromDispositionOfServiceCompanyPlant id="f-263" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:LossesFromDispositionOfServiceCompanyPlant>
+    <ferc:MaintenanceExpense id="f-264" contextRef="c-43" unitRef="u-02" decimals="0">616660</ferc:MaintenanceExpense>
+    <ferc:MiscellaneousNonoperatingIncome id="f-265" contextRef="c-43" unitRef="u-02" decimals="0">29513</ferc:MiscellaneousNonoperatingIncome>
+    <ferc:NetExtraordinaryItems id="f-266" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:NetExtraordinaryItems>
+    <ferc:NetIncomeLoss id="f-267" contextRef="c-43" unitRef="u-02" decimals="0">2709840</ferc:NetIncomeLoss>
+    <ferc:NetInterestCharges id="f-268" contextRef="c-43" unitRef="u-02" decimals="0">3051</ferc:NetInterestCharges>
+    <ferc:NetOtherIncomeAndDeductions id="f-269" contextRef="c-43" unitRef="u-02" decimals="0">-27894</ferc:NetOtherIncomeAndDeductions>
+    <ferc:NetUtilityOperatingIncome id="f-270" contextRef="c-43" unitRef="u-02" decimals="0">2740785</ferc:NetUtilityOperatingIncome>
+    <ferc:OperatingRevenues id="f-271" contextRef="c-43" unitRef="u-02" decimals="0">16748173</ferc:OperatingRevenues>
+    <ferc:OperationExpense id="f-272" contextRef="c-43" unitRef="u-02" decimals="0">10936773</ferc:OperationExpense>
+    <ferc:OtherIncome id="f-273" contextRef="c-43" unitRef="u-02" decimals="0">-7144</ferc:OtherIncome>
+    <ferc:OtherIncomeDeductions id="f-274" contextRef="c-43" unitRef="u-02" decimals="0">20750</ferc:OtherIncomeDeductions>
+    <ferc:OtherInterestExpense id="f-275" contextRef="c-43" unitRef="u-02" decimals="0">3051</ferc:OtherInterestExpense>
+    <ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome id="f-276" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:ProvisionForDeferredIncomeTaxesCreditOperatingIncome>
+    <ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome id="f-277" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:ProvisionsForDeferredIncomeTaxesUtilityOperatingIncome>
+    <ferc:RegulatoryCredits id="f-278" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:RegulatoryCredits>
+    <ferc:RegulatoryDebits id="f-279" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:RegulatoryDebits>
+    <ferc:TaxesOnOtherIncomeAndDeductions id="f-280" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:TaxesOnOtherIncomeAndDeductions>
+    <ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome id="f-281" contextRef="c-43" unitRef="u-02" decimals="0">861320</ferc:TaxesOtherThanIncomeTaxesUtilityOperatingIncome>
+    <ferc:UtilityOperatingExpenses id="f-282" contextRef="c-43" unitRef="u-02" decimals="0">14007388</ferc:UtilityOperatingExpenses>
+    <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-284" contextRef="c-62" unitRef="u-02" decimals="0">0</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+    <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-285" contextRef="c-64" unitRef="u-02" decimals="0">0</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+    <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-286" contextRef="c-65" unitRef="u-02" decimals="0">0</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+    <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-287" contextRef="c-66" unitRef="u-02" decimals="0">0</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+    <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-288" contextRef="c-67" unitRef="u-02" decimals="0">0</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+    <ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility id="f-289" contextRef="c-63" unitRef="u-02" decimals="0">52081748</ferc:AccumulatedProvisionForDepreciationAmortizationAndDepletionOfPlantUtility>
+    <ferc:AmortizationOfOtherUtilityPlantUtilityPlantInService id="f-290" contextRef="c-63" unitRef="u-02" decimals="0">949727</ferc:AmortizationOfOtherUtilityPlantUtilityPlantInService>
+    <ferc:AmortizationOfPlantAcquisitionAdjustment id="f-291" contextRef="c-63" unitRef="u-02" decimals="0">108640</ferc:AmortizationOfPlantAcquisitionAdjustment>
+    <ferc:ConstructionWorkInProgress id="f-292" contextRef="c-63" unitRef="u-02" decimals="0">26298937</ferc:ConstructionWorkInProgress>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-293" contextRef="c-62" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-294" contextRef="c-64" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-295" contextRef="c-65" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-296" contextRef="c-66" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-297" contextRef="c-67" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-298" contextRef="c-63" unitRef="u-02" decimals="0">51973108</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers id="f-299" contextRef="c-62" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers id="f-300" contextRef="c-63" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers id="f-301" contextRef="c-64" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers id="f-302" contextRef="c-65" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers id="f-303" contextRef="c-66" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers id="f-304" contextRef="c-67" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers>
+    <ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse id="f-305" contextRef="c-62" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse>
+    <ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse id="f-306" contextRef="c-63" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse>
+    <ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse id="f-307" contextRef="c-64" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse>
+    <ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse id="f-308" contextRef="c-65" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse>
+    <ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse id="f-309" contextRef="c-66" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse>
+    <ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse id="f-310" contextRef="c-67" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse>
+    <ferc:DepreciationUtilityPlantInService id="f-311" contextRef="c-63" unitRef="u-02" decimals="0">51023381</ferc:DepreciationUtilityPlantInService>
+    <ferc:UtilityPlantAcquisitionAdjustment id="f-312" contextRef="c-63" unitRef="u-02" decimals="0">303996</ferc:UtilityPlantAcquisitionAdjustment>
+    <ferc:UtilityPlantAndConstructionWorkInProgress id="f-313" contextRef="c-62" unitRef="u-02" decimals="0">0</ferc:UtilityPlantAndConstructionWorkInProgress>
+    <ferc:UtilityPlantAndConstructionWorkInProgress id="f-314" contextRef="c-64" unitRef="u-02" decimals="0">0</ferc:UtilityPlantAndConstructionWorkInProgress>
+    <ferc:UtilityPlantAndConstructionWorkInProgress id="f-315" contextRef="c-65" unitRef="u-02" decimals="0">0</ferc:UtilityPlantAndConstructionWorkInProgress>
+    <ferc:UtilityPlantAndConstructionWorkInProgress id="f-316" contextRef="c-66" unitRef="u-02" decimals="0">0</ferc:UtilityPlantAndConstructionWorkInProgress>
+    <ferc:UtilityPlantAndConstructionWorkInProgress id="f-317" contextRef="c-67" unitRef="u-02" decimals="0">0</ferc:UtilityPlantAndConstructionWorkInProgress>
+    <ferc:UtilityPlantAndConstructionWorkInProgress id="f-318" contextRef="c-63" unitRef="u-02" decimals="0">131100556</ferc:UtilityPlantAndConstructionWorkInProgress>
+    <ferc:UtilityPlantInServiceClassified id="f-319" contextRef="c-63" unitRef="u-02" decimals="0">104497623</ferc:UtilityPlantInServiceClassified>
+    <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-320" contextRef="c-62" unitRef="u-02" decimals="0">0</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+    <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-321" contextRef="c-64" unitRef="u-02" decimals="0">0</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+    <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-322" contextRef="c-65" unitRef="u-02" decimals="0">0</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+    <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-323" contextRef="c-66" unitRef="u-02" decimals="0">0</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+    <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-324" contextRef="c-67" unitRef="u-02" decimals="0">0</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+    <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-325" contextRef="c-63" unitRef="u-02" decimals="0">104497623</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+    <ferc:UtilityPlantNet id="f-326" contextRef="c-62" unitRef="u-02" decimals="0">0</ferc:UtilityPlantNet>
+    <ferc:UtilityPlantNet id="f-327" contextRef="c-64" unitRef="u-02" decimals="0">0</ferc:UtilityPlantNet>
+    <ferc:UtilityPlantNet id="f-328" contextRef="c-65" unitRef="u-02" decimals="0">0</ferc:UtilityPlantNet>
+    <ferc:UtilityPlantNet id="f-329" contextRef="c-66" unitRef="u-02" decimals="0">0</ferc:UtilityPlantNet>
+    <ferc:UtilityPlantNet id="f-330" contextRef="c-67" unitRef="u-02" decimals="0">0</ferc:UtilityPlantNet>
+    <ferc:UtilityPlantNet id="f-331" contextRef="c-63" unitRef="u-02" decimals="0">79018808</ferc:UtilityPlantNet>
+    <ferc:AbandonmentOfLeases id="f-333" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:AbandonmentOfLeases>
+    <ferc:AmortizationAndDepletionOfProducingNaturalGasLandAndLandRightsutilityPlantInService id="f-334" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:AmortizationAndDepletionOfProducingNaturalGasLandAndLandRightsutilityPlantInService>
+    <ferc:AmortizationAndDepletionUtilityPlantLeasedToOthers id="f-335" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:AmortizationAndDepletionUtilityPlantLeasedToOthers>
+    <ferc:AmortizationOfOtherUtilityPlantUtilityPlantInService id="f-336" contextRef="c-56" unitRef="u-02" decimals="0">949727</ferc:AmortizationOfOtherUtilityPlantUtilityPlantInService>
+    <ferc:AmortizationOfPlantAcquisitionAdjustment id="f-337" contextRef="c-56" unitRef="u-02" decimals="0">108640</ferc:AmortizationOfPlantAcquisitionAdjustment>
+    <ferc:AmortizationOfUndergroundStorageLandAndLandRightsutilityPlantInService id="f-338" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:AmortizationOfUndergroundStorageLandAndLandRightsutilityPlantInService>
+    <ferc:AmortizationUtilityPlantHeldForFutureUse id="f-339" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:AmortizationUtilityPlantHeldForFutureUse>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantInService id="f-340" contextRef="c-56" unitRef="u-02" decimals="0">51973108</ferc:DepreciationAmortizationAndDepletionUtilityPlantInService>
+    <ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers id="f-341" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:DepreciationAmortizationAndDepletionUtilityPlantLeasedToOthers>
+    <ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse id="f-342" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortizationUtilityPlantHeldForFutureUse>
+    <ferc:DepreciationUtilityPlantHeldForFutureUse id="f-343" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:DepreciationUtilityPlantHeldForFutureUse>
+    <ferc:DepreciationUtilityPlantInService id="f-344" contextRef="c-56" unitRef="u-02" decimals="0">51023381</ferc:DepreciationUtilityPlantInService>
+    <ferc:DepreciationUtilityPlantLeasedToOthers id="f-345" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:DepreciationUtilityPlantLeasedToOthers>
+    <ferc:UtilityPlantAcquisitionAdjustment id="f-346" contextRef="c-56" unitRef="u-02" decimals="0">303996</ferc:UtilityPlantAcquisitionAdjustment>
+    <ferc:UtilityPlantHeldForFutureUse id="f-347" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:UtilityPlantHeldForFutureUse>
+    <ferc:UtilityPlantInServiceClassified id="f-348" contextRef="c-56" unitRef="u-02" decimals="0">104497623</ferc:UtilityPlantInServiceClassified>
+    <ferc:UtilityPlantInServiceClassifiedAndUnclassified id="f-349" contextRef="c-56" unitRef="u-02" decimals="0">104497623</ferc:UtilityPlantInServiceClassifiedAndUnclassified>
+    <ferc:UtilityPlantInServiceCompletedConstructionNotClassified id="f-350" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:UtilityPlantInServiceCompletedConstructionNotClassified>
+    <ferc:UtilityPlantInServiceExperimentalPlantUnclassified id="f-351" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:UtilityPlantInServiceExperimentalPlantUnclassified>
+    <ferc:UtilityPlantInServicePlantPurchasedOrSold id="f-352" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:UtilityPlantInServicePlantPurchasedOrSold>
+    <ferc:UtilityPlantInServicePropertyUnderCapitalLeases id="f-353" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:UtilityPlantInServicePropertyUnderCapitalLeases>
+    <ferc:UtilityPlantLeasedToOthers id="f-354" contextRef="c-56" unitRef="u-02" decimals="0">0</ferc:UtilityPlantLeasedToOthers>
+    <ferc:AccumulatedDepreciationDistribution id="f-356" contextRef="c-56" unitRef="u-02" decimals="0">22628788</ferc:AccumulatedDepreciationDistribution>
+    <ferc:AccumulatedDepreciationGeneral id="f-357" contextRef="c-56" unitRef="u-02" decimals="0">3766791</ferc:AccumulatedDepreciationGeneral>
+    <ferc:AccumulatedDepreciationHydraulicProductionConventional id="f-358" contextRef="c-56" unitRef="u-02" decimals="0">12115107</ferc:AccumulatedDepreciationHydraulicProductionConventional>
+    <ferc:AccumulatedDepreciationOtherProduction id="f-359" contextRef="c-56" unitRef="u-02" decimals="0">6016515</ferc:AccumulatedDepreciationOtherProduction>
+    <ferc:AccumulatedDepreciationTransmission id="f-360" contextRef="c-56" unitRef="u-02" decimals="0">6496180</ferc:AccumulatedDepreciationTransmission>
+    <ferc:AccumulatedProvisionForDepreciationOfElectricUtilityPlant id="f-361" contextRef="c-56" unitRef="u-02" decimals="0">51973108</ferc:AccumulatedProvisionForDepreciationOfElectricUtilityPlant>
+    <ferc:DistributionPlant id="f-362" contextRef="c-56" unitRef="u-02" decimals="0">41362619</ferc:DistributionPlant>
+    <ferc:ElectricPlantInService id="f-363" contextRef="c-56" unitRef="u-02" decimals="0">104497623</ferc:ElectricPlantInService>
+    <ferc:GeneralPlantExcludingOtherTangiblePropertyAndAssetRetirementCostsForGeneralPlant id="f-364" contextRef="c-56" unitRef="u-02" decimals="0">6277159</ferc:GeneralPlantExcludingOtherTangiblePropertyAndAssetRetirementCostsForGeneralPlant>
+    <ferc:HydraulicProductionConventionalPlant id="f-365" contextRef="c-56" unitRef="u-02" decimals="0">26600071</ferc:HydraulicProductionConventionalPlant>
+    <ferc:IntangiblePlant id="f-366" contextRef="c-56" unitRef="u-02" decimals="0">5994237</ferc:IntangiblePlant>
+    <ferc:IntangiblePlantAccumulatedDepreciationAndAmortization id="f-367" contextRef="c-56" unitRef="u-02" decimals="0">949727</ferc:IntangiblePlantAccumulatedDepreciationAndAmortization>
+    <ferc:OtherProductionPlant id="f-368" contextRef="c-56" unitRef="u-02" decimals="0">7333880</ferc:OtherProductionPlant>
+    <ferc:TransmissionPlant id="f-369" contextRef="c-56" unitRef="u-02" decimals="0">16929657</ferc:TransmissionPlant>
+    <ferc:DecreaseInOtherRegulatoryLiabilities id="f-371" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:DecreaseInOtherRegulatoryLiabilities>
+    <ferc:IncreaseInOtherRegulatoryLiabilities id="f-372" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:IncreaseInOtherRegulatoryLiabilities>
+    <ferc:OtherRegulatoryLiabilities id="f-374" contextRef="c-69" unitRef="u-02" decimals="0">2059</ferc:OtherRegulatoryLiabilities>
+    <ferc:OtherRegulatoryLiabilities id="f-375" contextRef="c-70" unitRef="u-02" decimals="0">5057394</ferc:OtherRegulatoryLiabilities>
+    <ferc:DecreaseInOtherRegulatoryLiabilities id="f-376" contextRef="c-28" unitRef="u-02" decimals="0">0</ferc:DecreaseInOtherRegulatoryLiabilities>
+    <ferc:IncreaseInOtherRegulatoryLiabilities id="f-377" contextRef="c-28" unitRef="u-02" decimals="0">0</ferc:IncreaseInOtherRegulatoryLiabilities>
+    <ferc:OtherRegulatoryLiabilitiesDescriptionOfCreditedAccountNumberForDebitAdjustment id="f-378" contextRef="c-28">190</ferc:OtherRegulatoryLiabilitiesDescriptionOfCreditedAccountNumberForDebitAdjustment>
+    <ferc:DecreaseInOtherRegulatoryLiabilities id="f-379" contextRef="c-29" unitRef="u-02" decimals="0">0</ferc:DecreaseInOtherRegulatoryLiabilities>
+    <ferc:IncreaseInOtherRegulatoryLiabilities id="f-380" contextRef="c-29" unitRef="u-02" decimals="0">0</ferc:IncreaseInOtherRegulatoryLiabilities>
+    <ferc:OtherRegulatoryLiabilitiesDescriptionOfCreditedAccountNumberForDebitAdjustment id="f-381" contextRef="c-29">409</ferc:OtherRegulatoryLiabilitiesDescriptionOfCreditedAccountNumberForDebitAdjustment>
+    <ferc:ElectricOperatingRevenues id="f-383" contextRef="c-43" unitRef="u-02" decimals="0">16748173</ferc:ElectricOperatingRevenues>
+    <ferc:ForfeitedDiscounts id="f-384" contextRef="c-43" unitRef="u-02" decimals="0">12391</ferc:ForfeitedDiscounts>
+    <ferc:LargeOrIndustrialSalesElectricOperatingRevenue id="f-385" contextRef="c-43" unitRef="u-02" decimals="0">8581913</ferc:LargeOrIndustrialSalesElectricOperatingRevenue>
+    <ferc:MegawattHoursSoldRevenuesNetOfProvisionForRefunds id="f-386" contextRef="c-43" unitRef="u-05" decimals="0">219891</ferc:MegawattHoursSoldRevenuesNetOfProvisionForRefunds>
+    <ferc:MegawattHoursSoldSalesOfElectricity id="f-387" contextRef="c-43" unitRef="u-05" decimals="0">219891</ferc:MegawattHoursSoldSalesOfElectricity>
+    <ferc:MegawattHoursSoldSalesToUltimateConsumers id="f-388" contextRef="c-43" unitRef="u-05" decimals="0">176838</ferc:MegawattHoursSoldSalesToUltimateConsumers>
+    <ferc:OtherElectricRevenue id="f-389" contextRef="c-43" unitRef="u-02" decimals="0">53409</ferc:OtherElectricRevenue>
+    <ferc:OtherOperatingRevenues id="f-390" contextRef="c-43" unitRef="u-02" decimals="0">68050</ferc:OtherOperatingRevenues>
+    <ferc:PublicStreetAndHighwayLighting id="f-391" contextRef="c-43" unitRef="u-02" decimals="0">12437</ferc:PublicStreetAndHighwayLighting>
+    <ferc:RentFromElectricProperty id="f-392" contextRef="c-43" unitRef="u-02" decimals="0">2250</ferc:RentFromElectricProperty>
+    <ferc:ResidentialSales id="f-393" contextRef="c-43" unitRef="u-02" decimals="0">2893870</ferc:ResidentialSales>
+    <ferc:RevenuesNetOfProvisionForRefunds id="f-394" contextRef="c-43" unitRef="u-02" decimals="0">16680123</ferc:RevenuesNetOfProvisionForRefunds>
+    <ferc:SalesForResale id="f-395" contextRef="c-43" unitRef="u-02" decimals="0">4378589</ferc:SalesForResale>
+    <ferc:SalesOfElectricity id="f-396" contextRef="c-43" unitRef="u-02" decimals="0">16680123</ferc:SalesOfElectricity>
+    <ferc:SalesToUltimateConsumers id="f-397" contextRef="c-43" unitRef="u-02" decimals="0">12301534</ferc:SalesToUltimateConsumers>
+    <ferc:SmallOrCommercialSalesElectricOperatingRevenue id="f-398" contextRef="c-43" unitRef="u-02" decimals="0">813314</ferc:SmallOrCommercialSalesElectricOperatingRevenue>
+    <ferc:MegawattHoursSoldLargeOrIndustrial id="f-400" contextRef="c-43" unitRef="u-05" decimals="0">151750</ferc:MegawattHoursSoldLargeOrIndustrial>
+    <ferc:MegawattHoursSoldPublicStreetAndHighwayLighting id="f-401" contextRef="c-43" unitRef="u-05" decimals="0">62</ferc:MegawattHoursSoldPublicStreetAndHighwayLighting>
+    <ferc:MegawattHoursSoldResidentialSales id="f-402" contextRef="c-43" unitRef="u-05" decimals="0">19614</ferc:MegawattHoursSoldResidentialSales>
+    <ferc:MegawattHoursSoldSalesForResale id="f-403" contextRef="c-43" unitRef="u-05" decimals="0">43053</ferc:MegawattHoursSoldSalesForResale>
+    <ferc:MegawattHoursSoldSmallOrCommercial id="f-404" contextRef="c-43" unitRef="u-05" decimals="0">5412</ferc:MegawattHoursSoldSmallOrCommercial>
+    <ferc:DistributionExpenses id="f-406" contextRef="c-43" unitRef="u-02" decimals="0">285643</ferc:DistributionExpenses>
+    <ferc:DistributionMaintenanceExpenseElectric id="f-407" contextRef="c-43" unitRef="u-02" decimals="0">249756</ferc:DistributionMaintenanceExpenseElectric>
+    <ferc:DistributionOperationExpensesElectric id="f-408" contextRef="c-43" unitRef="u-02" decimals="0">35887</ferc:DistributionOperationExpensesElectric>
+    <ferc:EnergyStorageExpenses id="f-409" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:EnergyStorageExpenses>
+    <ferc:HydraulicPowerGenerationMaintenanceExpense id="f-410" contextRef="c-43" unitRef="u-02" decimals="0">193929</ferc:HydraulicPowerGenerationMaintenanceExpense>
+    <ferc:HydraulicPowerGenerationOperationsExpense id="f-411" contextRef="c-43" unitRef="u-02" decimals="0">464701</ferc:HydraulicPowerGenerationOperationsExpense>
+    <ferc:MaintenanceOfEnergyStorageEquipmentOtherPowerGeneration id="f-412" contextRef="c-43" unitRef="u-02" decimals="0">47126</ferc:MaintenanceOfEnergyStorageEquipmentOtherPowerGeneration>
+    <ferc:MaintenanceOfMiscellaneousOtherPowerGenerationPlant id="f-413" contextRef="c-43" unitRef="u-02" decimals="0">88883</ferc:MaintenanceOfMiscellaneousOtherPowerGenerationPlant>
+    <ferc:MaintenanceOfOverheadLinesTransmission id="f-414" contextRef="c-43" unitRef="u-02" decimals="0">32943</ferc:MaintenanceOfOverheadLinesTransmission>
+    <ferc:MaintenanceOfStationEquipmentTransmission id="f-415" contextRef="c-43" unitRef="u-02" decimals="0">5252</ferc:MaintenanceOfStationEquipmentTransmission>
+    <ferc:MaintenanceOfStructuresTransmissionExpense id="f-416" contextRef="c-43" unitRef="u-02" decimals="0">525</ferc:MaintenanceOfStructuresTransmissionExpense>
+    <ferc:MaintenanceSupervisionAndEngineeringElectricTransmissionExpenses id="f-417" contextRef="c-43" unitRef="u-02" decimals="0">15904</ferc:MaintenanceSupervisionAndEngineeringElectricTransmissionExpenses>
+    <ferc:MiscellaneousTransmissionExpenses id="f-418" contextRef="c-43" unitRef="u-02" decimals="0">1140</ferc:MiscellaneousTransmissionExpenses>
+    <ferc:OperationSupervisionAndEngineeringElectricTransmissionExpenses id="f-419" contextRef="c-43" unitRef="u-02" decimals="0">16713</ferc:OperationSupervisionAndEngineeringElectricTransmissionExpenses>
+    <ferc:OtherPowerSupplyExpense id="f-420" contextRef="c-43" unitRef="u-02" decimals="0">8989838</ferc:OtherPowerSupplyExpense>
+    <ferc:OverheadLineExpense id="f-421" contextRef="c-43" unitRef="u-02" decimals="0">11017</ferc:OverheadLineExpense>
+    <ferc:PowerProductionExpenses id="f-422" contextRef="c-43" unitRef="u-02" decimals="0">9737351</ferc:PowerProductionExpenses>
+    <ferc:PowerProductionExpensesHydraulicPower id="f-423" contextRef="c-43" unitRef="u-02" decimals="0">658630</ferc:PowerProductionExpensesHydraulicPower>
+    <ferc:PowerProductionExpensesNuclearPower id="f-424" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:PowerProductionExpensesNuclearPower>
+    <ferc:PowerProductionExpensesOtherRenewable id="f-425" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:PowerProductionExpensesOtherRenewable>
+    <ferc:PowerProductionExpensesSolarPower id="f-426" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:PowerProductionExpensesSolarPower>
+    <ferc:PowerProductionExpensesSteamPower id="f-427" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:PowerProductionExpensesSteamPower>
+    <ferc:PowerProductionExpensesWindPower id="f-428" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:PowerProductionExpensesWindPower>
+    <ferc:PurchasedPower id="f-429" contextRef="c-43" unitRef="u-02" decimals="0">8989838</ferc:PurchasedPower>
+    <ferc:RegionalMarketExpenses id="f-430" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:RegionalMarketExpenses>
+    <ferc:RegionalMarketMaintenanceExpense id="f-431" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:RegionalMarketMaintenanceExpense>
+    <ferc:RegionalMarketOperationExpense id="f-432" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:RegionalMarketOperationExpense>
+    <ferc:RentsOtherPowerGeneration id="f-433" contextRef="c-43" unitRef="u-02" decimals="0">41757</ferc:RentsOtherPowerGeneration>
+    <ferc:TransmissionExpenses id="f-434" contextRef="c-43" unitRef="u-02" decimals="0">83494</ferc:TransmissionExpenses>
+    <ferc:TransmissionMaintenanceExpenseElectric id="f-435" contextRef="c-43" unitRef="u-02" decimals="0">54624</ferc:TransmissionMaintenanceExpenseElectric>
+    <ferc:TransmissionOperationExpense id="f-436" contextRef="c-43" unitRef="u-02" decimals="0">28870</ferc:TransmissionOperationExpense>
+    <ferc:AdministrativeAndGeneralExpenses id="f-438" contextRef="c-43" unitRef="u-02" decimals="0">1326996</ferc:AdministrativeAndGeneralExpenses>
+    <ferc:AdministrativeAndGeneralMaintenanceExpenses id="f-439" contextRef="c-43" unitRef="u-02" decimals="0">71226</ferc:AdministrativeAndGeneralMaintenanceExpenses>
+    <ferc:AdministrativeAndGeneralOperationExpense id="f-440" contextRef="c-43" unitRef="u-02" decimals="0">1255770</ferc:AdministrativeAndGeneralOperationExpense>
+    <ferc:AdministrativeAndGeneralSalaries id="f-441" contextRef="c-43" unitRef="u-02" decimals="0">368069</ferc:AdministrativeAndGeneralSalaries>
+    <ferc:AdministrativeExpensesTransferredCredit id="f-442" contextRef="c-43" unitRef="u-02" decimals="0">8004</ferc:AdministrativeExpensesTransferredCredit>
+    <ferc:CustomerAccountExpenses id="f-443" contextRef="c-43" unitRef="u-02" decimals="0">118376</ferc:CustomerAccountExpenses>
+    <ferc:CustomerServiceAndInformationExpenses id="f-444" contextRef="c-43" unitRef="u-02" decimals="0">1374</ferc:CustomerServiceAndInformationExpenses>
+    <ferc:EmployeePensionsAndBenefits id="f-445" contextRef="c-43" unitRef="u-02" decimals="0">391910</ferc:EmployeePensionsAndBenefits>
+    <ferc:GeneralAdvertisingExpenses id="f-446" contextRef="c-43" unitRef="u-02" decimals="0">8594</ferc:GeneralAdvertisingExpenses>
+    <ferc:InjuriesAndDamages id="f-447" contextRef="c-43" unitRef="u-02" decimals="0">13620</ferc:InjuriesAndDamages>
+    <ferc:MaintenanceOfGeneralPlant id="f-448" contextRef="c-43" unitRef="u-02" decimals="0">71226</ferc:MaintenanceOfGeneralPlant>
+    <ferc:MiscellaneousGeneralExpenses id="f-449" contextRef="c-43" unitRef="u-02" decimals="0">12635</ferc:MiscellaneousGeneralExpenses>
+    <ferc:OfficeSuppliesAndExpenses id="f-450" contextRef="c-43" unitRef="u-02" decimals="0">13397</ferc:OfficeSuppliesAndExpenses>
+    <ferc:OutsideServicesEmployed id="f-451" contextRef="c-43" unitRef="u-02" decimals="0">235459</ferc:OutsideServicesEmployed>
+    <ferc:PropertyInsurance id="f-452" contextRef="c-43" unitRef="u-02" decimals="0">164683</ferc:PropertyInsurance>
+    <ferc:RegulatoryCommissionExpenses id="f-453" contextRef="c-43" unitRef="u-02" decimals="0">52250</ferc:RegulatoryCommissionExpenses>
+    <ferc:RentsAdministrativeAndGeneralExpense id="f-454" contextRef="c-43" unitRef="u-02" decimals="0">3157</ferc:RentsAdministrativeAndGeneralExpense>
+    <ferc:SalesExpenses id="f-455" contextRef="c-43" unitRef="u-02" decimals="0">200</ferc:SalesExpenses>
+    <ferc:AmortizationOfLimitedTermPlantOrProperty id="f-457" contextRef="c-78" unitRef="u-02" decimals="0">63139</ferc:AmortizationOfLimitedTermPlantOrProperty>
+    <ferc:AmortizationOfLimitedTermPlantOrProperty id="f-458" contextRef="c-58" unitRef="u-02" decimals="0">63139</ferc:AmortizationOfLimitedTermPlantOrProperty>
+    <ferc:AmortizationOfOtherElectricPlant id="f-459" contextRef="c-58" unitRef="u-02" decimals="0">0</ferc:AmortizationOfOtherElectricPlant>
+    <ferc:DepreciationAndAmortization id="f-460" contextRef="c-72" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-461" contextRef="c-74" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-462" contextRef="c-77" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-463" contextRef="c-79" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-464" contextRef="c-81" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-465" contextRef="c-82" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-466" contextRef="c-83" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-467" contextRef="c-85" unitRef="u-02" decimals="0">0</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-468" contextRef="c-84" unitRef="u-02" decimals="0">112801</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-469" contextRef="c-75" unitRef="u-02" decimals="0">13807</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-470" contextRef="c-76" unitRef="u-02" decimals="0">138178</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-471" contextRef="c-73" unitRef="u-02" decimals="0">303750</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-472" contextRef="c-80" unitRef="u-02" decimals="0">59505</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-473" contextRef="c-78" unitRef="u-02" decimals="0">63139</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationAndAmortization id="f-474" contextRef="c-58" unitRef="u-02" decimals="0">691180</ferc:DepreciationAndAmortization>
+    <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-475" contextRef="c-84" unitRef="u-02" decimals="0">112801</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+    <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-476" contextRef="c-75" unitRef="u-02" decimals="0">13807</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+    <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-477" contextRef="c-76" unitRef="u-02" decimals="0">138178</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+    <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-478" contextRef="c-73" unitRef="u-02" decimals="0">303750</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+    <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-479" contextRef="c-80" unitRef="u-02" decimals="0">59505</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+    <ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments id="f-480" contextRef="c-58" unitRef="u-02" decimals="0">628041</ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments>
+    <ferc:DepreciationExpenseForAssetRetirementCostsExcludingAmortizationgOfAcquisitionAdjustments id="f-481" contextRef="c-58" unitRef="u-02" decimals="0">0</ferc:DepreciationExpenseForAssetRetirementCostsExcludingAmortizationgOfAcquisitionAdjustments>
+    <ferc:DayOfMonthlyPeakExcludingIsoAndRto id="f-483" contextRef="c-90" unitRef="u-01" decimals="0">17</ferc:DayOfMonthlyPeakExcludingIsoAndRto>
+    <ferc:DayOfMonthlyPeakExcludingIsoAndRto id="f-484" contextRef="c-89" unitRef="u-01" decimals="0">27</ferc:DayOfMonthlyPeakExcludingIsoAndRto>
+    <ferc:DayOfMonthlyPeakExcludingIsoAndRto id="f-485" contextRef="c-88" unitRef="u-01" decimals="0">3</ferc:DayOfMonthlyPeakExcludingIsoAndRto>
+    <ferc:FirmNetworkServiceForOther id="f-486" contextRef="c-91" unitRef="u-06" decimals="0">198666</ferc:FirmNetworkServiceForOther>
+    <ferc:FirmNetworkServiceForOther id="f-487" contextRef="c-87" unitRef="u-06" decimals="0">198666</ferc:FirmNetworkServiceForOther>
+    <ferc:FirmNetworkServiceForOther id="f-488" contextRef="c-88" unitRef="u-06" decimals="0">48992</ferc:FirmNetworkServiceForOther>
+    <ferc:FirmNetworkServiceForOther id="f-489" contextRef="c-89" unitRef="u-06" decimals="0">54559</ferc:FirmNetworkServiceForOther>
+    <ferc:FirmNetworkServiceForOther id="f-490" contextRef="c-90" unitRef="u-06" decimals="0">95115</ferc:FirmNetworkServiceForOther>
+    <ferc:HourOfMonthlyPeakExcludingIsoAndRto id="f-491" contextRef="c-88" unitRef="u-01" decimals="0">8</ferc:HourOfMonthlyPeakExcludingIsoAndRto>
+    <ferc:HourOfMonthlyPeakExcludingIsoAndRto id="f-492" contextRef="c-89" unitRef="u-01" decimals="0">9</ferc:HourOfMonthlyPeakExcludingIsoAndRto>
+    <ferc:HourOfMonthlyPeakExcludingIsoAndRto id="f-493" contextRef="c-90" unitRef="u-01" decimals="0">9</ferc:HourOfMonthlyPeakExcludingIsoAndRto>
+    <ferc:MonthlyPeakLoadExcludingIsoAndRto id="f-494" contextRef="c-88" unitRef="u-06" decimals="0">48992</ferc:MonthlyPeakLoadExcludingIsoAndRto>
+    <ferc:MonthlyPeakLoadExcludingIsoAndRto id="f-495" contextRef="c-89" unitRef="u-06" decimals="0">54559</ferc:MonthlyPeakLoadExcludingIsoAndRto>
+    <ferc:MonthlyPeakLoadExcludingIsoAndRto id="f-496" contextRef="c-90" unitRef="u-06" decimals="0">95115</ferc:MonthlyPeakLoadExcludingIsoAndRto>
+    <ferc:NameOfSystem id="f-497" contextRef="c-87">Lockhart Power Co</ferc:NameOfSystem>
+    <ferc:AppropriationsOfRetainedEarnings id="f-499" contextRef="c-10" unitRef="u-02" decimals="0">-263231</ferc:AppropriationsOfRetainedEarnings>
+    <ferc:AppropriationsOfRetainedEarnings id="f-500" contextRef="c-11" unitRef="u-02" decimals="0">-70341</ferc:AppropriationsOfRetainedEarnings>
+    <ferc:AppropriationsOfRetainedEarnings id="f-502" contextRef="c-43" unitRef="u-02" decimals="0">-333572</ferc:AppropriationsOfRetainedEarnings>
+    <ferc:DividendsDeclaredCommonStock id="f-503" contextRef="c-43" unitRef="u-02" decimals="0">-2877678</ferc:DividendsDeclaredCommonStock>
+    <ferc:AppropriatedRetainedEarningsAmortizationReserveFederal id="f-504" contextRef="c-56" unitRef="u-02" decimals="0">5884225</ferc:AppropriatedRetainedEarningsAmortizationReserveFederal>
+    <ferc:AppropriatedRetainedEarningsIncludingReserveAmortization id="f-505" contextRef="c-56" unitRef="u-02" decimals="0">5884225</ferc:AppropriatedRetainedEarningsIncludingReserveAmortization>
+    <ferc:UnappropriatedRetainedEarnings id="f-506" contextRef="c-56" unitRef="u-02" decimals="0">67320594</ferc:UnappropriatedRetainedEarnings>
+    <ferc:DividendsDeclaredCommonStock id="f-508" contextRef="c-12" unitRef="u-02" decimals="0">-2877678</ferc:DividendsDeclaredCommonStock>
+    <ferc:BalanceTransferredFromIncome id="f-510" contextRef="c-43" unitRef="u-02" decimals="0">2806690</ferc:BalanceTransferredFromIncome>
+    <ferc:DayOfMonthlyPeak id="f-512" contextRef="c-90" unitRef="u-01" decimals="0">19</ferc:DayOfMonthlyPeak>
+    <ferc:DayOfMonthlyPeak id="f-513" contextRef="c-88" unitRef="u-01" decimals="0">3</ferc:DayOfMonthlyPeak>
+    <ferc:DayOfMonthlyPeak id="f-514" contextRef="c-89" unitRef="u-01" decimals="0">30</ferc:DayOfMonthlyPeak>
+    <ferc:EnergyActivity id="f-515" contextRef="c-91" unitRef="u-05" decimals="0">216457</ferc:EnergyActivity>
+    <ferc:EnergyActivity id="f-516" contextRef="c-90" unitRef="u-05" decimals="0">66387</ferc:EnergyActivity>
+    <ferc:EnergyActivity id="f-517" contextRef="c-88" unitRef="u-05" decimals="0">69824</ferc:EnergyActivity>
+    <ferc:EnergyActivity id="f-518" contextRef="c-89" unitRef="u-05" decimals="0">80246</ferc:EnergyActivity>
+    <ferc:HourOfMonthlyPeak id="f-519" contextRef="c-88" unitRef="u-01" decimals="0">8</ferc:HourOfMonthlyPeak>
+    <ferc:HourOfMonthlyPeak id="f-520" contextRef="c-89" unitRef="u-01" decimals="0">8</ferc:HourOfMonthlyPeak>
+    <ferc:HourOfMonthlyPeak id="f-521" contextRef="c-90" unitRef="u-01" decimals="0">8</ferc:HourOfMonthlyPeak>
+    <ferc:MonthlyPeakLoad id="f-522" contextRef="c-90" unitRef="u-06" decimals="0">70913</ferc:MonthlyPeakLoad>
+    <ferc:MonthlyPeakLoad id="f-523" contextRef="c-88" unitRef="u-06" decimals="0">73715</ferc:MonthlyPeakLoad>
+    <ferc:MonthlyPeakLoad id="f-524" contextRef="c-89" unitRef="u-06" decimals="0">85495</ferc:MonthlyPeakLoad>
+    <ferc:NonRequiredSalesForResaleEnergy id="f-525" contextRef="c-91" unitRef="u-05" decimals="0">13666</ferc:NonRequiredSalesForResaleEnergy>
+    <ferc:NonRequiredSalesForResaleEnergy id="f-526" contextRef="c-88" unitRef="u-05" decimals="0">3891</ferc:NonRequiredSalesForResaleEnergy>
+    <ferc:NonRequiredSalesForResaleEnergy id="f-527" contextRef="c-90" unitRef="u-05" decimals="0">4526</ferc:NonRequiredSalesForResaleEnergy>
+    <ferc:NonRequiredSalesForResaleEnergy id="f-528" contextRef="c-89" unitRef="u-05" decimals="0">5249</ferc:NonRequiredSalesForResaleEnergy>
+    <ferc:DescriptionOfStudyPerformed id="f-530" contextRef="c-96">200MW Substation</ferc:DescriptionOfStudyPerformed>
+    <ferc:DescriptionOfStudyPerformed id="f-531" contextRef="c-95">Data Feasibility Study</ferc:DescriptionOfStudyPerformed>
+    <ferc:OrderNumber id="f-532" contextRef="c-93" unitRef="u-01" decimals="0">1</ferc:OrderNumber>
+    <ferc:OrderNumber id="f-533" contextRef="c-94" unitRef="u-01" decimals="0">2</ferc:OrderNumber>
+    <ferc:StudyCostsAccountCharged id="f-534" contextRef="c-95">183001016</ferc:StudyCostsAccountCharged>
+    <ferc:StudyCostsAccountCharged id="f-535" contextRef="c-96">183001016, 183001002</ferc:StudyCostsAccountCharged>
+    <ferc:StudyCostsIncurred id="f-536" contextRef="c-96" unitRef="u-02" decimals="0">10911</ferc:StudyCostsIncurred>
+    <ferc:StudyCostsIncurred id="f-537" contextRef="c-95" unitRef="u-02" decimals="0">5389</ferc:StudyCostsIncurred>
+    <ferc:StudyCostsIncurred id="f-539" contextRef="c-43" unitRef="u-02" decimals="0">31899</ferc:StudyCostsIncurred>
+    <ferc:StudyCostsIncurred id="f-540" contextRef="c-98" unitRef="u-02" decimals="0">16300</ferc:StudyCostsIncurred>
+    <ferc:StudyCostsReimbursements id="f-541" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:StudyCostsReimbursements>
+    <ferc:StudyCostsReimbursements id="f-542" contextRef="c-98" unitRef="u-02" decimals="0">0</ferc:StudyCostsReimbursements>
+    <ferc:DescriptionOfStudyPerformed id="f-544" contextRef="c-101">Engineering and DPP Support</ferc:DescriptionOfStudyPerformed>
+    <ferc:OrderNumber id="f-545" contextRef="c-100" unitRef="u-01" decimals="0">1</ferc:OrderNumber>
+    <ferc:StudyCostsAccountCharged id="f-546" contextRef="c-101">183001002</ferc:StudyCostsAccountCharged>
+    <ferc:StudyCostsIncurred id="f-547" contextRef="c-101" unitRef="u-02" decimals="0">515</ferc:StudyCostsIncurred>
+    <ferc:StudyCostsIncurred id="f-549" contextRef="c-103" unitRef="u-02" decimals="0">15599</ferc:StudyCostsIncurred>
+    <ferc:StudyCostsReimbursements id="f-550" contextRef="c-103" unitRef="u-02" decimals="0">0</ferc:StudyCostsReimbursements>
+    <ferc:DescriptionOfStudyPerformed id="f-552" contextRef="c-107">Engineering Services at Dam</ferc:DescriptionOfStudyPerformed>
+    <ferc:DescriptionOfStudyPerformed id="f-553" contextRef="c-108">Piezometer Engineering</ferc:DescriptionOfStudyPerformed>
+    <ferc:OrderNumber id="f-554" contextRef="c-105" unitRef="u-01" decimals="0">2</ferc:OrderNumber>
+    <ferc:OrderNumber id="f-555" contextRef="c-106" unitRef="u-01" decimals="0">3</ferc:OrderNumber>
+    <ferc:StudyCostsAccountCharged id="f-556" contextRef="c-107">183001002</ferc:StudyCostsAccountCharged>
+    <ferc:StudyCostsAccountCharged id="f-557" contextRef="c-108">183001002</ferc:StudyCostsAccountCharged>
+    <ferc:StudyCostsIncurred id="f-558" contextRef="c-108" unitRef="u-02" decimals="0">11971</ferc:StudyCostsIncurred>
+    <ferc:StudyCostsIncurred id="f-559" contextRef="c-107" unitRef="u-02" decimals="0">3113</ferc:StudyCostsIncurred>
+    <ferc:CorporateOfficerCertificationSignature id="f-561" contextRef="c-43">Bryan D. Stone</ferc:CorporateOfficerCertificationSignature>
+    <ferc:CashAndCashEquivalents id="f-563" contextRef="c-56" unitRef="u-02" decimals="0">746690</ferc:CashAndCashEquivalents>
+    <ferc:CashProvidedByOutsideSources id="f-564" contextRef="c-02" unitRef="u-02" decimals="0">0</ferc:CashProvidedByOutsideSources>
+    <ferc:CashFlowsProvidedFromUsedInFinancingActivities id="f-565" contextRef="c-43" unitRef="u-02" decimals="0">2877678</ferc:CashFlowsProvidedFromUsedInFinancingActivities>
+    <ferc:CashFlowsProvidedFromUsedInInvestmentActivities id="f-566" contextRef="c-43" unitRef="u-02" decimals="0">-9153981</ferc:CashFlowsProvidedFromUsedInInvestmentActivities>
+    <ferc:CashOutflowsForPlant id="f-567" contextRef="c-43" unitRef="u-02" decimals="0">9187742</ferc:CashOutflowsForPlant>
+    <ferc:CashProvidedByOutsideSources id="f-568" contextRef="c-43" unitRef="u-02" decimals="0">0</ferc:CashProvidedByOutsideSources>
+    <ferc:DepreciationAndDepletion id="f-569" contextRef="c-43" unitRef="u-02" decimals="0">692635</ferc:DepreciationAndDepletion>
+    <ferc:DividendsOnCommonStock id="f-570" contextRef="c-43" unitRef="u-02" decimals="0">-2877678</ferc:DividendsOnCommonStock>
+    <ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities id="f-571" contextRef="c-43" unitRef="u-02" decimals="0">9179991</ferc:GrossAdditionsToUtilityPlantLessNuclearFuelInvestingActivities>
+    <ferc:NetCashFlowFromOperatingActivities id="f-572" contextRef="c-43" unitRef="u-02" decimals="0">6208463</ferc:NetCashFlowFromOperatingActivities>
+    <ferc:NetIncreaseDecreaseInCashAndCashEquivalents id="f-573" contextRef="c-43" unitRef="u-02" decimals="0">-67840</ferc:NetIncreaseDecreaseInCashAndCashEquivalents>
+    <ferc:NetIncreaseDecreaseInInventoryOperatingActivities id="f-574" contextRef="c-43" unitRef="u-02" decimals="0">-49804</ferc:NetIncreaseDecreaseInInventoryOperatingActivities>
+    <ferc:NetIncreaseDecreaseInOtherRegulatoryAssetsOperatingActivities id="f-575" contextRef="c-43" unitRef="u-02" decimals="0">-21798</ferc:NetIncreaseDecreaseInOtherRegulatoryAssetsOperatingActivities>
+    <ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities id="f-576" contextRef="c-43" unitRef="u-02" decimals="0">-471644</ferc:NetIncreaseDecreaseInPayablesAndAccruedExpensesOperatingActivities>
+    <ferc:NetIncreaseDecreaseInReceivablesOperatingActivities id="f-577" contextRef="c-43" unitRef="u-02" decimals="0">-3067193</ferc:NetIncreaseDecreaseInReceivablesOperatingActivities>
+    <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities id="f-579" contextRef="c-13" unitRef="u-02" decimals="0">59208</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivities>
+    <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities id="f-581" contextRef="c-14" unitRef="u-02" decimals="0">79629</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivities>
+    <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities id="f-583" contextRef="c-20" unitRef="u-02" decimals="0">7751</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivities>
+    <ferc:InvestmentsInAndAdvancesToAssociatedAndSubsidiaryCompanies id="f-585" contextRef="c-43" unitRef="u-02" decimals="0">-33761</ferc:InvestmentsInAndAdvancesToAssociatedAndSubsidiaryCompanies>
+    <ferc:AttestationDate id="f-587" contextRef="c-43">2026-04-17</ferc:AttestationDate>
+</xbrl>

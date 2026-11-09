@@ -1,0 +1,2086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2026 Workiva-->
+<!--r:019d9bf9-ccb8-7d5b-811d-65ff70702089,g:0ce20d33-0037-4b4d-baf5-ed1907aa0c11-->
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ferc="http://ferc.gov/form/2025-04-01/ferc" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <link:schemaRef xlink:href="https://eCollection.ferc.gov/taxonomy/form2/2025-04-01/form/form2A/form-2A_2025-04-01.xsd" xlink:type="simple"/>
+  <xbrli:unit id="u-1">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-2">
+    <xbrli:measure>iso4217:USD</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-3">
+    <xbrli:measure>utr:dth</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:context id="c-1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-2">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleSecurityHoldersAndVotingPowersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-3">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleImportantChangesDuringTheQuarterYearAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-4">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleComparativeBalanceSheetAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-5">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleComparativeBalanceSheetAssetsAndOtherDebitsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-6">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleComparativeBalanceSheetLiabilitiesOtherCreditsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-7">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfIncomeAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-8">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-9">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfRetainedEarningsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-10">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfCashFlowsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-11">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleNotesToFinancialStatementsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-12">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasPlantInServiceAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-13">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGeneralInformationOnPlantAndOperationsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-14">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasPropertyAndCapacityLeasedFromOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-15">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasPropertyAndCapacityLeasedToOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-16">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleNonTraditionalRateTreatmentAffordedNewProjectsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-17">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedProvisionForDepreciationOfGasUtilityPlantAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-18">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherRegulatoryAssetsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-19">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedDeferredIncomeTaxesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-20">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleCapitalStockAndLongTermDebtDataAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-21">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTaxesAccruedPrepaidAndChargedDuringYearDistributionOfTaxesChargedAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-22">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedDeferredIncomeTaxesOtherPropertyAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-23">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedDeferredIncomeTaxesOtherAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-24">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherRegulatoryLiabilitiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-25">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasOperatingRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-26">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherGasRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-27">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleDiscountedRateServicesAndNegotiatedRateServicesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-28">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasOperationAndMaintenanceExpensesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-29">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleEmployeePensionsAndBenefitsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-30">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleChargesForOutsideProfessionalAndOtherConsultativeServicesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-31">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransactionsWithAssociatedAffiliatedCompaniesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-32">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleShipperSuppliedGasForTheCurrentQuarterAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-33">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleSystemMapsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-34">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-35">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-36">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsAdjustmentsAxis">
+          <ferc:RetainedEarningsAdjustmentDomain>TOTAL Credits to Retained Earnings (Account 439) (footnote details)</ferc:RetainedEarningsAdjustmentDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-37">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsAdjustmentsAxis">
+          <ferc:RetainedEarningsAdjustmentDomain>TOTAL Debits to Retained Earnings (Account 439) (footnote details)</ferc:RetainedEarningsAdjustmentDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-38">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsAdjustmentsAxis">
+          <ferc:RetainedEarningsAdjustmentDomain>TOTAL Credits to Retained Earnings (Account 439) (footnote details)</ferc:RetainedEarningsAdjustmentDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-39">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsAdjustmentsAxis">
+          <ferc:RetainedEarningsAdjustmentDomain>TOTAL Debits to Retained Earnings (Account 439) (footnote details)</ferc:RetainedEarningsAdjustmentDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-40">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-41">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:AppropriatedRetainedEarningsAxis">
+          <ferc:AppropriatedRetainedEarningsDomain>TOTAL Appropriations of Retained Earnings (Account 436) (footnote details)</ferc:AppropriatedRetainedEarningsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-42">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:AppropriatedRetainedEarningsAxis">
+          <ferc:AppropriatedRetainedEarningsDomain>TOTAL Appropriations of Retained Earnings (Account 436) (footnote details)</ferc:AppropriatedRetainedEarningsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-43">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsPreferredStockAxis">
+          <ferc:RetainedEarningsPreferredStockDomain>TOTAL Dividends Declared-Preferred Stock (Account 437) (footnote details)</ferc:RetainedEarningsPreferredStockDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-44">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsPreferredStockAxis">
+          <ferc:RetainedEarningsPreferredStockDomain>TOTAL Dividends Declared-Preferred Stock (Account 437) (footnote details)</ferc:RetainedEarningsPreferredStockDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-45">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsCommonStockAxis">
+          <ferc:RetainedEarningsCommonStockDomain>TOTAL Dividends Declared-Common Stock (Account 438) (footnote details)</ferc:RetainedEarningsCommonStockDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-46">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsCommonStockAxis">
+          <ferc:RetainedEarningsCommonStockDomain>Cash Distribution</ferc:RetainedEarningsCommonStockDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-47">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsCommonStockAxis">
+          <ferc:RetainedEarningsCommonStockDomain>TOTAL Dividends Declared-Common Stock (Account 438) (footnote details)</ferc:RetainedEarningsCommonStockDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-48">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-49">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsAxis">
+          <ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>Other Changes (Explain)</ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-50">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsAxis">
+          <ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>Other Changes (Explain)</ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2024-01-01</xbrli:startDate>
+      <xbrli:endDate>2024-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-51">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Amortization of (Specify) (footnote details)</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-52">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Other (footnote details):</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-53">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Imbalances, Net</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-54">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Prepayments</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-55">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Asset Retirement Obligation</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-56">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Other, Net</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-57">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesAxis">
+          <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>Other (footnote details):</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-58">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>Other (footnote details):</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-59">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>Net Retirements</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-60">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>Other (footnote details):</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-61">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>Other (footnote details):</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-62">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>Return of Capital To Partners</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-63">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherClearingAccountsAxis">
+          <ferc:OtherClearingAccountsDomain>Other Clearing (Specify) (footnote details):</ferc:OtherClearingAccountsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-64">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherDebitOrCreditItemsAxis">
+          <ferc:OtherDebitOrCreditItemsDomain>Other Debit or Credit Items (Describe) (footnote details):</ferc:OtherDebitOrCreditItemsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-65">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OtherUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-66">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:NonUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-67">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Federal Income, Federal Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-68">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Federal Income, Federal Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-69">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:FederalTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-70">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:FederalTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-71">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina-Income, State Tax, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-72">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina-Income, State Tax, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-73">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:StateTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-74">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:StateTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-75">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina - Property, Property Tax, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-76">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina - Property, Property Tax, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-77">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina - Property, Property Tax, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-78">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:PropertyTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-79">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:PropertyTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-80">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:PropertyTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-81">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Taxes Paid to Members, Miscellaneous Other Tax, ,</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-82">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Taxes Paid to Members, Miscellaneous Other Tax, ,</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-83">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Taxes Paid to Members, Miscellaneous Other Tax, ,</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-84">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:MiscellaneousOtherTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-85">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:MiscellaneousOtherTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-86">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:MiscellaneousOtherTaxMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-87">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>FICA, Payroll Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-88">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Federal Unemployement, Payroll Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-89">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Federal Medicare, Payroll Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-90">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina - Unemployment, Payroll Tax, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-91">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>FICA, Payroll Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-92">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Federal Unemployement, Payroll Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-93">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Federal Medicare, Payroll Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-94">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina - Unemployment, Payroll Tax, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-95">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>FICA, Payroll Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-96">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Federal Unemployement, Payroll Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-97">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Federal Medicare, Payroll Tax, US Federal, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-98">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina - Unemployment, Payroll Tax, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-99">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:PayrollTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-100">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:PayrollTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-101">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:PayrollTaxMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-102">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:PayrollTaxMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-103">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina - Use, Other Taxes and Fees, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-104">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>Miscellaneous - Use, Other Taxes and Fees, N/A, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-105">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:TaxesAccruedPrepaidAndChargedAxis">
+          <ferc:TaxesAccruedPrepaidAndChargedDomain>North Carolina - Use, Other Taxes and Fees, North Carolina, 2025</ferc:TaxesAccruedPrepaidAndChargedDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-106">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:OtherTaxesAndFeesMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2024-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-107">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:OtherTaxesAndFeesMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-108">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:OtherTaxesAndFeesMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-109">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:KindOfTaxAxis">ferc:OtherTaxesAndFeesMember</xbrldi:explicitMember>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:GasUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-110">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OperatingUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-111">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>Fuel Tracker Deferral and Carrying Costs</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-112">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>Electric Power Tracker and Carrying Costs</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-113">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>Deferred Tax Rate Base</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-114">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRegulatoryLiabilityAxis">
+          <ferc:OtherRegulatoryLiabilityDomain>Deferred Tax Rate Base - 2021</ferc:OtherRegulatoryLiabilityDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-115">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherGasRevenuesAxis">
+          <ferc:OtherGasRevenuesDomain>Other revenues (Specify):</ferc:OtherGasRevenuesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-116">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:DiscountedRateServicesAndNegotiatedRateServicesAxis">
+          <ferc:DiscountedRateServicesAndNegotiatedRateServicesDomain>Account 489.1, Revenues from transportation of gas of others through gathering facilities.</ferc:DiscountedRateServicesAndNegotiatedRateServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-117">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:DiscountedRateServicesAndNegotiatedRateServicesAxis">
+          <ferc:DiscountedRateServicesAndNegotiatedRateServicesDomain>Account 489.2, Revenues from transportation of gas of others through transmission facilities</ferc:DiscountedRateServicesAndNegotiatedRateServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-118">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:DiscountedRateServicesAndNegotiatedRateServicesAxis">
+          <ferc:DiscountedRateServicesAndNegotiatedRateServicesDomain>Account 489.4, Revenues from storing gas of others.</ferc:DiscountedRateServicesAndNegotiatedRateServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-119">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:DiscountedRateServicesAndNegotiatedRateServicesAxis">
+          <ferc:DiscountedRateServicesAndNegotiatedRateServicesDomain>Account 495, Other gas revenues.</ferc:DiscountedRateServicesAndNegotiatedRateServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-120">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherEmployeePensionsAndBenefitsAxis">
+          <ferc:OtherEmployeePensionsAndBenefitsDomain>Other (Specify)</ferc:OtherEmployeePensionsAndBenefitsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-121">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>Other</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-122">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesAxis">
+          <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>Total</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServicesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-123">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:SystemNameAxis">
+          <ferc:SystemNameDomain>Monroe Gas Storage Company, LLC</ferc:SystemNameDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-124">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:SystemNameAxis">
+          <ferc:SystemNameDomain>Monroe Gas Storage Company, LLC</ferc:SystemNameDomain>
+        </xbrldi:typedMember>
+        <xbrldi:typedMember dimension="ferc:TypeOfGasUsagesForOtherOperationsAxis">
+          <ferc:TypeOfGasUsagesForOtherOperationsDomain>Other Deliveries and Gas Used for Other Operations</ferc:TypeOfGasUsagesForOtherOperationsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-125">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-10-01</xbrli:startDate>
+      <xbrli:endDate>2025-10-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-126">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherGasAcquiredToMeetDeficiencyAxis">
+          <ferc:OtherGasAcquiredToMeetDeficiencyDomain>Gas Used to Meet Imbalances</ferc:OtherGasAcquiredToMeetDeficiencyDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-10-01</xbrli:startDate>
+      <xbrli:endDate>2025-10-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-127">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherGasAcquiredToMeetDeficiencyAxis">
+          <ferc:OtherGasAcquiredToMeetDeficiencyDomain>Gas Used to Meet Imbalances</ferc:OtherGasAcquiredToMeetDeficiencyDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-11-01</xbrli:startDate>
+      <xbrli:endDate>2025-11-30</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-128">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001591</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherGasAcquiredToMeetDeficiencyAxis">
+          <ferc:OtherGasAcquiredToMeetDeficiencyDomain>Gas Used to Meet Imbalances</ferc:OtherGasAcquiredToMeetDeficiencyDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-12-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <ferc:DisclosureOfChangesInAndImportantAdditionsToFranchiseRightsTextBlock id="f-1" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;1. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfChangesInAndImportantAdditionsToFranchiseRightsTextBlock>
+  <ferc:DisclosureOfAcquisitionOfOwnershipInOtherCompaniesByReorganizationMergerOrConsolidationWithOtherCompaniesTextBlock id="f-2" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;2. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfAcquisitionOfOwnershipInOtherCompaniesByReorganizationMergerOrConsolidationWithOtherCompaniesTextBlock>
+  <ferc:DisclosureOfPurchaseOrSaleOfAnOperatingUnitOrSystemTextBlock id="f-3" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;3. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfPurchaseOrSaleOfAnOperatingUnitOrSystemTextBlock>
+  <ferc:DisclosureOfImportantLeaseholdsThatHaveBeenAcquiredOrGivenAssignedOrSurrenderedTextBlock id="f-4" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;4. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfImportantLeaseholdsThatHaveBeenAcquiredOrGivenAssignedOrSurrenderedTextBlock>
+  <ferc:DisclosureOfImportantExtensionOrReductionOfTransmissionOrDistributionSystemTextBlock id="f-5" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;5. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfImportantExtensionOrReductionOfTransmissionOrDistributionSystemTextBlock>
+  <ferc:DisclosureOfObligationsIncurredOrAssumedByRespondentAsGuarantorForThePerformanceByAnotherOfAnyAgreementOrObligationTextBlock id="f-6" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;6. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfObligationsIncurredOrAssumedByRespondentAsGuarantorForThePerformanceByAnotherOfAnyAgreementOrObligationTextBlock>
+  <ferc:DisclosureOfChangesInArticlesOfIncorporationOrAmendmentsToCharterTextBlock id="f-7" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;7. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfChangesInArticlesOfIncorporationOrAmendmentsToCharterTextBlock>
+  <ferc:DisclosureOfEstimatedAnnualEffectAndNatureOfAnyImportantWageScaleChangesTextBlock id="f-8" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;8. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfEstimatedAnnualEffectAndNatureOfAnyImportantWageScaleChangesTextBlock>
+  <ferc:DisclosureOfStatusOfAnyMateriallyImportantLegalProceedingsTextBlock id="f-9" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;9. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfStatusOfAnyMateriallyImportantLegalProceedingsTextBlock>
+  <ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock id="f-10" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;10. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfMateriallyImportantTransactionsOfTheRespondentNotDisclosedElsewhereTextBlock>
+  <ferc:DisclosureOfEstimatedIncreaseOrDecreaseInAnnualRevenuesCausedByImportantRateChangesTextBlock id="f-11" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;11. N/A.&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfEstimatedIncreaseOrDecreaseInAnnualRevenuesCausedByImportantRateChangesTextBlock>
+  <ferc:DisclosureOfChangesInOfficersDirectorsMajorSecurityHoldersAndVotingPowersOfTheRespondentTextBlock id="f-12" contextRef="c-1">&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:112%"&gt;12. N/A.&lt;/span&gt;</ferc:DisclosureOfChangesInOfficersDirectorsMajorSecurityHoldersAndVotingPowersOfTheRespondentTextBlock>
+  <ferc:DisclosureOfSignificantEventThatRespondentParticipatesInACashManagementProgramsTextBlock id="f-13" contextRef="c-1">&lt;div style="margin-top:2pt;padding-right:18pt"&gt;&lt;span style="color:#000000;font-family:'Arial',sans-serif;font-size:10pt;font-weight:400;line-height:120%"&gt;13. N/A&lt;/span&gt;&lt;/div&gt;</ferc:DisclosureOfSignificantEventThatRespondentParticipatesInACashManagementProgramsTextBlock>
+  <ferc:CompanyIdentifier id="f-14" contextRef="c-1">C001591</ferc:CompanyIdentifier>
+  <ferc:FormType id="f-15" contextRef="c-1">2-A</ferc:FormType>
+  <ferc:RespondentLegalName id="f-16" contextRef="c-1">Monroe Gas Storage Company, LLC</ferc:RespondentLegalName>
+  <ferc:ReportYear id="f-17" contextRef="c-1" decimals="0" unitRef="u-1">2025</ferc:ReportYear>
+  <ferc:ReportPeriod id="f-18" contextRef="c-1">Q4</ferc:ReportPeriod>
+  <ferc:AddressOfPrincipalOfficeAtEndOfPeriod id="f-19" contextRef="c-1">2800 Post Oak Blvd&#160; Houston, TX 77056</ferc:AddressOfPrincipalOfficeAtEndOfPeriod>
+  <ferc:NameOfContactPerson id="f-20" contextRef="c-1">Billeigh W. Mark</ferc:NameOfContactPerson>
+  <ferc:TitleOfContactPerson id="f-21" contextRef="c-1">Chief Accounting Officer</ferc:TitleOfContactPerson>
+  <ferc:AddressOfContactPerson id="f-22" contextRef="c-1">2800 Post Oak Blvd&#160; Houston, TX 77056</ferc:AddressOfContactPerson>
+  <ferc:TelephoneOfContactPerson id="f-23" contextRef="c-1">713-215-2000</ferc:TelephoneOfContactPerson>
+  <ferc:SubmissionType id="f-24" contextRef="c-1">O</ferc:SubmissionType>
+  <ferc:ReportDate id="f-25" contextRef="c-1">2026-04-18</ferc:ReportDate>
+  <ferc:NameOfOfficerWithCustodyOfCorporateBooks id="f-26" contextRef="c-1">Billeigh W. Mark</ferc:NameOfOfficerWithCustodyOfCorporateBooks>
+  <ferc:OfficerTitle id="f-27" contextRef="c-1">Chief Accounting Officer</ferc:OfficerTitle>
+  <ferc:AddressWhereCorporateBooksAreKept id="f-28" contextRef="c-1">2800 Post Oak Blvd&#160; Houston, TX 77056</ferc:AddressWhereCorporateBooksAreKept>
+  <ferc:StateOfIncorporation id="f-29" contextRef="c-1">DE</ferc:StateOfIncorporation>
+  <ferc:IncorporationDate id="f-30" contextRef="c-1">2006-06-14</ferc:IncorporationDate>
+  <ferc:AttestationName id="f-31" contextRef="c-1">Billeigh W. Mark</ferc:AttestationName>
+  <ferc:AttestationTitle id="f-32" contextRef="c-1">Chief Accounting Officer</ferc:AttestationTitle>
+  <ferc:CorporateOfficerCertificationSignature id="f-33" contextRef="c-1">Billeigh W. Mark</ferc:CorporateOfficerCertificationSignature>
+  <ferc:AttestationDate id="f-34" contextRef="c-1">2026-04-18</ferc:AttestationDate>
+  <ferc:Remarks id="f-35" contextRef="c-2">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-36" contextRef="c-3">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-37" contextRef="c-4">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-38" contextRef="c-5">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-39" contextRef="c-6">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-40" contextRef="c-7">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-41" contextRef="c-8">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-42" contextRef="c-9">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-43" contextRef="c-10">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-44" contextRef="c-11">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-45" contextRef="c-12">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-46" contextRef="c-13">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-47" contextRef="c-14">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-48" contextRef="c-15">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-49" contextRef="c-16">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-50" contextRef="c-17">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-51" contextRef="c-18">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-52" contextRef="c-19">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-53" contextRef="c-20">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-54" contextRef="c-21">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-55" contextRef="c-22">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-56" contextRef="c-23">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-57" contextRef="c-24">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-58" contextRef="c-25">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-59" contextRef="c-26">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-60" contextRef="c-27">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-61" contextRef="c-28">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-62" contextRef="c-29">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-63" contextRef="c-30">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-64" contextRef="c-31">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-65" contextRef="c-32">N/A</ferc:Remarks>
+  <ferc:Remarks id="f-66" contextRef="c-33">N/A</ferc:Remarks>
+  <ferc:UnappropriatedRetainedEarnings id="f-67" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:UnappropriatedRetainedEarnings>
+  <ferc:UnappropriatedRetainedEarnings id="f-68" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:UnappropriatedRetainedEarnings>
+  <ferc:AdjustmentsToRetainedEarningsCreditDescription id="f-69" contextRef="c-36">TOTAL Credits to Retained Earnings (Account 439) (footnote details)</ferc:AdjustmentsToRetainedEarningsCreditDescription>
+  <ferc:AdjustmentsToRetainedEarningsCreditDescription id="f-70" contextRef="c-37">TOTAL Debits to Retained Earnings (Account 439) (footnote details)</ferc:AdjustmentsToRetainedEarningsCreditDescription>
+  <ferc:OrderNumber id="f-71" contextRef="c-36" decimals="INF" unitRef="u-1">4</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-72" contextRef="c-37" decimals="INF" unitRef="u-1">5</ferc:OrderNumber>
+  <ferc:AdjustmentsToRetainedEarningsCredit id="f-73" contextRef="c-36" decimals="0" unitRef="u-2">0</ferc:AdjustmentsToRetainedEarningsCredit>
+  <ferc:AdjustmentsToRetainedEarningsCredit id="f-74" contextRef="c-37" decimals="0" unitRef="u-2">0</ferc:AdjustmentsToRetainedEarningsCredit>
+  <ferc:AdjustmentsToRetainedEarningsCredit id="f-75" contextRef="c-38" decimals="0" unitRef="u-2">0</ferc:AdjustmentsToRetainedEarningsCredit>
+  <ferc:AdjustmentsToRetainedEarningsCredit id="f-76" contextRef="c-39" decimals="0" unitRef="u-2">0</ferc:AdjustmentsToRetainedEarningsCredit>
+  <ferc:BalanceTransferredFromIncome id="f-77" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:BalanceTransferredFromIncome>
+  <ferc:BalanceTransferredFromIncome id="f-78" contextRef="c-40" decimals="0" unitRef="u-2">0</ferc:BalanceTransferredFromIncome>
+  <ferc:AppropriatedRetainedEarningsDescription id="f-79" contextRef="c-41">TOTAL Appropriations of Retained Earnings (Account 436) (footnote details)</ferc:AppropriatedRetainedEarningsDescription>
+  <ferc:AppropriationsOfRetainedEarnings id="f-80" contextRef="c-41" decimals="0" unitRef="u-2">0</ferc:AppropriationsOfRetainedEarnings>
+  <ferc:AppropriationsOfRetainedEarnings id="f-81" contextRef="c-42" decimals="0" unitRef="u-2">0</ferc:AppropriationsOfRetainedEarnings>
+  <ferc:DividendsDeclaredPreferredStockDescription id="f-82" contextRef="c-43">TOTAL Dividends Declared-Preferred Stock (Account 437) (footnote details)</ferc:DividendsDeclaredPreferredStockDescription>
+  <ferc:DividendsDeclaredPreferredStock id="f-83" contextRef="c-43" decimals="0" unitRef="u-2">0</ferc:DividendsDeclaredPreferredStock>
+  <ferc:DividendsDeclaredPreferredStock id="f-84" contextRef="c-44" decimals="0" unitRef="u-2">0</ferc:DividendsDeclaredPreferredStock>
+  <ferc:DividendsDeclaredCommonStockDescription id="f-85" contextRef="c-45">TOTAL Dividends Declared-Common Stock (Account 438) (footnote details)</ferc:DividendsDeclaredCommonStockDescription>
+  <ferc:DividendsDeclaredCommonStockDescription id="f-86" contextRef="c-46">Cash Distribution</ferc:DividendsDeclaredCommonStockDescription>
+  <ferc:OrderNumber id="f-87" contextRef="c-45" decimals="INF" unitRef="u-1">12</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-88" contextRef="c-46" decimals="INF" unitRef="u-1">12.01</ferc:OrderNumber>
+  <ferc:DividendsDeclaredCommonStock id="f-89" contextRef="c-45" decimals="0" unitRef="u-2">0</ferc:DividendsDeclaredCommonStock>
+  <ferc:DividendsDeclaredCommonStock id="f-90" contextRef="c-47" decimals="0" unitRef="u-2">0</ferc:DividendsDeclaredCommonStock>
+  <ferc:UnappropriatedRetainedEarnings id="f-91" contextRef="c-48" decimals="0" unitRef="u-2">0</ferc:UnappropriatedRetainedEarnings>
+  <ferc:AppropriatedRetainedEarnings id="f-92" contextRef="c-48" decimals="0" unitRef="u-2">0</ferc:AppropriatedRetainedEarnings>
+  <ferc:AppropriatedRetainedEarnings id="f-93" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:AppropriatedRetainedEarnings>
+  <ferc:AppropriatedRetainedEarningsAmortizationReserveFederal id="f-94" contextRef="c-48" decimals="0" unitRef="u-2">0</ferc:AppropriatedRetainedEarningsAmortizationReserveFederal>
+  <ferc:AppropriatedRetainedEarningsAmortizationReserveFederal id="f-95" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:AppropriatedRetainedEarningsAmortizationReserveFederal>
+  <ferc:UnappropriatedUndistributedSubsidiaryEarnings id="f-96" contextRef="c-34" decimals="0" unitRef="u-2">0</ferc:UnappropriatedUndistributedSubsidiaryEarnings>
+  <ferc:UnappropriatedUndistributedSubsidiaryEarnings id="f-97" contextRef="c-35" decimals="0" unitRef="u-2">0</ferc:UnappropriatedUndistributedSubsidiaryEarnings>
+  <ferc:EquityInEarningsOfSubsidiaryCompanies id="f-98" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:EquityInEarningsOfSubsidiaryCompanies>
+  <ferc:EquityInEarningsOfSubsidiaryCompanies id="f-99" contextRef="c-40" decimals="0" unitRef="u-2">0</ferc:EquityInEarningsOfSubsidiaryCompanies>
+  <ferc:DividendsReceived id="f-100" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:DividendsReceived>
+  <ferc:DividendsReceived id="f-101" contextRef="c-40" decimals="0" unitRef="u-2">0</ferc:DividendsReceived>
+  <ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCreditsDescription id="f-102" contextRef="c-49">Other Changes (Explain)</ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCreditsDescription>
+  <ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCredits id="f-103" contextRef="c-49" decimals="0" unitRef="u-2">0</ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCredits>
+  <ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCredits id="f-104" contextRef="c-50" decimals="0" unitRef="u-2">0</ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCredits>
+  <ferc:UnappropriatedUndistributedSubsidiaryEarnings id="f-105" contextRef="c-48" decimals="0" unitRef="u-2">0</ferc:UnappropriatedUndistributedSubsidiaryEarnings>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-106" contextRef="c-51">Amortization of (Specify) (footnote details)</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-107" contextRef="c-52">Other (footnote details):</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-108" contextRef="c-53">Imbalances, Net</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OrderNumber id="f-109" contextRef="c-52" decimals="INF" unitRef="u-1">16</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-110" contextRef="c-53" decimals="INF" unitRef="u-1">16.01</ferc:OrderNumber>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-111" contextRef="c-54">Prepayments</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OrderNumber id="f-112" contextRef="c-54" decimals="INF" unitRef="u-1">16.02</ferc:OrderNumber>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-113" contextRef="c-55">Asset Retirement Obligation</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OrderNumber id="f-114" contextRef="c-55" decimals="INF" unitRef="u-1">16.03</ferc:OrderNumber>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-115" contextRef="c-56">Other, Net</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OrderNumber id="f-116" contextRef="c-56" decimals="INF" unitRef="u-1">16.04</ferc:OrderNumber>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription id="f-117" contextRef="c-57">Other (footnote details):</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription id="f-118" contextRef="c-58">Other (footnote details):</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription id="f-119" contextRef="c-59">Net Retirements</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription>
+  <ferc:OrderNumber id="f-120" contextRef="c-58" decimals="INF" unitRef="u-1">47</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-121" contextRef="c-59" decimals="INF" unitRef="u-1">47.01</ferc:OrderNumber>
+  <ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-122" contextRef="c-60">Other (footnote details):</ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities id="f-123" contextRef="c-61">Other (footnote details):</ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities>
+  <ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities id="f-124" contextRef="c-62">Return of Capital To Partners</ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities>
+  <ferc:OrderNumber id="f-125" contextRef="c-61" decimals="INF" unitRef="u-1">65</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-126" contextRef="c-62" decimals="INF" unitRef="u-1">65.01</ferc:OrderNumber>
+  <ferc:OtherAccountsDescription id="f-127" contextRef="c-63">Other Clearing (Specify) (footnote details):</ferc:OtherAccountsDescription>
+  <ferc:OtherAdjustmentsToAccumulatedDepreciationDescription id="f-128" contextRef="c-64">Other Debit or Credit Items (Describe) (footnote details):</ferc:OtherAdjustmentsToAccumulatedDepreciationDescription>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTax id="f-129" contextRef="c-65">Other (Define)</ferc:DescriptionOfAccumulatedDeferredIncomeTax>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTax id="f-130" contextRef="c-66">Other (Specify)</ferc:DescriptionOfAccumulatedDeferredIncomeTax>
+  <ferc:LongTermDebtOutstanding id="f-131" contextRef="c-48" decimals="0" unitRef="u-2">0</ferc:LongTermDebtOutstanding>
+  <ferc:InterestOnLongTermDebt id="f-132" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:InterestOnLongTermDebt>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-133" contextRef="c-67">Federal Income</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:TypeOfTax id="f-134" contextRef="c-67">Federal Tax</ferc:TypeOfTax>
+  <ferc:TaxJurisdiction id="f-135" contextRef="c-67">US Federal</ferc:TaxJurisdiction>
+  <ferc:TaxYear id="f-136" contextRef="c-67" decimals="0" unitRef="u-1">2025</ferc:TaxYear>
+  <ferc:TaxesAccrued id="f-137" contextRef="c-68" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:TaxesAccrued id="f-138" contextRef="c-69" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:OrderNumber id="f-139" contextRef="c-67" decimals="INF" unitRef="u-1">1.1</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-140" contextRef="c-70" decimals="INF" unitRef="u-1">2</ferc:OrderNumber>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-141" contextRef="c-71">North Carolina-Income</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:OrderNumber id="f-142" contextRef="c-71" decimals="INF" unitRef="u-1">3.10</ferc:OrderNumber>
+  <ferc:TypeOfTax id="f-143" contextRef="c-71">State Tax</ferc:TypeOfTax>
+  <ferc:TaxJurisdiction id="f-144" contextRef="c-71">North Carolina</ferc:TaxJurisdiction>
+  <ferc:TaxYear id="f-145" contextRef="c-71" decimals="0" unitRef="u-1">2025</ferc:TaxYear>
+  <ferc:TaxesAccrued id="f-146" contextRef="c-72" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:StateLocalIncomeTaxRate id="f-147" contextRef="c-71" decimals="4" unitRef="u-1">0.0243</ferc:StateLocalIncomeTaxRate>
+  <ferc:TaxesAccrued id="f-148" contextRef="c-73" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:OrderNumber id="f-149" contextRef="c-74" decimals="INF" unitRef="u-1">4</ferc:OrderNumber>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-150" contextRef="c-75">North Carolina - Property</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:OrderNumber id="f-151" contextRef="c-75" decimals="INF" unitRef="u-1">9.09</ferc:OrderNumber>
+  <ferc:TypeOfTax id="f-152" contextRef="c-75">Property Tax</ferc:TypeOfTax>
+  <ferc:TaxJurisdiction id="f-153" contextRef="c-75">North Carolina</ferc:TaxJurisdiction>
+  <ferc:TaxYear id="f-154" contextRef="c-75" decimals="0" unitRef="u-1">2025</ferc:TaxYear>
+  <ferc:TaxesAccrued id="f-155" contextRef="c-76" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:PrepaidTaxes id="f-156" contextRef="c-77" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:TaxesAccrued id="f-157" contextRef="c-78" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:OrderNumber id="f-158" contextRef="c-79" decimals="INF" unitRef="u-1">10</ferc:OrderNumber>
+  <ferc:PrepaidTaxes id="f-159" contextRef="c-80" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-160" contextRef="c-81">Taxes Paid to Members</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:OrderNumber id="f-161" contextRef="c-81" decimals="INF" unitRef="u-1">27.01</ferc:OrderNumber>
+  <ferc:TypeOfTax id="f-162" contextRef="c-81">Miscellaneous Other Tax</ferc:TypeOfTax>
+  <ferc:TaxesAccrued id="f-163" contextRef="c-82" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:PrepaidTaxes id="f-164" contextRef="c-83" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:TaxesAccrued id="f-165" contextRef="c-84" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:OrderNumber id="f-166" contextRef="c-85" decimals="INF" unitRef="u-1">28</ferc:OrderNumber>
+  <ferc:TaxesAccruedPrepaidAndCharged id="f-167" contextRef="c-86" decimals="0" unitRef="u-2">0</ferc:TaxesAccruedPrepaidAndCharged>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-168" contextRef="c-87">FICA</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:OrderNumber id="f-169" contextRef="c-87" decimals="INF" unitRef="u-1">41.01</ferc:OrderNumber>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-170" contextRef="c-88">Federal Unemployement</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:OrderNumber id="f-171" contextRef="c-88" decimals="INF" unitRef="u-1">41.02</ferc:OrderNumber>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-172" contextRef="c-89">Federal Medicare</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:OrderNumber id="f-173" contextRef="c-89" decimals="INF" unitRef="u-1">41.03</ferc:OrderNumber>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-174" contextRef="c-90">North Carolina - Unemployment</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:OrderNumber id="f-175" contextRef="c-90" decimals="INF" unitRef="u-1">41.13</ferc:OrderNumber>
+  <ferc:TypeOfTax id="f-176" contextRef="c-87">Payroll Tax</ferc:TypeOfTax>
+  <ferc:TypeOfTax id="f-177" contextRef="c-88">Payroll Tax</ferc:TypeOfTax>
+  <ferc:TypeOfTax id="f-178" contextRef="c-89">Payroll Tax</ferc:TypeOfTax>
+  <ferc:TypeOfTax id="f-179" contextRef="c-90">Payroll Tax</ferc:TypeOfTax>
+  <ferc:TaxJurisdiction id="f-180" contextRef="c-87">US Federal</ferc:TaxJurisdiction>
+  <ferc:TaxJurisdiction id="f-181" contextRef="c-88">US Federal</ferc:TaxJurisdiction>
+  <ferc:TaxJurisdiction id="f-182" contextRef="c-89">US Federal</ferc:TaxJurisdiction>
+  <ferc:TaxJurisdiction id="f-183" contextRef="c-90">North Carolina</ferc:TaxJurisdiction>
+  <ferc:TaxYear id="f-184" contextRef="c-87" decimals="0" unitRef="u-1">2025</ferc:TaxYear>
+  <ferc:TaxYear id="f-185" contextRef="c-88" decimals="0" unitRef="u-1">2025</ferc:TaxYear>
+  <ferc:TaxYear id="f-186" contextRef="c-89" decimals="0" unitRef="u-1">2025</ferc:TaxYear>
+  <ferc:TaxYear id="f-187" contextRef="c-90" decimals="0" unitRef="u-1">2025</ferc:TaxYear>
+  <ferc:TaxesAccrued id="f-188" contextRef="c-91" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:TaxesAccrued id="f-189" contextRef="c-92" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:TaxesAccrued id="f-190" contextRef="c-93" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:TaxesAccrued id="f-191" contextRef="c-94" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:PrepaidTaxes id="f-192" contextRef="c-95" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:PrepaidTaxes id="f-193" contextRef="c-96" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:PrepaidTaxes id="f-194" contextRef="c-97" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:PrepaidTaxes id="f-195" contextRef="c-98" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:TaxesAccrued id="f-196" contextRef="c-99" decimals="0" unitRef="u-2">0</ferc:TaxesAccrued>
+  <ferc:OrderNumber id="f-197" contextRef="c-100" decimals="INF" unitRef="u-1">42</ferc:OrderNumber>
+  <ferc:PrepaidTaxes id="f-198" contextRef="c-101" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:TaxesAccruedPrepaidAndCharged id="f-199" contextRef="c-102" decimals="0" unitRef="u-2">0</ferc:TaxesAccruedPrepaidAndCharged>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-200" contextRef="c-103">North Carolina - Use</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:OrderNumber id="f-201" contextRef="c-103" decimals="INF" unitRef="u-1">51.09</ferc:OrderNumber>
+  <ferc:DescriptionOfTaxesAccruedPrepaidAndCharged id="f-202" contextRef="c-104">Miscellaneous - Use</ferc:DescriptionOfTaxesAccruedPrepaidAndCharged>
+  <ferc:OrderNumber id="f-203" contextRef="c-104" decimals="INF" unitRef="u-1">51.17</ferc:OrderNumber>
+  <ferc:TypeOfTax id="f-204" contextRef="c-103">Other Taxes and Fees</ferc:TypeOfTax>
+  <ferc:TypeOfTax id="f-205" contextRef="c-104">Other Taxes and Fees</ferc:TypeOfTax>
+  <ferc:TaxJurisdiction id="f-206" contextRef="c-103">North Carolina</ferc:TaxJurisdiction>
+  <ferc:TaxJurisdiction id="f-207" contextRef="c-104">N/A</ferc:TaxJurisdiction>
+  <ferc:TaxYear id="f-208" contextRef="c-103" decimals="0" unitRef="u-1">2025</ferc:TaxYear>
+  <ferc:TaxYear id="f-209" contextRef="c-104" decimals="0" unitRef="u-1">2025</ferc:TaxYear>
+  <ferc:TaxesCharged id="f-210" contextRef="c-104" decimals="0" unitRef="u-2">0</ferc:TaxesCharged>
+  <ferc:PrepaidTaxes id="f-211" contextRef="c-105" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:TaxesIncurredOther id="f-212" contextRef="c-104" decimals="0" unitRef="u-2">0</ferc:TaxesIncurredOther>
+  <ferc:PrepaidTaxes id="f-213" contextRef="c-106" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:PrepaidTaxes id="f-214" contextRef="c-107" decimals="0" unitRef="u-2">0</ferc:PrepaidTaxes>
+  <ferc:OrderNumber id="f-215" contextRef="c-108" decimals="INF" unitRef="u-1">52</ferc:OrderNumber>
+  <ferc:TaxesAccruedPrepaidAndCharged id="f-216" contextRef="c-109" decimals="0" unitRef="u-2">0</ferc:TaxesAccruedPrepaidAndCharged>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty id="f-217" contextRef="c-65">Other (Define)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty>
+  <ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfDebitedAccountNumber id="f-218" contextRef="c-110">&#8212;</ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfDebitedAccountNumber>
+  <ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfCreditedAccountNumber id="f-219" contextRef="c-110">&#8212;</ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfCreditedAccountNumber>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty id="f-220" contextRef="c-66">Other (Specify)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty>
+  <ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfDebitedAccountNumber id="f-221" contextRef="c-1">&#8212;</ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfDebitedAccountNumber>
+  <ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfCreditedAccountNumber id="f-222" contextRef="c-1">&#8212;</ferc:AccumulatedDeferredIncomeTaxLiabilitiesOtherPropertyDescriptionOfCreditedAccountNumber>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther id="f-223" contextRef="c-65">Other (Define)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther id="f-224" contextRef="c-66">Other (Specify)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther>
+  <ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities id="f-225" contextRef="c-111">Fuel Tracker Deferral and Carrying Costs</ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities>
+  <ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities id="f-226" contextRef="c-112">Electric Power Tracker and Carrying Costs</ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities>
+  <ferc:OrderNumber id="f-227" contextRef="c-111" decimals="INF" unitRef="u-1">1</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-228" contextRef="c-112" decimals="INF" unitRef="u-1">2</ferc:OrderNumber>
+  <ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities id="f-229" contextRef="c-113">Deferred Tax Rate Base</ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities>
+  <ferc:OrderNumber id="f-230" contextRef="c-113" decimals="INF" unitRef="u-1">4</ferc:OrderNumber>
+  <ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities id="f-231" contextRef="c-114">Deferred Tax Rate Base - 2021</ferc:DescriptionAndPurposeOfOtherRegulatoryLiabilities>
+  <ferc:OrderNumber id="f-232" contextRef="c-114" decimals="INF" unitRef="u-1">5</ferc:OrderNumber>
+  <ferc:DescriptionOfTransaction id="f-233" contextRef="c-115">Other revenues (Specify):</ferc:DescriptionOfTransaction>
+  <ferc:AccountDescription id="f-234" contextRef="c-116">Account 489.1, Revenues from transportation of gas of others through gathering facilities.</ferc:AccountDescription>
+  <ferc:AccountDescription id="f-235" contextRef="c-117">Account 489.2, Revenues from transportation of gas of others through transmission facilities</ferc:AccountDescription>
+  <ferc:OrderNumber id="f-236" contextRef="c-116" decimals="INF" unitRef="u-1">1</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-237" contextRef="c-117" decimals="INF" unitRef="u-1">2</ferc:OrderNumber>
+  <ferc:AccountDescription id="f-238" contextRef="c-118">Account 489.4, Revenues from storing gas of others.</ferc:AccountDescription>
+  <ferc:OrderNumber id="f-239" contextRef="c-118" decimals="INF" unitRef="u-1">3</ferc:OrderNumber>
+  <ferc:AccountDescription id="f-240" contextRef="c-119">Account 495, Other gas revenues.</ferc:AccountDescription>
+  <ferc:OrderNumber id="f-241" contextRef="c-119" decimals="INF" unitRef="u-1">4</ferc:OrderNumber>
+  <ferc:DescriptionOfEmployeePensionsAndBenefits id="f-242" contextRef="c-120">Other (Specify)</ferc:DescriptionOfEmployeePensionsAndBenefits>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-243" contextRef="c-121">Other</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices id="f-244" contextRef="c-122">Total</ferc:NameOfPersonOrOrganizationRenderingProfessionalOrConsultativeServices>
+  <ferc:OrderNumber id="f-245" contextRef="c-121" decimals="INF" unitRef="u-1">1</ferc:OrderNumber>
+  <ferc:OrderNumber id="f-246" contextRef="c-122" decimals="INF" unitRef="u-1">2</ferc:OrderNumber>
+  <ferc:NameOfSystem id="f-247" contextRef="c-123">Monroe Gas Storage Company, LLC</ferc:NameOfSystem>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityGasOfOthersReceivedForContractStorage id="f-248" contextRef="c-123" decimals="0" unitRef="u-3">41038883</ferc:QuantityOfNaturalGasReceivedByUtilityGasOfOthersReceivedForContractStorage>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedFromShippersAsCompressorStationFuel id="f-249" contextRef="c-123" decimals="0" unitRef="u-3">370598</ferc:QuantityOfNaturalGasReceivedByUtilityGasReceivedFromShippersAsCompressorStationFuel>
+  <ferc:QuantityOfNaturalGasReceivedByUtility id="f-250" contextRef="c-123" decimals="0" unitRef="u-3">41409481</ferc:QuantityOfNaturalGasReceivedByUtility>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityDeliveriesOfContractStorageGas id="f-251" contextRef="c-123" decimals="0" unitRef="u-3">41994183</ferc:QuantityOfNaturalGasDeliveredByUtilityDeliveriesOfContractStorageGas>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityGasUsedForCompressorStationFuel id="f-252" contextRef="c-123" decimals="0" unitRef="u-3">-280688</ferc:QuantityOfNaturalGasDeliveredByUtilityGasUsedForCompressorStationFuel>
+  <ferc:DescriptionOfGasUsedForOtherDeliveriesAndGasUsedForOtherOperations id="f-253" contextRef="c-124">Other Deliveries and Gas Used for Other Operations</ferc:DescriptionOfGasUsedForOtherDeliveriesAndGasUsedForOtherOperations>
+  <ferc:QuantityOfNaturalGasDeliveredByUtility id="f-254" contextRef="c-123" decimals="0" unitRef="u-3">41713495</ferc:QuantityOfNaturalGasDeliveredByUtility>
+  <ferc:DeliveriesGasLossesAndUnaccountedForGasAccount id="f-255" contextRef="c-123" decimals="0" unitRef="u-3">41713495</ferc:DeliveriesGasLossesAndUnaccountedForGasAccount>
+  <ferc:AmountCollectedShipperSuppliedGas id="f-256" contextRef="c-125" decimals="0" unitRef="u-2">0</ferc:AmountCollectedShipperSuppliedGas>
+  <ferc:DescriptionOfOtherGasAcquiredToMeetDeficiency id="f-257" contextRef="c-126">Gas Used to Meet Imbalances</ferc:DescriptionOfOtherGasAcquiredToMeetDeficiency>
+  <ferc:DescriptionOfOtherGasAcquiredToMeetDeficiency id="f-258" contextRef="c-127">Gas Used to Meet Imbalances</ferc:DescriptionOfOtherGasAcquiredToMeetDeficiency>
+  <ferc:DescriptionOfOtherGasAcquiredToMeetDeficiency id="f-259" contextRef="c-128">Gas Used to Meet Imbalances</ferc:DescriptionOfOtherGasAcquiredToMeetDeficiency>
+  <ferc:VendorName id="f-260" contextRef="c-1">The Workiva Platform</ferc:VendorName>
+  <link:footnoteLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+    <link:footnote xlink:type="resource" xlink:label="fn-1" id="fn-1" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:99.702%">
+          <tr>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+          </tr>
+          <tr style="height:12pt">
+            <td colspan="15" style="padding:0 1pt"/>
+          </tr>
+          <tr style="height:12pt">
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+          </tr>
+          <tr style="height:21pt">
+            <td colspan="15" style="padding:0 1pt"/>
+          </tr>
+        </table>
+      </div>
+    </link:footnote>
+    <link:footnote xlink:type="resource" xlink:label="fn-2" id="fn-2" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:99.702%">
+          <tr>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+          </tr>
+          <tr style="height:12pt">
+            <td colspan="15" style="padding:0 1pt"/>
+          </tr>
+          <tr style="height:12pt">
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+          </tr>
+          <tr style="height:21pt">
+            <td colspan="15" style="padding:0 1pt"/>
+          </tr>
+        </table>
+      </div>
+    </link:footnote>
+    <link:footnote xlink:type="resource" xlink:label="fn-3" id="fn-3" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/footnote">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table style="border-collapse:collapse;display:inline-table;margin-bottom:5pt;vertical-align:text-bottom;width:99.702%">
+          <tr>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+            <td style="width:1.0%"/>
+            <td style="width:18.900%"/>
+            <td style="width:0.1%"/>
+          </tr>
+          <tr style="height:12pt">
+            <td colspan="15" style="padding:0 1pt"/>
+          </tr>
+          <tr style="height:12pt">
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+            <td colspan="3" style="padding:0 1pt"/>
+          </tr>
+          <tr style="height:21pt">
+            <td colspan="15" style="padding:0 1pt"/>
+          </tr>
+        </table>
+      </div>
+    </link:footnote>
+  </link:footnoteLink>
+</xbrli:xbrl>

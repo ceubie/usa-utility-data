@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2026 Workiva-->
+<!--r:019b990b-f8e4-7811-a6d2-5767fa6b7d1f,g:a03767d1-14a2-4b1b-b146-5ea8f97dd481-->
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ferc="http://ferc.gov/form/2025-04-01/ferc" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <link:schemaRef xlink:href="https://eCollection.ferc.gov/taxonomy/form2/2025-04-01/form/form2A/form-2A_2025-04-01.xsd" xlink:type="simple"/>
+  <xbrli:unit id="u-1">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-2">
+    <xbrli:measure>iso4217:USD</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="u-3">
+    <xbrli:measure>utr:dth</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:context id="c-1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-2">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleSecurityHoldersAndVotingPowersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-3">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleImportantChangesDuringTheQuarterYearAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-4">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleComparativeBalanceSheetAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-5">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleComparativeBalanceSheetAssetsAndOtherDebitsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-6">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleComparativeBalanceSheetLiabilitiesOtherCreditsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-7">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfIncomeAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-8">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfAccumulatedOtherComprehensiveIncomeAndHedgingActivitiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-9">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfRetainedEarningsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-10">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleStatementOfCashFlowsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-11">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleNotesToFinancialStatementsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-12">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasPlantInServiceAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-13">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGeneralInformationOnPlantAndOperationsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-14">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasPropertyAndCapacityLeasedFromOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-15">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasPropertyAndCapacityLeasedToOthersAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-16">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleNonTraditionalRateTreatmentAffordedNewProjectsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-17">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedProvisionForDepreciationOfGasUtilityPlantAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-18">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherRegulatoryAssetsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-19">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedDeferredIncomeTaxesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-20">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleCapitalStockAndLongTermDebtDataAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-21">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTaxesAccruedPrepaidAndChargedDuringYearDistributionOfTaxesChargedAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-22">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedDeferredIncomeTaxesOtherPropertyAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-23">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleAccumulatedDeferredIncomeTaxesOtherAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-24">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherRegulatoryLiabilitiesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-25">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasOperatingRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-26">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleOtherGasRevenuesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-27">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleDiscountedRateServicesAndNegotiatedRateServicesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-28">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleGasOperationAndMaintenanceExpensesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-29">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleEmployeePensionsAndBenefitsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-30">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleChargesForOutsideProfessionalAndOtherConsultativeServicesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-31">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleTransactionsWithAssociatedAffiliatedCompaniesAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-32">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleShipperSuppliedGasForTheCurrentQuarterAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-33">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:ScheduleRemarksAxis">
+          <ferc:ScheduleRemarksDomain>ScheduleSystemMapsAbstract</ferc:ScheduleRemarksDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-34">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsAxis">
+          <ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>Other Changes (Explain)</ferc:RetainedEarningsUnappropriatedUndistributedSubsidiaryEarningsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-35">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Amortization of (Specify) (footnote details)</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-36">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>Other Adjustments to Cash Flows from Operating Activities</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-37">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesAxis">
+          <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>Other Construction and Acquisition of Plant, Investment Activities</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-38">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>Other Adjustments to Cash Flows from Investment Activities:</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-39">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>Net Increase in Debt (Long Term Advances)</ferc:OtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-40">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>Other Retirements</ferc:OtherRetirementsOfBalancesImpactingCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-41">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesAxis">
+          <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDomain>Other Adjustments to Financing Cash Flows</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-42">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherClearingAccountsAxis">
+          <ferc:OtherClearingAccountsDomain>Other Clearing (Specify) (footnote details):</ferc:OtherClearingAccountsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-43">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherDebitOrCreditItemsAxis">
+          <ferc:OtherDebitOrCreditItemsDomain>Other Debit or Credit Items (Describe) (footnote details):</ferc:OtherDebitOrCreditItemsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-44">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:OtherUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-45">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="ferc:UtilityTypeAxis">ferc:NonUtilityMember</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-46">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2025-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-47">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherGasRevenuesAxis">
+          <ferc:OtherGasRevenuesDomain>Other revenues (Specify):</ferc:OtherGasRevenuesDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-48">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:OtherEmployeePensionsAndBenefitsAxis">
+          <ferc:OtherEmployeePensionsAndBenefitsDomain>Other (Specify)</ferc:OtherEmployeePensionsAndBenefitsDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="c-49">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ferc.gov/CID">C001913</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:typedMember dimension="ferc:SystemNameAxis">
+          <ferc:SystemNameDomain>0</ferc:SystemNameDomain>
+        </xbrldi:typedMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2025-01-01</xbrli:startDate>
+      <xbrli:endDate>2025-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <ferc:CompanyIdentifier id="f-1" contextRef="c-1">C001913</ferc:CompanyIdentifier>
+  <ferc:LegalEntityIdentifier id="f-2" contextRef="c-1">C001913</ferc:LegalEntityIdentifier>
+  <ferc:FormType id="f-3" contextRef="c-1">2-A</ferc:FormType>
+  <ferc:RespondentLegalName id="f-4" contextRef="c-1">UGI LNG, Inc.</ferc:RespondentLegalName>
+  <ferc:ReportYear id="f-5" contextRef="c-1" decimals="0" unitRef="u-1">2025</ferc:ReportYear>
+  <ferc:ReportPeriod id="f-6" contextRef="c-1">Q4</ferc:ReportPeriod>
+  <ferc:AddressOfPrincipalOfficeAtEndOfPeriod id="f-7" contextRef="c-1">835 Knitting Mills Way Wyomissing, PA 19610</ferc:AddressOfPrincipalOfficeAtEndOfPeriod>
+  <ferc:NameOfContactPerson id="f-8" contextRef="c-1">Amy Keller</ferc:NameOfContactPerson>
+  <ferc:TitleOfContactPerson id="f-9" contextRef="c-1">Sr Manager Regulatory &amp; Plant&#160; Accounting</ferc:TitleOfContactPerson>
+  <ferc:AddressOfContactPerson id="f-10" contextRef="c-1">835 Knitting Mills Way Wyomissing, PA 19610</ferc:AddressOfContactPerson>
+  <ferc:TelephoneOfContactPerson id="f-11" contextRef="c-1">484-513-0901</ferc:TelephoneOfContactPerson>
+  <ferc:SubmissionType id="f-12" contextRef="c-1">O</ferc:SubmissionType>
+  <ferc:ReportDate id="f-13" contextRef="c-1">2025-12-31</ferc:ReportDate>
+  <ferc:NameOfOfficerWithCustodyOfCorporateBooks id="f-14" contextRef="c-1">Jean Felix Tematio Donstop</ferc:NameOfOfficerWithCustodyOfCorporateBooks>
+  <ferc:OfficerTitle id="f-15" contextRef="c-1">VP CAO &amp; Corporate Controller</ferc:OfficerTitle>
+  <ferc:AddressWhereCorporateBooksAreKept id="f-16" contextRef="c-1">835 Knitting Mills Way Wyomissing, PA 19610</ferc:AddressWhereCorporateBooksAreKept>
+  <ferc:StateOfIncorporation id="f-17" contextRef="c-1">DE</ferc:StateOfIncorporation>
+  <ferc:IncorporationDate id="f-18" contextRef="c-1">2006-06-29</ferc:IncorporationDate>
+  <ferc:MannerAndExtentOfCorporateControl id="f-19" contextRef="c-1">Respondent is a direct, wholly-owned subsidiary of UGI Energy Services, LLC (&#8220;UGIES&#8221;) and an indirect wholly-owned subsidiary of UGI Corporation, a Pennsylvania Corporation.&#160; The Respondent is authorized to conduct business as a foreign limited liability company in the State of Pennsylvania in order to own and operate gas transmission facilities and engage in open-access transportation services within Pennsylvania.</ferc:MannerAndExtentOfCorporateControl>
+  <ferc:AttestationName id="f-20" contextRef="c-1">Jean Felix Tematio Donstop</ferc:AttestationName>
+  <ferc:AttestationTitle id="f-21" contextRef="c-1">VP CAO &amp; Corporate Controller</ferc:AttestationTitle>
+  <ferc:CorporateOfficerCertificationSignature id="f-22" contextRef="c-1">Jean Felix Tematio Donstop</ferc:CorporateOfficerCertificationSignature>
+  <ferc:AttestationDate id="f-23" contextRef="c-1">2026-04-16</ferc:AttestationDate>
+  <ferc:Remarks id="f-24" contextRef="c-2">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-25" contextRef="c-2">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-26" contextRef="c-2">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-27" contextRef="c-3">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-28" contextRef="c-3">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-29" contextRef="c-3">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-30" contextRef="c-4">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-31" contextRef="c-4">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-32" contextRef="c-4">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-33" contextRef="c-5">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-34" contextRef="c-5">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-35" contextRef="c-5">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-36" contextRef="c-6">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-37" contextRef="c-6">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-38" contextRef="c-6">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-39" contextRef="c-7">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-40" contextRef="c-7">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-41" contextRef="c-7">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-42" contextRef="c-8">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-43" contextRef="c-8">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-44" contextRef="c-8">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-45" contextRef="c-9">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-46" contextRef="c-9">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-47" contextRef="c-9">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-48" contextRef="c-10">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-49" contextRef="c-10">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-50" contextRef="c-10">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-51" contextRef="c-11">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-52" contextRef="c-11">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-53" contextRef="c-11">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-54" contextRef="c-12">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-55" contextRef="c-12">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-56" contextRef="c-12">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-57" contextRef="c-13">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-58" contextRef="c-13">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-59" contextRef="c-13">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-60" contextRef="c-14">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-61" contextRef="c-14">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-62" contextRef="c-14">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-63" contextRef="c-15">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-64" contextRef="c-15">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-65" contextRef="c-15">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-66" contextRef="c-16">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-67" contextRef="c-16">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-68" contextRef="c-16">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-69" contextRef="c-17">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-70" contextRef="c-17">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-71" contextRef="c-17">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-72" contextRef="c-18">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-73" contextRef="c-18">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-74" contextRef="c-18">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-75" contextRef="c-19">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-76" contextRef="c-19">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-77" contextRef="c-19">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-78" contextRef="c-20">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-79" contextRef="c-20">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-80" contextRef="c-20">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-81" contextRef="c-21">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-82" contextRef="c-21">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-83" contextRef="c-21">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-84" contextRef="c-22">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-85" contextRef="c-22">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-86" contextRef="c-22">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-87" contextRef="c-23">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-88" contextRef="c-23">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-89" contextRef="c-23">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-90" contextRef="c-24">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-91" contextRef="c-24">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-92" contextRef="c-24">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-93" contextRef="c-25">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-94" contextRef="c-25">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-95" contextRef="c-25">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-96" contextRef="c-26">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-97" contextRef="c-26">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-98" contextRef="c-26">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-99" contextRef="c-27">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-100" contextRef="c-27">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-101" contextRef="c-27">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-102" contextRef="c-28">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-103" contextRef="c-28">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-104" contextRef="c-28">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-105" contextRef="c-29">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-106" contextRef="c-29">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-107" contextRef="c-29">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-108" contextRef="c-30">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-109" contextRef="c-30">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-110" contextRef="c-30">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-111" contextRef="c-31">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-112" contextRef="c-31">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-113" contextRef="c-31">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-114" contextRef="c-32">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-115" contextRef="c-32">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-116" contextRef="c-32">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:Remarks id="f-117" contextRef="c-33">N/A</ferc:Remarks>
+  <ferc:ScheduleWaiver id="f-118" contextRef="c-33">Docket No. CP06-442-000</ferc:ScheduleWaiver>
+  <ferc:ScheduleExemption id="f-119" contextRef="c-33">Reg. Sec. 260.2</ferc:ScheduleExemption>
+  <ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCreditsDescription id="f-120" contextRef="c-34">Other Changes (Explain)</ferc:ChangesUnappropriatedUndistributedSubsidiaryEarningsCreditsDescription>
+  <ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-121" contextRef="c-35">Amortization of (Specify) (footnote details)</ferc:NoncashAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription id="f-122" contextRef="c-36">Other Adjustments to Cash Flows from Operating Activities</ferc:OtherAdjustmentsToCashFlowsFromOperatingActivitiesDescription>
+  <ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription id="f-123" contextRef="c-37">Other Construction and Acquisition of Plant, Investment Activities</ferc:OtherConstructionAndAcquisitionOfPlantInvestmentActivitiesDescription>
+  <ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription id="f-124" contextRef="c-38">Other Adjustments to Cash Flows from Investment Activities:</ferc:OtherAdjustmentsToCashFlowsFromInvestmentActivitiesDescription>
+  <ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities id="f-125" contextRef="c-39">Net Increase in Debt (Long Term Advances)</ferc:DescriptionForOtherAdjustmentsByOutsideSourcesToCashFlowsFromFinancingActivities>
+  <ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities id="f-126" contextRef="c-40">Other Retirements</ferc:DescriptionOfOtherRetirementsImpactingCashFlowsFromFinancingActivities>
+  <ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDescription id="f-127" contextRef="c-41">Other Adjustments to Financing Cash Flows</ferc:OtherAdjustmentsToCashFlowsFromFinancingActivitiesDescription>
+  <ferc:OtherAccountsDescription id="f-128" contextRef="c-42">Other Clearing (Specify) (footnote details):</ferc:OtherAccountsDescription>
+  <ferc:OtherAdjustmentsToAccumulatedDepreciationDescription id="f-129" contextRef="c-43">Other Debit or Credit Items (Describe) (footnote details):</ferc:OtherAdjustmentsToAccumulatedDepreciationDescription>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTax id="f-130" contextRef="c-44">Other (Define)</ferc:DescriptionOfAccumulatedDeferredIncomeTax>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTax id="f-131" contextRef="c-45">Other (Specify)</ferc:DescriptionOfAccumulatedDeferredIncomeTax>
+  <ferc:LongTermDebtOutstanding id="f-132" contextRef="c-46" decimals="0" unitRef="u-2">0</ferc:LongTermDebtOutstanding>
+  <ferc:InterestOnLongTermDebt id="f-133" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:InterestOnLongTermDebt>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty id="f-134" contextRef="c-44">Other (Define)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty id="f-135" contextRef="c-45">Other (Specify)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOtherProperty>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther id="f-136" contextRef="c-44">Other (Define)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther>
+  <ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther id="f-137" contextRef="c-45">Other (Specify)</ferc:DescriptionOfAccumulatedDeferredIncomeTaxOther>
+  <ferc:DescriptionOfTransaction id="f-138" contextRef="c-47">Other revenues (Specify):</ferc:DescriptionOfTransaction>
+  <ferc:EmployeePensionsAndBenefitsPensionsDefinedBenefitPlans id="f-139" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:EmployeePensionsAndBenefitsPensionsDefinedBenefitPlans>
+  <ferc:EmployeePensionsAndBenefitsPensionsOther id="f-140" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:EmployeePensionsAndBenefitsPensionsOther>
+  <ferc:EmployeePensionsAndBenefitsPostRetirementBenefitsOtherThanPensions id="f-141" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:EmployeePensionsAndBenefitsPostRetirementBenefitsOtherThanPensions>
+  <ferc:EmployeePensionsAndBenefitsPostEmploymentBenefitPlans id="f-142" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:EmployeePensionsAndBenefitsPostEmploymentBenefitPlans>
+  <ferc:DescriptionOfEmployeePensionsAndBenefits id="f-143" contextRef="c-48">Other (Specify)</ferc:DescriptionOfEmployeePensionsAndBenefits>
+  <ferc:EmployeePensionsAndBenefits id="f-144" contextRef="c-1" decimals="0" unitRef="u-2">0</ferc:EmployeePensionsAndBenefits>
+  <ferc:QuantityOfNaturalGasReceivedByUtilityGasOfOthersReceivedForContractStorage id="f-145" contextRef="c-49" decimals="0" unitRef="u-3">1628545</ferc:QuantityOfNaturalGasReceivedByUtilityGasOfOthersReceivedForContractStorage>
+  <ferc:QuantityOfNaturalGasReceivedByUtility id="f-146" contextRef="c-49" decimals="0" unitRef="u-3">1628545</ferc:QuantityOfNaturalGasReceivedByUtility>
+  <ferc:QuantityOfNaturalGasDeliveredByUtilityDeliveriesOfContractStorageGas id="f-147" contextRef="c-49" decimals="0" unitRef="u-3">1897752</ferc:QuantityOfNaturalGasDeliveredByUtilityDeliveriesOfContractStorageGas>
+  <ferc:QuantityOfNaturalGasDeliveredByUtility id="f-148" contextRef="c-49" decimals="0" unitRef="u-3">1897752</ferc:QuantityOfNaturalGasDeliveredByUtility>
+  <ferc:DeliveriesGasLossesAndUnaccountedForGasAccount id="f-149" contextRef="c-49" decimals="0" unitRef="u-3">1897752</ferc:DeliveriesGasLossesAndUnaccountedForGasAccount>
+  <ferc:VendorName id="f-150" contextRef="c-1">The Workiva Platform</ferc:VendorName>
+</xbrli:xbrl>
