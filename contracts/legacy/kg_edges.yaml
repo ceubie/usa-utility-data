@@ -1,0 +1,7 @@
+table: kg_edges
+path: gold/knowledge_graph/kg_edges.parquet
+primary_key: [edge_id]
+columns:
+  - {name: edge_id, type: string, nullable: false, description: Legacy graph edge ID}
+  - {name: src_node_id, type: string, nullable: false, references: kg_nodes.node_id, group_by: edge_type}
+  - {name: dst_node_id, type: string, nullable: false, references: kg_nodes.node_id, group_by: edge_type}

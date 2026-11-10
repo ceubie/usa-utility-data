@@ -22,6 +22,9 @@ dependencies = [
     "typer",
 ]
 
+[project.scripts]
+utilitydata = "utilitydata.cli:app"
+
 [dependency-groups]
 dev = ["pytest", "ruff"]
 

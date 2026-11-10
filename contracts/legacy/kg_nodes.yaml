@@ -1,0 +1,5 @@
+table: kg_nodes
+path: gold/knowledge_graph/kg_nodes.parquet
+primary_key: [node_id]
+columns:
+  - {name: node_id, type: string, nullable: false, description: Legacy graph node ID}

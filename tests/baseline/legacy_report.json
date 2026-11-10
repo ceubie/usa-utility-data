@@ -1,0 +1,330 @@
+{
+  "status": "fail",
+  "checks": [
+    {
+      "name": "type:canonical_organizations.org_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "not_null:canonical_organizations.org_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "primary_key:canonical_organizations",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "min_fill:canonical_organizations.ferc_cid",
+      "status": "fail",
+      "violations": 246203,
+      "rows": 246203,
+      "filled": 0,
+      "fill_rate": 0.0,
+      "minimum": 1.0
+    },
+    {
+      "name": "type:canonical_systems.system_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "not_null:canonical_systems.system_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "primary_key:canonical_systems",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "min_fill:canonical_systems.sales_mwh",
+      "status": "fail",
+      "violations": 239201,
+      "rows": 239201,
+      "filled": 0,
+      "fill_rate": 0.0,
+      "minimum": 1.0
+    },
+    {
+      "name": "type:kg_edges.edge_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "not_null:kg_edges.edge_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "type:kg_edges.src_node_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "not_null:kg_edges.src_node_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "foreign_key:kg_edges.src_node_id->kg_nodes.node_id",
+      "status": "fail",
+      "violations": 209463,
+      "groups": [
+        {
+          "value": "SERVES_COUNTY",
+          "violations": 209413
+        },
+        {
+          "value": "OWNS_OR_OPERATES_ASSET",
+          "violations": 50
+        }
+      ]
+    },
+    {
+      "name": "type:kg_edges.dst_node_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "not_null:kg_edges.dst_node_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "foreign_key:kg_edges.dst_node_id->kg_nodes.node_id",
+      "status": "fail",
+      "violations": 241,
+      "groups": [
+        {
+          "value": "SERVES_COUNTY",
+          "violations": 241
+        }
+      ]
+    },
+    {
+      "name": "primary_key:kg_edges",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "type:kg_nodes.node_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "not_null:kg_nodes.node_id",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "primary_key:kg_nodes",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/build_summary.json",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/by_category/electric_generation_and_substations_dedup.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "geoparquet:gold/by_category/electric_service_territories_best.parquet",
+      "status": "fail",
+      "violations": 1
+    },
+    {
+      "name": "absolute_paths:gold/by_category/electric_service_territories_best.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/by_category/linear_and_node_infrastructure_inventory.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "geoparquet:gold/by_category/natural_gas_service_territories_best.parquet",
+      "status": "fail",
+      "violations": 1
+    },
+    {
+      "name": "absolute_paths:gold/by_category/natural_gas_service_territories_best.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "geoparquet:gold/by_category/stormwater_and_multi_service_territories_best.parquet",
+      "status": "fail",
+      "violations": 1
+    },
+    {
+      "name": "absolute_paths:gold/by_category/stormwater_and_multi_service_territories_best.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "geoparquet:gold/by_category/wastewater_service_territories_best.parquet",
+      "status": "fail",
+      "violations": 1
+    },
+    {
+      "name": "absolute_paths:gold/by_category/wastewater_service_territories_best.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/by_category/water_and_wastewater_facilities_dedup.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "geoparquet:gold/by_category/water_service_territories_best.parquet",
+      "status": "fail",
+      "violations": 1
+    },
+    {
+      "name": "absolute_paths:gold/by_category/water_service_territories_best.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/by_geography/county_multi_utility_summary.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/by_geography/county_utility_service_matrix.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/by_geography/h3_spatial_index.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/by_geography/state_sector_coverage_scorecard.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/knowledge_graph/kg_edges.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/knowledge_graph/kg_nodes.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:gold/knowledge_graph/utility_knowledge_graph.duckdb:views",
+      "status": "fail",
+      "violations": 9,
+      "views": [
+        "canonical_organizations",
+        "canonical_systems",
+        "county_multi_utility_summary",
+        "county_utility_service_matrix",
+        "facilities_deduplicated",
+        "h3_spatial_index",
+        "kg_edges",
+        "kg_nodes",
+        "state_sector_coverage_scorecard"
+      ]
+    },
+    {
+      "name": "absolute_paths:silver/canonical_organizations.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:silver/canonical_systems.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:silver/county_utility_associations.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:silver/facilities_deduplicated.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:silver/facilities_normalized.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:silver/federal_organizations_spine.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:silver/federal_systems_spine.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:silver/linear_and_node_networks_summary.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "geoparquet:silver/reference_counties.parquet",
+      "status": "fail",
+      "violations": 1
+    },
+    {
+      "name": "absolute_paths:silver/reference_counties.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "geoparquet:silver/reference_states.parquet",
+      "status": "fail",
+      "violations": 1
+    },
+    {
+      "name": "absolute_paths:silver/reference_states.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "geoparquet:silver/service_boundaries_best_available.parquet",
+      "status": "fail",
+      "violations": 1
+    },
+    {
+      "name": "absolute_paths:silver/service_boundaries_best_available.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "geoparquet:silver/service_boundaries_normalized.parquet",
+      "status": "fail",
+      "violations": 1
+    },
+    {
+      "name": "absolute_paths:silver/service_boundaries_normalized.parquet",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "name": "absolute_paths:silver/source_inventory.parquet",
+      "status": "fail",
+      "violations": 270
+    }
+  ]
+}

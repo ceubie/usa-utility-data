@@ -1,0 +1,7 @@
+table: canonical_organizations
+path: silver/canonical_organizations.parquet
+primary_key: [org_id]
+columns:
+  - {name: org_id, type: string, nullable: false}
+  - {name: ferc_cid, nullable: true}
+min_fill: {ferc_cid: 1.0}

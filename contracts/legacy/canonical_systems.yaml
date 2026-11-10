@@ -1,0 +1,7 @@
+table: canonical_systems
+path: silver/canonical_systems.parquet
+primary_key: [system_id]
+columns:
+  - {name: system_id, type: string, nullable: false}
+  - {name: sales_mwh, nullable: true}
+min_fill: {sales_mwh: 1.0}
