@@ -1,0 +1,30 @@
+sources:
+- source_id: kansas_rural_water_districts_dasc
+  publisher: Kansas Data Access and Support Center
+  driver: arcgis
+  url: https://services.kgs.ku.edu/arcgis15/rest/services/admin_boundaries/KS_RuralWaterDistricts/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/kansas_rural_water_districts_dasc
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/kansas_rural_water_districts_dasc/layer_metadata.json
+    name_field: NAME
+    id_fields:
+      feature_id: FID
+      pwsid: FED_ID
+      state_id: KDHE_ID
+    authority: state_regulator
+    state_fixed: KS
+    on_missing_name: reject
+    on_invalid_pwsid: preserve_raw_without_federal_id
+  notes: 'Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Historical layer: service description cites a 2007 update
+    despite a 2024 layer name.'

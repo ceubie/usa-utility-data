@@ -1,0 +1,29 @@
+sources:
+- source_id: florida_swfwmd_water_service_areas
+  publisher: Southwest Florida Water Management District
+  driver: arcgis
+  url: https://www45.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/RegulatoryPro/MapServer/16
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/florida_swfwmd_water_service_areas
+  layers:
+  - layer: '16'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/florida_swfwmd_water_service_areas/layer_metadata.json
+    name_field: UTILITYNAME
+    id_fields:
+      feature_id: OBJECTID
+      state_id: SVCAREAID
+    authority: state_regulator
+    vintage_field: GIS_UPDATE_DT
+    state_fixed: FL
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. District retail boundaries include wholesale-supplied systems;
+    field date is a GIS update, not necessarily boundary vintage.

@@ -1,0 +1,26 @@
+sources:
+- source_id: arkansas_water_system_areas_adh
+  publisher: Arkansas GIS Office
+  driver: arcgis
+  url: https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/MapServer/15
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/arkansas_water_system_areas_adh
+  layers:
+  - layer: '15'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/arkansas_water_system_areas_adh/layer_metadata.json
+    name_field: pws_name
+    id_fields:
+      feature_id: objectid
+    authority: state_regulator
+    state_fixed: AR
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Water system boundaries; no PWSID field is present.

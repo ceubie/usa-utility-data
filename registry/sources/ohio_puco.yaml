@@ -1,0 +1,28 @@
+sources:
+- source_id: ohio_water_service_areas_puco
+  publisher: Public Utilities Commission of Ohio
+  driver: arcgis
+  url: https://maps.puco.ohio.gov/arcgis/rest/services/water/Water_Service_Areas/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/ohio_water_service_areas_puco
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/ohio_water_service_areas_puco/layer_metadata.json
+    name_field: SystemName
+    id_fields:
+      feature_id: OBJECTID
+      state_id: SystemCode
+    authority: state_regulator
+    state_fixed: OH
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Regulated water-service areas; the state service does not
+    establish statewide completeness.

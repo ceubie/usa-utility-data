@@ -1,0 +1,27 @@
+sources:
+- source_id: north_dakota_rural_water_districts_ndgis
+  publisher: North Dakota GIS Hub
+  driver: arcgis
+  url: https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Rural_Water_Districts/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/north_dakota_rural_water_districts_ndgis
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/north_dakota_rural_water_districts_ndgis/layer_metadata.json
+    name_field: NAME
+    id_fields:
+      feature_id: OBJECTID
+    authority: state_regulator
+    state_fixed: ND
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Rural district coverage only; metadata describes changes
+    through 2018. MRI_ID is null for every feature and is not used as an identifier.

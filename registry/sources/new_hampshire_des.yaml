@@ -1,0 +1,28 @@
+sources:
+- source_id: new_hampshire_water_service_areas_des
+  publisher: New Hampshire Department of Environmental Services
+  driver: arcgis
+  url: https://gis.des.nh.gov/server/rest/services/Projects_DWGB/Water_line/FeatureServer/4
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_hampshire_water_service_areas_des
+  layers:
+  - layer: '4'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/new_hampshire_water_service_areas_des/layer_metadata.json
+    name_field: SYS_NAME
+    id_fields:
+      feature_id: OBJECTID
+      state_id: PWS_ID
+    authority: state_regulator
+    state_fixed: NH
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. PWS_ID is seven digits in sampled records; prefixing requires
+    a separately verified rule.

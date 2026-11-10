@@ -1,0 +1,446 @@
+sources:
+- source_id: connecticut_community_water_service_areas_dph
+  publisher: Connecticut Department of Public Health
+  driver: arcgis
+  url: https://maps.dph.ct.gov/gisserver/rest/services/CommunityPWSServiceAreas/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/connecticut_community_water_service_areas_dph
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/connecticut_community_water_service_areas_dph/layer_metadata.json
+    name_field: pws_name
+    id_fields:
+      feature_id: OBJECTID
+      pwsid: pwsid
+    authority: state_regulator
+    state_fixed: CT
+    on_missing_name: reject
+    on_invalid_pwsid: preserve_raw_without_federal_id
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Informational community-system boundaries; per-feature
+    vintage is not established.
+- source_id: connecticut_drinking_water_watersheds_dph
+  publisher: Connecticut Department of Public Health
+  driver: arcgis
+  url: https://maps.dph.ct.gov/gisserver/rest/services/Hosted/DWW26_public/FeatureServer/54
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/connecticut_drinking_water_watersheds_dph
+  layers:
+  - layer: '54'
+    sector: water
+    grain: service_area
+    role: source_watershed_or_basin
+    metadata_path: gis/connecticut_drinking_water_watersheds_dph/layer_metadata.json
+    name_field: pws_name
+    id_fields:
+      feature_id: objectid
+      pwsid: pws_id
+    authority: state_regulator
+    state_fixed: CT
+    on_missing_name: reject
+    on_invalid_pwsid: preserve_raw_without_federal_id
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Source-water watersheds, not retail service areas.
+- source_id: connecticut_exclusive_water_service_areas_dph
+  publisher: Connecticut Department of Public Health
+  driver: arcgis
+  url: https://maps.dph.ct.gov/gisserver/rest/services/Hosted/Exclusive_Service_Areas/FeatureServer/71
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/connecticut_exclusive_water_service_areas_dph
+  layers:
+  - layer: '71'
+    sector: water
+    grain: service_area
+    metadata_path: gis/connecticut_exclusive_water_service_areas_dph/layer_metadata.json
+    name_field: name
+    id_fields:
+      feature_id: fid
+    authority: state_regulator
+    state_fixed: CT
+    role_field:
+      field: name
+      values:
+        166 & 180 BOSTON TURNPIKE: certified_franchise_territory
+        27 MAPLE DRIVE: certified_franchise_territory
+        31 GRIST MILL ROAD: certified_franchise_territory
+        39 HOP BROOK RD - APT COMPLEX: certified_franchise_territory
+        890 BOSTON TURNPIKE: certified_franchise_territory
+        AARON MANOR NURSING & REHAB CENTER: certified_franchise_territory
+        ABBY WATER, LLC: certified_franchise_territory
+        APPLE VALLEY VILLAGE: certified_franchise_territory
+        AQUA VISTA ASSOC, INC: certified_franchise_territory
+        AQUARION WATER COMPANY: certified_franchise_territory
+        ARLINGTON ACRES MANUFACT HOUSE COMM, LLC: certified_franchise_territory
+        ARNIO DRIVE LLC: certified_franchise_territory
+        ARROW POINT WATER CO: certified_franchise_territory
+        ARROWHEAD BY THE LAKE ASSOCIATION, INC.: certified_franchise_territory
+        ARROWHEAD POINT HOMEOWNERS ASSN INC.: certified_franchise_territory
+        ASH WATER COMPANY, LLC: certified_franchise_territory
+        ASHFORD HILLS APARTMENTS: certified_franchise_territory
+        AVON WATER COMPANY: certified_franchise_territory
+        BANTAM VILLAGE: certified_franchise_territory
+        BAXTER FARMS COMMUNITY WATER ASSOC: certified_franchise_territory
+        BEE BROOK CROSSING CONDOMINIUMS: certified_franchise_territory
+        BELLWOOD COURT: certified_franchise_territory
+        BERLIN WATER CONTROL COMMISSION: certified_franchise_territory
+        BERNHARDT MEADOW: certified_franchise_territory
+        BETHANY MOBILE HOME PARK: certified_franchise_territory
+        BETHEL WATER DEPARTMENT: certified_franchise_territory
+        BIRCH GROVES ASSOC, INC: certified_franchise_territory
+        BIRCH HILLS CONDOMINIUMS: certified_franchise_territory
+        BITTERSWEET RIDGE WATER ASSOCIATION: certified_franchise_territory
+        BLUE TRAILS WATER ASSOCIATION: certified_franchise_territory
+        BOXWOOD CONDOMINIUM ASSOCIATION: certified_franchise_territory
+        BREEZY KNOLL ASSOCIATION: certified_franchise_territory
+        BRIDGEWATER COMMONS CONDOMINIUMS: certified_franchise_territory
+        BRISTOL WATER DEPARTMENT: certified_franchise_territory
+        BROOKFIELD ELDERLY HOUSING: certified_franchise_territory
+        BROOKFIELD HILLS CONDOMINIUM UNIT OWNERS: certified_franchise_territory
+        BROOKLYN MANOR: certified_franchise_territory
+        BROOKVIEW WATER COMPANY: certified_franchise_territory
+        BROOKWOOD APARTMENTS: certified_franchise_territory
+        BROOKWOODS II: certified_franchise_territory
+        BRUNSWICK MIDDLE SCHOOL: certified_franchise_territory
+        CAMPBELL HEIGHTS APARTMENTS: certified_franchise_territory
+        CANAAN WATER DEPT: certified_franchise_territory
+        CANDLE HILL MHP: certified_franchise_territory
+        CANDLEWOOD KNOLLS WATER AUTHORITY: certified_franchise_territory
+        CANDLEWOOD ORCHARDS PROPERTY OWNERS CORP: certified_franchise_territory
+        CANDLEWOOD PARK INC: certified_franchise_territory
+        CANDLEWOOD SHORES TAX DISTRICT: certified_franchise_territory
+        CANDLEWOOD SPRINGS PROPERTY OWNERS ASSN: certified_franchise_territory
+        CANDLEWOOD TRAILS ASSOCIATION, INC.: certified_franchise_territory
+        CAREFREE HOMEOWNERS ASSOCIATION: certified_franchise_territory
+        CARRIAGE HOUSE APARTMENTS: certified_franchise_territory
+        CEDAR RIDGE APARTMENTS: certified_franchise_territory
+        CEDAR TERRACE PROP OWNERS ASSN: certified_franchise_territory
+        CEDARBROOK OWNERS, INC.: certified_franchise_territory
+        CEDARHURST ASSOCIATION: certified_franchise_territory
+        CHADWICK HOMEOWNERS ASSN., INC.: certified_franchise_territory
+        CHAPLIN WOODS CONDOMINIUMS: certified_franchise_territory
+        CHATFIELD HILL ASSN., INC.: certified_franchise_territory
+        CHATHAM ACRES ELDERLY HOUSING: certified_franchise_territory
+        CHATHAM APARTMENTS: certified_franchise_territory
+        CHELSEA COMMON CONDOMINIUM ASSOCIATION: certified_franchise_territory
+        CHESTELM HEALTH & REHABILITATION CENTER: certified_franchise_territory
+        CHIPPANYDALE ASSOCIATION: certified_franchise_territory
+        CITY OF NORWALK FIRST TAXING DISTRICT: certified_franchise_territory
+        CLASSEE WATER SYSTEM - LATIMER POINT: certified_franchise_territory
+        CLC OWNERS CORPORATION: certified_franchise_territory
+        CLUB HOUSE APARTMENTS: certified_franchise_territory
+        COLCHESTER COMMONS: certified_franchise_territory
+        COLCHESTER WATER & SEWER COMMISSION: certified_franchise_territory
+        CONNECTICUT WATER COMPANY: certified_franchise_territory
+        CONNOLLYS TRAILER PARK: certified_franchise_territory
+        CONRADS PARK: certified_franchise_territory
+        COOK DRIVE ASSOCIATION: certified_franchise_territory
+        CORNELL HILLS ASSOC, INC: certified_franchise_territory
+        CORNWALL WATER COMPANY: certified_franchise_territory
+        COUNTRY ACRES PARK: certified_franchise_territory
+        COUNTRY MANOR: certified_franchise_territory
+        COUNTRYSIDE APARTMENTS: certified_franchise_territory
+        COUNTRYSIDE DRIVE ASSOCIATION: certified_franchise_territory
+        COVENTRY HOUSING AUTHORITY: certified_franchise_territory
+        CRESTVIEW CONDOMINIUM ASSOCIATION: certified_franchise_territory
+        CROMWELL FIRE DISTRICT: certified_franchise_territory
+        CRYSTAL LAKE CONDOMINIUMS: certified_franchise_territory
+        DANBURY WATER DEPARTMENT: certified_franchise_territory
+        DARTMOUTH VILLAGE ELDERLY HOUSING: certified_franchise_territory
+        DEER PARK APARTMENTS: certified_franchise_territory
+        DEER RUN SUPPLY: certified_franchise_territory
+        DEVEREUX GLENHOLME SCHOOL - MAIN CAMPUS: certified_franchise_territory
+        DODGE FARM: certified_franchise_territory
+        DOUGLAS MANOR: certified_franchise_territory
+        EAST LYME WATER & SEWER COMMISSION: certified_franchise_territory
+        EAST WINDSOR HOUSING AUTHORITY: certified_franchise_territory
+        EASTVIEW KOZLEY WATER ASSOCIATION: certified_franchise_territory
+        EDGEMERE CONDOMINIUM ASSN., INC.: certified_franchise_territory
+        ELDRIDGE ELDERLY HOUSING: certified_franchise_territory
+        ELMWOOD COURT LLC: certified_franchise_territory
+        ETHEL WALKER SCHOOL: certified_franchise_territory
+        EVANGELICAL CHRISTIAN CENTER - MAIN: certified_franchise_territory
+        EVERGREEN TRAILER PARK: certified_franchise_territory
+        EXCLUSIVE SERVICE AREA UNASSIGNED: unassigned_area
+        FALL BROOK MOBILE HOME PARK: certified_franchise_territory
+        FARMINGTON LINE WEST CONDOMINIUMS: certified_franchise_territory
+        FAWN RIDGE ASSOCIATION INC.: certified_franchise_territory
+        FERNWOOD REST HOME: certified_franchise_territory
+        FOX LAUREL MOBILE HOME PARK, LLC: certified_franchise_territory
+        FOXRIDGE APARTMENTS: certified_franchise_territory
+        FRANKLIN ACADEMY: certified_franchise_territory
+        FREEDOM VILLAGE ELDERLY HOUSING: certified_franchise_territory
+        GAIA GARDENS: certified_franchise_territory
+        GARDEN LANE APARTMENTS: certified_franchise_territory
+        GIBSON HILL PARK: certified_franchise_territory
+        GOODRICH MOBILE HOME PARK: certified_franchise_territory
+        GORMAN ROAD APARTMENTS: certified_franchise_territory
+        GQC WELL COMMISSION: certified_franchise_territory
+        GRANT HILL ASSOCIATES, INC.: certified_franchise_territory
+        GREEN SPRINGS SUBDIVISION: certified_franchise_territory
+        GROTON LONG POINT ASSOCIATION: certified_franchise_territory
+        GROTON UTILITIES: certified_franchise_territory
+        GUNNERY SCHOOL: certified_franchise_territory
+        HARMONY ACRES MOBILE HOME PARK: certified_franchise_territory
+        HAZARDVILLE WATER COMPANY: certified_franchise_territory
+        HEMLOCK APARTMENTS: certified_franchise_territory
+        HERBON ARMS APARTMENTS: certified_franchise_territory
+        HERITAGE COVE CONDOMINIUMS: certified_franchise_territory
+        HERITAGE HILL CONDOMINIUM ASSN, INC: certified_franchise_territory
+        HERITAGE VILLAGE WATER COMPANY: certified_franchise_territory
+        HICKORY HILLS: certified_franchise_territory
+        HIGH MEADOW: certified_franchise_territory
+        HILLSIDE CONDOMINIUMS: certified_franchise_territory
+        HILLSIDE CORPORATION: certified_franchise_territory
+        HOLLY HOUSE APARTMENTS: certified_franchise_territory
+        HOP RIVER HOMES: certified_franchise_territory
+        HUNTING LODGE APARTMENTS: certified_franchise_territory
+        'HYDE SCHOOL - SYSTEM #2 (RESIDENTIAL)': certified_franchise_territory
+        IDLEVIEW MOBILE HOME PARK: certified_franchise_territory
+        INDEPENDENCE VILLAGE ELDERLY HOUSING: certified_franchise_territory
+        INDIAN FIELDS HOMEOWNERS ASSOCIATION: certified_franchise_territory
+        INTERLAKEN WATER COMPANY: certified_franchise_territory
+        IVY WOODS: certified_franchise_territory
+        JENSENS, INC.: certified_franchise_territory
+        JEWETT CITY WATER COMPANY: certified_franchise_territory
+        JOHNSON MEMORIAL HOSPITAL, INC: certified_franchise_territory
+        JUNIPER CLUB, INC.: certified_franchise_territory
+        JUSTICE RESOURCE INSTITUTE, INC.: certified_franchise_territory
+        KENSINGTON FIRE DISTRICT: certified_franchise_territory
+        KENT SCHOOL (MAINTENANCE WELL): certified_franchise_territory
+        KENT SCHOOL CORP (VALLEY CAMPUS): certified_franchise_territory
+        KITEMAUG ORCHARD ASSOCIATION, INC.: certified_franchise_territory
+        KNOB HILL CONDOMINIUMS: certified_franchise_territory
+        KNOLLBROOK VILLAGE ELDERLY HOUSING: certified_franchise_territory
+        KNOLLCREST TAX DISTRICT: certified_franchise_territory
+        KNOLLWOOD ACRES APARTMENTS: certified_franchise_territory
+        KUGEMAN VILLAGE: certified_franchise_territory
+        LAKE HILLS VILLAGE CONDOMINIUMS: certified_franchise_territory
+        LAKE LILLINONAH SHORES CONDOS: certified_franchise_territory
+        LAKE WAUBEEKA ASSOCIATION: certified_franchise_territory
+        LAKESIDE MANOR APARTMENTS: certified_franchise_territory
+        LAKEVIEW MOBILE HOME PARK: certified_franchise_territory
+        LAUREL HEIGHTS ASSOCIATION, INC.: certified_franchise_territory
+        LAUREL HILL WATER ASSOCIATION: certified_franchise_territory
+        LEDYARD WATER POLLUTION CONTROL AUTHORITY: certified_franchise_territory
+        LILLINONAH PARK ESTATES HOMEOWNERS ASSN: certified_franchise_territory
+        LINCOLN PARK ELDERLY HOUSING: certified_franchise_territory
+        LISBON MOBILE HOMES: certified_franchise_territory
+        LITCHFIELD HILL CONDOS: certified_franchise_territory
+        LITTLE BROOK RD PROPERTY OWNERS ASSN: certified_franchise_territory
+        LONGVIEW ESTATES, LLC: certified_franchise_territory
+        LYME ACADEMY APARTMENTS, LLC: certified_franchise_territory
+        LYME REGIS, INC.: certified_franchise_territory
+        LYMEWOOD ELDERLY HOUSING: certified_franchise_territory
+        MALLARD COVE CONDOMINIUM ASSN.: certified_franchise_territory
+        MANCHESTER WATER DEPARTMENT: certified_franchise_territory
+        MANSFIELD VILLAGE, LLC: certified_franchise_territory
+        MAPLEWOOD APARTMENTS: certified_franchise_territory
+        MAR-LEA PARK APTS: certified_franchise_territory
+        MARIANAPOLIS PREP SCHOOL: certified_franchise_territory
+        MARKOWSKI FARMS: certified_franchise_territory
+        MARLBOROUGH HEALTH CARE CENTER, INC: certified_franchise_territory
+        MASHANTUCKET PEQUOT TRIBAL NATION: certified_franchise_territory
+        MASONICARE OF NEWTOWN: certified_franchise_territory
+        MATULAITIS NURSING HOME: certified_franchise_territory
+        MEADOWBROOK APARTMENTS, LLC: certified_franchise_territory
+        MEADOWBROOK TERRACE MOBILE HOME PARK: certified_franchise_territory
+        MEADOWS APARTMENTS: certified_franchise_territory
+        MERIDEN WATER DIVISION: certified_franchise_territory
+        METACOMET HOMES: certified_franchise_territory
+        METROPOLITAN DISTRICT COMMISSION: certified_franchise_territory
+        MIAMI BEACH WATER COMPANY: certified_franchise_territory
+        MIDDLEBURY COMMONS: certified_franchise_territory
+        MIDDLEFIELD HOUSING AUTHORITY: certified_franchise_territory
+        MIDDLETOWN WATER DEPARTMENT: certified_franchise_territory
+        MILE CREEK APARTMENTS: certified_franchise_territory
+        MOHEGAN TRIBAL NATION UTILITIES: certified_franchise_territory
+        MONTVILLE WATER POLLUTION CONTROL AUTHORITY: certified_franchise_territory
+        MOOSUP GARDEN APARTMENTS: certified_franchise_territory
+        MOOSUP MANOR: certified_franchise_territory
+        MOOSUP POND TERRACE, LLC: certified_franchise_territory
+        MOUNT SAINT JOHN SCHOOL: certified_franchise_territory
+        MOUNTVIEW APARTMENTS: certified_franchise_territory
+        NATURAL PARK APARTMENTS, LLC: certified_franchise_territory
+        NEW BRITAIN WATER DEPARTMENT: certified_franchise_territory
+        NEW HARTFORD WATER POLLUTION CONTROL AUTHORITY: certified_franchise_territory
+        NEW LONDON DEPARTMENT OF PUBLIC UTILITIES: certified_franchise_territory
+        NEW PRESTON WATER CO: certified_franchise_territory
+        NOANK FIRE DISTRICT: certified_franchise_territory
+        NOD HILL APARTMENTS: certified_franchise_territory
+        NORTH PURCHASE ELDERLY HOUSING: certified_franchise_territory
+        NORTH WILLINGTON VILLAGE CONDO ASSOC.: certified_franchise_territory
+        NORTHFORD GLEN CONDOMINIUM ASSOCIATION: certified_franchise_territory
+        NORTHSTONE GARDENS: certified_franchise_territory
+        NORWEGIAN WOODS APARTMENTS: certified_franchise_territory
+        NORWICH PUBLIC UTILITIES: certified_franchise_territory
+        OAK GROVE SENIOR HOUSING CORP: certified_franchise_territory
+        OAKDALE HEIGHTS ASSOCIATION, INC: certified_franchise_territory
+        OAKDALE MANOR WATER ASSOCIATION: certified_franchise_territory
+        OAKRIDGE GARDENS, LLC: certified_franchise_territory
+        OAKRIDGE VILLAGE: certified_franchise_territory
+        OLD FARMS CONDOMINIUM ASSOCIATION INC: certified_franchise_territory
+        OLD INDIAN TRAIL: certified_franchise_territory
+        OLD NEWGATE RIDGE WATER COMPANY: certified_franchise_territory
+        ORCHARD ACRES ASSOCIATION: certified_franchise_territory
+        ORCHARD HILL ASSOCIATION: certified_franchise_territory
+        OUR LADY OF GRACE MONASTERY: certified_franchise_territory
+        PERRY HILL ESTATES APARTMENTS INC.: certified_franchise_territory
+        PICKETT ROAD APARTMENTS: certified_franchise_territory
+        PINE GROVE ASSOCIATION, INC.: certified_franchise_territory
+        PINECREST CONDOMINIUMS: certified_franchise_territory
+        PLEASURE VALLEY M.H.P.: certified_franchise_territory
+        POMFRET SCHOOL: certified_franchise_territory
+        PORTLAND WATER DEPARTMENT: certified_franchise_territory
+        PRESTON PLAINS WATER COMPANY: certified_franchise_territory
+        PUTNAM WATER POLLUTION CONTROL AUTHORITY: certified_franchise_territory
+        QUASSUK HEIGHTS CONDOMINIUM ASSN: certified_franchise_territory
+        QUINEBAUG MOBILE HOME PARK: certified_franchise_territory
+        QUONNIPAUG HILLS: certified_franchise_territory
+        REJA - RAINBOW SPRING WATER COMPANY: certified_franchise_territory
+        RENWOOD APARTMENTS: certified_franchise_territory
+        RIDGEVIEW HEIGHTS: certified_franchise_territory
+        RIDGEWOOD HILLS ASSOCIATION: certified_franchise_territory
+        ROCKRIDGE CONDOMINIUMS: certified_franchise_territory
+        ROCKTREE APARTMENTS: certified_franchise_territory
+        ROGERS MOBILE HOME PARK: certified_franchise_territory
+        ROSELAND TERRACE ASSOCIATION, INC.: certified_franchise_territory
+        RUMSEY HALL SCHOOL: certified_franchise_territory
+        RYE FIELD MANOR ELDERLY HOUSING: certified_franchise_territory
+        S & P PROPERTIES, LLC: certified_franchise_territory
+        SAFE HARBOR, INC.: certified_franchise_territory
+        SALEM MANOR CONDOMINIUMS: certified_franchise_territory
+        SALISBURY SCHOOL: certified_franchise_territory
+        SALMON BROOK DISTRICT WATER DEPT: certified_franchise_territory
+        SAYBROOK AT HADDAM: certified_franchise_territory
+        SCHOOL HILL ASSOCIATION, INC.: certified_franchise_territory
+        SEELY - BROWN VILLAGE: certified_franchise_territory
+        SHADY ACRES MOBILE HOME PARK: certified_franchise_territory
+        SHAKER HEIGHTS WATER COMPANY: certified_franchise_territory
+        SHARON HEIGHTS WATER ASSOCIATION: certified_franchise_territory
+        SHARON RIDGE APARTMENTS: certified_franchise_territory
+        SHARON WATER DEPARTMENT: certified_franchise_territory
+        SNUG HARBOR DEVELOPMENT CORP: certified_franchise_territory
+        SOLAIR RECREATIONAL LEAGUE - LOWER RIDGE: certified_franchise_territory
+        SOUTH CENTRAL CONNECTICUT REGIONAL WATER AUTHORITY: certified_franchise_territory
+        SOUTH KENT SCHOOL: certified_franchise_territory
+        SOUTH NORWALK ELECTRIC & WATER: certified_franchise_territory
+        SOUTHEASTERN CONNECTICUT WATER AUTHORITY: certified_franchise_territory
+        SOUTHINGTON WATER DEPARTMENT: certified_franchise_territory
+        SOUTHRIDGE PARK APARTMENTS: certified_franchise_territory
+        SPRAGUE WATER & SEWER AUTHORITY: certified_franchise_territory
+        ST. THOMAS MORE SCHOOL: certified_franchise_territory
+        STAFFORD HOLLOW WATER ASSOCIATION: certified_franchise_territory
+        STATE AGENCY EXISTING SERVICE AREA: unassigned_area
+        STERLING WATER COMMISSION: certified_franchise_territory
+        STONE POND CONDOMINIUMS: certified_franchise_territory
+        STONY BROOK MOBILE HOME PARK: certified_franchise_territory
+        STONY HILL VILLAGE: certified_franchise_territory
+        STRAWBERRY PARK: certified_franchise_territory
+        SUNNY VALLEY TAX DISTRICT: certified_franchise_territory
+        SUNNY WATERS MOBILE HOME PARK: certified_franchise_territory
+        SUNSET APARTMENTS LLC: certified_franchise_territory
+        SYLVAN RIDGE CONDOMINIUMS: certified_franchise_territory
+        TARIFFVILLE FIRE DISTRICT WATER DEPT: certified_franchise_territory
+        TASHUA VILLAGE ASSOCIATION, INC.: certified_franchise_territory
+        THE MARVELWOOD SCHOOL: certified_franchise_territory
+        THE RECTORY SCHOOL: certified_franchise_territory
+        THOMPSON HILL WATER CO.: certified_franchise_territory
+        TOLLAND WATER COMMISSION: certified_franchise_territory
+        TORRINGTON WATER COMPANY: certified_franchise_territory
+        TOUCHSTONE N.A.F.I: certified_franchise_territory
+        TOWN IN COUNTRY CONDOMINIUMS: certified_franchise_territory
+        TOWN OF BETHLEHEM: certified_franchise_territory
+        TOWN OF BOLTON: certified_franchise_territory
+        TOWN OF COVENTRY: certified_franchise_territory
+        TOWN OF DURHAM: certified_franchise_territory
+        TOWN OF EAST HADDAM: certified_franchise_territory
+        TOWN OF EAST HAMPTON: certified_franchise_territory
+        TOWN OF FRANKLIN: certified_franchise_territory
+        TOWN OF GOSHEN: certified_franchise_territory
+        TOWN OF LEBANON: certified_franchise_territory
+        TOWN OF LYME: certified_franchise_territory
+        TOWN OF MARLBOROUGH: certified_franchise_territory
+        TOWN OF MIDDLEFIELD: certified_franchise_territory
+        TOWN OF MORRIS: certified_franchise_territory
+        TOWN OF NEW FAIRFIELD: certified_franchise_territory
+        TOWN OF NEWTOWN - FAIRFIELD HILLS: certified_franchise_territory
+        TOWN OF NORTH STONINGTON: certified_franchise_territory
+        TOWN OF PRESTON: certified_franchise_territory
+        TOWN OF SOMERS - RYE HILL: certified_franchise_territory
+        TOWN OF STONINGTON: certified_franchise_territory
+        TUNNEL HILL MOBILE HOME PARK: certified_franchise_territory
+        TURKEY HILL OF EAST GRANBY, LLC: certified_franchise_territory
+        TWIN HILLS WATER DISTRICT: certified_franchise_territory
+        TWIN MAPLES NURSING HOME: certified_franchise_territory
+        VALLEY WATER SYSTEMS, INC: certified_franchise_territory
+        VERNON VILLAGE INC.: certified_franchise_territory
+        VILLAGE AT CRYSTAL SPRINGS: certified_franchise_territory
+        VILLAGE HILL APARTMENTS: certified_franchise_territory
+        VILLAGE MARKET PLACE: certified_franchise_territory
+        VOLUNTOWN HOUSING AUTHORITY: certified_franchise_territory
+        WALDEN APARTMENTS: certified_franchise_territory
+        WALLENS HILL APARTMENTS: certified_franchise_territory
+        WALLINGFORD WATER DIVISION: certified_franchise_territory
+        WATERBURY WATER DEPARTMENT: certified_franchise_territory
+        WATERFORD COUNTRY SCHOOL, INC.: certified_franchise_territory
+        WATERFORD UTILITIES COMMISSION: certified_franchise_territory
+        WATERTOWN FIRE DISTRICT: certified_franchise_territory
+        WATERTOWN WATER & SEWER: certified_franchise_territory
+        WELLSWOOD ESTATES FOUNDATION, INC.: certified_franchise_territory
+        WEST HILL LAKE WATER ASSOC.: certified_franchise_territory
+        WESTERLY WATER DEPT: certified_franchise_territory
+        WESTON WATER SUPPLY: certified_franchise_territory
+        WESTOVER WATER CO: certified_franchise_territory
+        WESTSIDE MANOR: certified_franchise_territory
+        WESTVIEW NURSING CARE & REHAB CTR, INC.: certified_franchise_territory
+        WESTVIEW TERRACE MOBILE HOME PARK: certified_franchise_territory
+        WHISCONIER VILLAGE ASSOCIATION, INC.: certified_franchise_territory
+        WHISPERING HILLS, LLC: certified_franchise_territory
+        WHITE OAK CONDOMINIUMS: certified_franchise_territory
+        WILLINGTON OAKS APARTMENTS: certified_franchise_territory
+        WILLINGTON RIDGE CONDOS: certified_franchise_territory
+        WILLINGTON SENIOR CENTER & HOUSING: certified_franchise_territory
+        WINDHAM WATER WORKS: certified_franchise_territory
+        WINSTED WATER WORKS: certified_franchise_territory
+        WOLCOTT WATER DEPARTMENT: certified_franchise_territory
+        WOODBURY KNOLL, LLC.: certified_franchise_territory
+        WOODBURY PLACE CONDOMINIUM ASSN: certified_franchise_territory
+        WOODCREEK VILLAGE CONDOMINIUM ASSN, INC: certified_franchise_territory
+        WOODCREST ASSOCIATION, INC: certified_franchise_territory
+        WOODHALL SCHOOL, INC: certified_franchise_territory
+        WOODHAVEN APARTMENTS: certified_franchise_territory
+        WOODLAKE TAX DISTRICT: certified_franchise_territory
+        WOODLAND APARTMENTS: certified_franchise_territory
+        WOODLAND SUMMIT COMMUNITY WATER ASSN: certified_franchise_territory
+        WOODLAND TERRACE: certified_franchise_territory
+        WOODLAWN APARTMENTS, LLC: certified_franchise_territory
+        WOODS EDGE APARTMENTS LLC: certified_franchise_territory
+        WOODSTOCK HOUSING AUTHORITY: certified_franchise_territory
+        WOODSTOCK MEADOWS CONDOMINIUM ASSN.: certified_franchise_territory
+        WORTHINGTON FIRE DISTRICT: certified_franchise_territory
+        WYNDHAM PARK APARTMENTS: certified_franchise_territory
+        Z, INC.: certified_franchise_territory
+      on_null: reject
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Informational exclusive-service areas; amendments may not
+    be reflected. Unassigned and unnamed state-agency areas are retained as unassigned
+    areas, not provider territories.

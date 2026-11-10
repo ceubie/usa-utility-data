@@ -1,0 +1,34 @@
+sources:
+- source_id: california_water_areas_swrcb
+  publisher: California State Water Resources Control Board
+  driver: arcgis
+  url: https://gispublic.waterboards.ca.gov/portalserver/rest/services/Drinking_Water/California_Drinking_Water_System_Area_Boundaries/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/california_water_areas_swrcb
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/california_water_areas_swrcb/layer_metadata.json
+    name_field: WATER_SYSTEM_NAME
+    id_fields:
+      feature_id: OBJECTID_1
+      pwsid: WATER_SYSTEM_NUMBER
+    authority: state_regulator
+    status_field:
+      field: ACTIVITY_STATUS_CD
+      values:
+        'A ': active
+      on_null: unknown
+    state_fixed: CA
+    on_missing_name: reject
+    on_invalid_pwsid: preserve_raw_without_federal_id
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Boundaries have varying verification status; current snapshot
+    has only A-space activity codes.

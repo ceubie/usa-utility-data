@@ -1,0 +1,62 @@
+sources:
+- source_id: florida_broward_water_provider_areas
+  publisher: Broward County
+  driver: arcgis
+  url: https://services.arcgis.com/JMAJrTsHNLrSsWf5/arcgis/rest/services/WaterSewerDrainage_WFL1/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/florida_broward_water_provider_areas
+  layers:
+  - layer: '1'
+    sector: water
+    grain: service_area
+    metadata_path: gis/florida_broward_water_provider_areas/layer_metadata.json
+    name_field: WATER_NAME
+    id_fields:
+      feature_id: OBJECTID
+    authority: utility_direct
+    state_fixed: FL
+    role_field:
+      field: WATER_NAME
+      values:
+        BC Water & Wastewater: active_retail_service
+        Coconut Creek: active_retail_service
+        Cooper City: active_retail_service
+        Coral Springs: active_retail_service
+        Coral Springs Improvement District: active_retail_service
+        Dania Beach: active_retail_service
+        Davie: active_retail_service
+        Deerfield Beach: active_retail_service
+        Ferncrest Utilities: active_retail_service
+        Fort Lauderdale: active_retail_service
+        Hallandale Beach: active_retail_service
+        Hillsboro Beach: active_retail_service
+        Hollywood: active_retail_service
+        Indian Trace Development District: active_retail_service
+        Lauderhill: active_retail_service
+        Margate: active_retail_service
+        Miramar: active_retail_service
+        North Lauderdale: active_retail_service
+        North Springs Improvement District: active_retail_service
+        Oakland Park: active_retail_service
+        Parkland: active_retail_service
+        Pembroke Pines: active_retail_service
+        Plantation: active_retail_service
+        Pompano Beach: active_retail_service
+        Port Everglades: active_retail_service
+        Royal Utilities: active_retail_service
+        Seminole Industries: active_retail_service
+        Sunrise: active_retail_service
+        Tamarac: active_retail_service
+        Unclaimed Area: unassigned_area
+        Wilton Manors: active_retail_service
+      on_null: reject
+  notes: 'Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Provider areas from Broward County; coverage and vintage
+    need confirmation. Unclaimed areas are retained as unassigned areas, not provider
+    territories. Authority is unresolved: the county compilation does not establish
+    that each polygon was supplied directly by the utility.'

@@ -1,0 +1,30 @@
+sources:
+- source_id: mississippi_water_certificated_areas_psc
+  publisher: Mississippi Public Service Commission
+  driver: arcgis
+  url: https://services2.arcgis.com/tONuKShmVp7yWQJL/arcgis/rest/services/PSC_CurrentCAs/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/mississippi_water_certificated_areas_psc
+  layers:
+  - layer: '1'
+    sector: water
+    grain: service_area
+    role: certified_franchise_territory
+    metadata_path: gis/mississippi_water_certificated_areas_psc/layer_metadata.json
+    name_field: UTILITY_NA
+    id_fields:
+      feature_id: OBJECTID_1
+    authority: state_regulator
+    state_fixed: MS
+    vintage_field: ASOF_DATE
+    dissolve: true
+    on_missing_name: reject
+  notes: Current certificated areas. Cadence is a conservative collection assumption;
+    licence terms require verification before redistribution. Source polygons must
+    be dissolved by utility. The frozen snapshot contains 276 features without a utility
+    name; those rows must be rejected and reconciled.

@@ -1,0 +1,34 @@
+sources:
+- source_id: missouri_public_water_districts_dnr
+  publisher: Missouri Department of Natural Resources
+  driver: arcgis
+  url: https://gis.dnr.mo.gov/host/rest/services/water/PubDrinkingWaterDistricts/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/missouri_public_water_districts_dnr
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/missouri_public_water_districts_dnr/layer_metadata.json
+    name_field: PWSSNAME
+    id_fields:
+      feature_id: OBJECTID
+      state_id: PWSSID
+    authority: state_regulator
+    vintage_field: LASTUPDATE
+    status_field:
+      field: STATUS
+      values:
+        Active: active
+      on_null: unknown
+    state_fixed: MO
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. PWSSID is numeric in the source; do not assume a federal
+    PWSID prefix.

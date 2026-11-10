@@ -1,0 +1,36 @@
+sources:
+- source_id: arizona_water_service_areas_adhs_2022
+  publisher: Arizona Department of Health Services
+  driver: arcgis
+  url: https://services1.arcgis.com/mpVYz37anSdrK4d8/arcgis/rest/services/Public_Water_System_from_Arizona_EPHT_Explorer/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/arizona_water_service_areas_adhs_2022
+  layers:
+  - layer: '1'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/arizona_water_service_areas_adhs_2022/layer_metadata.json
+    name_field: CWS_NAME
+    id_fields:
+      feature_id: OBJECTID_12
+      pwsid: ADEQ_ID
+    authority: state_regulator
+    status_field:
+      field: STATUS
+      values:
+        A: active
+        I: inactive
+        ' ': unknown
+      on_null: unknown
+    state_fixed: AZ
+    on_missing_name: reject
+    on_invalid_pwsid: preserve_raw_without_federal_id
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Source description says primary boundaries and approximations
+    are mixed; feature vintage is uncertain.

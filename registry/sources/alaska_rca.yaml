@@ -1,0 +1,28 @@
+sources:
+- source_id: alaska_water_areas_rca
+  publisher: Regulatory Commission of Alaska
+  driver: arcgis
+  url: https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/91
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alaska_water_areas_rca
+  layers:
+  - layer: '91'
+    sector: water
+    grain: service_area
+    role: certified_franchise_territory
+    metadata_path: gis/alaska_water_areas_rca/layer_metadata.json
+    name_field: UtilityName
+    id_fields:
+      feature_id: OBJECTID
+      state_id: CertificateNumber
+    authority: state_regulator
+    vintage_field: AsOfDate
+    state_fixed: AK
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Certificated areas; AsOfDate is a layer as-of date.

@@ -1,0 +1,28 @@
+sources:
+- source_id: california_water_class_a_territories_cpuc_2023
+  publisher: California Public Utilities Commission
+  driver: arcgis
+  url: https://services2.arcgis.com/VofPZYDe2pLxSP5G/ArcGIS/rest/services/Utility_Territory/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/california_water_class_a_territories_cpuc_2023
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: certified_franchise_territory
+    metadata_path: gis/california_water_class_a_territories_cpuc_2023/layer_metadata.json
+    name_field: Utility
+    id_fields:
+      feature_id: OBJECTID_1
+      state_id: pwsid
+    authority: state_regulator
+    state_fixed: CA
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Despite its field name, pwsid contains utility-area identifiers,
+    not federal PWSIDs.

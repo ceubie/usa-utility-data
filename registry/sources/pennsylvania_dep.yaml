@@ -1,0 +1,29 @@
+sources:
+- source_id: pennsylvania_water_service_areas_dep
+  publisher: Pennsylvania Department of Environmental Protection
+  driver: arcgis
+  url: https://gis.dep.pa.gov/depgisprd/rest/services/emappa/eMapPA_External/MapServer/302
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/pennsylvania_water_service_areas_dep
+  layers:
+  - layer: '302'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/pennsylvania_water_service_areas_dep/layer_metadata.json
+    name_field: NAME
+    id_fields:
+      feature_id: OBJECTID
+      state_id: PWS_ID
+    authority: state_regulator
+    vintage_field: LAST_DATE
+    state_fixed: PA
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. PWS_ID is seven digits in sampled records; record date
+    is not proof of each polygon vintage.

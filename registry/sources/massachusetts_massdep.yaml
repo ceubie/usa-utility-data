@@ -1,0 +1,79 @@
+sources:
+- source_id: massachusetts_water_community_massdep
+  publisher: Massachusetts Department of Environmental Protection
+  driver: arcgis
+  url: https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/DEP_PWS_WATER_SERVICE_AREAS/FeatureServer/2
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/massachusetts_water_community_massdep
+  layers:
+  - layer: '2'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/massachusetts_water_community_massdep/layer_metadata.json
+    name_field: PWS_NAME
+    id_fields:
+      feature_id: OBJECTID
+      pwsid: PWS_ID_C
+    authority: state_regulator
+    vintage_field: SERVCEYEAR
+    status_field:
+      field: PWS_STATUS
+      values:
+        A: active
+        I: inactive
+      on_null: unknown
+    state_fixed: MA
+    pwsid_rule: state_prefix_7
+    boundary_representation: mixed
+    on_missing_name: reject
+    on_invalid_pwsid: preserve_raw_without_federal_id
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Mapped and estimated boundaries are mixed; state authority
+    alone does not identify modeled geometries. Includes estimates and location placeholders;
+    exclude mixed-representation areas from non-modeled metrics until a per-feature
+    distinction is validated.
+- source_id: massachusetts_water_nontransient_massdep
+  publisher: Massachusetts Department of Environmental Protection
+  driver: arcgis
+  url: https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/DEP_PWS_WATER_SERVICE_AREAS/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/massachusetts_water_nontransient_massdep
+  layers:
+  - layer: '1'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/massachusetts_water_nontransient_massdep/layer_metadata.json
+    name_field: PWS_NAME
+    id_fields:
+      feature_id: OBJECTID
+      pwsid: PWS_ID_C
+    authority: state_regulator
+    vintage_field: SERVCEYEAR
+    status_field:
+      field: PWS_STATUS
+      values:
+        A: active
+        I: inactive
+      on_null: unknown
+    state_fixed: MA
+    pwsid_rule: state_prefix_7
+    boundary_representation: mixed
+    on_missing_name: reject
+    on_invalid_pwsid: preserve_raw_without_federal_id
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Mapped and estimated boundaries are mixed; state authority
+    alone does not identify modeled geometries. Includes estimates and location placeholders;
+    exclude mixed-representation areas from non-modeled metrics until a per-feature
+    distinction is validated.

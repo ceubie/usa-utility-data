@@ -1,0 +1,30 @@
+sources:
+- source_id: oklahoma_water_service_areas_owrb
+  publisher: Oklahoma Water Resources Board
+  driver: arcgis
+  url: https://owrb.csa.ou.edu/server/rest/services/Water_Supply/Water_Systems/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oklahoma_water_service_areas_owrb
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/oklahoma_water_service_areas_owrb/layer_metadata.json
+    name_field: name
+    id_fields:
+      feature_id: objectid
+      pwsid: pwsid
+    authority: state_regulator
+    vintage_field: year
+    state_fixed: OK
+    on_missing_name: reject
+    on_invalid_pwsid: preserve_raw_without_federal_id
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Approximate areas; much of the source traces to a 1995
+    survey with later additions.

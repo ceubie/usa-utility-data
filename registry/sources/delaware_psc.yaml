@@ -1,0 +1,30 @@
+sources:
+- source_id: delaware_water_certificated_areas_psc
+  publisher: Delaware Public Service Commission
+  driver: arcgis
+  url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_CPCN/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/delaware_water_certificated_areas_psc
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: certified_franchise_territory
+    metadata_path: gis/delaware_water_certificated_areas_psc/layer_metadata.json
+    name_field: COMPANY1
+    id_fields:
+      feature_id: OBJECTID
+      state_id: CPCN_
+    authority: state_regulator
+    vintage_field: ISSUE_DATE
+    state_fixed: DE
+    on_missing_name: reject
+  notes: Cadence is a conservative collection assumption; licence terms require verification
+    before redistribution. Certificate issue dates do not necessarily establish polygon
+    vintage. The frozen snapshot contains four features without a utility name; those
+    rows must be rejected and reconciled.
