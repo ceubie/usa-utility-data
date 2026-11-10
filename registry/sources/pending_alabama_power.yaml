@@ -1,0 +1,19 @@
+sources:
+- source_id: supplemental_alabama_power_service_territory
+  publisher: Alabama Power
+  driver: http
+  url: https://www.alabamapower.com/content/dam/alabama-power/pdfs-docs/company/service-territory-maps/alabamapowerserviceterritory.kmz
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - states/al/alabama_power_service_territory.kmz
+  layers:
+  - layer: alabama_power_service_territory.kmz
+    sector: electric
+    grain: service_area
+    state_fixed: AL
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.

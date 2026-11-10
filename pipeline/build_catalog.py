@@ -10,85 +10,23 @@ from pipeline.config import (
     infer_state_from_source_id,
 )
 
-# Explicit intra-source duplicate / subset / view pruning rules
-PRUNE_RULES = {
-    "arizona_electric_utility_areas_dema_source": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "arizona_electric_utility_areas_dema",
-        "pruned_reason": "Exact duplicate ArcGIS source layer of arizona_electric_utility_areas_dema (same 75 polygons and IDs).",
-    },
-    "dc_water_large_mains": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "dc_water_pressure_mains",
-        "pruned_reason": "Filtered >=16-inch subset of dc_water_pressure_mains; counting both double-counts 7,471 mains.",
-    },
-    "oregon_portland_non_bes_ownership": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "oregon_portland_sewer_pipes",
-        "pruned_reason": "Cross-layer ownership filter view repeating pipes, laterals, and storm lines from other Portland BES layers.",
-    },
-    "national_epa_noncommunity_water_service_centers_v1_1": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "national_epa_noncommunity_water_service_areas_v1_1",
-        "pruned_reason": "Polygon centroid point representation of the exact same 77,626 non-community water systems.",
-    },
-    "new_jersey_power_plant_parcels_dep": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "new_jersey_power_plants_dep",
-        "pruned_reason": "Tax parcel polygon representation of the exact same 77 power plant facilities in new_jersey_power_plants_dep.",
-    },
-    "wisconsin_electric_psc": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "state_wi_psc_electric_territories",
-        "pruned_reason": "Incomplete 3-feature third-party ArcGIS subset; superseded by official 117-feature WI PSC shapefile archive.",
-    },
-    "wisconsin_electric_municipal_psc": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "state_wi_psc_electric_territories",
-        "pruned_reason": "Incomplete 3-feature third-party ArcGIS subset; superseded by official 117-feature WI PSC shapefile archive.",
-    },
-    "wisconsin_natural_gas_psc_2016": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "state_wi_psc_natural_gas_territories",
-        "pruned_reason": "Incomplete 3-feature 2016 ArcGIS subset; superseded by official 11-feature WI PSC natural gas archive.",
-    },
-    "minnesota_metc_musa_2030": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "minnesota_metc_musa_composite",
-        "pruned_reason": "Single-horizon slice already represented in minnesota_metc_musa_composite.",
-    },
-    "minnesota_metc_musa_2040": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "minnesota_metc_musa_composite",
-        "pruned_reason": "Single-horizon slice already represented in minnesota_metc_musa_composite.",
-    },
-    "minnesota_metc_musa_2050": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "minnesota_metc_musa_composite",
-        "pruned_reason": "Single-horizon slice already represented in minnesota_metc_musa_composite.",
-    },
-    "minnesota_metc_musa_undesignated_reserve": {
-        "is_pruned_duplicate": True,
-        "superseded_by": "minnesota_metc_musa_composite",
-        "pruned_reason": "Single-horizon slice already represented in minnesota_metc_musa_composite.",
-    },
-}
+# Source-specific pruning and licence decisions live in the hand-edited registry.
+def registry_policy():
+    rules = {}
+    licences = {}
+    registry_dir = Path(__file__).resolve().parents[1] / "registry" / "sources"
+    for registry_file in sorted(registry_dir.glob("*.yaml")):
+        doc = yaml.safe_load(registry_file.read_text(encoding="utf-8"))
+        for source in doc["sources"]:
+            source_id = source["source_id"]
+            if source.get("superseded_by") and source.get("pruned_reason"):
+                rules[source_id] = {"is_pruned_duplicate": True, "superseded_by": source["superseded_by"], "pruned_reason": source["pruned_reason"]}
+            if source.get("licence") not in (None, "unknown"):
+                licences[source_id] = source["licence"]
+    return rules, licences
 
-LICENSE_OVERRIDES = {
-    "minnesota_metc_wastewater_treatment_facilities": "internal_or_no_redistribution",
-    "minnesota_metc_sewer_interceptors": "internal_or_no_redistribution",
-    "minnesota_metc_current_sewersheds": "internal_or_no_redistribution",
-    "minnesota_metc_long_term_wastewater_areas": "internal_or_no_redistribution",
-    "virginia_fairfax_sewer_service_areas": "internal_or_no_redistribution",
-    "washington_king_county_sewer_service_providers": "attribution_no_commercial_sale",
-    "new_jersey_water_purveyors_njdep_2017": "attribution_required",
-    "utah_electric_service_areas_ugrc": "attribution_required",
-    "dc_electric_substations_1999_dcgis": "attribution_required",
-    "illinois_electric_territories_broadband_office": "attribution_required",
-    "kentucky_electric_service_areas_dgi": "attribution_required",
-    "kentucky_electric_service_boundary_lines_dgi": "attribution_required",
-}
 
+PRUNE_RULES, LICENSE_OVERRIDES = registry_policy()
 
 def classify_gis_layer(name: str, geom_type: str | None, fields: list[str]) -> dict:
     """Classify an ArcGIS layer by sector, entity category, zone role, and authority tier."""

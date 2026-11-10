@@ -13,7 +13,7 @@ Grain = Literal["service_area", "facility", "network", "admin_association", "reg
 Authority = Literal["utility_direct", "state_regulator", "federal_submitted", "federal_modeled", "admin_proxy"]
 AUTHORITIES = {"utility_direct", "state_regulator", "federal_submitted", "federal_modeled", "admin_proxy"}
 ZONE_ROLES = {"active_retail_service", "certified_franchise_territory", "planned_or_future_service", "administrative_unit_proxy", "source_watershed_or_basin", "regional_wholesale_or_district", "not_serviced_or_excluded", "unassigned_area"}
-STATES = set("AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY AS GU MP PR VI".split())
+STATES = {"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "AS", "GU", "MP", "PR", "VI"}
 
 
 class RegistryModel(BaseModel):
@@ -37,6 +37,7 @@ class Layer(RegistryModel):
     name_field: str | None = None
     on_missing_name: Literal["reject"] | None = None
     id_fields: dict[str, str] = Field(default_factory=dict)
+    attribute_fields: dict[str, str] = Field(default_factory=dict)
     pwsid_rule: Literal["state_prefix_7"] | None = None
     on_invalid_pwsid: Literal["preserve_raw_without_federal_id"] | None = None
     state_field: str | None = None
@@ -86,6 +87,7 @@ class Source(RegistryModel):
     redistribution: Literal["shareable", "internal_only"] = "internal_only"
     out_of_scope: StrictBool = False
     superseded_by: str | None = None
+    pruned_reason: str | None = None
     reviewed: StrictBool = False
     paths: list[str] = Field(default_factory=list)
     layers: list[Layer] = Field(default_factory=list)
@@ -97,6 +99,8 @@ class Source(RegistryModel):
             raise ValueError("Unknown or restricted licence cannot be marked shareable")
         if not self.reviewed:
             return self
+        if self.superseded_by and not self.pruned_reason:
+            raise ValueError("Reviewed superseded sources require a reason")
         if any(not x for x in (self.publisher, self.driver, self.url, self.cadence, self.licence)):
             raise ValueError("Reviewed sources require publisher, driver, url, cadence and licence")
         if not self.paths:
@@ -170,7 +174,7 @@ def load_registry(directory: Path, *, require_reviewed: bool = True, raw_root: P
                     if str(snapshot.get("source_layer", "")).rstrip("/").casefold() != (source.url or "").rstrip("/").casefold():
                         raise ValueError(f"Snapshot URL does not match source for {source.source_id}")
                 available = {field["name"] for field in metadata.get("fields", [])}
-                mapped = set(layer.id_fields.values()) | {x for x in (layer.name_field, layer.state_field, layer.vintage_field) if x}
+                mapped = set(layer.id_fields.values()) | set(layer.attribute_fields.values()) | {x for x in (layer.name_field, layer.state_field, layer.vintage_field) if x}
                 mapped |= {item.field for item in (layer.role_field, layer.status_field, layer.authority if isinstance(layer.authority, FieldMap) else None) if item}
                 missing = mapped - available
                 if missing:

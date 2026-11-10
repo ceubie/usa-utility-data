@@ -7,7 +7,14 @@ from pathlib import Path
 import duckdb
 import pyarrow.parquet as pq
 import yaml
-from pydantic import BaseModel, ConfigDict, Field, StrictBool, field_validator, model_validator
+from pydantic import (
+    BaseModel,
+    ConfigDict,
+    Field,
+    StrictBool,
+    field_validator,
+    model_validator,
+)
 
 ABSOLUTE_PATH = (
     r"(?m)(^|[^A-Za-z0-9+./:-])([A-Za-z]:[\\/]|\\\\)"
@@ -117,7 +124,7 @@ def _geo_error(schema, required):
             if info.get("encoding") not in {"WKB", "point", "linestring", "polygon", "multipoint", "multilinestring", "multipolygon"}:
                 raise ValueError("missing or unsupported geometry encoding")
             if not isinstance(info.get("geometry_types"), list):
-                raise ValueError("missing geometry types")
+                raise TypeError("missing geometry types")
     except (ValueError, TypeError, KeyError, UnicodeDecodeError) as exc:
         return f"invalid geo metadata: {exc}"
     return None

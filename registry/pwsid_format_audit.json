@@ -1,0 +1,22 @@
+{
+  "source": "water/epa_pws_boundaries_latest.zip:3_0/Service_Areas_V_3_0.gpkg",
+  "registry_reference": "water/epa_sdwa_latest.zip:SDWA_PUB_WATER_SYSTEMS.csv",
+  "proposed_rule": "two alphanumeric characters followed by seven digits",
+  "method": "Trim source PWSIDs, count distinct nonempty IDs outside the proposed rule, and check exact membership in SDWIS PWSID values.",
+  "layers": {
+    "CWS": {
+      "features": 44656,
+      "distinct_rule_exceptions": 589,
+      "exceptions_in_sdwis": 580,
+      "exceptions_not_in_sdwis": 9
+    },
+    "T_NTNC": {
+      "features": 77469,
+      "distinct_rule_exceptions": 1174,
+      "exceptions_in_sdwis": 1170,
+      "exceptions_not_in_sdwis": 4
+    }
+  },
+  "examples_confirmed_in_sdwis": ["WA53AA101", "WA53HD840", "UTAH18166"],
+  "decision": "Pending: preserve raw identifiers and do not apply a new validation rule until the plan conflict is resolved."
+}

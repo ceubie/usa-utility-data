@@ -13,8 +13,7 @@ sources:
   layers:
   - layer: '3'
     sector: electric
-    grain: service_area
-    role: source_watershed_or_basin
+    grain: admin_association
     metadata_path: gis/alabama_power_divisions_2023/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
@@ -32,8 +31,7 @@ sources:
   layers:
   - layer: '4'
     sector: electric
-    grain: service_area
-    role: source_watershed_or_basin
+    grain: admin_association
     metadata_path: gis/alabama_power_operating_centers_2023/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
@@ -223,6 +221,8 @@ sources:
     metadata_path: gis/arizona_electric_utility_areas_dema_source/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Exact duplicate ArcGIS source layer of arizona_electric_utility_areas_dema
+    (same 75 polygons and IDs).
 - source_id: arizona_pima_electric_service_areas
   publisher: null
   driver: arcgis
@@ -500,7 +500,7 @@ sources:
   - gis/colorado_metro_water_recovery_members
   layers:
   - layer: '2'
-    sector: water
+    sector: wastewater
     grain: service_area
     role: regional_wholesale_or_district
     metadata_path: gis/colorado_metro_water_recovery_members/layer_metadata.json
@@ -602,7 +602,7 @@ sources:
   driver: arcgis
   url: https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Planimetrics_1999/MapServer/25
   cadence: null
-  licence: null
+  licence: attribution_required
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -615,6 +615,7 @@ sources:
     metadata_path: gis/dc_electric_substations_1999_dcgis/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: dc_water_drain_pipes
   publisher: null
   driver: arcgis
@@ -669,6 +670,8 @@ sources:
     metadata_path: gis/dc_water_large_mains/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Filtered >=16-inch subset of dc_water_pressure_mains; counting both
+    double-counts 7,471 mains.
 - source_id: dc_water_pressure_mains
   publisher: null
   driver: arcgis
@@ -720,8 +723,7 @@ sources:
   layers:
   - layer: '0'
     sector: electric
-    grain: service_area
-    role: active_retail_service
+    grain: facility
     metadata_path: gis/delaware_community_solar_psc/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
@@ -761,6 +763,11 @@ sources:
     grain: service_area
     role: active_retail_service
     metadata_path: gis/electric_retail_territories_hifld/layer_metadata.json
+    state_from_geometry: true
+    authority: federal_modeled
+    attribute_fields:
+      holding_company: HOLDING_CO
+    boundary_representation: modeled
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
 - source_id: electric_transmission_lines_eia
@@ -1248,20 +1255,21 @@ sources:
   driver: arcgis
   url: https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/3
   cadence: null
-  licence: null
-  out_of_scope: true
+  licence: attribution_required
+  out_of_scope: false
   superseded_by: null
   reviewed: false
   paths:
   - gis/illinois_electric_territories_broadband_office
   layers:
   - layer: '3'
-    sector: telecommunications
+    sector: electric
     grain: service_area
     role: active_retail_service
     metadata_path: gis/illinois_electric_territories_broadband_office/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: indiana_electric_territories_iurc
   publisher: null
   driver: arcgis
@@ -1323,7 +1331,7 @@ sources:
   driver: arcgis
   url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Electric_Service_Areas_WGS84WM/MapServer/1
   cadence: null
-  licence: null
+  licence: attribution_required
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -1337,12 +1345,13 @@ sources:
     metadata_path: gis/kentucky_electric_service_areas_dgi/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: kentucky_electric_service_boundary_lines_dgi
   publisher: null
   driver: arcgis
   url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Electric_Service_Areas_WGS84WM/MapServer/0
   cadence: null
-  licence: null
+  licence: attribution_required
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -1356,6 +1365,7 @@ sources:
     metadata_path: gis/kentucky_electric_service_boundary_lines_dgi/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: kentucky_natural_gas_distribution_areas
   publisher: null
   driver: arcgis
@@ -1596,10 +1606,11 @@ sources:
   layers:
   - layer: '3'
     sector: wastewater
-    grain: admin_association
+    grain: registry_table
     metadata_path: gis/massachusetts_sewer_unlocated_massdep/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+    review. Saved metadata identifies this as a nonspatial table, not a missing-geometry
+    layer.
 - source_id: massachusetts_water_unlocated_massdep
   publisher: null
   driver: arcgis
@@ -1614,10 +1625,11 @@ sources:
   layers:
   - layer: '3'
     sector: water
-    grain: admin_association
+    grain: registry_table
     metadata_path: gis/massachusetts_water_unlocated_massdep/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+    review. Saved metadata identifies this as a nonspatial table, not a missing-geometry
+    layer.
 - source_id: michigan_biomass_power_plants_mpsc
   publisher: null
   driver: arcgis
@@ -1895,7 +1907,7 @@ sources:
   driver: arcgis
   url: https://arcgis.metc.state.mn.us/arcgis/rest/services/LPH/Wastewater_ES/MapServer/2
   cadence: null
-  licence: null
+  licence: internal_or_no_redistribution
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -1909,12 +1921,13 @@ sources:
     metadata_path: gis/minnesota_metc_current_sewersheds/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: minnesota_metc_long_term_wastewater_areas
   publisher: null
   driver: arcgis
   url: https://arcgis.metc.state.mn.us/arcgis/rest/services/LPH/Wastewater_ES/MapServer/3
   cadence: null
-  licence: null
+  licence: internal_or_no_redistribution
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -1928,6 +1941,7 @@ sources:
     metadata_path: gis/minnesota_metc_long_term_wastewater_areas/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: minnesota_metc_musa_2030
   publisher: null
   driver: arcgis
@@ -1947,6 +1961,7 @@ sources:
     metadata_path: gis/minnesota_metc_musa_2030/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Single-horizon slice already represented in minnesota_metc_musa_composite.
 - source_id: minnesota_metc_musa_2040
   publisher: null
   driver: arcgis
@@ -1966,6 +1981,7 @@ sources:
     metadata_path: gis/minnesota_metc_musa_2040/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Single-horizon slice already represented in minnesota_metc_musa_composite.
 - source_id: minnesota_metc_musa_2050
   publisher: null
   driver: arcgis
@@ -1985,6 +2001,7 @@ sources:
     metadata_path: gis/minnesota_metc_musa_2050/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Single-horizon slice already represented in minnesota_metc_musa_composite.
 - source_id: minnesota_metc_musa_composite
   publisher: null
   driver: arcgis
@@ -2023,12 +2040,13 @@ sources:
     metadata_path: gis/minnesota_metc_musa_undesignated_reserve/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Single-horizon slice already represented in minnesota_metc_musa_composite.
 - source_id: minnesota_metc_sewer_interceptors
   publisher: null
   driver: arcgis
   url: https://arcgis.metc.state.mn.us/arcgis/rest/services/LPH/Wastewater_ES/MapServer/1
   cadence: null
-  licence: null
+  licence: internal_or_no_redistribution
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -2041,12 +2059,13 @@ sources:
     metadata_path: gis/minnesota_metc_sewer_interceptors/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: minnesota_metc_wastewater_treatment_facilities
   publisher: null
   driver: arcgis
   url: https://arcgis.metc.state.mn.us/arcgis/rest/services/LPH/Wastewater_ES/MapServer/0
   cadence: null
-  licence: null
+  licence: internal_or_no_redistribution
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -2059,6 +2078,7 @@ sources:
     metadata_path: gis/minnesota_metc_wastewater_treatment_facilities/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: mississippi_electric_certificated_areas_psc
   publisher: null
   driver: arcgis
@@ -2076,6 +2096,7 @@ sources:
     grain: service_area
     role: certified_franchise_territory
     metadata_path: gis/mississippi_electric_certificated_areas_psc/layer_metadata.json
+    dissolve: true
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
 - source_id: mississippi_gas_certificated_areas_psc
@@ -2095,6 +2116,7 @@ sources:
     grain: service_area
     role: certified_franchise_territory
     metadata_path: gis/mississippi_gas_certificated_areas_psc/layer_metadata.json
+    dissolve: true
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
 - source_id: mississippi_sewer_certificated_areas_psc
@@ -2114,6 +2136,7 @@ sources:
     grain: service_area
     role: certified_franchise_territory
     metadata_path: gis/mississippi_sewer_certificated_areas_psc/layer_metadata.json
+    dissolve: true
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
 - source_id: mississippi_telephone_certificated_areas_psc
@@ -2133,6 +2156,7 @@ sources:
     grain: service_area
     role: certified_franchise_territory
     metadata_path: gis/mississippi_telephone_certificated_areas_psc/layer_metadata.json
+    dissolve: true
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
 - source_id: national_epa_noncommunity_water_service_areas_v1_1
@@ -2172,6 +2196,8 @@ sources:
     metadata_path: gis/national_epa_noncommunity_water_service_centers_v1_1/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Polygon centroid point representation of the exact same 77,626 non-community
+    water systems.
 - source_id: national_ferc_hydropower_exempted_projects
   publisher: null
   driver: arcgis
@@ -2410,6 +2436,8 @@ sources:
     metadata_path: gis/new_jersey_power_plant_parcels_dep/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Tax parcel polygon representation of the exact same 77 power plant
+    facilities in new_jersey_power_plants_dep.
 - source_id: new_jersey_power_plants_dep
   publisher: null
   driver: arcgis
@@ -2479,8 +2507,7 @@ sources:
   layers:
   - layer: '22'
     sector: electric
-    grain: service_area
-    role: active_retail_service
+    grain: facility
     metadata_path: gis/new_jersey_solar_pv_behind_meter_dep/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
@@ -2498,8 +2525,7 @@ sources:
   layers:
   - layer: '15'
     sector: electric
-    grain: service_area
-    role: active_retail_service
+    grain: admin_association
     metadata_path: gis/new_jersey_solar_pv_by_county_dep/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
@@ -2517,8 +2543,7 @@ sources:
   layers:
   - layer: '16'
     sector: electric
-    grain: service_area
-    role: active_retail_service
+    grain: facility
     metadata_path: gis/new_jersey_solar_pv_grid_supply_dep/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
@@ -2563,7 +2588,7 @@ sources:
   driver: arcgis
   url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/13
   cadence: null
-  licence: null
+  licence: attribution_required
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -2577,6 +2602,7 @@ sources:
     metadata_path: gis/new_jersey_water_purveyors_njdep_2017/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: new_jersey_wreck_pond_sanitary_sewer_lines_dep
   publisher: null
   driver: arcgis
@@ -2818,8 +2844,7 @@ sources:
   layers:
   - layer: '1'
     sector: electric
-    grain: service_area
-    role: active_retail_service
+    grain: admin_association
     metadata_path: gis/ohio_electric_overlap_areas_puco/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
@@ -2854,7 +2879,7 @@ sources:
   - gis/oregon_clean_water_services_district_border
   layers:
   - layer: '1'
-    sector: water
+    sector: wastewater
     grain: service_area
     role: regional_wholesale_or_district
     metadata_path: gis/oregon_clean_water_services_district_border/layer_metadata.json
@@ -2873,7 +2898,7 @@ sources:
   - gis/oregon_clean_water_services_pump_station_boundaries
   layers:
   - layer: '12'
-    sector: water
+    sector: wastewater
     grain: service_area
     role: regional_wholesale_or_district
     metadata_path: gis/oregon_clean_water_services_pump_station_boundaries/layer_metadata.json
@@ -2911,7 +2936,7 @@ sources:
   - gis/oregon_clean_water_services_treatment_plant_basins
   layers:
   - layer: '15'
-    sector: water
+    sector: wastewater
     grain: service_area
     role: source_watershed_or_basin
     metadata_path: gis/oregon_clean_water_services_treatment_plant_basins/layer_metadata.json
@@ -3172,6 +3197,8 @@ sources:
     metadata_path: gis/oregon_portland_non_bes_ownership/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Cross-layer ownership filter view repeating pipes, laterals, and
+    storm lines from other Portland BES layers.
 - source_id: oregon_portland_pond_connectors
   publisher: null
   driver: arcgis
@@ -3690,25 +3717,6 @@ sources:
     metadata_path: gis/tennessee_gallatin_water_service_areas/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
-- source_id: tennessee_public_water_service_areas_tdec
-  publisher: null
-  driver: arcgis
-  url: https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_Public_Water_System_Service_Area_Boundaries_WFL1/FeatureServer/0
-  cadence: null
-  licence: null
-  out_of_scope: false
-  superseded_by: null
-  reviewed: false
-  paths:
-  - gis/tennessee_public_water_service_areas_tdec
-  layers:
-  - layer: '0'
-    sector: water
-    grain: service_area
-    role: active_retail_service
-    metadata_path: gis/tennessee_public_water_service_areas_tdec/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
 - source_id: texas_water_service_areas_twdb
   publisher: null
   driver: arcgis
@@ -3932,7 +3940,7 @@ sources:
   driver: arcgis
   url: https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/ElectricalService/FeatureServer/0
   cadence: null
-  licence: null
+  licence: attribution_required
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -3946,6 +3954,7 @@ sources:
     metadata_path: gis/utah_electric_service_areas_ugrc/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: vermont_electric_service_areas_psd
   publisher: null
   driver: arcgis
@@ -4114,7 +4123,7 @@ sources:
   driver: arcgis
   url: https://services1.arcgis.com/ioennV6PpG5Xodq0/ArcGIS/rest/services/Sewer_Service_Areas/FeatureServer/0
   cadence: null
-  licence: null
+  licence: internal_or_no_redistribution
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -4128,6 +4137,7 @@ sources:
     metadata_path: gis/virginia_fairfax_sewer_service_areas/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: virginia_state_sewer_area_vdh_deq_2019
   publisher: null
   driver: arcgis
@@ -4171,7 +4181,7 @@ sources:
   driver: arcgis
   url: https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/SEWER_SERV_AREA_2871/FeatureServer/0
   cadence: null
-  licence: null
+  licence: attribution_no_commercial_sale
   out_of_scope: false
   superseded_by: null
   reviewed: false
@@ -4185,6 +4195,7 @@ sources:
     metadata_path: gis/washington_king_county_sewer_service_providers/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  redistribution: internal_only
 - source_id: washington_utc_gas_certificated_areas
   publisher: null
   driver: arcgis
@@ -4411,6 +4422,8 @@ sources:
     metadata_path: gis/wisconsin_electric_municipal_psc/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Incomplete 3-feature third-party ArcGIS subset; superseded by official
+    117-feature WI PSC shapefile archive.
 - source_id: wisconsin_electric_psc
   publisher: null
   driver: arcgis
@@ -4430,6 +4443,8 @@ sources:
     metadata_path: gis/wisconsin_electric_psc/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Incomplete 3-feature third-party ArcGIS subset; superseded by official
+    117-feature WI PSC shapefile archive.
 - source_id: wisconsin_natural_gas_psc_2016
   publisher: null
   driver: arcgis
@@ -4449,6 +4464,8 @@ sources:
     metadata_path: gis/wisconsin_natural_gas_psc_2016/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
+  pruned_reason: Incomplete 3-feature 2016 ArcGIS subset; superseded by official 11-feature
+    WI PSC natural gas archive.
 - source_id: wisconsin_sewrpc_regional_sewer_plans_2025
   publisher: null
   driver: arcgis
@@ -4711,13 +4728,14 @@ sources:
   superseded_by: null
   reviewed: false
   paths:
-  - ferc/official/ferc_company_identifier_listing_20261109.xlsx
+  - ferc/official/ferc_company_identifier_listing_20261101.csv
   layers:
   - layer: national_registry_archive
     sector: multi_utility
     grain: registry_table
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+    review. Corrected stale catalog path using the collection README; the separately
+    collected 2025 workbook is not this source.
 - source_id: federal_eia176_ng_companies
   publisher: null
   driver: http
@@ -4770,22 +4788,69 @@ sources:
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
 - source_id: federal_epa_sdwa_2026q3
-  publisher: null
+  publisher: U.S. Environmental Protection Agency
   driver: http
-  url: null
-  cadence: null
-  licence: null
+  url: https://echo.epa.gov/files/echodownloads/SDWA_latest_downloads.zip
+  cadence: quarterly
+  licence: unknown
   out_of_scope: false
   superseded_by: null
   reviewed: false
   paths:
   - water/epa_sdwa_latest.zip
   layers:
-  - layer: national_registry_archive
+  - layer: SDWA_PUB_WATER_SYSTEMS.csv
     sector: water
     grain: registry_table
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+    name_field: PWS_NAME
+    id_fields:
+      pwsid: PWSID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    status_field:
+      field: PWS_ACTIVITY_CODE
+      values:
+        A: active
+        I: inactive
+        N: unknown
+        P: unknown
+        M: unknown
+      on_null: unknown
+    vintage_field: SUBMISSIONYEARQUARTER
+    notes: Retain all statuses; unknown codes require confirmation. Primacy agency
+      codes include states and tribes, not necessarily geographic state.
+    attribute_fields:
+      primacy_agency: PRIMACY_AGENCY_CODE
+      reported_state: STATE_CODE
+  - layer: SDWA_GEOGRAPHIC_AREAS.csv
+    sector: water
+    grain: admin_association
+    id_fields:
+      pwsid: PWSID
+      source_id: GEO_ID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    state_field: STATE_SERVED
+    vintage_field: SUBMISSIONYEARQUARTER
+  - layer: SDWA_FACILITIES.csv
+    sector: water
+    grain: facility
+    name_field: FACILITY_NAME
+    id_fields:
+      pwsid: PWSID
+      source_id: FACILITY_ID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    vintage_field: SUBMISSIONYEARQUARTER
+  - layer: SDWA_VIOLATIONS_ENFORCEMENT.csv
+    sector: water
+    grain: registry_table
+    id_fields:
+      pwsid: PWSID
+      source_id: VIOLATION_ID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    vintage_field: SUBMISSIONYEARQUARTER
+  notes: Exact CSV member names and headers checked against the collected archive.
+    PWSID validation is unresolved; see registry/pwsid_format_audit.json. Licence
+    terms require verification before sharing.
+  redistribution: internal_only
 - source_id: federal_epa_pws_boundaries_v3
   publisher: null
   driver: http
@@ -4798,11 +4863,50 @@ sources:
   paths:
   - water/epa_pws_boundaries_latest.zip
   layers:
-  - layer: national_vector_archive
+  - layer: CWS
     sector: water
     grain: service_area
     role: active_retail_service
+    authority:
+      field: Symbology_Field
+      values:
+        System Sourced: federal_submitted
+        Modeled: federal_modeled
+      on_null: reject
+    name_field: PWS_Name
+    on_missing_name: reject
+    id_fields:
+      feature_id: fid
+      pwsid: PWSID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    state_from_geometry: true
+    boundary_representation: mixed
+    notes: CWS GeoPackage layer; 25,409 system-sourced and 19,247 modeled features.
+      Apply authority per feature.
+  - layer: T_NTNC
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    name_field: PWS_Name
+    on_missing_name: reject
+    id_fields:
+      feature_id: fid
+      pwsid: PWSID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    state_from_geometry: true
+    boundary_representation: mixed
+    notes: Location confidence distinguishes 75,392 EPA-estimated polygons from 2,077
+      state-sourced polygons. Replacement of the older v1.1 layer requires review.
+      PWSID format policy is unresolved; see registry/pwsid_format_audit.json.
+    authority:
+      field: LOCATION_CONFIDENCE
+      values:
+        HIGHER: federal_modeled
+        LOWER: federal_modeled
+        State Sourced: federal_submitted
+      on_null: reject
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
+    review. EPA source archive has a documented PWSID-format conflict and requires
     review.
 - source_id: federal_usgs_wsa_2017
   publisher: null
@@ -4961,6 +5065,7 @@ sources:
     sector: water
     grain: service_area
     role: certified_franchise_territory
+    dissolve: true
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
 - source_id: state_tx_puct_sewer_ccn
@@ -4979,6 +5084,7 @@ sources:
     sector: wastewater
     grain: service_area
     role: certified_franchise_territory
+    dissolve: true
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
 - source_id: state_wi_psc_electric_territories
@@ -5115,13 +5221,13 @@ sources:
   superseded_by: null
   reviewed: false
   paths:
-  - states/fl/psc_county_lookup/manifest.json
+  - states/fl/psc_county_lookup
   layers:
   - layer: state_tabular_lookup
     sector: multi_utility
     grain: admin_association
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+    review. The directory includes the per-county query results as well as its manifest.
 - source_id: state_mo_psc_utility_lookup
   publisher: null
   driver: http

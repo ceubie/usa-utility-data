@@ -1,0 +1,103 @@
+sources:
+- source_id: supplemental_eia861m_2026_sales_ultimate_customers
+  publisher: U.S. Energy Information Administration
+  driver: http
+  url: https://www.eia.gov/electricity/data/eia861m/xls/sales_ult_cust_2026.xlsx
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - electric/eia861m_2026_sales_ultimate_customers.xlsx
+  layers:
+  - layer: eia861m_2026_sales_ultimate_customers.xlsx
+    sector: electric
+    grain: registry_table
+  notes: Draft source from the saved collection manifest; publisher, grain, field
+    mappings, cadence and licence require review.
+- source_id: supplemental_eia861m_2026_net_metering
+  publisher: U.S. Energy Information Administration
+  driver: http
+  url: https://www.eia.gov/electricity/data/eia861m/xls/net_metering2026.xlsx
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - electric/eia861m_2026_net_metering.xlsx
+  layers:
+  - layer: eia861m_2026_net_metering.xlsx
+    sector: electric
+    grain: registry_table
+  notes: Draft source from the saved collection manifest; publisher, grain, field
+    mappings, cadence and licence require review.
+- source_id: supplemental_eia861m_2026_non_net_metering
+  publisher: U.S. Energy Information Administration
+  driver: http
+  url: https://www.eia.gov/electricity/data/eia861m/xls/non_netmetering2026.xlsx
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - electric/eia861m_2026_non_net_metering.xlsx
+  layers:
+  - layer: eia861m_2026_non_net_metering.xlsx
+    sector: electric
+    grain: registry_table
+  notes: Draft source from the saved collection manifest; publisher, grain, field
+    mappings, cadence and licence require review.
+- source_id: supplemental_eia861m_2026_small_scale_solar
+  publisher: U.S. Energy Information Administration
+  driver: http
+  url: https://www.eia.gov/electricity/data/eia861m/xls/small_scale_solar_2026.xlsx
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - electric/eia861m_2026_small_scale_solar.xlsx
+  layers:
+  - layer: eia861m_2026_small_scale_solar.xlsx
+    sector: electric
+    grain: registry_table
+  notes: Draft source from the saved collection manifest; publisher, grain, field
+    mappings, cadence and licence require review.
+- source_id: supplemental_eia923_2025
+  publisher: U.S. Energy Information Administration
+  driver: http
+  url: https://www.eia.gov/electricity/data/eia923/xls/f923_2025.zip
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - electric/eia923_2025.zip
+  layers:
+  - layer: eia923_2025.zip
+    sector: electric
+    grain: registry_table
+  notes: Draft source from the saved collection manifest; publisher, grain, field
+    mappings, cadence and licence require review.
+- source_id: supplemental_eia923_2026_monthly
+  publisher: U.S. Energy Information Administration
+  driver: http
+  url: https://www.eia.gov/electricity/data/eia923/xls/f923_2026.zip
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - electric/eia923_2026_monthly.zip
+  layers:
+  - layer: eia923_2026_monthly.zip
+    sector: electric
+    grain: registry_table
+  notes: Draft source from the saved collection manifest; publisher, grain, field
+    mappings, cadence and licence require review.

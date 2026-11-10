@@ -1,0 +1,37 @@
+sources:
+- source_id: supplemental_electricity_tables_2024_deq
+  publisher: Montana Department of Environmental Quality
+  driver: http
+  url: https://deq.mt.gov/files/Energy/Documents/Energy_Statistics/ElectricityTables2024.xlsx
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - states/mt/electricity_tables_2024_deq.xlsx
+  layers:
+  - layer: electricity_tables_2024_deq.xlsx
+    sector: electric
+    grain: registry_table
+    state_fixed: MT
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.
+- source_id: supplemental_natural_gas_tables_2024_deq
+  publisher: Montana Department of Environmental Quality
+  driver: http
+  url: https://deq.mt.gov/files/Energy/Documents/Energy_Statistics/NaturalGasTables2024.xlsx
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - states/mt/natural_gas_tables_2024_deq.xlsx
+  layers:
+  - layer: natural_gas_tables_2024_deq.xlsx
+    sector: natural_gas
+    grain: registry_table
+    state_fixed: MT
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.

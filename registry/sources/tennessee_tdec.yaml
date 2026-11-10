@@ -1,0 +1,32 @@
+sources:
+- source_id: tennessee_public_water_service_areas_tdec
+  publisher: Tennessee Department of Environment and Conservation
+  driver: arcgis
+  url: https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_Public_Water_System_Service_Area_Boundaries_WFL1/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/tennessee_public_water_service_areas_tdec
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/tennessee_public_water_service_areas_tdec/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: MA_NAME
+    on_missing_name: reject
+    id_fields:
+      feature_id: OBJECTID_1
+      pwsid: PWSID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    state_fixed: TN
+  notes: Coarse boundaries; source does not establish parcel-level service or system
+    activity. One frozen feature has a blank name and malformed PWSID and must be
+    rejected and reconciled. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only

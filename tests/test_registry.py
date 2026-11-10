@@ -1,9 +1,10 @@
-import json
 import gzip
+import json
 
 import pytest
 import yaml
 from pydantic import ValidationError
+
 from utilitydata.registry import Source, load_registry
 
 

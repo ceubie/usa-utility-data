@@ -1,0 +1,643 @@
+unused:
+- path: ferc/raw
+  reason: Raw FERC form archives are retained, but the rebuild uses PUDL processed
+    FERC tables instead of parsing these archives.
+- path: ferc/official/filings_accepted_2026
+  reason: Individual FERC filings are retained for reference; the rebuild uses PUDL
+    processed FERC tables instead of parsing the filings.
+- path: states/ga/gpsc_electric_territorial_maps.zip
+  reason: Georgia territorial maps are PDFs and cannot supply vector boundaries until
+    digitized; retained while vector files are requested.
+- path: states/ks/counties
+  reason: Kansas county territory maps are PDFs, not vector inputs; retained for possible
+    manual reference or future digitization.
+- path: documentation
+  reason: Supporting publisher metadata and source documents are retained as provenance
+    and for human review, not ingested as sector data.
+- path: manifest.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_additional.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_cwns.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_cwns_dictionary.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_mn.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_ny.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_reference_census.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round10.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round11.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round11_extra.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round12_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round12_phmsa.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round12_usvi.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round13_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round13_pr.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round14_extra.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round14_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round15_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round16_extra.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round16_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round17_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round18_extra.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round18_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round19_extra.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round19_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round20_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round21_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round22_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round23_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round24_cid.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round24_docs.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round24_ferc.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round24_ferc_audit.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round24_ferc_feed.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round24_hydro_tables.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round25.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round25_extra.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round3_docs.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round3_electric.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round4_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round5_docs.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round5_files.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round6.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round6_extra.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round7.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round7_alabama.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round7_extra.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round8.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round8_solar.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round8_usbr_docs.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round9.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round9_idaho.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_wi.json
+  reason: Collection provenance is retained in the snapshot and consolidated seed
+    evidence; this manifest is not ingested as a sector data table.
+- path: manifest_round24_ferc.json.tmp
+  reason: Incomplete temporary copy of a FERC collection manifest; retained as found
+    and not used as a data input.
+- path: ferc/official/accepted_filings_2026_01.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_02.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_03.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_04.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_05.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_06.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_07.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_08.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_09.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_10.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/accepted_filings_2026_11.xml
+  reason: Raw FERC filing feed retained for reference; the rebuild uses PUDL processed
+    FERC tables instead.
+- path: ferc/official/pumped_storage_issued_preliminary_permits_20261014.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: ferc/official/pumped_storage_licensed_20261006.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: ferc/official/pumped_storage_pending_licenses_20261006.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: ferc/official/pumped_storage_pending_preliminary_permits_20261014.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: multistate/midamerican_community_services.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: multistate/midamerican_service_territory_communities.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: multistate/tva_local_power_company_territory.png
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/al/alabama_power_statewide_territories_2022.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/az/mesa_electric_service_area.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/az/mesa_energy_service_areas.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/az/mesa_gas_service_area.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/az/pima_electric_areas_metadata.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/az/pima_sewer_areas_metadata.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/az/pima_tucson_water_restrictions_metadata.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/az/pima_water_areas_metadata.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/co/denver_water_distributor_boundaries.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/co/dola_gis_data_sources.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/co/dola_special_district_map.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/co/metro_water_recovery_members_2023_map.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/co/metro_water_recovery_service_area.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/central_wucc_exclusive_areas_2017.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/deep_water_diversion.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/dph_exclusive_area_changes.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/dph_water_utility_coordination.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/eastern_wucc_exclusive_areas_2017.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/exclusive_service_areas_annual_report_2022.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/glastonbury_esa_modification_2018.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/glastonbury_esa_modification_2019.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/ledyard_esa_modification_2025.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/montville_esa_modification_2018.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/new_fairfield_esa_modification_2018.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/statewide_water_coordination_summary.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/suffield_esa_modification_2018.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ct/western_wucc_exclusive_areas_2017.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/de/wastewater_regulation_psc.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/de/water_regulation_psc.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/fl/fdacs_natural_gas_utilities.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/fl/florida_public_utilities_natural_gas_tariff_2025.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/fl/florida_public_utilities_service_areas.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/fl/psc_electric_utility_map.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/fl/psc_find_utility_service.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/fl/psc_natural_gas_utility_map.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/fl/psc_utility_solar_facilities_map.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/fl/psc_water_wastewater_jurisdictional_counties.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/hi/cwrm_lahaina_water_system_permit_summary_nov2025.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/hi/hawaii_water_service_areas.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/hi/hawaiian_electric_wildfire_plan_2023.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/hi/kauai_island_utility_rate_application_2022.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/hi/maui_water_shortage_plan_2024_alternate.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/id/electric_coop_municipal_areas_ipuc.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/id/electric_investor_owned_utility_areas_ipuc.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/id/energy_landscape_2019_oemr.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/id/energy_mineral_landscape_2026_oemr.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/id/gas_pipelines_and_local_distributors_ipuc.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/id/utilities_by_city_ipuc_historical.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/id/utility_contacts_energy_office.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/il/icc_2025_electric_gas_water_sewer_report.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/il/icc_public_utilities.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/il/illinois_energy_association_gas_2015_map.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/il/illinois_energy_association_gas_map.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/in/iurc_2023_utility_guide.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/in/iurc_2026_annual_report.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/in/iurc_commission_reports.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ks/kcc_electric_certified_areas.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ks/kcc_gas_certified_areas.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ks/kcc_maps_page.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ks/kcc_telephone_exchange_2025.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ky/electric_distribution_service_areas_2024.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ky/psc_maps_and_gis.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ky/psc_natural_gas_distribution_service_areas_2026.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/la/electric_distribution_map_lpsc.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/la/electric_distribution_map_lpsc.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/md/frederick_water_and_sewer_plan_2026.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/md/frederick_water_sewer_planning.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/me/electric_utilities_public_advocate.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/me/gas_distribution_service_faq_puc.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/me/gas_distributors_puc.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/me/maine_energy_plan_2025.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/me/municipal_water_systems_maine_cdc.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/me/natural_gas_puc_presentation.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/me/natural_gas_service_area_public_advocate.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/me/registered_retail_gas_suppliers_puc.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mi/gas_and_propane_provider_contacts_mpsc.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mi/propane_pipeline_map_mpsc.gif
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mi/propane_service_pipeline_mpsc.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mn/electric_service_areas_metadata.xml
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mn/metc_gis_download_handbook.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mo/ameren_missouri_fact_sheet_2025.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mo/mopsc_annual_report_2025.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mo/mopsc_utility_locator.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/electric_generation_deq.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/electric_service_areas_deq.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/electric_transmission_pathways_deq.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/electric_transmission_system_deq.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/hydro_power_deq.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/natural_gas_system_deq.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/natural_gas_utility_areas_deq.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/navigable_waters_pipeline_crossings_2015_deq.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/solar_power_deq.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/understanding_energy_2023_deq.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/mt/wind_power_deq.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/nd/nd_grid_resiliency_plan_2025.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/nd/ndarec_member_directory.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/nd/ndarec_member_map_2025.jpg
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/nd/ndpsc_electric_gas_utility_list.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ne/oppd_service_area.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ne/power_association_load_capability_2026.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ne/power_review_board_biennial_report_2026.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/nv/energy_office_reports.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/nv/energy_status_2024.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/nv/nv_energy_certified_electric_areas.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/nv/puc_2023_biennial_report.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ny/electric_metadata.json
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ny/gas_metadata.json
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/oh/puco_natural_gas_distribution_companies_2026.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/or/portland_sewer_connection.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/pr/doe_electric_transmission_order_2025.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/pr/doe_pr100_summary_2024.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/pr/pnnl_electric_infrastructure_2020.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/ri/rie_service_area_accounts_filing_2026.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/sc/greer_cpw_electricity.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/sc/greer_cpw_natural_gas.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/sc/greer_cpw_water.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/sc/ors_electric_regulated_utilities.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/sc/ors_energy_risk_assessment_2026.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/sc/ors_natural_gas_regulated_companies.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/sc/summerville_cpw_availability.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/sc/summerville_cpw_service_area.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/sc/water_wastewater_geographic_assessment_2022_ria.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/tx/water_service_boundaries_twdb.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/va/electric_service_territories_2020_scc.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/va/energy_security_plan_2024.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/vi/doe_energy_sector_risk_profile_2024.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wa/public_utilities.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wa/utility_side_charging_assessment_2024.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wi/capital_area_sewer_service_planning.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wi/dnr_sewer_service_area_planning.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wi/sewrpc_sanitary_sewer_planning.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wy/psc_certificated_utility_maps.html
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wy/psc_corporations_presentation_2023.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wy/psc_electric_certificated_areas.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wy/psc_gas_certificated_areas.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wy/psc_telephone_certificated_areas.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.
+- path: states/wy/psc_water_certificated_areas_2022.pdf
+  reason: Retained for provenance, manual review or context; this file is not ingested
+    directly as a structured sector table in the current rebuild.

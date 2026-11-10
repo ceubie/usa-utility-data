@@ -1,0 +1,52 @@
+sources:
+- source_id: supplemental_ferc_active_hydro_exemptions_20261109
+  publisher: Federal Energy Regulatory Commission
+  driver: http
+  url: https://data.ferc.gov/active-hydropower-projects/active-exemptions/
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - ferc/official/ferc_active_hydro_exemptions_20261109.csv
+  layers:
+  - layer: ferc_active_hydro_exemptions_20261109.csv
+    sector: electric
+    grain: facility
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.
+- source_id: supplemental_ferc_active_hydro_licenses_20261109
+  publisher: Federal Energy Regulatory Commission
+  driver: http
+  url: https://data.ferc.gov/active-hydropower-projects/active-licenses/
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - ferc/official/ferc_active_hydro_licenses_20261109.csv
+  layers:
+  - layer: ferc_active_hydro_licenses_20261109.csv
+    sector: electric
+    grain: facility
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.
+- source_id: supplemental_ferc_cid_listing_aug2025
+  publisher: Federal Energy Regulatory Commission
+  driver: http
+  url: https://www.ferc.gov/sites/default/files/2025-08/August_2025_CID.xlsx
+  cadence: null
+  licence: null
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - ferc/official/ferc_cid_listing_aug2025.xlsx
+  layers:
+  - layer: ferc_cid_listing_aug2025.xlsx
+    sector: multi_utility
+    grain: registry_table
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.

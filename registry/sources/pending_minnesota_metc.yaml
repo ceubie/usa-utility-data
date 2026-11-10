@@ -1,0 +1,73 @@
+sources:
+- source_id: supplemental_metc_musa_planning
+  publisher: Minnesota Metropolitan Council
+  driver: http
+  url: https://gisdata.metc.state.mn.us/gisdata/Planning/musa.zip
+  cadence: null
+  licence: internal_or_no_redistribution
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - states/mn/metc_musa_planning.zip
+  layers:
+  - layer: metc_musa_planning.zip
+    sector: wastewater
+    grain: service_area
+    state_fixed: MN
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.
+- source_id: supplemental_metc_sanitary_sewersheds_public
+  publisher: Minnesota Metropolitan Council
+  driver: http
+  url: https://gisdata.metc.state.mn.us/gisdata/Utility/sanitary_sewersheds.zip
+  cadence: null
+  licence: internal_or_no_redistribution
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - states/mn/metc_sanitary_sewersheds_public.zip
+  layers:
+  - layer: metc_sanitary_sewersheds_public.zip
+    sector: wastewater
+    grain: service_area
+    state_fixed: MN
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.
+- source_id: supplemental_metc_sewer_interceptors_public
+  publisher: Minnesota Metropolitan Council
+  driver: http
+  url: https://gisdata.metc.state.mn.us/gisdata/Utility/sewer_interceptors.zip
+  cadence: null
+  licence: internal_or_no_redistribution
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - states/mn/metc_sewer_interceptors_public.zip
+  layers:
+  - layer: metc_sewer_interceptors_public.zip
+    sector: wastewater
+    grain: network
+    state_fixed: MN
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.
+- source_id: supplemental_metc_wastewater_treatment_plants_public
+  publisher: Minnesota Metropolitan Council
+  driver: http
+  url: https://gisdata.metc.state.mn.us/gisdata/Utility/wastewater_treatment_plants.zip
+  cadence: null
+  licence: internal_or_no_redistribution
+  redistribution: internal_only
+  out_of_scope: false
+  reviewed: false
+  paths:
+  - states/mn/metc_wastewater_treatment_plants_public.zip
+  layers:
+  - layer: metc_wastewater_treatment_plants_public.zip
+    sector: wastewater
+    grain: facility
+    state_fixed: MN
+  notes: Draft supplemental source; inspect the archive, exact layer and field mappings,
+    publisher terms and source vintage before review.
