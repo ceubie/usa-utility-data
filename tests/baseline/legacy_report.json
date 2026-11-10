@@ -9,12 +9,14 @@
     {
       "name": "not_null:canonical_organizations.org_id",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * FROM \"canonical_organizations\" WHERE \"org_id\" IS NULL"
     },
     {
       "name": "primary_key:canonical_organizations",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * EXCLUDE (__utilitydata_key_count) FROM (SELECT *, count(*) OVER (PARTITION BY \"org_id\") AS __utilitydata_key_count FROM \"canonical_organizations\") WHERE __utilitydata_key_count > 1 OR \"org_id\" IS NULL"
     },
     {
       "name": "min_fill:canonical_organizations.ferc_cid",
@@ -23,7 +25,8 @@
       "rows": 246203,
       "filled": 0,
       "fill_rate": 0.0,
-      "minimum": 1.0
+      "minimum": 1.0,
+      "query": "SELECT * FROM \"canonical_organizations\" WHERE \"ferc_cid\" IS NULL"
     },
     {
       "name": "type:canonical_systems.system_id",
@@ -33,12 +36,14 @@
     {
       "name": "not_null:canonical_systems.system_id",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * FROM \"canonical_systems\" WHERE \"system_id\" IS NULL"
     },
     {
       "name": "primary_key:canonical_systems",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * EXCLUDE (__utilitydata_key_count) FROM (SELECT *, count(*) OVER (PARTITION BY \"system_id\") AS __utilitydata_key_count FROM \"canonical_systems\") WHERE __utilitydata_key_count > 1 OR \"system_id\" IS NULL"
     },
     {
       "name": "min_fill:canonical_systems.sales_mwh",
@@ -47,7 +52,8 @@
       "rows": 239201,
       "filled": 0,
       "fill_rate": 0.0,
-      "minimum": 1.0
+      "minimum": 1.0,
+      "query": "SELECT * FROM \"canonical_systems\" WHERE \"sales_mwh\" IS NULL"
     },
     {
       "name": "type:kg_edges.edge_id",
@@ -57,7 +63,8 @@
     {
       "name": "not_null:kg_edges.edge_id",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * FROM \"kg_edges\" WHERE \"edge_id\" IS NULL"
     },
     {
       "name": "type:kg_edges.src_node_id",
@@ -67,12 +74,14 @@
     {
       "name": "not_null:kg_edges.src_node_id",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * FROM \"kg_edges\" WHERE \"src_node_id\" IS NULL"
     },
     {
       "name": "foreign_key:kg_edges.src_node_id->kg_nodes.node_id",
       "status": "fail",
       "violations": 209463,
+      "query": "SELECT child.* FROM \"kg_edges\" child WHERE child.\"src_node_id\" IS NOT NULL AND NOT EXISTS (SELECT 1 FROM \"kg_nodes\" parent WHERE parent.\"node_id\" = child.\"src_node_id\")",
       "groups": [
         {
           "value": "SERVES_COUNTY",
@@ -92,12 +101,14 @@
     {
       "name": "not_null:kg_edges.dst_node_id",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * FROM \"kg_edges\" WHERE \"dst_node_id\" IS NULL"
     },
     {
       "name": "foreign_key:kg_edges.dst_node_id->kg_nodes.node_id",
       "status": "fail",
       "violations": 241,
+      "query": "SELECT child.* FROM \"kg_edges\" child WHERE child.\"dst_node_id\" IS NOT NULL AND NOT EXISTS (SELECT 1 FROM \"kg_nodes\" parent WHERE parent.\"node_id\" = child.\"dst_node_id\")",
       "groups": [
         {
           "value": "SERVES_COUNTY",
@@ -108,7 +119,8 @@
     {
       "name": "primary_key:kg_edges",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * EXCLUDE (__utilitydata_key_count) FROM (SELECT *, count(*) OVER (PARTITION BY \"edge_id\") AS __utilitydata_key_count FROM \"kg_edges\") WHERE __utilitydata_key_count > 1 OR \"edge_id\" IS NULL"
     },
     {
       "name": "type:kg_nodes.node_id",
@@ -118,12 +130,14 @@
     {
       "name": "not_null:kg_nodes.node_id",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * FROM \"kg_nodes\" WHERE \"node_id\" IS NULL"
     },
     {
       "name": "primary_key:kg_nodes",
       "status": "pass",
-      "violations": 0
+      "violations": 0,
+      "query": "SELECT * EXCLUDE (__utilitydata_key_count) FROM (SELECT *, count(*) OVER (PARTITION BY \"node_id\") AS __utilitydata_key_count FROM \"kg_nodes\") WHERE __utilitydata_key_count > 1 OR \"node_id\" IS NULL"
     },
     {
       "name": "absolute_paths:gold/build_summary.json",
@@ -138,7 +152,8 @@
     {
       "name": "geoparquet:gold/by_category/electric_service_territories_best.parquet",
       "status": "fail",
-      "violations": 1
+      "violations": 1,
+      "reason": "missing geo metadata"
     },
     {
       "name": "absolute_paths:gold/by_category/electric_service_territories_best.parquet",
@@ -153,7 +168,8 @@
     {
       "name": "geoparquet:gold/by_category/natural_gas_service_territories_best.parquet",
       "status": "fail",
-      "violations": 1
+      "violations": 1,
+      "reason": "missing geo metadata"
     },
     {
       "name": "absolute_paths:gold/by_category/natural_gas_service_territories_best.parquet",
@@ -163,7 +179,8 @@
     {
       "name": "geoparquet:gold/by_category/stormwater_and_multi_service_territories_best.parquet",
       "status": "fail",
-      "violations": 1
+      "violations": 1,
+      "reason": "missing geo metadata"
     },
     {
       "name": "absolute_paths:gold/by_category/stormwater_and_multi_service_territories_best.parquet",
@@ -173,7 +190,8 @@
     {
       "name": "geoparquet:gold/by_category/wastewater_service_territories_best.parquet",
       "status": "fail",
-      "violations": 1
+      "violations": 1,
+      "reason": "missing geo metadata"
     },
     {
       "name": "absolute_paths:gold/by_category/wastewater_service_territories_best.parquet",
@@ -188,7 +206,8 @@
     {
       "name": "geoparquet:gold/by_category/water_service_territories_best.parquet",
       "status": "fail",
-      "violations": 1
+      "violations": 1,
+      "reason": "missing geo metadata"
     },
     {
       "name": "absolute_paths:gold/by_category/water_service_territories_best.parquet",
@@ -204,6 +223,12 @@
       "name": "absolute_paths:gold/by_geography/county_utility_service_matrix.parquet",
       "status": "pass",
       "violations": 0
+    },
+    {
+      "name": "possible_absolute_paths:gold/by_geography/county_utility_service_matrix.parquet",
+      "status": "fail",
+      "violations": 1,
+      "reason": "ambiguous slash-containing values require review"
     },
     {
       "name": "absolute_paths:gold/by_geography/h3_spatial_index.parquet",
@@ -224,6 +249,12 @@
       "name": "absolute_paths:gold/knowledge_graph/kg_nodes.parquet",
       "status": "pass",
       "violations": 0
+    },
+    {
+      "name": "possible_absolute_paths:gold/knowledge_graph/kg_nodes.parquet",
+      "status": "fail",
+      "violations": 2,
+      "reason": "ambiguous slash-containing values require review"
     },
     {
       "name": "absolute_paths:gold/knowledge_graph/utility_knowledge_graph.duckdb:views",
@@ -247,14 +278,32 @@
       "violations": 0
     },
     {
+      "name": "possible_absolute_paths:silver/canonical_organizations.parquet",
+      "status": "fail",
+      "violations": 1,
+      "reason": "ambiguous slash-containing values require review"
+    },
+    {
       "name": "absolute_paths:silver/canonical_systems.parquet",
       "status": "pass",
       "violations": 0
     },
     {
+      "name": "possible_absolute_paths:silver/canonical_systems.parquet",
+      "status": "fail",
+      "violations": 1,
+      "reason": "ambiguous slash-containing values require review"
+    },
+    {
       "name": "absolute_paths:silver/county_utility_associations.parquet",
       "status": "pass",
       "violations": 0
+    },
+    {
+      "name": "possible_absolute_paths:silver/county_utility_associations.parquet",
+      "status": "fail",
+      "violations": 1,
+      "reason": "ambiguous slash-containing values require review"
     },
     {
       "name": "absolute_paths:silver/facilities_deduplicated.parquet",
@@ -272,9 +321,21 @@
       "violations": 0
     },
     {
+      "name": "possible_absolute_paths:silver/federal_organizations_spine.parquet",
+      "status": "fail",
+      "violations": 1,
+      "reason": "ambiguous slash-containing values require review"
+    },
+    {
       "name": "absolute_paths:silver/federal_systems_spine.parquet",
       "status": "pass",
       "violations": 0
+    },
+    {
+      "name": "possible_absolute_paths:silver/federal_systems_spine.parquet",
+      "status": "fail",
+      "violations": 1,
+      "reason": "ambiguous slash-containing values require review"
     },
     {
       "name": "absolute_paths:silver/linear_and_node_networks_summary.parquet",
@@ -284,7 +345,8 @@
     {
       "name": "geoparquet:silver/reference_counties.parquet",
       "status": "fail",
-      "violations": 1
+      "violations": 1,
+      "reason": "missing geo metadata"
     },
     {
       "name": "absolute_paths:silver/reference_counties.parquet",
@@ -294,7 +356,8 @@
     {
       "name": "geoparquet:silver/reference_states.parquet",
       "status": "fail",
-      "violations": 1
+      "violations": 1,
+      "reason": "missing geo metadata"
     },
     {
       "name": "absolute_paths:silver/reference_states.parquet",
@@ -304,7 +367,8 @@
     {
       "name": "geoparquet:silver/service_boundaries_best_available.parquet",
       "status": "fail",
-      "violations": 1
+      "violations": 1,
+      "reason": "missing geo metadata"
     },
     {
       "name": "absolute_paths:silver/service_boundaries_best_available.parquet",
@@ -314,7 +378,8 @@
     {
       "name": "geoparquet:silver/service_boundaries_normalized.parquet",
       "status": "fail",
-      "violations": 1
+      "violations": 1,
+      "reason": "missing geo metadata"
     },
     {
       "name": "absolute_paths:silver/service_boundaries_normalized.parquet",
@@ -323,8 +388,8 @@
     },
     {
       "name": "absolute_paths:silver/source_inventory.parquet",
-      "status": "fail",
-      "violations": 270
+      "status": "pass",
+      "violations": 0
     }
   ]
 }

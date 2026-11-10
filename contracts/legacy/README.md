@@ -10,8 +10,17 @@ names a table and its path relative to the data directory, a composite
 requirements here deliberately expose completely empty legacy fields; they
 are not proposed release thresholds.
 
-The runner also checks each Parquet file's text columns for absolute paths,
-geometry-bearing Parquet files for GeoParquet metadata, textual output files
-for absolute paths, and stored DuckDB view definitions for absolute paths.
-Other binary file formats are not inspected for embedded paths. Missing
-contracts, tables, columns and vocabularies cause an error rather than a pass.
+The runner checks Parquet text and nested columns, supported textual output,
+and DuckDB view definitions and table text for apparent absolute paths. Its
+path recognition is heuristic: ambiguous slash-containing values are reported
+separately and fail the check for review. Unknown file types fail closed as
+unverifiable. Geometry-bearing Parquet files must contain valid
+GeoParquet metadata; declare a column as `type: geometry` if its name is not
+`geometry` or `geometry_wkb`. Missing contracts, tables, columns and
+vocabularies cause an error rather than a pass. Query checks include the SQL
+needed to retrieve violating rows; minimum-fill queries return the null rows.
+
+Before WP6 relies on this check for a release, add a way to inspect ambiguous
+path candidates and record narrowly scoped, reviewed exceptions. The current
+check fails closed on those candidates and does not yet support exceptions;
+some legacy utility names are known examples of benign candidates.
