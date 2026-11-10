@@ -1,10 +1,18 @@
 """Hand-declared source registry and strict review-state validation."""
 
+import csv
 import gzip
+import io
 import json
+import shutil
+import tempfile
+import zipfile
+from contextlib import ExitStack
 from pathlib import Path
 from typing import Literal
 
+import pandas as pd
+import pyogrio
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, model_validator
 
@@ -28,6 +36,7 @@ class FieldMap(RegistryModel):
 
 class Layer(RegistryModel):
     layer: str = Field(min_length=1)
+    archive_member: str | None = None
     sector: Sector | None = None
     grain: Grain | None = None
     role: str | None = None
@@ -35,7 +44,7 @@ class Layer(RegistryModel):
     authority: Authority | FieldMap | None = None
     boundary_representation: Literal["unmodeled", "modeled", "mixed", "unknown"] = "unknown"
     name_field: str | None = None
-    on_missing_name: Literal["reject"] | None = None
+    on_missing_name: Literal["preserve_and_review"] | None = None
     id_fields: dict[str, str] = Field(default_factory=dict)
     attribute_fields: dict[str, str] = Field(default_factory=dict)
     pwsid_rule: Literal["state_prefix_7"] | None = None
@@ -114,8 +123,8 @@ class Source(RegistryModel):
                 raise ValueError("Reviewed service areas require role and authority")
             if layer.grain == "service_area" and not layer.name_field:
                 raise ValueError("Reviewed service areas require a name field")
-            if layer.grain == "service_area" and layer.on_missing_name != "reject":
-                raise ValueError("Reviewed service areas must explicitly reject and reconcile missing names")
+            if layer.grain == "service_area" and layer.on_missing_name != "preserve_and_review":
+                raise ValueError("Reviewed service areas must preserve and review missing names")
             if "pwsid" in layer.id_fields and layer.on_invalid_pwsid != "preserve_raw_without_federal_id":
                 raise ValueError("Reviewed PWSID mappings require a policy for invalid or missing values")
         return self
@@ -157,6 +166,80 @@ def load_registry(directory: Path, *, require_reviewed: bool = True, raw_root: P
                 if source.driver == "arcgis" and not layer.metadata_path:
                     raise ValueError(f"Missing layer metadata for {source.source_id}")
                 if not layer.metadata_path:
+                    if not layer.archive_member and not layer.layer.lower().endswith(".csv"):
+                        raise ValueError(f"No verifiable layer metadata for {source.source_id}.{layer.layer}")
+                    if layer.archive_member:
+                        if len(source.paths) != 1:
+                            raise ValueError(f"Geospatial archive source needs exactly one path: {source.source_id}")
+                        archive = (root / source.paths[0]).resolve()
+                        member = layer.archive_member.replace("\\", "/")
+                        if member.startswith("/") or ".." in member.split("/") or not zipfile.is_zipfile(archive):
+                            raise ValueError(f"Invalid geospatial archive for {source.source_id}")
+                        with zipfile.ZipFile(archive) as bundle:
+                            if member not in bundle.namelist():
+                                raise ValueError(f"Missing archive member {source.source_id}.{member}")
+                            temp_root = Path(tempfile.gettempdir()).resolve()
+                            with tempfile.TemporaryDirectory(prefix="utilitydata-registry-", dir=temp_root) as temp_name:
+                                temp_dir = Path(temp_name).resolve()
+                                if not temp_dir.is_relative_to(temp_root):
+                                    raise ValueError("Registry temporary path escapes temporary root")
+                                extracted = temp_dir / Path(member).name
+                                with bundle.open(member) as raw, extracted.open("xb") as output:
+                                    shutil.copyfileobj(raw, output, 4 * 1024 * 1024)
+                                info = pyogrio.read_info(extracted, layer=layer.layer)
+                                if layer.grain in {"service_area", "network", "facility"} and not info.get("geometry_type"):
+                                    raise ValueError(f"Spatial layer has no geometry for {source.source_id}.{layer.layer}")
+                                if layer.grain == "service_area" and info.get("geometry_type", "").removesuffix(" Z") not in {"Polygon", "MultiPolygon"}:
+                                    raise ValueError(f"Service-area layer is not polygonal for {source.source_id}.{layer.layer}")
+                                available = set(info["fields"]) | {info.get("fid_column")}
+                                mapped = set(layer.id_fields.values()) | set(layer.attribute_fields.values()) | {x for x in (layer.name_field, layer.state_field, layer.vintage_field) if x}
+                                mappings = [item for item in (layer.role_field, layer.status_field, layer.authority if isinstance(layer.authority, FieldMap) else None) if item]
+                                mapped |= {item.field for item in mappings}
+                                missing = mapped - available
+                                if missing:
+                                    raise ValueError(f"Missing mapped fields for {source.source_id}: {', '.join(sorted(missing))}")
+                                if mappings:
+                                    frame = pyogrio.read_dataframe(extracted, layer=layer.layer, columns=list({item.field for item in mappings}), read_geometry=False)
+                                    for mapping in mappings:
+                                        for value in frame[mapping.field].unique():
+                                            if not pd.isna(value) and str(value) not in mapping.values:
+                                                raise ValueError(f"Unmapped value {value!r} in {source.source_id}.{mapping.field}")
+                    if layer.layer.lower().endswith(".csv"):
+                        if len(source.paths) != 1:
+                            raise ValueError(f"CSV archive source needs exactly one path: {source.source_id}")
+                        archive = (root / source.paths[0]).resolve()
+                        if not archive.is_file():
+                            raise ValueError(f"CSV source is unavailable: {source.source_id}")
+                        with ExitStack() as stack:
+                            if zipfile.is_zipfile(archive):
+                                bundle = stack.enter_context(zipfile.ZipFile(archive))
+                                if layer.layer not in bundle.namelist():
+                                    raise ValueError(f"Missing archive member {source.source_id}.{layer.layer}")
+                                raw = stack.enter_context(bundle.open(layer.layer))
+                            elif archive.suffix.lower() == ".csv" and layer.layer == archive.name:
+                                raw = stack.enter_context(archive.open("rb"))
+                            else:
+                                raise ValueError(f"Invalid CSV source for {source.source_id}.{layer.layer}")
+                            with io.TextIOWrapper(raw, encoding="utf-8-sig", newline="") as stream:
+                                reader = csv.reader(stream)
+                                headers = next(reader, [])
+                                if not headers or len(headers) != len(set(headers)) or any(not name for name in headers):
+                                    raise ValueError(f"Invalid or duplicate CSV header for {source.source_id}.{layer.layer}")
+                                available = set(headers)
+                                mapped = set(layer.id_fields.values()) | set(layer.attribute_fields.values()) | {x for x in (layer.name_field, layer.state_field, layer.vintage_field) if x}
+                                mappings = [item for item in (layer.role_field, layer.status_field, layer.authority if isinstance(layer.authority, FieldMap) else None) if item]
+                                mapped |= {item.field for item in mappings}
+                                missing = mapped - available
+                                if missing:
+                                    raise ValueError(f"Missing mapped fields for {source.source_id}: {', '.join(sorted(missing))}")
+                                positions = {mapping.field: headers.index(mapping.field) for mapping in mappings}
+                                for row in reader:
+                                    if len(row) != len(headers):
+                                        raise ValueError(f"Malformed CSV row in {source.source_id}.{layer.layer}")
+                                    for mapping in mappings:
+                                        value = row[positions[mapping.field]]
+                                        if value and value not in mapping.values:
+                                            raise ValueError(f"Unmapped value {value!r} in {source.source_id}.{mapping.field}")
                     continue
                 metadata_path = (root / layer.metadata_path).resolve()
                 if not metadata_path.is_relative_to(root) or not metadata_path.is_file():

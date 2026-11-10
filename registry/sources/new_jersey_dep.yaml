@@ -1,0 +1,36 @@
+sources:
+- source_id: new_jersey_water_purveyors_njdep_2017
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/13
+  cadence: irregular
+  licence: attribution_required
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_water_purveyors_njdep_2017
+  layers:
+  - layer: '13'
+    sector: water
+    grain: service_area
+    metadata_path: gis/new_jersey_water_purveyors_njdep_2017/layer_metadata.json
+    role_field:
+      field: AREA_TYPE
+      values:
+        S: active_retail_service
+        W: regional_wholesale_or_district
+      on_null: reject
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: SYS_NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+      pwsid: PWID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    state_fixed: NJ
+  notes: State metadata describes a 2026 edition while this layer description cites
+    2017; do not assert a single source vintage or supersede the 2026 archives without
+    equivalence review. Attribution and terms must be resolved before sharing.
+  redistribution: internal_only

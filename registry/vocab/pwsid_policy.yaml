@@ -1,0 +1,9 @@
+standard_pattern: '^[A-Za-z0-9]{2}[0-9]{7}$'
+verified_exception_pattern: '^[A-Za-z0-9]{9}$'
+verified_reference_source: federal_epa_sdwa_2026q3
+verified_reference_layer: SDWA_PUB_WATER_SYSTEMS.csv
+verified_reference_field: PWSID
+verification: unique_exact_match_after_trimming
+state_prefix_rule: state_prefix_7
+multiple_identifiers: preserve_and_review
+unmatched_nonstandard: preserve_raw_without_federal_id

@@ -31,7 +31,7 @@ sources:
     state_fixed: MA
     pwsid_rule: state_prefix_7
     boundary_representation: mixed
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Mapped and estimated boundaries are mixed; state authority
@@ -70,7 +70,7 @@ sources:
     state_fixed: MA
     pwsid_rule: state_prefix_7
     boundary_representation: mixed
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Mapped and estimated boundaries are mixed; state authority

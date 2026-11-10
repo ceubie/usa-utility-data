@@ -22,7 +22,7 @@ sources:
       state_id: PWS_ID
     authority: state_regulator
     state_fixed: NH
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. PWS_ID is seven digits in sampled records; prefixing requires
     a separately verified rule.

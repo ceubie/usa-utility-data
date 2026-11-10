@@ -23,7 +23,7 @@ sources:
       state_id: KDHE_ID
     authority: state_regulator
     state_fixed: KS
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
   notes: 'Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Historical layer: service description cites a 2007 update

@@ -19,7 +19,7 @@ sources:
     authority: state_regulator
     boundary_representation: unknown
     name_field: MA_NAME
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
     id_fields:
       feature_id: OBJECTID_1
       pwsid: PWSID
@@ -27,6 +27,6 @@ sources:
     state_fixed: TN
   notes: Coarse boundaries; source does not establish parcel-level service or system
     activity. One frozen feature has a blank name and malformed PWSID and must be
-    rejected and reconciled. Cadence is a collection assumption and licence terms
-    require review before redistribution.
+    preserved and routed to review. Cadence is a collection assumption and licence
+    terms require review before redistribution.
   redistribution: internal_only

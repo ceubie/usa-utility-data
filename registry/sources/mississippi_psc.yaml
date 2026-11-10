@@ -23,8 +23,8 @@ sources:
     state_fixed: MS
     vintage_field: ASOF_DATE
     dissolve: true
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
   notes: Current certificated areas. Cadence is a conservative collection assumption;
     licence terms require verification before redistribution. Source polygons must
     be dissolved by utility. The frozen snapshot contains 276 features without a utility
-    name; those rows must be rejected and reconciled.
+    name; those rows must be preserved and routed to review.

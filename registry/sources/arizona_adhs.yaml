@@ -29,7 +29,7 @@ sources:
         ' ': unknown
       on_null: unknown
     state_fixed: AZ
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Source description says primary boundaries and approximations

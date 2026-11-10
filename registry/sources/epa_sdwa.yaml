@@ -1,0 +1,72 @@
+sources:
+- source_id: federal_epa_sdwa_2026q3
+  publisher: U.S. Environmental Protection Agency
+  driver: http
+  url: https://echo.epa.gov/files/echodownloads/SDWA_latest_downloads.zip
+  cadence: quarterly
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - water/epa_sdwa_latest.zip
+  layers:
+  - layer: SDWA_PUB_WATER_SYSTEMS.csv
+    sector: water
+    grain: registry_table
+    name_field: PWS_NAME
+    id_fields:
+      pwsid: PWSID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    status_field:
+      field: PWS_ACTIVITY_CODE
+      values:
+        A: active
+        I: inactive
+        N: unknown
+        P: unknown
+        M: unknown
+      on_null: unknown
+    vintage_field: SUBMISSIONYEARQUARTER
+    notes: Retain all statuses; unknown codes require confirmation. Primacy agency
+      codes include states and tribes, not necessarily geographic state. Preserve
+      raw status codes M, N and P even though their conservative normalized status
+      is unknown.
+    attribute_fields:
+      primacy_agency: PRIMACY_AGENCY_CODE
+      reported_state: STATE_CODE
+      raw_status: PWS_ACTIVITY_CODE
+      system_type: PWS_TYPE_CODE
+      owner_type: OWNER_TYPE_CODE
+      population_served: POPULATION_SERVED_COUNT
+      service_connections: SERVICE_CONNECTIONS_COUNT
+  - layer: SDWA_GEOGRAPHIC_AREAS.csv
+    sector: water
+    grain: admin_association
+    id_fields:
+      pwsid: PWSID
+      source_id: GEO_ID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    state_field: STATE_SERVED
+    vintage_field: SUBMISSIONYEARQUARTER
+  - layer: SDWA_FACILITIES.csv
+    sector: water
+    grain: facility
+    name_field: FACILITY_NAME
+    id_fields:
+      pwsid: PWSID
+      source_id: FACILITY_ID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    vintage_field: SUBMISSIONYEARQUARTER
+  - layer: SDWA_VIOLATIONS_ENFORCEMENT.csv
+    sector: water
+    grain: registry_table
+    id_fields:
+      pwsid: PWSID
+      source_id: VIOLATION_ID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    vintage_field: SUBMISSIONYEARQUARTER
+  notes: Exact CSV member names and headers checked against the collected archive.
+    Apply the approved standard-or-SDWIS-verified PWSID policy; see registry/pwsid_format_audit.json.
+    Licence terms require verification before sharing.
+  redistribution: internal_only

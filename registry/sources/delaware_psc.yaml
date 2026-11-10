@@ -23,8 +23,8 @@ sources:
     authority: state_regulator
     vintage_field: ISSUE_DATE
     state_fixed: DE
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Certificate issue dates do not necessarily establish polygon
     vintage. The frozen snapshot contains four features without a utility name; those
-    rows must be rejected and reconciled.
+    rows must be preserved and routed to review.

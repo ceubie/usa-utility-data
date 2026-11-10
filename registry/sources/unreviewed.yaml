@@ -917,10 +917,10 @@ sources:
   - layer: '0'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/florida_sfwmd_water_current/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: PWSID contains planning IDs, not necessarily federal PWSIDs; source includes
+    wholesale areas and Not in WASUP placeholders. Provider role and authority require
+    review. Draft remains unreviewed.
 - source_id: florida_sfwmd_water_future
   publisher: null
   driver: arcgis
@@ -938,8 +938,8 @@ sources:
     grain: service_area
     role: planned_or_future_service
     metadata_path: gis/florida_sfwmd_water_future/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Projected 2045/2050 areas with incomplete distributor names; not current
+    retail service. Draft remains unreviewed.
 - source_id: florida_sjrwmd_water_service_areas
   publisher: null
   driver: arcgis
@@ -955,10 +955,10 @@ sources:
   - layer: '0'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/florida_sjrwmd_water_service_areas/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: STATUS mixes served, unserved, existing, proposed, closed and null; PWS_ID
+    includes single, missing and multiple IDs. SOURCE reflects mixed provenance; no
+    blanket utility authority. Draft remains unreviewed.
 - source_id: georgia_fulton_wastewater_pipes
   publisher: null
   driver: arcgis
@@ -1092,7 +1092,7 @@ sources:
   url: https://services3.arcgis.com/fsrDo0QMPlK9CkZD/arcgis/rest/services/RW_Customers/FeatureServer/0
   cadence: null
   licence: null
-  out_of_scope: false
+  out_of_scope: true
   superseded_by: null
   reviewed: false
   paths:
@@ -1100,11 +1100,9 @@ sources:
   layers:
   - layer: '0'
     sector: water
-    grain: service_area
-    role: active_retail_service
     metadata_path: gis/hawaii_maui_recycled_water_customers/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Recycled-water customer/project parcels, not drinking-water service territories;
+    keep as out-of-scope draft pending review.
 - source_id: hawaii_maui_sewer_discharge_points
   publisher: null
   driver: arcgis
@@ -1230,8 +1228,8 @@ sources:
     grain: service_area
     role: active_retail_service
     metadata_path: gis/hawaii_maui_west_water_service_areas/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Hosted by Maui but names multiple providers; a blanket utility-direct authority
+    is unproven. Draft remains unreviewed.
 - source_id: hydrocarbon_gas_liquids_pipelines_eia
   publisher: null
   driver: arcgis
@@ -1456,11 +1454,10 @@ sources:
   layers:
   - layer: '1'
     sector: water
-    grain: service_area
-    role: planned_or_future_service
+    grain: admin_association
     metadata_path: gis/maryland_frederick_city_water_service_plan/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Parcel-level water planning categories; SERVICE_PROVIDER values are categories,
+    not utility names. Do not treat as provider territories without further mapping.
 - source_id: maryland_frederick_county_sewer_service_plan
   publisher: null
   driver: arcgis
@@ -1494,11 +1491,10 @@ sources:
   layers:
   - layer: '0'
     sector: water
-    grain: service_area
-    role: planned_or_future_service
+    grain: admin_association
     metadata_path: gis/maryland_frederick_county_water_service_plan/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Parcel-level water planning categories; SERVICE_PROVIDER values are categories,
+    not utility names. Do not treat as provider territories without further mapping.
 - source_id: maryland_hagerstown_electric_service_area
   publisher: null
   driver: arcgis
@@ -2583,26 +2579,6 @@ sources:
     metadata_path: gis/new_jersey_utility_line_features_dep/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
-- source_id: new_jersey_water_purveyors_njdep_2017
-  publisher: null
-  driver: arcgis
-  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/13
-  cadence: null
-  licence: attribution_required
-  out_of_scope: false
-  superseded_by: null
-  reviewed: false
-  paths:
-  - gis/new_jersey_water_purveyors_njdep_2017
-  layers:
-  - layer: '13'
-    sector: water
-    grain: service_area
-    role: active_retail_service
-    metadata_path: gis/new_jersey_water_purveyors_njdep_2017/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
-  redistribution: internal_only
 - source_id: new_jersey_wreck_pond_sanitary_sewer_lines_dep
   publisher: null
   driver: arcgis
@@ -2619,25 +2595,6 @@ sources:
     sector: wastewater
     grain: network
     metadata_path: gis/new_jersey_wreck_pond_sanitary_sewer_lines_dep/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
-- source_id: new_mexico_public_water_system_areas_ose
-  publisher: null
-  driver: arcgis
-  url: https://services2.arcgis.com/qXZbWTdPDbTjl7Dy/arcgis/rest/services/New_Mexico_Public_Water_Systems_Download/FeatureServer/0
-  cadence: null
-  licence: null
-  out_of_scope: false
-  superseded_by: null
-  reviewed: false
-  paths:
-  - gis/new_mexico_public_water_system_areas_ose
-  layers:
-  - layer: '0'
-    sector: water
-    grain: service_area
-    role: active_retail_service
-    metadata_path: gis/new_mexico_public_water_system_areas_ose/layer_metadata.json
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
     review.
 - source_id: new_york_tioga_gas_service_areas
@@ -2788,10 +2745,10 @@ sources:
   - layer: '4'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/north_carolina_water_current_2004/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: 'Historical 2004-2006 survey: current represents about 2003 and future was
+    an anticipated 2010 footprint, not present service or a current forecast. ID scheme
+    and non-serving historical role require review.'
 - source_id: north_carolina_water_future_2004
   publisher: null
   driver: arcgis
@@ -2807,10 +2764,10 @@ sources:
   - layer: '3'
     sector: water
     grain: service_area
-    role: planned_or_future_service
     metadata_path: gis/north_carolina_water_future_2004/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: 'Historical 2004-2006 survey: current represents about 2003 and future was
+    an anticipated 2010 footprint, not present service or a current forecast. ID scheme
+    and non-serving historical role require review.'
 - source_id: ohio_electric_certified_territories_puco
   publisher: null
   driver: arcgis
@@ -3544,8 +3501,8 @@ sources:
     grain: service_area
     role: active_retail_service
     metadata_path: gis/south_carolina_greer_water_service_areas/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Five named providers are in a Greer-hosted layer, so direct utility authority
+    for all is unproven; all five saved features lack geometry. Draft remains unreviewed.
 - source_id: south_carolina_horry_water_sewer_areas
   publisher: null
   driver: arcgis
@@ -3601,8 +3558,8 @@ sources:
     grain: service_area
     role: active_retail_service
     metadata_path: gis/south_carolina_summerville_cpw_water_service_area/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Parcel records include SCPW and DCWA; one direct-utility authority cannot
+    be assumed for both. Draft remains unreviewed.
 - source_id: south_dakota_electric_service_territories_puc
   publisher: null
   driver: arcgis
@@ -3715,8 +3672,8 @@ sources:
     grain: service_area
     role: active_retail_service
     metadata_path: gis/tennessee_gallatin_water_service_areas/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: 2012 local planning layer names several providers; publication by the city
+    does not prove direct authority for all. Draft remains unreviewed.
 - source_id: texas_water_service_areas_twdb
   publisher: null
   driver: arcgis
@@ -3933,8 +3890,9 @@ sources:
     grain: service_area
     role: active_retail_service
     metadata_path: gis/utah_culinary_water_areas_dwre/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Includes active and inactive, wholesale and nonpublic systems, mixed provenance
+    and polygons in several states; never fix all rows to UT or one authority. Draft
+    remains unreviewed.
 - source_id: utah_electric_service_areas_ugrc
   publisher: null
   driver: arcgis
@@ -4172,10 +4130,9 @@ sources:
   - layer: '40'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/washington_drinking_water_areas_doh/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: WS_ID is a state identifier. Area types mix current, future, old, Indian
+    and null; names and system statuses are sometimes missing. Draft remains unreviewed.
 - source_id: washington_king_county_sewer_service_providers
   publisher: null
   driver: arcgis
@@ -4287,8 +4244,8 @@ sources:
     grain: service_area
     role: active_retail_service
     metadata_path: gis/west_virginia_water_served_ijdc/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Quality and sources vary; some shapes are line buffers. Status describes
+    geometry, not system activity. Draft remains unreviewed.
 - source_id: wisconsin_caledonia_not_serviced_sewer_district
   publisher: null
   driver: arcgis
@@ -4325,8 +4282,8 @@ sources:
     grain: service_area
     role: not_serviced_or_excluded
     metadata_path: gis/wisconsin_caledonia_not_serviced_water_district/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: NAME identifies the municipality, not necessarily an individual provider;
+    area is not served. Draft remains unreviewed.
 - source_id: wisconsin_caledonia_sewer_service_area
   publisher: null
   driver: arcgis
@@ -4363,8 +4320,8 @@ sources:
     grain: service_area
     role: active_retail_service
     metadata_path: gis/wisconsin_caledonia_water_service_area/layer_metadata.json
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
+  notes: Type labels water, not provider; a utility name cannot be inferred. Draft
+    remains unreviewed.
 - source_id: wisconsin_dane_carpc_sewer_service_amendments
   publisher: null
   driver: arcgis
@@ -4786,127 +4743,6 @@ sources:
     sector: natural_gas
     grain: registry_table
   notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review.
-- source_id: federal_epa_sdwa_2026q3
-  publisher: U.S. Environmental Protection Agency
-  driver: http
-  url: https://echo.epa.gov/files/echodownloads/SDWA_latest_downloads.zip
-  cadence: quarterly
-  licence: unknown
-  out_of_scope: false
-  superseded_by: null
-  reviewed: false
-  paths:
-  - water/epa_sdwa_latest.zip
-  layers:
-  - layer: SDWA_PUB_WATER_SYSTEMS.csv
-    sector: water
-    grain: registry_table
-    name_field: PWS_NAME
-    id_fields:
-      pwsid: PWSID
-    on_invalid_pwsid: preserve_raw_without_federal_id
-    status_field:
-      field: PWS_ACTIVITY_CODE
-      values:
-        A: active
-        I: inactive
-        N: unknown
-        P: unknown
-        M: unknown
-      on_null: unknown
-    vintage_field: SUBMISSIONYEARQUARTER
-    notes: Retain all statuses; unknown codes require confirmation. Primacy agency
-      codes include states and tribes, not necessarily geographic state.
-    attribute_fields:
-      primacy_agency: PRIMACY_AGENCY_CODE
-      reported_state: STATE_CODE
-  - layer: SDWA_GEOGRAPHIC_AREAS.csv
-    sector: water
-    grain: admin_association
-    id_fields:
-      pwsid: PWSID
-      source_id: GEO_ID
-    on_invalid_pwsid: preserve_raw_without_federal_id
-    state_field: STATE_SERVED
-    vintage_field: SUBMISSIONYEARQUARTER
-  - layer: SDWA_FACILITIES.csv
-    sector: water
-    grain: facility
-    name_field: FACILITY_NAME
-    id_fields:
-      pwsid: PWSID
-      source_id: FACILITY_ID
-    on_invalid_pwsid: preserve_raw_without_federal_id
-    vintage_field: SUBMISSIONYEARQUARTER
-  - layer: SDWA_VIOLATIONS_ENFORCEMENT.csv
-    sector: water
-    grain: registry_table
-    id_fields:
-      pwsid: PWSID
-      source_id: VIOLATION_ID
-    on_invalid_pwsid: preserve_raw_without_federal_id
-    vintage_field: SUBMISSIONYEARQUARTER
-  notes: Exact CSV member names and headers checked against the collected archive.
-    PWSID validation is unresolved; see registry/pwsid_format_audit.json. Licence
-    terms require verification before sharing.
-  redistribution: internal_only
-- source_id: federal_epa_pws_boundaries_v3
-  publisher: null
-  driver: http
-  url: null
-  cadence: null
-  licence: null
-  out_of_scope: false
-  superseded_by: null
-  reviewed: false
-  paths:
-  - water/epa_pws_boundaries_latest.zip
-  layers:
-  - layer: CWS
-    sector: water
-    grain: service_area
-    role: active_retail_service
-    authority:
-      field: Symbology_Field
-      values:
-        System Sourced: federal_submitted
-        Modeled: federal_modeled
-      on_null: reject
-    name_field: PWS_Name
-    on_missing_name: reject
-    id_fields:
-      feature_id: fid
-      pwsid: PWSID
-    on_invalid_pwsid: preserve_raw_without_federal_id
-    state_from_geometry: true
-    boundary_representation: mixed
-    notes: CWS GeoPackage layer; 25,409 system-sourced and 19,247 modeled features.
-      Apply authority per feature.
-  - layer: T_NTNC
-    sector: water
-    grain: service_area
-    role: active_retail_service
-    name_field: PWS_Name
-    on_missing_name: reject
-    id_fields:
-      feature_id: fid
-      pwsid: PWSID
-    on_invalid_pwsid: preserve_raw_without_federal_id
-    state_from_geometry: true
-    boundary_representation: mixed
-    notes: Location confidence distinguishes 75,392 EPA-estimated polygons from 2,077
-      state-sourced polygons. Replacement of the older v1.1 layer requires review.
-      PWSID format policy is unresolved; see registry/pwsid_format_audit.json.
-    authority:
-      field: LOCATION_CONFIDENCE
-      values:
-        HIGHER: federal_modeled
-        LOWER: federal_modeled
-        State Sourced: federal_submitted
-      on_null: reject
-  notes: Draft seeded from the old catalog; mappings, publisher and licence require
-    review. EPA source archive has a documented PWSID-format conflict and requires
     review.
 - source_id: federal_usgs_wsa_2017
   publisher: null

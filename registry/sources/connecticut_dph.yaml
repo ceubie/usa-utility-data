@@ -22,7 +22,7 @@ sources:
       pwsid: pwsid
     authority: state_regulator
     state_fixed: CT
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Informational community-system boundaries; per-feature
@@ -50,7 +50,7 @@ sources:
       pwsid: pws_id
     authority: state_regulator
     state_fixed: CT
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Source-water watersheds, not retail service areas.
@@ -439,7 +439,7 @@ sources:
         WYNDHAM PARK APARTMENTS: certified_franchise_territory
         Z, INC.: certified_franchise_territory
       on_null: reject
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Informational exclusive-service areas; amendments may not
     be reflected. Unassigned and unnamed state-agency areas are retained as unassigned

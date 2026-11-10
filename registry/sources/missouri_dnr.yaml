@@ -28,7 +28,7 @@ sources:
         Active: active
       on_null: unknown
     state_fixed: MO
-    on_missing_name: reject
+    on_missing_name: preserve_and_review
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. PWSSID is numeric in the source; do not assume a federal
     PWSID prefix.

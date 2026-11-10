@@ -1,0 +1,42 @@
+sources:
+- source_id: new_mexico_public_water_system_areas_ose
+  publisher: New Mexico Office of the State Engineer
+  driver: arcgis
+  url: https://services2.arcgis.com/qXZbWTdPDbTjl7Dy/arcgis/rest/services/New_Mexico_Public_Water_Systems_Download/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_mexico_public_water_system_areas_ose
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/new_mexico_public_water_system_areas_ose/layer_metadata.json
+    name_field: PublicSystemName
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+      pwsid: Water_System_ID
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    authority: state_regulator
+    boundary_representation: unknown
+    state_fixed: NM
+    status_field:
+      field: Status_OSE
+      values:
+        Active: active
+        'Active ': active
+        Inactive: inactive
+      on_null: unknown
+    attribute_fields:
+      polygon_source: Polygon_Source
+      polygon_basis: Polygon_Basis
+  notes: Contains provider-supplied and other boundary sources with varying vintages.
+    Fourteen frozen rows have a missing or non-PWS identifier; preserve the raw ID
+    without claiming a federal identifier and route for matching. Cadence is a collection
+    assumption; licence requires review before redistribution.
+  redistribution: internal_only
