@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "utilitydata"
+version = "0.1.0"
+description = "Contract-driven utility data platform"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb",
+    "pandas",
+    "pyarrow",
+    "shapely",
+    "pyproj",
+    "pyogrio",
+    "geopandas",
+    "rapidfuzz",
+    "pydantic",
+    "pyyaml",
+    "requests",
+    "typer",
+]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
