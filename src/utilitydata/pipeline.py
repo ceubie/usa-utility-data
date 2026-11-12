@@ -28,6 +28,9 @@ STAGES = (
     "graph_load",
 )
 STATES = frozenset({"pending", "running", "done", "failed", "skipped"})
+STATUS_FILE = "pipeline_status.json"
+SUMMARY_DIR = "pipeline"
+RUN_RECORDS = frozenset({STATUS_FILE, SUMMARY_DIR})
 
 
 @dataclass(frozen=True)
@@ -52,7 +55,7 @@ Stage = Callable[[StageContext], Mapping[str, object] | None]
 
 
 def status_path(home: Path, release_id: str) -> Path:
-    return home / "releases" / release_id / "pipeline_status.json"
+    return home / "releases" / release_id / STATUS_FILE
 
 
 def _new_status() -> dict[str, object]:
@@ -162,7 +165,7 @@ def run_pipeline(
     if missing or set(stages) - set(STAGES):
         raise ValueError(f"Stage functions do not match the pipeline stages: {', '.join(missing) or 'extra stages'}")
     status = begin_run(context.home, context.release_id, resume=resume, from_stage=from_stage)
-    summaries = context.release / "pipeline"
+    summaries = context.release / SUMMARY_DIR
     for stage in STAGES:
         if status["stages"][stage] == "done":
             continue
@@ -178,7 +181,7 @@ def run_pipeline(
             mark(context.home, context.release_id, stage, "failed", f"{type(exc).__name__}: {exc}")
             raise
         summaries.mkdir(parents=True, exist_ok=True)
-        (summaries / f"{stage}.json").write_text(json.dumps(summary or {}, indent=2, default=str) + "\n", encoding="utf-8")
+        (summaries / f"{stage}.json").write_text(_summary_text(summary, context), encoding="utf-8")
         mark(context.home, context.release_id, stage, "done")
         echo(f"{stage}: done")
     path = status_path(context.home, context.release_id)
@@ -187,6 +190,16 @@ def run_pipeline(
         status["sealed"] = True
         _write(path, status)
     return status
+
+
+def _summary_text(summary: Mapping[str, object] | None, context: StageContext) -> str:
+    """Serialize a stage summary with machine paths replaced, since the release must not contain them."""
+    text = json.dumps(summary or {}, indent=2, default=str)
+    for root, label in ((context.home, "$UTILITYDATA_HOME"), (context.repository_root, ".")):
+        resolved = root.resolve()
+        for form in sorted({str(root), str(resolved), resolved.as_posix(), json.dumps(str(resolved))[1:-1]}, key=len, reverse=True):
+            text = text.replace(form, label)
+    return text + "\n"
 
 
 def _write(path: Path, status: Mapping[str, object]) -> None:

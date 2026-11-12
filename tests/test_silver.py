@@ -15,7 +15,7 @@ import shapely
 from pyproj import CRS
 
 from utilitydata.registry import FieldMap, Layer, Source
-from utilitydata.sectors.promote import promote_reviewed_collection
+from utilitydata.sectors.promote import PROMOTION_BACKUPS, promote_reviewed_collection
 from utilitydata.silver.boundaries import (
     _extracted_member,
     _read_unarchived_job,
@@ -362,8 +362,16 @@ def test_reviewed_draft_snapshot_promotes_zipped_shapefile_and_geopackage(tmp_pa
     _write_vector_fixtures(files)
     sources = [_water_source("fixture_zip_water", "zipped/water.zip", archive_member="areas.shp"), _water_source("fixture_gpkg_water", "standalone/areas.gpkg", archive_member=None)]
     _write_draft_tables(home, quarter, sources)
+    snapshot = home / "snapshots" / quarter
+    before = {name: (snapshot / name).read_bytes() for name in ("layers.parquet", "manifest.parquet")}
     promoted = promote_reviewed_collection(home, quarter, sources, {source.source_id for source in sources})
     assert promoted == ["fixture_gpkg_water", "fixture_zip_water"]
+    backups = list((snapshot / PROMOTION_BACKUPS).iterdir())
+    assert len(backups) == 1
+    assert {name: (backups[0] / name).read_bytes() for name in before} == before
+    assert json.loads((backups[0] / "promoted.json").read_text()) == promoted
+    assert promote_reviewed_collection(home, quarter, sources, {source.source_id for source in sources}) == []
+    assert len(list((snapshot / PROMOTION_BACKUPS).iterdir())) == 1
     layers = pd.read_parquet(home / "snapshots" / quarter / "layers.parquet")
     assert set(layers["status"]) <= {"collected", "partial_geometry"}
     assert layers["feature_count"].astype(int).tolist() == [2, 2]

@@ -10,6 +10,7 @@ import pandas as pd
 import pyarrow.parquet as pq
 
 from utilitydata.core.checks import acceptance_blockers
+from utilitydata.pipeline import RUN_RECORDS
 from utilitydata.registry import load_registry
 
 
@@ -71,7 +72,11 @@ def reject_absolute_paths(release: Path) -> None:
 
 def write_manifest(release: Path, home: Path, quarter: str, gold: Path, repository_root: Path) -> None:
     """Record the commit, snapshot, row counts, checksums, and source vintages."""
-    files = sorted(path for path in release.rglob("*") if path.is_file() and path.name != "release_manifest.json")
+    files = sorted(
+        path
+        for path in release.rglob("*")
+        if path.is_file() and path.name != "release_manifest.json" and path.relative_to(release).parts[0] not in RUN_RECORDS
+    )
     payload = {
         "release": release.name,
         "quarter": quarter,

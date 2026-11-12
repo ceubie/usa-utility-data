@@ -1,11 +1,15 @@
 """Reclassify a reviewed collection source that the freeze still marks draft.
 
 Empty-geometry rows stay empty-geometry. An unreviewed source is not promoted.
+Each promotion first copies the snapshot tables under promotion_backups/.
 """
 
 from __future__ import annotations
 
+import json
+import shutil
 import tempfile
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pyarrow as pa
@@ -19,6 +23,8 @@ from utilitydata.bronze.snapshot import (
 )
 from utilitydata.registry import Source
 from utilitydata.sectors.zones import BUILDABLE
+
+PROMOTION_BACKUPS = "promotion_backups"
 
 LAYER_FIELDS = (
     "source_id",
@@ -97,6 +103,17 @@ def promote_reviewed_collection(
                 raise ValueError(f"Snapshot manifest row missing for {source.source_id}")
             promoted.append(source.source_id)
     if promoted:
+        _back_up(snapshot, (layer_path, manifest_path), promoted)
         pq.write_table(pa.Table.from_pylist(layer_rows, schema=layer_schema), layer_path)
         pq.write_table(pa.Table.from_pylist(manifest_rows, schema=manifest_schema), manifest_path)
     return sorted(promoted)
+
+
+def _back_up(snapshot: Path, tables: tuple[Path, ...], promoted: list[str]) -> Path:
+    """Copy the snapshot tables as they were before this promotion. A backup is never overwritten."""
+    backup = snapshot / PROMOTION_BACKUPS / datetime.now(UTC).strftime("%Y%m%dT%H%M%S%fZ")
+    backup.mkdir(parents=True)
+    for table in tables:
+        shutil.copy2(table, backup / table.name)
+    (backup / "promoted.json").write_text(json.dumps(sorted(promoted), indent=2) + "\n", encoding="utf-8")
+    return backup

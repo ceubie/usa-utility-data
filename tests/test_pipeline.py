@@ -1,6 +1,7 @@
 """The pipeline runs every stage in order, resumes, and never writes a finished release."""
 
 import json
+from dataclasses import replace
 from pathlib import Path
 
 import pytest
@@ -16,6 +17,8 @@ from utilitydata.pipeline import (
     writable_release,
     writable_release_if_present,
 )
+from utilitydata.release import reports
+from utilitydata.release.reports import reject_absolute_paths
 from utilitydata.stages import STAGE_FUNCTIONS
 
 
@@ -124,3 +127,31 @@ def test_stage_functions_must_match_the_stages(tmp_path: Path):
     del stages["gas"]
     with pytest.raises(ValueError, match="gas"):
         run_pipeline(_context(tmp_path / "data"), stages, resume=False, from_stage=None, echo=lambda _line: None)
+
+
+def test_stage_summaries_carry_no_machine_path(tmp_path: Path):
+    home = tmp_path / "data"
+    context = replace(_context(home), repository_root=tmp_path)
+    stages = _recording([])
+    stages["validate"] = lambda _context: {"table": home / "core" / "2026-Q4" / "system.parquet", "code": str(tmp_path / "src")}
+    run_pipeline(context, stages, resume=False, from_stage=None, echo=lambda _line: None)
+    text = (home / "releases" / "2026Q4.2" / "pipeline" / "validate.json").read_text()
+    assert str(tmp_path) not in text
+    assert json.loads(text) == {"table": "$UTILITYDATA_HOME/core/2026-Q4/system.parquet", "code": "./src"}
+    reject_absolute_paths(home / "releases" / "2026Q4.2")
+
+
+def test_the_release_manifest_leaves_out_the_run_records(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    home = tmp_path / "data"
+    release = open_release(home, "2026Q4.2")
+    (release / "pipeline").mkdir()
+    (release / "pipeline" / "validate.json").write_text("{}\n")
+    (release / "data_dictionary.md").write_text("# Dictionary\n")
+    snapshot = home / "snapshots" / "2026-Q4"
+    snapshot.mkdir(parents=True)
+    (snapshot / "manifest.parquet").write_bytes(b"manifest")
+    monkeypatch.setattr(reports, "_git", lambda _root: {"commit": "test"})
+    monkeypatch.setattr(reports, "_vintages", lambda _gold, _root: [])
+    reports.write_manifest(release, home, "2026-Q4", home / "gold" / "2026-Q4", tmp_path)
+    manifest = json.loads((release / "release_manifest.json").read_text())
+    assert list(manifest["checksums"]) == ["data_dictionary.md"]
