@@ -1,0 +1,136 @@
+sources:
+- source_id: usbr_hydropower_facilities
+  publisher: U.S. Bureau of Reclamation
+  driver: arcgis
+  url: https://services1.arcgis.com/ixD30sld6F8MQ7V5/arcgis/rest/services/Reclamation_HydropowerFacilities/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/usbr_hydropower_facilities
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: facility
+    metadata_path: gis/usbr_hydropower_facilities/layer_metadata.json
+    name_field: assetname
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      asset_type: assettype
+      operator: operatingentity1
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Eighty-one named hydropower facilities. assettype is Conventional on 72,
+    Pumped Storage on 6, and Combination on 3. operatingentity1 has 13 values, so
+    the operator is not the Bureau of Reclamation on every feature. These are plants,
+    not service areas. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only
+- source_id: usbr_dams
+  publisher: U.S. Bureau of Reclamation
+  driver: arcgis
+  url: https://services1.arcgis.com/ixD30sld6F8MQ7V5/arcgis/rest/services/ReclamationDams/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/usbr_dams
+  layers:
+  - layer: '0'
+    sector: water
+    grain: facility
+    metadata_path: gis/usbr_dams/layer_metadata.json
+    name_field: assetname
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      asset_type: assettype
+      operator: operatingentity1
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Five hundred seventy-seven named dams. assettype is Embankment on 438,
+    Gravity on 72, Arch on 32, Composite on 23, and Buttress on 12. operatingentity1
+    is blank on 1 feature. These are dams, not service areas. Cadence is a collection
+    assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: usbr_pumping_plants
+  publisher: U.S. Bureau of Reclamation
+  driver: arcgis
+  url: https://services1.arcgis.com/ixD30sld6F8MQ7V5/arcgis/rest/services/Reclamation_PumpingPlants/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/usbr_pumping_plants
+  layers:
+  - layer: '0'
+    sector: water
+    grain: facility
+    metadata_path: gis/usbr_pumping_plants/layer_metadata.json
+    name_field: assetname
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      asset_type: assettype
+      operator: operatingentity1
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Six hundred fifty-five named pumping plants. assettype is Minor Plant on
+    588 and Major Plant on 67. operatingentity1 is present on every feature. These
+    are plants, not service areas. Cadence is a collection assumption and licence
+    terms require review before redistribution.
+  redistribution: internal_only
+- source_id: usbr_reservoirs_lakes_pools
+  publisher: U.S. Bureau of Reclamation
+  driver: arcgis
+  url: https://services1.arcgis.com/ixD30sld6F8MQ7V5/arcgis/rest/services/ReclamationReservoirsLakesandPools/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/usbr_reservoirs_lakes_pools
+  layers:
+  - layer: '0'
+    sector: water
+    grain: facility
+    metadata_path: gis/usbr_reservoirs_lakes_pools/layer_metadata.json
+    name_field: assetname
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      asset_type: assettype
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Four hundred forty-eight named water bodies. assettype is Reservoir on 286,
+    Pool on 152, and Lake on 10. These are reservoir extents, not service areas.
+    Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only
+- source_id: usbr_conveyance_lines
+  publisher: U.S. Bureau of Reclamation
+  driver: arcgis
+  url: https://services1.arcgis.com/ixD30sld6F8MQ7V5/arcgis/rest/services/ReclamationConveyanceLines/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/usbr_conveyance_lines
+  layers:
+  - layer: '0'
+    sector: water
+    grain: network
+    metadata_path: gis/usbr_conveyance_lines/layer_metadata.json
+    name_field: assetname
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      asset_type: assettype
+      operator: operatingentity1
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Twenty thousand six hundred sixty-three named conveyance lines. assettype is
+    Pipe on 11447, Canal on 9045, Tunnel on 152, and Flume on 19. operatingentity1
+    is blank on 9 features. These are pipes and canals, not service areas. Cadence
+    is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

@@ -1,0 +1,29 @@
+sources:
+- source_id: minnesota_metc_wastewater_treatment_facilities
+  publisher: Metropolitan Council
+  driver: arcgis
+  url: https://arcgis.metc.state.mn.us/arcgis/rest/services/LPH/Wastewater_ES/MapServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/minnesota_metc_wastewater_treatment_facilities
+  layers:
+  - layer: '0'
+    sector: wastewater
+    grain: facility
+    metadata_path: gis/minnesota_metc_wastewater_treatment_facilities/layer_metadata.json
+    name_field: FeatureLabel
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      abbreviation: Abbreviation
+      status: FeatureStatus
+    state_fixed: MN
+  notes: Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Nine named treatment plants, including St Croix Valley. FeatureStatus is
+    Online on every feature. These are plant locations, not service areas. The agency
+    catalog terms say not to transfer or share these wastewater data. Cadence is a
+    collection assumption.
+  redistribution: internal_only

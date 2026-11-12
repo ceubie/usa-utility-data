@@ -1,0 +1,13 @@
+table: service_area_display
+path: service_area_display.parquet
+primary_key: [service_area_id, simplify_degrees]
+columns:
+  - {name: service_area_id, type: string, nullable: false, description: Best serving area.}
+  - {name: system_id, type: string, nullable: false, description: Active system.}
+  - {name: sector, type: string, nullable: false, vocab: sector, description: Sector.}
+  - {name: zone_role, type: string, nullable: false, vocab: zone_role, description: Serving role.}
+  - {name: authority, type: string, nullable: false, vocab: authority, description: Authority.}
+  - {name: licence, type: string, nullable: false, vocab: licence, description: Licence.}
+  - {name: simplify_degrees, type: float, nullable: false, description: Simplification tolerance in degrees. The file contains 0.001 and 0.01.}
+  - {name: simplify_retained_original, type: boolean, nullable: false, description: True when simplification was empty or failed and the original geometry was kept.}
+  - {name: geometry, nullable: false, description: Simplified polygon in EPSG:4326.}

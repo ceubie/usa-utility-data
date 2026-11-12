@@ -7,6 +7,7 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
+  redistribution: internal_only
   reviewed: false
   paths:
   - gis/florida_broward_water_provider_areas
@@ -55,8 +56,32 @@ sources:
         Unclaimed Area: unassigned_area
         Wilton Manors: active_retail_service
       on_null: reject
-  notes: 'Cadence is a conservative collection assumption; licence terms require verification
+  notes: 'Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Provider areas from Broward County; coverage and vintage
     need confirmation. Unclaimed areas are retained as unassigned areas, not provider
     territories. Authority is unresolved: the county compilation does not establish
     that each polygon was supplied directly by the utility.'
+- source_id: florida_broward_drainage_districts
+  publisher: Broward County
+  driver: arcgis
+  url: https://services.arcgis.com/JMAJrTsHNLrSsWf5/arcgis/rest/services/WaterSewerDrainage_WFL1/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/florida_broward_drainage_districts
+  layers:
+  - layer: '0'
+    sector: stormwater
+    grain: admin_association
+    metadata_path: gis/florida_broward_drainage_districts/layer_metadata.json
+    name_field: DRAINAGEDISTRICTS_NAME
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: FL
+  notes: Twenty-three named drainage districts. They are stormwater districts, not
+    drinking-water or sewer retail service. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: internal_only

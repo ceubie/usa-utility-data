@@ -1,0 +1,152 @@
+sources:
+- source_id: state_tx_puct_water_ccn
+  publisher: Public Utility Commission of Texas
+  driver: http
+  url: https://ftp.puc.texas.gov/public/puct-info/industry/water/utilities/PUCT_CCN_WATER_TSMS.zip
+  cadence: monthly
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - states/tx/puct_water_ccn_tsms.zip
+  layers:
+  - layer: PUCT_CCN_WATER_TSMS
+    sector: water
+    grain: service_area
+    role_field:
+      field: STATUS
+      values:
+        Commission Approved: certified_franchise_territory
+        Pending Final Order Docket No. 54292: review_required
+        Pending Final Order Docket No. 54462: review_required
+        Pending Final Order Docket No. 54591: review_required
+        Pending Final Order Docket No. 54698: review_required
+        Pending Final Order Docket No. 55171: review_required
+        Pending Final Order Docket No. 55840: review_required
+        Pending Final Order Docket No. 56049: review_required
+        Pending Final Order Docket No. 56706: review_required
+        Pending Final Order Docket No. 56737: review_required
+        Pending Final Order Docket No. 57118: review_required
+        Pending Final Order Docket No. 57453: review_required
+        Pending Final Order Docket No. 57691: review_required
+        Pending Final Order Docket No. 57926: review_required
+        Pending Final Order Docket No. 57956: review_required
+        Pending Final Order Docket No. 57977: review_required
+        Pending Final Order Docket No. 57992: review_required
+        Pending Final Order Docket No. 58011: review_required
+        Pending Final Order Docket No. 58272: review_required
+        Pending Final Order Docket No. 58359: review_required
+        Pending Final Order Docket No. 58514: review_required
+        Pending Final Order Docket No. 58528: review_required
+        Pending Final Order Docket No. 58604: review_required
+        Pending Final Order Docket No. 58608: review_required
+        Pending Final Order Docket No. 58609: review_required
+        Pending Final Order Docket No. 58609, 58608: review_required
+        Pending Final Order Docket No. 58613: review_required
+        Pending Final Order Docket No. 58643: review_required
+        Pending Final Order Docket No. 58754: review_required
+        Pending Final Order Docket No. 58828: review_required
+        Pending Final Order Docket No. 58945: review_required
+        Pending Final Order Docket No. 58972: review_required
+        Pending Final Order Docket No. 59074: review_required
+        Pending Final Order Docket No. 59116: review_required
+        Pending Final Order Docket No. 59238: review_required
+        Pending Final Order Docket No. 59253: review_required
+        Pending Final Order Docket No. 59516: review_required
+        Pending Final Order Docket No. 59576: review_required
+        Pending Final Order Docket No. 59664: review_required
+        Pending Final Order Docket No. 59668: review_required
+        Pending Final Order Docket No. 59737: review_required
+        Pending Final Order Docket No. 59859: review_required
+        Pending Final Order Docket No. 59953: review_required
+      on_null: review_required
+    archive_member: PUCT_CCN_WATER_TSMS_for_GIS/PUCT_CCN_WATER_TSMS.shp
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: UTILITY
+    on_missing_name: preserve_and_review
+    attribute_fields:
+      ccn_number: CCN_NO
+      county: COUNTY
+      dba_name: DBA_NAME
+      ccn_type: CCN_TYPE
+    state_fixed: TX
+    vintage_fixed: '2026-10-05'
+  notes: Three thousand nine hundred thirty-four water Certificate of Convenience
+    and Necessity polygons from the commission's published shapefile. UTILITY names
+    the certificate holder on every polygon and CCN_NO has 1,873 distinct numbers,
+    so one holder can have many polygons; 399 polygons name Aqua Texas. STATUS is
+    Commission Approved on 3856 and a pending final-order docket on 78; a pending
+    docket is not a final certificate and is held for review. CCN_TYPE is a bounded
+    service area on every polygon, spelled three ways. DBA_NAME is the text NA on
+    3,839. The archive also holds 423 facility lines (PUCT_CCNFAC_WATER_TSMS), which
+    are not declared. A certificate is the area a utility is authorized and obligated
+    to serve, not proof that pipes are in the ground.     The shapefile has no feature
+    id, so the row position identifies a polygon within this snapshot. That position
+    will not survive a new download, so a match override must not use it. Vintage is
+    the file's Last-Modified date at download. The commission posts updates about
+    monthly. Licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: state_tx_puct_sewer_ccn
+  publisher: Public Utility Commission of Texas
+  driver: http
+  url: https://ftp.puc.texas.gov/public/puct-info/industry/water/utilities/PUCT_CCN_SEWER_TSMS.zip
+  cadence: monthly
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - states/tx/puct_sewer_ccn_tsms.zip
+  layers:
+  - layer: PUCT_CCN_SEWER_TSMS
+    sector: wastewater
+    grain: service_area
+    role_field:
+      field: STATUS
+      values:
+        Commission Approved: certified_franchise_territory
+        Pending Final Order Docket No. 53187: review_required
+        Pending Final Order Docket No. 54229: review_required
+        Pending Final Order Docket No. 54292: review_required
+        Pending Final Order Docket No. 54732: review_required
+        Pending Final Order Docket No. 55171: review_required
+        Pending Final Order Docket No. 56105: review_required
+        Pending Final Order Docket No. 56706: review_required
+        Pending Final Order Docket No. 56915: review_required
+        Pending Final Order Docket No. 57627: review_required
+        Pending Final Order Docket No. 57691: review_required
+        Pending Final Order Docket No. 57921: review_required
+        Pending Final Order Docket No. 58011: review_required
+        Pending Final Order Docket No. 58137: review_required
+        Pending Final Order Docket No. 58359: review_required
+        Pending Final Order Docket No. 58529: review_required
+        Pending Final Order Docket No. 58614: review_required
+        Pending Final Order Docket No. 58972: review_required
+        Pending Final Order Docket No. 59516: review_required
+        Pending Final Order Docket No. 59737: review_required
+        Pending Final Order Docket No. 60028: review_required
+      on_null: review_required
+    archive_member: PUCT_CCN_SEWER_TSMS_for_GIS/PUCT_CCN_SEWER_TSMS.shp
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: UTILITY
+    on_missing_name: preserve_and_review
+    attribute_fields:
+      ccn_number: CCN_NO
+      county: COUNTY
+      dba_name: DBA_NAME
+      ccn_type: CCN_TYPE
+    state_fixed: TX
+  notes: One thousand four hundred fifty-six sewer Certificate of Convenience and
+    Necessity polygons from the commission's published shapefile. UTILITY names the
+    certificate holder on every polygon; 97 polygons name Aqua Texas. STATUS is Commission
+    Approved on 1428 and a pending final-order docket on 28; a pending docket is not
+    a final certificate and is held for review. The archive also holds 67 facility
+    lines (PUCT_CCNFAC_SEWER_TSMS), which are not declared. A certificate is an authorized
+    area, not proof of collection lines. The shapefile has no feature id, so the row
+    position identifies a polygon within this snapshot. That position will not survive
+    a new download, so a match override must not use it. The commission posts updates
+    about monthly. Licence terms require review before redistribution.
+  redistribution: internal_only

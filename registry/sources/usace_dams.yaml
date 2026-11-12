@@ -1,0 +1,35 @@
+sources:
+- source_id: national_usace_inventory_of_dams
+  publisher: U.S. Army Corps of Engineers
+  driver: arcgis
+  url: https://geospatial.sec.usace.army.mil/dls/rest/services/NID/National_Inventory_of_Dams_Public_Service/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/national_usace_inventory_of_dams
+  layers:
+  - layer: '0'
+    sector: reference
+    grain: facility
+    metadata_path: gis/national_usace_inventory_of_dams/layer_metadata.json
+    name_field: NAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      primary_purpose: PRIMARY_PURPOSE
+      owner_type: PRIMARY_OWNER_TYPE
+  notes: Ninety-two thousand six hundred twenty-eight dam points. NAME is blank on
+    4327 features. PRIMARY_PURPOSE is blank on 5826. The populated purposes are
+    Recreation on 30931, Flood Risk Reduction on 15192, Fire Protection, Stock, Or
+    Small Fish Pond on 11999, Irrigation on 7687, Other on 7453, Water Supply on
+    5207, Fish and Wildlife Pond on 3184, Hydroelectric on 2113, Tailings on 1160,
+    Grade Stabilization on 964, Debris Control on 679, and Navigation on 233.
+    PRIMARY_OWNER_TYPE is Private on 60318, Local Government on 18665, State on
+    6747, Federal on 3552, Public Utility on 1672, Not Listed on 1645, Tribal
+    Government on 17, and blank on 12. This is a dam inventory, not a utility
+    service area. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only

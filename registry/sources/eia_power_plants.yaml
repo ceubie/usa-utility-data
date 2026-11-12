@@ -1,0 +1,34 @@
+sources:
+- source_id: power_plants_eia
+  publisher: U.S. Energy Information Administration
+  driver: arcgis
+  url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/power_plants_eia
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: facility
+    metadata_path: gis/power_plants_eia/layer_metadata.json
+    name_field: Plant_Name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      utility_name: Utility_Na
+      plant_sector: sector_nam
+      primary_source: PrimSource
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Thirteen thousand four hundred forty-six named plants. sector_nam is IPP
+    Non-CHP on 8550, Electric Utility on 3414, Commercial Non-CHP on 477, Industrial
+    CHP on 414, Commercial CHP on 213, Industrial Non-CHP on 201, and IPP CHP on 177.
+    PrimSource is solar on 6406, natural gas on 1983, hydroelectric on 1400, wind on
+    1352, petroleum on 890, biomass on 597, batteries on 391, coal on 198, other on
+    73, geothermal on 67, nuclear on 55, and pumped storage on 34. State is a full
+    state name on every feature, including District of Columbia and Puerto Rico, so
+    it is not a postal abbreviation. These are plants, not service areas. Cadence is
+    a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

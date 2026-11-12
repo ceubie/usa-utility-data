@@ -1,0 +1,8 @@
+# Which facilities are in Texas?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?facility ?name WHERE {
+  ?facility a ud:Facility ;
+            ud:name ?name ;
+            ud:inState <http://utilities.local/state/TX> .
+}
+LIMIT 10

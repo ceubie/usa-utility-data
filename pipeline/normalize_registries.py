@@ -26,9 +26,9 @@ def wkb_sha256(g: shapely.Geometry | None) -> str | None:
     return hashlib.sha256(shapely.to_wkb(snapped)).hexdigest()
 
 
-def read_ogr_table(vsi_path: str, layer: str | None = None) -> tuple[dict, pd.DataFrame, np.ndarray]:
+def read_ogr_table(vsi_path: str, layer: str | None = None, *, return_fids: bool = False) -> tuple[dict, pd.DataFrame, np.ndarray]:
     """Read an OGR vector source via pyogrio.raw.read_arrow without requiring geopandas."""
-    meta, table = pyogrio.raw.read_arrow(vsi_path, layer=layer)
+    meta, table = pyogrio.raw.read_arrow(vsi_path, layer=layer, return_fids=return_fids)
     geom_col = meta.get("geometry_name") or "wkb_geometry"
     wkb_list = table[geom_col].to_pylist()
     geoms = shapely.from_wkb(wkb_list)

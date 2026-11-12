@@ -1,0 +1,33 @@
+sources:
+- source_id: washington_utc_gas_certificated_areas
+  publisher: Washington Utilities and Transportation Commission
+  driver: arcgis
+  url: https://services2.arcgis.com/lXwA5ckdH5etcXUm/arcgis/rest/services/UTC_Regulated_Gas_Service_Areas/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/washington_utc_gas_certificated_areas
+  layers:
+  - layer: '0'
+    sector: natural_gas
+    grain: service_area
+    role: certified_franchise_territory
+    metadata_path: gis/washington_utc_gas_certificated_areas/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: FID
+    attribute_fields:
+      docket: DOCKET_NUM
+    state_fixed: WA
+  notes: Two hundred seventeen regulated gas polygons. NAME is Cascade Natural Gas
+    on 86, Puget Sound Energy on 81, Avista on 41, and Northwest Natural Gas on 9.
+    DOCKET_NUM is present on every feature. DATE is blank on 3 and SERVICE_AR is
+    blank on 19. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only

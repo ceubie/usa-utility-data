@@ -20,13 +20,29 @@ dependencies = [
     "pyyaml",
     "requests",
     "typer",
+    "orjson",
+    "fastapi>=0.162.5",
+    "uvicorn>=0.54.0",
+    "httpx>=0.28.1",
+    "openai>=1.50.0",
+    "rdflib>=7.6.0",
+    "pydantic-settings>=2.16.2",
 ]
 
 [project.scripts]
 utilitydata = "utilitydata.cli:app"
 
 [dependency-groups]
-dev = ["pytest", "ruff"]
+dev = [
+    "pytest",
+    "rdflib",
+    "ruff",
+]
+
+[tool.ruff.lint]
+# A malformed external payload is a ValueError: the API maps ValueError to a 4xx answer.
+extend-ignore = ["TRY004"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]

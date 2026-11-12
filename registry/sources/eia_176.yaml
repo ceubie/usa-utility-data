@@ -1,0 +1,34 @@
+sources:
+- source_id: federal_eia176_ng_companies
+  publisher: U.S. Energy Information Administration
+  driver: http
+  url: https://www.eia.gov/naturalgas/ngqs/all_ng_data.zip
+  cadence: irregular
+  licence: unknown
+  redistribution: internal_only
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gas/eia176_all_ng_data.zip
+  layers:
+  - layer: all_company_176.csv
+    sector: natural_gas
+    grain: registry_table
+    id_fields:
+      company_id: COMPANY_ID
+    attribute_fields:
+      name: NAME1
+  - layer: all_data_176.csv
+    sector: natural_gas
+    grain: registry_table
+    id_fields:
+      company_id: ID
+    attribute_fields:
+      state: AREA1
+      year: YEAR
+  notes: "EIA natural gas annual respondent file. NAME1 is the company name.
+    AREA1 is the state on each data row. A company is linked to a PHMSA operator
+    only when the normalized name matches inside that same state. Cadence is a
+    collection assumption and licence terms were not stated, so redistribution
+    stays internal. The raw FERC filings are not this source."

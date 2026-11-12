@@ -1,0 +1,25 @@
+sources:
+- source_id: oklahoma_water_pipelines_owrb
+  publisher: Oklahoma Water Resources Board
+  driver: arcgis
+  url: https://services2.arcgis.com/fI5CUOPa2wdhkCHV/ArcGIS/rest/services/OWRB_Rural_WS_System_Pipelines/FeatureServer/91
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oklahoma_water_pipelines_owrb
+  layers:
+  - layer: '91'
+    sector: water
+    grain: network
+    metadata_path: gis/oklahoma_water_pipelines_owrb/layer_metadata.json
+    name_field: NAME
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: OK
+  notes: Seventy thousand five hundred fifty-six rural water pipelines. NAME is
+    blank on 533 features. These are pipes, not service areas. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

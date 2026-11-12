@@ -1,0 +1,7 @@
+# What are the names and USPS codes of the states?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?state ?name ?usps WHERE {
+  ?state a ud:State ;
+         ud:name ?name ;
+         ud:usps ?usps .
+}

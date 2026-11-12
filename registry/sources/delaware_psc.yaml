@@ -7,14 +7,14 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
-  reviewed: true
+  redistribution: internal_only
+  reviewed: false
   paths:
   - gis/delaware_water_certificated_areas_psc
   layers:
   - layer: '0'
     sector: water
     grain: service_area
-    role: certified_franchise_territory
     metadata_path: gis/delaware_water_certificated_areas_psc/layer_metadata.json
     name_field: COMPANY1
     id_fields:
@@ -24,7 +24,40 @@ sources:
     vintage_field: ISSUE_DATE
     state_fixed: DE
     on_missing_name: preserve_and_review
-  notes: Cadence is a conservative collection assumption; licence terms require verification
+    attribute_fields:
+      certificate_description: SERVICE_A
+  notes: 'Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Certificate issue dates do not necessarily establish polygon
     vintage. The frozen snapshot contains four features without a utility name; those
-    rows must be preserved and routed to review.
+    rows must be preserved and routed to review. Held for role review: 34 descriptions
+    mention abandonment or partial abandonment; preserve evidence and review order
+    semantics before treating them as active certificates.'
+- source_id: delaware_community_solar_psc
+  publisher: Delaware Public Service Commission
+  driver: arcgis
+  url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_PSC/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/delaware_community_solar_psc
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: facility
+    metadata_path: gis/delaware_community_solar_psc/layer_metadata.json
+    name_field: COMPANY1
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      approval_status: STATUS
+      approved: APPROVED
+    state_fixed: DE
+  notes: Sixty-seven community-solar parcels. COMPANY1, STATUS, and APPROVED are
+    blank on 1 feature. STATUS is Final on 29, Preliminary on 19, and Prelim on 18.
+    APPROVED is Yes on 58 and No on 8. These are project parcels, not utility service
+    territories. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only

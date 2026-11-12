@@ -7,14 +7,14 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
-  reviewed: true
+  redistribution: internal_only
+  reviewed: false
   paths:
   - gis/arizona_water_service_areas_adhs_2022
   layers:
   - layer: '1'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/arizona_water_service_areas_adhs_2022/layer_metadata.json
     name_field: CWS_NAME
     id_fields:
@@ -31,6 +31,13 @@ sources:
     state_fixed: AZ
     on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
-  notes: Cadence is a conservative collection assumption; licence terms require verification
-    before redistribution. Source description says primary boundaries and approximations
-    are mixed; feature vintage is uncertain.
+  notes: 'Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. 917 features, matching the snapshot. CWS_NAME is present on every row.
+    STATUS is A on 751, I on 141, and a single space on 25, and those three values
+    are mapped, so this is not an unmapped status code. Geometry is null on 37 and
+    nonempty on 880. The layer description says a primary system boundary was used
+    when the system supplied one and a certificate or census-place boundary otherwise.
+    No saved field records which method a polygon used. STATE is a mailing state:
+    AZ on 833, a single space on 29, and another state on 55. Left draft because
+    primary and secondary footprints are mixed and 37 geometries are missing.
+    Cadence is a collection assumption and licence terms require review before
+    redistribution.'

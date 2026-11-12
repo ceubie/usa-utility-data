@@ -1,0 +1,33 @@
+sources:
+- source_id: puerto_rico_power_generation_fema_2022
+  publisher: Federal Emergency Management Agency
+  driver: arcgis
+  url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Power_Generating_Infrastructure_PR_2022_UPDATE/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/puerto_rico_power_generation_fema_2022
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: facility
+    metadata_path: gis/puerto_rico_power_generation_fema_2022/layer_metadata.json
+    name_field: Facility_Name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      facility_type: Type_
+    state_fixed: PR
+  notes: Thirty-seven named generation points. Type_ is Hydroelectric on 11, Solar Farm
+    on 7, Gas Turbines on 5, Wind Farm on 3, Diesel Generator on 2, Gas Turbines /
+    Steam on 2, Landfill Gas on 2, and one each of Diesel Oil / Steam, Coal, Diesel
+    Oil, Combined Cycle / Gas Turbines / Steam, and Combined Cycle. There is no
+    operator or operating-status field. The copyright attributes the layer to LUMA,
+    PREPA, and FEMA, and the collection record dates the capacity check to May 2022,
+    so the layer is not evidence of current operation. These are facilities, not
+    service areas. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only

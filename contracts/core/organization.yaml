@@ -1,0 +1,13 @@
+table: organization
+path: organization.parquet
+primary_key: [org_id]
+columns:
+  - {name: org_id, type: string, nullable: false}
+  - {name: name, type: string, nullable: true}
+  - {name: name_norm, type: string, nullable: true}
+  - {name: state, type: string, nullable: true}
+  - {name: owner_type, type: string, nullable: true}
+  - {name: owner_type_code, type: string, nullable: true}
+  - {name: government_unit_id, type: string, nullable: true}
+  - {name: sector, type: string, nullable: true, vocab: sector}
+  - {name: source_id, type: string, nullable: false}

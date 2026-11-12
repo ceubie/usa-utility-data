@@ -37,6 +37,9 @@ def test_snapshot_copies_hashes_and_marks_missing_geometry(tmp_path):
     (raw / "extra.txt").write_text("context", encoding="utf-8")
     unused = tmp_path / "unused.yaml"
     unused.write_text("unused:\n  - {path: extra.txt, reason: Context only}\n", encoding="utf-8")
+    vocab = tmp_path / "vocab"
+    vocab.mkdir()
+    (vocab / "policy.yaml").write_text("version: original\n", encoding="utf-8")
     home = tmp_path / "home"
     result = freeze("2026-Q4", home=home, raw_root=raw, registry_dir=registry, unused_path=unused)
     rows = pq.read_table(result / "manifest.parquet").to_pylist()
@@ -49,8 +52,52 @@ def test_snapshot_copies_hashes_and_marks_missing_geometry(tmp_path):
     assert next(row for row in rows if row["relative_path"] == "extra.txt")["status"] == "unused"
     (raw / "extra.txt").write_text("changed", encoding="utf-8")
     assert (result / "files" / "extra.txt").read_text(encoding="utf-8") == "context"
+    (vocab / "policy.yaml").write_text("version: changed\n", encoding="utf-8")
+    assert (result / "registry" / "vocab" / "policy.yaml").read_text(encoding="utf-8") == "version: original\n"
     with pytest.raises(FileExistsError):
         freeze("2026-Q4", home=home, raw_root=raw, registry_dir=registry, unused_path=unused)
+
+
+def test_draft_source_is_carried_and_not_buildable(tmp_path):
+    raw, layer, source, registry = _collection(tmp_path)
+    source["reviewed"] = False
+    (registry / "publisher.yaml").write_text(yaml.safe_dump({"sources": [source]}), encoding="utf-8")
+    extra = raw / "extra.txt"
+    extra.write_text("unassigned", encoding="utf-8")
+    with pytest.raises(ValueError, match="lack a registry disposition"):
+        freeze("2026-Q4", home=tmp_path / "home", raw_root=raw, registry_dir=registry, unused_path=tmp_path / "unused.yaml")
+    extra.unlink()
+    with gzip.open(layer / "page_000000.json.gz", "wt", encoding="utf-8") as stream:
+        json.dump({"features": [{"attributes": {"name": "Provider"}, "geometry": {"rings": [[[0, 0], [1, 0], [0, 1], [0, 0]]]}}]}, stream)
+    result = freeze("2026-Q4", home=tmp_path / "home", raw_root=raw, registry_dir=registry, unused_path=tmp_path / "unused.yaml")
+    rows = [row for row in pq.read_table(result / "manifest.parquet").to_pylist() if row["source_id"] == "water"]
+    assert rows
+    assert {row["status"] for row in rows} == {"draft"}
+    assert all(row["status"] not in {"collected", "partial_geometry", "nonspatial"} for row in rows)
+    layer_rows = pq.read_table(result / "layers.parquet").to_pylist()
+    assert layer_rows[0]["status"] == "draft"
+    assert layer_rows[0]["status"] not in {"collected", "partial_geometry", "nonspatial"}
+
+
+def test_unreviewed_empty_geometry_stays_no_geometry(tmp_path):
+    raw, _layer, source, registry = _collection(tmp_path)
+    source["reviewed"] = False
+    (registry / "publisher.yaml").write_text(yaml.safe_dump({"sources": [source]}), encoding="utf-8")
+    result = freeze("2026-Q4", home=tmp_path / "home", raw_root=raw, registry_dir=registry, unused_path=tmp_path / "unused.yaml")
+    rows = pq.read_table(result / "manifest.parquet").to_pylist()
+    assert rows and {row["status"] for row in rows} == {"no_geometry"}
+    assert pq.read_table(result / "layers.parquet").to_pylist()[0]["status"] == "no_geometry"
+
+
+def test_home_storage_does_not_assign_collection_files(tmp_path):
+    raw, _layer, source, registry = _collection(tmp_path)
+    home_source = {**source, "source_id": "census_blocks", "reviewed": False, "storage": "home", "paths": ["reference/census/blocks.zip"]}
+    (registry / "publisher.yaml").write_text(yaml.safe_dump({"sources": [source, home_source]}), encoding="utf-8")
+    result = freeze("2026-Q4", home=tmp_path / "home", raw_root=raw, registry_dir=registry, unused_path=tmp_path / "unused.yaml")
+    paths = [row["relative_path"] for row in pq.read_table(result / "manifest.parquet").to_pylist()]
+    assert paths
+    assert all(not path.startswith("reference/census") for path in paths)
+    assert "census_blocks" not in {row["source_id"] for row in pq.read_table(result / "manifest.parquet").to_pylist()}
 
 
 def test_snapshot_refuses_unassigned_files_and_tampered_pages(tmp_path):

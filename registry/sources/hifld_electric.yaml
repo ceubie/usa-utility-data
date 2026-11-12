@@ -1,0 +1,62 @@
+sources:
+- source_id: electric_retail_territories_hifld
+  publisher: Oak Ridge National Laboratory
+  driver: arcgis
+  url: https://services3.arcgis.com/OYP7N6mAJJCyH6hd/arcgis/rest/services/Electric_Retail_Service_Territories_HIFLD/FeatureServer/0
+  cadence: frozen
+  licence: unknown
+  redistribution: internal_only
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/electric_retail_territories_hifld
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: service_area
+    role_field:
+      field: TYPE
+      values:
+        NOT AVAILABLE: active_retail_service
+        COOPERATIVE: active_retail_service
+        MUNICIPAL: active_retail_service
+        INVESTOR OWNED: active_retail_service
+        POLITICAL SUBDIVISION: active_retail_service
+        STATE: active_retail_service
+        FEDERAL: active_retail_service
+        MUNICIPAL MKTG AUTHORITY: regional_wholesale_or_district
+        WHOLESALE POWER MARKETER: regional_wholesale_or_district
+        COMMUNITY CHOICE AGGREGATOR: review_required
+      on_null: reject
+    authority: federal_modeled
+    boundary_representation: modeled
+    name_field: NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+      eia_utility_id: ID
+    attribute_fields:
+      holding_company: HOLDING_CO
+      mailing_state: STATE
+    mailing_state_field: STATE
+    state_from_geometry: true
+    vintage_field: SOURCEDATE
+    metadata_path: gis/electric_retail_territories_hifld/layer_metadata.json
+  notes: "Release 2026Q4.1 built 2931 assertions from this layer under WP7 review.
+    The 2026-11-12 promotion gate set it back to draft because one retail role covered
+    every TYPE. TYPE is the ownership type: NOT AVAILABLE 1685, COOPERATIVE 553,
+    MUNICIPAL 459, INVESTOR OWNED 157, POLITICAL SUBDIVISION 54, STATE 13, FEDERAL 6,
+    MUNICIPAL MKTG AUTHORITY 2, WHOLESALE POWER MARKETER 1, COMMUNITY CHOICE
+    AGGREGATOR 1. The marketing authorities and the power marketer are wholesale;
+    the aggregator buys supply and does not own wires, so it is routed to review.
+    Federal and state owners such as TVA, BPA, and WAPA keep the retail role here;
+    the electric build withholds a best area from any utility whose EIA-861
+    bundled-plus-delivery sales exceed the direct-service limit per customer. COUNTRY
+    is CAN on 12 features in British Columbia and Alberta; their geometry resolves to
+    no state, so they go to the review queue and link to no system. HIFLD Open is shut
+    down. The saved extract has 2931 polygons and no empty geometries. SOURCEDATE is 2015-09-30 on 12 features and 2023-08-01 on 2919
+    features, so the layer is frozen. STATE is the mailing state, so there is no
+    state_field and the operating state is derived from geometry. HOLDING_CO is
+    retained. This is a modeled compilation with authority federal_modeled, not a
+    state-regulator boundary."

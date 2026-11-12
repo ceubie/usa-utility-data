@@ -7,14 +7,13 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
-  reviewed: true
+  reviewed: false
   paths:
   - gis/new_mexico_public_water_system_areas_ose
   layers:
   - layer: '0'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/new_mexico_public_water_system_areas_ose/layer_metadata.json
     name_field: PublicSystemName
     on_missing_name: preserve_and_review
@@ -35,8 +34,10 @@ sources:
     attribute_fields:
       polygon_source: Polygon_Source
       polygon_basis: Polygon_Basis
-  notes: Contains provider-supplied and other boundary sources with varying vintages.
+  notes: 'Contains provider-supplied and other boundary sources with varying vintages.
     Fourteen frozen rows have a missing or non-PWS identifier; preserve the raw ID
     without claiming a federal identifier and route for matching. Cadence is a collection
-    assumption; licence requires review before redistribution.
+    assumption; licence requires review before redistribution. Held for review: 217
+    polygons are explicitly placeholders and other polygon bases vary; they must not
+    automatically compete as retail service areas.'
   redistribution: internal_only

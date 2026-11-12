@@ -1,0 +1,58 @@
+# Local stack. The backend and the SPARQL store share the proxy network
+# namespace, so neither publishes a port. Only the proxy publishes one, and only
+# on the loopback interface. No secret is baked into an image.
+#
+# Before `docker compose up`:
+#   1. `uv run utilitydata graph load --release-id <id>` fills the external
+#      utilitydata-tdb2-<id> volume. The store here only serves that volume.
+#   2. `npm --prefix app/frontend run build` writes app/frontend/dist.
+#   3. Set UTILITYDATA_RELEASE. For the login proxy also set CADDYFILE=Caddyfile.login,
+#      REQUIRE_AUTH=1, PROXY_SHARED_SECRET, PROXY_USER and PROXY_PASSWORD_HASH
+#      (`docker run --rm caddy:2.10.2 caddy hash-password`).
+services:
+  proxy:
+    image: caddy:2.10.2
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      PROXY_SHARED_SECRET: ${PROXY_SHARED_SECRET:-}
+      PROXY_USER: ${PROXY_USER:-}
+      PROXY_PASSWORD_HASH: ${PROXY_PASSWORD_HASH:-}
+    volumes:
+      - ./deploy/${CADDYFILE:-Caddyfile}:/etc/caddy/Caddyfile:ro
+      - ./app/frontend/dist:/srv:ro
+  sparql:
+    build: ./graph/fuseki
+    image: utilitydata-fuseki:6.2.0
+    network_mode: service:proxy
+    entrypoint: ["fuseki-server", "--conf=/fuseki/assembler.ttl"]
+    environment:
+      FUSEKI_BASE: /tmp/fuseki-base
+      JAVA_TOOL_OPTIONS: -Xmx4g
+    volumes:
+      - tdb2:/fuseki/databases/utility
+      - ./graph/fuseki/assembler.ttl:/fuseki/assembler.ttl:ro
+  backend:
+    build:
+      context: .
+      dockerfile: app/backend/Dockerfile
+    image: utilitydata-backend:local
+    network_mode: service:proxy
+    depends_on:
+      - sparql
+    environment:
+      UTILITYDATA_HOME: /data
+      UTILITYDATA_RELEASE: ${UTILITYDATA_RELEASE:?Set UTILITYDATA_RELEASE to the release to serve}
+      SPARQL_QUERY_URL: http://127.0.0.1:3030/utility/query
+      REQUIRE_AUTH: ${REQUIRE_AUTH:-0}
+      PROXY_SHARED_SECRET: ${PROXY_SHARED_SECRET:-}
+      AZURE_OPENAI_ENDPOINT: ${AZURE_OPENAI_ENDPOINT:-}
+      AZURE_OPENAI_DEPLOYMENT: ${AZURE_OPENAI_DEPLOYMENT:-}
+      AZURE_OPENAI_API_KEY: ${AZURE_OPENAI_API_KEY:-}
+    volumes:
+      - ${UTILITYDATA_HOME:-./data}:/data:ro
+
+volumes:
+  tdb2:
+    external: true
+    name: utilitydata-tdb2-${UTILITYDATA_RELEASE:?Set UTILITYDATA_RELEASE to the release to serve}

@@ -1,0 +1,12 @@
+# Which experimental parent relationships are recorded?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?parent ?child ?note WHERE {
+  ?statement a rdf:Statement ;
+             rdf:predicate ud:parentOf ;
+             rdf:subject ?parent ;
+             rdf:object ?child ;
+             ud:experimental true ;
+             ud:coverage_note ?note .
+}
+LIMIT 5

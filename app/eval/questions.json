@@ -1,0 +1,1519 @@
+[
+  {
+    "expect_iri_fragments": [
+      "SYS_EIA_15270"
+    ],
+    "reference_sparql": null,
+    "reference_value_column": "system_id",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "who_serves",
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "sector": "electric"
+    },
+    "id": "plan-pepco-point",
+    "category": "point",
+    "origin": "plan",
+    "question": "Which electric provider serves latitude 38.9072, longitude -77.0369?",
+    "expect_row": {
+      "system_id": [
+        "SYS_EIA_15270"
+      ],
+      "name": [
+        "Potomac Electric Power Co"
+      ]
+    }
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "1"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "core/2026-Q4/electric_system.parquet"
+      ],
+      "sql": "SELECT count(*) AS value FROM read_parquet(?) WHERE system_id = 'SYS_EIA_19876'"
+    },
+    "id": "plan-dominion-one-system",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "How many electric system rows does EIA utility 19876 have?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "Virginia Electric & Power Co"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "core/2026-Q4/electric_system.parquet"
+      ],
+      "sql": "SELECT name AS value FROM read_parquet(?) WHERE system_id = 'SYS_EIA_19876'"
+    },
+    "id": "plan-dominion-name",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "What is the electric system name for SYS_EIA_19876?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "state",
+    "requires_model": false,
+    "expect_values": [
+      "NC",
+      "VA"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "core/2026-Q4/electric_system_state.parquet"
+      ],
+      "sql": "SELECT state FROM read_parquet(?) WHERE system_id = 'SYS_EIA_19876' ORDER BY state"
+    },
+    "id": "plan-dominion-states",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "Which states does SYS_EIA_19876 operate in?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "1"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "core/2026-Q4/electric_system.parquet"
+      ],
+      "sql": "SELECT count(*) AS value FROM read_parquet(?) WHERE name = 'Ameren Illinois Company'"
+    },
+    "id": "plan-ameren-illinois-company",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "How many electric systems are named Ameren Illinois Company?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "SYS_EIA_56697"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "core/2026-Q4/electric_system.parquet"
+      ],
+      "sql": "SELECT system_id AS value FROM read_parquet(?) WHERE name = 'Ameren Illinois Company'"
+    },
+    "id": "plan-ameren-illinois-id",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "What is the system id of Ameren Illinois Company?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "1"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "core/2026-Q4/electric_system.parquet"
+      ],
+      "sql": "SELECT count(*) AS value FROM read_parquet(?) WHERE name ILIKE '%Shelby Electric Coop%'"
+    },
+    "id": "plan-shelby-once",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "How many electric systems have a name containing Shelby Electric Coop?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "SYS_EIA_17040"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "core/2026-Q4/electric_system.parquet"
+      ],
+      "sql": "SELECT system_id AS value FROM read_parquet(?) WHERE name = 'Shelby Electric Coop, Inc - (IL)'"
+    },
+    "id": "plan-shelby-id",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "What is the system id of Shelby Electric Coop, Inc - (IL)?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "PREFIX ud: <http://utilities.local/ontology/>\nSELECT (COUNT(DISTINCT ?system) AS ?value) WHERE {\n  ?system a ud:WaterSystem ;\n          ud:servesCounty <http://utilities.local/county/48453> .\n}\n",
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "84"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "plan-travis-served-count",
+    "category": "aggregate",
+    "origin": "plan",
+    "question": "How many water systems serve Travis County, Texas?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "0"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "gold/2026-Q4/system_county_coverage.parquet",
+        "core/2026-Q4/system.parquet"
+      ],
+      "sql": "SELECT count(*) AS value FROM read_parquet(?) coverage JOIN read_parquet(?) systems USING (system_id) WHERE systems.status <> 'active'"
+    },
+    "id": "plan-no-inactive-water-coverage",
+    "category": "coverage",
+    "origin": "plan",
+    "question": "How many drinking-water county-coverage rows belong to a system whose status is not active?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "1"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "gold/2026-Q4/system_county_coverage.parquet"
+      ],
+      "sql": "SELECT max(pop_share_of_county) AS value FROM read_parquet(?)"
+    },
+    "id": "plan-water-share-max",
+    "category": "coverage",
+    "origin": "plan",
+    "question": "What is the maximum drinking-water county population share?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "1"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "gold/2026-Q4/electric_system_county_coverage.parquet"
+      ],
+      "sql": "SELECT max(pop_share_of_county) AS value FROM read_parquet(?)"
+    },
+    "id": "plan-electric-share-max",
+    "category": "coverage",
+    "origin": "plan",
+    "question": "What is the maximum electric county population share?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "state_mismatch",
+    "requires_model": false,
+    "expect_values": [
+      "true"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "silver/2026-Q4/electric_boundary_assertion.parquet"
+      ],
+      "sql": "SELECT lower(CAST(state_mismatch AS VARCHAR)) AS state_mismatch FROM read_parquet(?) WHERE raw_name = 'CITY OF TRUTH OR CONSEQUENCES - (NM)' AND authority = 'federal_modeled'"
+    },
+    "id": "plan-truth-or-consequences-flag",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "Is the HIFLD record named for Truth or Consequences flagged as a state mismatch?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "geom_state",
+    "requires_model": false,
+    "expect_values": [
+      "OR"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "silver/2026-Q4/electric_boundary_assertion.parquet"
+      ],
+      "sql": "SELECT geom_state FROM read_parquet(?) WHERE raw_name = 'CITY OF TRUTH OR CONSEQUENCES - (NM)' AND authority = 'federal_modeled'"
+    },
+    "id": "plan-truth-or-consequences-state",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "Which state contains the HIFLD shape named CITY OF TRUTH OR CONSEQUENCES - (NM)?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "SYS_EIA_195"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "core/2026-Q4/electric_system.parquet"
+      ],
+      "sql": "SELECT system_id AS value FROM read_parquet(?) WHERE name = 'Alabama Power Co'"
+    },
+    "id": "plan-alabama-power-id",
+    "category": "release_table",
+    "origin": "plan",
+    "question": "What is the electric system id of Alabama Power Co?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": null,
+    "requires_model": true,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "check": null,
+    "id": "plan-ask-travis",
+    "category": "ask",
+    "origin": "plan",
+    "question": "Which water systems serve Travis County, Texas?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": null,
+    "requires_model": true,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "check": null,
+    "id": "plan-ask-pepco-boundary",
+    "category": "ask",
+    "origin": "plan",
+    "question": "Who supplies electricity at latitude 38.9072, longitude -77.0369, and what authority, vintage, and boundary representation should the answer state?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": null,
+    "requires_model": true,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "check": null,
+    "id": "plan-ask-share",
+    "category": "ask",
+    "origin": "plan",
+    "question": "Does any coverage share exceed 1, and how should that be stated?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": null,
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "check": null,
+    "id": "plan-aqua-texas",
+    "category": "acceptance",
+    "origin": "plan",
+    "question": "What area do Aqua Texas certificated territories cover?",
+    "blocked_reason": "The reviewed Texas CCN and TWDB water layers are not in this release, so the Aqua Texas certificated-area claim cannot be measured yet."
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": null,
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "check": null,
+    "id": "plan-north-st-paul",
+    "category": "acceptance",
+    "origin": "plan",
+    "question": "Do \"North St. Paul\" and \"CITY OF NORTH ST PAUL - (MN)\" resolve to one system?",
+    "blocked_reason": "The release has electric system SYS_EIA_13730 named City of North St Paul. No drinking-water system name matches North St Paul. The two strings do not resolve to one system in this release."
+  },
+  {
+    "expect_iri_fragments": [
+      "SYS_PWS_TX0110002"
+    ],
+    "reference_sparql": "# Which water systems serve Travis County, Texas?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?system ?name WHERE {\n  ?system a ud:WaterSystem ;\n          ud:name ?name ;\n          ud:servesCounty <http://utilities.local/county/48453> .\n}\nLIMIT 100\n",
+    "reference_value_column": "name",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-travis-water-systems",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which water systems serve Travis County, Texas?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# How many water systems serve Travis County, Texas?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT (COUNT(DISTINCT ?system) AS ?systems) WHERE {\n  ?system a ud:WaterSystem ;\n          ud:servesCounty <http://utilities.local/county/48453> .\n}\n",
+    "reference_value_column": "systems",
+    "requires_model": false,
+    "expect_values": [
+      "84"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-travis-water-count",
+    "category": "aggregate",
+    "origin": "agent_example",
+    "question": "How many water systems serve Travis County, Texas?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# What is the name and 2020 population of Travis County, Texas?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?name ?population WHERE {\n  <http://utilities.local/county/48453> ud:name ?name ;\n                                       ud:pop20 ?population .\n}\n",
+    "reference_value_column": "name",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-travis-county",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "What is the name and 2020 population of Travis County, Texas?",
+    "expect_row": {
+      "name": [
+        "Travis"
+      ],
+      "population": [
+        "1290188"
+      ]
+    }
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# For water systems that serve Travis County, what population share, evidence, and authority does the county coverage record?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?system ?share ?evidence ?authority WHERE {\n  ?coverage a ud:CountyCoverage ;\n            ud:system ?system ;\n            ud:county <http://utilities.local/county/48453> ;\n            ud:is_served true ;\n            ud:pop_share_of_county ?share ;\n            ud:evidence ?evidence .\n  OPTIONAL { ?coverage ud:authority ?authority }\n  ?system a ud:WaterSystem .\n}\nLIMIT 20\n",
+    "reference_value_column": "share",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-travis-coverage",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "For water systems that serve Travis County, what population share, evidence, and authority does the county coverage record?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# What are the names and USPS codes of the states?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?state ?name ?usps WHERE {\n  ?state a ud:State ;\n         ud:name ?name ;\n         ud:usps ?usps .\n}\n",
+    "reference_value_column": "usps",
+    "requires_model": false,
+    "expect_values": [
+      "TX",
+      "DC"
+    ],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 56,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-states",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "What are the names and USPS codes of the states?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# Which electric systems serve a county?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?system ?name ?county WHERE {\n  ?system a ud:ElectricSystem ;\n          ud:name ?name ;\n          ud:servesCounty ?county .\n}\nLIMIT 20\n",
+    "reference_value_column": "name",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-electric-serves-county",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which electric systems serve a county?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# Which organizations own a utility system?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?organization ?system WHERE {\n  ?organization ud:ownsSystem ?system .\n}\nLIMIT 20\n",
+    "reference_value_column": "system",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-owns-system",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which organizations own a utility system?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# Which experimental parent relationships are recorded?\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?parent ?child ?note WHERE {\n  ?statement a rdf:Statement ;\n             rdf:predicate ud:parentOf ;\n             rdf:subject ?parent ;\n             rdf:object ?child ;\n             ud:experimental true ;\n             ud:coverage_note ?note .\n}\nLIMIT 5\n",
+    "reference_value_column": "note",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-parent-experimental",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which experimental parent relationships are recorded?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# Which facilities are in Texas?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?facility ?name WHERE {\n  ?facility a ud:Facility ;\n            ud:name ?name ;\n            ud:inState <http://utilities.local/state/TX> .\n}\nLIMIT 10\n",
+    "reference_value_column": "name",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-facility-texas",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which facilities are in Texas?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# Which census place named Austin is in Texas?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?place ?name WHERE {\n  ?place a ud:Place ;\n         ud:name ?name ;\n         ud:state \"48\" .\n  FILTER(STR(?name) = \"Austin\")\n}\n",
+    "reference_value_column": "name",
+    "requires_model": false,
+    "expect_values": [
+      "Austin"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-austin-place",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which census place named Austin is in Texas?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# Which natural gas systems are active?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?system ?name WHERE {\n  ?system a ud:NaturalGasSystem ;\n          ud:name ?name ;\n          ud:status \"active\" .\n}\nLIMIT 10\n",
+    "reference_value_column": "name",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-active-gas",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which natural gas systems are active?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# Which wastewater systems have a name?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?system ?name WHERE {\n  ?system a ud:WastewaterSystem ;\n          ud:name ?name .\n}\nLIMIT 10\n",
+    "reference_value_column": "name",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-wastewater-names",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which wastewater systems have a name?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# Which reviewed sources have a publisher?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?source ?publisher WHERE {\n  ?source a ud:Source ;\n          ud:publisher ?publisher ;\n          ud:reviewed true .\n}\nLIMIT 10\n",
+    "reference_value_column": "publisher",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-reviewed-sources",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which reviewed sources have a publisher?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "# Which utility systems have a service area?\nPREFIX ud: <http://utilities.local/ontology/>\nSELECT ?system ?area WHERE {\n  ?system ud:hasServiceArea ?area .\n}\nLIMIT 10\n",
+    "reference_value_column": "area",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": 1,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "example-has-service-area",
+    "category": "graph",
+    "origin": "agent_example",
+    "question": "Which utility systems have a service area?"
+  },
+  {
+    "expect_iri_fragments": [
+      "SYS_PWS_DC0000002"
+    ],
+    "reference_sparql": null,
+    "reference_value_column": "system_id",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "who_serves",
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "sector": "water"
+    },
+    "id": "release-water-who-serves-dc",
+    "category": "point",
+    "origin": "release",
+    "question": "Which drinking-water system serves latitude 38.9072, longitude -77.0369?",
+    "expect_row": {
+      "system_id": [
+        "SYS_PWS_DC0000002"
+      ],
+      "name": [
+        "D.C. WATER AND SEWER AUTHORITY"
+      ]
+    }
+  },
+  {
+    "expect_iri_fragments": [
+      "SYS_CWNS_11000001001"
+    ],
+    "reference_sparql": null,
+    "reference_value_column": "system_id",
+    "requires_model": false,
+    "expect_values": [
+      "SYS_CWNS_11000001001"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "who_serves",
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "sector": "wastewater"
+    },
+    "id": "release-wastewater-who-serves-dc",
+    "category": "point",
+    "origin": "release",
+    "question": "Which wastewater system serves latitude 38.9072, longitude -77.0369?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "0"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "who_serves",
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "sector": "natural_gas"
+    },
+    "id": "release-gas-who-serves-dc",
+    "category": "point",
+    "origin": "release",
+    "question": "How many natural gas systems does who-serves return at latitude 38.9072, longitude -77.0369?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "id",
+    "requires_model": false,
+    "expect_values": [
+      "SYS_EIA_15270"
+    ],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "search",
+      "q": "Potomac Electric",
+      "limit": 5
+    },
+    "id": "release-search-pepco",
+    "category": "search",
+    "origin": "release",
+    "question": "Which system id does search return for Potomac Electric?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "id",
+    "requires_model": false,
+    "expect_values": [
+      "SYS_EIA_17040"
+    ],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "search",
+      "q": "Shelby Electric",
+      "limit": 5
+    },
+    "id": "release-search-shelby",
+    "category": "search",
+    "origin": "release",
+    "question": "Which system id does search return for Shelby Electric?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "id",
+    "requires_model": false,
+    "expect_values": [
+      "SYS_EIA_56697"
+    ],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "search",
+      "q": "Ameren Illinois",
+      "limit": 5
+    },
+    "id": "release-search-ameren",
+    "category": "search",
+    "origin": "release",
+    "question": "Does search for Ameren Illinois include Ameren Illinois Company?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "id",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "expect_row": {
+      "id": [
+        "SYS_PWS_TX2270382"
+      ],
+      "label": [
+        "KELLY LANE WCID 1"
+      ]
+    },
+    "check": {
+      "kind": "search",
+      "q": "KELLY LANE WCID 1",
+      "state": "TX",
+      "limit": 10
+    },
+    "id": "release-search-kelly-lane",
+    "category": "search",
+    "origin": "release",
+    "question": "Does a Texas search for KELLY LANE WCID 1 return that name?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "population",
+    "requires_model": false,
+    "expect_values": [],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "scorecard",
+      "state": "TX",
+      "sector": "water"
+    },
+    "id": "release-scorecard-tx-water",
+    "category": "coverage",
+    "origin": "release",
+    "question": "What population, non-modeled share, and active-system count does the Texas water scorecard report?",
+    "expect_row": {
+      "population": [
+        "29145505"
+      ],
+      "share_population_nonmodeled": [
+        "0"
+      ],
+      "active_systems": [
+        "7190"
+      ]
+    }
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "Travis"
+    ],
+    "exact": false,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "entity",
+      "iri": "http://utilities.local/county/48453"
+    },
+    "id": "release-entity-travis",
+    "category": "entity",
+    "origin": "release",
+    "question": "What name does the Travis County entity describe?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "58"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "duckdb",
+      "files": [
+        "gold/2026-Q4/electric_system_county_coverage.parquet"
+      ],
+      "sql": "SELECT count(DISTINCT county_geoid) AS value FROM read_parquet(?) WHERE system_id = 'SYS_EIA_195' AND is_served"
+    },
+    "id": "release-alabama-served-counties",
+    "category": "coverage",
+    "origin": "release",
+    "question": "How many counties are marked served for Alabama Power Co in the electric county coverage?"
+  },
+  {
+    "expect_iri_fragments": [
+      "SYS_EIA_15270"
+    ],
+    "reference_sparql": "PREFIX ud: <http://utilities.local/ontology/>\nSELECT ?system ?name WHERE {\n  ?system a ud:ElectricSystem ;\n          ud:name ?name .\n  FILTER(CONTAINS(LCASE(STR(?name)), \"potomac electric\"))\n}\nLIMIT 20\n",
+    "reference_value_column": "name",
+    "requires_model": false,
+    "expect_values": [
+      "Potomac Electric Power Co"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "release-pepco-name",
+    "category": "graph",
+    "origin": "release",
+    "question": "What electric system is named Potomac Electric Power Co?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "446100"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "WaterSystem"
+    },
+    "id": "release-stats-watersystem",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many WaterSystem entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "17552"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "ElectricSystem"
+    },
+    "id": "release-stats-electricsystem",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many ElectricSystem entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "26938"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "WastewaterSystem"
+    },
+    "id": "release-stats-wastewatersystem",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many WastewaterSystem entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "1421"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "NaturalGasSystem"
+    },
+    "id": "release-stats-naturalgassystem",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many NaturalGasSystem entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "403693"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "Organization"
+    },
+    "id": "release-stats-organization",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many Organization entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "1898364"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "Facility"
+    },
+    "id": "release-stats-facility",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many Facility entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "3235"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "County"
+    },
+    "id": "release-stats-county",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many County entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "56"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "State"
+    },
+    "id": "release-stats-state",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many State entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "32629"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "Place"
+    },
+    "id": "release-stats-place",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many Place entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "170759"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "ServiceArea"
+    },
+    "id": "release-stats-servicearea",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many ServiceArea entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "139"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "Source"
+    },
+    "id": "release-stats-source",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many Source entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "492011"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "UtilitySystem"
+    },
+    "id": "release-stats-utilitysystem",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many UtilitySystem entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "154444"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "classes",
+      "name": "CountyCoverage"
+    },
+    "id": "release-stats-countycoverage",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many CountyCoverage entities does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "39502"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "links",
+      "name": "servesCounty"
+    },
+    "id": "release-stats-link-servescounty",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many servesCounty links does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "419997"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "links",
+      "name": "ownsSystem"
+    },
+    "id": "release-stats-link-ownssystem",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many ownsSystem links does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "0"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "links",
+      "name": "operatesSystem"
+    },
+    "id": "release-stats-link-operatessystem",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many operatesSystem links does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "0"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "links",
+      "name": "locatedInCounty"
+    },
+    "id": "release-stats-link-locatedincounty",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many locatedInCounty links does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "3998"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "links",
+      "name": "parentOf"
+    },
+    "id": "release-stats-link-parentof",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many parentOf links does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "170759"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "links",
+      "name": "hasServiceArea"
+    },
+    "id": "release-stats-link-hasservicearea",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many hasServiceArea links does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "2631258"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "links",
+      "name": "assertedBy"
+    },
+    "id": "release-stats-link-assertedby",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many assertedBy links does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": null,
+    "reference_value_column": "count",
+    "requires_model": false,
+    "expect_values": [
+      "1224263"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "stats",
+      "group": "links",
+      "name": "inState"
+    },
+    "id": "release-stats-link-instate",
+    "category": "stats",
+    "origin": "release",
+    "question": "How many inState links does GET /api/stats report?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "PREFIX ud: <http://utilities.local/ontology/>\nSELECT (COUNT(?entity) AS ?value) WHERE {\n  ?entity a ud:State .\n}\n",
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "56"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "release-count-states",
+    "category": "aggregate",
+    "origin": "release",
+    "question": "How many states does the graph contain?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "PREFIX ud: <http://utilities.local/ontology/>\nSELECT (COUNT(?entity) AS ?value) WHERE {\n  ?entity a ud:County .\n}\n",
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "3235"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "release-count-counties",
+    "category": "aggregate",
+    "origin": "release",
+    "question": "How many counties does the graph contain?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "PREFIX ud: <http://utilities.local/ontology/>\nSELECT (COUNT(?entity) AS ?value) WHERE {\n  ?entity a ud:ElectricSystem .\n}\n",
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "17552"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "release-count-electric-systems",
+    "category": "aggregate",
+    "origin": "release",
+    "question": "How many electric systems does the graph contain?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "PREFIX ud: <http://utilities.local/ontology/>\nSELECT (COUNT(?entity) AS ?value) WHERE {\n  ?entity a ud:WaterSystem .\n}\n",
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "446100"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "release-count-water-systems",
+    "category": "aggregate",
+    "origin": "release",
+    "question": "How many water systems does the graph contain?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "PREFIX ud: <http://utilities.local/ontology/>\nSELECT (COUNT(?entity) AS ?value) WHERE {\n  ?entity a ud:Organization .\n}\n",
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "403693"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "release-count-organizations",
+    "category": "aggregate",
+    "origin": "release",
+    "question": "How many organizations does the graph contain?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "PREFIX ud: <http://utilities.local/ontology/>\nSELECT (COUNT(?entity) AS ?value) WHERE {\n  ?entity a ud:Facility .\n}\n",
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "1898364"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "release-count-facilities",
+    "category": "aggregate",
+    "origin": "release",
+    "question": "How many facilities does the graph contain?"
+  },
+  {
+    "expect_iri_fragments": [],
+    "reference_sparql": "PREFIX ud: <http://utilities.local/ontology/>\nSELECT (COUNT(*) AS ?value) WHERE {\n  ?system ud:servesCounty ?county .\n}\n",
+    "reference_value_column": "value",
+    "requires_model": false,
+    "expect_values": [
+      "39502"
+    ],
+    "exact": true,
+    "compare": "equal",
+    "min_rows": null,
+    "check": {
+      "kind": "sparql"
+    },
+    "id": "release-count-serves-county",
+    "category": "aggregate",
+    "origin": "release",
+    "question": "How many servesCounty links does the graph contain?"
+  }
+]

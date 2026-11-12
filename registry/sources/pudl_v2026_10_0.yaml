@@ -1,0 +1,177 @@
+sources:
+- source_id: pudl_v2026_10_0
+  publisher: Catalyst Cooperative
+  driver: http
+  url: https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/v2026.10.0/
+  cadence: frozen
+  licence: cc-by-4.0
+  redistribution: shareable
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  storage: home
+  paths:
+  - reference/pudl/v2026.10.0
+  layers:
+  - layer: core_eia__entity_utilities.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      utility_id_eia: utility_id_eia
+      utility_name_eia: utility_name_eia
+  - layer: core_pudl__assn_eia_pudl_utilities.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      utility_id_eia: utility_id_eia
+      utility_id_pudl: utility_id_pudl
+  - layer: core_eia860__scd_utilities.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      utility_id_eia: utility_id_eia
+      entity_type: entity_type
+      report_date: report_date
+  - layer: core_eia861__yearly_sales.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      utility_id_eia: utility_id_eia
+      utility_name_eia: utility_name_eia
+      state: state
+      report_date: report_date
+      customer_class: customer_class
+      business_model: business_model
+      service_type: service_type
+      customers: customers
+      sales_mwh: sales_mwh
+  - layer: core_eia861__yearly_service_territory.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      utility_id_eia: utility_id_eia
+      state: state
+      county_id_fips: county_id_fips
+      report_date: report_date
+  - layer: out_eia861__yearly_utility_service_territory.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      utility_id_eia: utility_id_eia
+      state: state
+      county_id_fips: county_id_fips
+      report_date: report_date
+  - layer: core_eia861__yearly_operational_data_misc.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      utility_id_eia: utility_id_eia
+      report_date: report_date
+      retail_sales_mwh: retail_sales_mwh
+  - layer: core_eia861__yearly_reliability.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      utility_id_eia: utility_id_eia
+      state: state
+      report_date: report_date
+      saidi_wo_major_event_days_minutes: saidi_wo_major_event_days_minutes
+      saifi_wo_major_event_days_customers: saifi_wo_major_event_days_customers
+  - layer: core_eia861__yearly_mergers.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      utility_id_eia: utility_id_eia
+      report_date: report_date
+      merge_company: merge_company
+  - layer: core_eia__entity_plants.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      plant_id_eia: plant_id_eia
+      plant_name_eia: plant_name_eia
+      state: state
+  - layer: out_eia__yearly_generators.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      plant_id_eia: plant_id_eia
+      generator_id: generator_id
+      utility_id_eia: utility_id_eia
+      report_date: report_date
+  - layer: out_eia860__yearly_ownership.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      plant_id_eia: plant_id_eia
+      generator_id: generator_id
+      owner_utility_id_eia: owner_utility_id_eia
+      report_date: report_date
+  - layer: out_sec10k__parents_and_subsidiaries.parquet
+    sector: electric
+    grain: registry_table
+    attribute_fields:
+      parent_company_name: parent_company_name
+      subsidiary_company_name: subsidiary_company_name
+      parent_company_utility_id_eia: parent_company_utility_id_eia
+      subsidiary_company_utility_id_eia: subsidiary_company_utility_id_eia
+      report_date: report_date
+  notes: "PUDL release v2026.10.0, Catalyst Cooperative, CC-BY-4.0. Object names are
+    the parquet keys at s3://pudl.catalyst.coop/v2026.10.0/. core_eia__entity_utilities
+    has utility id and name only. EIA entity-type codes are on
+    core_eia860__scd_utilities. out_sec10k__parents_and_subsidiaries is experimental
+    and its coverage ends in 2023. It is not a complete parent map. DuckDB reads the
+    bucket with a path-style anonymous S3 secret."
+- source_id: pudl_v2026_10_0_gas_and_rus
+  publisher: Catalyst Cooperative
+  driver: http
+  url: https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/v2026.10.0/
+  cadence: frozen
+  licence: cc-by-4.0
+  redistribution: internal_only
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  storage: home
+  notes: "core_rus7__* objects are in PUDL v2026.10.0 and were not downloaded.
+    The two core_phmsagas tables used for natural gas are reviewed on
+    pudl_v2026_10_0_phmsagas. Electric cooperatives stay identified from EIA
+    entity code C."
+- source_id: pudl_v2026_10_0_phmsagas
+  publisher: Catalyst Cooperative
+  driver: http
+  url: https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/v2026.10.0/
+  cadence: frozen
+  licence: cc-by-4.0
+  redistribution: shareable
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  storage: home
+  paths:
+  - reference/pudl/v2026.10.0
+  layers:
+  - layer: core_phmsagas__yearly_distribution_operators.parquet
+    sector: natural_gas
+    grain: registry_table
+    id_fields:
+      operator_id_phmsa: operator_id_phmsa
+    attribute_fields:
+      operator_name_phmsa: operator_name_phmsa
+      report_date: report_date
+      office_state: office_state
+  - layer: core_phmsagas__yearly_distribution_by_install_decade.parquet
+    sector: natural_gas
+    grain: registry_table
+    id_fields:
+      operator_id_phmsa: operator_id_phmsa
+    attribute_fields:
+      operating_state: operating_state
+      report_date: report_date
+  notes: "PUDL v2026.10.0 objects listed by anonymous s3 ls of
+    s3://pudl.catalyst.coop/v2026.10.0/ are
+    core_phmsagas__yearly_distribution_operators.parquet and
+    core_phmsagas__yearly_distribution_by_install_decade.parquet. No other
+    core_phmsagas object was present. operating_state is the distribution
+    state. office_state is the office location and is not the service state.
+    RUS tables were not downloaded. CC-BY-4.0."

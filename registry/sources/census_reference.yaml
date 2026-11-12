@@ -1,0 +1,266 @@
+sources:
+- source_id: census_tiger2025_tabblock20
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/tiger/TIGER2025/TABBLOCK20/tl_2025_{statefp}_tabblock20.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/tiger2025/tabblock20
+  layers:
+  - layer: tabblock20
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      block_geoid: GEOID20
+      state: STATEFP20
+      countyfp: COUNTYFP20
+      tractce: TRACTCE20
+      pop20: POP20
+      housing20: HOUSING20
+      aland20: ALAND20
+      lat: INTPTLAT20
+      lon: INTPTLON20
+  notes: Census 2020 tabulation blocks from TIGER/Line 2025, one zip for each of
+    the 56 states, the District of Columbia, Puerto Rico, and island areas. Not
+    one of the 223 utility drafts. Column checks run in the reference build.
+- source_id: census_tiger2025_place
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_{statefp}_place.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/tiger2025/place
+  layers:
+  - layer: tiger_place
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      place_geoid: GEOID
+      state: STATEFP
+      placefp: PLACEFP
+      name: NAME
+      namelsad: NAMELSAD
+  notes: TIGER/Line 2025 incorporated places and census designated places. Not
+    one of the 223 utility drafts.
+- source_id: census_tiger2025_cousub
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/tiger/TIGER2025/COUSUB/tl_2025_{statefp}_cousub.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/tiger2025/cousub
+  layers:
+  - layer: tiger_cousub
+    sector: reference
+    grain: registry_table
+  notes: TIGER/Line 2025 county subdivisions. Downloaded for the reference set
+    and not loaded into a separate table. Not one of the 223 utility drafts.
+- source_id: census_tiger2025_tract
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/tiger/TIGER2025/TRACT/tl_2025_{statefp}_tract.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/tiger2025/tract
+  layers:
+  - layer: tiger_tract
+    sector: reference
+    grain: registry_table
+  notes: TIGER/Line 2025 census tracts. Downloaded for the reference set and not
+    loaded into a separate table. Not one of the 223 utility drafts.
+- source_id: census_tiger2025_zcta520
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/tiger/TIGER2025/ZCTA520/tl_2025_us_zcta520.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/tiger2025/zcta520/tl_2025_us_zcta520.zip
+  layers:
+  - layer: tiger_zcta520
+    sector: reference
+    grain: registry_table
+  notes: TIGER/Line 2025 ZIP Code Tabulation Areas. Downloaded for the reference
+    set and not loaded into a separate table. Not one of the 223 utility drafts.
+- source_id: census_tiger2025_aiannh
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/tiger/TIGER2025/AIANNH/tl_2025_us_aiannh.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/tiger2025/aiannh/tl_2025_us_aiannh.zip
+  layers:
+  - layer: tiger_aiannh
+    sector: reference
+    grain: registry_table
+  notes: TIGER/Line 2025 American Indian, Alaska Native, and Native Hawaiian areas.
+    Downloaded for the reference set and not loaded into a separate table. Not
+    one of the 223 utility drafts.
+- source_id: census_tiger2025_county
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/tiger2025/county/tl_2025_us_county.zip
+  layers:
+  - layer: tiger_county
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      county_geoid: GEOID
+      state: STATEFP
+      countyfp: COUNTYFP
+      name: NAME
+      namelsad: NAMELSAD
+  notes: TIGER/Line 2025 counties, including Connecticut planning regions. The
+    cartographic 500k county draft stays unreviewed and is not a build input.
+    Not one of the 223 utility drafts.
+- source_id: census_tiger2025_state
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/tiger/TIGER2025/STATE/tl_2025_us_state.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/tiger2025/state/tl_2025_us_state.zip
+  layers:
+  - layer: tiger_state
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      state: STATEFP
+      geoid: GEOID
+      usps: STUSPS
+      name: NAME
+  notes: TIGER/Line 2025 states and state equivalents. The cartographic 500k state
+    draft stays unreviewed and is not a build input. Not one of the 223 utility drafts.
+- source_id: census_baf2020
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/docs/maps-data/data/baf2020/BlockAssign_ST{statefp}_{usps}.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/baf2020
+  layers:
+  - layer: INCPLACE_CDP
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      block_geoid: BLOCKID
+      placefp: PLACEFP
+  - layer: COUSUB
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      block_geoid: BLOCKID
+      countyfp: COUNTYFP
+      cousubfp: COUSUBFP
+  - layer: MCD
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      block_geoid: BLOCKID
+      countyfp: COUNTYFP
+      cousubfp: COUSUBFP
+  - layer: AIANNH
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      block_geoid: BLOCKID
+      aiannhce: AIANNHCE
+  notes: Census 2020 Block Assignment Files, 52 zips. The published directory has
+    no file for American Samoa, Guam, the Northern Mariana Islands, or the Virgin
+    Islands. Incorporated place is INCPLACE_CDP. County subdivision is COUSUB or
+    MCD when that member is in the zip; a zip does not always contain either.
+    Tribal area is AIANNH when present. Not one of the 223 utility drafts.
+- source_id: census_ct_county_crosswalk
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/geo/docs/reference/ct_change/ct_cou_to_cousub_crosswalk.txt
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/ct/ct_cou_to_cousub_crosswalk.txt
+  layers:
+  - layer: ct_county_crosswalk
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      state: STATEFP
+      old_countyfp: OLD_COUNTYFP
+      old_county_name: OLD_COUNTY_NAMELSAD
+      new_countyfp: NEW_COUNTYFP
+      new_county_name: NEW_COUNTY_NAMELSAD
+      cousubfp: COUSUBFP
+      old_cousub_geoid: OLD_COUSUB_GEOID
+      new_cousub_geoid: NEW_COUSUB_GEOID
+  notes: Connecticut county-to-planning-region crosswalk. The header cells contain
+    line breaks, and a glossary follows the data rows. Used only when block
+    COUNTYFP20 values are the eight old counties. Subdivision 00000 in old
+    Fairfield County is listed under two planning regions; those zero-population
+    water blocks are assigned to the 2025 county that contains the block internal
+    point. Not one of the 223 utility drafts.
+- source_id: census_government_units_2025
+  publisher: U.S. Census Bureau
+  driver: http
+  url: https://www2.census.gov/programs-surveys/gus/datasets/2025/gov_units_2025.zip
+  cadence: frozen
+  licence: public_domain
+  redistribution: shareable
+  reviewed: false
+  storage: home
+  paths:
+  - reference/census/gus/gov_units_2025.zip
+  layers:
+  - layer: government_units
+    sector: reference
+    grain: registry_table
+    attribute_fields:
+      census_id: CENSUS_ID_PID6
+      name: UNIT_NAME
+      unit_type: UNIT_TYPE
+      state: STATE
+      state_fips: FIPS_STATE
+      county_fips: FIPS_COUNTY
+  notes: 2025 Government Units Listing workbook linked from
+    https://www.census.gov/data/datasets/2025/econ/gus/public-use-files.html.
+    The zip contains Govt_Units_2025_Final.xlsx and a documentation PDF. Every
+    workbook sheet is kept. Not one of the 223 utility drafts.

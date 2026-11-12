@@ -1,0 +1,30 @@
+sources:
+- source_id: florida_lee_water_service_area
+  publisher: Lee County
+  driver: arcgis
+  url: https://services2.arcgis.com/LvWGAAhHwbCJ2GMP/arcgis/rest/services/WaterServiceArea/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/florida_lee_water_service_area
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/florida_lee_water_service_area/layer_metadata.json
+    authority: utility_direct
+    boundary_representation: unknown
+    name_field: ItemDescription
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: FL
+    vintage_field: last_edited_date
+  notes: One county-utility polygon named LCU Water Service Area. last_edited_date
+    is a GIS edit timestamp, not proof of current connection at every address. Cadence
+    is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

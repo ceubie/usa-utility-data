@@ -1,0 +1,8 @@
+# Which water systems serve Travis County, Texas?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?system ?name WHERE {
+  ?system a ud:WaterSystem ;
+          ud:name ?name ;
+          ud:servesCounty <http://utilities.local/county/48453> .
+}
+LIMIT 100

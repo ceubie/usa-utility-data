@@ -1,0 +1,35 @@
+sources:
+- source_id: vermont_electric_service_areas_psd
+  publisher: Vermont Department of Public Service
+  driver: arcgis
+  url: https://maps.vcgi.vermont.gov/arcgis/rest/services/PSD_services/PSD_Published_Layers/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/vermont_electric_service_areas_psd
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/vermont_electric_service_areas_psd/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: COMPANYNAM
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      customer_count: Customer_Num
+    state_fixed: VT
+    vintage_fixed: '2015'
+  notes: Independent gate 2026-11-12 set this source back to draft. An earlier gate
+    classed the 2015 dissolved layer as historical. Seventeen electric utility service territories, one polygon per company;
+    COMPANYNAM is distinct on every feature. The description says the layer was created
+    in 2015 from the utilities' own territories and dissolved into one layer, so the
+    vintage is fixed at 2015. Customer_Num is the publisher's customer count. Cadence
+    is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

@@ -1,0 +1,8 @@
+table: system_evidence
+path: system_evidence.parquet
+primary_key: [system_id]
+columns:
+  - {name: system_id, type: string, nullable: false, references: system.system_id}
+  - {name: activity_code, type: string, nullable: true}
+  - {name: wholesaler_indicator, type: string, nullable: true}
+  - {name: owner_type_code, type: string, nullable: true}

@@ -1,0 +1,63 @@
+sources:
+- source_id: massachusetts_electric_providers_massgis
+  publisher: Massachusetts Bureau of Geographic Information
+  driver: arcgis
+  url: https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/ElectricityProviders/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/massachusetts_electric_providers_massgis
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: admin_association
+    metadata_path: gis/massachusetts_electric_providers_massgis/layer_metadata.json
+    name_field: TOWN
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      provider: ELEC_LABEL
+    state_fixed: MA
+  notes: Three hundred fifty-one towns. ELEC_LABEL is Massachusetts Electric d/b/a
+    National Grid on 158, NSTAR Electric d/b/a Eversource Energy on 130, Municipal
+    on 41, NSTAR Electric d/b/a Eversource Energy, Massachusetts Electric d/b/a
+    National Grid on 8, Municipal, NSTAR Electric d/b/a Eversource Energy on 5,
+    Municipal, Massachusetts Electric d/b/a National Grid on 4, UNITIL on 4, and
+    Nantucket Electric Company d/b/a National Grid on 1. These are town-to-provider
+    associations, not utility-drawn service territories. Cadence is a collection
+    assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: massachusetts_gas_providers_massgis
+  publisher: Massachusetts Bureau of Geographic Information
+  driver: arcgis
+  url: https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/NatGasProviders/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/massachusetts_gas_providers_massgis
+  layers:
+  - layer: '0'
+    sector: natural_gas
+    grain: admin_association
+    metadata_path: gis/massachusetts_gas_providers_massgis/layer_metadata.json
+    name_field: TOWN
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      provider: GAS_LABEL
+    state_fixed: MA
+  notes: Three hundred fifty-one towns. GAS_LABEL is National Grid on 111, Eversource
+    Energy on 102, No Natural Gas Service on 91, The Berkshire Gas Company on 21,
+    Liberty Utilities on 7, Eversource Energy, National Grid on 6, Unitil on 5,
+    Eversource Energy, Liberty Utilities on 3, Municipal on 2, and one each of
+    Municipal, Eversource Energy; National Grid, Unitil; and Municipal, National
+    Grid. These are town-to-provider associations, not utility-drawn service
+    territories. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only

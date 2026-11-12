@@ -6,7 +6,6 @@ import hashlib
 import io
 import json
 import re
-import shutil
 import tempfile
 import zipfile
 from contextlib import ExitStack
@@ -17,7 +16,15 @@ import pyarrow.parquet as pq
 import pyogrio
 import yaml
 
+from utilitydata.bronze.archive import materialize_archive_member
 from utilitydata.registry import Source, load_registry
+
+
+def require_quarter(quarter: str) -> str:
+    """Return a snapshot name that uses the YYYY-QN quarter format."""
+    if not re.fullmatch(r"[0-9]{4}-Q[1-4]", quarter):
+        raise ValueError("Snapshot must be formatted YYYY-QN")
+    return quarter
 
 
 def _checked_path(root: Path, relative: str) -> Path:
@@ -48,6 +55,9 @@ def inventory(raw_root: Path, sources: list[Source], unused_path: Path) -> tuple
     raw_root = raw_root.resolve()
     owners = {}
     for source in sources:
+        # Home-storage files live under the data root. They are not collection files.
+        if source.storage != "collection":
+            continue
         for value in source.paths:
             for file in _files(_checked_path(raw_root, value)):
                 relative = file.relative_to(raw_root).as_posix()
@@ -157,29 +167,58 @@ def _inspect_archived_layers(source: Source, frozen_root: Path, staging: Path) -
         raise ValueError(f"Geospatial archive source needs exactly one path: {source.source_id}")
     archive_path = _checked_path(frozen_root, source.paths[0])
     rows = []
-    with zipfile.ZipFile(archive_path) as bundle:
-        for member in sorted({layer.archive_member for layer in layers}):
-            with tempfile.TemporaryDirectory(prefix="inspect-", dir=staging) as temp_name:
-                temp_path = Path(temp_name).resolve()
-                if not temp_path.is_relative_to(staging.resolve()):
-                    raise ValueError("Layer inspection path escapes snapshot staging")
-                extracted = temp_path / Path(member).name
-                with bundle.open(member) as raw, extracted.open("xb") as output:
-                    shutil.copyfileobj(raw, output, 4 * 1024 * 1024)
-                for layer in (item for item in layers if item.archive_member == member):
-                    info = pyogrio.read_info(extracted, layer=layer.layer)
-                    count = info["features"]
-                    if count < 0:
-                        raise ValueError(f"Unknown feature count for {source.source_id}.{layer.layer}")
-                    geometry_count = 0
-                    if info.get("geometry_type"):
-                        for offset in range(0, count, 10000):
-                            frame = pyogrio.read_dataframe(extracted, layer=layer.layer, columns=[], skip_features=offset, max_features=min(10000, count - offset))
-                            if len(frame) != min(10000, count - offset):
-                                raise ValueError(f"Feature count changed for {source.source_id}.{layer.layer}")
-                            geometry_count += int((~frame.geometry.isna() & ~frame.geometry.is_empty).sum())
-                    status = "nonspatial" if not info.get("geometry_type") else "no_geometry" if count and not geometry_count else "partial_geometry" if geometry_count < count else "collected"
-                    rows.append({"source_id": source.source_id, "relative_path": source.paths[0], "archive_member": member, "layer": layer.layer, "feature_count": count, "geometry_count": geometry_count if info.get("geometry_type") else None, "status": status})
+    for member in sorted({layer.archive_member for layer in layers}):
+        with tempfile.TemporaryDirectory(prefix="inspect-", dir=staging) as temp_name:
+            temp_path = Path(temp_name).resolve()
+            if not temp_path.is_relative_to(staging.resolve()):
+                raise ValueError("Layer inspection path escapes snapshot staging")
+            extracted = materialize_archive_member(archive_path, member, temp_path)
+            for layer in (item for item in layers if item.archive_member == member):
+                info = pyogrio.read_info(extracted, layer=layer.layer)
+                count = info["features"]
+                if count < 0:
+                    raise ValueError(f"Unknown feature count for {source.source_id}.{layer.layer}")
+                geometry_count = 0
+                if info.get("geometry_type"):
+                    for offset in range(0, count, 10000):
+                        frame = pyogrio.read_dataframe(extracted, layer=layer.layer, columns=[], skip_features=offset, max_features=min(10000, count - offset))
+                        if len(frame) != min(10000, count - offset):
+                            raise ValueError(f"Feature count changed for {source.source_id}.{layer.layer}")
+                        geometry_count += int((~frame.geometry.isna() & ~frame.geometry.is_empty).sum())
+                status = "nonspatial" if not info.get("geometry_type") else "no_geometry" if count and not geometry_count else "partial_geometry" if geometry_count < count else "collected"
+                rows.append({"source_id": source.source_id, "relative_path": source.paths[0], "archive_member": member, "layer": layer.layer, "feature_count": count, "geometry_count": geometry_count if info.get("geometry_type") else None, "status": status})
+    return rows
+
+
+def _inspect_vector_layers(source: Source, frozen_root: Path) -> list[dict]:
+    """Count features and geometries in standalone vector files (.gpkg, .geojson, .shp)."""
+    vector_suffixes = {".gpkg", ".geojson", ".json", ".shp"}
+    if len(source.paths) != 1 or Path(source.paths[0]).suffix.lower() not in vector_suffixes:
+        return []
+    layers = [
+        layer
+        for layer in source.layers
+        if not layer.archive_member and not layer.layer.lower().endswith(".csv") and not layer.metadata_path
+    ]
+    if not layers:
+        return []
+    vector_path = _checked_path(frozen_root, source.paths[0])
+    rows = []
+    for layer in layers:
+        target_layer = None if vector_path.suffix.lower() in {".geojson", ".json", ".shp"} else layer.layer
+        info = pyogrio.read_info(vector_path, layer=target_layer)
+        count = int(info["features"])
+        if count < 0:
+            raise ValueError(f"Unknown feature count for {source.source_id}.{layer.layer}")
+        geometry_count = 0
+        if info.get("geometry_type"):
+            for offset in range(0, count, 10000):
+                frame = pyogrio.read_dataframe(vector_path, layer=target_layer, columns=[], skip_features=offset, max_features=min(10000, count - offset))
+                if len(frame) != min(10000, count - offset):
+                    raise ValueError(f"Feature count changed for {source.source_id}.{layer.layer}")
+                geometry_count += int((~frame.geometry.isna() & ~frame.geometry.is_empty).sum())
+        status = "nonspatial" if not info.get("geometry_type") else "no_geometry" if count and not geometry_count else "partial_geometry" if geometry_count < count else "collected"
+        rows.append({"source_id": source.source_id, "relative_path": source.paths[0], "archive_member": None, "layer": layer.layer, "feature_count": count, "geometry_count": geometry_count if info.get("geometry_type") else None, "status": status})
     return rows
 
 
@@ -204,6 +243,7 @@ def _inspect_csv_layers(source: Source, frozen_root: Path) -> list[dict]:
             else:
                 raise ValueError(f"Invalid CSV source for {source.source_id}.{layer.layer}")
             with io.TextIOWrapper(raw, encoding="utf-8-sig", newline="") as stream:
+                csv.field_size_limit(32 * 1024 * 1024)
                 reader = csv.reader(stream)
                 headers = next(reader, [])
                 if not headers or len(headers) != len(set(headers)) or any(not name for name in headers):
@@ -217,12 +257,76 @@ def _inspect_csv_layers(source: Source, frozen_root: Path) -> list[dict]:
     return rows
 
 
+def _unreviewed_arcgis_status(source: Source, root: Path) -> tuple[str, dict]:
+    """Classify an unreviewed ArcGIS source without treating it as buildable.
+
+    Spatial layers whose saved features have no geometry stay ``no_geometry``.
+    Every other unreviewed result is ``draft``, including tables, so a draft
+    cannot be read as a reviewed ``collected``, ``partial_geometry``, or
+    ``nonspatial`` input. The scan stops at the first saved geometry.
+    """
+    details: dict = {}
+    total_features = 0
+    expects_geometry = False
+    for value in source.paths:
+        directory = _checked_path(root, value)
+        if not directory.is_dir():
+            return "draft", {}
+        metadata_path = directory / "layer_metadata.json"
+        snap_path = directory / "snapshot.json"
+        if not metadata_path.is_file() or not snap_path.is_file():
+            return "draft", {}
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        snapshot = json.loads(snap_path.read_text(encoding="utf-8"))
+        if metadata.get("type") != "Feature Layer":
+            return "draft", {}
+        expects_geometry = True
+        pages = snapshot.get("pages")
+        if not isinstance(pages, list):
+            return "draft", {}
+        for page in pages:
+            if not isinstance(page, dict) or not isinstance(page.get("file"), str):
+                return "draft", {}
+            page_path = directory / page["file"]
+            if page_path.parent != directory or not page_path.is_file():
+                return "draft", {}
+            with gzip.open(page_path, "rt", encoding="utf-8") as stream:
+                content = json.load(stream)
+            features = content.get("features")
+            if not isinstance(features, list):
+                return "draft", {}
+            count = len(features)
+            geometry = sum(feature.get("geometry") is not None for feature in features)
+            if geometry:
+                return "draft", {}
+            total_features += count
+            details[page_path.relative_to(root).as_posix()] = {"feature_count": count, "has_geometry": False if count else None}
+    if expects_geometry and total_features:
+        details["__feature_count"] = total_features
+        details["__geometry_count"] = 0
+        return "no_geometry", details
+    return "draft", {}
+
+
+def _not_buildable_status(inspected: str) -> str:
+    """Draft rows may stay no_geometry and must not use a buildable status."""
+    if inspected == "no_geometry":
+        return "no_geometry"
+    return "draft"
+
+
 def freeze(quarter: str, *, home: Path, raw_root: Path, registry_dir: Path, unused_path: Path) -> Path:
-    if not re.fullmatch(r"[0-9]{4}-Q[1-4]", quarter):
-        raise ValueError("Snapshot must be formatted YYYY-QN")
+    require_quarter(quarter)
     registry_bytes = {p.name: p.read_bytes() for p in sorted(registry_dir.glob("*.yaml"))}
     unused_bytes = unused_path.read_bytes() if unused_path.exists() else None
-    sources = load_registry(registry_dir, require_reviewed=True, raw_root=raw_root)
+    registry_root = registry_dir.parent.resolve()
+    governance_bytes = {}
+    for folder in ("vocab", "overrides", "truth"):
+        path = registry_root / folder
+        if path.exists():
+            for file in _files(_checked_path(registry_root, folder)):
+                governance_bytes[file.relative_to(registry_root).as_posix()] = file.read_bytes()
+    sources = load_registry(registry_dir, require_reviewed=False, raw_root=raw_root)
     owners, unused, unassigned = inventory(raw_root, sources, unused_path)
     if registry_bytes != {p.name: p.read_bytes() for p in sorted(registry_dir.glob("*.yaml"))} or unused_bytes != (unused_path.read_bytes() if unused_path.exists() else None):
         raise ValueError("Registry changed during snapshot preparation")
@@ -274,9 +378,29 @@ def freeze(quarter: str, *, home: Path, raw_root: Path, registry_dir: Path, unus
             (registry_copy / name).write_bytes(content)
         if unused_bytes is not None:
             (payload / "registry" / "unused.yaml").write_bytes(unused_bytes)
+        for relative, content in governance_bytes.items():
+            governance_file = payload / "registry" / relative
+            governance_file.parent.mkdir(parents=True, exist_ok=True)
+            governance_file.write_bytes(content)
         # Check the copied bytes, not just the live files inspected before copy.
-        load_registry(registry_copy, require_reviewed=True, raw_root=frozen_root)
+        load_registry(registry_copy, require_reviewed=False, raw_root=frozen_root)
         for source in sources:
+            if source.storage != "collection":
+                continue
+            if not source.reviewed:
+                status, details = _unreviewed_arcgis_status(source, frozen_root) if source.driver == "arcgis" else ("draft", {})
+                status = _not_buildable_status(status)
+                for row in rows:
+                    if row["source_id"] == source.source_id:
+                        info = details.get(row["relative_path"], {})
+                        row["status"] = status
+                        if info:
+                            row["feature_count"] = info.get("feature_count")
+                            row["has_geometry"] = info.get("has_geometry")
+                if source.paths:
+                    for layer in source.layers:
+                        layer_rows.append({"source_id": source.source_id, "relative_path": source.paths[0], "archive_member": layer.archive_member, "layer": layer.layer, "feature_count": details.get("__feature_count") if status == "no_geometry" else None, "geometry_count": details.get("__geometry_count") if status == "no_geometry" else None, "status": status})
+                continue
             if source.driver == "arcgis":
                 if len(source.layers) != 1:
                     raise ValueError(f"ArcGIS snapshot requires one declared layer per source: {source.source_id}")
@@ -287,6 +411,7 @@ def freeze(quarter: str, *, home: Path, raw_root: Path, registry_dir: Path, unus
                         row.update(retrieved_utc=details.get("__retrieved_utc"), feature_count=info.get("feature_count"), has_geometry=info.get("has_geometry"), status=status)
                 layer_rows.append({"source_id": source.source_id, "relative_path": source.paths[0], "archive_member": None, "layer": source.layers[0].layer, "feature_count": details["__feature_count"], "geometry_count": details["__geometry_count"], "status": status})
             layer_rows.extend(_inspect_archived_layers(source, frozen_root, staging))
+            layer_rows.extend(_inspect_vector_layers(source, frozen_root))
             layer_rows.extend(_inspect_csv_layers(source, frozen_root))
         for row in rows:
             with _checked_path(frozen_root, row["relative_path"]).open("rb") as copied:

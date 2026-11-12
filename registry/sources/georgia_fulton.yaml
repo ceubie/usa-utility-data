@@ -1,0 +1,24 @@
+sources:
+- source_id: georgia_fulton_water_tanks
+  publisher: Fulton County
+  driver: arcgis
+  url: https://gismaps.fultoncountyga.gov/arcgispub/rest/services/WaterResources/WaterResourcesSewer/MapServer/13
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/georgia_fulton_water_tanks
+  layers:
+  - layer: '13'
+    sector: water
+    grain: facility
+    metadata_path: gis/georgia_fulton_water_tanks/layer_metadata.json
+    name_field: Name
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: GA
+  notes: Thirteen named water-tank points. They are facilities, not service areas.
+    Cadence is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

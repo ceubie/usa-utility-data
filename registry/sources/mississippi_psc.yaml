@@ -7,14 +7,14 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
-  reviewed: true
+  redistribution: internal_only
+  reviewed: false
   paths:
   - gis/mississippi_water_certificated_areas_psc
   layers:
   - layer: '1'
     sector: water
     grain: service_area
-    role: certified_franchise_territory
     metadata_path: gis/mississippi_water_certificated_areas_psc/layer_metadata.json
     name_field: UTILITY_NA
     id_fields:
@@ -24,7 +24,13 @@ sources:
     vintage_field: ASOF_DATE
     dissolve: true
     on_missing_name: preserve_and_review
-  notes: Current certificated areas. Cadence is a conservative collection assumption;
+    attribute_fields:
+      order_type: ORDER_TYPE
+      order_legend: LEGEND_LABEL
+      credit_utility: CREDITUTIL
+  notes: 'Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Current certificated areas. Cadence is a conservative collection assumption;
     licence terms require verification before redistribution. Source polygons must
     be dissolved by utility. The frozen snapshot contains 276 features without a utility
-    name; those rows must be preserved and routed to review.
+    name; those rows must be preserved and routed to review. Held for order-role review:
+    383 records have cancellation-labeled ORDER_TYPE 4; preserve their order evidence
+    rather than treating them automatically as active or unserved.'

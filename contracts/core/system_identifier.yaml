@@ -1,0 +1,8 @@
+table: system_identifier
+path: system_identifier.parquet
+primary_key: [system_id, scheme, value, source_id]
+columns:
+  - {name: system_id, type: string, nullable: false, references: system.system_id}
+  - {name: scheme, type: string, nullable: false}
+  - {name: value, type: string, nullable: false}
+  - {name: source_id, type: string, nullable: false}

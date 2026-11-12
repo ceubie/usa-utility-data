@@ -1,0 +1,76 @@
+sources:
+- source_id: alabama_power_territory_2023
+  publisher: Alabama Power Company
+  driver: arcgis
+  url: https://services.arcgis.com/Kvc1KGG2eBTfhvMZ/arcgis/rest/services/Alabama_Power_Service_Territories/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alabama_power_territory_2023
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/alabama_power_territory_2023/layer_metadata.json
+    authority: utility_direct
+    boundary_representation: unknown
+    name_field: COMPANY
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: AL
+  notes: One polygon published by Alabama Power. The only saved company value is APC.
+    Divisions and operating centers are separate layers and are not this territory.
+    Cadence is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: alabama_power_divisions_2023
+  publisher: Alabama Power Company
+  driver: arcgis
+  url: https://services.arcgis.com/Kvc1KGG2eBTfhvMZ/arcgis/rest/services/Alabama_Power_Service_Territories/FeatureServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alabama_power_divisions_2023
+  layers:
+  - layer: '3'
+    sector: electric
+    grain: admin_association
+    metadata_path: gis/alabama_power_divisions_2023/layer_metadata.json
+    name_field: NAME
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: AL
+  notes: Seven division polygons, including UN-REGULATED AREA. These are administrative
+    units, not retail service areas. Cadence is a collection assumption and licence
+    terms require review before redistribution.
+  redistribution: internal_only
+- source_id: alabama_power_operating_centers_2023
+  publisher: Alabama Power Company
+  driver: arcgis
+  url: https://services.arcgis.com/Kvc1KGG2eBTfhvMZ/arcgis/rest/services/Alabama_Power_Service_Territories/FeatureServer/4
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alabama_power_operating_centers_2023
+  layers:
+  - layer: '4'
+    sector: electric
+    grain: admin_association
+    metadata_path: gis/alabama_power_operating_centers_2023/layer_metadata.json
+    name_field: NAME
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: AL
+  notes: Eighty-three named operating-center polygons. They are not service territories.
+    Cadence is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

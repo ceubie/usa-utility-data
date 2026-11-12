@@ -20,3 +20,14 @@ declarations only and do not exercise the transformations.
 - Enforce per-source null and missing-name policies, keep unknown licences
   internal, and exclude mixed or unknown geometry from non-modeled coverage
   until the individual feature's representation has been resolved.
+- Include verified non-community on-site service areas in point and coverage
+  results under a distinct label only when the system is active, its identity
+  is uniquely verified, and the individual service footprint has verification
+  evidence. A modeled location or high location-confidence label alone does
+  not verify the service footprint. Never let unverified, wholesale-only,
+  conflicting, cancellation or placeholder assertions compete as serving
+  best areas; preserve them for review with counts reconciled.
+- Carry the raw SDWIS wholesaler indicator into keyed system evidence. A
+  missing, null or unmapped indicator, ambiguous SDWIS identity, or a
+  wholesaler flag conflicting with an apparent retail footprint must route to
+  review rather than defaulting to non-wholesale service.

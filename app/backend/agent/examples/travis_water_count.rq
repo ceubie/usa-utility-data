@@ -1,0 +1,6 @@
+# How many water systems serve Travis County, Texas?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT (COUNT(DISTINCT ?system) AS ?systems) WHERE {
+  ?system a ud:WaterSystem ;
+          ud:servesCounty <http://utilities.local/county/48453> .
+}

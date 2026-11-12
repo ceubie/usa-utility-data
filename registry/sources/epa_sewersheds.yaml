@@ -1,0 +1,59 @@
+sources:
+- source_id: federal_epa_sewersheds_v1_3
+  publisher: U.S. Environmental Protection Agency
+  driver: http
+  url: https://media.githubusercontent.com/media/USEPA/Sewersheds/main/Current_Release.zip
+  cadence: frozen
+  licence: unknown
+  redistribution: internal_only
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - wastewater/epa_sewersheds_v1_3.zip
+  layers:
+  - layer: Sewersheds
+    archive_member: Version_1_3.gdb
+    sector: wastewater
+    grain: service_area
+    authority:
+      field: Method
+      values:
+        Sourced: federal_submitted
+        Modeled: federal_modeled
+      on_null: reject
+    boundary_representation: mixed
+    name_field: FACILITY_NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: CWNS_ID
+      cwns_id: CWNS_ID
+    attribute_fields:
+      state: STATE_CODE
+      total_residential_population_2022: TOTAL_RES_POPULATION_2022
+      residential_population_2022: RESIDENTIAL_POP_2022
+    state_field: STATE_CODE
+    role_matrix:
+      fields:
+      - Method
+      - Flag
+      cases:
+      - values:
+        - Sourced
+        - null
+        role: active_retail_service
+      - values:
+        - Modeled
+        - null
+        role: active_retail_service
+      - values:
+        - Modeled
+        - needs_v2_model
+        role: review_required
+  notes: "EPA sewersheds version 1.3, October 2026. Method is Sourced on 3279 features
+    and Modeled on 13733. Flag is needs_v2_model on 31 modeled features and null
+    on the rest. CWNS_ID is one 11-digit id, or several ids separated by a semicolon
+    and a space when plants share a polygon. TOTAL_RES_POPULATION_2022 is the CWNS
+    total residential population. Sourced boundaries are federal_submitted and
+    modeled boundaries are federal_modeled. The layer is mixed. Licence terms were
+    not stated, so redistribution stays internal."

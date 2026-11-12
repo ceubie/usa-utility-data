@@ -1,0 +1,19 @@
+table: gas_system_county_coverage
+path: gas_system_county_coverage.parquet
+primary_key: [system_id, county_geoid]
+columns:
+  - {name: system_id, type: string, nullable: false}
+  - {name: county_geoid, type: string, nullable: false}
+  - {name: state, type: string, nullable: false}
+  - {name: sector, type: string, nullable: false}
+  - {name: pop_in_area, type: integer, nullable: false}
+  - {name: housing_in_area, type: integer, nullable: false}
+  - {name: pop_share_of_county, type: float, nullable: true}
+  - {name: pop_share_of_system, type: float, nullable: true}
+  - {name: area_share, type: float, nullable: true}
+  - {name: evidence, type: string, nullable: false}
+  - {name: authority, type: string, nullable: false}
+  - {name: is_served, type: boolean, nullable: false}
+  - {name: licence, type: string, nullable: false}
+  - {name: source_id, type: string, nullable: false}
+  - {name: in_federal_registry, type: boolean, nullable: false}

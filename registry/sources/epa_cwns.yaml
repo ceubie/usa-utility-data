@@ -1,0 +1,99 @@
+sources:
+- source_id: federal_epa_cwns_2022
+  publisher: U.S. Environmental Protection Agency
+  driver: http
+  url: https://sdwis.epa.gov/ords/sfdw_pub/r/sfdw/cwns_pub/data-download
+  cadence: frozen
+  licence: unknown
+  redistribution: internal_only
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - wastewater/epa_cwns_2022_national_sept2026.zip
+  layers:
+  - layer: 2022CWNS_NATIONAL_Sept2026/FACILITIES.csv
+    sector: wastewater
+    grain: registry_table
+    id_fields:
+      cwns_id: CWNS_ID
+    attribute_fields:
+      facility_name: FACILITY_NAME
+      state: STATE_CODE
+      infrastructure_type: INFRASTRUCTURE_TYPE
+      owner_type: OWNER_TYPE
+      review_status: REVIEW_STATUS
+  - layer: 2022CWNS_NATIONAL_Sept2026/FACILITIES_CONFIRMED.csv
+    sector: wastewater
+    grain: registry_table
+    id_fields:
+      cwns_id: CWNS_ID
+    attribute_fields:
+      facility_name: FACILITY_NAME
+      state: STATE_CODE
+      infrastructure_type: INFRASTRUCTURE_TYPE
+      owner_type: OWNER_TYPE
+      review_status: REVIEW_STATUS
+  - layer: 2022CWNS_NATIONAL_Sept2026/FLOW.csv
+    sector: wastewater
+    grain: registry_table
+    id_fields:
+      cwns_id: CWNS_ID
+    attribute_fields:
+      flow_type: FLOW_TYPE
+      current_design_flow: CURRENT_DESIGN_FLOW
+  - layer: 2022CWNS_NATIONAL_Sept2026/POPULATION_WASTEWATER.csv
+    sector: wastewater
+    grain: registry_table
+    id_fields:
+      cwns_id: CWNS_ID
+    attribute_fields:
+      population_type: POPULATION_TYPE
+      total_residential_population_2022: TOTAL_RES_POPULATION_2022
+  - layer: 2022CWNS_NATIONAL_Sept2026/POPULATION_WASTEWATER_CONFIRMED.csv
+    sector: wastewater
+    grain: registry_table
+    id_fields:
+      cwns_id: CWNS_ID
+    attribute_fields:
+      population_type: POPULATION_TYPE
+      total_residential_population_2022: TOTAL_RES_POPULATION_2022
+  - layer: 2022CWNS_NATIONAL_Sept2026/FACILITY_TYPES.csv
+    sector: wastewater
+    grain: registry_table
+    id_fields:
+      cwns_id: CWNS_ID
+    attribute_fields:
+      facility_type: FACILITY_TYPE
+  - layer: 2022CWNS_NATIONAL_Sept2026/REF_FACILITY_TYPES.csv
+    sector: wastewater
+    grain: registry_table
+    attribute_fields:
+      facility_type: FACILITY_TYPE
+  - layer: 2022CWNS_NATIONAL_Sept2026/PHYSICAL_LOCATION.csv
+    sector: wastewater
+    grain: registry_table
+    id_fields:
+      cwns_id: CWNS_ID
+    attribute_fields:
+      latitude: LATITUDE
+      longitude: LONGITUDE
+      location_type: LOCATION_TYPE
+  - layer: 2022CWNS_NATIONAL_Sept2026/POINT_OF_CONTACT.csv
+    sector: wastewater
+    grain: registry_table
+    id_fields:
+      cwns_id: CWNS_ID
+    attribute_fields:
+      responsible_entity: RESPONSIBLE_ENTITY
+      authority_name: AUTHORITY_NAME
+  notes: "2022 CWNS national CSV extract. The dictionary file CWNS-Database-Dictionary-January2025.xlsx
+    was fetched from https://sdwis.epa.gov/ords/sfdw_pub/r/sfdw/cwns_pub/download-state-zip?p2_location_id=DD&session=13584687560178&cs=16CohG879kRukk8FzXPo2CpQ-Ez8rWcdORFsaZepMCPL9Rk6_loMyAvIYmSLJUHd-gEClzliHaIuYCTJmScChcA
+    linked from the data-download page. FLOW_TYPE Total Flow is the total row.
+    Saved flow types are Municipal Flow, Industrial Flow, Infiltration Flow, Wet
+    Weather Peak, and Total Flow. POPULATION_TYPE is Receiving Collection or Total
+    Receiving Treatment. TOTAL_RES_POPULATION_2022 is the total current residential
+    population, including upstream population when the id is linked in a sewershed.
+    REVIEW_STATUS FA is Federal Accepted and UNC is Confirmed. AUTHORITY_NAME on
+    the responsible-entity row is the owning agency, not the plant. Licence terms
+    were not stated, so redistribution stays internal."

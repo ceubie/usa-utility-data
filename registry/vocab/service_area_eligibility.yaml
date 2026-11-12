@@ -1,0 +1,21 @@
+eligible_roles:
+  - active_retail_service
+  - certified_franchise_territory
+  - onsite_noncommunity
+require_active_system: true
+require_resolved_identity: true
+onsite_requires_unique_verified_identity: true
+onsite_requires_verified_service_footprint: true
+placeholder_or_unresolved_footprint: preserve_and_review
+wholesaler_flag_with_apparent_retail: preserve_and_review_unless_mixed_service_verified
+wholesaler_flag_missing_null_or_unmapped: preserve_and_review
+ambiguous_sdwis_identity: preserve_and_review
+unknown_status: preserve_and_review
+nonserving_roles:
+  - regional_wholesale_or_district
+  - planned_or_future_service
+  - administrative_unit_proxy
+  - source_watershed_or_basin
+  - not_serviced_or_excluded
+  - unassigned_area
+  - review_required

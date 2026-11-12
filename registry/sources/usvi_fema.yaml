@@ -1,0 +1,81 @@
+sources:
+- source_id: usvi_water_infrastructure_fema_wapa_2022
+  publisher: Federal Emergency Management Agency
+  driver: arcgis
+  url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Water_Distribution_Infrastructure_USVI_2022/FeatureServer/56
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/usvi_water_infrastructure_fema_wapa_2022
+  layers:
+  - layer: '56'
+    sector: water
+    grain: facility
+    metadata_path: gis/usvi_water_infrastructure_fema_wapa_2022/layer_metadata.json
+    name_field: Name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      operator: Operator
+    state_fixed: VI
+  notes: Five water-plant points. Operator is Seven Seas Water on every feature.
+    These are facilities, not service areas. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: usvi_wastewater_plants_fema_viwma_2021
+  publisher: Federal Emergency Management Agency
+  driver: arcgis
+  url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Waste_Water_Treatment_Plants_VIWMA_2021/FeatureServer/91
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/usvi_wastewater_plants_fema_viwma_2021
+  layers:
+  - layer: '91'
+    sector: wastewater
+    grain: facility
+    metadata_path: gis/usvi_wastewater_plants_fema_viwma_2021/layer_metadata.json
+    name_field: Facility
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      operator: Operator
+    state_fixed: VI
+  notes: Eight named wastewater plants. Operator is VIWMA on six features and Veolia
+    Group on two. These are facilities, not service areas. Cadence is a collection
+    assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: usvi_power_generation_fema_2025
+  publisher: Federal Emergency Management Agency
+  driver: arcgis
+  url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Power_Generating_Infrastructure_USVI_2025/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/usvi_power_generation_fema_2025
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: facility
+    metadata_path: gis/usvi_power_generation_fema_2025/layer_metadata.json
+    name_field: Name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      operator: Operator
+      facility_type: FacilityType
+    state_fixed: VI
+  notes: Sixteen electric points. FacilityType is Substation on 8, Power Plant on
+    4, and Solar Farm on 4. Operator is VIWAPA on 11, VIElectron on 2, and one each
+    for Aggreko, NRG Energy, and BMR Energy. These are facilities, not service areas.
+    Cadence is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

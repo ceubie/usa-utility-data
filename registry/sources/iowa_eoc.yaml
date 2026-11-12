@@ -1,0 +1,34 @@
+sources:
+- source_id: iowa_utility_providers_by_survey_township_eoc
+  publisher: Iowa Emergency Operations Center
+  driver: arcgis
+  url: https://eoc.iowa.gov/arcgis/rest/services/Public/UtilityServiceAreas/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/iowa_utility_providers_by_survey_township_eoc
+  layers:
+  - layer: '0'
+    sector: multi_utility
+    grain: admin_association
+    metadata_path: gis/iowa_utility_providers_by_survey_township_eoc/layer_metadata.json
+    name_field: label
+    id_fields:
+      feature_id: OBJECTID_1
+    attribute_fields:
+      electric_provider: Elec_1
+      gas_provider: Gas_1
+      water_provider: Water_U1
+      telephone_provider: Tel_1
+    state_fixed: IA
+  notes: One thousand six hundred thirty-seven survey townships. label is present
+    and unique on every feature, and state is IA on every feature. Elec_1 is
+    present on every feature. Gas_1 is present on 824, Water_U1 on 1257, and Tel_1
+    on 956. Additional numbered provider fields exist, and a blank value is not a
+    provider. These are township associations, not utility service polygons.
+    Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only

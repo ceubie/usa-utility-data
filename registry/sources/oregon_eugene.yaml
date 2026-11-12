@@ -1,0 +1,87 @@
+sources:
+- source_id: oregon_eugene_waste_lines
+  publisher: City of Eugene
+  driver: arcgis
+  url: https://gis.eugene-or.gov/arcgis/rest/services/PWE/Wastewater/MapServer/4
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_eugene_waste_lines
+  layers:
+  - layer: '4'
+    sector: wastewater
+    grain: network
+    metadata_path: gis/oregon_eugene_waste_lines/layer_metadata.json
+    name_field: OWNER
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      structure_type: STRUCT_TYPE
+    state_fixed: OR
+  notes: Twenty-three thousand six hundred two wastewater lines. OWNER is EUGENE on
+    every feature. STRUCT_TYPE is WLINE on 16319, WWYSER on 4563, WCOLIN on 1592,
+    WSTUBL on 818, WTOTAP on 136, WPRESL on 90, WPUMPL on 53, WSIPHL on 29, and
+    WSERVC on 2. These are pipes, not service areas. Cadence is a collection
+    assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: oregon_eugene_waste_points
+  publisher: City of Eugene
+  driver: arcgis
+  url: https://gis.eugene-or.gov/arcgis/rest/services/PWE/Wastewater/MapServer/2
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_eugene_waste_points
+  layers:
+  - layer: '2'
+    sector: wastewater
+    grain: facility
+    metadata_path: gis/oregon_eugene_waste_points/layer_metadata.json
+    name_field: OWNER
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      structure_type: MANHOLE_TYPE
+    state_fixed: OR
+  notes: Twenty-four thousand two hundred thirty-nine wastewater structures. OWNER
+    is EUGENE on 23903, UO on 169, PVT on 132, MWMC on 21, and SPFLD on 14.
+    MANHOLE_TYPE is WMH on 15973, WWYE on 4424, WCONS on 1610, WPHANT on 814,
+    WSTUBS on 531, WSTBNS on 350, WCOSER on 247, WTAP on 163, WPRV on 42, WSIPH on
+    31, WPLSTA on 19, WPSTA on 16, WPCHG on 16, and WSAMP on 3. These are
+    structures, not service areas. Cadence is a collection assumption and licence
+    terms require review before redistribution.
+  redistribution: internal_only
+- source_id: oregon_eugene_private_waste_lines
+  publisher: City of Eugene
+  driver: arcgis
+  url: https://gis.eugene-or.gov/arcgis/rest/services/PWE/Wastewater/MapServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_eugene_private_waste_lines
+  layers:
+  - layer: '3'
+    sector: wastewater
+    grain: network
+    metadata_path: gis/oregon_eugene_private_waste_lines/layer_metadata.json
+    name_field: OWNER
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      structure_type: STRUCT_TYPE
+    state_fixed: OR
+  notes: Seven hundred twenty wastewater lines that are not city-owned. OWNER is
+    MWMC on 418, UO on 166, PVT on 122, and SPFLD on 14. STRUCT_TYPE is WLINE on
+    394, WPRESL on 266, WWYSER on 17, WCOLIN on 15, WTOTAP on 12, WSIPHL on 10,
+    WPUMPL on 5, and WSTUBL on 1. These are pipes, not service areas. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

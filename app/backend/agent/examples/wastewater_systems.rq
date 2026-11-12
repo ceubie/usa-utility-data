@@ -1,0 +1,7 @@
+# Which wastewater systems have a name?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?system ?name WHERE {
+  ?system a ud:WastewaterSystem ;
+          ud:name ?name .
+}
+LIMIT 10

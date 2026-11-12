@@ -7,14 +7,14 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
-  reviewed: true
+  redistribution: internal_only
+  reviewed: false
   paths:
   - gis/massachusetts_water_community_massdep
   layers:
   - layer: '2'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/massachusetts_water_community_massdep/layer_metadata.json
     name_field: PWS_NAME
     id_fields:
@@ -33,11 +33,13 @@ sources:
     boundary_representation: mixed
     on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
-  notes: Cadence is a conservative collection assumption; licence terms require verification
+  notes: 'Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Mapped and estimated boundaries are mixed; state authority
     alone does not identify modeled geometries. Includes estimates and location placeholders;
     exclude mixed-representation areas from non-modeled metrics until a per-feature
-    distinction is validated.
+    distinction is validated. Held for best-area eligibility review: some small-circle
+    placeholders do not represent actual service, and SERVCECONF alone does not identify
+    them.'
 - source_id: massachusetts_water_nontransient_massdep
   publisher: Massachusetts Department of Environmental Protection
   driver: arcgis
@@ -46,14 +48,14 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
-  reviewed: true
+  redistribution: internal_only
+  reviewed: false
   paths:
   - gis/massachusetts_water_nontransient_massdep
   layers:
   - layer: '1'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/massachusetts_water_nontransient_massdep/layer_metadata.json
     name_field: PWS_NAME
     id_fields:
@@ -72,8 +74,70 @@ sources:
     boundary_representation: mixed
     on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
-  notes: Cadence is a conservative collection assumption; licence terms require verification
+  notes: 'Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Mapped and estimated boundaries are mixed; state authority
     alone does not identify modeled geometries. Includes estimates and location placeholders;
     exclude mixed-representation areas from non-modeled metrics until a per-feature
-    distinction is validated.
+    distinction is validated. Held for best-area eligibility review: some small-circle
+    placeholders do not represent actual service, and SERVCECONF alone does not identify
+    them.'
+- source_id: massachusetts_water_unlocated_massdep
+  publisher: Massachusetts Department of Environmental Protection
+  driver: arcgis
+  url: https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/DEP_PWS_WATER_SERVICE_AREAS/FeatureServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/massachusetts_water_unlocated_massdep
+  layers:
+  - layer: '3'
+    sector: water
+    grain: registry_table
+    metadata_path: gis/massachusetts_water_unlocated_massdep/layer_metadata.json
+    name_field: PWS_NAME
+    id_fields:
+      feature_id: OBJECTID
+      pwsid: PWS_ID
+    attribute_fields:
+      town: PWS_TOWN
+      pws_class: PWS_CLASS
+      address: ADDRESS
+    state_fixed: MA
+    pwsid_rule: state_prefix_7
+    on_invalid_pwsid: preserve_raw_without_federal_id
+  notes: Nonspatial table of 13 unlocated systems; does not establish any serving
+    polygon. The PWS_ID values are seven-digit state numbers and were checked against
+    SDWIS. Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only
+- source_id: massachusetts_sewer_unlocated_massdep
+  publisher: Massachusetts Department of Environmental Protection
+  driver: arcgis
+  url: https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/DEP_SEWER_SERVICE_AREAS/FeatureServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/massachusetts_sewer_unlocated_massdep
+  layers:
+  - layer: '3'
+    sector: wastewater
+    grain: registry_table
+    metadata_path: gis/massachusetts_sewer_unlocated_massdep/layer_metadata.json
+    name_field: SYSTNAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      town: TOWN_NAME
+      actor: ACTORNAME
+    state_fixed: MA
+  notes: Nonspatial table of two unlocated sewer systems, Hunter Hill Settlement and
+    Wayland WWTF. It does not establish a serving polygon and is not a failed geometry
+    download. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only

@@ -1,0 +1,6 @@
+# Which utility systems have a service area?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?system ?area WHERE {
+  ?system ud:hasServiceArea ?area .
+}
+LIMIT 10

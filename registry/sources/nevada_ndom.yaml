@@ -1,0 +1,34 @@
+sources:
+- source_id: nevada_electric_service_areas_ndom
+  publisher: Nevada Division of Minerals
+  driver: arcgis
+  url: https://services.arcgis.com/CXYUMoYknZtf5Qr3/ArcGIS/rest/services/NevadaElectricityServiceAreas/FeatureServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/nevada_electric_service_areas_ndom
+  layers:
+  - layer: '3'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/nevada_electric_service_areas_ndom/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: Name
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: NV
+  notes: >-
+    Reverted to draft on 2026-11-12 (decision D1). Not on the approved promotion
+    list. An earlier gate refused it as a third-party compilation: the Division of
+    Minerals digitized these areas from Public Utilities Commission maps. The
+    declaration is retained so it can be opted in. Fourteen electric service-area
+    polygons naming 12 providers; NV Energy has three polygons. The layer is named
+    NevadaRuralUtilityServiceAreas and representation is unknown. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

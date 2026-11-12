@@ -14,7 +14,6 @@ sources:
   - layer: CWS
     sector: water
     grain: service_area
-    role: active_retail_service
     authority:
       field: Symbology_Field
       values:
@@ -30,12 +29,47 @@ sources:
     state_from_geometry: true
     boundary_representation: mixed
     notes: CWS GeoPackage layer; 25,409 system-sourced and 19,247 modeled features.
-      Apply authority per feature.
+      Apply authority per feature. Residential-type service areas are candidates only;
+      match active SDWIS systems before serving. Explicit wholesale areas are non-retail,
+      and ambiguous categories go to review.
     archive_member: 3_0/Service_Areas_V_3_0.gpkg
+    role_field:
+      field: Service_Area_Type
+      values:
+        ? ''
+        : review_required
+        '#N/A': review_required
+        Dispenser: review_required
+        Homeowners Association: active_retail_service
+        Hotel/Motel: review_required
+        Industrial/Agricultural: review_required
+        Institution: review_required
+        Interstate Carrier: review_required
+        Medical Facility: review_required
+        Mobile Home Park: active_retail_service
+        Mobile Home Park - Principal Residence: active_retail_service
+        Municipality: active_retail_service
+        Other Area: review_required
+        Other Non-transient Area: review_required
+        Other Residential: active_retail_service
+        Other Transient Area: review_required
+        Recreation Area: review_required
+        Residential Area: active_retail_service
+        Restaurant: review_required
+        Retail Employees: review_required
+        Sanitary Improvement District: review_required
+        School: review_required
+        Secondary Residences: review_required
+        Service Station: review_required
+        Subdivision: active_retail_service
+        Summer Camp: review_required
+        Wholesaler of Water: regional_wholesale_or_district
+      on_null: review_required
+    attribute_fields:
+      raw_area_type: Service_Area_Type
   - layer: T_NTNC
     sector: water
     grain: service_area
-    role: active_retail_service
     name_field: PWS_Name
     on_missing_name: preserve_and_review
     id_fields:
@@ -44,9 +78,13 @@ sources:
     on_invalid_pwsid: preserve_raw_without_federal_id
     state_from_geometry: true
     boundary_representation: mixed
-    notes: Location confidence distinguishes 75,392 EPA-estimated polygons from 2,077
+    notes: 'Location confidence distinguishes 75,392 EPA-estimated polygons from 2,077
       state-sourced polygons. Replacement of the older v1.1 layer requires review.
       Apply the approved PWSID exception policy; see registry/pwsid_format_audit.json.
+      Role is held for review: the source includes wholesale and other non-retail
+      systems. On-site candidates require active unique system identity and independently
+      verified footprint before serving. Conflicts, missing fields, mixed wholesaling
+      and ambiguous types route to review.'
     authority:
       field: LOCATION_CONFIDENCE
       values:
@@ -55,7 +93,737 @@ sources:
         State Sourced: federal_submitted
       on_null: reject
     archive_member: 3_0/Service_Areas_V_3_0.gpkg
+    role_matrix:
+      fields:
+      - IS_WHOLESALER_IND
+      - SERVICE_AREA_TYPE
+      - PWS_TYPE_CODE
+      - IS_SCHOOL_OR_DAYCARE_IND
+      cases:
+      - values:
+        - null
+        - null
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Daycare Center
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Highway Rest Area
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Hotel/Motel
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Industrial/Agricultural
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Institution
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Other Area
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Other Non-transient Area
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Other Transient Area
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Recreation Area
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Restaurant
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Retail Employees
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - School
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Service Station
+        - null
+        - null
+        role: review_required
+      - values:
+        - null
+        - Summer Camp
+        - null
+        - null
+        role: review_required
+      - values:
+        - N
+        - null
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - null
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - null
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - '#N/A'
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Daycare Center
+        - NTNCWS
+        - Y
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Daycare Center
+        - TNCWS
+        - Y
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Dispenser
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Dispenser
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Highway Rest Area
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Highway Rest Area
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Homeowners Association
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Homeowners Association
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Hotel/Motel
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Hotel/Motel
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Hotel/Motel
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Industrial/Agricultural
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Industrial/Agricultural
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Industrial/Agricultural
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Industrial/Agricultural
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Institution
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Institution
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Institution
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Institution
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Interstate Carrier
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Interstate Carrier
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Medical Facility
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Medical Facility
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Medical Facility
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Medical Facility
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Mobile Home Park
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Mobile Home Park
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Mobile Home Park - Principal Residence
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Mobile Home Park - Principal Residence
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Municipality
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Municipality
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Municipality
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Municipality
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Other Area
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Other Area
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Other Area
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Other Area
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Other Non-transient Area
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Other Non-transient Area
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Other Non-transient Area
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Other Non-transient Area
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Other Residential
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Other Residential
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Other Residential
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Other Transient Area
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Other Transient Area
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Other Transient Area
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Other Transient Area
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Recreation Area
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Recreation Area
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Recreation Area
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Recreation Area
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Residential Area
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Residential Area
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Residential Area
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Residential Area
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Restaurant
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Restaurant
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Restaurant
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Retail Employees
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Retail Employees
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Retail Employees
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - School
+        - NTNCWS
+        - Y
+        role: onsite_noncommunity
+      - values:
+        - N
+        - School
+        - TNCWS
+        - Y
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Secondary Residences
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Secondary Residences
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Secondary Residences
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Service Station
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Service Station
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Subdivision
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Subdivision
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Summer Camp
+        - NTNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Summer Camp
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Summer Camp
+        - TNCWS
+        - N
+        role: onsite_noncommunity
+      - values:
+        - N
+        - Summer Camp
+        - TNCWS
+        - Y
+        role: review_required
+      - values:
+        - N
+        - Water Bottler
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - N
+        - Water Bottler
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Daycare Center
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - Y
+        - Dispenser
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Industrial/Agricultural
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Institution
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Institution
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Other Area
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Other Area
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Other Non-transient Area
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Other Transient Area
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Other Transient Area
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Recreation Area
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Recreation Area
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Residential Area
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Restaurant
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Restaurant
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Retail Employees
+        - NTNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Retail Employees
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - School
+        - NTNCWS
+        - Y
+        role: review_required
+      - values:
+        - Y
+        - Service Station
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Summer Camp
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Water Bottler
+        - TNCWS
+        - N
+        role: review_required
+      - values:
+        - Y
+        - Wholesaler of Water
+        - NTNCWS
+        - N
+        role: regional_wholesale_or_district
+      - values:
+        - Y
+        - Wholesaler of Water
+        - TNCWS
+        - N
+        role: regional_wholesale_or_district
+    attribute_fields:
+      wholesaler_indicator: IS_WHOLESALER_IND
+      raw_area_type: SERVICE_AREA_TYPE
+      pws_type: PWS_TYPE_CODE
+      school_daycare_indicator: IS_SCHOOL_OR_DAYCARE_IND
   notes: Collected EPA v3 archive; retain both layers while the review of replacing
     the older non-community source remains pending. Exact IDs follow the approved
-    registry policy. Licence terms require confirmation before redistribution.
+    registry policy. Licence terms require confirmation before redistribution. Explicit
+    area-type and multi-field role rules preserve wholesale, on-site candidates and
+    review cases separately; no on-site area is served without footprint verification.
+    Both layers require a reviewed per-feature wholesale, non-community and status
+    strategy before they can supply serving areas.
   redistribution: internal_only

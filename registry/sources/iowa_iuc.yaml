@@ -1,0 +1,38 @@
+sources:
+- source_id: iowa_electric_service_areas_iuc
+  publisher: Iowa Utilities Commission
+  driver: arcgis
+  url: https://services.arcgis.com/vPD5PVLI6sfkZ5E4/arcgis/rest/services/Electrical_Service_Boundaries/FeatureServer/14
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/iowa_electric_service_areas_iuc
+  layers:
+  - layer: '14'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/iowa_electric_service_areas_iuc/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: Owner
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      boundary_type: ESB_Type
+    state_fixed: IA
+  notes: Release 2026Q4.1 built this layer under WP7 review. The 2026-11-12 promotion
+    gate set it back to draft because geometry is null on 1 of 1361 features. The
+    null feature, OBJECTID 1170, is a stub for Interstate Power and Light, which keeps
+    583 polygons. It is rejected with reason empty_geometry; the 2026Q4.1 electric
+    report shows 1360 assertions and 1 reject, and from 2026Q4.2 the reject row is
+    saved in electric_boundary_rejects.parquet. The scope-correction gate restored
+    the layer. 1361 electric territories and 181 owner names. ESB_Type is Interstate Power and Light Company on 584, REC on 355,
+    MidAmerican Energy on 249, Municipal on 172, and Amana Society on 1. There is no
+    status field. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only

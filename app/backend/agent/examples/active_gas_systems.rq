@@ -1,0 +1,8 @@
+# Which natural gas systems are active?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?system ?name WHERE {
+  ?system a ud:NaturalGasSystem ;
+          ud:name ?name ;
+          ud:status "active" .
+}
+LIMIT 10

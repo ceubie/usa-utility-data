@@ -1,0 +1,19 @@
+table: system
+path: system.parquet
+primary_key: [system_id]
+columns:
+  - {name: system_id, type: string, nullable: false}
+  - {name: sector, type: string, nullable: false, vocab: sector}
+  - {name: name, type: string, nullable: true}
+  - {name: status, type: string, nullable: false}
+  - {name: system_type, type: string, nullable: true}
+  - {name: primary_state, type: string, nullable: true}
+  - {name: population_served, type: integer, nullable: true}
+  - {name: service_connections, type: integer, nullable: true}
+  - {name: customers, type: float, nullable: true}
+  - {name: sales_mwh, type: float, nullable: true}
+  - {name: owner_org_id, type: string, nullable: true, references: organization.org_id}
+  - {name: operator_org_id, type: string, nullable: true}
+  - {name: in_federal_registry, type: boolean, nullable: false}
+  - {name: first_seen_release, type: string, nullable: false}
+  - {name: last_seen_release, type: string, nullable: false}

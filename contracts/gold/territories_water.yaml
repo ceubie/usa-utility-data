@@ -1,0 +1,24 @@
+table: territories_water
+path: territories_water.parquet
+primary_key: [service_area_id]
+columns:
+  - {name: service_area_id, type: string, nullable: false, description: Stable id of the best serving area.}
+  - {name: system_id, type: string, nullable: false, description: Active system served by this area.}
+  - {name: name, type: string, nullable: true, description: System name.}
+  - {name: sector, type: string, nullable: false, vocab: sector, description: Sector.}
+  - {name: status, type: string, nullable: false, description: System status. The build keeps only active systems.}
+  - {name: primary_state, type: string, nullable: true, description: System primary state.}
+  - {name: in_federal_registry, type: boolean, nullable: false, description: True when the system is in the SDWA registry.}
+  - {name: population_served, type: integer, nullable: true, description: Reported population served.}
+  - {name: zone_role, type: string, nullable: false, vocab: zone_role, description: "Serving role, active retail or certified franchise."}
+  - {name: source_id, type: string, nullable: false, description: Source of the area.}
+  - {name: authority, type: string, nullable: false, vocab: authority, description: Authority of the area.}
+  - {name: grain, type: string, nullable: true, description: Source grain.}
+  - {name: source_vintage_date, type: date, nullable: true, description: Newest source vintage used for the area.}
+  - {name: is_best, type: boolean, nullable: false, description: Always true in this table.}
+  - {name: part_count, type: integer, nullable: false, description: Number of dissolved parts.}
+  - {name: area_km2, type: float, nullable: false, description: Area in square kilometers.}
+  - {name: footprint_verified, type: boolean, nullable: true, description: Whether the footprint was verified.}
+  - {name: licence, type: string, nullable: false, vocab: licence, description: Licence of the area.}
+  - {name: boundary_representation, type: string, nullable: false, description: "unmodeled, modeled, mixed, or unknown. Only unmodeled counts as non-modeled."}
+  - {name: geometry, nullable: false, description: Best serving polygon in EPSG:4326.}

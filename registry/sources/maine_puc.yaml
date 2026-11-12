@@ -1,0 +1,41 @@
+sources:
+- source_id: maine_electric_service_areas_puc_2020
+  publisher: Maine Public Utilities Commission
+  driver: arcgis
+  url: https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/2020_Electric_Service_Area_web/FeatureServer/0
+  cadence: frozen
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/maine_electric_service_areas_puc_2020
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/maine_electric_service_areas_puc_2020/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: UTIL_NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID_1
+    attribute_fields:
+      owner: OWNER
+      utility_type: Type
+      short_name: Short_Name
+    state_fixed: ME
+    vintage_fixed: '2020'
+  notes: 'Reverted to draft on 2026-11-12 (decision D1). Not on the approved promotion
+    list. An earlier gate refused this 2020 map because the company names are superseded:
+    Bangor Hydro and Maine Public Service now operate as Versant Power. The declaration
+    is retained so it can be opted in. Thirty-four transmission and distribution utility
+    polygons naming 12 utilities: Central Maine Power on 18, Bangor Hydro on 4, Maine
+    Public Service on 3, and consumer-owned utilities on the rest. OWNER names the
+    parent, Avangrid on 18 and Versant Power on 7. OBJECTID repeats the value 0, so
+    OBJECTID_1 is the feature id. The layer is a 2020 map last edited in March 2021,
+    so cadence is frozen and the vintage is fixed at 2020. Licence terms require
+    review before redistribution.'
+  redistribution: internal_only

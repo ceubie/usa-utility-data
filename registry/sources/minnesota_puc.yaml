@@ -1,0 +1,47 @@
+sources:
+- source_id: state_mn_electric_service_areas
+  publisher: Minnesota Public Utilities Commission and Minnesota Geospatial Information
+    Office
+  driver: http
+  url: https://operations.gis.data.mn.gov/api/publicdownload/download/518/util_eusa.gpkg
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - states/mn/electric_service_areas.gpkg
+  layers:
+  - layer: service_areas
+    sector: electric
+    grain: service_area
+    role_field:
+      field: type
+      values:
+        Municipal: active_retail_service
+        Cooperative: active_retail_service
+        Investor-Owned: active_retail_service
+      on_null: review_required
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: full_name
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+      eia_utility_id: eia_utility_id
+    attribute_fields:
+      utility_type: type
+      commission_name: mpuc_name
+      state_utility_id: mn_utility_id
+    state_fixed: MN
+    vintage_field: edited
+  notes: One hundred eighty-one electric utility service areas from the Minnesota
+    Geospatial Commons GeoPackage, layer service_areas. type is Municipal on 123,
+    Cooperative on 47, and Investor-Owned on 4. Seven polygons are named Joint Service
+    Area and have no type and no utility id; they name no single provider and are
+    held for review. eia_utility_id is blank on those seven and on eight named utilities,
+    which are matched by name instead. The state field is the utility's mailing state
+    and is not declared. edited runs from 2025-11-26 to 2025-12-01. Minnesota assigns
+    electric service areas by statute. Cadence is a collection assumption and licence
+    terms require review before redistribution.
+  redistribution: internal_only

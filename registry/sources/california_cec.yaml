@@ -1,0 +1,72 @@
+sources:
+- source_id: california_electric_iou_pou_load_serving_cec
+  publisher: California Energy Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/california_electric_iou_pou_load_serving_cec
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/california_electric_iou_pou_load_serving_cec/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: Utility
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      utility_type: Type
+      acronym: Acronym
+    state_fixed: CA
+  notes: Independent gate 2026-11-12 set this source back to draft. An earlier gate
+    refused it as a compilation, and the attributes still have no per-utility certificate.
+    Fifty-four electric load-serving entity areas. Type is POU on 48 and IOU
+    on 6. Utility is present on every feature with 53 distinct names. HIFLD_ID is
+    filled on only six features and is not declared. The commission describes its
+    service-area maps as generalized. The item links the commission's conditions of
+    use. Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only
+- source_id: california_natural_gas_cec
+  publisher: California Energy Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/Natural_Gas_Service_Area/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/california_natural_gas_cec
+  layers:
+  - layer: '0'
+    sector: natural_gas
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/california_natural_gas_cec/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: SERVICE
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID_1
+    attribute_fields:
+      utility_type: CATEGORY
+      acronym: ABR
+    state_fixed: CA
+  notes: Independent gate 2026-11-12 set this source back to draft. CATEGORY is null
+    on 1 of 13, and an earlier gate refused this compilation. Thirteen natural gas service-area polygons naming 11 providers. CATEGORY
+    is IOU on 7, POU on 5, and blank on 1. The credits list the commission's GIS unit
+    and the utilities that supplied boundaries. The publisher describes these as generalized
+    areas; they are not legal descriptions. The layer was last edited in December
+    2020. The item links the commission's conditions of use. Cadence is a collection
+    assumption and licence terms require review before redistribution.
+  redistribution: internal_only

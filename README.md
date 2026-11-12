@@ -1,5 +1,11 @@
 # U.S. Utility Data Harmonization, Entity Resolution & Materialized Knowledge Graph
 
+> **Rebuild in progress:** The material below describes the legacy pipeline and
+> its historical outputs. Raw data is no longer tracked in Git, and the prior
+> Silver and Gold outputs have been moved under `UTILITYDATA_HOME/legacy`.
+> See [rebuild setup](docs/rebuild-setup.md), the [source registry](registry/README.md),
+> and [independent review gates](docs/review-gates.md) for the current work.
+
 This repository collects, deduplicates, harmonizes, and materializes public U.S. utility, service-territory, and infrastructure data across **electric, natural gas, drinking water, wastewater, stormwater, telecommunications, and petroleum/liquids** into standardized **Silver** GeoParquet/Parquet tables and **Gold** derived data products, backed by an embedded **Materialized Knowledge Graph** (`gold/knowledge_graph/utility_knowledge_graph.duckdb`).
 
 ---

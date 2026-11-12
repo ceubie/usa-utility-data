@@ -1,0 +1,67 @@
+sources:
+- source_id: texas_water_service_areas_twdb
+  publisher: Texas Water Development Board
+  driver: arcgis
+  url: https://services.twdb.texas.gov/arcgis/rest/services/PWS/Public_Water_Service_Areas/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/texas_water_service_areas_twdb
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/texas_water_service_areas_twdb/layer_metadata.json
+    authority: state_regulator
+    boundary_representation:
+      field: Source
+      values:
+        System: unmodeled
+        CCNBND: unknown
+        PWS: unknown
+        DISTRICTBND: unknown
+        Upload: unknown
+        OTHER: unknown
+        CITYBND: unknown
+        DISTRICT: unknown
+        CCNFAC: unknown
+        FN: unknown
+        CAD: unknown
+        DISTICTBND: unknown
+        DISTRCTBND: unknown
+        LEG: unknown
+        " ": unknown
+      on_null: unknown
+    name_field: PWSName
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: PWSCode
+      pwsid: PWSId
+    on_invalid_pwsid: preserve_raw_without_federal_id
+    state_fixed: TX
+  notes: 'Independent gate 2026-11-12 set this source back to draft because 31 features
+    have empty geometry under an active retail role. Four thousand six hundred twenty-one public water system retail service
+    areas from the Texas Water Service Boundary Viewer. Thirty-one saved features
+    have empty geometry rings and are rejected with a reason; thirty of those thirty-one
+    also have Source equal to a single space, and the other is WOODLANDS WEST (TX0260043,
+    Source OTHER). The board''s viewer guide says the boundaries are the retail water
+    service areas provided by each system''s representative. PWSId is TX plus seven
+    digits, unique and never blank, and PWSCode is a unique integer used as the feature
+    id. Source records how a boundary entered the viewer: System on 2,613 is a boundary
+    submitted by the system and is declared unmodeled. The other values (CCNBND 642,
+    PWS 521, DISTRICTBND 278, Upload 180, OTHER 136, CITYBND 94, DISTRICT 72, CCNFAC
+    42, a single space on 30, FN 8, CAD 2, DISTICTBND 1, DISTRCTBND 1, and LEG 1)
+    are starting boundaries drawn from certificates, district or city limits, or other
+    files that a system has not replaced, and are declared unknown. There is no null
+    Source and no empty-string Source. Active is 1 on every feature. The published
+    field list spells the object id ObjectId and the saved features spell it ObjectID,
+    so neither spelling is declared. SubmitDateTime and LUpDateTime are submission
+    timestamps, not a boundary vintage: 113 features in each field are the placeholder
+    1899-12-30, and SubmitDateTime is 1900-01-01 on 3 more, so no vintage field is
+    declared. Cadence is a collection assumption and licence terms require review
+    before redistribution.'
+  redistribution: internal_only

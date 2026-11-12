@@ -1,0 +1,8 @@
+# Which reviewed sources have a publisher?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?source ?publisher WHERE {
+  ?source a ud:Source ;
+          ud:publisher ?publisher ;
+          ud:reviewed true .
+}
+LIMIT 10

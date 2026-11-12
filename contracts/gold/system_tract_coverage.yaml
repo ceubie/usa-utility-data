@@ -1,0 +1,19 @@
+table: system_tract_coverage
+path: system_tract_coverage.parquet
+primary_key: [system_id, tract_geoid]
+columns:
+  - {name: system_id, type: string, nullable: false, description: Active water system.}
+  - {name: tract_geoid, type: string, nullable: false, description: Census tract GEOID.}
+  - {name: state, type: string, nullable: false, description: State FIPS code of the tract.}
+  - {name: sector, type: string, nullable: false, vocab: sector, description: Sector of the system.}
+  - {name: pop_in_area, type: integer, nullable: false, description: 2020 population of blocks in the tract whose internal point is in the best serving area.}
+  - {name: housing_in_area, type: integer, nullable: false, description: 2020 housing units of those blocks.}
+  - {name: pop_share_of_tract, type: float, nullable: true, description: pop_in_area divided by the tract block population.}
+  - {name: pop_share_of_system, type: float, nullable: true, description: pop_in_area divided by the system block population.}
+  - {name: area_share, type: float, nullable: true, description: Land area of assigned blocks divided by the tract block land area.}
+  - {name: evidence, type: string, nullable: false, description: polygon. Tract rows come from block points; SDWA has no tract geography type.}
+  - {name: authority, type: string, nullable: true, vocab: authority, description: Authority of the best serving area.}
+  - {name: is_served, type: boolean, nullable: false, description: True when pop_share_of_tract is at least 0.01 or pop_in_area is at least 100.}
+  - {name: licence, type: string, nullable: false, vocab: licence, description: Licence of the best serving area.}
+  - {name: source_id, type: string, nullable: false, description: Source of the best serving area.}
+  - {name: in_federal_registry, type: boolean, nullable: false, description: True when the system is in the SDWA registry.}

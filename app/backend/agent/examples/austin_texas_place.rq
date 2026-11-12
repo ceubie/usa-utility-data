@@ -1,0 +1,8 @@
+# Which census place named Austin is in Texas?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?place ?name WHERE {
+  ?place a ud:Place ;
+         ud:name ?name ;
+         ud:state "48" .
+  FILTER(STR(?name) = "Austin")
+}

@@ -1,0 +1,6 @@
+# Which organizations own a utility system?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?organization ?system WHERE {
+  ?organization ud:ownsSystem ?system .
+}
+LIMIT 20

@@ -1,0 +1,6 @@
+# What is the name and 2020 population of Travis County, Texas?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?name ?population WHERE {
+  <http://utilities.local/county/48453> ud:name ?name ;
+                                       ud:pop20 ?population .
+}

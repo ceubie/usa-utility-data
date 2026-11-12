@@ -1,0 +1,17 @@
+# No login. Use only with REQUIRE_AUTH=0 on a machine nobody else can reach.
+# The backend listens on 127.0.0.1:8000 inside this network namespace. Identity
+# headers sent by a client are always removed.
+:8080 {
+	request_header -X-Forwarded-User
+	request_header -X-Proxy-Secret
+
+	handle /api/* {
+		reverse_proxy 127.0.0.1:8000
+	}
+
+	handle {
+		root * /srv
+		try_files {path} /index.html
+		file_server
+	}
+}

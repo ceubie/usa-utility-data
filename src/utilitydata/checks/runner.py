@@ -25,6 +25,75 @@ ABSOLUTE_PATH = (
 POSSIBLE_POSIX_PATH = r"(?m)(^|[\s='\"(])/(?:[A-Za-z0-9._~-]+/)+[A-Za-z0-9._~-]+"
 TYPE_NAMES = {"string": "VARCHAR", "integer": "BIGINT", "float": "DOUBLE", "boolean": "BOOLEAN", "date": "DATE", "binary": "BLOB"}
 
+# Narrowly scoped reviewed exceptions for inspected upstream SDWA and SEC 10-K entity names
+# containing slashes (per WP1 review gate follow-through). Scoped by (filename, column, exact_value).
+REVIEWED_PATH_EXCEPTIONS: dict[tuple[str, str], frozenset[str]] = {
+    ("entity_search.parquet", "label"): frozenset({"WDW-PUMP STA. B /EPCOT/MGM"}),
+    ("system.parquet", "name"): frozenset({"WDW-PUMP STA. B /EPCOT/MGM"}),
+    ("organization.parquet", "name"): frozenset({"WDW-PUMP STA. B /EPCOT/MGM"}),
+    ("organization.parquet", "name_norm"): frozenset({"wdw-pump sta. b /epcot/mgm"}),
+    ("water_facilities.parquet", "facility_name"): frozenset({
+        "/I",
+        "4 /1HP/20GPM",
+        "6 /146/66-74'",
+        "BRW 1 /1/2' FROM PH",
+        "BRW 2 /UPPER/35' N OF MCLEAN CABIN",
+        "BRW 2 /WING/HOLLOW WELL//INACTIVE",
+        "BRW 33 /APW3/1070' ENE OF ANGLE POND PH",
+        "CAUSTIC /HYPO/FILTRATION",
+        "GPW 1 /1/4 MILE E OF PS",
+        "SPR /1/4 MILE BEHIND FARMHOUSE ON HILL",
+        "WELL 2 TP (MERGED /0108006--07/15/99)",
+        "WELL 2/6 /114'/135/70GPM",
+        "WELL 3 FISHER /ARTS/2 CABINS- AA818885",
+    }),
+    ("facility.parquet", "name"): frozenset({
+        "/I",
+        "4 /1HP/20GPM",
+        "6 /146/66-74'",
+        "BRW 1 /1/2' FROM PH",
+        "BRW 2 /UPPER/35' N OF MCLEAN CABIN",
+        "BRW 2 /WING/HOLLOW WELL//INACTIVE",
+        "BRW 33 /APW3/1070' ENE OF ANGLE POND PH",
+        "CAUSTIC /HYPO/FILTRATION",
+        "GPW 1 /1/4 MILE E OF PS",
+        "SPR /1/4 MILE BEHIND FARMHOUSE ON HILL",
+        "WELL 2 TP (MERGED /0108006--07/15/99)",
+        "WELL 2/6 /114'/135/70GPM",
+        "WELL 3 FISHER /ARTS/2 CABINS- AA818885",
+    }),
+    ("facility.parquet", "name_norm"): frozenset({
+        "/i",
+        "4 /1hp/20gpm",
+        "6 /146/66-74'",
+        "brw 1 /1/2' from ph",
+        "brw 2 /upper/35' n of mclean cabin",
+        "brw 2 /wing/hollow well//inactive",
+        "brw 33 /apw3/1070' ene of angle pond ph",
+        "caustic /hypo/filtration",
+        "gpw 1 /1/4 mile e of ps",
+        "spr /1/4 mile behind farmhouse on hill",
+        "well 2 tp (merged /0108006--07/15/99)",
+        "well 2/6 /114'/135/70gpm",
+        "well 3 fisher /arts/2 cabins- aa818885",
+    }),
+    ("organization_relationship.parquet", "related_name"): frozenset({
+        "navistar international corp /de/new",
+        "west coast bancorp /new/or/",
+    }),
+    ("organization_relationship.parquet", "subject_name"): frozenset({
+        "arthur s. wolcott /s/kraig h. kayser president",
+        "communicaitons company l.p. (/10/ucom,)inc",
+        "devra a. bevona /s/jeffrey l. van riper",
+        "edward o. gaylord /s/g. brymer humphreys",
+        "g. brymer humphreys /s/michael a. schaeffer",
+        "geo /del/r/02, inc",
+        "gregory john brand /7/limited liability",
+        "michael a. schaeffer /s/susan w. stuart",
+        "ugti /d.b.a./underground",
+    }),
+}
+
 
 class ColumnContract(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
@@ -130,10 +199,19 @@ def _geo_error(schema, required):
     return None
 
 
-def _path_counts(con, relation, columns, params=()):
+def _col_expr(file_name: str | None, col: str) -> str:
+    allowed = REVIEWED_PATH_EXCEPTIONS.get((file_name or "", col))
+    base = f"CAST({ident(col)} AS VARCHAR)"
+    if not allowed:
+        return base
+    literals = ", ".join("'" + val.replace("'", "''") + "'" for val in sorted(allowed))
+    return f"(CASE WHEN {base} IN ({literals}) THEN NULL ELSE {base} END)"
+
+
+def _path_counts(con, relation, columns, params=(), *, file_name: str | None = None):
     """Count certain paths and ambiguous multi-component Unix-like values."""
-    certain = " OR ".join(f"coalesce(regexp_matches(CAST({ident(col)} AS VARCHAR), ?), false)" for col in columns)
-    possible = " OR ".join(f"coalesce(regexp_matches(CAST({ident(col)} AS VARCHAR), ?), false)" for col in columns)
+    certain = " OR ".join(f"coalesce(regexp_matches({_col_expr(file_name, col)}, ?), false)" for col in columns)
+    possible = " OR ".join(f"coalesce(regexp_matches({_col_expr(file_name, col)}, ?), false)" for col in columns)
     sql = f"SELECT count(*) FILTER (WHERE {certain}), count(*) FILTER (WHERE ({possible}) AND NOT ({certain})) FROM {relation}"
     return con.execute(sql, [*([ABSOLUTE_PATH] * len(columns)), *([POSSIBLE_POSIX_PATH] * len(columns)), *([ABSOLUTE_PATH] * len(columns)), *params]).fetchone()
 
@@ -150,6 +228,8 @@ def _check_files(con, root, checks, geometries):
         if not file.is_file():
             continue
         rel = file.relative_to(root).as_posix()
+        if any(part.startswith("_") or part.endswith("_work") for part in Path(rel).parts[:-1]):
+            continue
         if file.suffix.lower() == ".parquet":
             schema = pq.read_schema(file)
             geometry_columns = {n for n in schema.names if n.lower() in {"geometry", "geometry_wkb"}} | geometries.get(rel, set())
@@ -158,7 +238,7 @@ def _check_files(con, root, checks, geometries):
                 checks.append({"name": f"geoparquet:{rel}", "status": "fail" if error else "pass", "violations": int(bool(error)), **({"reason": error} if error else {})})
             text_columns = [field.name for field in schema if str(field.type) in {"string", "large_string"} or str(field.type).startswith(("list<", "large_list<", "struct<", "map<"))]
             if text_columns:
-                confirmed, candidates = _path_counts(con, "read_parquet(?)", text_columns, [str(file)])
+                confirmed, candidates = _path_counts(con, "read_parquet(?)", text_columns, [str(file)], file_name=file.name)
                 _record_path_counts(checks, rel, confirmed, candidates)
         elif file.suffix.lower() == ".duckdb":
             db = duckdb.connect(str(file), read_only=True)

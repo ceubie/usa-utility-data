@@ -1,0 +1,31 @@
+sources:
+- source_id: electric_transmission_lines_eia
+  publisher: U.S. Energy Information Administration
+  driver: arcgis
+  url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Electric_Power_Transmission_Lines/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/electric_transmission_lines_eia
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: network
+    metadata_path: gis/electric_transmission_lines_eia/layer_metadata.json
+    name_field: OWNER
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      line_status: STATUS
+      line_type: TYPE
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Ninety-four thousand six hundred nineteen transmission lines. OWNER is
+    present on every feature, and the text NOT AVAILABLE is the owner on 17990.
+    STATUS is IN SERVICE on 73684, NOT AVAILABLE on 20819, INACTIVE on 91, and
+    UNDER CONSTRUCTION on 25. TYPE is AC; OVERHEAD on 77715, OVERHEAD on 15773,
+    NOT AVAILABLE on 645, AC; UNDERGROUND on 376, UNDERGROUND on 98, DC; OVERHEAD
+    on 11, and DC; UNDERGROUND on 1. These are lines, not service areas. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only

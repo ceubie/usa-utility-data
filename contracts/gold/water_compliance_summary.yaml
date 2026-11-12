@@ -1,0 +1,18 @@
+table: water_compliance_summary
+path: water_compliance_summary.parquet
+primary_key: [system_id]
+columns:
+  - {name: system_id, type: string, nullable: false, description: System with at least one SDWA violation or enforcement row.}
+  - {name: pwsid, type: string, nullable: false, description: SDWA public water system id.}
+  - {name: violations_3y, type: integer, nullable: false, description: Distinct violations whose noncompliance period overlaps the last 3 years.}
+  - {name: violations_10y, type: integer, nullable: false, description: Distinct violations whose noncompliance period overlaps the last 10 years.}
+  - {name: health_based_3y, type: integer, nullable: false, description: Health-based violations in the 3-year window.}
+  - {name: health_based_10y, type: integer, nullable: false, description: Health-based violations in the 10-year window.}
+  - {name: open_violations, type: integer, nullable: false, description: Violations whose end token is an open-ended non-date and that are still open at the as-of date.}
+  - {name: undated_violations, type: integer, nullable: false, description: "Violations with no begin date, no end date, and no open-ended token."}
+  - {name: outside_10y, type: integer, nullable: false, description: Dated violations that do not overlap the 10-year window.}
+  - {name: enforcement_rows_without_violation, type: integer, nullable: false, description: Rows with no violation id. They are counted and are not treated as violations.}
+  - {name: as_of_date, type: date, nullable: false, description: Last day of the SDWA submission quarter.}
+  - {name: licence, type: string, nullable: false, vocab: licence, description: Licence of the SDWA source.}
+  - {name: source_id, type: string, nullable: false, description: SDWA source id.}
+  - {name: in_federal_registry, type: boolean, nullable: false, description: True when the system is in the SDWA registry.}

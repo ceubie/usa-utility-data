@@ -1,0 +1,470 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ud: <http://utilities.local/ontology/> .
+
+# Query language: SPARQL.
+# Store: Apache Jena Fuseki. The dataset is loaded from N-Triples and queried read-only.
+# Base IRI: http://utilities.local/
+# Geometry, block coverage, monthly series, and individual violations are not in this ontology.
+
+ud:Organization a rdfs:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "An organization that owns or operates utility systems, or that appears in a parent relationship." .
+
+ud:UtilitySystem a rdfs:Class ;
+    rdfs:label "Utility system" ;
+    rdfs:comment "A utility system. Each sector is a subclass." .
+
+ud:WaterSystem a rdfs:Class ;
+    rdfs:label "Water system" ;
+    rdfs:subClassOf ud:UtilitySystem ;
+    rdfs:comment "A drinking-water system." .
+
+ud:ElectricSystem a rdfs:Class ;
+    rdfs:label "Electric system" ;
+    rdfs:subClassOf ud:UtilitySystem ;
+    rdfs:comment "An electric utility system." .
+
+ud:WastewaterSystem a rdfs:Class ;
+    rdfs:label "Wastewater system" ;
+    rdfs:subClassOf ud:UtilitySystem ;
+    rdfs:comment "A wastewater system." .
+
+ud:NaturalGasSystem a rdfs:Class ;
+    rdfs:label "Natural gas system" ;
+    rdfs:subClassOf ud:UtilitySystem ;
+    rdfs:comment "A natural-gas system." .
+
+ud:MultiUtilitySystem a rdfs:Class ;
+    rdfs:label "Multi-utility system" ;
+    rdfs:subClassOf ud:UtilitySystem ;
+    rdfs:comment "A system that serves more than one sector." .
+
+ud:ReferenceSystem a rdfs:Class ;
+    rdfs:label "Reference system" ;
+    rdfs:subClassOf ud:UtilitySystem ;
+    rdfs:comment "A reference-sector system." .
+
+ud:StormwaterSystem a rdfs:Class ;
+    rdfs:label "Stormwater system" ;
+    rdfs:subClassOf ud:UtilitySystem ;
+    rdfs:comment "A stormwater system." .
+
+ud:TelecommunicationsSystem a rdfs:Class ;
+    rdfs:label "Telecommunications system" ;
+    rdfs:subClassOf ud:UtilitySystem ;
+    rdfs:comment "A telecommunications system." .
+
+ud:PetroleumLiquidsSystem a rdfs:Class ;
+    rdfs:label "Petroleum liquids system" ;
+    rdfs:subClassOf ud:UtilitySystem ;
+    rdfs:comment "A petroleum or liquids system." .
+
+ud:ServiceArea a rdfs:Class ;
+    rdfs:label "Service area" ;
+    rdfs:comment "A service-area assertion. Geometry stays in the service-area table." .
+
+ud:Facility a rdfs:Class ;
+    rdfs:label "Facility" ;
+    rdfs:comment "A facility. The geometry blob stays in the facility table." .
+
+ud:County a rdfs:Class ;
+    rdfs:label "County" ;
+    rdfs:comment "A county or county-equivalent, including Connecticut planning regions." .
+
+ud:State a rdfs:Class ;
+    rdfs:label "State" ;
+    rdfs:comment "A state, the District of Columbia, or an island area from the Census state list." .
+
+ud:Place a rdfs:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "A census place." .
+
+ud:Source a rdfs:Class ;
+    rdfs:label "Source" ;
+    rdfs:comment "A reviewed source. Draft sources are not in the graph." .
+
+ud:CountyCoverage a rdfs:Class ;
+    rdfs:label "County coverage" ;
+    rdfs:comment "One system in one county, with population share, evidence, and authority. Block coverage is not this class." .
+
+
+ud:operatesSystem a owl:ObjectProperty ;
+    rdfs:label "operates system" ;
+    rdfs:domain ud:Organization ;
+    rdfs:range ud:UtilitySystem ;
+    rdfs:comment "The organization operates the utility system. The edge exists only when operator_org_id is present." .
+
+ud:ownsSystem a owl:ObjectProperty ;
+    rdfs:label "owns system" ;
+    rdfs:domain ud:Organization ;
+    rdfs:range ud:UtilitySystem ;
+    rdfs:comment "The organization owns the utility system. The edge exists only when owner_org_id is present." .
+
+ud:parentOf a owl:ObjectProperty ;
+    rdfs:label "parent of" ;
+    rdfs:domain ud:Organization ;
+    rdfs:range ud:Organization ;
+    rdfs:comment "The subject organization is a parent of the object organization. SEC parent rows are experimental and incomplete and are not verified. Each exported row keeps its coverage note on a statement node." .
+
+ud:hasServiceArea a owl:ObjectProperty ;
+    rdfs:label "has service area" ;
+    rdfs:domain ud:UtilitySystem ;
+    rdfs:range ud:ServiceArea ;
+    rdfs:comment "The utility system has this service area." .
+
+ud:assertedBy a owl:ObjectProperty ;
+    rdfs:label "asserted by" ;
+    rdfs:range ud:Source ;
+    rdfs:comment "The subject is asserted by this reviewed source." .
+
+ud:inState a owl:ObjectProperty ;
+    rdfs:label "in state" ;
+    rdfs:range ud:State ;
+    rdfs:comment "The subject is in this state. The state IRI uses the USPS code." .
+
+ud:locatedInCounty a owl:ObjectProperty ;
+    rdfs:label "located in county" ;
+    rdfs:range ud:County ;
+    rdfs:comment "A facility or place located in a county. A facility uses the county that contains its coordinates; a coordinate on a boundary uses the lowest county GEOID. A place that spans counties uses the county with the largest block population inside the place, and the lowest county GEOID breaks a tie. Facilities without coordinates have no edge. County service uses the county coverage node and servesCounty, not this link." .
+
+ud:servesCounty a owl:ObjectProperty ;
+    rdfs:label "serves county" ;
+    rdfs:domain ud:UtilitySystem ;
+    rdfs:range ud:County ;
+    rdfs:comment "Shortcut from a utility system to a county. Written only when county coverage is_served is true. Population share, evidence, and authority stay on the county coverage node." .
+
+
+ud:system a owl:ObjectProperty ;
+    rdfs:label "system" ;
+    rdfs:domain ud:CountyCoverage ;
+    rdfs:range ud:UtilitySystem ;
+    rdfs:comment "The utility system this county coverage describes." .
+
+ud:county a owl:ObjectProperty ;
+    rdfs:label "county" ;
+    rdfs:domain ud:CountyCoverage ;
+    rdfs:range ud:County ;
+    rdfs:comment "The county this county coverage describes." .
+
+ud:area_km2 a owl:DatatypeProperty ;
+    rdfs:label "area_km2" ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Column area_km2. Used by ServiceArea." .
+
+ud:area_share a owl:DatatypeProperty ;
+    rdfs:label "area_share" ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Land area of assigned blocks divided by the county block land area. Used by CountyCoverage." .
+
+ud:authority a owl:DatatypeProperty ;
+    rdfs:label "authority" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Authority of the best serving area. Null when the row is tabular only. Used by ServiceArea, CountyCoverage." .
+
+ud:cadence a owl:DatatypeProperty ;
+    rdfs:label "cadence" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column cadence. Used by Source." .
+
+ud:capacity_mw a owl:DatatypeProperty ;
+    rdfs:label "capacity_mw" ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Column capacity_mw. Used by Facility." .
+
+ud:county_geoid a owl:DatatypeProperty ;
+    rdfs:label "county_geoid" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "County GEOID. Connecticut values are planning regions. Used by CountyCoverage, County." .
+
+ud:countyfp a owl:DatatypeProperty ;
+    rdfs:label "countyfp" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column countyfp. Used by County." .
+
+ud:customers a owl:DatatypeProperty ;
+    rdfs:label "customers" ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Column customers. Used by UtilitySystem." .
+
+ud:driver a owl:DatatypeProperty ;
+    rdfs:label "driver" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column driver. Used by Source." .
+
+ud:evidence a owl:DatatypeProperty ;
+    rdfs:label "evidence" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "polygon, tabular, or both. Used by CountyCoverage." .
+
+ud:facility_id a owl:DatatypeProperty ;
+    rdfs:label "facility_id" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column facility_id. Used by Facility." .
+
+ud:facility_type a owl:DatatypeProperty ;
+    rdfs:label "facility_type" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column facility_type. Used by Facility." .
+
+ud:first_seen_release a owl:DatatypeProperty ;
+    rdfs:label "first_seen_release" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column first_seen_release. Used by UtilitySystem." .
+
+ud:footprint_verified a owl:DatatypeProperty ;
+    rdfs:label "footprint_verified" ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Column footprint_verified. Used by ServiceArea." .
+
+ud:geoid a owl:DatatypeProperty ;
+    rdfs:label "geoid" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column geoid. Used by State." .
+
+ud:government_unit_id a owl:DatatypeProperty ;
+    rdfs:label "government_unit_id" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column government_unit_id. Used by Organization." .
+
+ud:grain a owl:DatatypeProperty ;
+    rdfs:label "grain" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column grain. Used by ServiceArea." .
+
+ud:housing_in_area a owl:DatatypeProperty ;
+    rdfs:label "housing_in_area" ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "2020 housing units of those blocks. Used by CountyCoverage." .
+
+ud:in_federal_registry a owl:DatatypeProperty ;
+    rdfs:label "in_federal_registry" ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "True when the system is in the SDWA registry. Used by UtilitySystem, CountyCoverage." .
+
+ud:is_best a owl:DatatypeProperty ;
+    rdfs:label "is_best" ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Column is_best. Used by ServiceArea." .
+
+ud:is_served a owl:DatatypeProperty ;
+    rdfs:label "is_served" ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "True when pop_share_of_county is at least 0.01 or pop_in_area is at least 100. Used by CountyCoverage." .
+
+ud:last_seen_release a owl:DatatypeProperty ;
+    rdfs:label "last_seen_release" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column last_seen_release. Used by UtilitySystem." .
+
+ud:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Column latitude. Used by Facility." .
+
+ud:licence a owl:DatatypeProperty ;
+    rdfs:label "licence" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Licence of the boundary, or the SDWA licence for a tabular-only row. Used by ServiceArea, CountyCoverage, Facility, Source." .
+
+ud:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Column longitude. Used by Facility." .
+
+ud:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column name. Used by Organization, UtilitySystem, Facility, County, State, Place." .
+
+ud:name_norm a owl:DatatypeProperty ;
+    rdfs:label "name_norm" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column name_norm. Used by Organization, Facility." .
+
+ud:namelsad a owl:DatatypeProperty ;
+    rdfs:label "namelsad" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column namelsad. Used by County, Place." .
+
+ud:notes a owl:DatatypeProperty ;
+    rdfs:label "notes" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column notes. Used by Source." .
+
+ud:operator_org_id a owl:DatatypeProperty ;
+    rdfs:label "operator_org_id" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column operator_org_id. Used by UtilitySystem." .
+
+ud:org_id a owl:DatatypeProperty ;
+    rdfs:label "org_id" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column org_id. Used by Organization." .
+
+ud:out_of_scope a owl:DatatypeProperty ;
+    rdfs:label "out_of_scope" ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Column out_of_scope. Used by Source." .
+
+ud:owner_name a owl:DatatypeProperty ;
+    rdfs:label "owner_name" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column owner_name. Used by Facility." .
+
+ud:owner_org_id a owl:DatatypeProperty ;
+    rdfs:label "owner_org_id" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column owner_org_id. Used by UtilitySystem." .
+
+ud:owner_type a owl:DatatypeProperty ;
+    rdfs:label "owner_type" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column owner_type. Used by Organization." .
+
+ud:owner_type_code a owl:DatatypeProperty ;
+    rdfs:label "owner_type_code" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column owner_type_code. Used by Organization." .
+
+ud:part_count a owl:DatatypeProperty ;
+    rdfs:label "part_count" ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Column part_count. Used by ServiceArea." .
+
+ud:place_geoid a owl:DatatypeProperty ;
+    rdfs:label "place_geoid" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column place_geoid. Used by Place." .
+
+ud:placefp a owl:DatatypeProperty ;
+    rdfs:label "placefp" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column placefp. Used by Place." .
+
+ud:pop20 a owl:DatatypeProperty ;
+    rdfs:label "pop20" ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Column pop20. Used by County, State, Place." .
+
+ud:pop_in_area a owl:DatatypeProperty ;
+    rdfs:label "pop_in_area" ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "2020 population of blocks in the county whose internal point is in the best serving area. Used by CountyCoverage." .
+
+ud:pop_share_of_county a owl:DatatypeProperty ;
+    rdfs:label "pop_share_of_county" ;
+    rdfs:range xsd:double ;
+    rdfs:comment "pop_in_area divided by the county block population. Null when the county population is 0. Used by CountyCoverage." .
+
+ud:pop_share_of_system a owl:DatatypeProperty ;
+    rdfs:label "pop_share_of_system" ;
+    rdfs:range xsd:double ;
+    rdfs:comment "pop_in_area divided by the system block population. Null when that population is 0. Used by CountyCoverage." .
+
+ud:population_served a owl:DatatypeProperty ;
+    rdfs:label "population_served" ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Column population_served. Used by UtilitySystem." .
+
+ud:primary_state a owl:DatatypeProperty ;
+    rdfs:label "primary_state" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column primary_state. Used by UtilitySystem." .
+
+ud:publisher a owl:DatatypeProperty ;
+    rdfs:label "publisher" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column publisher. Used by Source." .
+
+ud:redistribution a owl:DatatypeProperty ;
+    rdfs:label "redistribution" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column redistribution. Used by Source." .
+
+ud:reviewed a owl:DatatypeProperty ;
+    rdfs:label "reviewed" ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Column reviewed. Used by Source." .
+
+ud:sales_mwh a owl:DatatypeProperty ;
+    rdfs:label "sales_mwh" ;
+    rdfs:range xsd:double ;
+    rdfs:comment "Column sales_mwh. Used by UtilitySystem." .
+
+ud:sector a owl:DatatypeProperty ;
+    rdfs:label "sector" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Sector of the system. Used by Organization, UtilitySystem, ServiceArea, CountyCoverage, Facility." .
+
+ud:service_area_id a owl:DatatypeProperty ;
+    rdfs:label "service_area_id" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column service_area_id. Used by ServiceArea." .
+
+ud:service_connections a owl:DatatypeProperty ;
+    rdfs:label "service_connections" ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Column service_connections. Used by UtilitySystem." .
+
+ud:source_feature_id a owl:DatatypeProperty ;
+    rdfs:label "source_feature_id" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column source_feature_id. Used by Facility." .
+
+ud:source_id a owl:DatatypeProperty ;
+    rdfs:label "source_id" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Boundary source, or the SDWA source for a tabular-only row. Used by Organization, ServiceArea, CountyCoverage, Facility, Source." .
+
+ud:source_layer a owl:DatatypeProperty ;
+    rdfs:label "source_layer" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column source_layer. Used by Facility." .
+
+ud:source_vintage_date a owl:DatatypeProperty ;
+    rdfs:label "source_vintage_date" ;
+    rdfs:range xsd:date ;
+    rdfs:comment "Column source_vintage_date. Used by ServiceArea." .
+
+ud:state a owl:DatatypeProperty ;
+    rdfs:label "state" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "State FIPS code of the county. Used by Organization, CountyCoverage, Facility, County, State, Place." .
+
+ud:status a owl:DatatypeProperty ;
+    rdfs:label "status" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column status. Used by UtilitySystem, Facility." .
+
+ud:system_id a owl:DatatypeProperty ;
+    rdfs:label "system_id" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Active water system. Used by UtilitySystem, ServiceArea, CountyCoverage." .
+
+ud:system_type a owl:DatatypeProperty ;
+    rdfs:label "system_type" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column system_type. Used by UtilitySystem." .
+
+ud:unit_count a owl:DatatypeProperty ;
+    rdfs:label "unit_count" ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Column unit_count. Used by Facility." .
+
+ud:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column url. Used by Source." .
+
+ud:usps a owl:DatatypeProperty ;
+    rdfs:label "usps" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column usps. Used by State." .
+
+ud:zone_role a owl:DatatypeProperty ;
+    rdfs:label "zone_role" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Column zone_role. Used by ServiceArea." .

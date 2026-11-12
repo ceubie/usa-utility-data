@@ -1,0 +1,13 @@
+role: onsite_noncommunity
+eligible_for_point_lookup: true
+eligible_for_coverage: true
+require_active_system: true
+require_unique_verified_system_identity: true
+require_service_footprint_verification: true
+estimated_location_is_verification: false
+unverified_or_conflicting: preserve_and_review
+display_requirements:
+  - distinct_onsite_label
+  - boundary_authority
+  - source_vintage
+  - modeled_or_estimated_status

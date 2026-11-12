@@ -1,0 +1,8 @@
+# Which electric systems serve a county?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?system ?name ?county WHERE {
+  ?system a ud:ElectricSystem ;
+          ud:name ?name ;
+          ud:servesCounty ?county .
+}
+LIMIT 20

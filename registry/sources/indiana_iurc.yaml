@@ -1,0 +1,39 @@
+sources:
+- source_id: indiana_electric_territories_iurc
+  publisher: Indiana Utility Regulatory Commission
+  driver: arcgis
+  url: https://gisdata.in.gov/server/rest/services/Hosted/IURC_Prod_Boundaries_View/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/indiana_electric_territories_iurc
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/indiana_electric_territories_iurc/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: utilityname
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: objectid
+    attribute_fields:
+      utility_type: utilitytype
+      commission_utility_id: utilty_id
+    state_fixed: IN
+  notes: Independent gate 2026-11-12 set this source back to draft. utilityname and
+    utilitytype are null on 12 of 130 polygons, so the retail role is not reviewed.
+    One hundred thirty electric service territory polygons published by the commission.
+    utilitytype is Municipal on 73, REMC on 40, and IOU on 5. Twelve polygons have
+    no utility name, type, or commission id. objectid and globalid are present on
+    those twelve, so they are not empty features. They are kept and held for review.
+    A blank name does not match an EIA utility, and no provider is created for a
+    polygon that has no name. Indiana assigns electric service areas by
+    statute. Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only

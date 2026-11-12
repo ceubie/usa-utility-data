@@ -7,6 +7,7 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
+  redistribution: internal_only
   reviewed: true
   paths:
   - gis/arkansas_water_system_areas_adh
@@ -22,5 +23,90 @@ sources:
     authority: state_regulator
     state_fixed: AR
     on_missing_name: preserve_and_review
-  notes: Cadence is a conservative collection assumption; licence terms require verification
+  notes: Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Water system boundaries; no PWSID field is present.
+- source_id: arkansas_electric_providers_gis
+  publisher: Arkansas GIS Office
+  driver: arcgis
+  url: https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/MapServer/21
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/arkansas_electric_providers_gis
+  layers:
+  - layer: '21'
+    sector: electric
+    grain: facility
+    metadata_path: gis/arkansas_electric_providers_gis/layer_metadata.json
+    name_field: name
+    id_fields:
+      feature_id: objectid
+    state_fixed: AR
+  notes: Forty-one electric-provider office locations. name is blank on 1 feature.
+    These are offices, not service territories. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: arkansas_electric_substations_gis
+  publisher: Arkansas GIS Office
+  driver: arcgis
+  url: https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/MapServer/18
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/arkansas_electric_substations_gis
+  layers:
+  - layer: '18'
+    sector: electric
+    grain: facility
+    metadata_path: gis/arkansas_electric_substations_gis/layer_metadata.json
+    id_fields:
+      feature_id: objectid
+    attribute_fields:
+      facility_type: type
+      county: county
+    state_fixed: AR
+  notes: Eight hundred seventy-one features. type is Power Substation on every
+    feature. There is no substation name or utility name. county is blank on 1
+    feature. These are substation locations, not service territories. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: arkansas_electric_territories_gis
+  publisher: Arkansas GIS Office
+  driver: arcgis
+  url: https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/MapServer/12
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/arkansas_electric_territories_gis
+  layers:
+  - layer: '12'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/arkansas_electric_territories_gis/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: name
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: objectid
+    attribute_fields:
+      compiled_from: source
+    state_fixed: AR
+  notes: Reverted to draft on 2026-11-12 (decision D1). Not on the approved promotion
+    list. An earlier gate left it draft as a compilation whose publisher does not
+    establish each utility's authority. The declaration is retained so it can be
+    opted in. Thirty-one electric utility territory polygons naming 30 utilities.
+    source is blank on one. The publisher describes these as generalized areas; they
+    are not legal descriptions. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only

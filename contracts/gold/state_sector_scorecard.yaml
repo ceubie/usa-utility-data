@@ -1,0 +1,15 @@
+table: state_sector_scorecard
+path: state_sector_scorecard.parquet
+primary_key: [state, sector]
+columns:
+  - {name: state, type: string, nullable: false, description: "USPS state code, the literal NA when the system has no primary state, or another primary-state code that is not a USPS code."}
+  - {name: sector, type: string, nullable: false, vocab: sector, description: Sector.}
+  - {name: population, type: integer, nullable: true, description: Block population of the state. Null when the row is not a census state.}
+  - {name: population_in_nonmodeled_boundary, type: integer, nullable: true, description: Population of distinct blocks inside a best area whose representation is unmodeled.}
+  - {name: share_population_nonmodeled, type: float, nullable: true, description: Non-modeled population divided by the state block population.}
+  - {name: median_boundary_age_days, type: float, nullable: true, description: "Median age in days of dated best areas that cover the state, relative to the SDWA quarter end."}
+  - {name: boundaries_with_vintage, type: integer, nullable: false, description: Best areas in the state median that have a vintage date.}
+  - {name: boundaries_missing_vintage, type: integer, nullable: false, description: Best areas in the state median that have no vintage date.}
+  - {name: active_systems, type: integer, nullable: false, description: Active systems whose primary state is this row.}
+  - {name: systems_with_no_boundary, type: integer, nullable: false, description: Active systems in this row with no best serving area.}
+  - {name: as_of_date, type: date, nullable: false, description: Last day of the SDWA submission quarter.}

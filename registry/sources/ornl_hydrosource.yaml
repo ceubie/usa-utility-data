@@ -1,0 +1,48 @@
+sources:
+- source_id: ornl_hydrosource_ferc_mitigation
+  publisher: Oak Ridge National Laboratory
+  driver: null
+  url: null
+  cadence: null
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  storage: home
+  paths:
+  - reference/ornl_hydrosource/hydropower_facilities.parquet
+  layers:
+  - layer: hydropower_facilities.parquet
+    sector: electric
+    grain: facility
+  notes: >-
+    Not a facility input. 1,401 rows, 1,017 FERC docket numbers, and 997 project
+    names. FID is unique, but 90 rows repeat the same docket, project name, and
+    coordinates. Method is N/A on 742, NLP Assisted on 624, and Manual on 35.
+    The table is a mitigation extract of FERC projects, not one row per plant,
+    and the licensed projects are already represented by the FERC hydropower
+    sources. It stays draft and is not read.
+  redistribution: internal_only
+- source_id: ornl_hydrosource_relicensing_pipeline
+  publisher: Oak Ridge National Laboratory
+  driver: null
+  url: null
+  cadence: null
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  storage: home
+  paths:
+  - reference/ornl_hydrosource/relicensing_pipeline.parquet
+  layers:
+  - layer: relicensing_pipeline.parquet
+    sector: electric
+    grain: facility
+  notes: >-
+    Not a facility input. 275 relicensing proceedings and 274 FERC dockets.
+    Status is Issued Relicense on 128, Pending Relicense on 89, Issued Surrender
+    on 33, Pending Surrender on 17, Surrender withdrawn on 6, and Converted to
+    Exemption on 2. Every row has project type CH. This is a proceeding list,
+    not a plant inventory or a service area. It stays draft and is not read.
+  redistribution: internal_only

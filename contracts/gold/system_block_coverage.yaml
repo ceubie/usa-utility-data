@@ -1,0 +1,19 @@
+table: system_block_coverage
+path: system_block_coverage.parquet
+primary_key: [system_id, block_geoid]
+columns:
+  - {name: system_id, type: string, nullable: false, description: Active system whose best serving area covers the block internal point.}
+  - {name: block_geoid, type: string, nullable: false, description: Census 2020 block GEOID.}
+  - {name: state, type: string, nullable: false, description: State FIPS code from the block.}
+  - {name: county_geoid, type: string, nullable: false, description: County GEOID from the block. Connecticut uses planning regions.}
+  - {name: tract_geoid, type: string, nullable: false, description: Census tract GEOID from the block.}
+  - {name: place_geoid, type: string, nullable: true, description: Census place GEOID when the block is in a place.}
+  - {name: pop20, type: integer, nullable: false, description: 2020 block population.}
+  - {name: housing20, type: integer, nullable: false, description: 2020 block housing units.}
+  - {name: aland20, type: integer, nullable: false, description: 2020 block land area in square meters.}
+  - {name: service_area_id, type: string, nullable: false, description: Best serving area that covers the block.}
+  - {name: source_id, type: string, nullable: false, description: Source of that best serving area.}
+  - {name: authority, type: string, nullable: false, vocab: authority, description: Authority of the best serving area.}
+  - {name: licence, type: string, nullable: false, vocab: licence, description: Licence of the best serving area.}
+  - {name: sector, type: string, nullable: false, vocab: sector, description: Sector of the system.}
+  - {name: in_federal_registry, type: boolean, nullable: false, description: True when the system is in the SDWA registry.}

@@ -1,0 +1,71 @@
+sources:
+- source_id: colorado_metro_water_recovery_members
+  publisher: Metro Water Recovery
+  driver: arcgis
+  url: https://gis.metrowaterrecovery.com/hosting/rest/services/MetroMemebers/MapServer/2
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/colorado_metro_water_recovery_members
+  layers:
+  - layer: '2'
+    sector: wastewater
+    grain: service_area
+    role: regional_wholesale_or_district
+    metadata_path: gis/colorado_metro_water_recovery_members/layer_metadata.json
+    authority: utility_direct
+    boundary_representation: unknown
+    name_field: LABEL
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      treatment_plant: PLANT
+    state_fixed: CO
+  notes: Sixty-six member polygons. LABEL has 62 names, and four of those names
+    occur twice. PLANT is Hite on 58 features and NTP on 8. These are member areas
+    of the regional wastewater district, not retail drinking-water service. Cadence
+    is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: colorado_metro_water_recovery_sewer_devices
+  publisher: Metro Water Recovery
+  driver: arcgis
+  url: https://gis.metrowaterrecovery.com/hosting/rest/services/MetroMemebers/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/colorado_metro_water_recovery_sewer_devices
+  layers:
+  - layer: '0'
+    sector: wastewater
+    grain: facility
+    metadata_path: gis/colorado_metro_water_recovery_sewer_devices/layer_metadata.json
+    name_field: name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      lifecycle: lifecyclestatus
+      owner: ownedby
+    state_fixed: CO
+  notes: Four thousand five hundred thirty-four named sewer devices. lifecyclestatus
+    is 8 on every feature, and the metadata domain names that code IN SERVICE.
+    ownedby is 1 on every feature, and the domain names that code METRO WATER
+    RECOVERY. The ASSETTYPE field domain is null. Asset-group subtype domains name
+    the 20 observed codes. 301 is MANHOLE on 3875, 102 is STOP LOG on 233, 162 is
+    METERING FACILITY on 128, 341 is DIVERSION STRUCTURE on 83, 242 is SIPHON POINT
+    OF INFLECTION on 74, 105 is WEIR STRUCTURE on 23, 245 is FORCE MAIN POINT OF
+    INFLECTION on 23, 981 is TEST STATION on 17, 241 is BLIND CONNECTION on 13, 104
+    is SLIDE PLATE on 12, 343 is DIVERSION STRUCTURE SIPHON INLET on 12, 344 is
+    DIVERSION STRUCTURE SIPHON OUTLET on 11, 81 is CLEANOUT on 7, 342 is DIVERSION
+    STRUCTURE METERING FACILITY on 5, 106 is SLIDE GATE on 4, 352 is SIPHON OUTLET
+    on 4, 103 is STOP LOG DIVERSION on 3, 211 is LIFT STATION on 3, 351 is SIPHON
+    INLET on 3, and 243 is FORCE MAIN CONNECTION on 1. These are devices, not
+    service areas. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only

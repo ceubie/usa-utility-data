@@ -1,0 +1,81 @@
+sources:
+- source_id: kentucky_natural_gas_distribution_areas
+  publisher: Kentucky Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Gas_Distribution_Utilities/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/kentucky_natural_gas_distribution_areas
+  layers:
+  - layer: '0'
+    sector: natural_gas
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/kentucky_natural_gas_distribution_areas/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      regulation: PSC_Reg
+    state_fixed: KY
+  notes: >-
+    Eighty-six distribution areas and 85 names. PSC_Reg is Safety Only on 50
+    features and Rates & Safety on 36. TYPE_CODE is 320 on the safety-only
+    features and 300 on the rates-and-safety features. Data_Date is blank on 2
+    features. There is no separate service-status field. Cadence is a collection
+    assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: kentucky_electric_service_areas_dgi
+  publisher: Kentucky Public Service Commission and Kentucky Division of Geographic
+    Information
+  driver: arcgis
+  url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Electric_Service_Areas_WGS84WM/MapServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/kentucky_electric_service_areas_dgi
+  layers:
+  - layer: '1'
+    sector: electric
+    grain: service_area
+    role_field:
+      field: ELEC_TYPE
+      values:
+        Investor Owned: active_retail_service
+        RECC: active_retail_service
+        Municipal: active_retail_service
+        TVA: active_retail_service
+        Multi-Service A: review_required
+      on_null: review_required
+    metadata_path: gis/kentucky_electric_service_areas_dgi/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: COMPANY_NA
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      utility_type: ELEC_TYPE
+      commission_utility_id: UTIL_ID
+    state_fixed: KY
+  notes: Reverted to draft on 2026-11-12 (decision D1). Not on the approved promotion
+    list. An earlier gate left it draft as a compilation whose publisher does not
+    establish each utility's authority. The declaration is retained so it can be
+    opted in. One thousand two hundred seventy-nine certified electric territory
+    polygons naming 58 companies. ELEC_TYPE is Investor Owned on 745, RECC on 364,
+    Municipal on 132, TVA on 24, and Multi-Service A on 14. A multi-service area is
+    shared by more than one supplier and is held for review instead of being assigned
+    to the named company. Kentucky certifies electric territories by statute and the
+    credits name the Public Service Commission. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only

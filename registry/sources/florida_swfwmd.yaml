@@ -7,6 +7,7 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
+  redistribution: internal_only
   reviewed: true
   paths:
   - gis/florida_swfwmd_water_service_areas
@@ -14,7 +15,6 @@ sources:
   - layer: '16'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/florida_swfwmd_water_service_areas/layer_metadata.json
     name_field: UTILITYNAME
     id_fields:
@@ -24,6 +24,83 @@ sources:
     vintage_field: GIS_UPDATE_DT
     state_fixed: FL
     on_missing_name: preserve_and_review
-  notes: Cadence is a conservative collection assumption; licence terms require verification
+    attribute_fields:
+      duplicate_analysis_flag: AREAFLAG
+      source_area_name: SERVICEAREANAME
+    role_matrix:
+      fields:
+      - TYPE
+      - AREAFLAG
+      cases:
+      - values:
+        - null
+        - null
+        role: review_required
+      - values:
+        - DIGITIZED FROM HARDCOPY (UTILITY)
+        - Y
+        role: review_required
+      - values:
+        - NSA-D
+        - N
+        role: not_serviced_or_excluded
+      - values:
+        - NSA-ND
+        - N
+        role: not_serviced_or_excluded
+      - values:
+        - OVERLAP
+        - N
+        role: review_required
+      - values:
+        - PARTIALLY WHOLESALE SUPPLIED
+        - Y
+        role: active_retail_service
+      - values:
+        - PWSS
+        - Y
+        role: active_retail_service
+      - values:
+        - TOTALLY SELF-SUPPLIED
+        - N
+        role: review_required
+      - values:
+        - TOTALLY SELF-SUPPLIED
+        - Y
+        role: active_retail_service
+      - values:
+        - 'TOTALLY SELF-SUPPLIED '
+        - Y
+        role: active_retail_service
+      - values:
+        - TOTALLY WHOLESALE SUPPLIED - EXCLUSIVE
+        - Y
+        role: active_retail_service
+      - values:
+        - TSS
+        - N
+        role: review_required
+      - values:
+        - TSS
+        - Y
+        role: active_retail_service
+      - values:
+        - TWSS-E
+        - N
+        role: review_required
+      - values:
+        - TWSS-E
+        - Y
+        role: active_retail_service
+      - values:
+        - TWSS-NE
+        - Y
+        role: active_retail_service
+  notes: Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. District retail boundaries include wholesale-supplied systems;
-    field date is a GIS update, not necessarily boundary vintage.
+    field date is a GIS update, not necessarily boundary vintage. TYPE explicitly
+    distinguishes retail, non-served and review-needed records. Wholesale-supplied
+    retailers are not automatically wholesalers; AREAFLAG is retained for duplicate
+    analysis. The exact TYPE and AREAFLAG matrix holds duplicate-analysis exclusions
+    and uncertain areas for review. The frozen data include an explicitly UNSERVED
+    and an EXPIRED area in the excluded flag group.

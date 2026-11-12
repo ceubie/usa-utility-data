@@ -7,6 +7,7 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
+  redistribution: internal_only
   reviewed: true
   paths:
   - gis/alaska_water_areas_rca
@@ -24,5 +25,232 @@ sources:
     vintage_field: AsOfDate
     state_fixed: AK
     on_missing_name: preserve_and_review
-  notes: Cadence is a conservative collection assumption; licence terms require verification
+  notes: Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Certificated areas; AsOfDate is a layer as-of date.
+- source_id: alaska_water_community_rca
+  publisher: Regulatory Commission of Alaska
+  driver: arcgis
+  url: https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/81
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alaska_water_community_rca
+  layers:
+  - layer: '81'
+    sector: water
+    grain: admin_association
+    metadata_path: gis/alaska_water_community_rca/layer_metadata.json
+    name_field: UtilityName
+    id_fields:
+      feature_id: ObjectID
+    attribute_fields:
+      community_name: CommunityName
+      community_id: CommunityID
+      intersection_type: IntersectType
+      utility_type: UtilityType
+      certificate_number: CertificateNumber
+    state_fixed: AK
+    authority: state_regulator
+    vintage_field: AsOfDate
+  notes: Points represent utility/community intersections and do not establish service
+    throughout a community. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only
+- source_id: alaska_electric_areas_rca
+  publisher: Regulatory Commission of Alaska
+  driver: arcgis
+  url: https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/90
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alaska_electric_areas_rca
+  layers:
+  - layer: '90'
+    sector: electric
+    grain: service_area
+    role: certified_franchise_territory
+    metadata_path: gis/alaska_electric_areas_rca/layer_metadata.json
+    name_field: UtilityName
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+      state_id: CertificateNumber
+    authority: state_regulator
+    vintage_field: AsOfDate
+    state_fixed: AK
+    attribute_fields:
+      utility_type: UtilityType
+  notes: Certificated electric areas. UtilityType is Electric on all 215 features,
+    and every feature has a utility name and certificate number. AsOfDate is a layer
+    as-of timestamp. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only
+- source_id: alaska_electric_community_rca
+  publisher: Regulatory Commission of Alaska
+  driver: arcgis
+  url: https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/80
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alaska_electric_community_rca
+  layers:
+  - layer: '80'
+    sector: electric
+    grain: admin_association
+    metadata_path: gis/alaska_electric_community_rca/layer_metadata.json
+    name_field: UtilityName
+    id_fields:
+      feature_id: ObjectID
+    attribute_fields:
+      community_name: CommunityName
+      community_id: CommunityID
+      intersection_type: IntersectType
+      utility_type: UtilityType
+      certificate_number: CertificateNumber
+    state_fixed: AK
+    authority: state_regulator
+    vintage_field: AsOfDate
+  notes: Points represent electric utility/community intersections and do not establish
+    service throughout a community. The saved identifier is ObjectID, not OBJECTID.
+    Cadence is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: alaska_natural_gas_areas_rca
+  publisher: Regulatory Commission of Alaska
+  driver: arcgis
+  url: https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/93
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alaska_natural_gas_areas_rca
+  layers:
+  - layer: '93'
+    sector: natural_gas
+    grain: service_area
+    role: certified_franchise_territory
+    metadata_path: gis/alaska_natural_gas_areas_rca/layer_metadata.json
+    name_field: UtilityName
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+      state_id: CertificateNumber
+    authority: state_regulator
+    vintage_field: AsOfDate
+    state_fixed: AK
+    attribute_fields:
+      utility_type: UtilityType
+  notes: Eighteen certificated natural-gas areas for six named utilities. UtilityType
+    is Natural Gas on every feature. AsOfDate is a layer as-of timestamp. Cadence
+    is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: alaska_natural_gas_community_rca
+  publisher: Regulatory Commission of Alaska
+  driver: arcgis
+  url: https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/83
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alaska_natural_gas_community_rca
+  layers:
+  - layer: '83'
+    sector: natural_gas
+    grain: admin_association
+    metadata_path: gis/alaska_natural_gas_community_rca/layer_metadata.json
+    name_field: UtilityName
+    id_fields:
+      feature_id: ObjectID
+    attribute_fields:
+      community_name: CommunityName
+      community_id: CommunityID
+      intersection_type: IntersectType
+      utility_type: UtilityType
+      certificate_number: CertificateNumber
+    state_fixed: AK
+    authority: state_regulator
+    vintage_field: AsOfDate
+  notes: Points represent natural-gas utility/community intersections and do not establish
+    service throughout a community. The saved identifier is ObjectID, not OBJECTID.
+    Cadence is a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: alaska_sewer_areas_rca
+  publisher: Regulatory Commission of Alaska
+  driver: arcgis
+  url: https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/92
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alaska_sewer_areas_rca
+  layers:
+  - layer: '92'
+    sector: wastewater
+    grain: service_area
+    metadata_path: gis/alaska_sewer_areas_rca/layer_metadata.json
+    name_field: UtilityName
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+      state_id: CertificateNumber
+    authority: state_regulator
+    vintage_field: AsOfDate
+    state_fixed: AK
+    role_field:
+      field: UtilityType
+      values:
+        Sewer: certified_franchise_territory
+        Sewer - PC: review_required
+      on_null: reject
+  notes: UtilityType is Sewer on 71 features and Sewer - PC on 62. The layer does
+    not define PC, so those certificates stay in review and are not retail. AsOfDate
+    is a layer as-of timestamp. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only
+- source_id: alaska_sewer_community_rca
+  publisher: Regulatory Commission of Alaska
+  driver: arcgis
+  url: https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/82
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/alaska_sewer_community_rca
+  layers:
+  - layer: '82'
+    sector: wastewater
+    grain: admin_association
+    metadata_path: gis/alaska_sewer_community_rca/layer_metadata.json
+    name_field: UtilityName
+    id_fields:
+      feature_id: ObjectID
+    attribute_fields:
+      community_name: CommunityName
+      community_id: CommunityID
+      intersection_type: IntersectType
+      utility_type: UtilityType
+      certificate_number: CertificateNumber
+    state_fixed: AK
+    authority: state_regulator
+    vintage_field: AsOfDate
+  notes: Points represent sewer utility/community intersections and do not establish
+    service throughout a community. UtilityType includes Sewer and Sewer - PC. The
+    saved identifier is ObjectID, not OBJECTID. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only

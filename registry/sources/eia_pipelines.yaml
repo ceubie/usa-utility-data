@@ -1,0 +1,108 @@
+sources:
+- source_id: crude_oil_pipelines_eia
+  publisher: U.S. Energy Information Administration
+  driver: arcgis
+  url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Crude_Oil_Trunk_Pipelines_1/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/crude_oil_pipelines_eia
+  layers:
+  - layer: '0'
+    sector: petroleum_liquids
+    grain: network
+    metadata_path: gis/crude_oil_pipelines_eia/layer_metadata.json
+    name_field: Opername
+    id_fields:
+      feature_id: FID
+    attribute_fields:
+      pipeline_name: Pipename
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Two hundred thirty-six crude-oil pipeline features. Opername and Pipename
+    are present on every feature. Petroleum pipelines are outside utility retail
+    scope. Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only
+- source_id: petroleum_products_pipelines_eia
+  publisher: U.S. Energy Information Administration
+  driver: arcgis
+  url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Petroleum_Products_Pipelines_1/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/petroleum_products_pipelines_eia
+  layers:
+  - layer: '0'
+    sector: petroleum_liquids
+    grain: network
+    metadata_path: gis/petroleum_products_pipelines_eia/layer_metadata.json
+    name_field: Opername
+    id_fields:
+      feature_id: FID
+    attribute_fields:
+      pipeline_name: Pipename
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Three hundred twenty-nine petroleum-product pipeline features. Opername and
+    Pipename are present on every feature. Petroleum pipelines are outside utility
+    retail scope. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only
+- source_id: hydrocarbon_gas_liquids_pipelines_eia
+  publisher: U.S. Energy Information Administration
+  driver: arcgis
+  url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Hydrocarbon_Gas_Liquids_Pipelines_1/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/hydrocarbon_gas_liquids_pipelines_eia
+  layers:
+  - layer: '0'
+    sector: petroleum_liquids
+    grain: network
+    metadata_path: gis/hydrocarbon_gas_liquids_pipelines_eia/layer_metadata.json
+    name_field: Opername
+    id_fields:
+      feature_id: FID
+    attribute_fields:
+      pipeline_name: Pipename
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. One hundred thirty-three hydrocarbon gas-liquids pipeline features. Opername
+    and Pipename are present on every feature. These liquids pipelines are outside
+    utility retail scope. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only
+- source_id: natural_gas_pipelines_eia
+  publisher: U.S. Energy Information Administration
+  driver: arcgis
+  url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Natural_Gas_Interstate_and_Intrastate_Pipelines_1/FeatureServer/0
+  cadence: irregular
+  licence: internal_or_no_redistribution
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/natural_gas_pipelines_eia
+  layers:
+  - layer: '0'
+    sector: natural_gas
+    grain: network
+    metadata_path: gis/natural_gas_pipelines_eia/layer_metadata.json
+    name_field: Operator
+    id_fields:
+      feature_id: FID
+    attribute_fields:
+      pipe_class: TYPEPIPE
+      operating_status: Status
+  notes: Licence review on 2026-11-12 found the re-fetched text does not allow redistribution. Thirty-two thousand eight hundred ninety-two natural-gas pipeline features.
+    Operator is present on every feature. Status is Operating on every feature.
+    TYPEPIPE is Interstate on 17996 and Intrastate on 14896. Forty-one features have
+    no geometry, and those empty geometries are kept. These are pipelines, not
+    retail service areas. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only

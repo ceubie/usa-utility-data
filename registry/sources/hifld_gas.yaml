@@ -1,0 +1,52 @@
+sources:
+- source_id: natural_gas_ldc_territories_hifld
+  publisher: U.S. Department of Homeland Security, Homeland Infrastructure Foundation-Level
+    Data
+  driver: arcgis
+  url: https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Natural_Gas_Local_Distribution_Company_Service_Territories/FeatureServer/0
+  cadence: frozen
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/natural_gas_ldc_territories_hifld
+  layers:
+  - layer: '0'
+    sector: natural_gas
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/natural_gas_ldc_territories_hifld/layer_metadata.json
+    authority: federal_modeled
+    boundary_representation: modeled
+    name_field: NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      territory_id: SVCTERID
+      utility_type: TYPE
+      company_id: COMPID
+      holding_company: HOLDINGCO
+      positional_basis: POSREL
+      compiled_from: SOURCE
+    state_field: LDC_STATE
+    mailing_state_field: STATE
+    vintage_field: SOURCEDATE
+  notes: Independent gate 2026-11-12 set this source back to draft. POSREL is THIRD
+    PARTY on 1259 and NOTIONAL on 35, and an earlier gate refused this compilation.
+    One thousand two hundred ninety-four local distribution company territories
+    compiled nationally, last edited February 2021 with most rows dated December 2017.
+    It is the only national gas territory file. NAME is present on every polygon and
+    is distinct within a state. LDC_STATE is the state of the territory; STATE is
+    the company's mailing state and differs on 82. TYPE is MUNICIPAL on 967, INVESTOR-OWNED
+    on 209, PRIVATE on 69, OTHER on 29, and COOPERATIVE on 20. POSREL is THIRD PARTY
+    on 1,259 and NOTIONAL on 35, so every boundary is a compiled approximation and
+    none is a utility or regulator filing; the layer is declared modeled and ranks
+    below any state layer. COMPID is the text NOT AVAILABLE on 40. Twelve COMPID
+    values occur more than once, covering 63 rows, and no saved value matches an
+    EIA-176 company id in this snapshot, so it is kept
+    as an attribute and not used as an identifier. Volume and customer columns use
+    -999 for missing and are not declared. The layer has not been edited since February
+    2021, so cadence is frozen. Licence terms require review before redistribution.
+  redistribution: internal_only

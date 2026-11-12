@@ -4,7 +4,7 @@ sources:
   driver: arcgis
   url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/13
   cadence: irregular
-  licence: attribution_required
+  licence: unknown
   out_of_scope: false
   superseded_by: null
   reviewed: true
@@ -30,7 +30,332 @@ sources:
       pwsid: PWID
     on_invalid_pwsid: preserve_raw_without_federal_id
     state_fixed: NJ
-  notes: State metadata describes a 2026 edition while this layer description cites
+  notes: Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. State metadata describes a 2026 edition while this layer description cites
     2017; do not assert a single source vintage or supersede the 2026 archives without
     equivalence review. Attribution and terms must be resolved before sharing.
+  redistribution: internal_only
+- source_id: new_jersey_solar_pv_by_county_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/15
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_solar_pv_by_county_dep
+  layers:
+  - layer: '15'
+    sector: electric
+    grain: admin_association
+    metadata_path: gis/new_jersey_solar_pv_by_county_dep/layer_metadata.json
+    name_field: COUNTY
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: NJ
+  notes: Twenty-one New Jersey county polygons. The attributes are installation
+    counts and kilowatts by county, not utility territories or individual plant
+    locations. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_power_plants_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/20
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_power_plants_dep
+  layers:
+  - layer: '20'
+    sector: electric
+    grain: facility
+    metadata_path: gis/new_jersey_power_plants_dep/layer_metadata.json
+    name_field: PLANT_NAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      utility_name: UTILITY_NAME
+      primary_source: PRIMSOURCE
+      grid_supply: GRIDSUPPLY
+    state_fixed: NJ
+  notes: Seventy-seven named plants above the layer's stated 1 megawatt threshold.
+    PRIMSOURCE is Natural Gas on 47, Biomass on 16, Petroleum on 5, and two each
+    for Nuclear, Coal, Hydroelectric, and Wind, plus Pumped Storage on 1.
+    GRIDSUPPLY is Y on 60 and N on 17. STATENAME is New Jersey on every feature.
+    These are plants, not service areas. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_rggi_power_generating_units_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/24
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_rggi_power_generating_units_dep
+  layers:
+  - layer: '24'
+    sector: electric
+    grain: facility
+    facility_level: unit
+    facility_type_fixed: generating_unit
+    metadata_path: gis/new_jersey_rggi_power_generating_units_dep/layer_metadata.json
+    name_field: PLANT_NAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      unit_status: STATUS
+      fuel: FUEL
+    state_fixed: NJ
+  notes: One hundred sixty-six generating units at 46 plants. STATUS is Retired on
+    87 and Operating on 79. FUEL is Natural Gas on 129, Diesel Oil on 27, and Coal
+    on 10. STATE is NJ on every feature. These are units, not service areas.
+    Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_community_solar_projects_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/26
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_community_solar_projects_dep
+  layers:
+  - layer: '26'
+    sector: electric
+    grain: facility
+    metadata_path: gis/new_jersey_community_solar_projects_dep/layer_metadata.json
+    name_field: APPLICANT
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      program_year: PROGRAMYEAR
+    state_fixed: NJ
+  notes: One hundred twenty-five community-solar project points and 48 applicant
+    names. DOCKET_NO is blank on 30 features and EDC is blank on 1. PROGRAMYEAR is
+    Pilot 2 on 75, CSEP on 30, and Pilot 1 on 20. These are project locations, not
+    utility territories. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_combined_sewer_overflow_outfalls_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_combined_sewer_overflow_outfalls_dep
+  layers:
+  - layer: '0'
+    sector: wastewater
+    grain: facility
+    metadata_path: gis/new_jersey_combined_sewer_overflow_outfalls_dep/layer_metadata.json
+    name_field: PERMITTEE
+    id_fields:
+      feature_id: OBJECTID
+      outfall_id: CSO_ID
+    attribute_fields:
+      outfall_status: CSO_STAT
+    state_fixed: NJ
+  notes: Two hundred eleven combined-sewer outfalls and 21 permittees. CSO_STAT is
+    Active on 207 features and Sealed on 4. These are outfall points, not service
+    areas. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_power_plant_parcels_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/19
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_power_plant_parcels_dep
+  layers:
+  - layer: '19'
+    sector: electric
+    grain: facility
+    metadata_path: gis/new_jersey_power_plant_parcels_dep/layer_metadata.json
+    name_field: PLANT_NAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      utility_name: UTILITY_NAME
+      primary_source: PRIMSOURCE
+      grid_supply: GRIDSUPPLY
+    state_fixed: NJ
+  notes: Seventy-seven plant parcels, one named plant each. PRIMSOURCE is Natural Gas
+    on 47, Biomass on 16, Petroleum on 5, and two each for Nuclear, Coal,
+    Hydroelectric, and Wind, plus Pumped Storage on 1. GRIDSUPPLY is Y on 60 and N
+    on 17. These are parcel footprints, not service areas. Cadence is a collection
+    assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_solar_pv_grid_supply_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/16
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_solar_pv_grid_supply_dep
+  layers:
+  - layer: '16'
+    sector: electric
+    grain: facility
+    metadata_path: gis/new_jersey_solar_pv_grid_supply_dep/layer_metadata.json
+    name_field: COMPNAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      customer_type: CUSTOMERTYPE
+    state_fixed: NJ
+  notes: One hundred forty-one named grid-supply solar installations. CUSTOMERTYPE
+    is Commercial on 120, Government Facility on 10, Farm on 3, Non Profit on 3,
+    School Public K-12 on 2, Municipality on 2, and School Other on 1. STATE is NJ
+    on every feature. These are installations, not utility territories. Cadence is
+    a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_solar_pv_behind_meter_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/22
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_solar_pv_behind_meter_dep
+  layers:
+  - layer: '22'
+    sector: electric
+    grain: facility
+    metadata_path: gis/new_jersey_solar_pv_behind_meter_dep/layer_metadata.json
+    name_field: COMPNAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      customer_type: CUST_TYPE
+    state_fixed: NJ
+  notes: Four hundred twenty-eight behind-the-meter solar installation polygons.
+    COMPNAME is blank
+    on 1 feature. CUST_TYPE is COMMERCIAL on 336, SCHOOL PUBLIC K-12 on 31,
+    GOVERNMENT FACILITY on 16, MUNICIPALITY on 15, PUBLIC UNIVERSITY on 14, SCHOOL
+    OTHER on 7, NON PROFIT on 5, PRIVATE UNIVERSITY on 3, and FARM on 1. These are
+    installations, not utility territories. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_solar_pv_public_facilities_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/17
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_jersey_solar_pv_public_facilities_dep
+  layers:
+  - layer: '17'
+    sector: electric
+    grain: facility
+    metadata_path: gis/new_jersey_solar_pv_public_facilities_dep/layer_metadata.json
+    name_field: COMPNAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      customer_type: CUSTOMERTYPE
+    state_fixed: NJ
+  notes: One thousand four hundred fifty-nine public-facility solar installations.
+    COMPNAME is blank on 43 features. CUSTOMERTYPE is SCHOOL PUBLIC K-12 on 898,
+    MUNICIPALITY on 327, GOVERNMENT FACILITY on 159, and PUBLIC UNIVERSITY on 75.
+    The layer description dates the report to August 26, 2016. These are
+    installations, not utility territories. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_electric_territories_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/10
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/new_jersey_electric_territories_dep
+  layers:
+  - layer: '10'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/new_jersey_electric_territories_dep/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      utility_type: TYPE
+      owner: PARENT
+      former_name: OLD_NAME
+    state_fixed: NJ
+  notes: Reverted to draft on 2026-11-12 (decision D1). Not on the approved promotion
+    list. An earlier gate refused it because one polygon has a blank provider name.
+    The declaration is retained so it can be opted in. Fifty-one electric utility
+    territory polygons naming 13 utilities. TYPE is LDC on 34, MUA on 8, Cooperative
+    on 8, and blank on 1. NAME is blank on that one polygon, which is kept and held
+    for review. PARENT names the owning company. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: new_jersey_gas_territories_dep
+  publisher: New Jersey Department of Environmental Protection
+  driver: arcgis
+  url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Utilities/MapServer/11
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/new_jersey_gas_territories_dep
+  layers:
+  - layer: '11'
+    sector: natural_gas
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/new_jersey_gas_territories_dep/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: NJ
+  notes: Independent gate 2026-11-12 set this source back to draft. An earlier gate
+    refused this compilation; the attributes are the company name and label. Thirty-three gas utility territory polygons naming four companies. NAME is
+    present on every polygon. Cadence is a collection assumption and licence terms
+    require review before redistribution.
   redistribution: internal_only

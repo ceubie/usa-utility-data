@@ -1,0 +1,34 @@
+sources:
+- source_id: oregon_clean_water_services_pump_station_boundaries
+  publisher: Clean Water Services
+  driver: arcgis
+  url: https://services1.arcgis.com/mGbDfjleLhk48K7A/ArcGIS/rest/services/Clean_Water_Services_General_Boundaries/FeatureServer/12
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_clean_water_services_pump_station_boundaries
+  layers:
+  - layer: '12'
+    sector: wastewater
+    grain: service_area
+    role: regional_wholesale_or_district
+    metadata_path: gis/oregon_clean_water_services_pump_station_boundaries/layer_metadata.json
+    authority: utility_direct
+    boundary_representation: unknown
+    name_field: PumpStationName
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      operating_status: Status
+    state_fixed: OR
+  notes: Forty-four named areas that drain to a pump station maintained by Clean
+    Water Services. Status is Operational on every feature. The layer description
+    says the boundaries can include planned areas, but every saved status is
+    Operational. These are pump-station drainage areas, not retail drinking-water
+    service. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only

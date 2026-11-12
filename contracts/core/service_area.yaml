@@ -1,0 +1,18 @@
+table: service_area
+path: service_area.parquet
+primary_key: [service_area_id]
+columns:
+  - {name: service_area_id, type: string, nullable: false}
+  - {name: system_id, type: string, nullable: false, references: system.system_id}
+  - {name: sector, type: string, nullable: false, vocab: sector}
+  - {name: zone_role, type: string, nullable: true, vocab: zone_role}
+  - {name: source_id, type: string, nullable: false}
+  - {name: authority, type: string, nullable: true, vocab: authority}
+  - {name: grain, type: string, nullable: true}
+  - {name: source_vintage_date, type: date, nullable: true}
+  - {name: is_best, type: boolean, nullable: false}
+  - {name: part_count, type: integer, nullable: false}
+  - {name: area_km2, type: float, nullable: false}
+  - {name: footprint_verified, type: boolean, nullable: true}
+  - {name: licence, type: string, nullable: true}
+  - {name: geometry, nullable: false}

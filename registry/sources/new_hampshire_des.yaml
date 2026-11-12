@@ -7,6 +7,7 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
+  redistribution: internal_only
   reviewed: true
   paths:
   - gis/new_hampshire_water_service_areas_des
@@ -23,6 +24,32 @@ sources:
     authority: state_regulator
     state_fixed: NH
     on_missing_name: preserve_and_review
-  notes: Cadence is a conservative collection assumption; licence terms require verification
+  notes: Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. PWS_ID is seven digits in sampled records; prefixing requires
     a separately verified rule.
+- source_id: new_hampshire_water_lines_des
+  publisher: New Hampshire Department of Environmental Services
+  driver: arcgis
+  url: https://gis.des.nh.gov/server/rest/services/Projects_DWGB/Water_line/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/new_hampshire_water_lines_des
+  layers:
+  - layer: '0'
+    sector: water
+    grain: network
+    metadata_path: gis/new_hampshire_water_lines_des/layer_metadata.json
+    name_field: SYS_NAME
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: NH
+  notes: One hundred twenty-one thousand thirty-seven water lines. SYS_NAME is
+    present on every feature. PIPE_STATUS is empty on every feature, so no
+    operating status is recorded. SYS_CAT has 30 codes and is not mapped to a
+    service role. These are pipes, not service areas. Cadence is a collection
+    assumption and licence terms require review before redistribution.
+  redistribution: internal_only

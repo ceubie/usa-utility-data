@@ -31,7 +31,8 @@ sources:
     notes: Retain all statuses; unknown codes require confirmation. Primacy agency
       codes include states and tribes, not necessarily geographic state. Preserve
       raw status codes M, N and P even though their conservative normalized status
-      is unknown.
+      is unknown. Preserve the raw wholesaler indicator; 4,527 Y and 430,230 N values
+      were observed in the frozen collection.
     attribute_fields:
       primacy_agency: PRIMACY_AGENCY_CODE
       reported_state: STATE_CODE
@@ -40,6 +41,13 @@ sources:
       owner_type: OWNER_TYPE_CODE
       population_served: POPULATION_SERVED_COUNT
       service_connections: SERVICE_CONNECTIONS_COUNT
+      raw_wholesaler_indicator: IS_WHOLESALER_IND
+    wholesaler_field:
+      field: IS_WHOLESALER_IND
+      values:
+        Y: 'yes'
+        N: 'no'
+      on_null: unknown
   - layer: SDWA_GEOGRAPHIC_AREAS.csv
     sector: water
     grain: admin_association

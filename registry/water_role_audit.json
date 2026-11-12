@@ -1,0 +1,25 @@
+{
+  "source": "water/epa_pws_boundaries_latest.zip:3_0/Service_Areas_V_3_0.gpkg",
+  "community": {
+    "features": 44656,
+    "explicit_wholesale_type": 240,
+    "sdwis_wholesaler_flag_y": 2263,
+    "wholesaler_flag_y_and_residential_type": 1804,
+    "wholesaler_flag_y_and_municipality_type": 161,
+    "unmatched_composite_id_features": 9
+  },
+  "noncommunity": {
+    "features": 77469,
+    "explicit_wholesale_type": 147,
+    "wholesaler_flag_y": 227,
+    "wholesaler_flag_y_and_other_type": 80,
+    "wholesaler_flag_null": 109,
+    "area_type_null": 1581,
+    "area_type_not_available": 6,
+    "sdwis_active": 75615,
+    "sdwis_inactive": 1284,
+    "sdwis_changed_to_nonpublic": 565,
+    "sdwis_unmatched": 5
+  },
+  "interpretation": "Counts can overlap. A wholesaler flag may coexist with direct service; non-community area categories do not by themselves prove an available retail territory. Preserve raw assertions and use explicit reviewed roles and status."
+}

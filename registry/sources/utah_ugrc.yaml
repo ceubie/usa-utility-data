@@ -1,0 +1,38 @@
+sources:
+- source_id: utah_electric_service_areas_ugrc
+  publisher: Utah Geospatial Resource Center
+  driver: arcgis
+  url: https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/ElectricalService/FeatureServer/0
+  cadence: irregular
+  licence: cc-by-4.0
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - gis/utah_electric_service_areas_ugrc
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/utah_electric_service_areas_ugrc/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: PROVIDER
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      provider_note: NOTES
+    state_fixed: UT
+  notes: Licence review on 2026-11-12 found the re-fetched text grants Creative Commons Attribution 4.0. Independent gate 2026-11-12 set this source back to draft. NOTES says another
+    provider serves part of the polygon on 17 features, and an earlier gate classed
+    the 2014 compilation as historical. Forty-six electric service-area polygons naming 39 providers; Springville
+    has eight polygons. NOTES flags 10 polygons where part of a municipality is served
+    by another provider, six owned by Utah County and served by Springville, and one
+    for Spanish Fork. The description gives a last update of September 20, 2021, with
+    sources including the Utah Division of Public Utilities and Rocky Mountain Power,
+    and says boundaries were derived from counties, parcels, municipalities, and survey
+    sections, so representation is unknown. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: shareable

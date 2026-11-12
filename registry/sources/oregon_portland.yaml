@@ -1,0 +1,350 @@
+sources:
+- source_id: oregon_portland_inlets
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/19
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_inlets
+  layers:
+  - layer: '19'
+    sector: stormwater
+    grain: facility
+    metadata_path: gis/oregon_portland_inlets/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      unit_type: UNITTYPE
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Fifty-eight thousand nine hundred sixty-three inlet points. UNITTYPE is
+    INLET on 58945 and INFINL on 18. SERVSTAT is IN on 55712, ABAN on 1572, NEW on
+    1058, TBAB on 379, PEND on 199, CNS on 3, and blank on 40. OWNRSHIP is BES on
+    44529, TBD on 5835, ODOT on 5453, PRIV on 1053, PORT on 449, PARK on 440, TRIMET
+    on 215, PDOT on 214, AGRE on 174, MTRO on 147, LKOS on 129, CWS on 104, MYWD on
+    64, CLAK on 29, MILW on 26, WTR on 24, MULTCO on 17, MIX on 14, UNKN on 11, PEN2
+    on 10, RR on 9, MCD1 on 6, GRSM on 6, PEN1 on 2, FIRE on 2, and BGS on 1. These
+    are stormwater inlets, not utility retail service. Cadence is a collection
+    assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_diversions
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/21
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_diversions
+  layers:
+  - layer: '21'
+    sector: multi_utility
+    grain: facility
+    metadata_path: gis/oregon_portland_diversions/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      unit_type: UNITTYPE
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: One hundred fifty-one diversion points. OWNRSHIP is BES on every feature.
+    SERVSTAT is IN on 142 and ABAN on 9. UNITTYPE is DIV on 127, OVR on 23, and FC
+    on 1. SYSTEM is SEWER on 150 and STORM on 1. These are structures, not retail
+    service. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_inlet_leads
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/20
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_inlet_leads
+  layers:
+  - layer: '20'
+    sector: stormwater
+    grain: network
+    metadata_path: gis/oregon_portland_inlet_leads/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      unit_type: UNITTYPE
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Fifty-three thousand twenty-four inlet leads. UNITTYPE is INLPIP on every
+    feature. SERVSTAT is IN on 49995, ABAN on 1533, NEW on 901, TBAB on 363, PEND
+    on 186, CNS on 2, and blank on 44. OWNRSHIP is BES on 40843, TBD on 5201, ODOT
+    on 4781, PRIV on 768, PORT on 404, PARK on 291, TRIMET on 160, MTRO on 143,
+    LKOS on 120, CWS on 72, MYWD on 63, PDOT on 56, AGRE on 29, MILW on 24, MIX on
+    15, MULTCO on 13, WTR on 13, UNKN on 8, CLAK on 7, PEN2 on 4, GRSM on 3, FIRE
+    on 2, RR on 2, MCD1 on 1, and BGS on 1. These are stormwater pipes, not retail
+    service. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_pond_connectors
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/24
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_pond_connectors
+  layers:
+  - layer: '24'
+    sector: stormwater
+    grain: network
+    metadata_path: gis/oregon_portland_pond_connectors/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      unit_type: UNITTYPE
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Eight hundred thirty-four pond connectors. UNITTYPE is SPCNX on every
+    feature. SERVSTAT is IN on 809, NEW on 23, and blank on 2. OWNRSHIP is NA on
+    755, BES on 69, PRIV on 6, MIX on 2, and TBD on 2. These are stormwater pipes,
+    not retail service. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_laterals
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/15
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_laterals
+  layers:
+  - layer: '15'
+    sector: multi_utility
+    grain: network
+    metadata_path: gis/oregon_portland_laterals/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      unit_type: UNITTYPE
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Two hundred two thousand seven hundred twenty-seven laterals. SYSTEM is
+    SEWER on 199512 and STORM on 3215. UNITTYPE is SL-WYE on 97690, SL-TEE on
+    85488, SL-FT on 14275, UNKN on 1844, SL-RIS on 1818, and SL-UNK on 1612.
+    SERVSTAT is IN on 195805, blank on 3249, ABAN on 2722, CNS on 928, TBAB on 10,
+    PEND on 7, NEW on 5, and DNE on 1. OWNRSHIP is BES on 115820, TBD on 85921,
+    PRIV on 696, MIX on 123, ODOT on 79, UNKN on 19, DNRV on 19, PARK on 16, PORT
+    on 11, TRIMET on 7, PDOT on 4, CWS on 4, MTRO on 3, and AGRE, FIRE, CLAK, GRSM,
+    and MILW on 1 each. These are pipes, not retail service. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_sewer_nodes
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/2
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_sewer_nodes
+  layers:
+  - layer: '2'
+    sector: wastewater
+    grain: facility
+    metadata_path: gis/oregon_portland_sewer_nodes/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Fifty-nine thousand one hundred fifty sewer nodes. SYSTEM is SEWER on
+    every feature. SERVSTAT is IN on 51119, blank on 3963, ABAN on 3371, NEW on
+    406, TBAB on 104, PEND on 94, and CNS on 93. OWNRSHIP is BES on 51384, TBD on
+    5586, PRIV on 847, DNRV on 399, CWS on 309, PARK on 164, CLAK on 123, GRSM on
+    114, MTRO on 103, PORT on 32, ODOT on 28, MILW on 28, LKOS on 23, PDOT on 4,
+    RR on 2, WTR on 2, UNKN on 1, and BVRTN on 1. These are structures, not retail
+    service. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_sewer_pipes
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_sewer_pipes
+  layers:
+  - layer: '3'
+    sector: wastewater
+    grain: network
+    metadata_path: gis/oregon_portland_sewer_pipes/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      unit_type: UNITTYPE
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Fifty thousand two hundred thirty-three sewer pipes. SYSTEM is SEWER on
+    every feature. UNITTYPE is CSML on 24146, SAML on 24051, SAINT on 644, CSOML
+    on 572, SAPL on 288, CSINT on 229, CSOVR on 171, CSOTN on 41, TPOF on 40, CSPL
+    on 24, SAPINT on 15, NOFLOW on 11, and CSDET on 1. SERVSTAT is IN on 48222,
+    ABAN on 1349, NEW on 321, PEND on 139, TBAB on 97, CNS on 90, and blank on 15.
+    OWNRSHIP is BES on 48191, PRIV on 672, DNRV on 389, CWS on 300, PARK on 136,
+    CLAK on 120, GRSM on 112, MTRO on 100, TBD on 73, MIX on 49, MILW on 24, PORT
+    on 22, LKOS on 22, ODOT on 18, WTR on 2, and BVRTN, PDOT, and RR on 1 each.
+    These are pipes, not retail service. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_storm_nodes
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/6
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_storm_nodes
+  layers:
+  - layer: '6'
+    sector: stormwater
+    grain: facility
+    metadata_path: gis/oregon_portland_storm_nodes/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Sixty-two thousand nine hundred twenty-one storm nodes. SYSTEM is STORM on
+    every feature. SERVSTAT is IN on 59889, ABAN on 2121, NEW on 671, blank on 95,
+    TBAB on 93, PEND on 36, and CNS on 16. OWNRSHIP is BES on 42668, TBD on 7639,
+    PARK on 3879, ODOT on 3034, PRIV on 2727, PORT on 660, AGRE on 508, TRIMET on
+    435, MTRO on 179, WTR on 165, PEN2 on 158, CWS on 139, LKOS on 131, MCD1 on 86,
+    PEN1 on 83, FIRE on 82, MILW on 64, GRSM on 59, MULTCO on 40, CLAK on 38, PDOT
+    on 38, RR on 23, MYWD on 23, BGS on 23, OPRD on 15, UNKN on 14, MIX on 9, and
+    ODSL on 2. These are stormwater structures, not retail service. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_storm_pipes
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/7
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_storm_pipes
+  layers:
+  - layer: '7'
+    sector: stormwater
+    grain: network
+    metadata_path: gis/oregon_portland_storm_pipes/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      unit_type: UNITTYPE
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Thirty-six thousand nine hundred seventy-four storm pipes. SYSTEM is STORM
+    on every feature. UNITTYPE is STML on 31255, STCV on 3767, STFD on 1327, STCX
+    on 427, STDET on 121, EMBPG on 56, STPL on 9, STINF on 6, STDWTN on 5, and
+    EMBPP on 1. SERVSTAT is IN on 36056, ABAN on 479, NEW on 309, blank on 54, TBAB
+    on 37, PEND on 33, and CNS on 6. OWNRSHIP is BES on 25554, ODOT on 3135, TBD on
+    2417, PARK on 2401, PRIV on 1412, PORT on 416, TRIMET on 411, AGRE on 370, CWS
+    on 132, LKOS on 131, MIX on 105, MTRO on 103, WTR on 62, PEN2 on 61, MCD1 on
+    46, CLAK on 46, MILW on 33, PEN1 on 31, PDOT on 28, MULTCO on 21, GRSM on 19,
+    RR on 17, UNKN on 13, MYWD on 6, FIRE on 2, and ODSL and BGS on 1 each. These
+    are stormwater pipes, not retail service. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_service_status_lines
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/28
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_service_status_lines
+  layers:
+  - layer: '28'
+    sector: multi_utility
+    grain: network
+    metadata_path: gis/oregon_portland_service_status_lines/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Three thousand six hundred forty-six lines whose saved status is not IN.
+    SERVSTAT is NEW on 1737, CNS on 1026, TBAB on 509, and PEND on 374. OWNRSHIP is
+    BES on 3515, TBD on 71, PRIV on 36, MIX on 7, ODOT on 6, PARK on 4, PDOT on 3,
+    and DNRV, NA, UNKN, and AGRE on 1 each. LAYER_GROUP repeats inlets, laterals,
+    sewer pipes, storm pipes, surface water, and connectors, so these counts are
+    not additional assets. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only
+- source_id: oregon_portland_service_status_points
+  publisher: City of Portland
+  driver: arcgis
+  url: https://www.portlandmaps.com/arcgis/rest/services/Public/Utilities_Sewer/MapServer/27
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/oregon_portland_service_status_points
+  layers:
+  - layer: '27'
+    sector: multi_utility
+    grain: facility
+    metadata_path: gis/oregon_portland_service_status_points/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      owner: OWNRSHIP
+      service_status: SERVSTAT
+    state_fixed: OR
+  notes: Three thousand one hundred fifty-two points whose saved status is not IN.
+    SERVSTAT is NEW on 2135, TBAB on 576, PEND on 329, and CNS on 112. OWNRSHIP is
+    BES on 2922, TBD on 73, PDOT on 68, PRIV on 54, PARK on 15, ODOT on 9, WTR on
+    4, MIX on 3, AGRE on 2, and PEN2 and DNRV on 1 each. LAYER_GROUP repeats
+    inlets, storm nodes, and sewer nodes, so these counts are not additional
+    assets. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only

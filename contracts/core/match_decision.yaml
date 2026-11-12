@@ -1,0 +1,11 @@
+table: match_decision
+path: match_decision.parquet
+primary_key: [assertion_id]
+columns:
+  - {name: assertion_id, type: string, nullable: false}
+  - {name: system_id, type: string, nullable: true, references: system.system_id}
+  - {name: method, type: string, nullable: true}
+  - {name: score, type: float, nullable: true}
+  - {name: evidence, type: string, nullable: true}
+  - {name: decided_by, type: string, nullable: false}
+  - {name: release, type: string, nullable: false}

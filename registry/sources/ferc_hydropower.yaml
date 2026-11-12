@@ -1,0 +1,60 @@
+sources:
+- source_id: national_ferc_hydropower_licensed_projects
+  publisher: Federal Energy Regulatory Commission
+  driver: arcgis
+  url: https://services6.arcgis.com/j2rhFudpKDsF5x0m/arcgis/rest/services/Projects_PublicView/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/national_ferc_hydropower_licensed_projects
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: facility
+    metadata_path: gis/national_ferc_hydropower_licensed_projects/layer_metadata.json
+    name_field: Name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      licensee: Licensees
+      project_type: SubType
+  notes: One thousand twenty-six named licensed projects. Type is LICENSE on every
+    feature. SubType is Major on 722, Minor on 285, Major - Transmission Line on 15,
+    and Minor - Transmission Line on 4. Five features have a Notes value. Only
+    YELLOWSTONE records a surrender order, so the layer is not proof that every
+    project is operating. States is not
+    used as a single postal code. These are project points, not service areas.
+    Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only
+- source_id: national_ferc_hydropower_exempted_projects
+  publisher: Federal Energy Regulatory Commission
+  driver: arcgis
+  url: https://services6.arcgis.com/j2rhFudpKDsF5x0m/arcgis/rest/services/Projects_PublicView/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/national_ferc_hydropower_exempted_projects
+  layers:
+  - layer: '1'
+    sector: electric
+    grain: facility
+    metadata_path: gis/national_ferc_hydropower_exempted_projects/layer_metadata.json
+    name_field: Name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      exemption_type: Type
+      project_subtype: SubType
+  notes: Six hundred thirteen named exempted projects. Type is EXEMPTION on 387,
+    EXEMPTION (Conduit) on 225, and EXEMPTION (conduit) on 1. SubType is populated
+    on 387 features and blank on 226. These are project points, not service areas.
+    Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only

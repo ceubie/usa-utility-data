@@ -1,0 +1,70 @@
+sources:
+- source_id: state_ny_electric_territories
+  publisher: New York State Department of Public Service
+  driver: http
+  url: https://data.ny.gov/api/v3/views/awza-4vgu/query.geojson?accessType=DOWNLOAD
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - states/ny/electric_territories.geojson
+  layers:
+  - layer: state_vector_archive
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: comp_full
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: :id
+    attribute_fields:
+      short_name: comp_short
+      company_id: comp_id
+    state_fixed: NY
+    vintage_field: datemod
+  notes: Fifty-six electric service territories from the New York open data portal,
+    one polygon per company. comp_full is present and distinct on every feature. comp_short
+    is Municipal on 49 and names the seven large utilities on the rest. comp_id is
+    the placeholder 9999 on the 49 municipal features, so it is not used as an identifier.
+    datemod is 2016-05-17 on every feature, so the boundaries are about ten years
+    old. Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only
+- source_id: state_ny_gas_territories
+  publisher: New York State Department of Public Service
+  driver: http
+  url: https://data.ny.gov/api/v3/views/i7nm-ih89/query.geojson?accessType=DOWNLOAD
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: false
+  paths:
+  - states/ny/gas_territories.geojson
+  layers:
+  - layer: state_vector_archive
+    sector: natural_gas
+    grain: service_area
+    role: active_retail_service
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: comp_full
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: :id
+    attribute_fields:
+      short_name: comp_short
+      company_id: comp_id
+    state_fixed: NY
+    vintage_field: datemod
+  notes: Independent gate 2026-11-12 set this source back to draft. One polygon has
+    comp_full None, comp_short None, and comp_id 0 under an active retail role. Eighteen natural gas service territories from the New York open data portal,
+    one polygon per company. The other 17 names are present. datemod
+    is 2014-10-03 on 15, 2016-05-17 on 2, and 2015-05-17 on 1, so the boundaries are
+    about ten years old. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only

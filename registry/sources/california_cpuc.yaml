@@ -26,3 +26,91 @@ sources:
   notes: Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Despite its field name, pwsid contains utility-area identifiers,
     not federal PWSIDs.
+  redistribution: internal_only
+- source_id: california_electric_iou_territories_cpuc_2020
+  publisher: California Public Utilities Commission
+  driver: arcgis
+  url: https://services2.arcgis.com/VofPZYDe2pLxSP5G/ArcGIS/rest/services/Utility_Territory/FeatureServer/2
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/california_electric_iou_territories_cpuc_2020
+  layers:
+  - layer: '2'
+    sector: electric
+    grain: service_area
+    role: certified_franchise_territory
+    metadata_path: gis/california_electric_iou_territories_cpuc_2020/layer_metadata.json
+    name_field: Utility
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID_1
+    authority: state_regulator
+    state_fixed: CA
+  notes: Six investor-owned electric territories, each named in Utility. Cadence is
+    a collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: california_gas_iou_territories_cpuc_2020
+  publisher: California Public Utilities Commission
+  driver: arcgis
+  url: https://services2.arcgis.com/VofPZYDe2pLxSP5G/ArcGIS/rest/services/Utility_Territory/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/california_gas_iou_territories_cpuc_2020
+  layers:
+  - layer: '1'
+    sector: natural_gas
+    grain: service_area
+    role: certified_franchise_territory
+    metadata_path: gis/california_gas_iou_territories_cpuc_2020/layer_metadata.json
+    name_field: SERVICE
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID_1
+    attribute_fields:
+      abbreviation: ABR
+    authority: state_regulator
+    state_fixed: CA
+  notes: Seven investor-owned gas territories. SERVICE names five utilities, with
+    Southwest Gas on three features. Cadence is a collection assumption and licence
+    terms require review before redistribution.
+  redistribution: internal_only
+- source_id: california_voice_territories_cpuc_2023
+  publisher: California Public Utilities Commission
+  driver: arcgis
+  url: https://services2.arcgis.com/VofPZYDe2pLxSP5G/ArcGIS/rest/services/Utility_Territory/FeatureServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/california_voice_territories_cpuc_2023
+  layers:
+  - layer: '3'
+    sector: telecommunications
+    grain: service_area
+    role: review_required
+    metadata_path: gis/california_voice_territories_cpuc_2023/layer_metadata.json
+    name_field: voice_company
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID_1
+    attribute_fields:
+      rate_regulation: REGTYPE
+    authority: state_regulator
+    state_fixed: CA
+  notes: Thirty-five voice territories and 18 voice_company values. REGTYPE is PC on
+    21 features and ROR on 14. Those rate categories are not mapped to a franchise
+    role. STATE is CA on 23, AZ on 4, OR on 4, and NV on 4, so it is not used as the
+    service state. The layer is telecommunications and is outside utility retail
+    scope. Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only

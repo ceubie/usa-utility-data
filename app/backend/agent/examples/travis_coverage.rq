@@ -1,0 +1,13 @@
+# For water systems that serve Travis County, what population share, evidence, and authority does the county coverage record?
+PREFIX ud: <http://utilities.local/ontology/>
+SELECT ?system ?share ?evidence ?authority WHERE {
+  ?coverage a ud:CountyCoverage ;
+            ud:system ?system ;
+            ud:county <http://utilities.local/county/48453> ;
+            ud:is_served true ;
+            ud:pop_share_of_county ?share ;
+            ud:evidence ?evidence .
+  OPTIONAL { ?coverage ud:authority ?authority }
+  ?system a ud:WaterSystem .
+}
+LIMIT 20

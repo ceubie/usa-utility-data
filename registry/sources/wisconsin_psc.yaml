@@ -1,0 +1,95 @@
+sources:
+- source_id: state_wi_psc_electric_territories
+  publisher: Public Service Commission of Wisconsin
+  driver: http
+  url: https://psc.wi.gov/SiteAssets/Maps/EL_PSCW_ServTerr.zip
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - states/wi/psc_electric_territories.zip
+  layers:
+  - layer: Cooperative
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    archive_member: EL_PSCW_ServTerr/Cooperative.shp
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: UTIL_LAB
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: PSC_ID
+    attribute_fields:
+      utility_type: UTIL_TYPE
+    state_fixed: WI
+    vintage_field: DATA_DATE
+  - layer: Investor-Owned
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    archive_member: EL_PSCW_ServTerr/Investor-Owned.shp
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: UTIL_LAB
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: PSC_ID
+    attribute_fields:
+      utility_type: UTIL_TYPE
+    state_fixed: WI
+    vintage_field: DATA_DATE
+  - layer: Municipal
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    archive_member: EL_PSCW_ServTerr/Municipal.shp
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: UTIL_LAB
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: PSC_ID
+    attribute_fields:
+      utility_type: Util_Type
+    state_fixed: WI
+    vintage_field: DATA_DATE
+  notes: 'Electric service territories in three shapefiles: Cooperative with 24 polygons,
+    Investor-Owned with 12, and Municipal with 81. UTIL_LAB is the utility name, distinct
+    within each layer and cut off at 40 characters. PSC_ID is the commission''s utility
+    number and is distinct within each layer. The type column is spelled UTIL_TYPE
+    in two layers and Util_Type in the Municipal layer. The STATE column is blank
+    on one municipal polygon and is not declared. Cadence is a collection assumption
+    and licence terms require review before redistribution.'
+  redistribution: internal_only
+- source_id: state_wi_psc_natural_gas_territories
+  publisher: Public Service Commission of Wisconsin
+  driver: http
+  url: https://psc.wi.gov/SiteAssets/Maps/NG_PSCW_ServTerr.zip
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - states/wi/psc_natural_gas_territories.zip
+  layers:
+  - layer: NG_PSCW_ServTerr
+    sector: natural_gas
+    grain: service_area
+    role: active_retail_service
+    archive_member: NG_PSCW_ServTerr.shp
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: Util_Name
+    on_missing_name: preserve_and_review
+    attribute_fields:
+      commission_utility_id: Util_ID
+    state_fixed: WI
+  notes: Eleven natural gas utility service territories, one multipart polygon per
+    utility. Util_Name and Util_ID are present on every feature. The file carries
+    no date column. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only

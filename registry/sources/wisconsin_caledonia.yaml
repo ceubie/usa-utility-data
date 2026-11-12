@@ -1,0 +1,63 @@
+sources:
+- source_id: wisconsin_caledonia_not_serviced_water_district
+  publisher: Village of Caledonia
+  driver: arcgis
+  url: https://services3.arcgis.com/eTwbJcqmqhBzmOfs/arcgis/rest/services/Caledonia_District_Overlays/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/wisconsin_caledonia_not_serviced_water_district
+  layers:
+  - layer: '0'
+    sector: water
+    grain: service_area
+    role: not_serviced_or_excluded
+    metadata_path: gis/wisconsin_caledonia_not_serviced_water_district/layer_metadata.json
+    authority: utility_direct
+    boundary_representation: unknown
+    name_field: NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID_1
+    state_fixed: WI
+    attribute_fields:
+      municipal_type: MUNITYP
+  notes: One polygon named VILLAGE OF CALEDONIA with municipal type Village. It is
+    the village's not-serviced water district and is not a retail service area. The
+    saved LASTUPDATE and MUNIAREA values are blank. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: wisconsin_caledonia_not_serviced_sewer_district
+  publisher: Village of Caledonia
+  driver: arcgis
+  url: https://services3.arcgis.com/eTwbJcqmqhBzmOfs/arcgis/rest/services/Caledonia_District_Overlays/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/wisconsin_caledonia_not_serviced_sewer_district
+  layers:
+  - layer: '1'
+    sector: wastewater
+    grain: service_area
+    role: not_serviced_or_excluded
+    metadata_path: gis/wisconsin_caledonia_not_serviced_sewer_district/layer_metadata.json
+    authority: utility_direct
+    boundary_representation: unknown
+    name_field: NAME
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID_1
+    state_fixed: WI
+    attribute_fields:
+      municipal_type: MUNITYP
+  notes: One polygon named VILLAGE OF CALEDONIA with municipal type Village. It is
+    the village's not-serviced sewer district and is not a retail service area. The
+    saved LASTUPDATE and MUNIAREA values are blank. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only

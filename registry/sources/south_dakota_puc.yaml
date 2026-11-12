@@ -1,0 +1,32 @@
+sources:
+- source_id: south_dakota_electric_service_territories_puc
+  publisher: South Dakota Public Utilities Commission
+  driver: arcgis
+  url: https://services1.arcgis.com/PwrabBhZHUggYYSp/arcgis/rest/services/ElectricServiceTerritories_updated2_view/FeatureServer/4
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/south_dakota_electric_service_territories_puc
+  layers:
+  - layer: '4'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/south_dakota_electric_service_territories_puc/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: COOP_AREA
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: SD
+  notes: Seventy-four named electric territories. COOP_AREA includes municipal
+    utilities and Nebraska Public Power District, so the field is the utility name
+    rather than a cooperative-only flag. EFF_DATE is blank on 27 features, and one
+    populated value is the text none avail rather than a year. There is no status
+    field. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only

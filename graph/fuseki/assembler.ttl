@@ -1,0 +1,21 @@
+@prefix fuseki: <http://jena.apache.org/fuseki#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ja: <http://jena.apache.org/ja#> .
+@prefix tdb2: <http://jena.apache.org/2016/tdb#> .
+
+# Query service only. The timeout is server-side.
+# Query timeout: 20 seconds.
+
+[] rdf:type fuseki:Server ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ; ja:cxtValue "20000" ] ;
+    fuseki:services ( <#utility> ) .
+
+<#utility> rdf:type fuseki:Service ;
+    fuseki:name "utility" ;
+    fuseki:serviceQuery "query" ;
+    fuseki:dataset <#dataset> .
+
+<#dataset> rdf:type tdb2:DatasetTDB2 ;
+    tdb2:location "/fuseki/databases/utility" ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ; ja:cxtValue "20000" ] .

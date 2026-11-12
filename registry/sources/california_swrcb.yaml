@@ -7,6 +7,7 @@ sources:
   licence: unknown
   out_of_scope: false
   superseded_by: null
+  redistribution: internal_only
   reviewed: true
   paths:
   - gis/california_water_areas_swrcb
@@ -14,7 +15,6 @@ sources:
   - layer: '0'
     sector: water
     grain: service_area
-    role: active_retail_service
     metadata_path: gis/california_water_areas_swrcb/layer_metadata.json
     name_field: WATER_SYSTEM_NAME
     id_fields:
@@ -29,6 +29,14 @@ sources:
     state_fixed: CA
     on_missing_name: preserve_and_review
     on_invalid_pwsid: preserve_raw_without_federal_id
-  notes: Cadence is a conservative collection assumption; licence terms require verification
+    role_field:
+      field: BOUNDARY_TYPE
+      values:
+        Water Service Area: active_retail_service
+        Wholesaler: regional_wholesale_or_district
+        Jurisdictional: review_required
+      on_null: review_required
+  notes: Licence review on 2026-11-12 found the re-fetched text is not a redistribution grant. Cadence is a conservative collection assumption; licence terms require verification
     before redistribution. Boundaries have varying verification status; current snapshot
-    has only A-space activity codes.
+    has only A-space activity codes. BOUNDARY_TYPE separates service areas, wholesale
+    and jurisdictional areas; jurisdictional and null values require review.

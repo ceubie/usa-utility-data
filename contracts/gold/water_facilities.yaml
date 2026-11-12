@@ -1,0 +1,25 @@
+table: water_facilities
+path: water_facilities.parquet
+primary_key: [pwsid, facility_id]
+columns:
+  - {name: system_id, type: string, nullable: false, description: System that owns the facility.}
+  - {name: pwsid, type: string, nullable: false, description: SDWA public water system id.}
+  - {name: facility_id, type: string, nullable: false, description: SDWA facility id.}
+  - {name: facility_name, type: string, nullable: true, description: Facility name.}
+  - {name: state_facility_id, type: string, nullable: true, description: State facility id.}
+  - {name: activity_code, type: string, nullable: true, description: Facility activity code.}
+  - {name: deactivation_date, type: date, nullable: true, description: Parsed deactivation date.}
+  - {name: deactivation_date_unparsed, type: string, nullable: true, description: "Non-date deactivation token, preserved beside the typed date."}
+  - {name: facility_type_code, type: string, nullable: true, description: Facility type code.}
+  - {name: water_type_code, type: string, nullable: true, description: Water type code.}
+  - {name: availability_code, type: string, nullable: true, description: Availability code.}
+  - {name: is_source_ind, type: string, nullable: true, description: Source indicator.}
+  - {name: seller_pwsid, type: string, nullable: true, description: Selling system PWSID.}
+  - {name: seller_pws_name, type: string, nullable: true, description: Selling system name.}
+  - {name: filtration_status_code, type: string, nullable: true, description: Filtration status code.}
+  - {name: first_reported_date, type: date, nullable: true, description: First reported date.}
+  - {name: last_reported_date, type: date, nullable: true, description: Last reported date.}
+  - {name: submission_year_quarter, type: string, nullable: false, description: SDWA submission quarter.}
+  - {name: licence, type: string, nullable: false, vocab: licence, description: Licence of the SDWA source.}
+  - {name: source_id, type: string, nullable: false, description: SDWA source id.}
+  - {name: in_federal_registry, type: boolean, nullable: false, description: True when the system is in the SDWA registry.}

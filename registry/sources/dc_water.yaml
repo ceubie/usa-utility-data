@@ -1,0 +1,153 @@
+sources:
+- source_id: dc_water_pressure_zones
+  publisher: DC Water
+  driver: arcgis
+  url: https://geo.dcwater.com/arcgis/rest/services/Viewer/DWS16inLargeMain/MapServer/6
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/dc_water_pressure_zones
+  layers:
+  - layer: '6'
+    sector: water
+    grain: admin_association
+    metadata_path: gis/dc_water_pressure_zones/layer_metadata.json
+    name_field: PRESSUREZONE
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: DC
+  notes: Twelve operational pressure zones of one utility, including 1st, 2nd, 3rd,
+    4thAlaska, 4thReno, Ana-1st, Ana-2nd, Ana-3rd, and Low. These are not provider
+    service territories and not source watersheds. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: dc_water_facilities
+  publisher: DC Water
+  driver: arcgis
+  url: https://geo.dcwater.com/arcgis/rest/services/Viewer/DWS16inLargeMain/MapServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/dc_water_facilities
+  layers:
+  - layer: '1'
+    sector: water
+    grain: facility
+    metadata_path: gis/dc_water_facilities/layer_metadata.json
+    name_field: NAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      owner: OWNER
+      flow_type: FLOWTYPE
+      lifecycle: LIFECYCLESTATS
+    state_fixed: DC
+  notes: Twenty-nine water facility points. NAME is present on 26 features and blank
+    on 3. OWNER is WASA on 13, WAD on 13, Private on 2, and AFRH_W on 1. FLOWTYPE is
+    Potable on 25 and Raw on 4. LIFECYCLESTATS is Active on every feature. SUBTYPE
+    is the layer type id. Saved features are 1 EnclosedStorageFacility on 5, 3
+    PumpStation on 10, 4 StorageBasin on 12, and 5 TreatmentPlant on 2. Metadata
+    also defines 2 ProductionWell and 6 ClearWell, with no saved features. These are
+    facilities, not service areas. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: dc_water_large_mains
+  publisher: DC Water
+  driver: arcgis
+  url: https://geo.dcwater.com/arcgis/rest/services/Viewer/DWS16inLargeMain/MapServer/4
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/dc_water_large_mains
+  layers:
+  - layer: '4'
+    sector: water
+    grain: network
+    metadata_path: gis/dc_water_large_mains/layer_metadata.json
+    name_field: OWNER
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      flow_type: FLOWTYPE
+      lifecycle: LIFECYCLESTATS
+    state_fixed: DC
+  notes: Seven thousand four hundred seventy-one large mains. FLOWTYPE is Potable on
+    every feature. OWNER is WASA on 7101, WAD on 220, WASAFacility on 60, Private
+    on 47, Capitol on 33, WSSC on 3, DCGov on 3, BollingAFB on 2, and Other on 2.
+    LIFECYCLESTATS is Active on 6439, Abandoned on 701, Removed on 260, and Proposed
+    on 71. These are pipes, not service areas. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: dc_water_pressure_mains
+  publisher: DC Water
+  driver: arcgis
+  url: https://geo.dcwater.com/arcgis/rest/services/Viewer/DWS16inLargeMain/MapServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/dc_water_pressure_mains
+  layers:
+  - layer: '3'
+    sector: water
+    grain: network
+    metadata_path: gis/dc_water_pressure_mains/layer_metadata.json
+    name_field: OWNER
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      flow_type: FLOWTYPE
+      lifecycle: LIFECYCLESTATS
+    state_fixed: DC
+  notes: One hundred one thousand six hundred seventy-five pressure mains. FLOWTYPE
+    is Potable on every feature. OWNER is WASA on 99417, Private on 579,
+    WASAFacility on 326, WAD on 281, NPS on 195, AFRH_W on 164, Capitol on 160,
+    WalterReed on 159, Other on 79, GSA on 70, GalludetU on 57, USNO on 47,
+    NationalZoo on 36, HowardU on 30, WSSC on 23, UDC on 15, WNY on 10, DDOT on 9,
+    BollingAFB on 7, Arboretum on 6, DCGov on 3, and Unknown on 2. LIFECYCLESTATS
+    is Active on 76843, Abandoned on 17162, Removed on 4069, and Proposed on 3601.
+    These are pipes, not service areas. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: dc_water_drain_pipes
+  publisher: DC Water
+  driver: arcgis
+  url: https://geo.dcwater.com/arcgis/rest/services/Viewer/DWS16inLargeMain/MapServer/2
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/dc_water_drain_pipes
+  layers:
+  - layer: '2'
+    sector: water
+    grain: network
+    metadata_path: gis/dc_water_drain_pipes/layer_metadata.json
+    name_field: OWNER
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      flow_type: FLOWTYPE
+      lifecycle: LIFECYCLESTATS
+    state_fixed: DC
+  notes: Two thousand five hundred thirty-one drain pipes. FLOWTYPE is Potable on
+    every feature. OWNER is blank on 2 features, WASA on 2441, WAD on 41, Private
+    on 23, Other on 9, Capitol on 5, AFRH_W on 4, WalterReed on 3, NPS on 2, and
+    WASAFacility on 1. LIFECYCLESTATS is Active on 2175, Abandoned on 217, Removed
+    on 116, and Proposed on 23. SUBTYPE is 4 on 2530 and 1 on 1. These are pipes,
+    not service areas. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only

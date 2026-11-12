@@ -1,0 +1,87 @@
+sources:
+- source_id: federal_usgs_uswtdb_v9_1
+  publisher: U.S. Geological Survey, Lawrence Berkeley National Laboratory, and American
+    Clean Power Association
+  driver: http
+  url: https://energy.usgs.gov/uswtdb/assets/data/uswtdbCSV.zip
+  cadence: quarterly
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - electric/usgs_uswtdb_latest_csv.zip
+  layers:
+  - layer: uswtdb_V9_1_20260928.csv
+    sector: electric
+    grain: facility
+    facility_level: unit
+    facility_type_fixed: wind_turbine
+    name_field: p_name
+    id_fields:
+      feature_id: case_id
+    attribute_fields:
+      manufacturer: t_manu
+      model: t_model
+      county: t_county
+      plant_capacity_mw: p_cap
+      unit_capacity_kw: t_cap
+      turbine_count: p_tnum
+      year_online: p_year
+      eia_plant_id: eia_id
+      longitude: xlong
+      latitude: ylat
+    state_field: t_state
+  notes: 'United States Wind Turbine Database version 9.1, released 2026-09-28: 77,839
+    turbines, one row each. case_id is unique on every row. Named turbines are grouped by state, normalized
+    project name, and EIA plant id. Seventy-five state-and-name groups contain more
+    than one EIA id, so a name-only group would merge distinct plants; a missing EIA
+    id is not joined to a numbered plant. Ten state-and-name groups with no EIA id
+    contain more than one project-capacity value and still share a facility. p_cap
+    is the project capacity repeated on the turbines in that project, and t_cap
+    is the turbine capacity in kilowatts; both can be blank. Plant capacity is the
+    sum of the turbine ratings. The repeated project total is rejected and is not
+    added again. The 1,713 Michigan rows are rejected with reason state_unit_inventory
+    because the reviewed Michigan wind inventory is the wind-turbine list for that
+    state. xlong and ylat are decimal degrees and are read without reprojection.
+    These are generating units, not service areas. The database is released about
+    quarterly. Licence terms require review before redistribution.'
+  redistribution: internal_only
+- source_id: federal_usgs_uspvdb_v4_0
+  publisher: U.S. Geological Survey and Lawrence Berkeley National Laboratory
+  driver: http
+  url: https://www.sciencebase.gov/catalog/file/get/6671c479d34e84915adb7536?f=__disk__dc%2Fa5%2F48%2Fdca548712009dd78533a58851d0be28b7489cfc6
+  cadence: annual
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - electric/usgs_uspvdb_v4_20260414.csv
+  layers:
+  - layer: usgs_uspvdb_v4_20260414.csv
+    sector: electric
+    grain: facility
+    facility_level: plant
+    facility_type_fixed: solar_farm
+    name_field: p_name
+    id_fields:
+      feature_id: case_id
+    attribute_fields:
+      county: p_county
+      plant_capacity_mw: p_cap_ac
+      capacity_dc_mw: p_cap_dc
+      year_online: p_year
+      eia_plant_id: eia_id
+      site_type: p_type
+      longitude: xlong
+      latitude: ylat
+    state_field: p_state
+  notes: 'United States Large-Scale Solar Photovoltaic Database version 4.0, released
+    2026-04-14: 6,611 rows and 6,611 distinct case_id values. xlong runs from -162.5531
+    to -67.4623 and ylat from 19.6558 to 66.8385. p_cap_ac is alternating-current
+    capacity in megawatts and is the plant capacity; 52 rows are below 1 MW and the
+    minimum is 0.2. p_cap_dc is direct-current capacity. p_sys_type is ground on
+    5,976, rooftop on 407, canopy on 148, a combination on 78, and floating on 2.
+    These are plants, not service areas. Licence terms require review before redistribution.'
+  redistribution: internal_only

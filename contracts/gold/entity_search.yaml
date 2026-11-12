@@ -1,0 +1,12 @@
+table: entity_search
+path: entity_search.parquet
+primary_key: [entity_id, label_role, label, scheme]
+columns:
+  - {name: entity_id, type: string, nullable: false, description: System id.}
+  - {name: kind, type: string, nullable: false, description: Entity kind. Water systems use system.}
+  - {name: state, type: string, nullable: true, description: Primary state of the system.}
+  - {name: label, type: string, nullable: false, description: "Searchable name, alternate name, or identifier."}
+  - {name: label_role, type: string, nullable: false, description: "primary_name, alternate_name, or identifier."}
+  - {name: search_norm, type: string, nullable: false, description: "Name key, or the identifier text for an id."}
+  - {name: scheme, type: string, nullable: false, description: "name for a name row, otherwise the identifier scheme such as pwsid."}
+  - {name: licence, type: string, nullable: false, vocab: licence, description: Licence of the label source. Mixed licences are stored as unknown.}

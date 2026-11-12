@@ -1,0 +1,138 @@
+sources:
+- source_id: hawaii_maui_sewer_discharge_points
+  publisher: County of Maui Wastewater Reclamation Division
+  driver: arcgis
+  url: https://services3.arcgis.com/fsrDo0QMPlK9CkZD/arcgis/rest/services/Sewer_System_Full/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/hawaii_maui_sewer_discharge_points
+  layers:
+  - layer: '1'
+    sector: wastewater
+    grain: facility
+    metadata_path: gis/hawaii_maui_sewer_discharge_points/layer_metadata.json
+    name_field: PermitName
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      discharge_type: DISCHRGTYP
+      basin: Basin
+    state_fixed: HI
+  notes: Twenty-four injection wells. PermitName is present on every feature and
+    OWNEDBY is empty on every feature, so no owner is assigned. Basin is Kahului on
+    8, Lahaina on 4, Maalaea Harbor on 4, Kihei on 3, Kaunakakai on 3, and Maalaea
+    Triangle on 2. These are discharge points, not service areas. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: hawaii_maui_sewer_pump_stations
+  publisher: County of Maui Wastewater Reclamation Division
+  driver: arcgis
+  url: https://services3.arcgis.com/fsrDo0QMPlK9CkZD/arcgis/rest/services/Sewer_System_Full/FeatureServer/2
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/hawaii_maui_sewer_pump_stations
+  layers:
+  - layer: '2'
+    sector: wastewater
+    grain: facility
+    metadata_path: gis/hawaii_maui_sewer_pump_stations/layer_metadata.json
+    name_field: NAME
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      owner_code: OWNEDBY
+    state_fixed: HI
+  notes: Eighty-seven named pump stations. OWNEDBY uses the AssetOwner code. 1 is
+    Our Agency on 42 features, -1 is Private on 44, and -2 is Other on 1. These are
+    pump stations, not service areas. Cadence is a collection assumption and licence
+    terms require review before redistribution.
+  redistribution: internal_only
+- source_id: hawaii_maui_sewer_pressurized_mains
+  publisher: County of Maui Wastewater Reclamation Division
+  driver: arcgis
+  url: https://services3.arcgis.com/fsrDo0QMPlK9CkZD/arcgis/rest/services/Sewer_System_Full/FeatureServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/hawaii_maui_sewer_pressurized_mains
+  layers:
+  - layer: '3'
+    sector: wastewater
+    grain: network
+    metadata_path: gis/hawaii_maui_sewer_pressurized_mains/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      ownership: OwnershipInfo
+    state_fixed: HI
+  notes: One hundred thirty-one pressurized sewer mains. OwnershipInfo is County on
+    78, Private on 47, County Aband on 4, Castle and Cook Resorts on 1, and DHHL on
+    1. PlanName is blank on 20 features. These are pipes, not service areas.
+    Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only
+- source_id: hawaii_maui_sewer_manholes
+  publisher: County of Maui Wastewater Reclamation Division
+  driver: arcgis
+  url: https://services3.arcgis.com/fsrDo0QMPlK9CkZD/arcgis/rest/services/Sewer_System_Full/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/hawaii_maui_sewer_manholes
+  layers:
+  - layer: '0'
+    sector: wastewater
+    grain: facility
+    metadata_path: gis/hawaii_maui_sewer_manholes/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      ownership: OwnershipInfo
+    state_fixed: HI
+  notes: Nine thousand one hundred ninety-eight manholes. OwnershipInfo is County of
+    Maui on 6070, Private on 2868, DHHL on 112, Removed on 56, non-exist on 49, and
+    Castle and Cook Resorts on 43. ProjectName is blank on 2031 features. These are
+    structures, not service areas. Cadence is a collection assumption and licence
+    terms require review before redistribution.
+  redistribution: internal_only
+- source_id: hawaii_maui_sewer_gravity_mains
+  publisher: County of Maui Wastewater Reclamation Division
+  driver: arcgis
+  url: https://services3.arcgis.com/fsrDo0QMPlK9CkZD/arcgis/rest/services/Sewer_System_Full/FeatureServer/4
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/hawaii_maui_sewer_gravity_mains
+  layers:
+  - layer: '4'
+    sector: wastewater
+    grain: network
+    metadata_path: gis/hawaii_maui_sewer_gravity_mains/layer_metadata.json
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      ownership: OwnershipInfo
+    state_fixed: HI
+  notes: Nine thousand two hundred thirty-nine gravity mains. OwnershipInfo is
+    County of Maui on 6083, Private on 2822, DHHL on 155, Out of Service on 132,
+    Castle and Cook Resorts on 42, and non-exist on 5. These are pipes, not service
+    areas. Cadence is a collection assumption and licence terms require review
+    before redistribution.
+  redistribution: internal_only

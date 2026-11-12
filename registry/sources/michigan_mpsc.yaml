@@ -1,0 +1,408 @@
+sources:
+- source_id: michigan_natural_gas_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/NATURAL_GAS_UTILITY_SERVICE_AREA_MI_WFL1/FeatureServer/27
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_natural_gas_mpsc
+  layers:
+  - layer: '27'
+    sector: natural_gas
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/michigan_natural_gas_mpsc/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: Name
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    state_fixed: MI
+  notes: Nine named natural-gas utility service areas. The layer has no status or
+    wholesale field. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_coal_power_plants_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/Coal_Power_Plants_WFL1/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_coal_power_plants_mpsc
+  layers:
+  - layer: '0'
+    sector: electric
+    grain: facility
+    metadata_path: gis/michigan_coal_power_plants_mpsc/layer_metadata.json
+    name_field: Plant_Name
+    id_fields:
+      feature_id: OBJECTID_1
+    attribute_fields:
+      utility_name: Utility_Na
+      plant_sector: sector_nam
+    state_fixed: MI
+  notes: Six plant locations. sector_nam is Electric Utility on three features, Industrial
+    CHP on two, and IPP CHP on one. These are facilities, not retail service areas.
+    The saved State text is Michigan on every feature. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_nuclear_power_plants_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/Michigan_Nuclear_Plants/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_nuclear_power_plants_mpsc
+  layers:
+  - layer: '1'
+    sector: electric
+    grain: facility
+    metadata_path: gis/michigan_nuclear_power_plants_mpsc/layer_metadata.json
+    name_field: Plant_Name
+    id_fields:
+      feature_id: OBJECTID_1
+    attribute_fields:
+      utility_name: Utility_Na
+      operation: Operation
+    state_fixed: MI
+  notes: Four plant locations. Operation is Operational for Fermi and Donald C Cook,
+    Shut Down for Palisades, and Decommissioned for Big Rock Point. Palisades
+    Retirement_Year_T says it retired in 2022 and returned to operational status in
+    2025, which disagrees with Operation, so this is a facility inventory and not
+    evidence that every unit is operating. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_crude_oil_pipelines_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/LIQUID_TRANSMISSION_PIPELINES_CRUDE_SIMPLE_MI/FeatureServer/15
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_crude_oil_pipelines_mpsc
+  layers:
+  - layer: '15'
+    sector: petroleum_liquids
+    grain: network
+    metadata_path: gis/michigan_crude_oil_pipelines_mpsc/layer_metadata.json
+    name_field: Operator
+    id_fields:
+      feature_id: FID
+  notes: Five crude-oil transmission lines operated by Lambda, Mid-Valley, Enbridge,
+    Marathon, and Energy Transfer. Petroleum lines are outside utility service-area
+    scope. Cadence is a collection assumption and licence terms require review before
+    redistribution.
+  redistribution: internal_only
+- source_id: michigan_refined_petroleum_pipelines_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/MI_PETROLEUM_PRODUCTS_PIPELINES_SIMPLE/FeatureServer/5
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_refined_petroleum_pipelines_mpsc
+  layers:
+  - layer: '5'
+    sector: petroleum_liquids
+    grain: network
+    metadata_path: gis/michigan_refined_petroleum_pipelines_mpsc/layer_metadata.json
+    name_field: OpShortNm
+    id_fields:
+      feature_id: FID
+  notes: Five refined-product lines named BP, Marathon, Wolverine, Buckeye, and Energy
+    Transfer. Petroleum lines are outside utility service-area scope. Cadence is a
+    collection assumption and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_detroit_refinery_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/Detroit_Refinery/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: true
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_detroit_refinery_mpsc
+  layers:
+  - layer: '0'
+    sector: petroleum_liquids
+    grain: facility
+    metadata_path: gis/michigan_detroit_refinery_mpsc/layer_metadata.json
+    name_field: Company
+    id_fields:
+      feature_id: OBJECTID
+  notes: One refinery feature named Marathon Petroleum Co LP. A petroleum facility
+    is outside utility service-area scope. Cadence is a collection assumption and
+    licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_biomass_power_plants_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/Biomass_Power_Plants/FeatureServer/3
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_biomass_power_plants_mpsc
+  layers:
+  - layer: '3'
+    sector: electric
+    grain: facility
+    metadata_path: gis/michigan_biomass_power_plants_mpsc/layer_metadata.json
+    name_field: Plant_Name
+    id_fields:
+      feature_id: OBJECTID_1
+    attribute_fields:
+      utility_name: Utility_Na
+      plant_sector: sector_nam
+      primary_source: PrimSource
+    state_fixed: MI
+  notes: Thirty-five named plants. PrimSource is biomass on every feature. sector_nam
+    is IPP Non-CHP on 31, Industrial CHP on 2, Commercial Non-CHP on 1, and IPP CHP
+    on 1. These are plants, not retail service areas. The saved State text is Michigan
+    on every feature. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_natural_gas_power_plants_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/Power_Plants/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_natural_gas_power_plants_mpsc
+  layers:
+  - layer: '1'
+    sector: electric
+    grain: facility
+    metadata_path: gis/michigan_natural_gas_power_plants_mpsc/layer_metadata.json
+    name_field: Plant_Name
+    id_fields:
+      feature_id: OBJECTID_1
+    attribute_fields:
+      utility_name: Utility_Na
+      plant_sector: sector_nam
+      primary_source: PrimSource
+    state_fixed: MI
+  notes: Fifty-nine named electric generating plants. PrimSource is natural gas on
+    every feature. sector_nam is Electric Utility on 37, Industrial CHP on 10,
+    Commercial CHP on 5, IPP CHP on 4, and IPP Non-CHP on 3. Five features have
+    nonzero Crude_MW, one has nonzero Hydro_MW, and one has nonzero Other_MW. These
+    are plants, not gas-utility service areas. The saved State text is Michigan on
+    every feature. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_solar_power_plants_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/Solar_Power_Plants/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_solar_power_plants_mpsc
+  layers:
+  - layer: '1'
+    sector: electric
+    grain: facility
+    metadata_path: gis/michigan_solar_power_plants_mpsc/layer_metadata.json
+    name_field: p_name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      entity: p_entity
+      operating_status: p_status
+    state_fixed: MI
+  notes: Sixty-nine named solar plants. p_status is Operating on every feature, and
+    p_entity is present on every feature. The layer description says these are
+    currently operating projects from the March 2025 generator dataset. These are
+    plants, not service areas. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_wind_turbines_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/MI_Wind_Turbines/FeatureServer/1
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_wind_turbines_mpsc
+  layers:
+  - layer: '1'
+    sector: electric
+    grain: facility
+    facility_level: unit
+    facility_type_fixed: wind_turbine
+    metadata_path: gis/michigan_wind_turbines_mpsc/layer_metadata.json
+    name_field: p_name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      manufacturer: t_manu
+      county: t_county
+      plant_capacity_mw: p_cap
+      unit_capacity_kw: t_cap
+      turbine_count: p_tnum
+    state_fixed: MI
+  notes: One thousand seven hundred ten turbines in 38 named projects. There is no
+    operating-status field, so the layer is an inventory rather than proof that
+    every turbine is operating. p_cap is cumulative project capacity in megawatts
+    and is repeated on every turbine. t_cap is the turbine rated capacity in
+    kilowatts. p_tnum is the project turbine count and is not a capacity multiplier.
+    These are turbines, not service areas. The national wind-turbine database also
+    has Michigan rows. Those rows are rejected with reason state_unit_inventory
+    while this inventory is the reviewed wind-turbine list for Michigan, so the two
+    files are not added together. Cadence is a collection assumption and licence
+    terms require review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_hydroelectric_dams_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/Hydroelectric_Dams_in_Michigan_Delineated_by_Owner_WFL1/FeatureServer/4
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_hydroelectric_dams_mpsc
+  layers:
+  - layer: '4'
+    sector: electric
+    grain: facility
+    metadata_path: gis/michigan_hydroelectric_dams_mpsc/layer_metadata.json
+    name_field: Dam_Name
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      owner_name: Owner_Names
+      owner_type: Owner_Types
+      primary_purpose: Primary_Purpose
+      operational_status: Operational_Status
+    state_fixed: MI
+  notes: One hundred sixteen named dams. Primary_Purpose is Hydroelectric on 113.
+    Soo Locks is Navigation, Moores Park Dam is Other, and Barton Dam is Water Supply.
+    Owner_Names is blank on 29 features. Owner_Types is Public Utility on 39, Private
+    on 29, Not Listed on 29, Local Government on 18, and Federal on 1. Operational_Status
+    is Normal Operations on 76, Under Remediation on 19, and Under Investigation,
+    Planning, Permitting, or Design for Remediation on 3, with 18 features blank.
+    These are dam locations, not retail service areas. The saved State text is
+    Michigan on every feature. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_underground_gas_storage_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/Gas_Transmission_Underground_Storage/FeatureServer/0
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_underground_gas_storage_mpsc
+  layers:
+  - layer: '0'
+    sector: natural_gas
+    grain: facility
+    metadata_path: gis/michigan_underground_gas_storage_mpsc/layer_metadata.json
+    name_field: field
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      company: company
+    state_fixed: MI
+  notes: Fifty named underground storage fields operated by 13 companies. These are
+    storage locations, not retail service areas. Cadence is a collection assumption
+    and licence terms require review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_gas_transmission_pipelines_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/GAS_TRANSMISSION_PIPELINES_ACTIVE_MERGED_SIMPLIFIED_MI/FeatureServer/22
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_gas_transmission_pipelines_mpsc
+  layers:
+  - layer: '22'
+    sector: natural_gas
+    grain: network
+    metadata_path: gis/michigan_gas_transmission_pipelines_mpsc/layer_metadata.json
+    name_field: Operator
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      short_name: ShortName
+    state_fixed: MI
+  notes: Twenty-two transmission lines. Operator is present and distinct on every
+    feature. ShortName is OTHER on six features, so the line identity used here is
+    Operator. The service name says the lines are merged and simplified, and the
+    collection record says the geometries are not complete or as-built. These are
+    not retail service areas. Cadence is a collection assumption and licence terms
+    require review before redistribution.
+  redistribution: internal_only
+- source_id: michigan_electric_mpsc
+  publisher: Michigan Public Service Commission
+  driver: arcgis
+  url: https://services3.arcgis.com/943LBv9FP414WfDO/arcgis/rest/services/ELECTRIC_UTILITY_SERVICE_AREA_MI_WFL1/FeatureServer/16
+  cadence: irregular
+  licence: unknown
+  out_of_scope: false
+  superseded_by: null
+  reviewed: true
+  paths:
+  - gis/michigan_electric_mpsc
+  layers:
+  - layer: '16'
+    sector: electric
+    grain: service_area
+    role: active_retail_service
+    metadata_path: gis/michigan_electric_mpsc/layer_metadata.json
+    authority: state_regulator
+    boundary_representation: unknown
+    name_field: Name
+    on_missing_name: preserve_and_review
+    id_fields:
+      feature_id: OBJECTID
+    attribute_fields:
+      utility_type: Type
+    state_fixed: MI
+  notes: Fifty-seven named electric utilities, one polygon each. Type is Municipal
+    on 40, Cooperative on 10, and Investor Owned on 7. There is no status or
+    wholesale field. Cadence is a collection assumption and licence terms require
+    review before redistribution.
+  redistribution: internal_only
