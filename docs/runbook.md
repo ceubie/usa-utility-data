@@ -123,44 +123,143 @@ and the snapshot status is buildable.
 
 ## Cutting a release
 
-The current commands write release `2026Q4.1` from quarter `2026-Q4`. Pass
-`--quarter` and `--release-id` for another pair. The quarter's snapshot and
-reference tables must already be in the data root.
+A release id names one folder, `releases/<release-id>/`, under the data root.
+The quarter's snapshot and reference tables must already be there.
+
+### One command
+
+```text
+uv run utilitydata pipeline run --release-id 2026Q4.2
+```
+
+`--release-id` is required. `--quarter` defaults to `DEFAULT_QUARTER` in
+`src/utilitydata/core/config.py`. The stages run in this order: `validate`,
+`promote`, `silver_water`, `core_water`, `release_water`, `electric`,
+`wastewater`, `gas`, `cross`, `assemble`, `graph_export`, `contracts`, and
+`graph_load`.
+
+The run keeps its state in `releases/<release-id>/pipeline_status.json`, and
+each finished stage writes its summary to `releases/<release-id>/pipeline/<stage>.json`.
+Machine paths in a summary are written as `$UTILITYDATA_HOME` or `.`, the
+repository root. The status file and the `pipeline/` folder are run records
+and are not listed in `release_manifest.json`.
+
+- A stage that raises is marked `failed` with its reason, and the run stops.
+- A stage that cannot run here is marked `skipped` with its reason. Today that
+  is only `graph_load` when Docker is not available. A skipped stage is retried
+  on the next run.
+- When every stage is `done`, the release is sealed.
+
+`uv run utilitydata pipeline run --release-id <id> --resume` continues an open
+release at the first stage that is not done. `--from-stage <stage>` resets that
+stage and every later one to pending and runs from there. A new id needs
+neither flag. An existing folder needs one of them.
+
+`validate` loads the registry and stops when a licence restriction is looser
+than the one frozen with the snapshot. `contracts` runs the Core and Gold
+contracts and writes `pipeline/contracts_core.json` and
+`pipeline/contracts_gold.json`. A failed contract stops the run.
+
+### Which releases can be written
+
+- A release folder without `pipeline_status.json` is a finished release and is
+  never written. `2026Q4.1` is one.
+- A sealed release is never written.
+- Only `release water` and `pipeline run` start a release folder.
+- `electric` and `graph export` refuse a release that has not been started.
+- `wastewater` and `gas` still build their Core tables when the release has not
+  been started, and skip the release copy.
+
+Every command that writes a release takes a required `--release-id` and checks
+these rules before it starts work.
+
+### Promotion backups
+
+The Silver, electric, wastewater, and gas builds, and the `promote` stage,
+promote a reviewed collection source that the freeze left as draft. Before a
+promotion rewrites `snapshots/<quarter>/layers.parquet` and `manifest.parquet`,
+it copies both to `snapshots/<quarter>/promotion_backups/<UTC time>/`, with
+`promoted.json` listing the promoted source ids. A run that promotes nothing
+writes no backup.
+
+### Step by step
+
+The same work can be run one command at a time, in this order. Each command
+below takes `--release-id <id>`, except `silver water`, `core water`, and
+`cross`, which write quarter tables only.
 
 1. `uv run utilitydata silver water`
 2. `uv run utilitydata core water`
-3. `uv run utilitydata release water`
+3. `uv run utilitydata release water --release-id <id>`
 
-`release water` rebuilds drinking-water Gold and writes
-`releases/<release-id>/`. Tables are split into `internal/` and `shareable/` by
-licence. Unknown and restricted licences go to `internal/`. The folder also
-receives `release_manifest.json`, `data_dictionary.md`, `accuracy_report.md`,
-`change_report.md`, and `open_release.sql`. The change report records the cases
-the draft sources prevent. It does not compare two release folders. The truth
-CSVs are read and are not filled by the build.
+`release water` starts the release and rebuilds drinking-water Gold. Tables are
+split into `internal/` and `shareable/` by licence. Unknown and restricted
+licences go to `internal/`. The folder also receives `release_manifest.json`,
+`data_dictionary.md`, `accuracy_report.md`, `change_report.md`, and
+`open_release.sql`. The change report records the cases the draft sources
+prevent. It does not compare two release folders. The truth CSVs are read and
+are not filled by the build.
 
-4. `uv run utilitydata electric`
-5. `uv run utilitydata wastewater`
-6. `uv run utilitydata gas`
+4. `uv run utilitydata electric --release-id <id>`
+5. `uv run utilitydata wastewater --release-id <id>`
+6. `uv run utilitydata gas --release-id <id>`
 
 Electric appends its tables, display geometries, scorecard rows, and report
-sections to the release the water command created. Wastewater and gas copy
+sections to the release. It saves rejected territory rows, with their reason,
+in `silver/<quarter>/electric_boundary_rejects.parquet`; other electric rejects
+are in `silver/<quarter>/electric_rejects.parquet`. Wastewater and gas copy
 service areas, append active best display geometries, update the multi-sector
 scorecard, and add `wastewater_service_area` / `gas_service_area` views to
-`open_release.sql` when the release directory already exists. If it does not,
-those two commands still write their Core tables and skip the release copy.
+`open_release.sql`.
 
 7. `uv run utilitydata cross`
 
 Cross writes facilities, organization relationships, and
 `core/<quarter>/facility_review_queue.parquet`. It does not copy files into the
 release folder. Graph export reads the facility and relationship tables, so
-this step comes first.
+this step comes first. The `assemble` stage has no separate command; run it
+with `pipeline run --resume` or `--from-stage assemble`.
 
-8. `uv run utilitydata graph export`
-9. `uv run utilitydata graph load`
+8. `uv run utilitydata graph export --release-id <id>`
+9. `uv run utilitydata graph load --release-id <id>`
 
 Export writes `releases/<release-id>/graph/` and checks that the Travis County
-water systems in the edge table match Gold. Load starts Fuseki on `127.0.0.1`
-when Docker is available and checks the same Travis County set through SPARQL.
-The query service is the only published service.
+water systems in the edge table match Gold.
+
+## Loading and serving the graph
+
+`graph load` reads the release and does not write it, so its `--release-id`
+defaults to `DEFAULT_RELEASE_ID`. When Docker is available it loads
+`graph/graph.nt` into the Docker volume `utilitydata-tdb2-<release-id>`, starts
+Fuseki on `127.0.0.1:3030`, and checks the Travis County set through SPARQL. A
+load replaces only that release's volume. The store exposes query only; there
+is no update or upload endpoint. `--engine qlever` does not load or start
+QLever. It reports whether an index exists under `qlever/<release-id>/` in the
+data root and leaves the server off. Fuseki stays the default until QLever
+parity is shown.
+
+`docker-compose.yml` serves one loaded release with the app:
+
+```text
+uv run utilitydata graph load --release-id <id>
+npm --prefix app/frontend run build
+UTILITYDATA_RELEASE=<id> docker compose up --build
+```
+
+Only the Caddy proxy publishes a port, `127.0.0.1:8080`. It serves the built
+frontend and forwards `/api/*` to the backend. The backend and Fuseki share the
+proxy's network namespace and publish nothing. The data root is mounted read-only.
+The store volume must already exist; compose does not create it.
+
+The app is for local use only. To require a login, also set:
+
+- `CADDYFILE=Caddyfile.login`
+- `REQUIRE_AUTH=1`
+- `PROXY_SHARED_SECRET`, a long random value
+- `PROXY_USER`
+- `PROXY_PASSWORD_HASH`, from `docker run --rm caddy:2.10.2 caddy hash-password`
+
+The proxy removes any `X-Forwarded-User` or `X-Proxy-Secret` header a client
+sends. After basic authentication it sets both. With `REQUIRE_AUTH=1` the backend answers 401 unless
+the shared secret matches and a user is named. Ask questions need the Azure
+OpenAI variables; without them Ask reports a configuration error.
