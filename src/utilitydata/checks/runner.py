@@ -81,6 +81,10 @@ REVIEWED_PATH_EXCEPTIONS: dict[tuple[str, str], frozenset[str]] = {
         "navistar international corp /de/new",
         "west coast bancorp /new/or/",
     }),
+    ("cross_sector_reject.parquet", "raw_name"): frozenset({
+        "navistar international corp /de/new",
+        "west coast bancorp /new/or/",
+    }),
     ("organization_relationship.parquet", "subject_name"): frozenset({
         "arthur s. wolcott /s/kraig h. kayser president",
         "communicaitons company l.p. (/10/ucom,)inc",

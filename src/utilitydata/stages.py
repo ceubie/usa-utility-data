@@ -31,7 +31,7 @@ from utilitydata.wastewater.build import build_wastewater
 
 def validate(context: StageContext) -> Mapping[str, object]:
     sources = load_registry(context.registry_dir, require_reviewed=False, raw_root=context.raw, home_root=context.home)
-    frozen = context.home / "snapshots" / context.quarter / "registry"
+    frozen = context.home / "snapshots" / context.quarter / "registry" / "sources"
     if not frozen.is_dir():
         raise ValueError(f"Snapshot registry is missing for {context.quarter}")
     relaxed = relaxed_restrictions(load_registry(frozen, require_reviewed=False), sources)

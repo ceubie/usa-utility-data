@@ -102,6 +102,30 @@ def test_file_checks_do_not_confuse_urls_and_detect_unverifiable_content(tmp_pat
     assert checks["absolute_paths:stored.duckdb:table:main.stored"]["violations"] == 1
 
 
+def test_reviewed_sec_names_in_cross_sector_rejects_are_not_paths(tmp_path):
+    data = tmp_path / "data"
+    data.mkdir()
+    pq.write_table(
+        pa.table({
+            "raw_name": [
+                "navistar international corp /de/new",
+                "west coast bancorp /new/or/",
+                "holding /de/new/extra",
+            ]
+        }),
+        data / "cross_sector_reject.parquet",
+    )
+    contracts = tmp_path / "contracts"
+    contracts.mkdir()
+    (contracts / "table.yaml").write_text(
+        "table: t\npath: cross_sector_reject.parquet\ncolumns: [{name: raw_name}]\n",
+        encoding="utf-8",
+    )
+    checks = {c["name"]: c for c in run_checks(contracts, data)["checks"]}
+    assert checks["absolute_paths:cross_sector_reject.parquet"]["violations"] == 0
+    assert checks["possible_absolute_paths:cross_sector_reject.parquet"]["violations"] == 1
+
+
 def test_declared_geometry_requires_valid_geoparquet_metadata(tmp_path):
     data = tmp_path / "data"
     data.mkdir()

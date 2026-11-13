@@ -55,6 +55,20 @@ def test_every_stage_has_a_function():
     assert tuple(STAGE_FUNCTIONS) == STAGES
 
 
+def test_validate_reads_frozen_sources_and_ignores_unused_yaml(tmp_path: Path):
+    home = tmp_path / "data"
+    registry = home / "registry"
+    frozen = home / "snapshots" / "2026-Q4" / "registry"
+    (frozen / "sources").mkdir(parents=True)
+    registry.mkdir()
+    source = "sources:\n- source_id: example_source\n  licence: internal_or_no_redistribution\n"
+    (registry / "sources.yaml").write_text(source, encoding="utf-8")
+    (frozen / "sources" / "sources.yaml").write_text(source, encoding="utf-8")
+    (frozen / "unused.yaml").write_text("unused:\n- path: ferc/raw\n  reason: retained\n", encoding="utf-8")
+    summary = pipeline_stages.validate(_context(home))
+    assert summary == {"sources": 1, "reviewed": 0, "drafts": 1}
+
+
 def test_a_release_without_a_pipeline_status_is_never_written(tmp_path: Path):
     home = tmp_path / "data"
     (home / "releases" / "2026Q4.1").mkdir(parents=True)
