@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import re
 import subprocess
 from pathlib import Path
 
@@ -10,6 +11,7 @@ import pandas as pd
 import pyarrow.parquet as pq
 
 from utilitydata.core.checks import acceptance_blockers
+from utilitydata.pipeline import RUN_RECORDS
 from utilitydata.registry import load_registry
 
 
@@ -59,19 +61,29 @@ def write_change_report(
     destination.write_text("\n".join(lines), encoding="utf-8")
 
 
+_MACHINE_PATH = re.compile(
+    r"(?m)(^|[^A-Za-z0-9+./:-])([A-Za-z]:[\\/]|\\\\)"
+    r"|(^|[\s='\"(])/(?:tmp|home|etc|var|usr|root|opt|mnt|srv|private|Users|Volumes|workspace)(/|[\s\"',;)]|$)"
+)
+
+
 def reject_absolute_paths(release: Path) -> None:
     """Raise when a text artifact contains a machine path."""
     for path in release.rglob("*"):
         if path.suffix.lower() not in {".md", ".sql", ".json"}:
             continue
         text = path.read_text(encoding="utf-8")
-        if ":\\" in text or "/Users/" in text or "/home/" in text:
+        if _MACHINE_PATH.search(text):
             raise ValueError(path.name + " contains an absolute path")
 
 
 def write_manifest(release: Path, home: Path, quarter: str, gold: Path, repository_root: Path) -> None:
     """Record the commit, snapshot, row counts, checksums, and source vintages."""
-    files = sorted(path for path in release.rglob("*") if path.is_file() and path.name != "release_manifest.json")
+    files = sorted(
+        path
+        for path in release.rglob("*")
+        if path.is_file() and path.name != "release_manifest.json" and path.relative_to(release).parts[0] not in RUN_RECORDS
+    )
     payload = {
         "release": release.name,
         "quarter": quarter,

@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import re
 import shutil
 import subprocess
 import time
@@ -15,12 +14,12 @@ from utilitydata.core.config import (
 )
 from utilitydata.graph.ontology import write_assembler
 from utilitydata.graph.store import SparqlStore, query_url
+from utilitydata.pipeline import validate_release_id
 
 JENA_VERSION = "6.2.0"
 IMAGE = f"utilitydata-fuseki:{JENA_VERSION}"
 CONTAINER = "utilitydata-fuseki"
 DATABASE_VOLUME_PREFIX = "utilitydata-tdb2-"
-_RELEASE = re.compile(r"[A-Za-z0-9._-]+")
 _LOADER = f"/opt/apache-jena-{JENA_VERSION}/bin/tdb2.tdbloader"
 _SERVER = f"/opt/apache-jena-fuseki-{JENA_VERSION}/fuseki-server"
 
@@ -40,9 +39,7 @@ class FusekiStatus:
 
 def database_volume(release_id: str) -> str:
     """Return the TDB2 volume for one release, so a load never replaces another release's store."""
-    if not _RELEASE.fullmatch(release_id):
-        raise ValueError("Release id has an unexpected form")
-    return DATABASE_VOLUME_PREFIX + release_id
+    return DATABASE_VOLUME_PREFIX + validate_release_id(release_id)
 
 
 def documented_commands(release_id: str) -> tuple[str, str]:
@@ -84,7 +81,26 @@ def load_and_serve(home: Path, repository_root: Path, release_id: str, nt_path: 
     if build.returncode != 0:
         return FusekiStatus(True, False, False, _tail(build.stderr), load_text, server_text, query_url())
     volume = database_volume(release_id)
-    subprocess.run(["docker", "volume", "rm", "--force", volume], check=False, capture_output=True, text=True)
+    subprocess.run(["docker", "rm", "--force", CONTAINER], check=False, capture_output=True, text=True)
+    holders = subprocess.run(["docker", "ps", "-aq", "--filter", f"volume={volume}"], check=False, capture_output=True, text=True)
+    if holders.returncode != 0:
+        return FusekiStatus(True, False, False, _tail(holders.stderr or holders.stdout), load_text, server_text, query_url())
+    if holders.stdout.strip():
+        ids = ", ".join(holders.stdout.split())
+        return FusekiStatus(
+            True,
+            False,
+            False,
+            f"Volume {volume} is still mounted by container(s): {ids}",
+            load_text,
+            server_text,
+            query_url(),
+        )
+    existing = subprocess.run(["docker", "volume", "inspect", volume], check=False, capture_output=True, text=True)
+    if existing.returncode == 0:
+        removed = subprocess.run(["docker", "volume", "rm", volume], check=False, capture_output=True, text=True)
+        if removed.returncode != 0:
+            return FusekiStatus(True, False, False, _tail(removed.stderr or removed.stdout), load_text, server_text, query_url())
     created = subprocess.run(["docker", "volume", "create", volume], check=False, capture_output=True, text=True)
     if created.returncode != 0:
         return FusekiStatus(True, False, False, _tail(created.stderr or created.stdout), load_text, server_text, query_url())
@@ -98,7 +114,6 @@ def load_and_serve(home: Path, repository_root: Path, release_id: str, nt_path: 
     )
     if load.returncode != 0:
         return FusekiStatus(True, False, False, _tail(load.stderr or load.stdout), load_text, server_text, query_url())
-    subprocess.run(["docker", "rm", "--force", CONTAINER], check=False, capture_output=True, text=True)
     server = subprocess.run(_server_command(assembler, volume), check=False, capture_output=True, text=True)
     if server.returncode != 0:
         return FusekiStatus(True, False, True, _tail(server.stderr or server.stdout), load_text, server_text, query_url())

@@ -57,7 +57,11 @@ class ReleaseDB:
         self._lock = Lock()
         self._connection = duckdb.connect()
         try:
-            self._connection.execute("LOAD spatial")
+            try:
+                self._connection.execute("LOAD spatial")
+            except duckdb.Error:
+                self._connection.execute("INSTALL spatial")
+                self._connection.execute("LOAD spatial")
         except duckdb.Error as exc:
             self._connection.close()
             raise ValueError("The DuckDB spatial extension is not available") from exc

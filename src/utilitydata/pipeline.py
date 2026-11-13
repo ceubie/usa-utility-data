@@ -8,6 +8,7 @@ is refused, as is a run that finished every stage and was sealed.
 from __future__ import annotations
 
 import json
+import re
 from collections.abc import Callable, Mapping
 from dataclasses import dataclass
 from pathlib import Path
@@ -28,6 +29,22 @@ STAGES = (
     "graph_load",
 )
 STATES = frozenset({"pending", "running", "done", "failed", "skipped"})
+STATUS_FILE = "pipeline_status.json"
+SUMMARY_DIR = "pipeline"
+RUN_RECORDS = frozenset({STATUS_FILE, SUMMARY_DIR})
+_RELEASE_ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*")
+
+
+def validate_release_id(release_id: str) -> str:
+    """Validate that a release id is a single safe directory name under releases/."""
+    if not isinstance(release_id, str) or not _RELEASE_ID.fullmatch(release_id):
+        raise ValueError(f"Release id has an unexpected form: {release_id!r}")
+    return release_id
+
+
+def release_dir(home: Path, release_id: str) -> Path:
+    """Return the release directory under home/releases after validating release_id."""
+    return home / "releases" / validate_release_id(release_id)
 
 
 @dataclass(frozen=True)
@@ -39,9 +56,12 @@ class StageContext:
     quarter: str
     release_id: str
 
+    def __post_init__(self) -> None:
+        validate_release_id(self.release_id)
+
     @property
     def release(self) -> Path:
-        return self.home / "releases" / self.release_id
+        return release_dir(self.home, self.release_id)
 
 
 class StageSkipped(Exception):
@@ -52,7 +72,7 @@ Stage = Callable[[StageContext], Mapping[str, object] | None]
 
 
 def status_path(home: Path, release_id: str) -> Path:
-    return home / "releases" / release_id / "pipeline_status.json"
+    return release_dir(home, release_id) / STATUS_FILE
 
 
 def _new_status() -> dict[str, object]:
@@ -61,7 +81,13 @@ def _new_status() -> dict[str, object]:
 
 def _read(path: Path) -> dict[str, object]:
     status = json.loads(path.read_text(encoding="utf-8"))
-    stages = status.get("stages") if isinstance(status, dict) else None
+    if not isinstance(status, dict):
+        raise ValueError(f"Pipeline status must be a JSON object: {path.name}")
+    if not isinstance(status.get("sealed"), bool):
+        raise ValueError(f"Pipeline status is missing boolean 'sealed': {path.name}")
+    if not isinstance(status.get("reasons"), dict):
+        raise ValueError(f"Pipeline status is missing object 'reasons': {path.name}")
+    stages = status.get("stages")
     if not isinstance(stages, dict) or set(stages) != set(STAGES) or not set(stages.values()) <= STATES:
         raise ValueError(f"Pipeline status does not list the stages {', '.join(STAGES)}: {path.name}")
     return status
@@ -80,7 +106,7 @@ def open_release(home: Path, release_id: str) -> Path:
 
     Only the commands that start a release call this; the sector builds add to one.
     """
-    release = home / "releases" / release_id
+    release = release_dir(home, release_id)
     if not release.exists():
         release.mkdir(parents=True)
         _write(status_path(home, release_id), _new_status())
@@ -91,7 +117,7 @@ def open_release(home: Path, release_id: str) -> Path:
 
 def writable_release_if_present(home: Path, release_id: str) -> Path | None:
     """Return an open release folder, or None when it has not been started."""
-    release = home / "releases" / release_id
+    release = release_dir(home, release_id)
     if not release.exists():
         return None
     _refuse_closed(home, release_id)
@@ -108,9 +134,10 @@ def writable_release(home: Path, release_id: str) -> Path:
 
 def begin_run(home: Path, release_id: str, *, resume: bool, from_stage: str | None) -> dict[str, object]:
     """Create or reopen the status file. A finished, sealed, or unresumed folder is refused."""
+    validate_release_id(release_id)
     if from_stage is not None and from_stage not in STAGES:
         raise ValueError(f"Unknown pipeline stage: {from_stage}")
-    release = home / "releases" / release_id
+    release = release_dir(home, release_id)
     existed = release.exists()
     open_release(home, release_id)
     if existed and not resume and from_stage is None:
@@ -162,7 +189,7 @@ def run_pipeline(
     if missing or set(stages) - set(STAGES):
         raise ValueError(f"Stage functions do not match the pipeline stages: {', '.join(missing) or 'extra stages'}")
     status = begin_run(context.home, context.release_id, resume=resume, from_stage=from_stage)
-    summaries = context.release / "pipeline"
+    summaries = context.release / SUMMARY_DIR
     for stage in STAGES:
         if status["stages"][stage] == "done":
             continue
@@ -171,14 +198,14 @@ def run_pipeline(
         try:
             summary = stages[stage](context)
         except StageSkipped as exc:
-            mark(context.home, context.release_id, stage, "skipped", str(exc))
+            mark(context.home, context.release_id, stage, "skipped", _scrub_paths(str(exc), context))
             echo(f"{stage}: skipped; {exc}")
             continue
         except Exception as exc:
-            mark(context.home, context.release_id, stage, "failed", f"{type(exc).__name__}: {exc}")
+            mark(context.home, context.release_id, stage, "failed", _scrub_paths(f"{type(exc).__name__}: {exc}", context))
             raise
         summaries.mkdir(parents=True, exist_ok=True)
-        (summaries / f"{stage}.json").write_text(json.dumps(summary or {}, indent=2, default=str) + "\n", encoding="utf-8")
+        (summaries / f"{stage}.json").write_text(_summary_text(summary, context), encoding="utf-8")
         mark(context.home, context.release_id, stage, "done")
         echo(f"{stage}: done")
     path = status_path(context.home, context.release_id)
@@ -187,6 +214,19 @@ def run_pipeline(
         status["sealed"] = True
         _write(path, status)
     return status
+
+
+def _scrub_paths(text: str, context: StageContext) -> str:
+    for root, label in ((context.home, "$UTILITYDATA_HOME"), (context.repository_root, ".")):
+        resolved = root.resolve()
+        for form in sorted({str(root), str(resolved), resolved.as_posix(), json.dumps(str(resolved))[1:-1]}, key=len, reverse=True):
+            text = text.replace(form, label)
+    return text
+
+
+def _summary_text(summary: Mapping[str, object] | None, context: StageContext) -> str:
+    """Serialize a stage summary with machine paths replaced, since the release must not contain them."""
+    return _scrub_paths(json.dumps(summary or {}, indent=2, default=str), context) + "\n"
 
 
 def _write(path: Path, status: Mapping[str, object]) -> None:

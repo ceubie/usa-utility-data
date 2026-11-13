@@ -1,5 +1,8 @@
 """Endpoints that do not call a model."""
 
+import json
+from pathlib import Path
+
 import duckdb
 import pytest
 from fastapi.testclient import TestClient
@@ -12,18 +15,42 @@ from app.backend.store import SparqlStore
 
 pytestmark = [pytest.mark.requires_release, pytest.mark.requires_sparql]
 
+
 @pytest.fixture(scope="module")
 def client():
     with TestClient(create_app()) as test_client:
         yield test_client
 
 
+def _expected_release_metrics(release_dir: Path) -> tuple[dict[str, int], int, int]:
+    manifest = json.loads((release_dir / "graph" / "manifest.json").read_text(encoding="utf-8"))
+    connection = duckdb.connect()
+    try:
+        water_row = connection.execute(
+            "SELECT count(*)::BIGINT FROM read_parquet(?) WHERE sector = 'water'",
+            [str(release_dir / "graph" / "nodes" / "utility_system.parquet")],
+        ).fetchone()
+        travis_row = connection.execute(
+            "SELECT count(DISTINCT system_id)::BIGINT FROM read_parquet(?) WHERE county_geoid = '48453' AND sector = 'water'",
+            [str(release_dir / "graph" / "edges" / "serves_county.parquet")],
+        ).fetchone()
+    finally:
+        connection.close()
+    assert water_row is not None and travis_row is not None
+    return manifest["node_rows"], int(water_row[0]), int(travis_row[0])
+
+
 def test_stats_search_scorecard_sparql_and_place(client: TestClient):
+    settings = get_settings()
+    node_rows, expected_water_systems, expected_travis_water = _expected_release_metrics(settings.release_dir)
+
     stats = client.get("/api/stats")
     assert stats.status_code == 200
-    classes = {item["name"]: item["count"] for item in stats.json()["classes"]}
-    assert classes["Organization"] == 403_693
-    assert classes["WaterSystem"] == 446_100
+    payload = stats.json()
+    assert payload["release"] == settings.utilitydata_release
+    classes = {item["name"]: item["count"] for item in payload["classes"]}
+    assert classes["Organization"] == node_rows["organization"] > 0
+    assert classes["WaterSystem"] == expected_water_systems > 0
 
     search = client.get("/api/search", params={"q": "KELLY LANE WCID 1", "state": "TX", "limit": 10})
     assert search.status_code == 200
@@ -44,7 +71,8 @@ def test_stats_search_scorecard_sparql_and_place(client: TestClient):
     assert sparql.status_code == 200
     body = sparql.json()
     assert body["row_count"] == 1
-    assert body["rows"][0]["systems"]["value"] == "84"
+    assert 0 < expected_travis_water < 120
+    assert int(body["rows"][0]["systems"]["value"]) == expected_travis_water
 
     release = ReleaseDB(get_settings())
     try:

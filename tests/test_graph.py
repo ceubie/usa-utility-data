@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import subprocess
 from pathlib import Path
 
 import pyarrow as pa
@@ -13,13 +14,19 @@ from rdflib import Graph
 from utilitydata.core.config import GRAPH_BASE_IRI, GRAPH_QUERY_TIMEOUT_S
 from utilitydata.cross.schema import RELATIONSHIP_COLUMNS
 from utilitydata.gold.schema import TRAVIS_COUNTY_GEOID
+from utilitydata.graph import fuseki
 from utilitydata.graph.export_nt import write_ntriples
 from utilitydata.graph.export_tables import (
     export_graph,
     forbidden_output_columns,
     travis_served_ids,
 )
-from utilitydata.graph.fuseki import documented_commands
+from utilitydata.graph.fuseki import (
+    CONTAINER,
+    database_volume,
+    documented_commands,
+    load_and_serve,
+)
 from utilitydata.graph.literals import (
     XSD_STRING,
     escape_literal,
@@ -72,6 +79,63 @@ def test_fuseki_commands_stay_on_the_loopback_interface():
     assert "0.0.0.0" not in server
     assert "tdb2.tdbloader" in load
     assert "$UTILITYDATA_HOME/releases/2026Q4.2/graph" in load
+    assert database_volume("2026Q4.2") == "utilitydata-tdb2-2026Q4.2"
+    with pytest.raises(ValueError, match="unexpected form"):
+        database_volume("..")
+
+
+def test_fuseki_reload_stops_container_before_removing_volume(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    nt_path = tmp_path / "releases" / "2026Q4.2" / "graph" / "graph.nt"
+    nt_path.parent.mkdir(parents=True)
+    nt_path.write_text("", encoding="utf-8")
+    commands: list[list[str]] = []
+
+    def fake_run(cmd, **_kwargs):
+        commands.append(cmd)
+        return subprocess.CompletedProcess(cmd, 0, "", "")
+
+    monkeypatch.setattr(fuseki.shutil, "which", lambda _name: "/usr/bin/docker")
+    monkeypatch.setattr(fuseki.subprocess, "run", fake_run)
+    monkeypatch.setattr(fuseki, "_wait_until_ready", lambda: True)
+    monkeypatch.setattr(fuseki, "write_assembler", lambda root: root / "graph" / "fuseki" / "assembler.ttl")
+
+    status = load_and_serve(tmp_path, REPO, "2026Q4.2", nt_path)
+    assert status.started is True and status.loaded is True
+    rm_container = commands.index(["docker", "rm", "--force", CONTAINER])
+    rm_volume = commands.index(["docker", "volume", "rm", "utilitydata-tdb2-2026Q4.2"])
+    load_idx = next(i for i, cmd in enumerate(commands) if any("tdb2.tdbloader" in arg for arg in cmd))
+    assert rm_container < rm_volume < load_idx
+
+
+def test_fuseki_reload_refuses_when_volume_still_mounted_or_rm_fails(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    nt_path = tmp_path / "releases" / "2026Q4.2" / "graph" / "graph.nt"
+    nt_path.parent.mkdir(parents=True)
+    nt_path.write_text("", encoding="utf-8")
+    monkeypatch.setattr(fuseki.shutil, "which", lambda _name: "/usr/bin/docker")
+
+    def mounted_run(cmd, **_kwargs):
+        if cmd[:3] == ["docker", "ps", "-aq"]:
+            return subprocess.CompletedProcess(cmd, 0, "compose_sparql_1\n", "")
+        if "tdb2.tdbloader" in cmd or (len(cmd) >= 3 and cmd[:3] == ["docker", "volume", "rm"]):
+            raise AssertionError(f"Should not run {cmd} while volume is mounted")
+        return subprocess.CompletedProcess(cmd, 0, "", "")
+
+    monkeypatch.setattr(fuseki.subprocess, "run", mounted_run)
+    status = load_and_serve(tmp_path, REPO, "2026Q4.2", nt_path)
+    assert status.started is False and status.loaded is False
+    assert "still mounted" in status.reason
+
+    def rm_fails_run(cmd, **_kwargs):
+        if cmd[:3] == ["docker", "volume", "rm"]:
+            return subprocess.CompletedProcess(cmd, 1, "", "volume is in use")
+        if "tdb2.tdbloader" in cmd:
+            raise AssertionError("Should not load into volume when removal failed")
+        return subprocess.CompletedProcess(cmd, 0, "", "")
+
+    monkeypatch.setattr(fuseki.subprocess, "run", rm_fails_run)
+    status = load_and_serve(tmp_path, REPO, "2026Q4.2", nt_path)
+    assert status.started is False and status.loaded is False
+    assert "volume is in use" in status.reason
 
 
 def test_graph_package_does_not_branch_on_source_or_name_another_store():

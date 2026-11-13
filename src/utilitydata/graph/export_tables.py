@@ -43,11 +43,10 @@ from utilitydata.graph.spec import (
     SYSTEM_FIELDS,
     sector_class_name,
 )
-from utilitydata.pipeline import writable_release
+from utilitydata.pipeline import release_dir, validate_release_id, writable_release
 from utilitydata.registry import Source, load_registry
 
 _QUARTER = re.compile(r"[0-9]{4}-Q[1-4]")
-_RELEASE = re.compile(r"[A-Za-z0-9._-]+")
 _SEGMENT = re.compile(r"^[A-Za-z0-9_]+$")
 _SYSTEM_FILES = (
     "system.parquet",
@@ -83,8 +82,9 @@ def export_graph(
 ) -> dict[str, object]:
     """Write the query-language-neutral graph tables under the release directory."""
     checked = require_base(base)
-    if not _QUARTER.fullmatch(quarter) or not _RELEASE.fullmatch(release_id):
-        raise ValueError("Quarter or release id has an unexpected form")
+    if not _QUARTER.fullmatch(quarter):
+        raise ValueError("Quarter has an unexpected form")
+    validate_release_id(release_id)
     _require_contract_alignment()
     release = writable_release(home, release_id)
     core = home / "core" / quarter
@@ -137,7 +137,7 @@ def export_graph(
 
 def travis_served_ids(home: Path, quarter: str, release_id: str) -> tuple[set[str], set[str]]:
     """Return the Gold and servesCounty system ids for Travis County water."""
-    edge = home / "releases" / release_id / "graph" / "edges" / "serves_county.parquet"
+    edge = release_dir(home, release_id) / "graph" / "edges" / "serves_county.parquet"
     gold = home / "gold" / quarter / "system_county_coverage.parquet"
     connection = duckdb.connect()
     try:

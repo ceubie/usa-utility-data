@@ -5,6 +5,12 @@
 > Silver and Gold outputs have been moved under `UTILITYDATA_HOME/legacy`.
 > See [rebuild setup](docs/rebuild-setup.md), the [source registry](registry/README.md),
 > and [independent review gates](docs/review-gates.md) for the current work.
+>
+> The current platform is the `utilitydata` package. A release is built with
+> `uv run utilitydata pipeline run --release-id <id>` and served locally with
+> `docker compose up`. The [runbook](docs/runbook.md) covers both, including
+> resume, the rules for which releases can be written, and the optional login.
+> `run_pipeline.py` and `pipeline/` below are the legacy pipeline.
 
 This repository collects, deduplicates, harmonizes, and materializes public U.S. utility, service-territory, and infrastructure data across **electric, natural gas, drinking water, wastewater, stormwater, telecommunications, and petroleum/liquids** into standardized **Silver** GeoParquet/Parquet tables and **Gold** derived data products, backed by an embedded **Materialized Knowledge Graph** (`gold/knowledge_graph/utility_knowledge_graph.duckdb`).
 
