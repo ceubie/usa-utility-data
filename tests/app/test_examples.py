@@ -72,7 +72,9 @@ def test_every_example_has_a_question_and_returns_a_row():
         if fuseki:
             assert empty == []
             pattern = "?system a ud:WaterSystem ; ud:servesCounty <http://utilities.local/county/48453>"
-            assert store.count(pattern) == 84
+            expected = _travis_water_count(settings.release_dir)
+            assert 0 < expected < 120
+            assert store.count(pattern) == expected
         else:
             message = "Fuseki is down. Examples not run against DuckDB: " + ", ".join(not_run)
             print(message)
@@ -86,6 +88,20 @@ def _fuseki_up(store: SparqlStore) -> bool:
         return store.ask("ASK { <http://utilities.local/county/48453> ?p ?o }")
     except ValueError:
         return False
+
+
+def _travis_water_count(release) -> int:
+    path = release / "graph" / "edges" / "serves_county.parquet"
+    connection = duckdb.connect()
+    try:
+        row = connection.execute(
+            "SELECT count(DISTINCT system_id)::BIGINT FROM read_parquet(?) WHERE county_geoid = '48453' AND sector = 'water'",
+            [str(path)],
+        ).fetchone()
+    finally:
+        connection.close()
+    assert row is not None
+    return int(row[0])
 
 
 def _duckdb_rows(name: str, release) -> list | None:
