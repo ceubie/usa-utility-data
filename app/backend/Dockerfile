@@ -10,6 +10,7 @@ COPY registry ./registry
 COPY graph ./graph
 COPY contracts ./contracts
 RUN uv sync --frozen --no-dev
+RUN /opt/venv/bin/python -c "import duckdb; duckdb.connect().execute('INSTALL spatial')"
 
 ENV PATH="/opt/venv/bin:${PATH}"
 CMD ["python", "-m", "app.backend.main"]
