@@ -46,7 +46,7 @@ The previous snapshot stays in place. Subsequent refreshes and sector helpers ca
 resolve previous files from either `snapshots/<quarter>/files/` or `blobs/`.
 
 Unchanged bytes are recorded as skipped. A download error, a missing mapped
-field,shapes outside the expected state outline (loaded from `ref_state.parquet`),
+field, shapes outside the expected state outline (loaded from `ref_state.parquet`),
 or a feature-count or area move larger than the drift settings in
 `src/utilitydata/core/config.py` (both 0.10) carries the last good bytes forward
 and marks the source `carried_forward`.
@@ -204,13 +204,15 @@ are not filled by the build.
 5. `uv run utilitydata wastewater --release-id <id>`
 6. `uv run utilitydata gas --release-id <id>`
 
-Electric appends its tables, display geometries, scorecard rows, and report
-sections to the release. It saves rejected territory rows, with their reason,
-in `silver/<quarter>/electric_boundary_rejects.parquet`; other electric rejects
+Electric appends its tables, scorecard rows, and report sections to the release.
+It saves rejected territory rows, with their reason, in
+`silver/<quarter>/electric_boundary_rejects.parquet`; other electric rejects
 are in `silver/<quarter>/electric_rejects.parquet`. Wastewater and gas copy
-service areas, append active best display geometries, update the multi-sector
-scorecard, and add `wastewater_service_area` / `gas_service_area` views to
-`open_release.sql`.
+service areas, update the multi-sector scorecard, and add
+`wastewater_service_area` / `gas_service_area` views to `open_release.sql`.
+The `assemble` stage rebuilds the multi-sector `service_area_display.parquet`,
+`entity_search.parquet`, `state_sector_scorecard.parquet`, and `sector_reports.md`
+outputs for the release.
 
 7. `uv run utilitydata cross`
 

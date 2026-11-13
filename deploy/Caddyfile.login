@@ -1,7 +1,11 @@
 # Login proxy. Pair with REQUIRE_AUTH=1. PROXY_USER, PROXY_PASSWORD_HASH and
 # PROXY_SHARED_SECRET come from the environment. Identity headers sent by a
 # client are removed before the proxy sets its own.
-:8080 {
+{
+	admin off
+}
+
+http://127.0.0.1:8080, http://localhost:8080 {
 	request_header -X-Forwarded-User
 	request_header -X-Proxy-Secret
 

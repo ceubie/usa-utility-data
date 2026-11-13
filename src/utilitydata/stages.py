@@ -22,6 +22,7 @@ from utilitydata.graph.store import (
 from utilitydata.pipeline import STAGES, SUMMARY_DIR, Stage, StageContext, StageSkipped
 from utilitydata.registry import load_registry, relaxed_restrictions
 from utilitydata.release.build import build_water_release
+from utilitydata.release.reports import reject_absolute_paths, write_manifest
 from utilitydata.sectors.assemble import assemble
 from utilitydata.sectors.promote import PROMOTION_BACKUPS, promote_reviewed_collection
 from utilitydata.silver.boundaries import build_water_silver
@@ -89,7 +90,10 @@ def cross(context: StageContext) -> Mapping[str, object]:
 
 def assemble_products(context: StageContext) -> Mapping[str, object]:
     sources = load_registry(context.registry_dir, require_reviewed=False)
-    return assemble(context.home, sources, quarter=context.quarter, registry_dir=context.registry_dir, release_id=context.release_id)
+    summary = assemble(context.home, sources, quarter=context.quarter, registry_dir=context.registry_dir, release_id=context.release_id)
+    write_manifest(context.release, context.home, context.quarter, context.home / "gold" / context.quarter, context.repository_root)
+    reject_absolute_paths(context.release)
+    return summary
 
 
 def graph_export(context: StageContext) -> Mapping[str, object]:
@@ -104,6 +108,8 @@ def graph_export(context: StageContext) -> Mapping[str, object]:
     gold_ids, edge_ids = travis_served_ids(context.home, context.quarter, context.release_id)
     if gold_ids != edge_ids:
         raise ValueError("Travis County water systems in the graph edges do not match Gold")
+    write_manifest(context.release, context.home, context.quarter, context.home / "gold" / context.quarter, context.repository_root)
+    reject_absolute_paths(context.release)
     return {"manifest": manifest, "triples": triples, "travis_county_water_served": len(gold_ids)}
 
 
@@ -120,6 +126,7 @@ def contracts(context: StageContext) -> Mapping[str, object]:
         reports[layer] = result["status"]
         if result["status"] != "pass":
             failed.append(layer)
+    reject_absolute_paths(context.release)
     if failed:
         raise ValueError(f"Contract checks failed for {', '.join(failed)}; see pipeline/contracts_<layer>.json")
     return reports

@@ -12,6 +12,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from utilitydata.core.config import GRAPH_QLEVER_PORT, GRAPH_QUERY_HOST
+from utilitydata.pipeline import validate_release_id
 
 # No image digest is recorded. The live server is not started until a digest is pinned and parity is shown.
 QLEVER_IMAGE = None
@@ -41,9 +42,7 @@ def qlever_query_url(host: str = GRAPH_QUERY_HOST, port: int = GRAPH_QLEVER_PORT
 
 def index_dir(home: Path, release_id: str) -> Path:
     """Return the release index directory. The path stays under the data root."""
-    if not release_id or "/" in release_id or "\\" in release_id or release_id.startswith("."):
-        raise ValueError("QLever release id is not a single directory name")
-    destination = home / INDEX_DIR_NAME / release_id
+    destination = home / INDEX_DIR_NAME / validate_release_id(release_id)
     if not destination.resolve().is_relative_to(home.resolve()):
         raise ValueError("QLever index path escapes the data root")
     return destination

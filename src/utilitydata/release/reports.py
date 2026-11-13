@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import re
 import subprocess
 from pathlib import Path
 
@@ -60,13 +61,19 @@ def write_change_report(
     destination.write_text("\n".join(lines), encoding="utf-8")
 
 
+_MACHINE_PATH = re.compile(
+    r"(?m)(^|[^A-Za-z0-9+./:-])([A-Za-z]:[\\/]|\\\\)"
+    r"|(^|[\s='\"(])/(?:tmp|home|etc|var|usr|root|opt|mnt|srv|private|Users|Volumes|workspace)(/|[\s\"',;)]|$)"
+)
+
+
 def reject_absolute_paths(release: Path) -> None:
     """Raise when a text artifact contains a machine path."""
     for path in release.rglob("*"):
         if path.suffix.lower() not in {".md", ".sql", ".json"}:
             continue
         text = path.read_text(encoding="utf-8")
-        if ":\\" in text or "/Users/" in text or "/home/" in text:
+        if _MACHINE_PATH.search(text):
             raise ValueError(path.name + " contains an absolute path")
 
 

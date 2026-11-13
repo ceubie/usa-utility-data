@@ -29,7 +29,7 @@ from utilitydata.graph.store import (
     travis_water_query,
 )
 from utilitydata.paths import DataPaths
-from utilitydata.pipeline import StageContext, next_stage, run_pipeline
+from utilitydata.pipeline import StageContext, next_stage, release_dir, run_pipeline
 from utilitydata.registry import load_registry
 from utilitydata.release.accuracy import load_truth
 from utilitydata.release.build import build_water_release
@@ -38,6 +38,7 @@ from utilitydata.release.calibration import (
     sample_rows,
     score_labels,
 )
+from utilitydata.release.reports import reject_absolute_paths, write_manifest
 from utilitydata.silver.boundaries import build_water_silver
 from utilitydata.stages import STAGE_FUNCTIONS
 from utilitydata.wastewater.build import build_wastewater
@@ -394,25 +395,28 @@ def graph_export(
 ) -> None:
     """Export node and edge tables, then N-Triples, for one release."""
     try:
+        home = DataPaths.from_environment().home
         repository_root = Path(__file__).resolve().parents[2]
         summary = export_graph(
-            DataPaths.from_environment().home,
+            home,
             repository_root,
             quarter=quarter,
             release_id=release_id,
             registry_dir=directory,
         )
         triples = None
+        release = release_dir(home, release_id)
         if write_nt:
-            graph_dir = DataPaths.from_environment().home / "releases" / release_id / "graph"
-            triples = write_ntriples(graph_dir)
-        gold_ids, edge_ids = travis_served_ids(DataPaths.from_environment().home, quarter, release_id)
+            triples = write_ntriples(release / "graph")
+        gold_ids, edge_ids = travis_served_ids(home, quarter, release_id)
+        if gold_ids != edge_ids:
+            raise ValueError("Travis County water systems do not match Gold")
+        if (release / "release_manifest.json").is_file():
+            write_manifest(release, home, quarter, home / "gold" / quarter, repository_root)
+            reject_absolute_paths(release)
     except (OSError, ValueError, TypeError, duckdb.Error) as exc:
         typer.echo(f"Graph export failed: {exc}", err=True)
         raise typer.Exit(1) from exc
-    if gold_ids != edge_ids:
-        typer.echo("Graph export failed: Travis County water systems do not match Gold", err=True)
-        raise typer.Exit(1)
     triple_count = triples["triples"] if isinstance(triples, dict) else "not written"
     typer.echo(
         f"release {summary['release']}: nodes {summary['node_rows']}; edges {summary['edge_rows']}; "
@@ -430,7 +434,7 @@ def graph_load(
     try:
         home = DataPaths.from_environment().home
         repository_root = Path(__file__).resolve().parents[2]
-        nt_path = home / "releases" / release_id / "graph" / "graph.nt"
+        nt_path = release_dir(home, release_id) / "graph" / "graph.nt"
         if not nt_path.is_file():
             raise ValueError("N-Triples export is missing")
         if engine == "fuseki":

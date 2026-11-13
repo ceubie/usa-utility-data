@@ -3,6 +3,8 @@
 A clean checkout has neither, so those tests skip with the reason instead of failing.
 """
 
+import http.client
+import json
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -28,12 +30,15 @@ def _release_missing(settings: Settings) -> str | None:
 
 
 def _sparql_missing(settings: Settings) -> str | None:
-    url = f"{settings.sparql_query_url}?{urllib.parse.urlencode({'query': 'ASK {}'})}"
+    url = f"{settings.sparql_query_url}?{urllib.parse.urlencode({'query': 'ASK { ?s ?p ?o }'})}"
     request = urllib.request.Request(url, headers={"Accept": "application/sparql-results+json"})
     try:
-        with urllib.request.urlopen(request, timeout=2):
-            return None
-    except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
+        with urllib.request.urlopen(request, timeout=2) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        if not isinstance(payload, dict) or not bool(payload.get("boolean")):
+            return f"SPARQL store at {settings.sparql_query_url} is empty"
+        return None
+    except (urllib.error.URLError, http.client.HTTPException, TimeoutError, ConnectionError, json.JSONDecodeError, ValueError) as exc:
         return f"SPARQL store is not reachable at {settings.sparql_query_url}: {exc}"
 
 

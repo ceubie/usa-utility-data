@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import os
-import re
 from functools import lru_cache
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -13,8 +12,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 from utilitydata.core.config import DEFAULT_RELEASE_ID
 from utilitydata.graph.literals import require_base
+from utilitydata.pipeline import release_dir, validate_release_id
 
-_RELEASE = re.compile(r"[A-Za-z0-9._-]+")
 _LOOPBACK = frozenset({"127.0.0.1", "localhost"})
 
 
@@ -80,9 +79,7 @@ class Settings(BaseSettings):
     @field_validator("utilitydata_release")
     @classmethod
     def _release_name(cls, value: str) -> str:
-        if not _RELEASE.fullmatch(value):
-            raise ValueError("UTILITYDATA_RELEASE has an unexpected form")
-        return value
+        return validate_release_id(value)
 
     @field_validator("row_limit", "query_timeout_s", "max_tool_rounds")
     @classmethod
@@ -102,7 +99,7 @@ class Settings(BaseSettings):
 
     @property
     def release_dir(self) -> Path:
-        return self.data_home / "releases" / self.utilitydata_release
+        return release_dir(self.data_home, self.utilitydata_release)
 
     def missing_llm(self) -> list[str]:
         """Return the names of model settings that are unset. Values are not included."""
